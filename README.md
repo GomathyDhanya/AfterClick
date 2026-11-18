@@ -4,7 +4,9 @@
 
 Working research prototype: a real PostgreSQL/React application, deterministic backend scheduler,
 Playwright scripted agent, validated execute/suppress replay, and conditional review compensation.
-The full CRBL research program is not complete. No trained model, evolutionary results, or safety
+The completion sprint adds field-revision CAS, seven-checkpoint certification, and independent
+contract oracles for review/readiness, priority/escalation, and status/summary. The full CRBL research
+program is not complete. No trained model, evolutionary results, or safety
 improvement is claimed. No paid inference or Tinker training has been run.
 
 ## Try FlowBoard
@@ -43,6 +45,18 @@ scripted-observer receipt prevents complete recovery; an overlapping collaborato
 abstention. The executable asserts replay validity and preserves failed trials. See
 [experiments](docs/EXPERIMENTS.md) for the exact intervention and claim boundaries.
 
+Run the separate planted **backend oracle pilot** (24 cases across three workflow families):
+
+```sh
+uv run python -m afterclick.evaluation.pilot --output artifacts/oracle-pilot
+```
+
+This validates recovery witnesses, not adaptive browser performance. Original evidence is retained
+under `evidence/v0/` and the `afterclick-v0` tag. For a committed clean checkout,
+`bash scripts/validate-isolated.sh` clones the exact revision and runs the build, suite, browser demo,
+and oracle pilot in Linux with a separate PostgreSQL container. Logs/reports are retained under
+`artifacts/isolated-*`; it exposes no host database port.
+
 ## Local development and checks
 
 ```sh
@@ -76,6 +90,7 @@ SQLAlchemy URL; the account needs schema creation permission. Do not use a produ
 | Bounded browser action gateway | `afterclick/agent/` |
 | Replay certificates, browser demo, artifact explorer | `afterclick/replay/` |
 | Conditional compensation and independent oracle | `afterclick/recovery/` |
+| Versioned contracts and generic independent oracles | `afterclick/contracts/`, `afterclick/evaluation/` |
 | Task contract | `fixtures/tasks/description-review.json` |
 | Infrastructure and CI | `docker/`, `compose.yaml`, `.github/workflows/ci.yml` |
 
@@ -87,5 +102,5 @@ implementations, not empty scaffolds.
 
 Read [research specification](docs/RESEARCH_SPEC.md), [architecture](docs/ARCHITECTURE.md), and
 [progress](docs/PROGRESS.md), then inspect Git status. Preserve validated foundations. The next
-work expands replay coverage and independent recovery verification before starting evolutionary
-boundary discovery. See [the original implementation brief](docs/IMPLEMENTATION_BRIEF.md).
+work follows [the completion gates](docs/COMPLETION_GATES.md), starting with adaptive-policy replay
+after the first sprint's acceptance checks. See [the completion plan](docs/COMPLETION_PLAN.md).

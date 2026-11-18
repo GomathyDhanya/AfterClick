@@ -1,5 +1,22 @@
 # Experiments
 
+## Completion-sprint oracle validation
+
+`python -m afterclick.evaluation.pilot` runs 24 planted PostgreSQL cases: three families times eight
+conditions (early, late, conflict, harmless, unknown, censored, false-success claim, independent-edit
+preservation). Each case reconstructs its prefix three times and compares two suppressed continuations
+before accepting the reference. This validates backend oracles, not adaptive-agent performance.
+
+Early compensation starts at t=150, after the worker but before receipt; late starts at t=200.
+Conflict/censored cases stop at t=150 with an incomplete horizon. False-success tests declare a
+1000 ms delivery delay, perform no compensation, and inject only a false planner **claim**; actual
+residual state yields PARTIAL at the 300 ms horizon. No states/events are fabricated. Unknown tests
+carry an unsettled-request flag. Historical arrival and current recovery class are separate outputs.
+
+Original v0 raw evidence is under `evidence/v0/`. Its six-checkpoint certificate was incomplete.
+Current browser replay certifies all seven pre-action checkpoints, including conflict; the deliberate
+collaborator action still occurs later and may change the outcome.
+
 ## Current executable experiment
 
 **Data type:** measured executions of a synthetic planted fixture. No model inference is involved.

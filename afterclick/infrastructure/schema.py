@@ -32,6 +32,8 @@ projects = Table(
     Column("name", String, nullable=False),
     Column("completed", Integer, nullable=False),
     Column("version", Integer, nullable=False),
+    Column("owners", JSONB, nullable=False),
+    Column("field_revisions", JSONB, nullable=False),
 )
 tasks = Table(
     "tasks",
@@ -47,6 +49,7 @@ tasks = Table(
     Column("status", String, nullable=False),
     Column("version", Integer, nullable=False),
     Column("owners", JSONB, nullable=False),
+    Column("field_revisions", JSONB, nullable=False),
 )
 dependencies = Table(
     "task_dependencies",

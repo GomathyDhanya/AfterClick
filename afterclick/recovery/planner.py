@@ -60,6 +60,7 @@ def compensate_review(db, action_id):
                     **values,
                     owners={**current["owners"], **{f: f"recovery:{action_id}" for f in values}},
                     version=current["version"] + 1,
+                    field_revisions=domain.revised(current, values),
                 )
             )
             if result.rowcount != 1:

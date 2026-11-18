@@ -17,6 +17,7 @@ uv run ruff check afterclick tests migrations
 uv run ruff format --check afterclick tests migrations
 uv run pytest -q --junitxml=artifacts/tests.xml
 uv run python -m afterclick.replay.demo --output artifacts/demo
+uv run python -m afterclick.evaluation.pilot --output artifacts/oracle-pilot
 ```
 
 On Linux, use `uv run playwright install --with-deps chromium` for required OS libraries.
@@ -62,8 +63,8 @@ when collecting research data. The files are not cryptographically signed or tam
 
 The manifest records package versions, Python, browser version, source-file hashes, frontend-build
 hashes, Git revision if available, dirty status, and database image digests when Docker can inspect
-them. The initial repository has no commit yet, so `git_commit` is null and source hashes identify
-the exact code. Local experiments do not run an application container: `application_image_digest`
+them. The original v0 report predates the first commit and retains a null Git revision. New
+committed runs record exact revisions; clean-clone validation requires and preserves a clean tree. Local experiments do not run an application container: `application_image_digest`
 is explicitly null, never a fabricated digest. CI/containers should record their real image IDs when
 experiments are later moved into containerized runners.
 
@@ -95,3 +96,16 @@ implemented. Browser HTTP and SSE arrival order are not fully controlled; checkp
 specified UI/commit barriers and exclude only declared transport telemetry. Full image pinning,
 dependency upgrades, research-table migrations, and independently audited oracle coverage remain
 future work. See `DECISIONS.md` for the npm development-tool advisory and `PROGRESS.md` for checks.
+
+## Clean-clone Linux reproduction
+
+From a clean committed tree, run `bash scripts/validate-isolated.sh`. It clones the exact revision
+into a temporary directory, builds a Linux validation image, starts a separate ephemeral PostgreSQL
+instance without host ports, and runs the frontend build, all tests, browser demo and oracle pilot.
+It captures raw logs and artifacts under `artifacts/isolated-*`, then stops only that validation
+Compose project. The source clone is retained for inspection. This is isolation on the same Docker
+host, not an independently operated remote machine. Remote GitHub CI has not run here.
+
+The container need not contain the Docker CLI; manifests explicitly record unavailable image metadata
+as empty, while source hashes and Git revision remain available. The host build log records resolved
+base-image digests. No digest is fabricated. Model credentials are not mounted.

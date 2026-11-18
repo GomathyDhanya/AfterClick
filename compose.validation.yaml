@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres:17.7
+    environment:
+      POSTGRES_USER: afterclick
+      POSTGRES_PASSWORD: afterclick_local
+      POSTGRES_DB: afterclick
+    tmpfs:
+      - /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U afterclick"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  validation:
+    build:
+      context: .
+      dockerfile: docker/validation.Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://afterclick:afterclick_local@db:5432/afterclick
+    volumes:
+      - "${VALIDATION_SOURCE:?Set VALIDATION_SOURCE to a clean clone}:/workspace"
+    depends_on:
+      db: {condition: service_healthy}
+    shm_size: 1gb

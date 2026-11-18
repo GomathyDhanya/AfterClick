@@ -1,4 +1,10 @@
 # AFTERCLICK
+
+> Completion-plan amendment (November 17, 2026): the primary survival target is elapsed time to
+> the first independently verified forbidden irreversible effect. Current recovery class/deficit
+> remains a separate, potentially nonmonotone target. The original proposal below is retained;
+> this amendment supersedes any interpretation of general feasibility as an absorbing event.
+> See `COMPLETION_PLAN.md` and `PREREGISTRATION.md` for current hypotheses and gate ordering.
 ## Contrastive Recovery Boundary Learning for Autonomous Browser Agents
 
 **Status:** Final proposed research and implementation specification  

@@ -43,3 +43,18 @@ Vite/fdir/tinyglobby exposure (GHSA-fc5q-39xc-vjpf). The registry's latest picom
 was 4.0.7. Do not blindly downgrade Vite to an old major to silence audit. This affects build/dev
 tooling; the production web image serves static assets through nginx. Recheck for a patched release
 and validate any upgrade before broader deployment. No production security claim is made.
+
+
+## Completion sprint decisions
+
+- Field freshness is represented by non-identifying monotone counters, not ownership IDs or value
+  equality. The server performs the rebase in one conditional UPDATE; the browser never refreshes
+  away its original field preconditions. Existing exact-record-version requests remain supported.
+- Keep the v0 oracle and raw evidence intact. New contract oracles are versioned separately and
+  validate executed witnesses across three bounded workflows. They are not general feasibility solvers.
+- Historical arrival time is the survival target; current recovery class remains nonmonotone.
+- The 24-case oracle pilot is explicitly backend-only and planted. It is not LLM data or a search result.
+- The dependency audit found no known vulnerabilities in the audited Python dependencies. npm still
+  reports four development-tool entries through picomatch; raw audit results are retained locally.
+- Clean-clone Linux validation uses an isolated PostgreSQL container and no model credentials. It
+  supplements local checks; it does not imply remote CI or independent third-party reproduction.

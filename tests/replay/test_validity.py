@@ -11,7 +11,15 @@ def certificate_inputs():
             "checkpoint": {"database_hash": "same"},
             "outcome_hash": "execute" if name.startswith("execute") else "suppress",
         }
-        for name in ("execute", "execute_placebo", "suppress", "suppress_placebo", "early", "late")
+        for name in (
+            "execute",
+            "execute_placebo",
+            "suppress",
+            "suppress_placebo",
+            "early",
+            "late",
+            "conflict",
+        )
     }
 
 
@@ -20,6 +28,18 @@ def test_invalid_checkpoint_cannot_support_causal_claim():
     assert validity_certificate(inputs)["valid"]
     inputs["early"]["checkpoint"]["database_hash"] = "different"
     assert not validity_certificate(inputs)["valid"]
+
+
+def test_conflict_pre_action_checkpoint_is_required_but_later_intervention_is_allowed():
+    inputs = certificate_inputs()
+    inputs["conflict"]["outcome_hash"] = "intentional-post-checkpoint-collaborator-divergence"
+    certificate = validity_certificate(inputs)
+    assert certificate["valid"]
+    assert set(certificate["checkpoint_hashes"]) == set(inputs)
+    inputs["conflict"]["checkpoint"]["database_hash"] = "corrupted-before-action"
+    assert not validity_certificate(inputs)["valid"]
+    del inputs["conflict"]
+    assert validity_certificate(inputs)["missing_or_failed_branches"] == ["conflict"]
 
 
 def test_placebo_divergence_and_failed_trials_are_retained_as_invalid():

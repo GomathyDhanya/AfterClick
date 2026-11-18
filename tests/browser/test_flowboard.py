@@ -107,3 +107,29 @@ def test_gateway_records_browser_actions_and_commit_provenance(browser, origin, 
     assert effects[0]["action_id"] == "a0002"
     assert all(h["feedback"]["status"] == "completed" for h in gateway.history)
     context.close()
+
+
+@pytest.mark.parametrize("aba", [False, True])
+def test_same_value_collaborator_revision_preserves_pending_draft(browser, origin, db, aba):
+    context, first = open_page(browser, origin)
+    other, second = open_page(browser, origin)
+    original = second.get_by_label("Description", exact=True).input_value()
+    first.get_by_label("Description", exact=True).fill("API v2 pending agent draft")
+    if aba:
+        second.get_by_label("Description", exact=True).fill("Temporary collaborator value")
+        save(second)
+    else:
+        # Two edits inside one debounce commit the original value with new ownership.
+        second.get_by_label("Description", exact=True).fill("Uncommitted temporary text")
+    second.get_by_label("Description", exact=True).fill(original)
+    save(second)
+    first.clock.fast_forward(600)
+    expect(first.get_by_role("status")).to_have_text("Conflict")
+    expect(first.get_by_label("Description", exact=True)).to_have_value(
+        "API v2 pending agent draft"
+    )
+    state = domain.snapshot(db)["tasks"][0]
+    assert state["description"] == original
+    assert state["version"] == (3 if aba else 2)
+    context.close()
+    other.close()

@@ -31,6 +31,13 @@ def canonical(state):
     return {key: value for key, value in state.items() if key != "sse_receipts"}
 
 
+def optional_command(command):
+    try:
+        return subprocess.run(command, capture_output=True, text=True)
+    except FileNotFoundError:
+        return subprocess.CompletedProcess(command, 127, stdout="", stderr="Command unavailable")
+
+
 def source_manifest():
     paths = [
         p
@@ -44,12 +51,10 @@ def source_manifest():
         Path(p) for p in ("pyproject.toml", "uv.lock", "apps/flowboard-web/package-lock.json")
     ]
     hashes = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
-    commit = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True)
-    status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
-    image = subprocess.run(
+    commit = optional_command(["git", "rev-parse", "HEAD"])
+    status = optional_command(["git", "status", "--porcelain"])
+    image = optional_command(
         ["docker", "image", "inspect", "postgres:17.7", "--format", "{{json .RepoDigests}}"],
-        capture_output=True,
-        text=True,
     )
     return {
         "source_hash": digest(hashes),
@@ -184,7 +189,15 @@ def branch(
 
 
 def validity_certificate(branches):
-    required = ["execute", "execute_placebo", "suppress", "suppress_placebo", "early", "late"]
+    required = [
+        "execute",
+        "execute_placebo",
+        "suppress",
+        "suppress_placebo",
+        "early",
+        "late",
+        "conflict",
+    ]
     missing = [name for name in required if name not in branches or not branches[name]["valid"]]
     if missing:
         return {"valid": False, "missing_or_failed_branches": missing}

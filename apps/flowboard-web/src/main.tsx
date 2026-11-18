@@ -12,6 +12,7 @@ type Task = {
   assignee: string;
   status: string;
   version: number;
+  field_revisions: Record<string, number>;
 };
 type Editable = Pick<
   Task,
@@ -32,6 +33,7 @@ type SaveState =
   | "Conflict";
 type Operation = {
   expected_version: number;
+  expected_field_revisions: Record<string, number>;
   operation_id: string;
   changes: Partial<Editable>;
 };
@@ -146,33 +148,29 @@ function App() {
             expected_version: base.current.version,
             operation_id: crypto.randomUUID(),
             changes: { ...dirty.current },
+            expected_field_revisions: Object.fromEntries(
+              Object.keys(dirty.current).map((key) => [
+                key,
+                base.current!.field_revisions[key],
+              ]),
+            ),
           };
     operation.current = op;
     try {
-      let response = await fetch(`/api/tasks/${selected}`, {
+      const response = await fetch(`/api/tasks/${selected}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(op),
       });
       if (response.status === 409) {
-        const latest = await get<Task>(`/api/tasks/${selected}`);
-        const fields = Object.keys(op.changes) as (keyof Editable)[];
-        // Rebase only if every edited field is still equal to the original base.
-        if (fields.some((key) => latest[key] !== base.current![key])) {
-          operation.current = null;
-          setSaveState("Conflict");
-          setError(
-            "This field changed in another session. Your draft is preserved; load the latest version to resolve.",
-          );
-          return;
-        }
-        op.expected_version = latest.version;
-        op.operation_id = crypto.randomUUID();
-        response = await fetch(`/api/tasks/${selected}`, {
-          method: "PATCH",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(op),
-        });
+        // The server rebases atomically only when every original field token still matches.
+        // Never replace those tokens with a newer read, even if the values look identical.
+        operation.current = null;
+        setSaveState("Conflict");
+        setError(
+          "This field changed in another session. Your draft is preserved; load the latest version to resolve.",
+        );
+        return;
       }
       if (!response.ok)
         throw new Error(

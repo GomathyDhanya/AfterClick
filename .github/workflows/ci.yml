@@ -33,6 +33,7 @@ jobs:
       - run: uv run ruff format --check afterclick tests migrations
       - run: uv run pytest -q --junitxml=artifacts/tests.xml
       - run: uv run python -m afterclick.replay.demo --output artifacts/demo
+      - run: uv run python -m afterclick.evaluation.pilot --output artifacts/oracle-pilot
       - uses: actions/upload-artifact@v4
         if: always()
         with:

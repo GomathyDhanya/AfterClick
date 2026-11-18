@@ -4,7 +4,7 @@ import os
 import threading
 from contextlib import asynccontextmanager, suppress
 from pathlib import Path
-from typing import Literal
+from typing import Annotated, Literal
 
 from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.responses import JSONResponse, StreamingResponse
@@ -32,6 +32,7 @@ class Patch(BaseModel):
     expected_version: int = Field(ge=1)
     operation_id: str = Field(min_length=1, max_length=128)
     changes: Changes
+    expected_field_revisions: dict[str, Annotated[int, Field(strict=True, ge=1)]] | None = None
 
 
 class Comment(BaseModel):
@@ -90,7 +91,7 @@ def create_app(db=None, auto_tick=False, static_dir=None):
     @app.get("/api/projects")
     def projects():
         with db.engine.connect() as c:
-            return domain.rows(c, s.projects)
+            return [public_task(r) for r in domain.rows(c, s.projects)]
 
     @app.get("/api/projects/{project_id}/tasks")
     def tasks(project_id: str):
@@ -114,6 +115,10 @@ def create_app(db=None, auto_tick=False, static_dir=None):
         changes = body.changes.model_dump(exclude_unset=True)
         if not changes or any(v is None for v in changes.values()):
             raise HTTPException(422, "Supply at least one non-null change")
+        if body.expected_field_revisions is not None and set(body.expected_field_revisions) != set(
+            changes
+        ):
+            raise HTTPException(422, "Field revision keys must match the changed fields exactly")
         return public_task(
             domain.patch_task(
                 db,
@@ -123,6 +128,7 @@ def create_app(db=None, auto_tick=False, static_dir=None):
                 body.operation_id,
                 x_action_id or body.operation_id,
                 x_actor,
+                expected_field_revisions=body.expected_field_revisions,
             )
         )
 

@@ -20,3 +20,13 @@ def test_source_manifest_ignores_os_metadata_and_hashes_file_bytes(tmp_path, mon
         == hashlib.sha256(b"answer = 42\n").hexdigest()
     )
     assert manifest["git_commit"] is None
+
+
+def test_optional_runtime_metadata_tool_can_be_absent(monkeypatch):
+    from afterclick.replay.demo import optional_command
+
+    def missing(*args, **kwargs):
+        raise FileNotFoundError("docker not installed in isolated validation container")
+
+    monkeypatch.setattr("subprocess.run", missing)
+    assert optional_command(["docker", "info"]).returncode == 127

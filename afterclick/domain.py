@@ -14,6 +14,18 @@ class NotFound(Exception):
     pass
 
 
+TASK_FIELDS = ("title", "description", "reviewed", "ready", "priority", "assignee", "status")
+EDITABLE_FIELDS = set(TASK_FIELDS) - {"title", "ready"}
+
+
+def revised(record, fields):
+    """Every accepted write advances touched fields, even identical values/owners."""
+    result = dict(record["field_revisions"])
+    for field in fields:
+        result[field] += 1
+    return result
+
+
 def rows(c, table):
     return [dict(r) for r in c.execute(select(table).order_by(*table.primary_key)).mappings()]
 
@@ -109,7 +121,14 @@ def seed(db, seed=7, worker_delay=100, delivery_delay=100):
             )
         )
         c.execute(
-            insert(s.projects).values(id="release", name="API v2 launch", completed=0, version=1)
+            insert(s.projects).values(
+                id="release",
+                name="API v2 launch",
+                completed=0,
+                version=1,
+                owners={},
+                field_revisions={"name": 1, "completed": 1},
+            )
         )
         c.execute(
             insert(s.tasks),
@@ -126,6 +145,7 @@ def seed(db, seed=7, worker_delay=100, delivery_delay=100):
                     status="In progress",
                     version=1,
                     owners={},
+                    field_revisions=dict.fromkeys(TASK_FIELDS, 1),
                 )
                 for tid, title, description in [
                     (
@@ -151,8 +171,28 @@ def snapshot(db):
         return {name: rows(c, table) for name, table in s.TABLES.items()}
 
 
-def patch_task(db, task_id, changes, expected_version, operation_id, action_id, actor="agent"):
-    request_hash = digest([task_id, changes, expected_version, actor, action_id])
+def patch_task(
+    db,
+    task_id,
+    changes,
+    expected_version,
+    operation_id,
+    action_id,
+    actor="agent",
+    *,
+    expected_field_revisions=None,
+):
+    if not changes or not set(changes) <= EDITABLE_FIELDS:
+        raise ValueError("Invalid task changes")
+    if expected_field_revisions is not None and (
+        set(expected_field_revisions) != set(changes)
+        or any(type(v) is not int or v < 1 for v in expected_field_revisions.values())
+    ):
+        raise ValueError("Provide exactly one positive revision for each changed field")
+    identity = [task_id, changes, expected_version, actor, action_id]
+    if expected_field_revisions is not None:
+        identity.append(expected_field_revisions)
+    request_hash = digest(identity)
     with db.transaction() as c:
         previous = (
             c.execute(select(s.operations).where(s.operations.c.id == operation_id))
@@ -164,14 +204,26 @@ def patch_task(db, task_id, changes, expected_version, operation_id, action_id, 
                 raise Conflict("Operation ID was reused for a different request")
             return previous["response"]
         before = task(c, task_id)
-        if before["version"] != expected_version:
+        if expected_version > before["version"] or (
+            expected_field_revisions is None and before["version"] != expected_version
+        ):
             raise Conflict(f"Expected v{expected_version}; current v{before['version']}")
+        predicates = [s.tasks.c.id == task_id, s.tasks.c.version == before["version"]]
+        for field, revision in (expected_field_revisions or {}).items():
+            if before["field_revisions"][field] != revision:
+                raise Conflict(f"Field {field} changed since the draft was created")
+            predicates.append(s.tasks.c.field_revisions[field].as_integer() == revision)
         owners = {**before["owners"], **{k: action_id for k in changes}}
         after = (
             c.execute(
                 update(s.tasks)
-                .where(s.tasks.c.id == task_id, s.tasks.c.version == expected_version)
-                .values(**changes, owners=owners, version=expected_version + 1)
+                .where(*predicates)
+                .values(
+                    **changes,
+                    owners=owners,
+                    version=before["version"] + 1,
+                    field_revisions=revised(before, changes),
+                )
                 .returning(s.tasks)
             )
             .mappings()
@@ -333,6 +385,7 @@ def execute_job(c, job):
                             ready=ready,
                             version=dependent["version"] + 1,
                             owners={**dependent["owners"], "ready": action_id},
+                            field_revisions=revised(dependent, ["ready"]),
                         )
                     )
                     emit(
@@ -385,7 +438,12 @@ def execute_job(c, job):
                     .where(
                         s.projects.c.id == project["id"], s.projects.c.version == project["version"]
                     )
-                    .values(completed=completed, version=project["version"] + 1)
+                    .values(
+                        completed=completed,
+                        version=project["version"] + 1,
+                        owners={**project["owners"], "completed": action_id},
+                        field_revisions=revised(project, ["completed"]),
+                    )
                 )
                 emit(
                     c,

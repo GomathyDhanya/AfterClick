@@ -31,8 +31,10 @@ transport receipt; it is not a causal label or proof of a human observing conten
 ID, and a nonempty validated changes object. Field ownership is withheld from public task responses.
 
 Each operation ID stores a hash of the exact request and the original committed response. Identical
-retries return that response; ID reuse with different content conflicts. A stale version returns 409.
-The React editor rebases nonoverlapping fields after comparing them to its original base. Overlapping
+retries return that response; ID reuse with different content conflicts. Legacy requests require an
+exact record version. The editor sends original per-field revision counters; the server can rebase
+only if every touched counter still matches in an atomic conditional update. Same-value and ABA
+writes advance counters. Value equality is never a rebase precondition. Overlapping
 edits preserve the unsaved draft and require explicit resolution. Unknown response outcomes retain
 the original operation for retry. The UI blocks further writes during an unresolved save.
 
@@ -119,6 +121,24 @@ horizon yields CENSORED. A legitimate overlapping write yields CONFLICT. Unsuppo
 not called mathematically irreversible.
 
 ## Deferred boundaries
+
+The completion sprint adds `contracts/{schema,predicates,authorization}.py` and independent
+`evaluation/{task_oracle,effect_oracle,recovery_reference}.py`. Versioned review-v2, priority-v1 and
+status-v1 contracts declare goals, effect scopes, preservation, fixture/seed, horizon and capabilities.
+The legacy review oracle and original fixture remain separate so historical evidence is not relabeled.
+
+`recovery/conditional.py` executes bounded witnesses for one review/priority/status mutation and
+owned readiness/summary/derived records. Projects now have ownership/revision metadata. Touched
+task fields advance counters even for same-value writes; workers and compensation also advance
+affected counters. Migration 0003 conservatively backfills old counters from record versions.
+
+The new oracle consumes snapshots and a separately validated reference, never planner status. It
+checks goal/preservation, immutable evidence, residual work, conflicts, and declared interfaces.
+Irreversibility requires matching observer receipt and ledger event, not a Boolean annotation.
+Temporal output is relative to selected-action time. `evaluation/pilot.py` is a backend test harness,
+not an oracle or browser policy.
+
+## Remaining boundaries
 
 No learned shield, staging enforcement, LLM replanning, CP-SAT planner, distributed tracing export,
 general causal graph, arbitrary application recovery, or production identity system exists yet.
