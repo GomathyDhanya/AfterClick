@@ -107,7 +107,7 @@ Execute and suppress each have an identical-continuation placebo. Mismatches mak
 failed records remain in the run directory. This reconstructs a **quiescent deterministic prefix**,
 not arbitrary in-flight JavaScript state. A browser storage export alone is never called a snapshot.
 
-Recovery supports one owned review mutation and its owned readiness effects. It validates all
+The legacy v0 recovery path supports one owned review mutation and its owned readiness effects. It validates all
 ownership/value predicates before any compensation, cancels pending owned jobs, removes undelivered
 owned notifications, and conditionally restores only affected fields. Delivered receipts and their
 notifications remain. Audit rows are retained. The planner reports attempted operations, never a

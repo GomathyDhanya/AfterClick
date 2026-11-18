@@ -1,0 +1,308 @@
+ Image ac-validation-1794967031-11366-validation Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 708B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from validation.Dockerfile
+#2 transferring dockerfile: 466B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for ghcr.io/astral-sh/uv:0.13.9
+#3 ...
+
+#4 [auth] library/node:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/node:24-bookworm
+#5 ...
+
+#3 [internal] load metadata for ghcr.io/astral-sh/uv:0.13.9
+#3 DONE 1.0s
+
+#5 [internal] load metadata for docker.io/library/node:24-bookworm
+#5 DONE 1.0s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 126B 0.0s done
+#6 DONE 0.0s
+
+#7 FROM ghcr.io/astral-sh/uv:0.13.9@sha256:d3b601f0c7b118bc1753febf7c41cc80981df678445e0254284eecf84db79a7d
+#7 DONE 0.0s
+
+#8 [stage-0 1/7] FROM docker.io/library/node:24-bookworm@sha256:9d266751ca3d7fdbe651c878ffd5ad0a42fed49a18c283509267c97f025b7496
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 161.76kB 0.0s done
+#9 DONE 0.0s
+
+#10 [stage-0 2/7] COPY --from=ghcr.io/astral-sh/uv:0.13.9 /uv /usr/local/bin/uv
+#10 CACHED
+
+#11 [stage-0 4/7] COPY pyproject.toml uv.lock ./
+#11 CACHED
+
+#12 [stage-0 3/7] WORKDIR /opt/validation
+#12 CACHED
+
+#13 [stage-0 5/7] RUN uv python install 3.11 && uv sync --frozen --no-install-project
+#13 CACHED
+
+#14 [stage-0 6/7] RUN python -m playwright install --with-deps chromium
+#14 CACHED
+
+#15 [stage-0 7/7] WORKDIR /workspace
+#15 CACHED
+
+#16 exporting to image
+#16 exporting layers done
+#16 writing image sha256:6afa7a8adea248a7c55d47aa444f1196ec6e55af0d0fec95de6270bc7a424afa done
+#16 naming to docker.io/library/ac-validation-1794967031-11366-validation done
+#16 DONE 0.0s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ Image ac-validation-1794967031-11366-validation Built 
+ Network ac-validation-1794967031-11366_default Creating 
+ Network ac-validation-1794967031-11366_default Creating 
+ Network ac-validation-1794967031-11366_default Created 
+ Network ac-validation-1794967031-11366_default Created 
+ Container ac-validation-1794967031-11366-db-1 Creating 
+ Container ac-validation-1794967031-11366-db-1 Created 
+ Container ac-validation-1794967031-11366-validation-1 Creating 
+ Container ac-validation-1794967031-11366-validation-1 Created 
+Attaching to db-1, validation-1
+ Container ac-validation-1794967031-11366-db-1 Starting 
+ Container ac-validation-1794967031-11366-db-1 Started 
+ Container ac-validation-1794967031-11366-db-1 Waiting 
+db-1  | The files belonging to this database system will be owned by user "postgres".
+db-1  | This user must also own the server process.
+db-1  | 
+db-1  | The database cluster will be initialized with locale "en_US.utf8".
+db-1  | The default database encoding has accordingly been set to "UTF8".
+db-1  | The default text search configuration will be set to "english".
+db-1  | 
+db-1  | Data page checksums are disabled.
+db-1  | 
+db-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db-1  | creating subdirectories ... ok
+db-1  | selecting dynamic shared memory implementation ... posix
+db-1  | selecting default "max_connections" ... 100
+db-1  | selecting default "shared_buffers" ... 128MB
+db-1  | selecting default time zone ... Etc/UTC
+db-1  | creating configuration files ... ok
+db-1  | running bootstrap script ... ok
+db-1  | performing post-bootstrap initialization ... ok
+db-1  | initdb: warning: enabling "trust" authentication for local connections
+db-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+db-1  | syncing data to disk ... ok
+db-1  | 
+db-1  | 
+db-1  | Success. You can now start the database server using:
+db-1  | 
+db-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db-1  | 
+db-1  | waiting for server to start....2026-11-18 01:57:20.164 UTC [55] LOG:  starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1  | 2026-11-18 01:57:20.168 UTC [55] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-11-18 01:57:20.172 UTC [58] LOG:  database system was shut down at 2026-11-18 01:57:20 UTC
+db-1  | 2026-11-18 01:57:20.177 UTC [55] LOG:  database system is ready to accept connections
+db-1  |  done
+db-1  | server started
+db-1  | CREATE DATABASE
+db-1  | 
+db-1  | 
+db-1  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+db-1  | 
+db-1  | waiting for server to shut down...2026-11-18 01:57:20.631 UTC [55] LOG:  received fast shutdown request
+db-1  | 2026-11-18 01:57:20.631 UTC [55] LOG:  aborting any active transactions
+db-1  | .2026-11-18 01:57:20.636 UTC [55] LOG:  background worker "logical replication launcher" (PID 61) exited with exit code 1
+db-1  | 2026-11-18 01:57:20.636 UTC [56] LOG:  shutting down
+db-1  | 2026-11-18 01:57:20.636 UTC [56] LOG:  checkpoint starting: shutdown immediate
+db-1  | 2026-11-18 01:57:20.683 UTC [56] LOG:  checkpoint complete: wrote 925 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.045 s, sync=0.003 s, total=0.047 s; sync files=301, longest=0.001 s, average=0.001 s; distance=4256 kB, estimate=4256 kB; lsn=0/1915968, redo lsn=0/1915968
+db-1  | 2026-11-18 01:57:20.698 UTC [55] LOG:  database system is shut down
+db-1  |  done
+db-1  | server stopped
+db-1  | 
+db-1  | PostgreSQL init process complete; ready for start up.
+db-1  | 
+db-1  | 2026-11-18 01:57:20.768 UTC [1] LOG:  starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1  | 2026-11-18 01:57:20.771 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db-1  | 2026-11-18 01:57:20.771 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db-1  | 2026-11-18 01:57:20.776 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-11-18 01:57:20.779 UTC [71] LOG:  database system was shut down at 2026-11-18 01:57:20 UTC
+db-1  | 2026-11-18 01:57:20.786 UTC [1] LOG:  database system is ready to accept connections
+ Container ac-validation-1794967031-11366-db-1 Healthy 
+ Container ac-validation-1794967031-11366-validation-1 Starting 
+ Container ac-validation-1794967031-11366-validation-1 Started 
+validation-1  | 
+validation-1  | added 21 packages, and audited 22 packages in 7s
+validation-1  | 
+validation-1  | 5 packages are looking for funding
+validation-1  |   run `npm fund` for details
+validation-1  | 
+validation-1  | 4 high severity vulnerabilities
+validation-1  | 
+validation-1  | To address all issues (including breaking changes), run:
+validation-1  |   npm audit fix --force
+validation-1  | 
+validation-1  | Run `npm audit` for details.
+validation-1  | npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+validation-1  | npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+validation-1  | npm warn install-scripts
+validation-1  | npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+validation-1  | npm notice
+validation-1  | npm notice New major version of npm available! 11.19.1 -> 12.2.3
+validation-1  | npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.3
+validation-1  | npm notice To update run: npm install -g npm@12.2.3
+validation-1  | npm notice
+validation-1  | 
+validation-1  | > flowboard-web@0.1.0 build
+validation-1  | > tsc -b && vite build
+validation-1  | 
+validation-1  | vite v7.3.8 building client environment for production...
+validation-1  | transforming...
+validation-1  | ✓ 28 modules transformed.
+validation-1  | rendering chunks...
+validation-1  | computing gzip size...
+validation-1  | dist/index.html                   0.42 kB │ gzip:  0.30 kB
+validation-1  | dist/assets/index-CriPoHKP.css   10.15 kB │ gzip:  2.97 kB
+validation-1  | dist/assets/index-oa2Kq6G2.js   233.19 kB │ gzip: 72.71 kB
+validation-1  | ✓ built in 3.30s
+validation-1  | All checks passed!
+validation-1  | 42 files already formatted
+db-1          | 2026-11-18 01:58:25.994 UTC [371] ERROR:  Historical evidence is append-only
+db-1          | 2026-11-18 01:58:25.994 UTC [371] CONTEXT:  PL/pgSQL function reject_history_mutation() line 6 at RAISE
+db-1          | 2026-11-18 01:58:25.994 UTC [371] STATEMENT:  UPDATE effect_events SET irreversible=$1
+validation-1  | ........................................................................ [ 81%]
+validation-1  | ................                                                         [100%]
+validation-1  | =============================== warnings summary ===============================
+validation-1  | ../opt/validation/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+validation-1  |   /opt/validation/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+validation-1  |     from starlette.testclient import TestClient as TestClient  # noqa
+validation-1  | 
+validation-1  | -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+validation-1  | 88 passed, 1 warning in 70.75s (0:01:10)
+validation-1  | Running execute…
+validation-1  | Running execute_placebo…
+validation-1  | Running suppress…
+validation-1  | Running suppress_placebo…
+validation-1  | Running early…
+validation-1  | Running late…
+validation-1  | Running conflict…
+validation-1  | {
+validation-1  |   "goal_success_execute": true,
+validation-1  |   "goal_success_suppress": true,
+validation-1  |   "fixture_goal_difference": 0,
+validation-1  |   "selected_action_semantic_effects": [
+validation-1  |     {
+validation-1  |       "id": 3,
+validation-1  |       "kind": "task.updated",
+validation-1  |       "action_id": "a0003",
+validation-1  |       "actor": "scripted-agent",
+validation-1  |       "resource": "TASK-42",
+validation-1  |       "logical_time": 0,
+validation-1  |       "parents": [],
+validation-1  |       "before": {
+validation-1  |         "reviewed": false
+validation-1  |       },
+validation-1  |       "after": {
+validation-1  |         "reviewed": true
+validation-1  |       },
+validation-1  |       "irreversible": false
+validation-1  |     },
+validation-1  |     {
+validation-1  |       "id": 5,
+validation-1  |       "kind": "readiness.updated",
+validation-1  |       "action_id": "a0003",
+validation-1  |       "actor": "worker",
+validation-1  |       "resource": "TASK-43",
+validation-1  |       "logical_time": 100,
+validation-1  |       "parents": [
+validation-1  |         3
+validation-1  |       ],
+validation-1  |       "before": {
+validation-1  |         "ready": false
+validation-1  |       },
+validation-1  |       "after": {
+validation-1  |         "ready": true
+validation-1  |       },
+validation-1  |       "irreversible": false
+validation-1  |     },
+validation-1  |     {
+validation-1  |       "id": 6,
+validation-1  |       "kind": "notification.created",
+validation-1  |       "action_id": "a0003",
+validation-1  |       "actor": "worker",
+validation-1  |       "resource": "notification:workflow:a0003:op2",
+validation-1  |       "logical_time": 100,
+validation-1  |       "parents": [
+validation-1  |         3
+validation-1  |       ],
+validation-1  |       "before": null,
+validation-1  |       "after": {
+validation-1  |         "message": "TASK-43 is ready for release"
+validation-1  |       },
+validation-1  |       "irreversible": false
+validation-1  |     },
+validation-1  |     {
+validation-1  |       "id": 8,
+validation-1  |       "kind": "notification.delivered",
+validation-1  |       "action_id": "a0003",
+validation-1  |       "actor": "release-observer",
+validation-1  |       "resource": "notification:workflow:a0003:op2",
+validation-1  |       "logical_time": 200,
+validation-1  |       "parents": [
+validation-1  |         6
+validation-1  |       ],
+validation-1  |       "before": null,
+validation-1  |       "after": {
+validation-1  |         "message": "TASK-43 is ready for release"
+validation-1  |       },
+validation-1  |       "irreversible": true
+validation-1  |     }
+validation-1  |   ],
+validation-1  |   "recovery_early": "VERIFIED_RECOVERABLE",
+validation-1  |   "recovery_late": "VERIFIED_UNRECOVERABLE",
+validation-1  |   "conflict_at_attempt": "CONFLICT",
+validation-1  |   "conflict_branch_final": "VERIFIED_UNRECOVERABLE",
+validation-1  |   "population_necessity_label": "NOT_ESTIMATED",
+validation-1  |   "boundary_claim": "Verified witness at two sampled recovery-start times; not a globally minimal boundary"
+validation-1  | }
+validation-1  | review-readiness/early: VERIFIED_RECOVERABLE
+validation-1  | review-readiness/late: VERIFIED_UNRECOVERABLE
+validation-1  | review-readiness/conflict: CONFLICT
+validation-1  | review-readiness/harmless: VERIFIED_RECOVERABLE
+validation-1  | review-readiness/unknown: UNKNOWN
+validation-1  | review-readiness/censored: CENSORED
+validation-1  | review-readiness/false_success: PARTIAL
+validation-1  | review-readiness/preservation: VERIFIED_RECOVERABLE
+validation-1  | priority-escalation/early: VERIFIED_RECOVERABLE
+validation-1  | priority-escalation/late: VERIFIED_UNRECOVERABLE
+validation-1  | priority-escalation/conflict: CONFLICT
+validation-1  | priority-escalation/harmless: VERIFIED_RECOVERABLE
+validation-1  | priority-escalation/unknown: UNKNOWN
+validation-1  | priority-escalation/censored: CENSORED
+validation-1  | priority-escalation/false_success: PARTIAL
+validation-1  | priority-escalation/preservation: VERIFIED_RECOVERABLE
+validation-1  | status-summary/early: VERIFIED_RECOVERABLE
+validation-1  | status-summary/late: VERIFIED_UNRECOVERABLE
+validation-1  | status-summary/conflict: CONFLICT
+validation-1  | status-summary/harmless: VERIFIED_RECOVERABLE
+validation-1  | status-summary/unknown: UNKNOWN
+validation-1  | status-summary/censored: CENSORED
+validation-1  | status-summary/false_success: PARTIAL
+validation-1  | status-summary/preservation: VERIFIED_RECOVERABLE
+[Kvalidation-1 exited with code 0
+ Compose Stopping Aborting on container exit...
+ Container ac-validation-1794967031-11366-validation-1 Stopping 
+ Container ac-validation-1794967031-11366-validation-1 Stopped 
+ Container ac-validation-1794967031-11366-db-1 Stopping 
+db-1          | 2026-11-18 01:59:26.212 UTC [1] LOG:  received fast shutdown request
+db-1          | 2026-11-18 01:59:26.213 UTC [1] LOG:  aborting any active transactions
+db-1          | 2026-11-18 01:59:26.217 UTC [1] LOG:  background worker "logical replication launcher" (PID 74) exited with exit code 1
+db-1          | 2026-11-18 01:59:26.220 UTC [69] LOG:  shutting down
+db-1          | 2026-11-18 01:59:26.221 UTC [69] LOG:  checkpoint starting: shutdown immediate
+db-1          | 2026-11-18 01:59:26.302 UTC [69] LOG:  checkpoint complete: wrote 1215 buffers (7.4%); 0 WAL file(s) added, 0 removed, 2 recycled; write=0.023 s, sync=0.034 s, total=0.081 s; sync files=6418, longest=0.001 s, average=0.001 s; distance=37737 kB, estimate=37737 kB; lsn=0/3DEFD90, redo lsn=0/3DEFD90
+db-1          | 2026-11-18 01:59:26.309 UTC [1] LOG:  database system is shut down
+ Container ac-validation-1794967031-11366-db-1 Stopped 
+[Kdb-1 exited with code 0
