@@ -1,0 +1,9 @@
+.git
+.bootstrap
+.venv
+**/node_modules
+**/dist
+artifacts
+__pycache__
+.env
+**/.DS_Store

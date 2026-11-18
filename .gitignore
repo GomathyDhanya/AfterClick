@@ -1,0 +1,16 @@
+.venv/
+.bootstrap/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+.env
+node_modules/
+dist/
+artifacts/*
+!artifacts/.gitkeep
+test-results/
+*.egg-info/
+.DS_Store
+*.tsbuildinfo

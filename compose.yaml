@@ -1,0 +1,32 @@
+services:
+  db:
+    image: postgres:17.7
+    environment:
+      POSTGRES_USER: afterclick
+      POSTGRES_PASSWORD: afterclick_local
+      POSTGRES_DB: afterclick
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["postgres-data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U afterclick"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://afterclick:afterclick_local@db:5432/afterclick
+      AUTO_TICK: "true"
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      db: {condition: service_healthy}
+  web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+    ports: ["127.0.0.1:5173:80"]
+    depends_on: [api]
+volumes:
+  postgres-data:

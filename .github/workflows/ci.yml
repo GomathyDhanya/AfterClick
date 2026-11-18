@@ -1,0 +1,40 @@
+name: Validate AfterClick
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17.7
+        env:
+          POSTGRES_USER: afterclick
+          POSTGRES_PASSWORD: afterclick_local
+          POSTGRES_DB: afterclick
+        ports: ["55432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U afterclick"
+          --health-interval 2s --health-timeout 3s --health-retries 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.13.9"
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: apps/flowboard-web/package-lock.json
+      - run: uv sync --frozen
+      - run: npm ci --prefix apps/flowboard-web
+      - run: npm run build --prefix apps/flowboard-web
+      - run: uv run playwright install --with-deps chromium
+      - run: uv run ruff check afterclick tests migrations
+      - run: uv run ruff format --check afterclick tests migrations
+      - run: uv run pytest -q --junitxml=artifacts/tests.xml
+      - run: uv run python -m afterclick.replay.demo --output artifacts/demo
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-evidence
+          path: artifacts/
