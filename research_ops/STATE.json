@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "utc_updated": "2026-11-23T17:50:00.462380+00:00",
+  "utc_updated": "2026-11-23T17:52:33.091975+00:00",
   "phase": "P10",
   "state": "BOUNDED_STUDY_COMPLETE",
   "current_gate": "PASS_BOUNDED_ARTIFACT; NOVELTY_INCONCLUSIVE",
@@ -21,8 +21,8 @@
   ],
   "source_execution_head": "1fa4f02610a4e556b84a3984dc1e650b2b78cca7",
   "source_execution_dirty": true,
-  "source_checkpoint_commit": null,
-  "last_good_commit": "1fa4f02610a4e556b84a3984dc1e650b2b78cca7",
+  "source_checkpoint_commit": "b74ae683e7fb995b50fc9240257e970deda6baf1",
+  "last_good_commit": "b74ae683e7fb995b50fc9240257e970deda6baf1",
   "latest_full_suite_passed": 239,
   "latest_full_suite_seconds": 172.43,
   "latest_full_suite_warnings": 1,
@@ -72,5 +72,10 @@
   "next_command": ".venv/bin/python research_ops/scripts/verify_evidence.py",
   "reproduce_command": ".venv/bin/python research_ops/scripts/render_research.py --output /tmp/afterclick-review-20261123",
   "local_database": "local Compose test db remains; isolated ac_* schemas; no ordinary FlowBoard reset",
-  "session_handoff": "research_ops/SESSION_HANDOFF.md"
+  "session_handoff": "research_ops/SESSION_HANDOFF.md",
+  "working_tree_scientific_source_committed": true,
+  "sealed_run_count": 24,
+  "verified_checksum_paths": 1899,
+  "archive": "artifacts/afterclick-research-20261123.tar.gz",
+  "archive_digest_reference": "artifacts/afterclick-research-20261123.tar.gz.sha256"
 }

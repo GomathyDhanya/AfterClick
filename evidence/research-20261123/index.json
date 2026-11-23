@@ -3,7 +3,7 @@
   "utc": "2026-11-23T17:50:00.462380+00:00",
   "execution_head": "1fa4f02610a4e556b84a3984dc1e650b2b78cca7",
   "execution_dirty": true,
-  "source_checkpoint_commit": "see research_ops/STATE.json",
+  "source_checkpoint_commit": "b74ae683e7fb995b50fc9240257e970deda6baf1",
   "archive": "artifacts/afterclick-research-20261123.tar.gz",
   "archive_sha256": "see adjacent .sha256 file",
   "paper": "paper/PAPER.md",
@@ -39,5 +39,6 @@
   "frozen_science": "artifacts/research_runs/p6-risk-study-v1/FROZEN.json",
   "financial_record": "artifacts/research_runs/p10-synthesis-v1/raw/final-financial-reconciliation.json",
   "verification_report": "artifacts/final-evidence-verification.json",
-  "verified_checksum_paths": 1899
+  "verified_checksum_paths": 1899,
+  "source_execution_commit": "1fa4f02610a4e556b84a3984dc1e650b2b78cca7"
 }

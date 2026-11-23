@@ -2,7 +2,7 @@
   "schema_version": 1,
   "utc": "2026-11-23T17:50:00.462380+00:00",
   "source_execution_head": "1fa4f02610a4e556b84a3984dc1e650b2b78cca7",
-  "source_checkpoint_commit": null,
+  "source_checkpoint_commit": "b74ae683e7fb995b50fc9240257e970deda6baf1",
   "features": [
     {
       "feature": "PostgreSQL/scheduler/browser foundation",

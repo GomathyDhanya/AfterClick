@@ -5,8 +5,8 @@ research complete=false. No extra model tuning, paid calls, background job or pu
 Read paper/PAPER.md and paper/REPRODUCE.md. Claims and limitations are in CLAIM_REGISTER.md.
 
 Scientific execution used dirty HEAD 1fa4f02610a4e556b84a3984dc1e650b2b78cca7. FROZEN.json hashes
-60 scientific paths plus147 data/model/protocol files; all207 match. A later local source checkpoint
-will be recorded in STATE.json; do not call it the execution revision. Earlier user-owned adaptive
+60 scientific paths plus147 data/model/protocol files; all207 match. Local source checkpoint
+b74ae683e7fb995b50fc9240257e970deda6baf1 is recorded in STATE.json; do not call it the execution revision. Earlier user-owned adaptive
 work is preserved and may be included in that verified source checkpoint.
 
 Implemented: strict Modal decisions/budget watchdog, hybrid visible Retry save arm, independent fake
@@ -56,3 +56,7 @@ Resume local reproduction plan (dry run):
 Add --execute only to repeat local phases; continues after completed phases, preserves/refuses interrupted
 replicas. Full six-phase orchestration was not run redundantly. Source/evidence are local only; no push,
 publication or new external communication. User zip and legacy modal_smoke.py remain preserved separately.
+
+Local handoff package: artifacts/afterclick-research-20261123.tar.gz, adjacent .sha256.
+24 run seals/1,899 checks pass; source commit above includes validated earlier adaptive foundations.
+Only the preexisting user zip and legacy research_ops/scripts/modal_smoke.py are intentionally untracked.

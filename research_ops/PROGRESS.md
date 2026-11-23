@@ -217,3 +217,19 @@ Next: independent workload-distribution replication, not further current-holdout
 ## 2026-11-23T17:50:00.462380+00:00 — final checkpoint
 
 Packaging fixed research dependency selection in check.sh, CI and validation image. Validation: bash syntax and uv frozen dry-run (49 packages, no changes). No Linux CI/container rebuild claimed. Verification scans found only HTML anchor false positives, no credential patterns. Final audit and source checkpoint continue below.
+
+
+## 2026-11-23T17:52:33.091975+00:00 — local source checkpoint and package
+
+Local source checkpoint b74ae683e7fb995b50fc9240257e970deda6baf1 on codex/temporal-recovery-study-20261123 includes the
+verified current source and prior uncommitted adaptive foundations. No push. Scientific execution
+remains the earlier dirty HEAD with authoritative frozen hashes.24 run seals/1,899 checks pass.
+The generated SVG path whitespace and standard CSV CRLF are preserved byte-for-byte to match
+archived outputs; non-generated whitespace check passes. git add initially reported ignored lock;
+retry excluded it. No evidence/scientific result changed.
+Package command: local tar.gz of Git-tracked source at the final metadata commit plus all24 sealed
+research_runs and checksum verification report. Archive creation/extraction digest check is recorded
+in artifacts/package-provenance.json; no public release. Repro command:
+.venv/bin/python research_ops/scripts/verify_evidence.py
+Resume dry run:
+.venv/bin/python research_ops/scripts/reproduce_research.py --replica review-20261123 --max-cycles 3 --max-wall-minutes 45 --paid-mode disabled
