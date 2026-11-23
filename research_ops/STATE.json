@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "utc_updated": "2026-11-23T20:10:38.995243+00:00",
+  "utc_updated": "2026-11-23T20:12:33.299719+00:00",
   "phase": "P10_OBSERVABILITY_EXTENSION",
   "state": "BOUNDED_EXTENSION_COMPLETE",
   "current_gate": "PASS_ARTIFACT; H4_NOT_SUPPORTED; H5_CONTRACT_SUPPORTED; NOVELTY_INCONCLUSIVE",
@@ -22,8 +22,8 @@
   ],
   "source_execution_head": "2d578386c1d963e32ff2c21b4603374a09c9e5e3",
   "source_execution_dirty": true,
-  "source_checkpoint_commit": null,
-  "last_good_commit": "b74ae683e7fb995b50fc9240257e970deda6baf1",
+  "source_checkpoint_commit": "0ab532670ccbfd376fd9b8480895c715e55b4bf6",
+  "last_good_commit": "0ab532670ccbfd376fd9b8480895c715e55b4bf6",
   "latest_full_suite_passed": 260,
   "latest_full_suite_seconds": 179.0,
   "latest_full_suite_warnings": 1,

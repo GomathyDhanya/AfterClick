@@ -3,7 +3,7 @@
   "utc": "2026-11-23T20:10:38.995243+00:00",
   "execution_head": "2d578386c1d963e32ff2c21b4603374a09c9e5e3",
   "execution_dirty": true,
-  "source_checkpoint_commit": null,
+  "source_checkpoint_commit": "0ab532670ccbfd376fd9b8480895c715e55b4bf6",
   "original_study_index": "evidence/research-20261123/index.json",
   "new_run_seals": {
     "i0-native-offline-v1": "0d941feea94302e07ba70b0af965b4de894d358cc7a41e7ee2946654df69dcf4",

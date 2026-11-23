@@ -37,7 +37,7 @@ or real-agent generalization. No endpoint deployment, push, publication or data 
 
 Currentgate: PASS bounded extension; H4 general learned increment unsupported, H5 conditionalrace supported,
 publication novelty INCONCLUSIVE. Both original and new finalsets opened once; never tune either.
-Execution HEAD 2d578386c1d963e32ff2c21b4603374a09c9e5e3 dirty; sourcecheckpoint commit is recorded later in STATE.json. Core/new scientific
+Execution HEAD 2d578386c1d963e32ff2c21b4603374a09c9e5e3 dirty; sourcecheckpoint 0ab532670ccbfd376fd9b8480895c715e55b4bf6 is recorded in STATE.json. Core/new scientific
 source and models are frozen; only reporting/helper scripts changed after final. Prior sourcecheckpoint
 b74ae68 and finalmetadata2d57838 preserve the original study. Earlier untracked userzip and legacy
 research_ops/scripts/modal_smoke.py stay untouched/excluded from sourcecommit.
@@ -70,3 +70,5 @@ Lastcommand is dryrun; add--execute for bounded knownprotocol reproduction, not 
 A fullactual2phase repeatobs-check-20261123 matchedallnumericmetrics exceptelapsedtime.
 Preferrednext: independent contract/implementation audit, fallback externally measured enforcement
 capability/workload with a newly frozen finalset. No further fit/sweep justified on these data.
+
+Local sourcecheckpoint 0ab532670ccbfd376fd9b8480895c715e55b4bf6 contains all verified newsource and papers. Finalmetadata commit may follow; neither is claimed as the earlier dirty executionrevision.32runseals/2537checks pass. Local handoff archive: artifacts/afterclick-observability-20261123.tar.gz with adjacent.sha256.

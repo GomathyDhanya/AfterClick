@@ -291,3 +291,7 @@ Commands: .venv/bin/pytest -q --junitxml=artifacts/research_runs/o1-observabilit
 
 ## 2026-11-23T20:10:38.995243+00:00 — sealed extension checkpoint
 32 run directories sealed;2,537 checksum checks pass, including both old207/new132 frozen paths and all delivered figures/tables. Supplemental reproduction helpers now accept fresh --output destinations; default scientific logic unchanged, CLI help checked. No further scientific model changes or fits. Local source checkpoint/package next; no push/publication. Verify: .venv/bin/python research_ops/scripts/verify_observability.py. Resume plan: .venv/bin/python research_ops/scripts/reproduce_observability.py --replica obs-review --max-cycles 2 --max-wall-minutes 15 --paid-mode disabled.
+
+
+## 2026-11-23T20:12:33.299719+00:00 — local source checkpoint
+Committed 0ab532670ccbfd376fd9b8480895c715e55b4bf6 on codex/temporal-recovery-study-20261123; no push/publicrelease. Numericalexecution used earlierdirtyHEAD2d57838 and the authoritative source/model hashes; checkpointcommit is later. Full local package command includes finalGit-tracked source,32sealedrun directories and knownprotocolreplica. Provenance/digest/extraction verification is recorded beside the archive. Two preexisting untracked userfiles remain untouched.
