@@ -1,20 +1,7 @@
-# Preferred next evidence: independent contract and implementation audit
+Preferred next experiment: **offline draft-versus-commit contract discrimination**, not another COPE evaluation.
 
-Both bounded studies and the new format comparison are complete. No paid work is queued.
+Prediction: accurate tool feedback that distinguishes local comment drafts from persisted comments can expose premature completion without supplying private task goals. Compare current public tool-result semantics with explicit draft-only results on fixed mock conversations and real PostgreSQL/Chromium; also retain ordinary description autosave and deliberate empty-draft negative controls. This separates tool-contract ambiguity from a broken submission backend. Do not infer live-model improvement from mocks.
 
-Preferred: an independently authored local replay checks the revocation/child/access/receipt contract
-and whether static preflight cues/inspection timing are available before a real control decision.
-Falsifier: a supported operation revokes the supposed nonrevocable child, a prefix mismatch changes
-outcomes, or late features contaminate prediction. If found, narrow/invalidate corresponding claims;
-do not silently rewrite archived runs. $0Modal, finite32case first audit, no new model selection.
+Resources/gate: $0 Modal; fresh finite isolated ac_* schemas, no old holdout, no model tuning or new provider. Stop after one bounded offline check. A later live competence test requires a separately versioned preregistration and new task groups; standing financial authority remains but the scientific competence gate is closed. No paid work queued.
 
-Fallback: design a new external fake-service workload with a trusted revocation-status handle and
-measured inspection latency, freeze it before any comparison. Do not tune either opened final set.
-A positive learned-controller claim would require a meaningful held-out harm reduction against
-strongest simple/model-based references at matched clean-task utility and intervention cost.
-No larger LLM or additional endpoint is justified by current evidence. Standing budget remains idle;
-no new authorization for deployment, paid provider, public release or out-of-pocket expenditure.
-
-Review: paper/OBSERVABILITY_PAPER.md and research_ops/SESSION_HANDOFF.md.
-Verify: .venv/bin/python research_ops/scripts/verify_observability.py
-Known-protocol reproduction plan: .venv/bin/python research_ops/scripts/reproduce_observability.py --replica obs-review --max-cycles 2 --max-wall-minutes 15 --paid-mode disabled
+Fallback: conclude the current candidate lacks evidence for advancement. Do not expand synthetic mechanism/search/model matrices or claim COPE superiority/novelty.

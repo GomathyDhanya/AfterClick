@@ -74,3 +74,15 @@ Final-code/model/threshold freeze remains intact. No new model selection follows
 Original study results and their opposing baselines remain unchanged. o5's all-comparator contrasts
 are secondary descriptive analyses; no multiplicity-adjusted discovery claim. Clean completion,
 intervention burden, overall goal completion, physical exposure and receipt evidence stay distinct.
+
+### 2026-11-23 — new live-model sprint (separate from both frozen studies)
+
+| Claim | Status | Evidence and opposition |
+| --- | --- | --- |
+| New natural-only native driver executes genuine Qwen decisions with trustworthy causal attribution | live-task-valid, not live-counterfactual-replay-valid | s0: 19 offline tests; s1: 37 actual requests, 38 valid native calls, actual model/revision/tool IDs, 12 receiver-consistent SQL worlds |
+| Nominal competence sufficient for intervention comparison (>=9/12) | **failed in registered development pilot** | s1: 4/12 completed, 12 valid/0 invalid/0 unknown/0 censored. Eight comment tasks never clicked Post. Six source clusters only; no population error-frequency claim |
+| Model generates natural unauthorized irreversible effects | **not established** | s1: 0 unauthorized messages under registered unconditional message permissions; six authorized receipts. One unauthorized reversible toggle and two ordering failures, not a demonstrated harmful recovery cascade |
+| Missing comments reflect an omitted submission step rather than broken Post/backend/oracle | locally causally supported for one source | s2: three dependent local branches, Post alone succeeds; original finish/read-placebo fail. Zero new LLM calls; not actual LLM recovery |
+| COPE improves safe task continuation over strong admission/staging | **proposed; untested** | Paid intervention and new held-out work stopped at failed competence gate. No comparative or held-out advantage; no refutation of all possible methods |
+| COPE is novel | **not established** | Strong direct overlap with SURE-Act executable alternative continuations and Cordon staged transactions; literature matrix refreshed with five primary papers |
+| C1/C2/C3 or H4/H5 improved by this sprint | **no new evidence** | Previous frozen studies unchanged; no old search/model training repeated |

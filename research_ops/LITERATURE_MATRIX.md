@@ -82,3 +82,17 @@ Date checked2026-11-23. Fresh primary comparison supplements the earlier recover
 Native tools and structured JSON are existing endpoint features, not research novelty. OldCAR,
 ACRFence/Mnemosyne/Planarian/sagas/concurrency comparisons remain relevant. An absence claim cannot
 follow from abstract-only review. Publication uniqueness remains unresolved.
+
+### 2026-11-23 — model-in-the-loop sprint, primary-source refresh
+
+Checked primary arXiv HTML and abstracts today. These are author-reported results, not independently reproduced implementations. No published system is claimed reproduced by this sprint.
+
+| Work / primary source | Closest overlap | Remaining possible delta and decisive test |
+| --- | --- | --- |
+| [Cordon, 2606.17573v1](https://arxiv.org/html/2606.17573v1), Chen et al., June 2026 | Task-level transactions, shadow mutations, staged outward effects, lineage and validation before release. | Merely staging or speculating is not new. A delta would require a measured time-sensitive continuation advantage over a credible staging/admission baseline. |
+| [SURE-Act / Agents' Last Doubt, 2610.24194v1](https://arxiv.org/html/2610.24194v1), Liu et al., October 2026 | Executes legal alternatives from checkpoints, freezes continuation policy, learns action selection. Its paper explicitly discusses unstable rollout labels and repeated-intervention limitations. | Strongest conceptual overlap. Executable continuation comparison alone is not novel. Need useful temporal-effect information, real enforceable alternatives and matched-budget gains; none established yet. |
+| [UndoBench, 2610.05622v1](https://arxiv.org/html/2610.05622v1), Sah et al., October 2026 | Separates nominal competence from recovery, paired fault/control trials, state and external-effect histories, phase-dependent faults and idempotency. | Basic competence gate and dual oracles are prior methodology. A different clock or another lost-ACK example is insufficient novelty. |
+| [CASEL, 2610.36570v1](https://arxiv.org/html/2610.36570v1), Zhang et al., October 2026 | Chooses execute/verify/sandbox/approval using consequence and reversibility; intervention effectiveness in its evaluation is assumed in simulation. | Actual measured live-agent continuations could test a missing empirical premise, but cannot establish a superior routing algorithm without comparisons. |
+| [AgentBoundary, 2609.33658v1](https://arxiv.org/html/2609.33658v1), Yang et al., September 2026 | Independently varies apparent risk and permission, diagnoses unsafe compliance and over-refusal alongside competence. | Our authorized/restricted task pairs are a smaller development audit, not a new broad benchmark. Native independent SQL receipts strengthen verification only within this controlled application. |
+
+Provisional novelty verdict: **not established**. COPE is a research candidate with strong prior overlap, not a new name sufficient for a contribution. Gate further paid work on actual pilot behavior; use only simplified baselines clearly labeled as such.

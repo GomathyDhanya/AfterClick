@@ -1,76 +1,34 @@
-# Session handoff — native format and independent observability study
+# AfterClick model-in-the-loop sprint handoff
 
-Native tools are provisionally selected for the new experimental browser driver: same failed
-Description+Priority task, native2requests/4725tokens/PASS/no repetitions; JSON3requests/3302tokens/
-two repeated satisfied proposals/FAIL. All5responses schema-valid; no executed repeated mutation.
-N=1 per format, fixed order, no population reliability or native12-branch replay claim.
-Original JSON and frozen replay/results remain unchanged. Deployed OpenAPI does not declare
-reasoning.enabled, so it is omitted; established enable_thinking:false is retained in both modes.
+## Current phase and decision
+MODEL_IN_LOOP_SPRINT / **FAIL nominal competence**. Recommendation **PIVOT**. Bounded development cycle closed; overall research contribution is not complete. Do not run paid recovery/COPE comparisons or open a new holdout on this failed nominal baseline. No approval is pending, and no paid work is queued. Standing $20 additional authorization is further constrained by this sprint's $6 ceiling and $8 protected reserve.
 
-New independent queued-dispatch study complete:5120 finite querypanels/10240 potential-world label
-calculations;40UNKNOWN/40CENSORED synthetic masks retained.16development SQL worlds.1536 locked
-source clusters in3cohorts,24SQLplan worlds in6clusters, plus118adjacent SQL endpoint worlds
-(59timing profiles/two paths). All158scientific SQLworlds valid; these are purposive checks, not158
-independent source cases or real-world agents.6SQLengineering tests/150propertyexamples separate.
-Coverage again beats local frontier; systematic slightly beats coverage on pull. All selected
-predictors are a simple observable heuristic. Preselected trained boundary-minus-randomCF heldout
-verification Brier+0.03977171 CI[0.02822190,0.05071819] (worse). H4 has no general incremental safety
-advantage. Mean+SD control has more harm but better clean utility than observable rule; limited
-secondary gains over alwaysverify do not beat the stronger declared-law reference on pull.
-H5's exact race identity holds1536/1536: delayed verification adds risk when age<F<=age+D. Fractions
-0.1796875ID/0.333984375shift/0.173828125pull. FrontierF can precede physical readT and receiptA.
+## Evidence and scope
+- s0-natural-driver-offline-v1: 19 offline checks, including real PostgreSQL/Chromium mock worlds, goal/hidden-feature rejection, native tool ID correlation, provenance, premature finish without oracle correction, receipt corruption detection and sprint cap. $0.
+- s1-natural-qwen-pilot-v1: 12 tasks / six paired development sources; 12 valid, 0 invalid, 0 unknown, 0 censored; **4/12 complete**, below registered >=9/12. 37 actual endpoint generations, 38 valid native calls, 73,282 input + 2,039 output tokens. All eight comment tasks filled but did not Post. One also toggled Review off and falsely claimed completion. Four noncomment tasks succeeded. Six receiver/event-verified synthetic notices, all before agent stop. Zero unauthorized messages under unconditional registered permissions; two task-order violations and one unauthorized reversible write. No posthoc harm relabeling.
+- s2-comment-commit-diagnostic-v1: first failed source, three fresh local replay branches, all valid/uncensored: original finish=False, read placebo=False, scripted Post=True. Zero new model calls. This supports missing commit action, not live recovery performance.
+- All 36 seals / 2,766 checksum paths and both prior freezes verified, no mismatches. New descriptive analysis regenerates exactly.
 
-Context-matched post-confirmation DEVELOPMENT-only ablation:2048panels/4096label calculations;
-16UNKNOWN/16CENSORED masks, no final access or predictor replacement. Effects depend on model and
-query selection, so context diversity alone does not explain all failure. No tuning rescue.
+No paid live counterfactual continuation comparison, comparative controller, held-out evaluation or COPE efficacy/novelty claim was produced. Checkpoints are archived but do not certify live replay reconstruction. The simplified local scripted Post repair is not Cordon/SURE-Act or an actual LLM continuation. RQ1 has only a narrow descriptive answer; RQ2/RQ3 unmeasured; RQ4 has no established harmful recovery cascade. Strong prior overlap documented in LITERATURE_MATRIX.md and paper.
 
-260fulltests pass179.00s/one upstreamwarning;97source/test/migration files formatted; Ruff passes.
-A fresh bounded2phase reproduction completed and all numerical metrics matched exceptelapsedtime.
-This duplicate uses known seeds/laws and is NOT new confirmation. Original p6 freeze207paths and
-new o1 freeze132paths remain intact. Native context-budget failure, trace-order test failure and
-checkpoint-only stdout-hash repair are retained; no models refitted during checkpoint repair.
+## Source and files
+Executed HEAD: 86a2731dc81d3f6b2f18a4e6bddbe5e27f3e691e plus uncommitted additive source hashes in s1/protocol.json; later commits are reproducibility checkpoints, not the executed revision. New code: afterclick/model_sprint/, tests/model_sprint/, research_ops/scripts/live_sprint.py, analyze_live_sprint.py, reproduce_model_sprint.py. Report: paper/MODEL_IN_LOOP_PILOT.md. Guide: research_ops/MODEL_SPRINT_REPRODUCIBILITY.md. Legacy scientific files and both frozen studies untouched. Existing user-owned untracked AfterClick_Research_Execution_Kit.zip and research_ops/scripts/modal_smoke.py preserved/excluded from our changes.
 
-Paper: paper/OBSERVABILITY_PAPER.md (original paper/PAPER.md retained). Six newfigures/eighttables
-regenerate fromsaveddata. Strongestsupportedcontribution: temporalobservabilitybenchmark and
-negative acquisition/control evidence. Publication novelty INCONCLUSIVE; no new optimalalgorithm
-or real-agent generalization. No endpoint deployment, push, publication or data release.
+## Finance and resource state
+Existing endpoint ep-NtuMALXsRWKk5JLfZk4BOF, API model AfterClick, actual Qwen/Qwen3.5-4B revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a. Existing public synthetic-use permission retained; no new endpoint/auth setup/provider/token API/fine-tuning. Min0/max1/buffer0/idle2 restored and zero containers verified; endpoint preserved, not permanently stopped.
 
-Currentgate: PASS bounded extension; H4 general learned increment unsupported, H5 conditionalrace supported,
-publication novelty INCONCLUSIVE. Both original and new finalsets opened once; never tune either.
-Execution HEAD 2d578386c1d963e32ff2c21b4603374a09c9e5e3 dirty; sourcecheckpoint 0ab532670ccbfd376fd9b8480895c715e55b4bf6 is recorded in STATE.json. Core/new scientific
-source and models are frozen; only reporting/helper scripts changed after final. Prior sourcecheckpoint
-b74ae68 and finalmetadata2d57838 preserve the original study. Earlier untracked userzip and legacy
-research_ops/scripts/modal_smoke.py stay untouched/excluded from sourcecommit.
+Pilot cap $1.20; approximately $0.35000157 reported account delta, conservative ledger guard $0.3961924467537401, 248.895 seconds including cold start and cleanup. Isolated invoice unknown, delayed billing approximate. Sprint envelope remaining $5.60380755324626; unused allowance is not a reason to run more experiments. Provider UI credit reported $27.06 after run; standing-ledger conservative guard projection about $26.67. Cash billed $0; workspace usage cap $4, effective default cash spend limit $0 (no custom saved limit). Project ledger active=null, unresolved_request=false. One expired preflight cost $0 and is preserved. Fresh provider checks required before any new paid run.
 
-Spending: one new approved-standing pair max0.60 used0.324501809guard/~0.25accountdelta. Standing
-cumulative1.044504679; exact project invoicesunknown. Conservativeaccountbalance27.39; later dashboard
-reports can move both ways. Guardprojection27.0655; reserve8 protected. Workspacecap3.5/defaultnet0;
-only endpoint ep-NtuMALXsRWKk5JLfZk4BOF touched, remainsmin0/max1/buffer0/idle2/zero containers.
-No paidprocess, furtherinference or deploymentpending. All subsequent scientific phases0Modal.
+## Next step and reproduction
+Exactly one preferred experiment: local-only draft-versus-commit tool-contract discrimination, detailed in NEXT_EXPERIMENT.md. Do not tune against final outcomes or repeat old synthetic search/prediction sweeps. A later natural live competence arm must be separately versioned/preregistered with independent task groups and preserve this negative arm. Recovery inference remains gated until competence is established.
 
-Newstudycounts: primary5120finitepanels/10240labels-worldcalculations;1536locked sources/3cohorts;
-158SQLscientificworlds=16dev+24confirmation+118frontier endpoints, not158independentsourceclusters.
-Search6144queries eachdev/final. o4additional2048development-onlypanels/4096potentialworldcalculations.
-Synthetic masks40+40(primary) and16+16(ablation) are pipelineprobes, not missingnessrates. Allruntime
-features are staticpreflight signals plus configureddecisiondelay/prospectivehorizon; no dynamicfilter
-beforeperfectinspectionreply. o5 raw all-comparatoranalysis is descriptive/multiplecomparisonuncorrected.
-The exact race uses preventionfrontierF, not physicalaccessT when a nonrevocable childexists.
+Last meaningful check:
+`.venv/bin/python -m pytest tests/model_sprint tests/agent/test_native_tools.py tests/agent/test_finance_supervisor.py -q` → 19 passed, one existing warning, 12.40s. Ruff passed.
 
-Failurespreserved: initialnativecontextoverflow; concurrent-note trace-order assertion strengthened;
-checkpointstdout hash repaired withoutrefit (freeze/mainASTonly), finalopenedafterallhashespass.
-No false claim of research-complete/generalnovelty. ExistingJSONbaseline andold12branch hybridcase
-remain; nativeformatonlylive-task-valid. Newdefaultdriver selected_browser_policy.py doesnotbypass
-constructorapproval/transportchecks. No automaticfallback or mixedtools/schema.
+Read-only resume:
+`.venv/bin/python research_ops/scripts/reproduce_model_sprint.py --output artifacts/model-sprint-review-NEW`
 
-Repro/verify:
-.venv/bin/python research_ops/scripts/verify_observability.py
-.venv/bin/python research_ops/scripts/render_observability.py --output /tmp/afterclick-observability-review
-.venv/bin/python research_ops/scripts/reproduce_observability.py --replica obs-review --max-cycles 2 --max-wall-minutes 15 --paid-mode disabled
-Lastcommand is dryrun; add--execute for bounded knownprotocol reproduction, not newconfirmation.
-A fullactual2phase repeatobs-check-20261123 matchedallnumericmetrics exceptelapsedtime.
-Preferrednext: independent contract/implementation audit, fallback externally measured enforcement
-capability/workload with a newly frozen finalset. No further fit/sweep justified on these data.
+Use a fresh output name. Default performs zero model requests, checks seals and regenerates analysis. Optional `--diagnostic-replica s2-replica-UNIQUE_NAME` creates and seals a fresh local-only recorded/scripted diagnostic; it is not new live agent evidence. Never reuse a closed paid run/approval/journal or sealed raw directories.
 
-Local sourcecheckpoint 0ab532670ccbfd376fd9b8480895c715e55b4bf6 contains all verified newsource and papers. Finalmetadata commit may follow; neither is claimed as the earlier dirty executionrevision.32runseals/2537checks pass. Local handoff archive: artifacts/afterclick-observability-20261123.tar.gz with adjacent.sha256.
-
-Reporting scope clarification: "ordinary" data are generic one-panel-per-source synthetic counterfactual controls, not natural agent trajectories. Runtime selects ordinary-data hazard because boundary models failed development selection; this does not reject every boundary-based controller. Capability primitive overlaps original delegated authority; new workload/observability/control contract is the delta, not invention of that primitive. No numeric results, models, thresholds or scientific source changed.
+## Final reproduction check
+The fresh local `s2-replica-check-20261123` exactly reproduced all three branch outcomes. It adds no independent source and no new model calls; not included in primary pilot denominators. Read-only analysis regeneration also matched every sealed metric. Bundle: artifacts/afterclick-model-sprint-20261123.tar.gz with adjacent SHA-256.

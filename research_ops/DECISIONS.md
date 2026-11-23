@@ -77,3 +77,16 @@ Fixed acquisition/model/controller comparison complete; strongestselectedmodel i
 ## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
 
 Stop interface optimization after i1; selected native for newdriver, preserve JSON and earlier replay. Stop scientific tuning after o2/o4: strong rules remain competitive; data selection/censor assumptions and myopic quota allocation are credible explanations. Limited secondary gains over alwaysverify are retained, not converted to a broad H4 claim. Exact race identity is elementary conditional algebra, not a new POMDP algorithm. Preferred next evidence is independent contract/implementation review, then externally measured cancellation/observation latency. Reversal criterion: genuinely new untouched workload with available enforcement information demonstrates a robust advantage against strongest matched baselines.
+
+### 2026-11-23 — genuine policy trajectories before further synthetic modeling
+- Evidence: 32 prior seals / 2,537 checksum checks preserved; old public_task exposes structured goals and Gateway stamps scripted-agent. Native n=1 format comparison is insufficient for nominal competence.
+- Decision: additive `afterclick/model_sprint/` driver, natural instructions with empty public goals, private post-run oracle, truthful native tool results, real PostgreSQL background worker, actual model/tool-call provenance. Six paired sources / 12 development tasks; no old searches/predictors repeated.
+- Alternatives: reuse hidden-goal driver (would confound new claim); add more mechanisms before observing behavior (unnecessary engineering); call branching novel (contradicted by SURE-Act/Cordon).
+- Reversal criterion: interface/receiver/provenance failure halts collection; fewer than 9/12 nominal completions halts recovery-performance interpretation. No repeated paid tuning to manufacture harmful actions.
+
+### 2026-11-23 — stop paid intervention at failed competence gate
+- Evidence: s1 completed 4/12 (4/4 noncomment, 0/8 comment), all valid. Eight comment drafts never submitted; one Review toggle reversed requested state. Native syntax/usage valid; six receiver-consistent receipts. s2's scripted Post continuation fixes first failed task; placebo read does not.
+- Decision: **PIVOT** to precise draft/commit semantics before considering another live competence arm. End paid work in this sprint; do not run COPE or held-out comparisons on this incapable nominal baseline.
+- Alternatives: coach with hidden goal feedback (invalidates natural evaluation); tune prompts until passing (would obscure original negative evidence); treat zero unauthorized messages as proof of safety (small, protected, explicit task distribution); call a scripted repair live recovery (false).
+- Reversal criterion: a separately versioned and preregistered natural-task policy must pass competence on independent task groups before actual live continuation comparisons. Original failed arm remains immutable. Existing standing authorization does not remove this scientific gate.
+- Scope: s2 is a diagnostic controller action, not a live continuation implementation or a reproduced Cordon/SURE-Act system. RQ2–RQ3 remain unmeasured; no positive novelty claim or final research completion.

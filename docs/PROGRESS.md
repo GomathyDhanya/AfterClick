@@ -357,3 +357,19 @@ or real-agent generalization. No endpoint deployment, push, publication or data 
 
 ## 2026-11-23T20:12:33.299719+00:00 — local source checkpoint
 Committed 0ab532670ccbfd376fd9b8480895c715e55b4bf6 on codex/temporal-recovery-study-20261123; no push/publicrelease. Numericalexecution used earlierdirtyHEAD2d57838 and the authoritative source/model hashes; checkpointcommit is later. Full local package command includes finalGit-tracked source,32sealedrun directories and knownprotocolreplica. Provenance/digest/extraction verification is recorded beside the archive. Two preexisting untracked userfiles remain untouched.
+
+### 2026-11-23T23:29:44.095583+00:00 — bounded real-agent sprint: competence gate failed
+
+Execution HEAD `86a2731dc81d3f6b2f18a4e6bddbe5e27f3e691e` plus protocol-hashed additive code; no old frozen code/results changed. Added `afterclick/model_sprint/{policy,tasks,gateway,driver,oracle,finance,records,diagnostic}.py`, `research_ops/scripts/{live_sprint,analyze_live_sprint,reproduce_model_sprint}.py` and `tests/model_sprint/test_driver.py`. Natural-only instructions, private post-run oracle, actual model/revision/tool ID provenance, real asynchronous local PostgreSQL worker.
+
+Runs: `s0-natural-driver-offline-v1` (19 relevant tests passed; $0), `s1-natural-qwen-pilot-v1` (12 attempts, 12 valid, 0 invalid/unknown/censored, 4 complete; 37 genuine Qwen requests / 38 valid tool calls / 75,321 tokens), `s2-comment-commit-diagnostic-v1` (3 valid local branches from one source; Post=True, finish/read=False; zero new model calls). Eight comment tasks never clicked Post; one also reversed Review. Six fake receipts cross-verified against immutable events, all before agent stop. Zero unauthorized messages under registered unconditional message permissions; two ordering failures and one unauthorized reversible write are separately retained. Do not relabel notices after results.
+
+Scientific decision **PIVOT**: failed >=9/12 competence gate; no paid COPE comparison or new held-out set. Live counterfactual reconstruction and method advantage remain unvalidated. Primary literature refresh finds substantial overlap; novelty not established. Additive report `paper/MODEL_IN_LOOP_PILOT.md`; reproduction guide `research_ops/MODEL_SPRINT_REPRODUCIBILITY.md`. Prior papers/results preserved.
+
+Resources: $1.20 reservation, ~$0.35000157 approximate reported account delta, $0.3961924467537401 conservative ledger guard; isolated invoice null. Sprint ceiling $6, reserve $8. Workspace usage cap $4, effective default cash limit $0. Existing endpoint restored min0/max1/buffer0/idle2; zero containers verified. No endpoint created/deleted/permanently stopped. One stale-control preflight rejected at $0, trace retained.
+
+Validation: 19 relevant tests passed again in 12.40s, Ruff passed; all 35 seals / 2,754 checks pass, both old freezes intact. New analysis regeneration equals sealed metrics exactly, no model requests.
+
+Repro check: `.venv/bin/python -m pytest tests/model_sprint tests/agent/test_native_tools.py tests/agent/test_finance_supervisor.py -q`. Resume read-only: `.venv/bin/python research_ops/scripts/reproduce_model_sprint.py --output artifacts/model-sprint-review-NEW`. Never reuse a closed paid run/journal or rerun into sealed raw paths. Preferred next experiment: bounded offline draft/commit semantics check; no paid work queued.
+
+2026-11-23T23:31:06.114991+00:00 — Fresh local reproduction `s2-replica-check-20261123` passed all three branch outcomes exactly, zero model requests; not a new independent source. Command: `.venv/bin/python research_ops/scripts/reproduce_model_sprint.py --output artifacts/model-sprint-review-replica-20261123 --diagnostic-replica s2-replica-check-20261123`. Final verification: 36 seals / 2766 checks, zero mismatches.

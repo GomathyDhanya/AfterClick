@@ -123,3 +123,9 @@ Read [research specification](docs/RESEARCH_SPEC.md), [architecture](docs/ARCHIT
 [progress](docs/PROGRESS.md), then inspect Git status. Preserve validated foundations. Both bounded studies are complete. Next evidence should come from independent contract review and
 a measured external workload; do not tune on either opened final set. Historical plans
 in the specification are proposals, not completed claims. See [current gates](docs/COMPLETION_GATES.md).
+
+## New real-agent development pilot (2026-11-23)
+
+A separate natural-task Qwen3.5-4B pilot completed **4/12 tasks** with 12 valid executions. All eight required-comment tasks left drafts unsubmitted. The preregistered competence gate failed, so paid option-preserving intervention and new held-out comparisons were not run. Both earlier frozen studies remain unchanged; no new novelty claim is supported.
+
+See [the additive pilot report](paper/MODEL_IN_LOOP_PILOT.md), [reproduction instructions](research_ops/MODEL_SPRINT_REPRODUCIBILITY.md) and [current handoff](research_ops/SESSION_HANDOFF.md).
