@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "utc_updated": "2026-11-23T23:31:06.108629+00:00",
+  "utc_updated": "2026-11-23T23:32:03.472965+00:00",
   "phase": "MODEL_IN_LOOP_SPRINT",
   "state": "BOUNDED_PILOT_CLOSED_AT_FAILED_COMPETENCE_GATE",
   "current_gate": "FAIL_NOMINAL_COMPETENCE; REPRODUCTION_PASS; COPE_UNTESTED; NOVELTY_NOT_ESTABLISHED",
@@ -25,8 +25,8 @@
   ],
   "source_execution_head": "86a2731dc81d3f6b2f18a4e6bddbe5e27f3e691e",
   "source_execution_dirty": true,
-  "source_checkpoint_commit": "0ab532670ccbfd376fd9b8480895c715e55b4bf6",
-  "last_good_commit": "0ab532670ccbfd376fd9b8480895c715e55b4bf6",
+  "source_checkpoint_commit": "b7b53805a2bf937c1964c7994f3813469f9d2645",
+  "last_good_commit": "b7b53805a2bf937c1964c7994f3813469f9d2645",
   "latest_full_suite_passed": 260,
   "latest_full_suite_seconds": 179.0,
   "latest_full_suite_warnings": 1,
@@ -79,7 +79,7 @@
   "reproduce_command": ".venv/bin/python -m pytest tests/model_sprint tests/agent/test_native_tools.py tests/agent/test_finance_supervisor.py -q",
   "local_database": "local Compose test db remains; isolated ac_* schemas; no ordinary FlowBoard reset",
   "session_handoff": "research_ops/SESSION_HANDOFF.md",
-  "working_tree_scientific_source_committed": false,
+  "working_tree_scientific_source_committed": true,
   "sealed_run_count": 36,
   "verified_checksum_paths": 2766,
   "archive": "artifacts/afterclick-model-sprint-20261123.tar.gz",
@@ -114,5 +114,6 @@
   "latest_relevant_suite_passed": 19,
   "latest_relevant_suite_seconds": 12.4,
   "sealed_verification_passed": true,
-  "reproduction_replica_run_id": "s2-replica-check-20261123"
+  "reproduction_replica_run_id": "s2-replica-check-20261123",
+  "new_sprint_source_checkpoint": "b7b53805a2bf937c1964c7994f3813469f9d2645"
 }
