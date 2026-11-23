@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "utc": "2026-11-23T17:50:00.462380+00:00",
+  "utc": "2026-11-23T20:06:10.697972+00:00",
   "source_execution_head": "1fa4f02610a4e556b84a3984dc1e650b2b78cca7",
-  "source_checkpoint_commit": "b74ae683e7fb995b50fc9240257e970deda6baf1",
+  "source_checkpoint_commit": null,
   "features": [
     {
       "feature": "PostgreSQL/scheduler/browser foundation",
@@ -148,6 +148,84 @@
         "p10-synthesis-v1"
       ],
       "limitations": "Dry-run/guard-tested orchestration only; no full redundant six-phase rerun",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": false,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Native function-calling driver",
+      "status": "tests-passed/live-task-valid",
+      "paths": {
+        "afterclick/extensions/native_tools.py": "7bf67b3e01e51062c56cd1f33439d49c2855db2dd71a08bc0132e7cee8b1474f",
+        "afterclick/extensions/interaction_trial.py": "cc15e2b62c7571338efa69a321e5d69d59e8063ad9b8f0dd3e986ac5014f90eb",
+        "research_ops/scripts/selected_browser_policy.py": "9b9c3efd59e76f20e4ce522c39ae2317e939614e59128725d8e5144cf8d439a7"
+      },
+      "run_ids": [
+        "i0-native-offline-v1",
+        "i1-format-pair-v1"
+      ],
+      "limitations": "n1task/mode; no native live-replay qualification",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": false,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Observability workload/oracle",
+      "status": "comparative-validated",
+      "paths": {
+        "afterclick/extensions/dispatch_world.py": "9d826536fd7061e6223f0a428ede72960191bdfcbd8efca4332df6731b993322",
+        "afterclick/extensions/dispatch_sql.py": "5010abc799d63b60f777d2ec0a7707dccf461374550aad282790ea08100df833",
+        "afterclick/extensions/dispatch_oracle.py": "87e085052f2ed97156d40c7a48cbae5ea58b43a569a4f53af88a7199f29d5ed2"
+      },
+      "run_ids": [
+        "o1-observability-development-v1",
+        "o2-observability-locked-v1",
+        "o3-frontier-certificate-audit-v1"
+      ],
+      "limitations": "synthetic logical clocks/static cues, perfectinspector; two causalpaths; not real-world agents",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": true,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Observability learning/controller",
+      "status": "held-out-validated",
+      "paths": {
+        "afterclick/extensions/dispatch_learning.py": "20904b79ff68e3921a979e225166c8ea867305c6cbb361319eb547d3fdd1c68e",
+        "afterclick/extensions/observability_study.py": "854ff87cc95a0b7b686da1e7b405cd3bcc87bd9e56def003347ba064dc6848d7"
+      },
+      "run_ids": [
+        "o1-observability-development-v1",
+        "o2-observability-locked-v1",
+        "o4-context-ablation-v1"
+      ],
+      "limitations": "execution validated, not incremental superiority; H4unsupported; developmentalablationonly",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": true,
+      "held_out_validated": true
+    },
+    {
+      "feature": "Two-phase bounded reproduction",
+      "status": "tests-passed",
+      "paths": {
+        "research_ops/scripts/reproduce_observability.py": "d84929e3b7cd91b704c670f6ed42166ce2297d99d1907b93ab8029349ecc7774"
+      },
+      "run_ids": [
+        "o5-observability-synthesis-v1"
+      ],
+      "limitations": "actual full two-phase knownprotocol reproduction; identicalnumerics, not independentconfirmation",
       "proposed": true,
       "coded": true,
       "tests_passed": true,

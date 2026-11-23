@@ -3,8 +3,8 @@
   "authorization_sha256": "5903482ad80688bff21adc1ce7ad8c85a800c6e2646a0d3db41dc2f70285af74",
   "baseline_credit_usd": 28.11,
   "baseline_metered_usd": 2.0047619,
-  "account_metered_highwater_usd": 2.63476524,
-  "account_additional_highwater_usd": 0.63000334,
+  "account_metered_highwater_usd": 2.7247669,
+  "account_additional_highwater_usd": 0.720005,
   "allowance_usd": 20,
   "active": null,
   "runs": [
@@ -30,6 +30,18 @@
       "guard_charge_usd": 0.3600011000000003,
       "idle_verified": true,
       "reported_account_delta_usd": 0.3600011000000003,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "i1-format-pair-v1",
+      "category": "p1c",
+      "reserved_usd": 0.6,
+      "metered_before_usd": 2.4747668,
+      "elapsed_seconds": 203.85769330799667,
+      "estimate_with_margin_usd": 0.32450180875040974,
+      "guard_charge_usd": 0.32450180875040974,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.2500001000000003,
       "actual_isolated_invoice_usd": null
     }
   ],

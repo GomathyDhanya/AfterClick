@@ -64,3 +64,21 @@ Whether its particular combination is a publishable research contribution remain
 
 
 Final source recheck 2026-11-23T17:51:12.114175+00:00: UndoBench full HTML (https://arxiv.org/html/2610.05622v1), CAR full HTML (https://arxiv.org/html/2606.08275v1), and SURE-Act primary abstract (https://arxiv.org/abs/2610.24194) remain available and support the recorded overlap. No claim of superiority or absence of their techniques follows from this review.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+Date checked2026-11-23. Fresh primary comparison supplements the earlier recovery/replay matrix.
+
+| Primary source | Reading depth / known overlap | Candidate delta and limit |
+| --- | --- | --- |
+| [Howard1966 Information Value Theory](https://ieeexplore.ieee.org/abstract/document/4082064/authors) | primary indexedabstract; directfetch blocked | jointly weighing information and consequences is established; do not claim VOI novelty |
+| [Kaelbling/Littman/Cassandra1998](https://www.cassandra.org/arc/papers/aij98.pdf), DOI10.1016/S0004-3702(98)00023-X | author-hosted indexedprimaryabstract; fullPDF toolsizeblocked | POMDP action/information planning established; our fixed3action heuristic is not an optimal solver |
+| [Probabilistic shields](https://arxiv.org/abs/1807.06096) | primaryabstract checked | probabilistic formal safety/control established; explicit asynchronous cancellation/evidence clocks are benchmark focus, no precedenceclaim |
+| [Partial-observability shielding](https://arxiv.org/abs/2204.00755) | primaryabstract checked | partial-observation safe control and learning gains established; new tiny staticcue workload is not demonstrated superior |
+| [UndoBench](https://arxiv.org/html/2610.05622v1) | earlier fullHTML plussource recheck | boundary-specific recovery and dualoracles already overlap strongly; our timing/inspection dataset and negative acquisition controls are candidate empiricaldelta |
+| [SURE-Act](https://arxiv.org/abs/2610.24194) | primaryabstract | counterfactual action control already established; no head-to-head superioritytested |
+
+Native tools and structured JSON are existing endpoint features, not research novelty. OldCAR,
+ACRFence/Mnemosyne/Planarian/sagas/concurrency comparisons remain relevant. An absence claim cannot
+follow from abstract-only review. Publication uniqueness remains unresolved.

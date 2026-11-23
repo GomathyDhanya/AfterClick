@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-23T20:10:38.995243+00:00",
+  "execution_head": "2d578386c1d963e32ff2c21b4603374a09c9e5e3",
+  "execution_dirty": true,
+  "source_checkpoint_commit": null,
+  "original_study_index": "evidence/research-20261123/index.json",
+  "new_run_seals": {
+    "i0-native-offline-v1": "0d941feea94302e07ba70b0af965b4de894d358cc7a41e7ee2946654df69dcf4",
+    "i1-format-pair-v1": "be269570e73cd87631ee9d2a934772352d6e5128e0f96744433a3515dacad923",
+    "o0-critical-diagnosis-v1": "2a4bc7f8341261dd7ed8e29fa30689d851382b9ede985153be1bd05bc65ed943",
+    "o1-observability-development-v1": "1e0e7f38ea89b4e31d91454f75967476aa5008e0a77c0e9265a0c65ffa9007cf",
+    "o2-observability-locked-v1": "f23b24f764c4972ee526018a257bf009ed3d212d365c1e6a22a8d855faea1aef",
+    "o3-frontier-certificate-audit-v1": "faa8b103fe841b0652a0abdae2c330242c11833d35340bdedef7bef126c1692f",
+    "o4-context-ablation-v1": "2be443ef571b0eec931b5703a260ee17b156934444bffdff9cf51a17b095ae5d",
+    "o5-observability-synthesis-v1": "4d4c816260942f6fbfcb2000070a9e18bca7ecd6408b4e40c4ee98fc498476e6"
+  },
+  "all_sealed_runs": 32,
+  "verified_checksum_paths": 2537,
+  "paper": "paper/OBSERVABILITY_PAPER.md",
+  "reproduction": "paper/OBSERVABILITY_REPRODUCE.md",
+  "verification": "artifacts/observability-verification.json",
+  "archive": "artifacts/afterclick-observability-20261123.tar.gz",
+  "archive_digest_reference": "artifacts/afterclick-observability-20261123.tar.gz.sha256",
+  "known_protocol_replica": "artifacts/reproductions/obs-check-20261123",
+  "novelty": "INCONCLUSIVE",
+  "replica_is_new_independent_confirmation": false
+}

@@ -2,18 +2,21 @@
 
 **Temporal recovery contracts and the limits of boundary-focused learning**
 
-A working PostgreSQL/Chromium research system with an evidence-backed mixed/negative study.
-The final suite passes **239 tests**. One hybrid live-policy replay has 12/12 valid branches;
-102 planted backend cases cover four recovery obligations. These do not measure organic mistakes.
+A working PostgreSQL/Chromium system with two preserved, bounded studies. Current suite:
+**260 tests passed**. Native tool calling completed the previously failed two-field browser task
+in one small comparison; JSON remains a baseline and the original frozen replay is unchanged.
 
-Matched search favors coverage over the targeted local explorer. Boundary data improve a fixed
-boosted tree, but the stronger no-learning mixture remains better. Learned and simple timer shields
-tie at matched task completion and intervention burden. Broad superiority and publication novelty
-remain unestablished.
+The new queued-dispatch study separates loss of cancellation, external access and receipt arrival.
+It validates118SQL boundary endpoints, but finds no general learned-controller advantage over strong
+rules. Boundary-focused data worsen held-out risk calibration for the preselected trained model.
+Verification-delay races are measured directly; larger models and extra inference are not a remedy
+for an already-lost control capability.
 
-Read [the paper draft](paper/PAPER.md), [reproduction guide](paper/REPRODUCE.md),
-[current evidence](research_ops/START_HERE.md), and [session handoff](research_ops/SESSION_HANDOFF.md).
-The source and local evidence package preserve unsuccessful attempts. Nothing was pushed or published.
+Read the [new paper](paper/OBSERVABILITY_PAPER.md), [new reproduction guide](paper/OBSERVABILITY_REPRODUCE.md),
+[original paper](paper/PAPER.md), [claim register](research_ops/CLAIM_REGISTER.md), and
+[current handoff](research_ops/SESSION_HANDOFF.md). All conclusions are bounded by synthetic workload,
+static public telemetry, limited mechanisms and independent SQL audits. Publication novelty remains
+inconclusive. No results or code were pushed or published.
 
 ## Try FlowBoard
 
@@ -63,13 +66,13 @@ under `evidence/v0/` and the `afterclick-v0` tag. For a committed clean checkout
 and oracle pilot in Linux with a separate PostgreSQL container. Logs/reports are retained under
 `artifacts/isolated-*`; it exposes no host database port.
 
-Fresh P0 established 122 tests, seven scripted branches and 24 planted backend cases. The present
-checkpoint adds causal capability tests, matched acquisition studies, local predictors and an
+Fresh P0 established 122 tests, seven scripted branches and 24 planted backend cases. The first bounded
+checkpoint added causal capability tests, matched acquisition studies, local predictors and an
 online suppression controller. The [claim register](research_ops/CLAIM_REGISTER.md) distinguishes
 engineering validation, synthetic comparisons and the locked final mechanism.
 
-The new live pilots used about $0.72 conservative guard accounting. Conservative remaining credit
-is $27.48 with $0 billed. The user endpoint is preserved at min0 with zero containers verified;
+The latest format comparison adds about $0.3245 conservative guard accounting; cumulative standing
+mandate guard use is about $1.0445. Conservative observed credit is $27.39 with $0 billed. The user endpoint is preserved at min0 with zero containers verified;
 no paid process is active. The latest mandate supplies standing bounded authorization, with an
 $8 reserve, but unused budget is not a reason to make more calls. See [cost report](research_ops/P1_COST_REPORT.md).
 
@@ -117,6 +120,6 @@ features, local risk models, budget guards and a once-only locked evaluation run
 ## Continue the project
 
 Read [research specification](docs/RESEARCH_SPEC.md), [architecture](docs/ARCHITECTURE.md), and
-[progress](docs/PROGRESS.md), then inspect Git status. Preserve validated foundations. The bounded study is complete. Further scientific work should use a newly frozen, independently
-implemented workload/schedule distribution; do not tune on the opened final set. Historical plans
+[progress](docs/PROGRESS.md), then inspect Git status. Preserve validated foundations. Both bounded studies are complete. Next evidence should come from independent contract review and
+a measured external workload; do not tune on either opened final set. Historical plans
 in the specification are proposals, not completed claims. See [current gates](docs/COMPLETION_GATES.md).

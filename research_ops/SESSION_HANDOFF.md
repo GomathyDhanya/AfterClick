@@ -1,62 +1,72 @@
-# Session handoff — bounded study complete
+# Session handoff — native format and independent observability study
 
-P10 gate: PASS for the bounded artifact and paper draft; publication novelty INCONCLUSIVE. Broad
-research complete=false. No extra model tuning, paid calls, background job or public release pending.
-Read paper/PAPER.md and paper/REPRODUCE.md. Claims and limitations are in CLAIM_REGISTER.md.
+Native tools are provisionally selected for the new experimental browser driver: same failed
+Description+Priority task, native2requests/4725tokens/PASS/no repetitions; JSON3requests/3302tokens/
+two repeated satisfied proposals/FAIL. All5responses schema-valid; no executed repeated mutation.
+N=1 per format, fixed order, no population reliability or native12-branch replay claim.
+Original JSON and frozen replay/results remain unchanged. Deployed OpenAPI does not declare
+reasoning.enabled, so it is omitted; established enable_thinking:false is retained in both modes.
 
-Scientific execution used dirty HEAD 1fa4f02610a4e556b84a3984dc1e650b2b78cca7. FROZEN.json hashes
-60 scientific paths plus147 data/model/protocol files; all207 match. Local source checkpoint
-b74ae683e7fb995b50fc9240257e970deda6baf1 is recorded in STATE.json; do not call it the execution revision. Earlier user-owned adaptive
-work is preserved and may be included in that verified source checkpoint.
+New independent queued-dispatch study complete:5120 finite querypanels/10240 potential-world label
+calculations;40UNKNOWN/40CENSORED synthetic masks retained.16development SQL worlds.1536 locked
+source clusters in3cohorts,24SQLplan worlds in6clusters, plus118adjacent SQL endpoint worlds
+(59timing profiles/two paths). All158scientific SQLworlds valid; these are purposive checks, not158
+independent source cases or real-world agents.6SQLengineering tests/150propertyexamples separate.
+Coverage again beats local frontier; systematic slightly beats coverage on pull. All selected
+predictors are a simple observable heuristic. Preselected trained boundary-minus-randomCF heldout
+verification Brier+0.03977171 CI[0.02822190,0.05071819] (worse). H4 has no general incremental safety
+advantage. Mean+SD control has more harm but better clean utility than observable rule; limited
+secondary gains over alwaysverify do not beat the stronger declared-law reference on pull.
+H5's exact race identity holds1536/1536: delayed verification adds risk when age<F<=age+D. Fractions
+0.1796875ID/0.333984375shift/0.173828125pull. FrontierF can precede physical readT and receiptA.
 
-Implemented: strict Modal decisions/budget watchdog, hybrid visible Retry save arm, independent fake
-fee/authority/deadline providers, fixed-time closure, matched search/minimization, lineage-safe finite
-acquisition, local calibrated risk baselines, online quota enforcement, real Browser/PG shield interface,
-once-only frozen confirmation and bounded local reproduction runner (dry-run default).
+Context-matched post-confirmation DEVELOPMENT-only ablation:2048panels/4096label calculations;
+16UNKNOWN/16CENSORED masks, no final access or predictor replacement. Effects depend on model and
+query selection, so context diversity alone does not explain all failure. No tuning rescue.
 
-Evidence: p1c-new-endpoint-live-v1 is INVALID (6/7 valid branches,5 unattempted); v2 is one VALID hybrid
-case12/12,19 model calls. Both multi-action diagnostics fail. Combined new live35 requests are not35
-independent tasks.102 backend pilot cases:78 non-UNKNOWN/CENSORED classifications,12 UNKNOWN/12 CENSORED,
-0 execution-invalid. Formal reuses102, compares63 known assertions,256 abstract states; three partial
-procedures admit recovery. p4 search14,400 attempted finite queries plus6,144 reference grid, ten SQL
-endpoint audits/five transitions. p6 acquisition16,384 finite queries/128 masked probes, not live traces.
-p7 identical full public inputs yield two opposite SQL outcomes. p9 final2,048 finite rows/64 clusters,
-16 fresh SQL spots. Every denominator remains separated. See individual evidence_ledger.json files.
+260fulltests pass179.00s/one upstreamwarning;97source/test/migration files formatted; Ruff passes.
+A fresh bounded2phase reproduction completed and all numerical metrics matched exceptelapsedtime.
+This duplicate uses known seeds/laws and is NOT new confirmation. Original p6 freeze207paths and
+new o1 freeze132paths remain intact. Native context-budget failure, trace-order test failure and
+checkpoint-only stdout-hash repair are retained; no models refitted during checkpoint repair.
 
-H1: local AUC1.520833 loses coverage1.9375. H2 selected contrast0 (all selected known-mixture);
-fixed-tree secondary Brier delta-0.00369067 CI[-0.00483658,-0.00269943], yet mixture stronger. H3
-learned and authorization+timer both546 harms/409 suppressions/100% task completion versus955 unshielded;
-paired harm interval[-0.001465,0.001465]. Fresh SQL each5/16 vs8/16, purposive audit not population rate.
-No organic-error frequency, broad OOD calibration or learned superiority established.
+Paper: paper/OBSERVABILITY_PAPER.md (original paper/PAPER.md retained). Six newfigures/eighttables
+regenerate fromsaveddata. Strongestsupportedcontribution: temporalobservabilitybenchmark and
+negative acquisition/control evidence. Publication novelty INCONCLUSIVE; no new optimalalgorithm
+or real-agent generalization. No endpoint deployment, push, publication or data release.
 
-Final regression239 passed172.43s/one upstream warning; Ruff source/tests/migrations87 files clean;
-frontend build passes. P6 freeze-path crash and wrong quota-test expectation retained; repaired without
-refitting or controller changes. P1 v2 bad raw_reference strings preserved with explicit correction map.
-The optional research dependency group is included in check.sh/CI/validation image; no scientific source
-changed after freeze. CI/Linux container rebuild not executed in this final packaging step.
+Currentgate: PASS bounded extension; H4 general learned increment unsupported, H5 conditionalrace supported,
+publication novelty INCONCLUSIVE. Both original and new finalsets opened once; never tune either.
+Execution HEAD 2d578386c1d963e32ff2c21b4603374a09c9e5e3 dirty; sourcecheckpoint commit is recorded later in STATE.json. Core/new scientific
+source and models are frozen; only reporting/helper scripts changed after final. Prior sourcecheckpoint
+b74ae68 and finalmetadata2d57838 preserve the original study. Earlier untracked userzip and legacy
+research_ops/scripts/modal_smoke.py stay untouched/excluded from sourcecommit.
 
-Budget: standing user allowance20 additional/reserve8/categories3,3,4,8,2; no per-run approval routine.
-Only ep-NtuMALXsRWKk5JLfZk4BOF, actual pinned4B/API AfterClick, public synthetic permission. No newendpoint.
-Two new guards total0.72000287; account metered highwater delta0.63000334; exact isolated invoices unknown.
-Conservative balance27.48; latest UI/CLI27.64/$0 billed. Workspace cap3/default net0. Final min0/max1,
-buffer0/idle2 and0containers verified. No paid process active. Do not stop/delete unrelated endpoints.
-No spend target; more inference does not resolve the scientific limitation.
+Spending: one new approved-standing pair max0.60 used0.324501809guard/~0.25accountdelta. Standing
+cumulative1.044504679; exact project invoicesunknown. Conservativeaccountbalance27.39; later dashboard
+reports can move both ways. Guardprojection27.0655; reserve8 protected. Workspacecap3.5/defaultnet0;
+only endpoint ep-NtuMALXsRWKk5JLfZk4BOF touched, remainsmin0/max1/buffer0/idle2/zero containers.
+No paidprocess, furtherinference or deploymentpending. All subsequent scientific phases0Modal.
 
-Final holdout opened once; never tune or select threshold on it. Reproducing its known protocol is not
-new independent confirmation. Preferred next extension: independent local workload/distribution with
-useful public signals, frozen instances and strongest simple baselines; fallback independent contract
-review. No current paid experiment queued. Novelty remains unresolved against substantial literature overlap.
+Newstudycounts: primary5120finitepanels/10240labels-worldcalculations;1536locked sources/3cohorts;
+158SQLscientificworlds=16dev+24confirmation+118frontier endpoints, not158independentsourceclusters.
+Search6144queries eachdev/final. o4additional2048development-onlypanels/4096potentialworldcalculations.
+Synthetic masks40+40(primary) and16+16(ablation) are pipelineprobes, not missingnessrates. Allruntime
+features are staticpreflight signals plus configureddecisiondelay/prospectivehorizon; no dynamicfilter
+beforeperfectinspectionreply. o5 raw all-comparatoranalysis is descriptive/multiplecomparisonuncorrected.
+The exact race uses preventionfrontierF, not physicalaccessT when a nonrevocable childexists.
 
-Verify last meaningful evidence:
-`.venv/bin/python research_ops/scripts/verify_evidence.py`
-Regenerate:
-`.venv/bin/python research_ops/scripts/render_research.py --output /tmp/afterclick-review-20261123`
-Resume local reproduction plan (dry run):
-`.venv/bin/python research_ops/scripts/reproduce_research.py --replica review-20261123 --max-cycles 3 --max-wall-minutes 45 --paid-mode disabled`
-Add --execute only to repeat local phases; continues after completed phases, preserves/refuses interrupted
-replicas. Full six-phase orchestration was not run redundantly. Source/evidence are local only; no push,
-publication or new external communication. User zip and legacy modal_smoke.py remain preserved separately.
+Failurespreserved: initialnativecontextoverflow; concurrent-note trace-order assertion strengthened;
+checkpointstdout hash repaired withoutrefit (freeze/mainASTonly), finalopenedafterallhashespass.
+No false claim of research-complete/generalnovelty. ExistingJSONbaseline andold12branch hybridcase
+remain; nativeformatonlylive-task-valid. Newdefaultdriver selected_browser_policy.py doesnotbypass
+constructorapproval/transportchecks. No automaticfallback or mixedtools/schema.
 
-Local handoff package: artifacts/afterclick-research-20261123.tar.gz, adjacent .sha256.
-24 run seals/1,899 checks pass; source commit above includes validated earlier adaptive foundations.
-Only the preexisting user zip and legacy research_ops/scripts/modal_smoke.py are intentionally untracked.
+Repro/verify:
+.venv/bin/python research_ops/scripts/verify_observability.py
+.venv/bin/python research_ops/scripts/render_observability.py --output /tmp/afterclick-observability-review
+.venv/bin/python research_ops/scripts/reproduce_observability.py --replica obs-review --max-cycles 2 --max-wall-minutes 15 --paid-mode disabled
+Lastcommand is dryrun; add--execute for bounded knownprotocol reproduction, not newconfirmation.
+A fullactual2phase repeatobs-check-20261123 matchedallnumericmetrics exceptelapsedtime.
+Preferrednext: independent contract/implementation audit, fallback externally measured enforcement
+capability/workload with a newly frozen finalset. No further fit/sweep justified on these data.

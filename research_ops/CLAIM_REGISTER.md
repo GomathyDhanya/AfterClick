@@ -57,3 +57,20 @@ Targetedlocalmethodisworse thanstrongcoverage+sameminimizer atmatched96attempts.
 | Organic mistake frequency / production safety / publication novelty | unestablished | none | synthetic cases, one live case, narrow workload and shared implementation |
 
 Final-code/model/threshold freeze remains intact. No new model selection follows the opened final set.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+| Claim | Status | Evidence / opposite evidence |
+| --- | --- | --- |
+| Native tool workflow versus JSON | bounded live-task support | i1: nativePASS2calls, JSONFAIL3calls; n1/fixed order, no general reliability or native replay claim |
+| H1 stronger frontier search | notsupported in new workload | o1/o2: coverage/systematic beat local;59 timing profiles are two paths, all118endpoints SQLvalid o3 |
+| H2 boundary acquisition generalization | notsupported; trained-model harm to calibration | o2 pull hazard delta+0.03977171 CI[0.02822190,0.05071819]; selected arm contrast0 (same heuristic) |
+| H4 uncertainty-aware incremental safety | no general support | higherharm vsobservable rule with highercleanutility; secondary beats alwaysverify in limited matched cohorts, but declared-law reference stronger onpull |
+| H5 delayed observation crosses prevention frontier | bounded support | zero identityviolations1536sources; verify-minus-cancel risk.1797/.3340/.1738, SQL causal witnesses confirm F<T<A possibility |
+| Context diversity fully explains H2 | insufficient/model-dependent | o4 development-only same-context randomtimes: hazard andGB effects differ; no final reuse/modelreplacement |
+| Novel algorithm / production/organic errors | unestablished | syntheticstaticcues, logicaltime, narrow2paths, perfectinspector, one live format task/mode; majorliteratureoverlap |
+
+Original study results and their opposing baselines remain unchanged. o5's all-comparator contrasts
+are secondary descriptive analyses; no multiplicity-adjusted discovery claim. Clean completion,
+intervention burden, overall goal completion, physical exposure and receipt evidence stay distinct.

@@ -1,24 +1,20 @@
-# Preferred next experiment: independent workload-distribution replication
+# Preferred next evidence: independent contract and implementation audit
 
-Current bounded study is complete; no paid work is active. Do not tune on the opened deadline test.
+Both bounded studies and the new format comparison are complete. No paid work is queued.
 
-Question: does boundary acquisition or learned intervention add value beyond coverage, specified
-mixture and authorization-plus-timer baselines when public observations contain useful but imperfect
-signals in a genuinely new workload and hidden schedule distribution?
+Preferred: an independently authored local replay checks the revocation/child/access/receipt contract
+and whether static preflight cues/inspection timing are available before a real control decision.
+Falsifier: a supported operation revokes the supposed nonrevocable child, a prefix mismatch changes
+outcomes, or late features contaminate prediction. If found, narrow/invalidate corresponding claims;
+do not silently rewrite archived runs. $0Modal, finite32case first audit, no new model selection.
 
-Preferred experiment: a separately implemented local fake-sink workflow with preregistered public
-signals, recovery API and mixture shifts. Freeze task/source lineage and one untouched mechanism
-before acquisition. Match attempted query budgets and online intervention/task-completion burden.
-Primary contrast: selected-model Brier and harm difference against the strongest simple reference,
-with cluster intervals over independent source instances. Report all invalid/unknown/censored cases.
-Prediction: benefits of the present boundary tree may vanish under changed laws; learning should
-only add value if the public signal carries information beyond the timer. Positive evidence requires
-an incremental held-out benefit, not merely improvement over no shield. A null result strengthens
-the bounded limitation; do not respond with an unbounded sweep.
+Fallback: design a new external fake-service workload with a trusted revocation-status handle and
+measured inspection latency, freeze it before any comparison. Do not tune either opened final set.
+A positive learned-controller claim would require a meaningful held-out harm reduction against
+strongest simple/model-based references at matched clean-task utility and intervention cost.
+No larger LLM or additional endpoint is justified by current evidence. Standing budget remains idle;
+no new authorization for deployment, paid provider, public release or out-of-pocket expenditure.
 
-Fallback: an independent reviewer reimplements the current finite contract and checks saved SQL
-witnesses for shared specification errors. This does not create new population evidence.
-Resources: $0 Modal/local fake effects first, finite execution cap agreed in a new protocol. No new
-permission is needed for ordinary local preparation under the standing mandate; a deployment,
-external release, another provider or spending beyond its scope needs user authorization.
-Resume starts with STATE.json and SESSION_HANDOFF.md; no immediate paid experiment is queued.
+Review: paper/OBSERVABILITY_PAPER.md and research_ops/SESSION_HANDOFF.md.
+Verify: .venv/bin/python research_ops/scripts/verify_observability.py
+Known-protocol reproduction plan: .venv/bin/python research_ops/scripts/reproduce_observability.py --replica obs-review --max-cycles 2 --max-wall-minutes 15 --paid-mode disabled

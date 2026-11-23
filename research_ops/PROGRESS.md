@@ -233,3 +233,61 @@ in artifacts/package-provenance.json; no public release. Repro command:
 .venv/bin/python research_ops/scripts/verify_evidence.py
 Resume dry run:
 .venv/bin/python research_ops/scripts/reproduce_research.py --replica review-20261123 --max-cycles 3 --max-wall-minutes 45 --paid-mode disabled
+
+
+## 2026-11-23T18:41:18.794213+00:00 — interaction comparison and independent-study extension
+
+Registered i0-native-offline-v1/i1-format-pair-v1/o0-critical-diagnosis-v1 before new data. Existing JSON and frozen recovery study remain unchanged. Standing authorization inspected; fresh reported credit27.64, conservative27.48, cap3. New live pair cap0.60 requires refreshed financial control headroom; no paid request yet. Next: strict native tooling and offline tests, then at most one live task per format.
+
+Pre-live i1:11 offline tests pass (initial9pass/1contextfailure retained); deployed source confirms qwen3_coder tool parser. Workspace cap3→3.5 under standing mandate after no unrelated app/endpoint found; default net0 retained. Specific cap0.60/355seconds/12generations maximum plus2metadata/zero retries, no deployment.
+
+
+## 2026-11-23T19:23:11.006738+00:00 — independent development begins
+10offline environment/learning/leakage tests pass;6 actual SQL engineering worlds plus150 property examples. Original failed context test and concurrent-edit trace expectation retained separately. Registered5acquisitionarms×4repeats×256querypanels (2potentialworlds/panel); same fixed models and separate final1536source clusters not yet opened. Distinct pull child-grant path means prevention frontier can precede external effect. No paid usage for new study.
+
+
+## 2026-11-23T19:27:48.518778+00:00 — independent final gate
+Development 5120panels/10240potentialworldevaluations;40UNKNOWN/40CENSORED retained;16SQLaudits valid.260tests pass179.00s. Checkpoint helper-only repair verified by AST (freeze/main only), no refitting or new outcomes. Allsource/model/data/protocol hashes pass. Open new o2 final once, no further selection.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+Native tools are provisionally selected for the new experimental browser driver: same failed
+Description+Priority task, native2requests/4725tokens/PASS/no repetitions; JSON3requests/3302tokens/
+two repeated satisfied proposals/FAIL. All5responses schema-valid; no executed repeated mutation.
+N=1 per format, fixed order, no population reliability or native12-branch replay claim.
+Original JSON and frozen replay/results remain unchanged. Deployed OpenAPI does not declare
+reasoning.enabled, so it is omitted; established enable_thinking:false is retained in both modes.
+
+New independent queued-dispatch study complete:5120 finite querypanels/10240 potential-world label
+calculations;40UNKNOWN/40CENSORED synthetic masks retained.16development SQL worlds.1536 locked
+source clusters in3cohorts,24SQLplan worlds in6clusters, plus118adjacent SQL endpoint worlds
+(59timing profiles/two paths). All158scientific SQLworlds valid; these are purposive checks, not158
+independent source cases or real-world agents.6SQLengineering tests/150propertyexamples separate.
+Coverage again beats local frontier; systematic slightly beats coverage on pull. All selected
+predictors are a simple observable heuristic. Preselected trained boundary-minus-randomCF heldout
+verification Brier+0.03977171 CI[0.02822190,0.05071819] (worse). H4 has no general incremental safety
+advantage. Mean+SD control has more harm but better clean utility than observable rule; limited
+secondary gains over alwaysverify do not beat the stronger declared-law reference on pull.
+H5's exact race identity holds1536/1536: delayed verification adds risk when age<F<=age+D. Fractions
+0.1796875ID/0.333984375shift/0.173828125pull. FrontierF can precede physical readT and receiptA.
+
+Context-matched post-confirmation DEVELOPMENT-only ablation:2048panels/4096label calculations;
+16UNKNOWN/16CENSORED masks, no final access or predictor replacement. Effects depend on model and
+query selection, so context diversity alone does not explain all failure. No tuning rescue.
+
+260fulltests pass179.00s/one upstreamwarning;97source/test/migration files formatted; Ruff passes.
+A fresh bounded2phase reproduction completed and all numerical metrics matched exceptelapsedtime.
+This duplicate uses known seeds/laws and is NOT new confirmation. Original p6 freeze207paths and
+new o1 freeze132paths remain intact. Native context-budget failure, trace-order test failure and
+checkpoint-only stdout-hash repair are retained; no models refitted during checkpoint repair.
+
+Paper: paper/OBSERVABILITY_PAPER.md (original paper/PAPER.md retained). Six newfigures/eighttables
+regenerate fromsaveddata. Strongestsupportedcontribution: temporalobservabilitybenchmark and
+negative acquisition/control evidence. Publication novelty INCONCLUSIVE; no new optimalalgorithm
+or real-agent generalization. No endpoint deployment, push, publication or data release.
+Commands: .venv/bin/pytest -q --junitxml=artifacts/research_runs/o1-observability-development-v1/raw/full-tests.xml; python -m afterclick.extensions.observability_study develop/confirm/seal (see registered exact paths); research_ops/scripts/audit_dispatch_witnesses.py; dispatch_context_ablation.py; reproduce_observability.py --replica obs-check-20261123 --max-cycles2 --max-wall-minutes15 --paid-mode disabled --execute (actual argv in raw reproduction-plan.json). Execution HEAD 2d578386c1d963e32ff2c21b4603374a09c9e5e3 dirty; source checkpoint follows. No further paid work planned.
+
+
+## 2026-11-23T20:10:38.995243+00:00 — sealed extension checkpoint
+32 run directories sealed;2,537 checksum checks pass, including both old207/new132 frozen paths and all delivered figures/tables. Supplemental reproduction helpers now accept fresh --output destinations; default scientific logic unchanged, CLI help checked. No further scientific model changes or fits. Local source checkpoint/package next; no push/publication. Verify: .venv/bin/python research_ops/scripts/verify_observability.py. Resume plan: .venv/bin/python research_ops/scripts/reproduce_observability.py --replica obs-review --max-cycles 2 --max-wall-minutes 15 --paid-mode disabled.

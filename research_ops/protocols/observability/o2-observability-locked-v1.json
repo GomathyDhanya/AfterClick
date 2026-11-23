@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "registered_utc": "2026-11-23T18:50:15.288253+00:00",
+  "cost_cap_usd": 0,
+  "model_calls": 0,
+  "independent_environment": "queued synthetic summary; push worker+flush versus heldout revocable-capability pull; external receiver/history and delayed duplicated/missing acknowledgment",
+  "public_observables": [
+    "age_ms",
+    "alert",
+    "congestion",
+    "probe_eta_ms",
+    "query_horizon_ms"
+  ],
+  "forbidden_inputs": [
+    "unsafe_payload",
+    "commit_time",
+    "actual_probe_delay",
+    "receipt_time",
+    "mechanism",
+    "source_id",
+    "seed",
+    "partition",
+    "oracle",
+    "intervention"
+  ],
+  "target": "P(restricted external consumption by SLA after cancellation at prospectiveh); separate joint delayed-verification residual risk and clean-goal loss. No realized intervention label in model features",
+  "recovery": "history-neutralizable iff no restricted external consumption at cancellation time; clean goal may require continuing; preserve independent source note",
+  "interventions": [
+    "continue",
+    "cancel",
+    "verify_then_cancel_if_restricted"
+  ],
+  "primary_controller_budget": 0.3,
+  "secondary_budgets": [
+    0.1,
+    0.5
+  ],
+  "controller_cost": "cancel and verify each1 intervention token under floor(B*seen); verify added latency actualD and one inspection; no future ranking",
+  "utility": "clean input delivery by SLA; restricted input quarantined before external consumption; report legitimate clean completion separately",
+  "censoring": "1/64 predeclared training measurement probes UNKNOWN or CENSORED, retained/excluded binary fits; operationally invalid never safe/unsafe",
+  "no_organic_claim": true,
+  "matched_cost": "all finite label queries count; source-context diversity differs and is reported; SQL audit shared separate not hidden in candidate cost",
+  "rivals": [
+    "noisy signal and hidden-law shifts limit generalization",
+    "strong simple/Bayesian baselines explain apparent learned gains",
+    "boundary acquisition biases prevalence/context diversity",
+    "verification too slow despite accurate probability"
+  ],
+  "positive": "only bounded workload effect beyond strongest practical baseline at matched utility/cost supports incremental contribution",
+  "negative": "keep strongest baseline; stop tuning; narrow to temporal observability/intervention contract",
+  "bootstrap": "paired source-cluster bootstrap1000 draws, fixed seed914; intervals conditional on generator; development repeats4",
+  "max_wall_minutes": 25,
+  "hyperparameter_search_budget": 0,
+  "run_id": "o2-observability-locked-v1",
+  "phase": "A-D-locked-confirmation",
+  "development": "o1-observability-development-v1",
+  "source_seed_start": 90000,
+  "sources_per_cohort": 512,
+  "cohorts": [
+    "push_id",
+    "push_shift",
+    "pull_heldout"
+  ],
+  "paired_counterfactuals": "allplans/timequeries ofsource remain inpartition; same source reused only within same evaluation cohort",
+  "primary_H4": "uncertainty-aware versus strongest practical simple development comparator harm at B.3; must have legitimate completion within.02 and same actual intervention burden (or report mismatch, no superiority)",
+  "primary_H5": "exact paired verify-minus-cancel harm equals unsafe race indicator; test effect of additional observation with actual latency, compare slow/fast probe counterfactuals",
+  "primary_H2": "best trained boundary/uncertainty data vs equal-budget randomCF Brier on pull; selected-model contrast also retained",
+  "secondary": "known train-law VOI, shift calibration, risk/utility Pareto; no broad OOD claim from one heldout path",
+  "locked_SQL_cases": 24,
+  "opening": "once-only marker; abort on source/model/protocol hash mismatch; no new tuning",
+  "commands": [
+    ".venv/bin/python -m afterclick.extensions.observability_study confirm --run artifacts/research_runs/o2-observability-locked-v1 --development artifacts/research_runs/o1-observability-development-v1"
+  ],
+  "amended_before_data_utc": "2026-11-23T18:57:03.393701+00:00",
+  "query_unit": "one public-horizon panel requests2 potential execution outcomes (cancel,verify), yielding3 targets: residual harm cancel, residual harm verify, clean-task loss cancel.256panels=512counterfactual outcome evaluations perarm/repeat; all3targets available to everymodel",
+  "pull_causal_path": "Source parent capability mints nonrevocable child at F; receiver reads later at T>F. Parent cancellation afterF cannot revoke child. Therefore last preventive frontierF, physical observationT and receiptarrivalT+L differ. SQL has separate child table and later dereference.",
+  "H5_identity": "verify_harm-cancel_harm =1[restricted AND age<F<=age+D]. This is prevention-frontierF, not necessarily physical exposure timeT. Fast/slowD counterfactuals are prespecified secondary, source-clustered.",
+  "public_cell_scope": "32primary public cue contexts (4ages x2alerts x2congestion x2ETA) plus201prospective horizons; narrow syntheticpartialobservability; no claim of high-dimensional natural application transfer",
+  "runtime_uncertainty": "4acquisition-replicate model disagreement, heuristic not calibrated epistemic coverage; fixed worstcase mean+SD loss over3actions",
+  "matched_controller_definition": "quota token per cancel or verify, floor(.3*seen); compare actual token counts within1 and legitimate clean completion within.02 or Paretoimprovement. Added verification latency measured logicalD; no wallclock service latency claim",
+  "cost_weights": {
+    "unauthorized_harm": 1,
+    "clean_task_loss": 1,
+    "verification": 0.02
+  },
+  "training_selection": "best trained arm/model by mean4repeatID Brier for delayed verification target; selected-model comparison includes declared train-law reference. Strong simple comparator selected on development harm among methods with clean completion>=.90, tie by lower clean loss then name.",
+  "search_methods": [
+    "random_min",
+    "systematic_min",
+    "coverage_min",
+    "frontier"
+  ],
+  "data_filters": "4/256 measurement masks:2UNKNOWN/2CENSORED perarm; all panels raw preserved,252 known fit rows; no test masks. Allsource/querysiblings grouped.",
+  "engineering_independence": "pull path inspected only through engineeringtests; absent from training/modelselection cohorts. SQL schedules generatedsynthetically; provider/oracle separate from finite sim but not independent real-world implementation by externalteam.",
+  "pre_execution_utc": "2026-11-23T19:23:11.006738+00:00",
+  "source_sha256": {
+    "afterclick/extensions/dispatch_learning.py": "20904b79ff68e3921a979e225166c8ea867305c6cbb361319eb547d3fdd1c68e",
+    "afterclick/extensions/dispatch_world.py": "9d826536fd7061e6223f0a428ede72960191bdfcbd8efca4332df6731b993322",
+    "afterclick/extensions/__init__.py": "38bfef298ca66d2920228178e99499fb35222f4fc1aaea34b2419b1f86cb7d5e",
+    "afterclick/extensions/native_tools.py": "7bf67b3e01e51062c56cd1f33439d49c2855db2dd71a08bc0132e7cee8b1474f",
+    "afterclick/extensions/interaction_trial.py": "cc15e2b62c7571338efa69a321e5d69d59e8063ad9b8f0dd3e986ac5014f90eb",
+    "afterclick/extensions/observability_study.py": "b2ffedcc3114e4f38266ea72a0b137115f5b0b5b197557f7057916b025fdfee0",
+    "afterclick/extensions/dispatch_oracle.py": "87e085052f2ed97156d40c7a48cbae5ea58b43a569a4f53af88a7199f29d5ed2",
+    "afterclick/extensions/dispatch_sql.py": "5010abc799d63b60f777d2ec0a7707dccf461374550aad282790ea08100df833"
+  },
+  "search_detail": "Shared charged bracket bisection; after adjacency allmethods cover widest remaining gap. Random seeded samples; systematic20msgrid; coverage endpoints/widestgap; frontier local exponential steps. Finalsearch sourceIDs206000+, disjoint from devsearch6000+.",
+  "runtime_scope": "fixed finite loops,25minute wall checks between fits/cohorts; model and command freezes before final",
+  "leakage_tests": "strict Visible allowlist rejects hidden fields; choose() accepts only Visible payload, never Instance; outcome simulator invoked only after policy/quota decision",
+  "receipt_scope": "missing acknowledgments remain missing at runtime; independent audit can read durable consumer ledger. No absence-of-ack safety inference; UNKNOWN/CENSORED measurement probes separately retained."
+}

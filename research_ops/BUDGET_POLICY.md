@@ -34,3 +34,7 @@ standing-authorized runs. Emergency stop permission applies only to the named ne
 Positive observed account adjustments are conserved at high-water; later lower billing does not
 release budget automatically. Current conservative balance $27.48; newest UI/CLI $27.64. Exact
 project invoice unknown. Verify fresh balance/resources before any future billable admission.
+
+
+## 2026-11-23T20:08:20.737981+00:00 — format-pair control update
+Under standingauthorization, cap3→3.5 was saved after no unrelated activeapp/endpoint found, for i1 max0.60 only. Effective defaultnet0 preserved. Latestreportedcredit27.41, highwater-conservative27.39, guardprojection27.0655. No additionalpaidwork queued. No per-run reapprovalroutine undercurrentmandate; future paidruns stillneedfreshprotocol/admission/reserve checks.

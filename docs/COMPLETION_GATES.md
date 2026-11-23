@@ -55,3 +55,8 @@ enforceability/evaluation execution; learned advantage over timer NOT SUPPORTED.
 DRAFT COMPLETE; publication novelty INCONCLUSIVE. Bounded study complete=true, broad research
 complete=false. No stronger conclusion follows from tests or unused credit. Final holdout opened
 once; never tune or threshold-select on it.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+Native format gate PASS for one independently certified two-action development task; not native live-replay-valid. New A-D execution gates PASS with260tests/1536locked source clusters/158SQLaudit worlds. H1 targeted advantage unsupported; H2 boundary gain notsupported for selected/hazard comparison; H4 general increment notsupported; H5 race identity supported under statedAPI. Paper+repro artifacts complete, novelty INCONCLUSIVE. Both final sets are opened; never tune either. New static-preflight context and perfect-but-delayed inspection are modeling assumptions, not production observations.

@@ -64,3 +64,16 @@ Reversal criterion: independently implemented new workload/distribution with fro
 strong baselines and a new untouched final evaluation demonstrates an incremental benefit.
 The source checkpoint may include earlier user-owned uncommitted adaptive foundations, preserving
 all bytes and their provenance; it is not an authorship claim.
+
+
+## 2026-11-23T18:54:02.254534+00:00 — interaction mode
+Native tools provisionally preferred for the failed development Description+Priority task: two calls,4725 tokens, task/effect oracle PASS, no repetitions. JSON three calls3302 tokens, two repeated satisfied proposals, no executed repeats, task incomplete. Native uses more tokens but completes; n1/mode/fixed order does not isolate prompt/schema/engine causal effects or establish reliability. Original JSON retained; no additional tuning. Both omit reasoning/reasoning_effort and never mix response_format with tools. Endpoint min0/idle verified, batch203.858s, cap0.60. New study continues locally.
+
+
+## 2026-11-23T19:25:43.095453+00:00 — independent development checkpoint
+Fixed acquisition/model/controller comparison complete; strongestselectedmodel is handwritten heuristic, besttrained ordinary hazard. Boundary acquisition hurts calibration and compresses source diversity. Mean+SD controller has worse harm but higher clean completion than observable rule, so no safety-superiority claim. Freeze models; test once without rescue. Quota opportunitycost is a credible rival, not proof of a novel controller.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+Stop interface optimization after i1; selected native for newdriver, preserve JSON and earlier replay. Stop scientific tuning after o2/o4: strong rules remain competitive; data selection/censor assumptions and myopic quota allocation are credible explanations. Limited secondary gains over alwaysverify are retained, not converted to a broad H4 claim. Exact race identity is elementary conditional algebra, not a new POMDP algorithm. Preferred next evidence is independent contract/implementation review, then externally measured cancellation/observation latency. Reversal criterion: genuinely new untouched workload with available enforcement information demonstrates a robust advantage against strongest matched baselines.

@@ -91,3 +91,11 @@ labels, shared-developer oracle risk, no organic-error estimate, publication nov
 Owner: next research session. Do not fix scientific limitations by tuning on the final set.
 Legacy research_ops/scripts/modal_smoke.py has unrelated existing lint/style findings and is
 preserved unchanged; it is not part of the no-cost reproduction entry point.
+
+
+Independent-study checkpoint validation caught mutable execution.log in freeze. Preserved original checkpoint and source; only freeze/main AST functions changed to exclude logs and add seal recovery. No predictions, source worlds, models or thresholds changed; holdout still closed. Reseal after regression, validate all hashes before opening.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+Native initialcontext overflow fixed beforelive by compact publictoolresults; original9pass/1fail log/trace retained. Concurrent-note test trace-order expectation corrected to assert the full4event causalorder, not weakened. Newcheckpoint included mutable stdout; only freeze/main AST functions changed, original source/checkpoint retained; no refit, final opening afterwards. Pipeline measurement masks are synthetic handling probes, not measured missingness; hazard query-time censoring is separate. Public age_ms is a configured preflight decision delay, not a future event-derived signal. Staticcue/perfect-inspector assumptions and myopic quota opportunitycost remain scientific limitations. No new fixes/tuning follow final opening.

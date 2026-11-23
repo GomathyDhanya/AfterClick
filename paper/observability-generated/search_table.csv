@@ -1,0 +1,9 @@
+Cohort,Method,Attempt budget,Coverage AUC,Timing profiles,Duplicate queries
+Push development,Random + min,192,2.498046875,4.25,2.875
+Push development,Systematic + min,192,2.7786458333333335,5,10.375
+Push development,Coverage + min,192,2.951171875,5.375,0
+Push development,Local frontier,192,1.8352864583333333,3,34.375
+Pull locked,Random + min,192,1.5501302083333333,2.75,3.625
+Pull locked,Systematic + min,192,3.0,5.125,10.25
+Pull locked,Coverage + min,192,2.9388020833333335,5.125,0
+Pull locked,Local frontier,192,2.3561197916666665,4,32.25

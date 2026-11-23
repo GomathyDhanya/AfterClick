@@ -33,3 +33,8 @@ charges. Additional CPU/local experiments incur $0 Modal. Endpoint min0/max1/buf
 zero containers verified. Cap3/effective default net0. Final source includes no credentials.
 Raw snapshots: p10-synthesis-v1/raw/final-{billing,endpoint,containers,autoscaler}.json;
 UI proof: p10-synthesis-v1/raw/final-budget-controls.jpg.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+i1-format-pair-v1 max0.60,203.857693s, rate guarded<=0.00135/s; guardcharge0.324501809 vs approximate accountdelta0.25000010. Cumulative standing guardcharge1.044504679; isolated invoiceunknown. Latest CLI/UI reports nonmonotonic/delayed; retain prior accountcreditusedhighwater2.61 (balance27.39). Workspacecap3→3.5 under standingbudgetauthority after unrelatedapps[]/onlynamedendpoint verified; effective defaultnet0 unchanged. Final endpointmin0/max1/buffer0/idle2/0containers. Source/data never contain realcredentials. New scientific phases and reproduction0Modal.

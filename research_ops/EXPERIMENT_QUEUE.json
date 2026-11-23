@@ -1,17 +1,21 @@
 {
   "schema_version": 1,
-  "utc": "2026-11-23T17:45:40.517270+00:00",
-  "bounded_study_complete": true,
-  "research_complete": false,
+  "utc": "2026-11-23T20:06:10.697972+00:00",
   "paid_work_queued": false,
+  "extension_complete": true,
+  "research_complete": false,
   "queue": [
     {
-      "id": "independent-workload-replication-proposal",
+      "id": "independent-contract-audit",
       "priority": 1,
       "max_usd": 0,
-      "status": "proposed_future_extension",
-      "gate": "new protocol/independent implementation/new frozen holdout",
-      "fallback": "independent contract and witness audit"
+      "status": "proposed_future_evidence",
+      "discriminator": "supported revocation/prefix/temporalfeature counterexample",
+      "fallback": "new trusted-cancellation workload with untouched evaluation",
+      "information_value": "high if sharedspecification error exists",
+      "effort": "small first32cases",
+      "runtime": "finite local audit",
+      "risk": "may only replicate existing narrow result"
     }
   ]
 }

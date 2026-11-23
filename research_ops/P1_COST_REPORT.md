@@ -38,3 +38,8 @@ net spend before proposing any new paid diagnostic; do not raise$2cap without au
 Two new pilots guard charge $0.72000287; account high-water increase $0.63000334. Exact isolated invoices null. Conservative credit27.48; latest report27.64, $0 billed. Workspace cap3, default net0, endpoint min0/max1/buffer0/idle2/zero containers. No new endpoint, no permanent stop/delete, no paid call active. Standing allowance20/reserve8 stays idle. See BUDGET_LEDGER.md and P10 raw reconciliation.
 
 Authoritative synthesis: paper/PAPER.md; raw run IDs in evidence/research-20261123/index.json.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+i1 fivegeneration/twometadata requests,8027tokens,203.857693s,0.324501809guardcharge,~0.25accountdelta/unknownisolatedinvoice. JSON3232input/70output/2503ms generation; native4561input/164output/664ms. These latency resourceallocations exclude sharedwarmup/idle; not actual perarm invoices. No liveendpointcharges for new observability science. Finalcap3.5/defaultnet0/idle0containers.

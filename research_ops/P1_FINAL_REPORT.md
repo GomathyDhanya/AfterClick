@@ -58,3 +58,8 @@ bounded controller, protocol and explicit dollar approval; no silent retry/model
 p1c-new-endpoint-live-v1:16 valid model decisions, simple task PASS, multi-action FAIL, one invalid case (6/7 valid branches). p1c-new-endpoint-live-v2:19 valid model decisions, simple task PASS, multi-action FAIL, one valid 12/12-branch case. Visible Retry save guard is a separately declared hybrid arm. The selected consequential action is planted. No general agent competence or organic-error claim.
 
 Authoritative synthesis: paper/PAPER.md; raw run IDs in evidence/research-20261123/index.json.
+
+
+## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
+
+New i1 comparison: native2requests PASS twofieldtask; JSON3requests repeatedsatisfied Description twice/incomplete. Bothschema-valid, allactions throughGateway, matchingtool_call_ids/results. Preferred newdriver native, originalJSON/frozenreplaypreserved. n1/mode, fixedorder, cache/warm/prompt confounding: provisionalworkflowchoice, not reliabilityestimate. Native counterfactualreplay notyetvalidated. No further interfaceoptimization.
