@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "authorization_sha256": "5903482ad80688bff21adc1ce7ad8c85a800c6e2646a0d3db41dc2f70285af74",
+  "baseline_credit_usd": 28.11,
+  "baseline_metered_usd": 2.0047619,
+  "account_metered_highwater_usd": 2.63476524,
+  "account_additional_highwater_usd": 0.63000334,
+  "allowance_usd": 20,
+  "active": null,
+  "runs": [
+    {
+      "run_id": "p1c-new-endpoint-live-v1",
+      "category": "p1c",
+      "reserved_usd": 0.9,
+      "metered_before_usd": 2.0047619,
+      "elapsed_seconds": 199.45096610100154,
+      "estimate_with_margin_usd": 0.3174871559004971,
+      "guard_charge_usd": 0.3600017699999998,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.3600017699999998,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "p1c-new-endpoint-live-v2",
+      "category": "p1c",
+      "reserved_usd": 0.6,
+      "metered_before_usd": 2.27476414,
+      "elapsed_seconds": 209.65360928100563,
+      "estimate_with_margin_usd": 0.3337277799957786,
+      "guard_charge_usd": 0.3600011000000003,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.3600011000000003,
+      "actual_isolated_invoice_usd": null
+    }
+  ],
+  "unresolved_request": false
+}

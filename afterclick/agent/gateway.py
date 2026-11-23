@@ -27,6 +27,9 @@ class Gateway:
         self.current_id = "initial"
         self.dispatch_id = "initial"
         self.operations = {}
+        self.operation_actions = {}
+        self.drop_ack_action = None
+        self.feedback_interventions = []
         self.pending = set()
         self.requests = []
         page.route("**/api/**", self._route)
@@ -42,9 +45,25 @@ class Gateway:
             original = data["operation_id"]
             if original not in self.operations:
                 self.operations[original] = f"{self.dispatch_id}:op{len(self.operations) + 1}"
+                self.operation_actions[original] = self.dispatch_id
             data["operation_id"] = self.operations[original]
+            # Retry is a new tool call, but the operation retains its original identity.
+            headers["x-action-id"] = self.operation_actions[original]
             import json
 
+            if self.drop_ack_action == headers["x-action-id"]:
+                self.drop_ack_action = None
+                response = route.fetch(headers=headers, post_data=json.dumps(data), max_retries=0)
+                self.feedback_interventions.append(
+                    {
+                        "action_id": headers["x-action-id"],
+                        "operation_id": data["operation_id"],
+                        "http_status": response.status,
+                        "intervention": "drop_response_after_backend_execution",
+                    }
+                )
+                route.abort("failed")
+                return
             route.continue_(headers=headers, post_data=json.dumps(data))
         else:
             route.continue_(headers=headers)
@@ -92,7 +111,11 @@ class Gateway:
         try:
             if action.kind in {"fill", "click", "select"}:
                 state = self.page.get_by_role("status").inner_text()
-                if state != "✓ Committed":
+                resolving = action.kind == "click" and (
+                    (action.target == "Retry save" and state == "Failed")
+                    or (action.target == "Discard draft and load latest" and state == "Conflict")
+                )
+                if state != "✓ Committed" and not resolving:
                     raise ValueError("Settle the previous autosave before another mutating action")
             if action.kind in {"fill", "click", "select", "navigate"}:
                 self.dispatch_id = self.current_id

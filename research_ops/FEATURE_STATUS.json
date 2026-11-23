@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-23T17:50:00.462380+00:00",
+  "source_execution_head": "1fa4f02610a4e556b84a3984dc1e650b2b78cca7",
+  "source_checkpoint_commit": null,
+  "features": [
+    {
+      "feature": "PostgreSQL/scheduler/browser foundation",
+      "status": "tests-passed",
+      "paths": {
+        "afterclick/domain.py": "26b943cb0f71e6622db1bcc2c565e4642e5a69d24872d4d54ad7b4ad68a42668",
+        "afterclick/replay/demo.py": "fd5575af27f065019db86ed7f83ea18dc229d032ea316e0370172fa7ce6846d6"
+      },
+      "run_ids": [
+        "p0-20261122-audit",
+        "p10-synthesis-v1"
+      ],
+      "limitations": "239 final tests; historical seven-branch scripted demo is not organic agent evidence",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": false,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Hybrid Modal policy and blinded causal replay",
+      "status": "live-replay-valid",
+      "paths": {
+        "afterclick/agent/modal_policy.py": "9c007606b342dee1d254db8e772421ed28d5c3754bfa6d93ea22f66cafa68cd0",
+        "afterclick/agent/browser_observation.py": "6650f1cf9c9958d92ce7d033a043d3031f2f4454e6046507e26b7dd25498e40a",
+        "afterclick/replay/adaptive_runner.py": "3e473a18c494a621736d7727dba62cf57c6db23a20e607168f1aa8c94544df44"
+      },
+      "run_ids": [
+        "p1c-new-endpoint-live-v1",
+        "p1c-new-endpoint-live-v2"
+      ],
+      "limitations": "One planted simple-task hybrid case12/12; unmodified lost-ack invalid and multiaction failure retained",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": true,
+      "comparative_validated": false,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Independent fake consequence providers/oracles",
+      "status": "tests-passed",
+      "paths": {
+        "afterclick/benchmarks/mock_finance.py": "13944a845cace8e1c686c1c774b8f4c647e9f4b84dc32d4a92f9492de7480b8b",
+        "afterclick/benchmarks/capabilities.py": "43f77725240c7451feed62220f5bb29de1a34f0cea50a40062b085625a65d376",
+        "afterclick/evaluation/capability_oracle.py": "c55d35b2c2c682ef4768e1ab10404352e251128ff76442187449d7fff8b12230"
+      },
+      "run_ids": [
+        "p2-20261123-distinct-mechanisms-v1",
+        "p2-capability-diversity-v1"
+      ],
+      "limitations": "102 backend cases, four declared obligation classes; not four permanent mechanisms",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": false,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Fixed-time admissible recovery closure",
+      "status": "tests-passed",
+      "paths": {
+        "afterclick/research/recoverability.py": "d4c3ae2894192c05b2b26890004f7d95d23c35a25252e3cd6a442c37af47468c"
+      },
+      "run_ids": [
+        "p3-formal-recovery-v1"
+      ],
+      "limitations": "63 known assertions/256 abstract states; not full concrete completeness proof",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": false,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Matched temporal search",
+      "status": "comparative-validated",
+      "paths": {
+        "afterclick/research/search.py": "bfe2485ee8afaf33e19b9cfedb1d583488db0076068e0ff6dff79e17820c8553"
+      },
+      "run_ids": [
+        "p4-matched-search-v1"
+      ],
+      "limitations": "Comparison valid; targeted method loses to coverage on four fixed laws",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": true,
+      "held_out_validated": false
+    },
+    {
+      "feature": "Visible-only risk acquisition/models",
+      "status": "held-out-validated",
+      "paths": {
+        "afterclick/research/features.py": "4f58da9d15b6bc69fad99cab47b55aecb78b2dcd5d66598fe47f0e540a6be1cf",
+        "afterclick/research/dataset.py": "1f626a19c8302d55ee79cafb732ca785e884de5f260c71aedb1afe219cb5e56d",
+        "afterclick/research/models.py": "ab1be7b5f59f2601bea46011b84da9dcc7b0ff0cb971497ff9b935f068307678"
+      },
+      "run_ids": [
+        "p6-risk-study-v1",
+        "p7-visible-collision-v1",
+        "p9-locked-confirmation-v1"
+      ],
+      "limitations": "Execution validated, not broad superiority; primary contrast0, tree-only secondary gain; finite labels",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": true,
+      "held_out_validated": true
+    },
+    {
+      "feature": "Online suppression controller",
+      "status": "held-out-validated",
+      "paths": {
+        "afterclick/research/controller.py": "7a3a9bd20a39736d9088a6e139ff2bcc1872f360b3a52921a0dfb9815fe8f9c5",
+        "research_ops/scripts/shielded_gateway.py": "3a17595993983b666377e664934dd45c43e81c1ef568e36e5f3d409c9c7c00d8"
+      },
+      "run_ids": [
+        "p8-gateway-enforcement-v1",
+        "p9-locked-confirmation-v1"
+      ],
+      "limitations": "Learned ties simple timer; browser scorer stub tests enforceability separately",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": true,
+      "held_out_validated": true
+    },
+    {
+      "feature": "Restartable local reproduction",
+      "status": "tests-passed",
+      "paths": {
+        "research_ops/scripts/reproduce_research.py": "4aaea68c614cf6c422508b6551b10ef75e5d967e9e691222825f97bc1e672df7",
+        "research_ops/scripts/verify_evidence.py": "716dccfb156ef53e42a47d88ba49d12c2a331ffd792ab3191b186eca177bdb13"
+      },
+      "run_ids": [
+        "p10-synthesis-v1"
+      ],
+      "limitations": "Dry-run/guard-tested orchestration only; no full redundant six-phase rerun",
+      "proposed": true,
+      "coded": true,
+      "tests_passed": true,
+      "live_replay_valid": false,
+      "comparative_validated": false,
+      "held_out_validated": false
+    }
+  ],
+  "final_tests": "artifacts/research_runs/p10-synthesis-v1/raw/final-tests.xml"
+}

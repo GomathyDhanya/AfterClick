@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "run_id": "p2-capability-diversity-v1",
+  "phase": "P2/P3-local",
+  "registered_utc": "2026-11-23T15:43:00.777404+00:00",
+  "cost_cap_usd": 0,
+  "paid_mode": "disabled",
+  "question": "Do expiring delegated authority and lost deadline opportunity add recovery obligations distinct from knowledge disclosure and fee conservation?",
+  "hypothesis": "Pending actions recover, independent receipts prove late active-authority/deadline residuals, permission expiry demonstrates nonmonotone current recoverability",
+  "rivals": [
+    "New sinks only rename historical notification",
+    "Unknown or planner failure is mistaken for impossibility"
+  ],
+  "mechanisms": [
+    "delegated_authority",
+    "deadline_opportunity"
+  ],
+  "seeds": [
+    7,
+    19,
+    31
+  ],
+  "modes": [
+    "early",
+    "late",
+    "lost_ack",
+    "independent",
+    "conflict",
+    "unknown",
+    "censored",
+    "null",
+    "expired"
+  ],
+  "attempt_budget": 54,
+  "max_wall_seconds": 600,
+  "sampling": "enumerate2mechanisms x3developmentseeds x9modes; not population sampling",
+  "baseline": "two fresh suppressed reference worlds and execute world; identical prefixes; controls use actual source committed reviewed event",
+  "primary_metric": "54expected-class matches and independent receipt agreement per attempted execution",
+  "estimand": "bounded recovery contract correctness, not performance advantage",
+  "randomization": null,
+  "holdout_access": false,
+  "capabilities": "permission: cancel pending/revoke parent only, delegated child expires; deadline: release lease cannot move clock or extend immutable delivery deadline",
+  "recovery_time_contract": "instantaneous admissible restoration at evaluation time, excluding arbitrary future waiting; current authority class can improve after automatic expiry; historical access target remains separate",
+  "positive": "bounded new obligations only; deduplicate mechanisms by semantic predicate, not endpoint name",
+  "negative": "stop false recovery certification, preserve trace, no learning",
+  "unknown_censored": "withheld receipts UNKNOWN; unfinished horizon CENSORED; no safe label",
+  "stop_rules": [
+    "54cases or600seconds",
+    "first unexpected certification",
+    "no paid calls/real external systems"
+  ],
+  "parameters": {
+    "delegation_time": 100,
+    "child_expiry": 1100,
+    "legitimate_delivery_time": 80,
+    "immutable_deadline": 100,
+    "early_recovery_time": 50,
+    "late_recovery_time": 150,
+    "primary_horizon": 300,
+    "expired_followup": 1200
+  }
+}

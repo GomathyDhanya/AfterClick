@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-23T17:45:40.517270+00:00",
+  "bounded_study_complete": true,
+  "research_complete": false,
+  "paid_work_queued": false,
+  "queue": [
+    {
+      "id": "independent-workload-replication-proposal",
+      "priority": 1,
+      "max_usd": 0,
+      "status": "proposed_future_extension",
+      "gate": "new protocol/independent implementation/new frozen holdout",
+      "fallback": "independent contract and witness audit"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "run_id": "p2-20261123-distinct-mechanisms-v1",
+  "phase": "P2-local",
+  "registered_utc": "2026-11-23T02:47:27.654140+00:00",
+  "cost_cap_usd": 0,
+  "paid_mode": "disabled",
+  "question": "Can two different recovery-obligation classes be verified by independent receipts and state invariants under controlled counterfactual reconstruction?",
+  "hypothesis": "Existinghistoricalnotification and newmockcapture/non-refundablefee yield reproducible early/late boundaries while negativecontrols,conflicts,unknowns,censoring remain distinct",
+  "rivals": [
+    "newfixturemerelyrenamesnotificationreceipt",
+    "oracletrustsrecoveryplannerorlosesindependentchanges"
+  ],
+  "mechanism_classes": {
+    "notification": "historicalexternalobservation",
+    "mock_payment_fee": "nonrefundableconserved-resource loss under explicitfakeAPI"
+  },
+  "scope": "Planted backendPostgreSQL counterfactual benchmark, not newliveagent error measurement. Separateisolatedac_*source/sinkschemas; no networkpaymentorrealdata.",
+  "seeds": [
+    7,
+    19,
+    31
+  ],
+  "notification_modes": [
+    "early",
+    "late",
+    "conflict",
+    "harmless",
+    "unknown",
+    "censored",
+    "false_success",
+    "preservation"
+  ],
+  "fee_modes": [
+    "early",
+    "late_refund",
+    "lost_ack",
+    "independent_edit",
+    "conflict",
+    "unknown",
+    "censored",
+    "null"
+  ],
+  "attempt_budget": 48,
+  "additional_oracle_qa": "Lostackidempotency,early/late/conflict,balancedforgedfeerefundrejection,anddelayedarrivalvseventtime; unitcasesseparatelyreported.",
+  "sampling": "fullpreregistered8modes\u00d73developmentseeds\u00d72mechanisms; no modelselection/holdout",
+  "baseline": "matchedsuppressed/referenceprefix andplacebo reconstruction; source/APIobserversonlyreactactualcommittedevents",
+  "randomization_unit": "seededworld; descendants/twinsgroupedbymechanism/seedcase",
+  "estimand": "validindependentcertificatecount perattemptedcase andcorrectnegative-controlbehavior; not searchadvantage",
+  "primary_metrics": [
+    "attempted/valid/invalid/unknown/censored cases",
+    "earlyvsaftercommitclassification",
+    "independenteditpreservation",
+    "financialconservation+receipt/ledgeragreement",
+    "checkpoint/placeboequivalence"
+  ],
+  "sample_size_rationale": "boundedoracleengineeringpilot,notpoweredpopulationcomparison",
+  "targets": "Recoverabilityattime, historicalobservation, conservedfee residual, receiptarrivaltime andrightcensoring recordedseparately",
+  "feature_policy": "No modelinP2pilot. Futurevisiblefeaturesmustexcludeexternalledger,futuretimers,branch/mode/oraclelabels.",
+  "positive": "supportsdiverseboundedbenchmarkprerequisiteonly; no C1/C2/C3",
+  "negative": "preservefailure,minimizebrokenoracle/consumer beforedataset/learning",
+  "invalid_policy": "keepallfailed/unknown/censored; no failedcompensation=>physicalimpossibility inference",
+  "mechanism_assumptions": "FakeAPI supportsauthorize,cancelpending,capture,refundprincipal; feeisburnedbycaptureandnotrefundableunderdefinedcapabilities. Claimexplicitlysimulation-relative,notrealfinancial/legalimpossibility.",
+  "stop_rules": [
+    "firstunexplainablefalse-recoverycertificationhaltsnewcollection",
+    "48primarycases/max10localwallminutes",
+    "no production schema/snapshotrecovery",
+    "no paid provider/inference",
+    "no training/holdout opening"
+  ],
+  "synthetic_financial_parameters": {
+    "initial_wallet": 100,
+    "principal": 10,
+    "fee": 1,
+    "capture_delay": 100,
+    "source_notification_delivery_delay": 10000
+  },
+  "receipt_delay_unknown_mode": 300,
+  "primary_observation_horizon": 300,
+  "predeclared_delayed_receipt_followup": 450,
+  "receipt_amendment": "Beforeprimary48caseexecution: replaceblanketwithheldsnapshotunknownwithdurableindependentreceiptdelay. Commit100/refund150,observerarrivals400/450; jointlabelat300UNKNOWN/censoredarrival, followup450retrospectiveUNRECOVERABLEwithoutrelabelingprimary."
+}

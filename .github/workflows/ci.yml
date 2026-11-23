@@ -25,15 +25,15 @@ jobs:
           node-version: "24"
           cache: npm
           cache-dependency-path: apps/flowboard-web/package-lock.json
-      - run: uv sync --frozen
+      - run: uv sync --frozen --group research
       - run: npm ci --prefix apps/flowboard-web
       - run: npm run build --prefix apps/flowboard-web
-      - run: uv run playwright install --with-deps chromium
-      - run: uv run ruff check afterclick tests migrations
-      - run: uv run ruff format --check afterclick tests migrations
-      - run: uv run pytest -q --junitxml=artifacts/tests.xml
-      - run: uv run python -m afterclick.replay.demo --output artifacts/demo
-      - run: uv run python -m afterclick.evaluation.pilot --output artifacts/oracle-pilot
+      - run: uv run --group research playwright install --with-deps chromium
+      - run: uv run --group research ruff check afterclick tests migrations
+      - run: uv run --group research ruff format --check afterclick tests migrations
+      - run: uv run --group research pytest -q --junitxml=artifacts/tests.xml
+      - run: uv run --group research python -m afterclick.replay.demo --output artifacts/demo
+      - run: uv run --group research python -m afterclick.evaluation.pilot --output artifacts/oracle-pilot
       - uses: actions/upload-artifact@v4
         if: always()
         with:

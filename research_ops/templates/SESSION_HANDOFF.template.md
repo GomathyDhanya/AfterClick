@@ -1,0 +1,13 @@
+# SESSION HANDOFF
+- UTC time:
+- Git HEAD / dirty diff hash:
+- Current phase / gate (PASS|FAIL|BLOCKED|INCONCLUSIVE):
+- Evidence artifacts / run IDs / commands:
+- Attempted / valid / invalid / censored / unknown:
+- What was learned (supported vs not supported):
+- Top confound / alternative explanation:
+- Current claimed novelty status (C1 C2 C3):
+- Modal used / remaining credit / authorization (unknown if unverified):
+- Next prioritized experiment / exact predicted discriminator:
+- Human approvals required:
+- Exact resume command:

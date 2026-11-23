@@ -14,3 +14,6 @@ test-results/
 *.egg-info/
 .DS_Store
 *.tsbuildinfo
+
+# Local process coordination, never research evidence.
+research_ops/SPEND_STATE.lock

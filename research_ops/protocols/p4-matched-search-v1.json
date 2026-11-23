@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "p4-matched-search-v1",
+  "phase": "P4/P5",
+  "registered_utc": "2026-11-23T16:01:34.232050+00:00",
+  "cost_cap_usd": 0,
+  "question": "Does targeted local timing search outperform strong coverage or random search with the same minimizer?",
+  "hypothesis": "local_frontier improves mechanism discovery per equal attempted query budget",
+  "rivals": [
+    "coverage with common minimization is as good or better",
+    "apparent gains arise from weak random baseline or counting repeated witnesses"
+  ],
+  "mechanisms": [
+    "notification",
+    "mock_payment_fee",
+    "delegated_authority",
+    "deadline_opportunity"
+  ],
+  "methods": [
+    "plain_random",
+    "random_min",
+    "coverage_min",
+    "local_frontier",
+    "enumeration"
+  ],
+  "search_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "query_budget_per_method_seed": 96,
+  "query_domain": [
+    0,
+    1535
+  ],
+  "allocation": "round-robin4mechanisms,24querieseach; identical attempted budget",
+  "primary": "area under distinct mechanism coverage versus attempted query,normalized by96",
+  "secondary": [
+    "verified adjacent transition types",
+    "queries to first mechanism boundary",
+    "duplicate query rate",
+    "CPU/wall cost"
+  ],
+  "dedup": "mechanism plus semantic transition identity; permission mint/expiry distinct witnesses but count one mechanism",
+  "minimizer": "random_min,coverage_min,local_frontier share nearest opposite-label bracket integer bisection, charged to same budget",
+  "local_frontier": "explore0,1,powersof2,1535thenwidestunsampledinterval; sharedminimizerwhenoppositebracketexists",
+  "coverage": "0,1535thenwidestunsampledinterval; sharedminimizer",
+  "groundtruth": "6144-point finite abstraction grid, reported as separate audit cost, not free search queries",
+  "causal_validation": "Every unique final adjacent frontier pair reexecuted in fresh PostgreSQL worlds via independent existing oracles; no discovery counts before witness check",
+  "randomization_unit": "search RNG seed; deterministic methods explicitly repeated reference traces, no population inference across mechanism families",
+  "uncertainty": "paired bootstrap over30RNG seeds,2000resamples,seed314159; conditional on these4fixedmechanisms",
+  "holdout_access": false,
+  "hyperparameter_search_budget": 0,
+  "positive": "bounded efficiency result only; classical method is not automatically novel",
+  "negative": "retain null,stopcomplexsearch and prioritize benchmark/observability",
+  "invalid_policy": "allattemptedqueriescount; PGdisagreement invalidates frontier and halts downstreamdataset",
+  "stop_rules": [
+    "14400candidatequeries+6144groundtruthstates+atmost10PGwitnesscases",
+    "no paidinference/training/holdout",
+    "first false PostgreSQL witness certification"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-23T15:38:16.519439+00:00",
+  "source": "artifacts/research_runs/p1h-20261123-new-endpoint-audit/raw/user-mandate.txt",
+  "source_sha256": "1de313cf887d9b9b7607d87145a3a0ffb5c13ad4d1c9ebb446321ea4d4cfdefa",
+  "standing_authorized": true,
+  "additional_allowance_usd": 20,
+  "protected_reserve_usd": 8,
+  "categories": {
+    "p1c": 3,
+    "trajectories": 3,
+    "controller": 4,
+    "confirmation": 8,
+    "contingency": 2
+  },
+  "endpoint_id": "ep-NtuMALXsRWKk5JLfZk4BOF",
+  "no_new_endpoints": true,
+  "no_out_of_pocket": true,
+  "public_synthetic_only": true,
+  "emergency_stop_only_this_endpoint": true,
+  "routine_per_experiment_user_approval": false
+}

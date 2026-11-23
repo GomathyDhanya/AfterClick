@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "p6-risk-study-v1",
+  "phase": "P6/P7/P8-development",
+  "registered_utc": "2026-11-23T16:36:06.409501+00:00",
+  "cost_cap_usd": 0,
+  "question": "At matched label-query budgets, do near-boundary data improve prospective recoverability risk over generic data and strong simple models?",
+  "hypothesis": "Boundaryacquisition improves held-out mechanism Brier at matched512attemptedqueries, with equal-row secondary comparison",
+  "rivals": [
+    "boundary selection biases calibration or yields fewer training rows",
+    "visible observations/horizon do not identify the hidden effect mechanism"
+  ],
+  "training_mechanisms": [
+    "notification",
+    "mock_payment_fee"
+  ],
+  "validation_mechanisms": [
+    "notification",
+    "mock_payment_fee"
+  ],
+  "secondary_ood_diagnostic": "delegated_authority; not used for model selection",
+  "heldout_mechanism": "deadline_opportunity",
+  "acquisition_arms": [
+    "ordinary",
+    "random_cf",
+    "boundary",
+    "combined"
+  ],
+  "acquisition_repeats": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "attempted_label_queries_per_arm_repeat": 512,
+  "unlabeled_probes_per_repeat": 4,
+  "feature_policy": "strict public prospective query horizon, action kind, visible task authorization and description state only; no mechanism/branch/seed/outcome/schedule/eventtime as modelinputs",
+  "lineage": "allcounterfactual/minimizedsiblings of(mechanism,source-instance) remain in same partition; disjoint source-instance IDs for development/validation/final",
+  "kernel_scope": "finite abstraction validated against102PGcases and10adjacent PGwitnesses; not a large live trajectory dataset",
+  "models": {
+    "base_rate": "empirical known-label mean",
+    "heuristic": "fixed horizon>=128 risk threshold; no held-out fit",
+    "known_mixture": "trainingdeclaredmixture p=0 below100,.5 at100..199,1 above200; no individualhiddenstate",
+    "logistic": "C1,maxiter500, normalized horizon",
+    "gradient_boosting": "64trees,depth2,minleaf5,learningrate0.1",
+    "discrete_hazard": "KM-like binned64timeunits, right-censoredfirsteventlabels; current-risk mismatch explicitly evaluated"
+  },
+  "hyperparameter_search_budget": 0,
+  "selection": "minimum IDvalidationBrier, deterministic name tie break; keep everyarm/model including strongerbaseline",
+  "primary_metrics": [
+    "Brier",
+    "AUROC",
+    "AUPRC",
+    "ECE10fixedbins",
+    "FNRat0.5",
+    "query cost per known training row"
+  ],
+  "secondary": [
+    "equal-row ordinarysubsample versus boundary",
+    "visible-only no-horizon ablation",
+    "horizon-stratified calibration",
+    "nonmonotoneauthority versus firsthistoricalevent target"
+  ],
+  "unknown_censored": "retain4measurement-maskprobes perarm; exclude unknown/censored binarylabels with explicitreason; eventtime labels useobserved orrightcensored values, never modelfeatures",
+  "randomization_unit": "acquisition RNG repeat and source-instance cluster; no population claim across4fixedmechanisms",
+  "final_protocol": "p9-locked-confirmation-v1/protocol.json",
+  "controller_budget_fractions": [
+    0,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "controller_primary_budget": 0.2,
+  "controller_methods": [
+    "none",
+    "random_budget",
+    "authorization_rule",
+    "authorization_timer",
+    "always_verify",
+    "learned_risk"
+  ],
+  "controller_utility": "authorize legitimate review requirements; block optional/plantedunauthorizedreview; budgeted denial before action, no fake staging",
+  "positive": "bounded model/data effect only; no claim of new learning algorithm",
+  "negative": "keepstrongerbaseline; no LLMfine-tuning or hyperparameterrescue",
+  "stop_rules": [
+    "8repeatsx4armsx512queries;4fixedlearners",
+    "firstoracle/provenance/leakagedisagreement",
+    "freeze code/models/controller before final deadline outcomes",
+    "no paidcalls/newendpoints"
+  ],
+  "holdout_opened": false,
+  "acquisition_detail": "Permechanism256attempts including1UNKNOWN/1CENSORED. Ordinary andrandomCF sample254distincthorizons uniformly; CFpairs share instance. Boundary: commoncoverage+bisection findsadjacentpair, then closestunqueried horizons within256units, all overhead charged, onlypair/neighborhoodusedintraining. Combined halfuniform/halftargeted. Equal-row ordinary subsamplematches eachboundarycampaign trainingN. No hidden threshold used byacquisition selector.",
+  "visible_authorization_semantics": "Synthetic visible user contract explicitly permits review AND documented downstream effect when authorized; otherwise description-only forbids both. Labels reflectrecoverability irrespectiveauthorization; controller harm requires unauthorized downstream effect.",
+  "source_instance_scope": "Fresh abstract taskcontext IDs with identical bounded causal dynamics; alltimecounterfactualsiblings grouped. Replication/CIs conditional onthese4fixedmechanisms, not broadworkflowpopulation.",
+  "controller_online": "prefix token budget floor(B*seen), no future task observations; fixed eligibility thresholds; actual intervention rates and taskutility reported",
+  "learned_controller_selection": "minimummean IDvalidationBrier among arm x logistic/gradientboosting/hazard; deployrepeat0; keep nolearningbaselines separate",
+  "learned_risk_threshold": 0.5,
+  "known_mixture_controller": true
+}

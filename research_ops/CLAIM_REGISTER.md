@@ -1,0 +1,59 @@
+# Claim register
+
+C1 search: proposed, no comparative evidence. C2 learning: proposed, no held-out evidence. C3 intervention: proposed, no matched-utility evidence. P0 audits prerequisites only. Historical planted fixtures cannot establish organic mistakes.
+
+## 2026-11-22T23:49:40.712741+00:00 — verified P0 status
+| Claim / prerequisite | Status | Supporting evidence | Opposing evidence / missing discriminator |
+|---|---|---|---|
+| C1 search advantage | proposed / untested | none; p0-20261122-audit supports only fixtures | no implemented candidate/baseline comparison, only one irreversible mechanism |
+| C2 calibrated OOD gain | proposed / untested | none | no dataset, sealed mechanism split, trained predictor or calibration estimate |
+| C3 matched-utility harm reduction | proposed / untested | none | no learned shield, enforced stages or matched completion/approval comparison |
+| B0 deterministic foundation | tested / bounded support | 122/122 suite; demo afa078d8f51844ba8299ddef897c2962; pilot cf24751ccc8b429499f979c38c12ed95 | planted seed=7 fixtures, serialized scheduler and common notification mechanism |
+| B1 live adaptive causal validity | coded / unmet | three test-double browser cases only | d09833439a904963a00d08278fa83075 and 990e0e825b2a45b3afb5cb1b8fceeff8: 0/12 valid; HTTP503 and one clock error |
+| D1 50ms alone reproduces clock failure | tested / not supported in probe | neither legacy nor guarded initialization failed | one controlled two-context probe; rare historical error remains possible |
+
+No held-out/comparative validation, natural error rate or novelty has been established.
+Exact feature states and source hashes: artifacts/research_runs/p0-20261122-audit/raw/feature_status_ledger.json.
+
+## 2026-11-23T00:46:17.580575+00:00 — P1 evidence boundary
+C1/C2/C3 stay proposed/untested. P1A3/3 mock cases and36/36branches support adapter/systems
+integration only (run9ce2a4d55bb84db4be88e18e40c3a648). They are planted, seed7, one mechanism.
+P1C p1c-qwen35-9b-smoke-v1 is infrastructure-inconclusive: two setup commands, one endpoint,
+zero model requests/live browser/counterfactual cases. It provides no model reliability estimate
+or live causal validity. Cleanup/resource safeguards now have local negative regressions; neither
+local tests nor model metadata substitute for independent live task/replay certification.
+
+## 2026-11-23T01:40:20.259832+00:00 — v2 and4B feasibility evidence
+
+C1/C2/C3 unchanged: proposed/untested. v2 fails clean240s readiness,0model outputs; no causal or
+model-quality denominator.4B metadata/local mocks establish configuration feasibility only; no live
+model selected. Both9B attempts stopped/proxydeleted. No new mechanism, organic-error, comparison,
+heldout or learned-controller evidence. Reproducible inference remains a prerequisite, not novelty.
+
+## 2026-11-23T02:26:23.520914+00:00 — observer leakage and reuse scope
+Legacyunblindedmockcasecertificates do not establish blindedpolicy behavior. Newblindedmockcase12/12branches and6placebos/null/lostack pass underlocalrealPG/Chromium; no livecalls inthisnewpilotyet. User-managedendpoint/providerstats are infrastructureobservations, not AfterClickpolicy samples. C1/C2/C3 remainuntested. Earlier4Bstartupfailure now hasloading/graph evidence; notamodelqualitynegative.
+
+## 2026-11-23T06:14:26.547561+00:00 — live decision success does not imply task/replay validity
+C1/C2/C3 remain proposed/untested. B1 live adaptive validity unmet: v3smoke/singlegoalpass, multiactionfails, replayunattempted. B2 local independentobligationclasssupport: P2 pilot48/48expected backendcases,36known/6UNKNOWN/6CENSORED; only notification and fakefee, capability-relative, planted. No minimizedboundaries, comparison, OODlearning, organicerrorrate or matchedutilityharmreduction. Modelnotqualifiedfortrajectorycollection.
+
+## 2026-11-23T15:51:24.383688+00:00 — B1 minimal live replay prerequisite supported
+One12branchcase p1c-new-endpoint-live-v2 valid under hybrid model+visibleRetrysave guard. Unmodifiedbaselinefails lostack; multiactionstillfails. Does not establish organicmistakes/generalization/search/learning/prevention. C1/C2/C3/H1/H2/H3 remainuntested.
+
+## 2026-11-23T16:47:29.804937+00:00 — H1/C1 narrow tested claim notsupported
+Targetedlocalmethodisworse thanstrongcoverage+sameminimizer atmatched96attempts. All5unique transitionwitnesses independentlyPGvalid; boundedbenchmark/searchprimitive supported, no algorithmicnovelty established. H2/H3untested; final protocol frozenbeforelearning.
+
+
+## 2026-11-23T17:45:40.517270+00:00 — bounded study checkpoint
+
+| Claim | Current status | Evidence | Main opposing evidence / limit |
+| --- | --- | --- | --- |
+| C1 / H1 targeted search advantage | tested; not supported in fixed benchmark | p4-matched-search-v1, 14,400 attempts, ten SQL witnesses | local AUC 1.520833 vs coverage 1.937500; four fixed laws only |
+| C2 / H2 selected calibrated OOD gain | locked tested; not supported against strongest reference | p6-risk-study-v1; p9-locked-confirmation-v1 | selected contrast 0; all development winners known mixture |
+| C2 fixed-tree secondary effect | bounded support | boundary-minus-random-CF Brier -0.00369067, cluster CI [-0.00483658,-0.00269943] | mixture Brier 0.014771 beats boundary tree 0.015620; authority OOD failure |
+| C3 / H3 harm prevention | supported vs none; learned increment not supported | 955→546 harms at 409 interventions/full completion | simple timer also 546; paired harm CI [-0.001465,0.001465] |
+| B1 hybrid live causal validity | one case supported | p1c-new-endpoint-live-v2: 12/12 branches | v1 invalid, two-action failures; planted selected action |
+| B2 executable temporal contract | bounded support | 102 SQL pilots; 63 formal assertions; 256 states; five transition witnesses | declared fixed-clock API; not universal impossibility proof |
+| B3 public-input nonidentifiability | constructive witness | p7-visible-collision-v1: equal full-input hashes, opposite SQL outcomes | intentionally ambiguous pair; not universal agent limit |
+| Organic mistake frequency / production safety / publication novelty | unestablished | none | synthetic cases, one live case, narrow workload and shared implementation |
+
+Final-code/model/threshold freeze remains intact. No new model selection follows the opened final set.
