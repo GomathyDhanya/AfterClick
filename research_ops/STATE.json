@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "utc_updated": "2026-11-23T23:32:03.472965+00:00",
+  "utc_updated": "2026-11-23T23:33:30.599479+00:00",
   "phase": "MODEL_IN_LOOP_SPRINT",
   "state": "BOUNDED_PILOT_CLOSED_AT_FAILED_COMPETENCE_GATE",
   "current_gate": "FAIL_NOMINAL_COMPETENCE; REPRODUCTION_PASS; COPE_UNTESTED; NOVELTY_NOT_ESTABLISHED",
@@ -115,5 +115,10 @@
   "latest_relevant_suite_seconds": 12.4,
   "sealed_verification_passed": true,
   "reproduction_replica_run_id": "s2-replica-check-20261123",
-  "new_sprint_source_checkpoint": "b7b53805a2bf937c1964c7994f3813469f9d2645"
+  "new_sprint_source_checkpoint": "b7b53805a2bf937c1964c7994f3813469f9d2645",
+  "archive_sha256": "125ea53ab42d0a8c05f39fad5594a36732c709e7d4f200a1ed8a271f813e699b",
+  "archive_bytes": 11038930,
+  "archive_extraction_verified": true,
+  "archive_packaged_files": 2735,
+  "archive_verification": "artifacts/afterclick-model-sprint-20261123.package-verification.json"
 }

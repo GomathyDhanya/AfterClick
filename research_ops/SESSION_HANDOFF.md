@@ -34,3 +34,5 @@ Use a fresh output name. Default performs zero model requests, checks seals and 
 The fresh local `s2-replica-check-20261123` exactly reproduced all three branch outcomes. It adds no independent source and no new model calls; not included in primary pilot denominators. Read-only analysis regeneration also matched every sealed metric. Bundle: artifacts/afterclick-model-sprint-20261123.tar.gz with adjacent SHA-256.
 
 Source/report checkpoint committed locally as `b7b53805a2bf937c1964c7994f3813469f9d2645`. This records the reproducible implementation, not a claim that the original paid execution ran at that later revision. Metadata-only checkpoint may follow. No remote push/publication.
+
+Final archive verification: 2735 packaged file hashes and all 36 seals / 2,766 frozen/evidence checks passed after extraction. Archive 11038930 bytes; SHA-256 `125ea53ab42d0a8c05f39fad5594a36732c709e7d4f200a1ed8a271f813e699b`. Package contains source checkpoint b7b5380 and metadata checkpoint 19392ac; later metadata only records this successful package verification.
