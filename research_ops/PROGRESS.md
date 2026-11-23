@@ -295,3 +295,5 @@ Commands: .venv/bin/pytest -q --junitxml=artifacts/research_runs/o1-observabilit
 
 ## 2026-11-23T20:12:33.299719+00:00 — local source checkpoint
 Committed 0ab532670ccbfd376fd9b8480895c715e55b4bf6 on codex/temporal-recovery-study-20261123; no push/publicrelease. Numericalexecution used earlierdirtyHEAD2d57838 and the authoritative source/model hashes; checkpointcommit is later. Full local package command includes finalGit-tracked source,32sealedrun directories and knownprotocolreplica. Provenance/digest/extraction verification is recorded beside the archive. Two preexisting untracked userfiles remain untouched.
+
+Reporting scope clarification: "ordinary" data are generic one-panel-per-source synthetic counterfactual controls, not natural agent trajectories. Runtime selects ordinary-data hazard because boundary models failed development selection; this does not reject every boundary-based controller. Capability primitive overlaps original delegated authority; new workload/observability/control contract is the delta, not invention of that primitive. No numeric results, models, thresholds or scientific source changed.

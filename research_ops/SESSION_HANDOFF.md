@@ -72,3 +72,5 @@ Preferrednext: independent contract/implementation audit, fallback externally me
 capability/workload with a newly frozen finalset. No further fit/sweep justified on these data.
 
 Local sourcecheckpoint 0ab532670ccbfd376fd9b8480895c715e55b4bf6 contains all verified newsource and papers. Finalmetadata commit may follow; neither is claimed as the earlier dirty executionrevision.32runseals/2537checks pass. Local handoff archive: artifacts/afterclick-observability-20261123.tar.gz with adjacent.sha256.
+
+Reporting scope clarification: "ordinary" data are generic one-panel-per-source synthetic counterfactual controls, not natural agent trajectories. Runtime selects ordinary-data hazard because boundary models failed development selection; this does not reject every boundary-based controller. Capability primitive overlaps original delegated authority; new workload/observability/control contract is the delta, not invention of that primitive. No numeric results, models, thresholds or scientific source changed.

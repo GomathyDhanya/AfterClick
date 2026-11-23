@@ -139,7 +139,9 @@ Push delivery requires hidden worker service and network flush; its cancellation
 with receiver commitment. In the held-out pull path, a parent capability first mints a nonrevocable
 child. The recipient dereferences it later. Revoking the parent after minting does not revoke the
 child. This changes the causal transition and recovery API, rather than only shifting a numeric delay.
-The held-out path also changes the relationship between load and access timing. A separate shift
+The capability primitive resembles Study I's delegated-authority class; its invention is not a
+claimed contribution. The new workload separates its later restricted read, uncertain inspection
+and task utility. The held-out path also changes the relationship between load and access timing. A separate shift
 cohort reduces alert reliability and increases actual review delay while leaving advertised ETA stale.
 
 The model sees only a, alert, congestion, advertised ETA and prospective h. It sees no source ID,
@@ -197,7 +199,9 @@ and clean-task loss from cancellation. Total:5120 panels/10240 potential-world e
 synthetic UNKNOWN and 40 synthetic CENSORED measurement-mask probes are retained;5040 known panels fit
 the models. These exercise pipeline handling, not empirical missingness/censoring rates; the hazard
 model separately treats unobserved first-event times as right censored at the query horizon.
-Ordinary sources are synthetic dispatch trajectories, not organic LLM rollouts.
+Here "ordinary" means one randomized plan panel per fresh synthetic source; it still contains
+counterfactual labels. It is a generic source-disjoint control, not a measured ordinary-agent
+trajectory distribution or an organic LLM rollout.
 
 Training row counts match, but source diversity differs: ordinary has 256 contexts per campaign,
 random-CF128, boundary 16, and combined mixes ordinary with boundary contexts. Boundary arms use charged
@@ -250,7 +254,9 @@ not silently included in an equal wall-clock-cost claim.
 ### 8.2 Learning: boundary selection is not a universal source of calibration
 
 All five development-selected predictors are the same handwritten observable heuristic. The best
-trained predictor is ordinary-data discrete hazard. Their selection is frozen before confirmation.
+trained predictor is ordinary-data discrete hazard. Their selection is frozen before confirmation. Boundary-trained candidates fail development
+selection, so the runtime comparison deploys the best trained ordinary-data hazard. It does not
+separately confirm every possible boundary-trained uncertainty controller.
 The primary selected-model boundary-minus-random contrast is zero because predictions coincide.
 
 | Cohort | Data | Preselected hazard verification Brier |
