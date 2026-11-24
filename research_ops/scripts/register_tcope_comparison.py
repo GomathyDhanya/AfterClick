@@ -40,6 +40,8 @@ def main():
         )
         assert args.latency_placebo_ms == freeze["latency_placebo_ms"]
         sources.append(Path("research_ops/TCOPE_FINAL_FREEZE.json"))
+        sources.extend(Path(name) for name in freeze["source_hashes"])
+        sources = list(dict.fromkeys(sources))
     protocol = dict(
         phase="E5_LOCKED_CONFIRMATION"
         if args.partition == "confirmation"
@@ -127,6 +129,16 @@ def main():
         exact_command=f".venv/bin/python -m afterclick.tcope.lifecycle --run artifacts/research_runs/{args.run_id} --execute",
     )
     run = register(args.run_id, protocol)
+    if args.partition == "confirmation":
+        environment = freeze["environment"]
+        manifest = json.loads((run / "manifest.json").read_text())
+        manifest.update(
+            node_version=environment["node"],
+            postgres_version=environment["postgres"],
+            chromium_version=environment["chromium"],
+            frozen_method_sha256=sha("research_ops/TCOPE_FINAL_FREEZE.json"),
+        )
+        atomic_json(run / "manifest.json", manifest)
     for name in ["requests", "tool_calls", "tool_results", "interventions", "observations"]:
         (run / (name + ".jsonl")).touch()
     (run / "checkpoints").mkdir()
