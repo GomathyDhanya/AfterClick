@@ -38,3 +38,6 @@ project invoice unknown. Verify fresh balance/resources before any future billab
 
 ## 2026-11-23T20:08:20.737981+00:00 — format-pair control update
 Under standingauthorization, cap3→3.5 was saved after no unrelated activeapp/endpoint found, for i1 max0.60 only. Effective defaultnet0 preserved. Latestreportedcredit27.41, highwater-conservative27.39, guardprojection27.0655. No additionalpaidwork queued. No per-run reapprovalroutine undercurrentmandate; future paidruns stillneedfreshprotocol/admission/reserve checks.
+
+## 2026-11-24T01:34:36.848712+00:00 — unified continuation mandate
+The latest directive, archived at `artifacts/research_runs/t0-execution-repair-offline-v1/raw/user-directive.txt`, supersedes the narrower $6 sprint-only restriction for NEW experiments. It does not change or reopen that historical sprint. Use existing Supervisor / original baseline / $20 total additional ceiling, all historical charges (1.440697126 conservative USD), unchanged categories 3/3/4/8/2, reserve >=$8 credit and $8 confirmation category. No new endpoint/out-of-pocket/token API/fine-tuning. Exact authority/hash: research_ops/UNIFIED_AUTHORIZATION.json.

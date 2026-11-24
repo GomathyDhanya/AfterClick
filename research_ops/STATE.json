@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "utc_updated": "2026-11-23T23:33:30.599479+00:00",
-  "phase": "MODEL_IN_LOOP_SPRINT",
-  "state": "BOUNDED_PILOT_CLOSED_AT_FAILED_COMPETENCE_GATE",
-  "current_gate": "FAIL_NOMINAL_COMPETENCE; REPRODUCTION_PASS; COPE_UNTESTED; NOVELTY_NOT_ESTABLISHED",
+  "utc_updated": "2026-11-24T01:34:36.851210+00:00",
+  "phase": "E0_EXECUTION_REPAIR",
+  "state": "OFFLINE_IMPLEMENTATION",
+  "current_gate": "NEW_PROTOCOL_REQUIRED; HISTORICAL_4_OF_12_UNCHANGED",
   "bounded_study_complete": true,
   "research_complete": false,
   "publication_novelty": "NOT_ESTABLISHED",
-  "current_run_id": null,
+  "current_run_id": "t0-execution-repair-offline-v1",
   "last_completed_run_id": "s2-comment-commit-diagnostic-v1",
   "last_valid_run_id": "s2-comment-commit-diagnostic-v1",
   "most_recent_valid_run_ids": [
@@ -120,5 +120,6 @@
   "archive_bytes": 11038930,
   "archive_extraction_verified": true,
   "archive_packaged_files": 2735,
-  "archive_verification": "artifacts/afterclick-model-sprint-20261123.package-verification.json"
+  "archive_verification": "artifacts/afterclick-model-sprint-20261123.package-verification.json",
+  "unified_authorization": "research_ops/UNIFIED_AUTHORIZATION.json"
 }
