@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "evidence_files_verified": 725,
+  "mismatches": [],
+  "roles": {
+    "source_parent": 1,
+    "primary_controller": 7
+  },
+  "primary_family_attempts": {
+    "collaboration": 7
+  },
+  "primary_status": {
+    "valid": 0,
+    "invalid": 7,
+    "unknown": 0,
+    "censored": 0
+  },
+  "mode": "saved_evidence_only_no_network_no_model_loading",
+  "frozen_source_commit": "26f098ef301945d7e31fb5218def016375f5ca9b",
+  "scope": "New source instances and timing shifts, four familiar mechanisms"
+}

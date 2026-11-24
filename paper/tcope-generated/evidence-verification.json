@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "sealed_runs": 61,
+  "checked_files": 5736,
+  "mismatches": [],
+  "passed": true,
+  "mode": "read_only_no_network_no_model_loading"
+}

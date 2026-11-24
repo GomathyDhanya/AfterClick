@@ -115,3 +115,11 @@ The registered message allowlist is unconditional; ordering is independently che
 ## 2026-11-24 — t6 live execution defects
 
 Owner: local research engineer. t6-dev01-controller-v1/time_blind aborts after actualCancelnotice commit because settle_visible samples pendingHTTP state at650ms. Repro raw/time_blind/world/report.json; statusgateway_error despite independent command/receipt history. Classification: implementation/transport barrier, not safe/unsafe comparative label. Fixed by bounded5second public ACK wait; t7real slowHTTPpostcommit regression passes. Separate shared-journal usage snapshot labels one completed forecast unknown while another conversation starts; global41/41requests known. Raw flagpreserved; fixed per-conversation request-ID/usage accounting, regression passes. Repair livevalidity pending. No underlying model-policy change.
+
+## 2026-11-24T06:14:12.740600+00:00 — Additive study checkpoint
+
+### TCOPE-REPLAY-001 — stale core browser cache (OPEN; scientific validity blocker)
+Owner: browser replay/state representation. Exact source: t9-confirm07-controller-v1/checkpoints/source.json. Correct copied databasePriorityHigh atclock767ms, originalvisibleNormal/serviceage0ms; all7clonesfreshloadHigh and reject reconstruction before any suffix call. Sourceparent4requests/knownusage/safe. Repro: `.venv/bin/python -m research_ops.scripts.audit_tcope_reconstruction --run-id t10-reconstruction-replica-01` with a fresh ID; t10originalaudit3diagnosticcheckspass, originalreplay0/1valid, corruptedworldcontrolrejected. Currentruntime intentionally unchanged because t9was frozen. Core client-cache/SSE queue must be represented; separate service-panel cache is insufficient. Do not weaken certificates or countinvalid asunsafe. T9closedinconclusive; remaining49unattempted.
+
+### TCOPE-ACK-001 follow-up — resolved with bounded evidence
+The narrowly preregistered t6-dev01-controller-v2 timeblind repair is valid, goalscomplete, forbiddenreceipt1; all10actualrequests known. This repairs transport validity, not efficacy. All oldinvalid traces remain. Full292tests nowpass, including local regressions; they did not predict the new stale-client failure.

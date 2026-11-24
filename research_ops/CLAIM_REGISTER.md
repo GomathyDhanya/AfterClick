@@ -96,3 +96,17 @@ intervention burden, overall goal completion, physical exposure and receipt evid
 - H3 adaptive superiority/H4option preservation: PENDING development+independentconfirmation. TCOPE maycollapse tostage; no learning capacity increase justified.
 - H5 recovery secondary effects: t3substitution caused falsecompletion; no observed duplicatecapture in t4missingcompletionACK task. Do not invent recovery intent or irreversible cascades.
 - C1/C2/C3 from original two studies remain unchanged; new tasks do not retune either opened final set. Novelty NOT ESTABLISHED.
+
+## 2026-11-24T06:14:12.740600+00:00 — Additive study checkpoint
+
+### Current additive TCOPE claim-evidence matrix (overrides earlier PENDING rows only)
+| Claim | Status | Supporting / opposing evidence |
+|---|---|---|
+| TCOPE-H1 added continuation decision value | NOT DEMONSTRATED | Stage/fixed3of3safe; fixedadds12calls; shortforecasts offer no observed increment |
+| TCOPE-H2 computation can lose prevention options | BOUNDED DEVELOPMENT WITNESSES | Three timeblind harms, stage0, exactp.25/Holm.75; realcloning/tooloverhead, no valid matched-delay final |
+| TCOPE-H3 adaptive tradeoff advantage | NOT SUPPORTED | TCOPE2of3withadministrativecensor; noforecastactivation; final0valid |
+| TCOPE-H4 option preservation improvement | CODE/LOCAL TESTS ONLY for finalamendment | Same capabilities givenstrongstage; no validfinalcomparison |
+| TCOPE-H5 secondary recovery behavior | LIMITED OBSERVATION | t3falsecompletionafterreadsubstitution; no duplicatecaptureobserved; no organicprevalenceclaim |
+| Universal exact reconstruction | REFUTED for currentimplementation | t9copiedDBtrue/fullO false; t10independentlocalcounterexample |
+| Confirmed new efficacy/novel algorithm | INCONCLUSIVE / NOT ESTABLISHED | 7finalinvalid49unattempted0valid, no replacement or result manipulation |
+Original C1/C2/C3 and observability findings remain unchanged. t-series221genuinecalls/608107tokens/13distinctsources; dependentbranches and14forecastsuffixes are separate units. Paper and finalnoveltyverdict report limitations rather than a manufactured positive finding.

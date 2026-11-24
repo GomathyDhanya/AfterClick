@@ -139,6 +139,18 @@
       "idle_verified": true,
       "reported_account_delta_usd": 0.5200118299999996,
       "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "t9-confirm07-controller-v1",
+      "category": "confirmation",
+      "reserved_usd": 1.0,
+      "metered_before_usd": 5.71482883,
+      "elapsed_seconds": 225.26855707299546,
+      "estimate_with_margin_usd": 0.35858374064077797,
+      "guard_charge_usd": 0.35858374064077797,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.23000008999999988,
+      "actual_isolated_invoice_usd": null
     }
   ],
   "unresolved_request": false

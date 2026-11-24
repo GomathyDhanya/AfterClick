@@ -112,3 +112,8 @@ Primary sources checked again; paper claims are author reports, not independentl
 | [Russell & Wefald, Principles of Metareasoning](https://doi.org/10.1016/0004-3702(91)90015-C) | Computational actions are valued by their consequences for external decisions. Primary archival first-page scan inspected; do not claim full-paper audit from that one-page scan. | TCOPE inherits value-of-computation motivation. No claim that our proxy estimates calibrated expected computational utility. |
 
 Related POMDP, shielding, Saga and schedule-testing entries above remain foundations. No absence/firstness claim follows from this finite review. Strong immediate staging is the decisive simple comparator; equal naming or integration is not conceptual novelty.
+
+## 2026-11-24T06:14:12.740600+00:00 — Additive study checkpoint
+
+### Final synthesis, 2026-11-24
+No new conceptual priority is established by t-series results. Current primary-source links/overlap above remain the basis; no unperformed head-to-head reproduction is implied. Strong staging wins economically in exploratory development; locked confirmation fails client-state reconstruction. The candidate delta is a small auditable live timing/replay failure characterization, not a new transaction/branching/metareasoning concept or confirmed superior control algorithm. See FINAL_NOVELTY_VERDICT.md and paper/TCOPE_PAPER.md for the claim-evidence matrix and uncertainty.

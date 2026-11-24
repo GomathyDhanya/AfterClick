@@ -129,3 +129,15 @@ in the specification are proposals, not completed claims. See [current gates](do
 A separate natural-task Qwen3.5-4B pilot completed **4/12 tasks** with 12 valid executions. All eight required-comment tasks left drafts unsubmitted. The preregistered competence gate failed, so paid option-preserving intervention and new held-out comparisons were not run. Both earlier frozen studies remain unchanged; no new novelty claim is supported.
 
 See [the additive pilot report](paper/MODEL_IN_LOOP_PILOT.md), [reproduction instructions](research_ops/MODEL_SPRINT_REPRODUCIBILITY.md) and [current handoff](research_ops/SESSION_HANDOFF.md).
+
+## 2026-11-24T06:14:12.740600+00:00 — Additive study checkpoint
+
+## Additive live-agent timing study — 2026-11-24
+
+The [new report](paper/TCOPE_PAPER.md) preserves the earlier bounded and observability studies. It records221genuineQwen3.5-9Bgenerations on13sourceinstances, with dependent controller suffixes reported separately. Immediate staging is the strongest economical development baseline; no incremental TCOPE safety benefit is established. Locked confirmation stops after7reconstruction-invalid branches and49unattempted branches because stale core-browser state was not reconstructed; no final efficacy rate is claimed. Full local suite:292passed,1dependencywarning.
+
+[Reproduction instructions](docs/TCOPE_REPRODUCIBILITY.md), [current novelty verdict](research_ops/FINAL_NOVELTY_VERDICT.md), and [claim ledger](research_ops/CLAIM_REGISTER.md) document the scope. Saved-evidence regeneration makes zero paid requests:
+
+```sh
+.venv/bin/python -m research_ops.scripts.reproduce_tcope --output /tmp/afterclick-tcope-reproduction
+```

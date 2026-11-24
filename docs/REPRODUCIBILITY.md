@@ -197,3 +197,8 @@ of live browser trajectories. No publish/push or public artifact release is auth
 ## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
 
 New extension: paper/OBSERVABILITY_REPRODUCE.md. 260tests pass; original207 frozen paths unchanged, new132 frozen paths match. Native default selection glue mock-tested; old JSON replay retained. New bounded2phase local reproduction actually completed: obs-check-20261123. All numerical metrics identical excluding elapsed_seconds. Run verify_observability.py and render_observability.py --output FRESH_PATH to check saved outputs. These commands have no network/model inference. The reproduction --execute uses real isolated localPG, fixed known protocols/seeds, and is not independent confirmation. No further paid reuse of i1 is permitted.
+
+## 2026-11-24T06:14:12.740600+00:00 — Additive study checkpoint
+
+## Additive live native-policy timing report
+See [TCOPE_REPRODUCIBILITY.md](TCOPE_REPRODUCIBILITY.md) for evidence-only regeneration, exact endpoint/revision provenance, full292-test local validation, and the failed locked reconstruction cohort. The earlier commands/results above are preserved. No confirmation efficacy is inferred from invalid or unattempted branches.

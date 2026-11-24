@@ -1,10 +1,10 @@
-# AfterClick: The Opportunity Cost of Executable Counterfactuals for Tool-Using LLM Agents
+# AfterClick: Deliberation Costs and Replay Limits for Tool-Using LLM Agents
 
-**Additive real-agent study. Development and locked confirmation are recorded separately. This draft is incomplete until the final result tables are populated. Earlier AfterClick papers and frozen outcomes remain unchanged.**
+**Additive, bounded real-agent study. Development findings are exploratory; locked confirmation stopped for reconstruction invalidity. Earlier AfterClick papers and frozen outcomes remain unchanged. No algorithmic superiority or publication novelty is established.**
 
 ## Abstract
 
-Executable counterfactual continuations can compare how an agent behaves after alternative interventions, but executing those continuations consumes time. In asynchronous environments, external jobs may cross a prevention frontier during that computation. We build an auditable Chromium/PostgreSQL testbed with real Qwen3.5-9B native-tool continuations, independent fake external receivers, permission tickets, resource accounting and concurrent edits. We distinguish exact causal reconstruction for evaluation from public-belief forecasts used online: the latter never receive the actual hidden schedule or oracle judgments. We compare static authorization, immediate protection, fixed live lookahead, a deadline-aware allocation heuristic and a real-delay placebo. A preliminary interface study improves safe completion from1/4 to4/4 on four paired development sources, but does not establish population performance. A diverse development baseline completes7/8 legitimate goals and5/8 safely. Final comparison results and uncertainty are pending below. We do not assume that executable lookahead or the proposed heuristic is novel or superior; the study is designed to expose when a simpler protective action already resolves the decision.
+Executable counterfactual continuations can reveal an agent's response to alternative interventions, but the computation consumes time while external jobs continue. We build a Chromium/PostgreSQL testbed with Qwen3.5-9B native tools, isolated HTTP receivers, permission tickets, resource accounting and concurrent edits. Across the additive study we record 221 genuine generations and 608,107 tokens on 13 distinct source instances; dependent replays and partial forecasts are reported separately. A paired interface pilot obtains 4/4 safe completions with corrected feedback versus 1/4 with legacy feedback. Eight diverse development sources achieve 7/8 legitimate completions and 5/8 safe completions. In three development controller groups, immediate protection and protection followed by fixed lookahead each achieve 3/3 safe completions, while time-blind lookahead achieves 0/3; the paired exact p=.25 does not establish a population effect. The proposed deadline-aware heuristic has no incremental safety advantage, and one administrative censor prevents a matched-completion efficiency claim. An independently locked 8-source confirmation stops on its first source: all seven siblings fail exact browser reconstruction despite correct database copies, because the source browser contains stale collaborator state. 49 branches remain unattempted. We preserve this failure, reproduce it locally, and make no confirmation efficacy estimate. The defensible outcome is a reproducible systems/failure study showing the importance of actual deliberation latency, strong protective baselines and client-state fidelity; a novel superior controller remains unestablished.
 
 ## 1. Introduction
 
@@ -42,29 +42,29 @@ The preserved FlowBoard application supports autosaved Description and dropdown 
 
 Observable feedback distinguishes a local comment draft, a posted comment, autosaved fields and an agent's own completion claim. A global Committed indicator certifies task-field transport state, not all requested work. Substitutions report requested and performed actions and whether the requested action executed. The model receives no private success correction after claiming completion. Provenance distinguishes organic model choices, recorded prefix calls, imposed controller actions, mock-provider fixtures and deterministic environment events.
 
-The four workload families have different causal behavior. Publication supports cancellation before dispatch. Permission snapshots a ticket that survives later revocation. Mock resource capture conserves an independent3-unit account, with idempotent same-nonce retry and separate new intents. Collaboration changes legitimate fields or text concurrently and tests whether the agent preserves them. Every receiver is isolated loopback HTTP and records immutable SQL evidence. No real messages, permissions, customer records, resource purchases or payments occur.
+The four workload families have different causal behavior. Publication supports cancellation before dispatch. Permission snapshots a ticket that survives later revocation. Mock resource capture conserves an independent 3-unit account, with idempotent same-nonce retry and separate new intents. Collaboration changes legitimate fields or text concurrently and tests whether the agent preserves them. Every receiver is isolated loopback HTTP and records immutable SQL evidence. No real messages, permissions, customer records, resource purchases or payments occur.
 
-A monotonic worker advances every approximately20ms while model inference and forecast construction proceed. Polling and verification expose delayed, possibly stale evidence. The actor-visible cache is checkpointed without freezing the underlying worker. Exact branch reconstruction checks the full public observation, copied world, browser draft/cache, native conversation and pending IDs before resuming its own clock. New serial sequences and self-referential job ordering are initialized only in fresh ac_* schemas. A one-second finite post-agent observation suffix preserves right censoring rather than fabricating future receipts.
+A monotonic worker advances every approximately 20ms while model inference and forecast construction proceed. Polling and verification expose delayed, possibly stale evidence. The actor-visible cache is checkpointed without freezing the underlying worker. Exact branch reconstruction checks the full public observation, copied world, browser draft/cache, native conversation and pending IDs before resuming its own clock. New serial sequences and self-referential job ordering are initialized only in fresh ac_* schemas. A one-second finite post-agent observation suffix preserves right censoring rather than fabricating future receipts.
 
 ## 5. Controllers and executable forecasts
 
-All primary policies share the same model, Gateway menu, maximum10 new requests including forecasts, maximum4 interventions, maximum12 turns and per-run global caps. Unused budget is not spent on dummy baseline requests. The base policy is unchanged within each comparison.
+All primary policies share the same model, Gateway menu, maximum 10 new requests including forecasts, maximum 4 interventions, maximum 12 turns and per-run global caps. Unused budget is not spent on dummy baseline requests. The base policy is unchanged within each comparison.
 
 Static authorization checks explicit natural-language scope and visible prerequisites. The stage/verify baseline immediately cancels prohibited queued effects or temporarily revokes access when authorized, then continues the model. It also preserves visible collaborator text through an ordinary supported fill substitution. The baseline has the same option-preserving capabilities as the proposed method. In the final version it protects first and immediately resumes a separate authorized original action, instead of needlessly deferring it. Both extra intervention provenance and the original model-action provenance are retained.
 
-Time-blind lookahead executes up to two candidate belief-world continuations before protection. Fixed-budget lookahead performs the same work after immediate protection. Each candidate has at most two new model turns, so these are explicitly partial-horizon forecasts. The candidates share one public starting observation and matched independent belief seed711; neither receives the actual hidden source schedule. The fixed selectors use their rankings to choose whether to resume or suppress the original action. The original worker advances during construction, inference and tool execution. A public summary is released before private oracle grading and teardown; those evaluation-only operations do not supply online selection information.
+Time-blind lookahead executes up to two candidate belief-world continuations before protection. Fixed-budget lookahead performs the same work after immediate protection. Each candidate has at most two new model turns, so these are explicitly partial-horizon forecasts. The candidates share one public starting observation and matched independent belief seed 711; neither receives the actual hidden source schedule. The fixed selectors use their rankings to choose whether to resume or suppress the original action. The original worker advances during construction, inference and tool execution. A public summary is released before private oracle grading and teardown; those evaluation-only operations do not supply online selection information.
 
-T-COPE is a transparent initial heuristic. It protects first and skips lookahead when explicit scope already resolves the decision. For a remaining uncertain consequential proposal, it allows one forecast only if a conservative public opportunity estimate exceeds expected rollout time and at least four requests remain. One forecast revealing a publicly forbidden effect can defer the intent until a newer public verification reports no receipt. Its initial opportunity estimate is max(0,4500ms−visible age); expected rollout time is twice max(1000ms, observed latency history), plus1500ms overhead. It is neither a calibrated hazard model nor an optimal metareasoning policy. Forecast ranking is lexicographic in fewer publicly observed disallowed effects and greater visible task progress. Independent task grades are withheld.
+T-COPE is a transparent initial heuristic. It protects first and skips lookahead when explicit scope already resolves the decision. For a remaining uncertain consequential proposal, it allows one forecast only if a conservative public opportunity estimate exceeds expected rollout time and at least four requests remain. One forecast revealing a publicly forbidden effect can defer the intent until a newer public verification reports no receipt. Its initial opportunity estimate is max(0,4500ms−visible age); expected rollout time is twice max(1000ms, observed latency history), plus 1500ms overhead. It is neither a calibrated hazard model nor an optimal metareasoning policy. Forecast ranking is lexicographic in fewer publicly observed disallowed effects and greater visible task progress. Independent task grades are withheld.
 
 A real-delay placebo waits for a development-frozen duration before protection without invoking forecasts. It separates the cost of waiting from the value of new continuation information. An offline best-observed-arm envelope reports whether any tested arm achieved safe completion on a source; it is not a deployable perfect oracle or a bound on expected optimal performance.
 
 ## 6. Experimental design
 
-The historical4B pilot remains4/12 and is not retuned. The new feedback study uses four new paired sources with the same9B model and equal turn limits, comparing legacy and corrected interfaces. A separate five-condition live replay test verifies no-op, original, suppressed, read-substituted and delayed continuations. These engineering studies do not establish controller superiority.
+The historical 4B pilot remains 4/12 and is not retuned. The new feedback study uses four new paired sources with the same 9B model and equal turn limits, comparing legacy and corrected interfaces. A separate five-condition live replay test verifies no-op, original, suppressed, read-substituted and delayed continuations. These engineering studies do not establish controller superiority.
 
 Eight development sources span four families, including authorized consequential work and prohibited queued effects. Their pending jobs, observation faults and collaborator edits are controlled disturbances; we do not estimate deployed organic error prevalence from them. Three development controller cases cover publication, access and resource frontiers. Every declared case is retained regardless of baseline outcome.
 
-Eight new confirmation source contracts were locked before method selection. They use different source identities and natural content with shifted timing parameters, but the same four mechanisms. They are not an unseen-mechanism test. Controller/model/analysis settings and the placebo duration must be frozen before confirmation outcomes are opened. All siblings and derived forecasts remain with their source cluster.
+Eight new confirmation source contracts were locked before method selection. They use different source identities and natural content with shifted timing parameters, but the same four mechanisms. They are not an unseen-mechanism test. Controller/model/analysis settings and a 23000ms placebo were frozen before confirmation outcomes were opened (source 26f098e). The placebo is ceil-to-seconds of the median development pre-protection forecast delay; old development used an 8000ms placebo and is not a matched-delay confirmation. All siblings and derived forecasts remain with their source cluster.
 
 Primary outcomes are safe completion and independently verified unauthorized historical effects, reported jointly with legitimate completion. We retain attempted, valid, invalid, censored, unknown and unattempted counts. Paired exact tests and source-cluster descriptive bootstrap intervals are supplemented by per-arm Wilson intervals. Holm correction applies to three declared primary contrasts; a placebo contrast is secondary. Degenerate all-tied bootstrap intervals do not demonstrate equivalence. One stochastic suffix per arm/source and only eight confirmation sources limit power and population inference. Temperature zero is not a determinism guarantee.
 
@@ -72,25 +72,57 @@ Primary outcomes are safe completion and independently verified unauthorized his
 
 ### 7.1 Interface and baseline evidence
 
-The same9B feedback comparison achieves4/4 safe completions with corrected semantics and1/4 with legacy semantics, using33 genuine generations. Three discordant pairs give two-sided exact p=.25; this is suggestive engineering evidence, not a population guarantee. The combined changes include prompt/tool semantics and context handling, so the result does not isolate one phrase or prove a model-size effect.
+The same 9B feedback comparison achieves 4/4 safe completions with corrected semantics and 1/4 with legacy semantics, using 33 genuine generations. Three discordant pairs give two-sided exact p=.25; this is suggestive engineering evidence, not a population guarantee. The combined changes include prompt/tool semantics and context handling, so the result does not isolate one phrase or prove a model-size effect.
 
 Five reconstructed live branches produce six new model generations. A read substitution with ambiguous v2 feedback causes a false completion; suppression produces actual replanning. One evidence-based v3 requested/performed/deferred correction subsequently passes the same feedback case in two calls. The original negative trace remains immutable.
 
-The diverse baseline has8/8 valid executions,7/8 legitimate completions and5/8 safe completions, using40 primary generations plus two separately scored interface-retest calls. Resource cancellation arrives at6603ms after a5500ms frontier, leaving a receipt and a2-unit balance. The access trajectory never revokes before a4500ms ticket; later verification/grant does not prevent the read. A collaboration task overwrites a note using stale content. Authorized publication and capture succeed. No duplicate resource capture is observed; we do not infer an unobserved recovery cascade.
+The diverse baseline has 8/8 valid executions,7/8 legitimate completions and 5/8 safe completions, using 40 primary generations plus two separately scored interface-retest calls. Resource cancellation arrives at 6603ms after a 5500ms frontier, leaving a receipt and a 2-unit balance. The access trajectory never revokes before a 4500ms ticket; later verification/grant does not prevent the read. A collaboration task overwrites a note using stale content. Authorized publication and capture succeed. No duplicate resource capture is observed; we do not infer an unobserved recovery cascade.
 
 ### 7.2 Development controller comparison
 
-Pending completed development aggregate. One repaired time-blind publication branch already completes the requested goals but retains a forbidden receipt, whereas immediate protection on the same checkpoint avoids it. The first attempt of that condition was invalid due to a transport-settling defect and is reported separately. It cannot be silently replaced or counted as an efficacy failure.
+The selected development comparison comprises 21 valid controller conditions from three source groups. All-attempt accounting includes one additional invalid time-blind branch, retained with its raw trace and narrowly preregistered repair. The 21 selected conditions include one administratively wall-censored TCOPE trajectory. Their shared ceilings are 10 new requests including forecasts,12 turns and 4 interventions, with unused budget left unused.
 
-### 7.3 Locked confirmation
+| Policy | Safe completion | Legitimate completion | Unauthorized receipts | New calls incl forecasts | Invalid / censored |
+|---|---:|---:|---:|---:|---:|
+| authorization | 1/3 | 3/3 | 2 | 14 | 0/0 |
+| fixed_budget | 3/3 | 3/3 | 0 | 29 | 0/0 |
+| latency_only | 1/3 | 3/3 | 2 | 17 | 0/0 |
+| none | 1/3 | 3/3 | 2 | 13 | 0/0 |
+| stage_verify | 3/3 | 3/3 | 0 | 17 | 0/0 |
+| tcope | 2/3 | 2/3 | 0 | 13 | 0/1 |
+| time_blind | 0/3 | 3/3 | 3 | 29 | 0/0 |
 
-Pending fixed independent execution. No confirmation outcomes were used to write the method above.
+The table counts verified completions over all three declared sources. The TCOPE censor is an unresolved legitimate task, not an independently observed unsafe effect or a model-planning failure. Immediate staging and fixed lookahead after protection are strongest on safe completion; staging uses 17 new calls versus 29 for fixed lookahead. TCOPE's13calls do not establish efficiency at matched legitimate completion (2/3 versus 3/3). TCOPE invokes no forecast in these explicit-scope primary cases; the experiment cannot demonstrate useful adaptive forecast allocation.
+
+Stage versus time-blind has three paired discordances, exact two-sided p=.25, Holm-adjusted p=.75 across the three declared primary contrasts. The descriptive source-bootstrap difference is 1.0 with a degenerate[1,1] interval; that interval reflects three uniformly discordant sampled sources and is not a precise population guarantee. Marginal 95%Wilson intervals are[.439,1]for 3/3 and[0,.561]for 0/3. TCOPE versus stage/fixed has one loss due to administrative censoring, exact p=1. These development measurements precede final correctness amendments and do not estimate the frozen final version's efficacy.
+
+Across all development attempts there are 136 new generations with known usage, including 28 calls in 14 public-belief suffixes. Forecasts are partial two-turn samples, horizon-censored and excluded from efficacy denominators. One old shared-journal unknown flag is an accounting artifact: every actual HTTP request has a known final outcome. The repaired main trajectory and original invalid attempt are both retained. The old 8-second placebo yields 1/3 safe; its unmatched delay cannot isolate information value. No valid final 23-second placebo comparison was obtained.
+
+### 7.3 Locked confirmation and the failed premise
+
+The final freeze locks eight new source contracts and 56 dependent primary branches, seven policies per source. All child protocol hashes were saved before the first final generation. The first source, a priority-preservation collaboration task, completes safely in four new generations. Its seven cloned branches all fail exact full-public-observation reconstruction before making new model requests. Database equality passes; browser input and full-observation equality fail. The preregistered stop rule closes the remaining 49 branches as unattempted, with no automatic replacement or method tuning.
+
+| Final denominator | Count | Interpretation |
+|---|---:|---|
+| Planned / attempted source instances |8 /1| Seven sources never launched |
+| Valid source-parent trajectories |1| Competence of that source only |
+| Planned / attempted controller branches |56 /7| Siblings are dependent |
+| Valid / invalid efficacy branches |0 /7| No policy efficacy estimate |
+| Censored / unknown primary branches |0 /0| Unattempted is separate |
+| Unattempted branches |49| Never labeled safe or unsafe |
+| New generations / tokens |4 /10,219| All requests have known usage |
+
+The failed premise is specific and independently inspectable. At the actual proposal checkpoint, the database contains Priority High after a collaborator edit, but the original browser still shows Normal. Its service observation has age 0ms while the copied hidden clock is 767ms. Fresh navigation loads High. Copying the application database and the separate service-panel cache therefore does not reconstruct the entire client's information state. The strict gate correctly refuses to compare the resulting interventions.
+
+A preregistered local audit reproduces the mismatch with real Chromium and PostgreSQL and zero new model calls. An explicitly changed coherent-view diagnostic passes both checks; it is not the original source replay. A deliberately corrupted-world negative control fails despite matching browser inputs. These controls distinguish client-state reconstruction loss from database-copy corruption without relaxing either certificate. Passing fixtures and earlier live replay cases did not certify this unseen state configuration.
+
+**The confirmation result is inconclusive, not zero safety.** Any stronger final policy ranking would use invalid or missing outcomes. Repair would require actual client-cache and pending-update reconstruction, local qualification and a separately frozen evaluation; it cannot be silently retrofitted to the opened cohort.
 
 ## 8. Timing, ablations and failure analysis
 
 A forecast's wall cost includes isolated-world construction, browser/tool operations and model inference. It must not be reported as model latency alone. The development forecasts can consume much more wall time than their raw HTTP inference latency. We measure the full delay while the primary world advances, then use the frozen delay-only condition to test whether that cost explains missed frontiers. The fixed-budget-after-protection arm isolates whether staging can absorb that delay.
 
-Two execution defects are preserved. Lexical insertion of scheduled jobs violated a self-parent foreign key; fresh-schema copying now orders parents before children. A protective action committed while its public HTTP acknowledgment remained pending beyond the old650ms barrier; a bounded public acknowledgment wait fixes the false abort. A shared-journal snapshot also labeled a completed forecast unknown while a different conversation was in flight. Per-conversation request-ID accounting separates those states; the original global audit shows all41 requests in that batch had known outcomes. These are system defects, not model planning errors.
+Two execution defects are preserved. Lexical insertion of scheduled jobs violated a self-parent foreign key; fresh-schema copying now orders parents before children. A protective action committed while its public HTTP acknowledgment remained pending beyond the old 650ms barrier; a bounded public acknowledgment wait fixes the false abort. A shared-journal snapshot also labeled a completed forecast unknown while a different conversation was in flight. Per-conversation request-ID accounting separates those states; the original global audit shows all 41 requests in that batch had known outcomes. These are system defects, not model planning errors.
 
 ## 9. Limitations and scientific verdict
 
@@ -98,10 +130,71 @@ The environment uses synthetic controlled services and short tasks in one applic
 
 The new confirmation separates source instances and schedule parameters, not unseen mechanisms. Its sample is small and related templates remain correlated. One suffix per arm does not estimate expected policy utility precisely. A best observed arm is optimistic. Finite observation horizons retain unknown futures. Safe task completion does not imply the absence of all imaginable harm outside the declared fake-effect contract.
 
-No new learned predictor or fine-tuning is justified by this small, explicit-scope problem. Earlier search/learning/shield findings remain mixed or negative. If the staged baseline matches T-COPE, the correct conclusion is that extra executable lookahead has no demonstrated incremental safety value here. The literature already establishes the conceptual ingredients. Final novelty verdict remains pending empirical confirmation and may be a bounded systems characterization rather than an algorithmic advance.
+No new learned predictor or fine-tuning is justified by this small, explicit-scope problem. Earlier search/learning/shield findings remain mixed or negative. If the staged baseline matches T-COPE, the correct conclusion is that extra executable lookahead has no demonstrated incremental safety value here. The literature already establishes the conceptual ingredients. The final novelty verdict is **not established**. The strongest supported contribution is this bounded systems/failure characterization and its reproducible counterexamples. The original search and learning results remain mixed or negative; neither they nor an invalid new confirmation justify claiming a superior new algorithm. Statistical confirmation of the proposed method remains incomplete.
 
 ## 10. Reproducibility and safe operation
 
 All runs preregister exact commands, source hashes, model/revision, decoding, request/token/concurrency limits, resource price envelope and finite stopping rules. Raw requests, model outputs, native tool IDs, observations, checkpoints, actual intervention actions and independent certificates are retained, including failed and canceled attempts. Runs are sealed after analysis. No secrets are stored. Local checks require real PostgreSQL and Chromium in isolated ac_* schemas. No paid call is part of evidence-only reproduction.
 
-The existing compute-billed endpoint is used under the original standing project ceiling, category budgets, a protected credit reserve, provider usage/cash limits and finite scale-down watchdogs. Every paid batch verifies min0 restoration and idle containers. Approximate account billing and conservative cost guards are distinguished from unavailable isolated invoices. The reproduction appendix and final quantitative tables will be generated from saved evidence before completion.
+The existing compute-billed endpoint is used under the original standing project ceiling, category budgets, a protected credit reserve, provider usage/cash limits and finite scale-down watchdogs. Every paid batch verifies min 0 restoration and idle containers. Approximate account billing and conservative cost guards are distinguished from unavailable isolated invoices. Evidence-only reproduction instructions and exact commands appear in the appendix and `docs/TCOPE_REPRODUCIBILITY.md`. The paper is a completed report of a bounded exploratory study and an inconclusive confirmation attempt, not a completed confirmation of its primary hypotheses.
+
+## 11. Evidence-backed contribution and hypothesis verdicts
+
+| Hypothesis | Finding | Strongest challenge / limit |
+|---|---|---|
+| H1: executable continuations add decision value | Not demonstrated | Immediate staging matches the best observed development safety; short forecasts add no proven decision-changing information |
+| H2: deliberation can lose a recovery option | Bounded development witnesses support the mechanism | Three correlated task-family instances; instrumentation dominates much of the delay; no valid confirmation placebo |
+| H3: adaptive computation improves trade-off | Not supported | No TCOPE forecast activation in the scored explicit-scope cases; administrative censor; final comparison invalid |
+| H4: option preservation improves legitimate completion | Plausible implementation capability, no isolated comparative gain | Strong staging has the same capabilities; final protect-and-resume amendment has local tests but no valid comparative final outcomes |
+| H5: secondary recovery behavior matters | Measured false completion after ambiguous read substitution | No observed duplicate-capture cascade; controlled missing completion observation is not a wire-level lost acknowledgment |
+| Universal exact live reconstruction | Refuted for the current implementation | Stale core browser state is absent from the copied representation; strict certificates catch it |
+
+Previously known ingredients include speculative action branching, compensation, staged external effects, runtime shields, partial-observation control and computation allocation. AfterClick adds an auditable measurement implementation and concrete failure records of their interaction in this small real-agent setting. The difference matters because a planner's predicted safe action may arrive after the implementable prevention window, and a database-equal clone may change what the agent knows. Development timing witnesses and the failed confirmation demonstrate these engineering premises. They do not establish that the particular combination is a unique or publishable research advance. No broad benchmark leadership, formal shield guarantee, trained-risk generalization or optimal metareasoning result is claimed.
+
+## 12. Figures and genuine trajectory example
+
+![Execution design](tcope-generated/development/architecture.png)
+
+Figure 1: Intended execution/evaluation separation. Exact reconstruction is conditional on a passing full-observation certificate; the final stale-client counterexample shows that the current implementation does not always achieve the pictured coverage. Public-belief online forecasts are separate from privileged evaluator twins.
+
+![Development timing witnesses](tcope-generated/development/timelines.png)
+
+Figure 2: Selected valid development twins. Green marks are actual protective commands, purple marks actual dispatch/ticket transitions and red marks independent receipts. Dashed D is scheduled eligibility, not the exact transition F. The original invalid attempt remains in raw accounting, not in the selected comparison plot. Administrative censoring is labeled.
+
+![Development safety and computation](tcope-generated/development/safety-compute.png)
+
+Figure 3: Exploratory safe completion and actual request use at shared ceilings. Whiskers are source-instance Wilson intervals. This is a comparison at one fixed request ceiling, not a fitted performance-versus-budget curve; equal unused capacity is not burned. The TCOPE completion deficit prevents a matched-success efficiency claim.
+
+![Forecast overhead](tcope-generated/development/forecast-overhead.png)
+
+Figure 4: Ten available post-accounting-fix forecast summaries with component timing records. Median public-summary wall time is 11.277 seconds versus 0.5765 seconds summed HTTP inference time. The remaining construction/browser/tool overhead is measured system overhead, not an intrinsic cost of the language model. Four older suffixes remain in the ledger but lack this exact component-summary format; none are dropped from request or validity counts.
+
+![Confirmation validity stop](tcope-generated/confirmation/safety-compute.png)
+
+Figure 5: No confirmation efficacy estimate is possible. Invalid and unattempted branches are not policy failures, safe outcomes or a 0% safety rate.
+
+A genuine resource-cancellation baseline trajectory (t4/dev-05) performs: fill Description → fill Comment → click Post → click Cancel resource → finish_task. The independent resource receipt precedes cancellation at 6603ms; the scheduled deadline was 5500ms and the independent account ends with 2 units. The agent completes requested fields but cannot erase the historical consumption. Each arrow links a recorded native tool_call_id, actual result and observation; this is not a scripted recovery sequence. In access, the agent fills/posts, then Verify access and Grant access, without first revoking; the capability ticket and read explain the forbidden receipt. These examples distinguish legitimate final-state completion from historically safe completion.
+
+## 13. Cost, data accounting and replication appendix
+
+The additive t-series contains 221 started and 221 known-finished generation requests:33 interface,6 exact live-branch validation,42 diverse-baseline/interface-retest,136 controller-development and 4 confirmation-source calls. Total usage is 608,107 tokens. There are 13 distinct source instances (4 interface,8 distinct-workload development,1 attempted confirmation); reusing a source checkpoint does not create another independent source. Five exact validation siblings,21 valid selected development controller suffixes, one separate interface-retest suffix and 14 partial public-belief suffixes have genuine new model continuations; their denominators and scientific roles are not pooled. The additional invalid development attempt and seven invalid final branches remain in the artifacts.
+
+The conservative t-series cost guard is$3.423030110; including historical spending under the original authorization, the project additional-use guard is$4.863727235. The failed confirmation contributes$0.358583741 and seven unlaunched children$0. Latest account meter is$5.91483016, reported credit$24.20 and billed cash$0; account figures fluctuate asynchronously and are not isolated project invoices. Conservative remaining applicable credit is$23.246272765, above the protected$8 reserve. The endpoint is preserved at min 0/ max 1/ buffer 0/ idle 2 with zero containers verified. Workspace usage cap$14 and effective default net-cash limit$0 remain. No new deployment, token-billed API or fine-tuning occurred.
+
+The frozen model is Qwen/Qwen3.5-9B revision c202236235762e1c871ad0ccb60c8ee5ba337b9a, API model AfterClick on the user-designated existing endpoint. Temperature 0, output 512 tokens, single-request concurrency, no retries, existing enable_thinking=False; no unverified reasoning parameter. Provider startup/configuration—including its observed speculative-serving configuration—is retained in raw logs. Model seed and provider scheduling are uncontrolled; exact stochastic response reproduction is not promised.
+
+The environment lock records Python 3.11.14, Playwright 1.65.2/Chromium 159.0.8154.6, PostgreSQL 17.7 and ModalCLI 1.6.4. Task contracts were frozen before method selection (original byte SHA61cf41a8f09a44ea37573a994be9bba3e444ca14d23468050cc4716df3419d08); the method/source/analysis freeze is research_ops/TCOPE_FINAL_FREEZE.json at 26f098e. The later diagnostic/reproduction helpers are reporting/local-audit changes, not modifications to frozen scientific runtime.
+
+Rebuild the saved report without network/model calls from the repository root:
+
+```sh
+.venv/bin/python research_ops/scripts/verify_evidence.py
+.venv/bin/python research_ops/scripts/verify_observability.py
+.venv/bin/python -m research_ops.scripts.reproduce_tcope --output /tmp/afterclick-tcope-reproduction
+```
+
+Use a fresh output directory. Local test reproduction is `.venv/bin/python -m pytest -q` after starting the documented local PostgreSQL service and installing the locked Chromium. To reproduce the failed-state diagnostic without paid inference, use `.venv/bin/python -m research_ops.scripts.audit_tcope_reconstruction --run-id t10-reconstruction-replica-01`; choose a new ID and preserve its artifacts. This opens only the already-failed source, not an untouched task. Sealed run directories, source snapshots, journals, certificates and content hashes are included in the local reproduction package. Earlier P0–P10 and observability frozen results are verified independently and are not replaced by this paper.
+
+## 14. Conclusion
+
+Real executable continuations make computation and intervention latency measurable, but do not by themselves improve safety. Immediate protection is the strongest economical development comparator here, and TCOPE has no demonstrated incremental advantage. Exact database reconstruction also proves insufficient when a browser retains stale information; the independent confirmation gate detects that premise failure and prevents an invalid policy claim. The next scientific prerequisite is client-state replay fidelity, rather than a larger predictor or another parameter sweep. The present report establishes bounded engineering observations and preserves the negative and invalid evidence; a confirmed novel safety algorithm remains an open outcome.
