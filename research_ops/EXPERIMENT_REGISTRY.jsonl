@@ -129,3 +129,11 @@
 {"event": "planned", "protocol_sha256": "8cddcde3ce0e6aaf4ec2a87ae8f57caaed21e9f95e970ddabff08efa95ce7d5e", "run_id": "t5-public-controller-offline-v1", "schema_version": 1, "utc": "2026-11-24T04:14:40.331310+00:00"}
 {"event": "completed", "run_id": "t4-distinct-9b-baseline-v1", "schema_version": 1, "seal_sha256": "183e2fceedabc641aa7ddf58b5d04d7649029b4bcce4d4964c30ea3c99e70f09", "utc": "2026-11-24T04:18:48.410438+00:00"}
 {"event": "completed", "run_id": "t5-public-controller-offline-v1", "schema_version": 1, "seal_sha256": "5992f0251df834c5bb34cb3fdb0b7efd4447c32f248483b65a88ce5b3a399ca6", "utc": "2026-11-24T04:29:26.605032+00:00"}
+{"event": "planned", "protocol_sha256": "771ecdff0820e91d9f7c9c2ea2bb2ad2956c71a2420f7caf0b0f154b4308a7ec", "run_id": "t6-dev01-controller-v1", "schema_version": 1, "utc": "2026-11-24T04:29:51.893168+00:00"}
+{"event": "planned", "protocol_sha256": "8385f327d46c7d233d12a962f713ab6996b5b3e0b3db1759f8fbe5004b2009fc", "run_id": "t6-dev03-controller-v1", "schema_version": 1, "utc": "2026-11-24T04:29:53.617855+00:00"}
+{"event": "planned", "protocol_sha256": "551e08afadcd2f0086ebe48edede31b7da4996f378dbb8b39be7685e5c1bf870", "run_id": "t6-dev05-controller-v1", "schema_version": 1, "utc": "2026-11-24T04:29:55.302821+00:00"}
+{"event": "planned", "protocol_sha256": "e2473f979266272590e6b5136c3b71198af75078bfa43df84e34319740207f4a", "run_id": "t7-ack-lifecycle-offline-v1", "schema_version": 1, "utc": "2026-11-24T04:36:21.508401+00:00"}
+{"event": "completed_with_invalid_branch", "run_id": "t6-dev01-controller-v1", "schema_version": 1, "seal_sha256": "6b98ea5c8f8998c909e72d36f2b6c16e5201b8e7e893679048e5152e5e68e51d", "utc": "2026-11-24T04:37:06.467781+00:00"}
+{"event": "canceled_before_launch", "run_id": "t6-dev03-controller-v1", "schema_version": 1, "seal_sha256": "9ad8ce796c779ea91e356af054a0b0030db34b4d1395699a69fddfd89ede582a", "utc": "2026-11-24T04:37:06.489097+00:00"}
+{"event": "canceled_before_launch", "run_id": "t6-dev05-controller-v1", "schema_version": 1, "seal_sha256": "e289506d90484d97c25933cd141685bc80f5237ea3191d2e221651abe7839bc5", "utc": "2026-11-24T04:37:06.508315+00:00"}
+{"event": "completed", "run_id": "t7-ack-lifecycle-offline-v1", "schema_version": 1, "seal_sha256": "0178abf70ca1f762880de7c9a8b72540557ba9480a48e120cdf6ce68dbb7c2f3", "utc": "2026-11-24T04:38:05.727418+00:00"}

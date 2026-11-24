@@ -68,6 +68,9 @@ def settle_visible(gateway):
     # browser events; no backend counts or scheduler state determine this barrier.
     gateway.page.wait_for_timeout(650)
     expect(gateway.page.get_by_role("status")).to_have_text("✓ Committed", timeout=5000)
+    deadline = time.monotonic() + 5
+    while gateway.pending and time.monotonic() < deadline:
+        gateway.page.wait_for_timeout(50)
     if gateway.pending:
         raise RuntimeError("Write requests remain unresolved")
 
@@ -414,11 +417,23 @@ def run_task(
         )
         # Count actual attempted HTTP requests, including failed completions;
         # local admission rejections are not fabricated model calls.
-        report["model_calls"] = sum(r.get("event") == "finished" for r in policy.records)
+        own_requests = [
+            r for r in policy.records if r.get("event") == "finished" and r.get("reserved_tokens")
+        ]
+        report["model_request_ids"] = [r["request_id"] for r in own_requests]
+        report["model_calls"] = len(own_requests)
         report["live_continuation"] = (
             bool(checkpoint) and policy.mode == "live" and report["model_calls"] > 0
         )
-        report["policy_usage"] = policy.usage_summary()
+        # The shared journal may contain another conversation's new in-flight
+        # request after this forecast released its public summary. Report only
+        # this conversation's terminal records as its outcome/usage evidence.
+        report["policy_usage"] = dict(
+            calls=len(own_requests),
+            known_total_tokens=sum(r.get("total_tokens", 0) for r in own_requests),
+            uncertain=any(r.get("billing_uncertain", False) for r in own_requests),
+            request_ids=report["model_request_ids"],
+        )
         report["elapsed_seconds"] = time.monotonic() - began
         atomic_json(directory / "report.json", report)
         try:

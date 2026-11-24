@@ -347,3 +347,12 @@ Sealed t4-distinct-9b-baseline-v1:8/8 valid,7/8 goals,5/8 safe,0invalid/unknown/
 
 ## 2026-11-24T04:29:26.606187+00:00 — E3 local qualification
 Sealed t5-public-controller-offline-v1. Final5controllerchecks pass47.47s;12existing tcopechecks passed in103.50s fullrun whose oneadaptivefixture failure was separately corrected. Exact failedlogs retained; nofresh17allpass claim. Public-only forecasts, real-clock loss/protection, FKclone ordering andbudgetprivacy qualified;0genuinecalls/0USD. Added controllers.py/forecasts.py/comparison.py; next prereg7-arm live development case, bounded1USD.
+
+## 2026-11-24T04:29:56.865226+00:00 — E3 live preregistration
+Registered t6-dev01/dev03/dev05-controller-v1:three fixed actualsourceCP00, sevenpolicyconditions each, nofailure-only selection. Each80globalrequests/10perbranchinclforecasts/4interventions/555sec/1USDmax, controllercategory; confirmation8USD reserved. Same9B allarms and sourcec283657 with exactcopies; sourceparentt4SHA recorded. Commands in eachprotocol.
+
+## 2026-11-24T04:37:06.508987+00:00 — E3 first case, preserve invalid evidence
+Sealed t6-dev01-controller-v1:7primaryattempts/6valid/1invalid/0unknown/censored;41genuine9Bcalls. Four2-call publicbelief forecasts valid but horizon-censored. Simple stage and TCOPE bothsafe; timeblindinvalidaftercommittedclickstillpendingACK. Noefficacyclaimfrominvalidbranch. Guard.47000639USD;idleverified. Unlauncheddev03/dev05v1sealedcanceled0attempts. Localt7repair thenoneinvalidconditionrerun; boundednotprompttuning.
+
+## 2026-11-24T04:38:05.728657+00:00 — ACK lifecycle repair qualified
+Sealed t7-ack-lifecycle-offline-v1:7targetedchecks pass32.38sec, realPG/Chromium mocks;0USD. TransportACKwaitbounded5sec, perconversation requestIDs/usage avoidother-conversation transientunknown. No policy/prompt tuning. Nextoneinvalidconditionrerun, then twodevelopment sources andlockedconfirmation.
