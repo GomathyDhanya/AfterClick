@@ -125,3 +125,7 @@
 {"event": "planned", "protocol_sha256": "fa128e4535bb77fb166946bebf79089aeba9e4c3e9a4ba7da4346a2384c9c566", "run_id": "t3-native-live-branches-v1", "schema_version": 1, "utc": "2026-11-24T02:02:43.461504+00:00"}
 {"event": "completed", "run_id": "t3-native-live-branches-v1", "schema_version": 1, "seal_sha256": "8be1d2f70d4c7b70f9b573c5720c4b3ba87f3a10402f64bb43b9985e17b613d2", "utc": "2026-11-24T02:09:59.970410+00:00"}
 {"event": "completed", "run_id": "t2-distinct-services-offline-v1", "schema_version": 1, "seal_sha256": "5cabb5c7a88dd9f5666fb6ffd21f0259029b41f96db382cc4faf1e8bf9bd83b6", "utc": "2026-11-24T03:22:47.801750+00:00"}
+{"event": "planned", "protocol_sha256": "ecb039da9b88dc145451da9e8690146ec9c35a2a0cb9ed813638ae6949d62e31", "run_id": "t4-distinct-9b-baseline-v1", "schema_version": 1, "utc": "2026-11-24T04:13:06.716850+00:00"}
+{"event": "planned", "protocol_sha256": "8cddcde3ce0e6aaf4ec2a87ae8f57caaed21e9f95e970ddabff08efa95ce7d5e", "run_id": "t5-public-controller-offline-v1", "schema_version": 1, "utc": "2026-11-24T04:14:40.331310+00:00"}
+{"event": "completed", "run_id": "t4-distinct-9b-baseline-v1", "schema_version": 1, "seal_sha256": "183e2fceedabc641aa7ddf58b5d04d7649029b4bcce4d4964c30ea3c99e70f09", "utc": "2026-11-24T04:18:48.410438+00:00"}
+{"event": "completed", "run_id": "t5-public-controller-offline-v1", "schema_version": 1, "seal_sha256": "5992f0251df834c5bb34cb3fdb0b7efd4447c32f248483b65a88ce5b3a399ca6", "utc": "2026-11-24T04:29:26.605032+00:00"}

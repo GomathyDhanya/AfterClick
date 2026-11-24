@@ -31,6 +31,8 @@ class Factory:
         self.run, self.protocol, self.info, self.deadline = run, protocol, info, deadline
         self.credit, self.transport = credit, transport
         self.instances = []
+        self.trial_call_start = None
+        self.trial_call_cap = None
         self.settings = {}
         for label, cap in protocol["arm_call_caps"].items():
             cls = NaturalConfig if label == "legacy" else ExecutionConfig
@@ -123,11 +125,33 @@ class Factory:
             raise InferenceError("global_request_outcome_unknown")
         if usage["calls"] >= self.protocol["max_calls"]:
             raise InferenceError("global_call_budget_exhausted")
+        if (
+            self.trial_call_start is not None
+            and usage["calls"] - self.trial_call_start >= self.trial_call_cap
+        ):
+            raise InferenceError("trial_call_budget_exhausted")
         reserve = self.protocol["max_input_tokens"] + self.protocol["max_output_tokens"]
         if usage["known_total_tokens"] + reserve > self.protocol["max_total_reserved_tokens"]:
             raise InferenceError("global_token_budget_exhausted")
         if time.monotonic() + self.protocol["request_timeout_seconds"] + 8 >= self.deadline:
             raise InferenceError("global_wall_budget_exhausted")
+
+    def begin_trial(self, cap):
+        if self.trial_call_start is not None:
+            raise ValueError("Nested trial budget forbidden; forecasts share parent budget")
+        self.trial_call_start = self.usage()["calls"]
+        self.trial_call_cap = cap
+
+    def remaining_trial_calls(self):
+        return min(
+            self.protocol["max_calls"] - self.usage()["calls"],
+            self.trial_call_cap - (self.usage()["calls"] - self.trial_call_start)
+            if self.trial_call_start is not None
+            else self.protocol["max_calls"],
+        )
+
+    def end_trial(self):
+        self.trial_call_start = self.trial_call_cap = None
 
     def close(self):
         for p in self.instances:

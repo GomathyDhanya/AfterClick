@@ -3,8 +3,8 @@
   "authorization_sha256": "5903482ad80688bff21adc1ce7ad8c85a800c6e2646a0d3db41dc2f70285af74",
   "baseline_credit_usd": 28.11,
   "baseline_metered_usd": 2.0047619,
-  "account_metered_highwater_usd": 4.12479714,
-  "account_additional_highwater_usd": 2.12003524,
+  "account_metered_highwater_usd": 4.36480316,
+  "account_additional_highwater_usd": 2.36004126,
   "allowance_usd": 20,
   "active": null,
   "runs": [
@@ -78,6 +78,18 @@
       "guard_charge_usd": 0.3700003700000001,
       "idle_verified": true,
       "reported_account_delta_usd": 0.3700003700000001,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "t4-distinct-9b-baseline-v1",
+      "category": "trajectories",
+      "reserved_usd": 1.5,
+      "metered_before_usd": 3.97479828,
+      "elapsed_seconds": 259.3199531480059,
+      "estimate_with_margin_usd": 0.41278694208740224,
+      "guard_charge_usd": 0.41278694208740224,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.3900048800000002,
       "actual_isolated_invoice_usd": null
     }
   ],

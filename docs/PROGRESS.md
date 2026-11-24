@@ -373,3 +373,12 @@ Validation: 19 relevant tests passed again in 12.40s, Ruff passed; all 35 seals 
 Repro check: `.venv/bin/python -m pytest tests/model_sprint tests/agent/test_native_tools.py tests/agent/test_finance_supervisor.py -q`. Resume read-only: `.venv/bin/python research_ops/scripts/reproduce_model_sprint.py --output artifacts/model-sprint-review-NEW`. Never reuse a closed paid run/journal or rerun into sealed raw paths. Preferred next experiment: bounded offline draft/commit semantics check; no paid work queued.
 
 2026-11-23T23:31:06.114991+00:00 — Fresh local reproduction `s2-replica-check-20261123` passed all three branch outcomes exactly, zero model requests; not a new independent source. Command: `.venv/bin/python research_ops/scripts/reproduce_model_sprint.py --output artifacts/model-sprint-review-replica-20261123 --diagnostic-replica s2-replica-check-20261123`. Final verification: 36 seals / 2766 checks, zero mismatches.
+
+## 2026-11-24T04:13:43.232531+00:00 — E1 distinct live baseline preregistered
+Run t4-distinct-9b-baseline-v1:8new source tasks/fourfamilies plus separately scored v3feedback retest;80generation/1.50USD/765sec maximum, trajectories category. Existing9B only, zero cash, reserve8, caps rechecked. Exact command in protocol; no outcome collected at registration. Source e8a60f7; only registration/records additions pending.
+
+## 2026-11-24T04:18:48.412454+00:00 — E1 completed, continue E3
+Sealed t4-distinct-9b-baseline-v1:8/8 valid,7/8 goals,5/8 safe,0invalid/unknown/censored;42genuine9Bcalls including2separatefeedback retest,115161tokens. Two unauthorized fake receipts and one collaborative overwrite. Resource latecancel; access omitted revoke. Costguard.412786942USD; min0/idleverified. Exact rerun requires new registeredrun, offline certificate analysis safe. Next local publiccontroller qualification then sixbaselinecomparison.
+
+## 2026-11-24T04:29:26.606866+00:00 — E3 local qualification
+Sealed t5-public-controller-offline-v1. Final5controllerchecks pass47.47s;12existing tcopechecks passed in103.50s fullrun whose oneadaptivefixture failure was separately corrected. Exact failedlogs retained; nofresh17allpass claim. Public-only forecasts, real-clock loss/protection, FKclone ordering andbudgetprivacy qualified;0genuinecalls/0USD. Added controllers.py/forecasts.py/comparison.py; next prereg7-arm live development case, bounded1USD.

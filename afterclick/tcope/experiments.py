@@ -138,6 +138,10 @@ def competence(factory, run, deadline):
 
 
 def run_experiment(name, factory, run, deadline):
+    if name == "controller_comparison_v1":
+        from afterclick.tcope.comparison import comparison
+
+        return comparison(factory, run, deadline)
     if name == "competence_v2":
         return competence(factory, run, deadline)
     if name == "distinct_baseline_v1":

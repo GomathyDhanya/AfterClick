@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "utc_updated": "2026-11-24T02:19:25.511042+00:00",
-  "phase": "E1_DISTINCT_WORKLOAD_QUALIFICATION",
+  "utc_updated": "2026-11-24T04:23:24.019182+00:00",
+  "phase": "E3_PUBLIC_CONTROLLER_QUALIFICATION",
   "state": "ACTIVE_LOCAL_IMPLEMENTATION",
-  "current_gate": "E0_PASS_4_OF_4; E2_LIVE_ENGINE_PASS_5_OF_5; E1_PENDING",
+  "current_gate": "E0_PASS;E1_8_VALID_5_SAFE;E2_5_VALID_LIVE;E3_LOCAL_PENDING",
   "bounded_study_complete": true,
   "research_complete": false,
   "publication_novelty": "NOT_ESTABLISHED",
-  "current_run_id": "t2-distinct-services-offline-v1",
-  "last_completed_run_id": "t3-native-live-branches-v1",
+  "current_run_id": "t5-public-controller-offline-v1",
+  "last_completed_run_id": "t4-distinct-9b-baseline-v1",
   "last_valid_run_id": "s2-comment-commit-diagnostic-v1",
   "most_recent_valid_run_ids": [
     "i0-native-offline-v1",
@@ -21,12 +21,15 @@
     "o5-observability-synthesis-v1",
     "s0-natural-driver-offline-v1",
     "s1-natural-qwen-pilot-v1",
-    "s2-comment-commit-diagnostic-v1"
+    "s2-comment-commit-diagnostic-v1",
+    "t1-9b-commit-feedback-v1",
+    "t3-native-live-branches-v1",
+    "t4-distinct-9b-baseline-v1"
   ],
   "source_execution_head": "86a2731dc81d3f6b2f18a4e6bddbe5e27f3e691e",
   "source_execution_dirty": true,
   "source_checkpoint_commit": "a6b1cfd",
-  "last_good_commit": "b7b53805a2bf937c1964c7994f3813469f9d2645",
+  "last_good_commit": "e8a60f7",
   "latest_full_suite_passed": 260,
   "latest_full_suite_seconds": 179.0,
   "latest_full_suite_warnings": 1,
@@ -43,10 +46,10 @@
   "blocked_approvals": [],
   "standing_authorization": "research_ops/AUTHORIZATION.json",
   "spend_state": "research_ops/SPEND_STATE.json",
-  "paid_mode": "standing_authorized_idle_scientific_gate_closed",
+  "paid_mode": "standing_authorized_idle",
   "paid_work_queued": false,
-  "additional_guard_charge_usd": 1.4406971255041499,
-  "account_additional_metered_highwater_usd": 1.06001805,
+  "additional_guard_charge_usd": 2.5864583012725144,
+  "account_additional_metered_highwater_usd": 2.36004126,
   "actual_isolated_project_invoice_usd": null,
   "account_metered_highwater_usd": 3.06477995,
   "latest_reported_account_metered_usd": 3.06477995,
@@ -75,7 +78,7 @@
   "active_paid_process": null,
   "final_holdout_next_use": "reproduction_only_no_tuning",
   "next_experiment": "Offline draft-versus-commit contract discrimination only",
-  "next_command": ".venv/bin/python -m pytest tests/tcope/test_workloads.py -q",
+  "next_command": ".venv/bin/python -m pytest tests/tcope -q",
   "reproduce_command": ".venv/bin/python -m pytest tests/model_sprint tests/agent/test_native_tools.py tests/agent/test_finance_supervisor.py -q",
   "local_database": "local Compose test db remains; isolated ac_* schemas; no ordinary FlowBoard reset",
   "session_handoff": "research_ops/SESSION_HANDOFF.md",
@@ -129,5 +132,6 @@
     "corrected_safe": 4,
     "legacy_safe": 1,
     "run_id": "t1-9b-commit-feedback-v1"
-  }
+  },
+  "active_endpoint": false
 }

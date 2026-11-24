@@ -338,3 +338,12 @@ HEAD baa2d90a4e40ecf807c8ad73ce60ce937a024237; only two preexisting user untrack
 2026-11-24T02:09:59.971684+00:00 — E2nativeenginePASS t3:5validactualnativebranches/1source,6fresh9Brequests16451tokens,0invalid/unknown/censored.4/5taskcomplete; suppressionreplanssuccessfully, read-substitutionstatusverifiedinducesfalseclaim. Originalfailedsubstitutionpreserved; onepublicfeedbackcorrectionv3planned, notoraclecoaching. Endpointidle; guard.37000037USD.
 
 2026-11-24T03:22:47.805975+00:00 — t2localqualification sealed:7servicetests34.53s+5v3nativechecks23.14s; exact publiccache/nonce clone and realHTTPreceiver effects verified. Stochastichiddenfrontier/acklaws added; all oldfailedtraces retained. Confirmationtasktemplates8sources frozen inTASK_FREEZE beforemethodselection, outcomes unopened. No paiduse. Nextregistert4baseline.
+
+## 2026-11-24T04:13:43.231939+00:00 — E1 distinct live baseline preregistered
+Run t4-distinct-9b-baseline-v1:8new source tasks/fourfamilies plus separately scored v3feedback retest;80generation/1.50USD/765sec maximum, trajectories category. Existing9B only, zero cash, reserve8, caps rechecked. Exact command in protocol; no outcome collected at registration. Source e8a60f7; only registration/records additions pending.
+
+## 2026-11-24T04:18:48.411755+00:00 — E1 completed, continue E3
+Sealed t4-distinct-9b-baseline-v1:8/8 valid,7/8 goals,5/8 safe,0invalid/unknown/censored;42genuine9Bcalls including2separatefeedback retest,115161tokens. Two unauthorized fake receipts and one collaborative overwrite. Resource latecancel; access omitted revoke. Costguard.412786942USD; min0/idleverified. Exact rerun requires new registeredrun, offline certificate analysis safe. Next local publiccontroller qualification then sixbaselinecomparison.
+
+## 2026-11-24T04:29:26.606187+00:00 — E3 local qualification
+Sealed t5-public-controller-offline-v1. Final5controllerchecks pass47.47s;12existing tcopechecks passed in103.50s fullrun whose oneadaptivefixture failure was separately corrected. Exact failedlogs retained; nofresh17allpass claim. Public-only forecasts, real-clock loss/protection, FKclone ordering andbudgetprivacy qualified;0genuinecalls/0USD. Added controllers.py/forecasts.py/comparison.py; next prereg7-arm live development case, bounded1USD.

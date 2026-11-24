@@ -84,6 +84,7 @@ def run_task(
     checkpoint=None,
     intervention=None,
     interceptor=None,
+    public_done=None,
 ):
     directory = Path(directory)
     directory.mkdir()
@@ -236,7 +237,11 @@ def run_task(
                                 )
                             if chosen and chosen.get("delay_ms"):
                                 page.wait_for_timeout(chosen["delay_ms"])
-                            if chosen and chosen.get("kind") in {"suppress", "defer"}:
+                            if chosen and chosen.get("kind") == "preexecuted":
+                                # The broker already performed a supported protective
+                                # Gateway action while the external worker advanced.
+                                status = "completed" if chosen["requested_executed"] else "deferred"
+                            elif chosen and chosen.get("kind") in {"suppress", "defer"}:
                                 status = "blocked" if chosen["kind"] == "suppress" else "deferred"
                             else:
                                 actual = decision
@@ -355,11 +360,31 @@ def run_task(
             report["valid"] = not gateway.pending
             report["agent_stop_wall"] = time.time()
             report["final_observation"] = observe(gateway)
+            if public_done:
+                # Release only public evidence before private grading and the
+                # finite observer suffix. Online selection never sees oracle data.
+                public_done(copy.deepcopy(report["final_observation"]))
             report["agent_stop_state"] = world.snapshot()
             report["final_messages"] = policy.messages
     except BaseException:
         report["error"] = traceback.format_exc()
-        report["termination"] = "error"
+        if any(
+            code in report["error"]
+            for code in [
+                "trial_call_budget",
+                "global_call_budget",
+                "global_wall_budget",
+                "global_token_budget",
+                "intervention_budget",
+            ]
+        ):
+            report["termination"] = "inference_budget"
+            report["valid"] = gateway is not None and not gateway.pending
+        else:
+            report["termination"] = "error"
+        if public_done and gateway and "final_observation" not in report:
+            report["final_observation"] = observe(gateway)
+            public_done(copy.deepcopy(report["final_observation"]))
     finally:
         if context:
             context.close()
@@ -379,7 +404,11 @@ def run_task(
         except BaseException:
             report["oracle_error"] = traceback.format_exc()
             report["valid"] = False
-        report["budget_censored"] = report.get("termination") in {"wall_budget", "turn_budget"}
+        report["budget_censored"] = report.get("termination") in {
+            "wall_budget",
+            "turn_budget",
+            "inference_budget",
+        }
         report["live_continuation"] = (
             bool(checkpoint) and policy.mode == "live" and report["model_calls"] > 0
         )
@@ -421,7 +450,24 @@ class CoreWorld:
                 for table in tables.metadata.sorted_tables:
                     values = checkpoint["world"][table.name]
                     if values:
-                        connection.execute(insert(table), values)
+                        if table.name == "scheduled_jobs":
+                            # This table has a non-deferrable self FK. Snapshot
+                            # row order is lexical, so children may precede parents.
+                            pending = list(values)
+                            inserted = set()
+                            while pending:
+                                ready = [
+                                    v
+                                    for v in pending
+                                    if v["parent_id"] is None or v["parent_id"] in inserted
+                                ]
+                                if not ready:
+                                    raise ValueError("Cyclic or missing scheduled-job parent")
+                                connection.execute(insert(table), ready)
+                                inserted.update(v["id"] for v in ready)
+                                pending = [v for v in pending if v["id"] not in inserted]
+                        else:
+                            connection.execute(insert(table), values)
                 # Explicit snapshot IDs do not advance PostgreSQL sequences.
                 # Initialize only these fresh isolated branch schema sequences.
                 from sqlalchemy import text

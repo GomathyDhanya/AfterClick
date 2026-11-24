@@ -90,3 +90,6 @@ Stop interface optimization after i1; selected native for newdriver, preserve JS
 - Alternatives: coach with hidden goal feedback (invalidates natural evaluation); tune prompts until passing (would obscure original negative evidence); treat zero unauthorized messages as proof of safety (small, protected, explicit task distribution); call a scripted repair live recovery (false).
 - Reversal criterion: a separately versioned and preregistered natural-task policy must pass competence on independent task groups before actual live continuation comparisons. Original failed arm remains immutable. Existing standing authorization does not remove this scientific gate.
 - Scope: s2 is a diagnostic controller action, not a live continuation implementation or a reproduced Cordon/SURE-Act system. RQ2–RQ3 remain unmeasured; no positive novelty claim or final research completion.
+
+## 2026-11-24T04:18:48.413224+00:00 — Distinct-workload decision
+E1competence adequate7/8goals but5/8safe; do not gate research on perfect competence. Compare immediateprotect against livebelieflookahead because resourcecancelmissedfrontier and accessneverrevoked. Contrary: noticecancel and authorizedeffects succeeded, no duplicatecapture. No further prompttuning; reversal if replay/provenance fails local qualification.
