@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "archive": "artifacts/afterclick-tcope-20261124.tar.gz",
+  "sha256": "3b154605cabd9b1073b8acd0c3395c3e994ac06cfaa2c07af61438f49c9328e2",
+  "bytes": 21032684,
+  "package_content_git_commit": "cedc89df584d9985846031d2afe0e65a5f828377",
+  "files_verified": 5948,
+  "extraction_mismatches": [],
+  "old_and_new_evidence_verifiers": {
+    "verify_evidence": {
+      "schema_version": 1,
+      "sealed_runs": 61,
+      "checked_files": 5736,
+      "mismatches": [],
+      "passed": true,
+      "mode": "read_only_no_network_no_model_loading"
+    },
+    "verify_observability": {
+      "schema_version": 1,
+      "sealed_runs": 61,
+      "checked_files": 5897,
+      "mismatches": [],
+      "passed": true,
+      "mode": "read_only_no_network_no_model_loading"
+    }
+  },
+  "regenerated_summary_matches": {
+    "development": true,
+    "confirmation": true
+  },
+  "network_or_model_requests": 0,
+  "passed": true
+}

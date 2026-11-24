@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "utc_updated": "2026-11-24T07:09:16.256673+00:00",
+  "utc_updated": "2026-11-24T07:14:37.214389+00:00",
   "phase": "E5_VALIDITY_STOP_SYNTHESIS",
   "current_gate": "INCONCLUSIVE",
   "local_validation_gate": "PASS",
@@ -117,8 +117,13 @@
   "verified_checksum_paths": 5897,
   "sealed_verification_passed": true,
   "archive": "artifacts/afterclick-tcope-20261124.tar.gz",
-  "archive_sha256": null,
-  "archive_extraction_verified": null,
+  "archive_sha256": "3b154605cabd9b1073b8acd0c3395c3e994ac06cfaa2c07af61438f49c9328e2",
+  "archive_extraction_verified": true,
   "session_handoff": "research_ops/SESSION_HANDOFF.md",
-  "reporting_followup": "Invalid-only confirmation efficacy fields are null; no contrasts. SVG whitespace normalized; scientific runtime unchanged."
+  "reporting_followup": "Invalid-only confirmation efficacy fields are null; no contrasts. SVG whitespace normalized; scientific runtime unchanged.",
+  "archive_bytes": 21032684,
+  "archive_verified_files": 5948,
+  "archive_content_git_commit": "cedc89df584d9985846031d2afe0e65a5f828377",
+  "archive_verification": "artifacts/afterclick-tcope-20261124.package-verification.json",
+  "latest_report_commit": "cedc89df584d9985846031d2afe0e65a5f828377"
 }

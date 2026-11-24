@@ -380,3 +380,6 @@ Primary{"planned": 7, "attempted": 7, "valid": 0, "invalid": 7, "unknown": 0, "c
 
 ## 2026-11-24T07:09:16.256673+00:00 — Final bounded report / INCONCLUSIVE confirmation
 Frozenruntime26f098e unchanged; t9source1valid, primary7invalid49unattempted0valid, no efficacy estimate. t10localcounterexample3checks confirmsstaleclient; t11full292pass/1warning339.46s, Ruff/formatpass. All61sealedruns, verifier5736/5897paths0mismatches.221genuineadditivegenerations608107tokens13sources; strongstagebaseline, no TCOPEincrement/novelty established. Manuscript/repro/claims/finance/state/handoff updated; no paid queue, endpoint0containers. Guard$4.863727235additional, conservativecredit$23.246272765. Exactrerun `.venv/bin/python -m pytest -q`; evidenceonlyresume `.venv/bin/python -m research_ops.scripts.reproduce_tcope --output /tmp/afterclick-tcope-resume-01`. Archiveverificationnext.
+
+## 2026-11-24T07:14:37.214389+00:00 — Reproduction package verified
+Archive artifacts/afterclick-tcope-20261124.tar.gz; SHA256 3b154605cabd9b1073b8acd0c3395c3e994ac06cfaa2c07af61438f49c9328e2;21,032,684bytes. Contentcommitcedc89d,5,948filesextracted/checksummatched; both61-runverifierspass; regenerateddevelopment/confirmation summaryJSONequalsdelivereddata. No network/modelcalls. Lateststate/handoff refreshed. Frozenruntime26f098e remainsunchanged; finalgateINCONCLUSIVE, allpaidworkidle.
