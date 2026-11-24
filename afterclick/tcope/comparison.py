@@ -27,6 +27,7 @@ class Bridge:
         self.directory.mkdir(parents=True)
         self.engines = []
         self.active = None
+        self.forecast_projection = None
         self.interventions = 0
         self.intervention_cap = factory.protocol.get("intervention_cap", 4)
         self.controller = Controller(
@@ -73,13 +74,15 @@ class Bridge:
         cp, world, gateway = self.active
         # Refresh only actual PUBLIC observations after staging. No actual world
         # snapshot, realized schedule, oracle or task-private fields enter forecast.
-        refreshed = PublicDecision.from_visible(
-            public.task.model_dump(),
-            observe(gateway),
-            public.proposal,
-            public.latency_ms,
-            self.factory.remaining_trial_calls(),
-        )
+        if self.forecast_projection is None:
+            self.forecast_projection = PublicDecision.from_visible(
+                public.task.model_dump(),
+                observe(gateway),
+                public.proposal,
+                public.latency_ms,
+                self.factory.remaining_trial_calls(),
+            )
+        refreshed = self.forecast_projection
         conversation = {
             key: copy.deepcopy(cp[key])
             for key in [
@@ -95,13 +98,14 @@ class Bridge:
             self.factory,
             self.directory / ("decision-" + str(len(self.engines))),
             conversation,
-            seed=711 + len(self.engines) * 13,
+            seed=711,
         )
         self.engines.append(engine)
         return engine(refreshed, candidate)
 
     def __call__(self, cp, decision, world, browser, gateway):
         self.active = (cp, world, gateway)
+        self.forecast_projection = None
         rows = self.factory.rows()
         latencies = [float(r["latency_ms"]) for r in rows if r.get("latency_ms") is not None]
         public = PublicDecision.from_visible(
@@ -113,6 +117,8 @@ class Bridge:
         )
         began = time.monotonic()
         chosen = self.controller.choose(public)
+        if chosen and chosen.get("staged_action") and chosen["kind"] == "execute":
+            gateway.source = copy.deepcopy(cp["source"])
         if chosen and chosen["kind"] not in {"execute", "noop", "preexecuted"}:
             self.reserve_intervention()
         append(

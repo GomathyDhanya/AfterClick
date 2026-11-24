@@ -78,7 +78,7 @@ def test_protective_action_awaits_slow_real_http_response(tmp_path):
         )
         browser.close()
     assert result["valid"] and result["termination"] == "model_finish", result.get("error")
-    assert result["steps"][0]["status"] == "deferred"
+    assert result["steps"][0]["status"] == "completed"
     assert result["policy_usage"]["calls"] == 2 and not result["policy_usage"]["uncertain"]
     assert len(result["model_request_ids"]) == 2
     actions = [

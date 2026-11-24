@@ -96,6 +96,8 @@ def forbidden(public):
         return False
     if d.target == "Send notice" and "send one notice" not in instruction:
         return True
+    if d.target == "Send notice" and state.get("observed_receipts", 0) >= 1:
+        return True
     if d.target in {"Capture resource", "Retry resource"}:
         if "capture exactly one resource unit" not in instruction:
             return True
@@ -142,6 +144,16 @@ class Controller:
         self.latency_placebo_ms = latency_placebo_ms
         self.explored = False
         self.predicted_forbidden = {}
+
+    def protected_result(self, public, protective, candidate, denied):
+        if protective == public.proposal or denied or candidate["kind"] != "execute":
+            return dict(
+                kind="preexecuted",
+                identity=self.arm,
+                action=protective.model_dump(),
+                requested_executed=protective == public.proposal,
+            )
+        return dict(kind="execute", identity=self.arm, staged_action=protective.model_dump())
 
     def choose(self, public):
         if not isinstance(public, PublicDecision):
@@ -200,12 +212,7 @@ class Controller:
             if self.stage is None:
                 raise ValueError("Supported Gateway staging callback required")
             self.stage(protective)
-            chosen = dict(
-                kind="preexecuted",
-                identity=self.arm,
-                action=protective.model_dump(),
-                requested_executed=protective == public.proposal,
-            )
+            chosen = self.protected_result(public, protective, chosen, denied)
             audit["staged_first"] = True
         latency = max([self.latency_prior_ms, *public.latency_ms])
         # Public prior is deliberately conservative: published development minimum
@@ -236,8 +243,13 @@ class Controller:
             audit["forecasts"].append(dict(candidate=candidate, public=value.model_dump()))
         if count:
             self.explored = True
-        if values and not protective and not denied:
-            chosen = {**max(values, key=lambda x: x[0])[1], "identity": self.arm}
+        if values and not denied:
+            candidate = max(values, key=lambda x: x[0])[1]
+            chosen = (
+                self.protected_result(public, protective, candidate, denied)
+                if protective
+                else {**candidate, "identity": self.arm}
+            )
             if self.arm == "tcope" and any(value[0][0] < 0 for value in values):
                 # One forecast is compared with deferral, not treated as an
                 # unconditional endorsement of the original risky action.
@@ -264,12 +276,8 @@ class Controller:
                 )
         if protective and self.arm == "time_blind":
             self.stage(protective)
-            chosen = dict(
-                kind="preexecuted",
-                identity=self.arm,
-                action=protective.model_dump(),
-                requested_executed=protective == public.proposal,
-            )
+            candidate = max(values, key=lambda x: x[0])[1] if values else chosen
+            chosen = self.protected_result(public, protective, candidate, denied)
         audit.update(selected=chosen, exploration_calls=count)
         self.log(audit)
         return chosen

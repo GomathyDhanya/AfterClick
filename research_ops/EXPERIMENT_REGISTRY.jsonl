@@ -144,3 +144,4 @@
 {"event": "completed", "run_id": "t6-dev03-controller-v2", "schema_version": 1, "seal_sha256": "dd19a905481078c4a94e0453d06da1129d2c5fddf48b137a4561f61ba8b06880", "utc": "2026-11-24T04:51:32.744470+00:00"}
 {"event": "completed", "run_id": "t6-dev05-controller-v2", "schema_version": 1, "seal_sha256": "2958bdc35d0e75c270e4b9f10bf0fb000c0d8f7bb78901a756d41f72f534c7b6", "utc": "2026-11-24T05:00:03.244828+00:00"}
 {"event": "planned", "protocol_sha256": "49a8a0314c936be98d88c00c695feecbc122c6e7c3b0f49396b0b1edfbc9dcab", "run_id": "t8-final-method-qualification-v1", "schema_version": 1, "utc": "2026-11-24T05:00:05.341435+00:00"}
+{"amendment": "artifacts/research_runs/t8-final-method-qualification-v1/protocol_amendment_v2.json", "event": "local_protocol_amendment_before_execution", "paid": false, "run_id": "t8-final-method-qualification-v1", "utc": "2026-11-24T05:45:03.426820+00:00"}

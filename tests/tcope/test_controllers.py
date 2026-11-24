@@ -104,7 +104,8 @@ def test_computation_order_and_tcope_stop_against_strong_stage_baseline():
         c = Controller(arm, stage=lambda d: events.append("stage"), rollout=rollout)
         selected = c.choose(p)
         assert events == expected
-        assert selected["kind"] == "preexecuted" and not selected["requested_executed"]
+        assert selected["kind"] == "execute"
+        assert selected["staged_action"]["target"] == "Cancel resource"
 
 
 @pytest.mark.browser
@@ -198,10 +199,14 @@ def test_real_clock_runs_during_forecast_and_early_protection_prevents(tmp_path)
         assert results["fixed_budget"]["oracle"]["mock_receipts"] == 0
         # Model prefix queued once, actual substituted protection acknowledged.
         step = results["fixed_budget"]["steps"][0]
-        assert step["status"] == "deferred" and step["executed"]
-        assert not json.loads(step["tool_result_message"]["content"])["action_receipt"][
+        assert step["status"] == "completed" and step["executed"]
+        assert json.loads(step["tool_result_message"]["content"])["action_receipt"][
             "requested_executed"
         ]
+        assert (
+            results["fixed_budget"]["state"]["tasks"][0]["description"]
+            == spec.expected["description"]
+        )
         assert not results["fixed_budget"]["live_continuation"]  # Mock never genuine.
         browser.close()
         parent_policy.close()
