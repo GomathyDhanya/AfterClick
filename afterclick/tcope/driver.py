@@ -160,6 +160,11 @@ def run_task(
                 for item_index, item in enumerate(calls):
                     current = observe(gateway)
                     decision = None
+                    proposal_provenance = (
+                        {**checkpoint["source"], "tool_call_id": item["id"]}
+                        if from_checkpoint
+                        else provenance(policy, item["id"])
+                    )
                     before_actions = len(gateway.history)
                     try:
                         decision = parse_call(item)
@@ -288,7 +293,8 @@ def run_task(
                         ),
                         intervention=chosen if decision and decision.kind != "done" else None,
                         semantics=semantics,
-                        provenance=provenance(policy, item["id"]),
+                        provenance=proposal_provenance,
+                        tool_result_message=copy.deepcopy(policy.messages[-1]),
                         proposal_origin="recorded_checkpoint_call"
                         if from_checkpoint
                         else "organic_llm"

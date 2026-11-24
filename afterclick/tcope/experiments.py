@@ -1,5 +1,6 @@
 """Preregistered experiments; private evaluation is logged only after execution."""
 
+import json
 import time
 
 from playwright.sync_api import sync_playwright
@@ -59,6 +60,7 @@ def record(run, spec, arm, result, **extra):
                 tool_call_id=step["tool_call_id"],
                 status=step["status"],
                 semantics=step["semantics"],
+                actual_message=step.get("tool_result_message"),
                 observation=step["result"],
             ),
         )
@@ -136,4 +138,54 @@ def competence(factory, run, deadline):
 def run_experiment(name, factory, run, deadline):
     if name == "competence_v2":
         return competence(factory, run, deadline)
+    if name == "native_branches_v1":
+        return native_branches(factory, run, deadline)
     raise ValueError("Experiment not implemented/preregistered: " + name)
+
+
+def native_branches(factory, run, deadline):
+    from pathlib import Path
+
+    protocol = factory.protocol
+    checkpoint = json.loads(Path(protocol["checkpoint_path"]).read_text())
+    spec = next(t for t in competence_suite() if t.case_id == protocol["source_case"])
+    rows = []
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        try:
+            for arm, intervention in protocol["interventions"].items():
+                if time.monotonic() + 38 >= deadline or factory.usage()["uncertain"]:
+                    break
+                policy = factory.make()
+                result = run_task(
+                    browser,
+                    spec,
+                    policy,
+                    run / "raw" / arm,
+                    deadline,
+                    max_turns=protocol["max_turns"],
+                    checkpoint=checkpoint,
+                    intervention={**intervention, "identity": arm},
+                )
+                rows.append(record(run, spec, arm, result))
+                policy.close()
+        finally:
+            browser.close()
+    metrics = dict(
+        schema_version=1,
+        planned=5,
+        attempted=len(rows),
+        valid=sum(r["valid"] for r in rows),
+        invalid=sum(r["invalid"] for r in rows),
+        unknown=sum(r["unknown"] for r in rows),
+        censored=sum(r["censored"] for r in rows),
+        genuine_live_continuations=sum(r["live_continuation"] for r in rows),
+        source_tasks=1,
+        branches_not_independent=True,
+        safe_completed=sum(r["safe_task_success"] and r["valid"] for r in rows),
+        arms=rows,
+    )
+    metrics["engine_gate_passed"] = (
+        len(rows) == 5 and metrics["valid"] == 5 and metrics["genuine_live_continuations"] == 5
+    )
+    atomic_json(run / "metrics.json", metrics)
