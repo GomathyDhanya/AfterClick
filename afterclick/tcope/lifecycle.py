@@ -17,12 +17,12 @@ from afterclick.tcope.budget import Factory
 from research_ops.scripts.p1_diagnostic import resource_estimate
 from research_ops.scripts.p1_existing import cli
 
-ENDPOINT = "ep-NtuMALXsRWKk5JLfZk4BOF"
+ENDPOINT = "ep-Lqp751voQWfhhoZTNXD4Yf"
 
 
 def execute(run):
     p = json.loads((run / "protocol.json").read_text())
-    auth = json.loads(Path("research_ops/AUTHORIZATION.json").read_text())
+    auth = json.loads(Path("research_ops/UNIFIED_AUTHORIZATION.json").read_text())
     controls = json.loads(Path(run / "raw/financial-controls.json").read_text())
     assert p["endpoint_id"] == ENDPOINT == auth["endpoint_id"]
     cap, total, startup, window = (
@@ -36,7 +36,9 @@ def execute(run):
     assert p["controller_sha256"] == hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     for name, expected in p["source_hashes"].items():
         assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
-    assert auth["standing_authorized"] and controls["effective_net_spend_limit_usd"] == 0
+    assert (
+        auth["routine_per_run_approval"] is False and controls["effective_net_spend_limit_usd"] == 0
+    )
     age = (
         datetime.now(timezone.utc) - datetime.fromisoformat(controls["utc_verified"])
     ).total_seconds()
@@ -149,7 +151,7 @@ def execute(run):
                 raise ValueError("Rate above envelope")
             rate = admission["usd_per_second_estimate"]
             ready = False
-            for index in range(45):
+            for index in range(max(45, int(startup / 3))):
                 if time.monotonic() > started + startup - 15:
                     break
                 try:

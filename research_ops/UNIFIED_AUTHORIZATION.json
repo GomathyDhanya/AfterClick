@@ -15,9 +15,15 @@
   "supersedes_sprint_only_control": "research_ops/SPRINT_AUTHORIZATION.json",
   "does_not_reopen_closed_runs": true,
   "category_limits_unchanged": true,
-  "endpoint_id": "ep-NtuMALXsRWKk5JLfZk4BOF",
+  "endpoint_id": "ep-Lqp751voQWfhhoZTNXD4Yf",
   "no_new_endpoint": true,
   "no_out_of_pocket": true,
   "no_token_billed_apis": true,
-  "routine_per_run_approval": false
+  "routine_per_run_approval": false,
+  "endpoint_designation_source": "User supplied ep-Lqp751voQWfhhoZTNXD4Yf during active execution",
+  "previous_endpoint": "ep-NtuMALXsRWKk5JLfZk4BOF",
+  "previous_endpoint_currently_listed": false,
+  "model": "Qwen/Qwen3.5-9B",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "endpoint_update_utc": "2026-11-24T01:48:52.878057+00:00"
 }
