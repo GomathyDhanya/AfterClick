@@ -1,0 +1,19 @@
+# OECR novelty comparison — checked 2026-11-24
+
+These are primary-source comparisons, not evidence that no closer work exists. The implemented comparator is our database/fresh-browser reconstruction, not a reproduction of another paper's system.
+
+| Prior method / inspected scope | Known overlap | Actual AfterClick distinction to test | Evidence and limitation |
+|---|---|---|---|
+| [Safe to Resume?](https://arxiv.org/html/2608.29381v1), failure taxonomy and framework evaluation, especially §IV-B | Explicit missing-state, inconsistent-cut, external mismatch, nondeterminism and unrecorded-effect failures | Concrete React dirty buffer/base revisions, SSE cursor/queue, native conversation and PostgreSQL cut certification followed by live Qwen continuations | u0 supports executable-state witnesses. It does not make missing state or consistent cuts conceptually new. No comparison against its strongest VM snapshot implementation |
+| [AgentRewind](https://arxiv.org/html/2608.14380v1), environment recovery boundary and aligned context | Workspace rollback and agent-context reconstruction; controlled boundary excludes external service/runtime effects | Browser-client state versus fresh server reads, with pending-event continuation checks | A narrower application-specific implementation. No claim that AgentRewind fails on its intended filesystem scope |
+| [SURE-Act / Agents' Last Doubt](https://arxiv.org/html/2610.24194v1), §§3.1–3.4 and evaluation | Executed alternatives from cloned checkpoints under a frozen backbone; outcome supervision and intervention control | Qualification of the clone assumption when React and server state differ | It operates in ToolSandbox; no direct evidence of its clone being invalid. AfterClick is not a new counterfactual learning principle |
+| [Cordon](https://arxiv.org/html/2606.17573v1), §§4.4–4.5 | Shadow state and outbox mediation support staging and external-effect control | Replay validity is upstream of intervention-effect estimation | No new staging claim; immediate staging remains the strongest existing AfterClick development baseline |
+| [UndoBench](https://arxiv.org/html/2610.05622v1), benchmark and recovery evaluation | Distinguishes recovery competence and persistent historical consequences | Exact client-cut witnesses and downstream continuation comparison | Reuses the principle that current-state repair need not erase history; no novelty in that principle |
+| [Chandy–Lamport](https://lamport.azurewebsites.net/pubs/chandy.pdf), distributed snapshot method | Global state includes local processes and channel state, rather than one database | Application-specific executable serialization and fail-closed admission | OECR is not a new distributed snapshot algorithm; source ticker is explicitly paused at a controlled cut |
+| [Russell–Wefald](https://doi.org/10.1016/0004-3702(91)90015-C), metareasoning formulation | Computation is an action whose value trades off against resources | No demonstrated TCOPE advantage beyond established ideas | Stop tuning rather than rename value of computation |
+
+Provisional verdict: strongest opportunity is a bounded empirical systems study about invalid replay changing an agent's decision problem. Conceptual novelty of checkpointing, state completeness, channel preservation, staging and metareasoning is rejected. Publication-level novelty is unestablished pending independent behavioral evidence and broader comparison. A single application and authored stale-state fixtures cannot establish cross-framework superiority.
+
+## Final evidence-based verdict
+
+u5 supports initial decision preservation but contradicts improved primary terminal-completion agreement; u7 exposes fresh-identifier/serving confounds. The scoped empirical contribution is supported; conceptual and publication-level novelty remain unestablished. See FINAL_RESEARCH_VERDICT.md and the manuscript claim–evidence matrix. No further optimization is queued.

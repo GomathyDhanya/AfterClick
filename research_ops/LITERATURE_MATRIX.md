@@ -117,3 +117,7 @@ Related POMDP, shielding, Saga and schedule-testing entries above remain foundat
 
 ### Final synthesis, 2026-11-24
 No new conceptual priority is established by t-series results. Current primary-source links/overlap above remain the basis; no unperformed head-to-head reproduction is implied. Strong staging wins economically in exploratory development; locked confirmation fails client-state reconstruction. The candidate delta is a small auditable live timing/replay failure characterization, not a new transaction/branching/metareasoning concept or confirmed superior control algorithm. See FINAL_NOVELTY_VERDICT.md and paper/TCOPE_PAPER.md for the claim-evidence matrix and uncertainty.
+
+## 2026-11-24 OECR final review
+
+Primary sources, inspected technical sections, exact overlap and remaining distinctions are recorded in NOVELTY_MATRIX.md (Safe to Resume?, AgentRewind, SURE-Act, Cordon, UndoBench, Chandy–Lamport, Russell–Wefald). Independent u5/u7 evidence supports a limited empirical systems study, not new snapshot/replay/staging concepts or demonstrated cross-framework superiority. Manuscript §12 supplies the claim–evidence matrix.

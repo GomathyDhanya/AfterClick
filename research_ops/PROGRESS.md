@@ -383,3 +383,23 @@ Frozenruntime26f098e unchanged; t9source1valid, primary7invalid49unattempted0val
 
 ## 2026-11-24T07:14:37.214389+00:00 — Reproduction package verified
 Archive artifacts/afterclick-tcope-20261124.tar.gz; SHA256 3b154605cabd9b1073b8acd0c3395c3e994ac06cfaa2c07af61438f49c9328e2;21,032,684bytes. Contentcommitcedc89d,5,948filesextracted/checksummatched; both61-runverifierspass; regenerateddevelopment/confirmation summaryJSONequalsdelivereddata. No network/modelcalls. Lateststate/handoff refreshed. Frozenruntime26f098e remainsunchanged; finalgateINCONCLUSIVE, allpaidworkidle.
+
+## 2026-11-24T17:38:31.234961+00:00 — OECR local qualification
+
+HEAD 96c343775954f92cac1f2b6434b7e31ba005943c; uncommitted new afterclick/oecr/, tests/oecr/, hypothesis portfolio. Registered u0-observation-equivalence-local-v1 ($0 Modal). First attempt: three frontend startup failures, interrupted; second: inconsistent capture rejected; third: fresh/stale/autosave passed, delayed SSE failed exact client equality. All raw logs retained. Fourth attempt tests build config, explicit controlled-clock cut, stream cursor and paused relative timer. No frozen runtime edited, no paid calls, no claim of arbitrary in-flight restoration.
+
+## 2026-11-24T17:44:55.077573+00:00 — Local qualification completed
+
+u0 sealed: seven reconstructed cuts, four fresh-browser mismatches; corruption and unresolved transport rejected. Delayed-request alternative uses a new cut. Eight-case suite8pass56.77s, DOM ablation1pass8.69s, mock driver1pass11.68s. Earlier five failures and one interruption preserved. No Modal use. u1 preregistered: original/faithful/fresh genuine9B continuations, two sources,24calls,$1.
+
+2026-11-24T17:49:39.772873+00:00 — u1 failed after1genuine9Bgeneration/2009tokens. Driver supplied feedback dict instead of public-history literal. Action preserved in Gateway journal. 1invalid continuation,5unattempted,0valid comparative outcomes. $0.2800001 conservative debit; min0 and zero containers verified. Fix new driver only; test actual fill/post and next request before new u2.
+
+## 2026-11-24T18:43:19.394742+00:00 — New confirmation execution
+
+u3:13localtests passed80.05s; historical runtime hashes unchanged. u4:0modelcalls,0trialoutcomes; strict approval stopped on unsorted public task hashes after startup. min0/idle2 and zero containers verified. u5 reissues the exact frozen tasks/scientific source with sorted approval hashes; offline exact live-contract validation passes with network-forbidden transport. Execution-only wall envelope540s, unchanged$1cap, confirmation category; bounded caffeinate and post-readiness min0/idle30 active. No model, prompt, oracle, task, call cap or outcome-based change. u4 remains sealed failed.
+
+## 2026-11-24T19:09:20.970243+00:00 — OECR bounded report and verification complete
+
+HEAD96c343775954f92cac1f2b6434b7e31ba005943c plus uncommitted extension/report. Independent u5 confirmation closed: 18 attempted/completed continuations, 12 exact initial certificates and 6 deliberately invalid fresh diagnostics, no censored/unknown; 61 genuine Qwen calls/146543 tokens. Faithful first-action disagreement 0/6 versus fresh 6/6, but primary completion disagreement 2/6 versus 0/6 contradicts improved terminal fidelity. u7 posthoc audit preserves v1 and corrects UUID comment-order artifact (faithful content disagreement3/6→2/6); primary results unchanged. Later fresh identifiers/serving variation remain confounded. u6 full305tests pass/1warning408.27s; initial formatting lint failure retained and corrected; hashes and saved summaries/figures regenerate. No scientific runtime/prompt/cohort tuning; no new paid experiment queued. New conservative debit$3.169205895, original-allowance cumulative$8.032933131, conservativecredit$20.077066869; zero containers. Earlier u2 sleep overrun disclosed; trajectories category closed at$3.441710297 against$3. Report/claim matrix complete; novelty limited/unestablished.
+
+Changed paths: afterclick/oecr/, tests/oecr/, research_ops/scripts/*oecr*.py, research_ops/OECR_*, portfolio/decisions/confirmation/results/verdict/claims/state/handoff, paper/OECR_PAPER.md, docs/OECR_REPRODUCIBILITY.md. Repro: `.venv/bin/python -m pytest -q`; resume: `.venv/bin/python -m research_ops.scripts.reproduce_oecr --output /tmp/afterclick-oecr-resume-01` (new directory).

@@ -123,3 +123,27 @@ Owner: browser replay/state representation. Exact source: t9-confirm07-controlle
 
 ### TCOPE-ACK-001 follow-up — resolved with bounded evidence
 The narrowly preregistered t6-dev01-controller-v2 timeblind repair is valid, goalscomplete, forbiddenreceipt1; all10actualrequests known. This repairs transport validity, not efficacy. All oldinvalid traces remain. Full292tests nowpass, including local regressions; they did not predict the new stale-client failure.
+
+2026-11-24T17:49:39.774852+00:00 — u1 failed after1genuine9Bgeneration/2009tokens. Driver supplied feedback dict instead of public-history literal. Action preserved in Gateway journal. 1invalid continuation,5unattempted,0valid comparative outcomes. $0.2800001 conservative debit; min0 and zero containers verified. Fix new driver only; test actual fill/post and next request before new u2.
+
+## OECR operational incidents — 2026-11-24
+
+- OECR-BUILD-001: missing inherited JSX compiler mode produced empty React root. Reproduce in u0/tests-attempt1.txt. Fixed by copying original tsconfig into isolated build; original sources unchanged.
+- OECR-CUT-001: moving backend scheduler invalidated capture. u0/tests-attempt2.txt. Resolved only for explicit controlled-clock cut; no unrestricted live-capture claim.
+- OECR-SSE-001: fresh stream replayed an already queued event. u0/tests-attempt3.txt. Cursor and queue restored, exact client check retained; continuation test passes.
+- OECR-DRIVER-001: nested history feedback rejected after genuine browser action. u1 raw/error.txt. New driver fixed; fill/Post/next-request offline test covers the missed path. Old failure preserved.
+- OECR-FINANCE-001: host idle sleep885s paused monotonic timer, left min1 warm and caused initial cleanup timeouts. u2 raw/error/cleanup-error, then post-cleanup-reconciliation.json. Verified zero containers; approximate account increase$1.490035, conservative debit$1.989757, exceeding$1 protocol cap. Collection category guard total$3.441710 exceeds$3 and is closed; no credit or cap reset. New lifecycle requires bounded caffeinate, switches provider to min0/idle30 after startup, and uses UTC-inclusive elapsed accounting. Cash charges remain zero; this was an operational control failure, not a scientifically valid experiment outcome.
+- OECR-APPROVAL-001: u4 task hashes supplied in case order but strict adapter canonicalizes sorted order; zero model calls. Fixed protocol registration ordering, preserved all tasks and strict validation. Exact live approval contract now checked offline with network forbidden before paid launch. u5 execution-only amendment preserves the frozen scientific cohort; no outcome tuning.
+- OECR-ADMISSION-001: u5 first launch rejected provider-control evidence older than900seconds before reservation/warmup. Refreshed UI readback, retained failure trace, then launched same protocol. No additional paid approval inferred from elapsed time.
+
+## OECR-ANALYSIS-001 — resolved with versioned correction
+
+Reproduce with frozen afterclick.oecr.analyze on u5: task_comments row order follows UUID rather than creation chronology. Two rows differ; faithful final-content disagreement was3/6 rather than corrected2/6. Owner: saved-data analysis. u7 reads numeric append-only effect_events IDs and independently cross-checks comment multisets; original summary remains sealed. Primary completion, first-action and validity metrics unchanged. No frozen runtime edit.
+
+## OECR-IDENTITY-001 — attribution limitation remains
+
+u7:13 paired later requests after equal preceding actions differ only under diagnostic ID normalization;3 precede action divergence. IDs are actual public request inputs. Cannot separate ID sensitivity, inference variation or unobserved state causally. Owner: future evaluation design. Closed as limitation, not solved by tuning. No paid follow-up queued.
+
+## OECR-VERIFY-001 — resolved formatting failure
+
+u6 initial Ruff E501 in posthoc audit helper; string split without semantic change. Corrected lint/format and saved-data regeneration pass; raw first failure retained.

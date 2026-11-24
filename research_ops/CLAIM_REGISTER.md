@@ -110,3 +110,25 @@ intervention burden, overall goal completion, physical exposure and receipt evid
 | Universal exact reconstruction | REFUTED for currentimplementation | t9copiedDBtrue/fullO false; t10independentlocalcounterexample |
 | Confirmed new efficacy/novel algorithm | INCONCLUSIVE / NOT ESTABLISHED | 7finalinvalid49unattempted0valid, no replacement or result manipulation |
 Original C1/C2/C3 and observability findings remain unchanged. t-series221genuinecalls/608107tokens/13distinctsources; dependentbranches and14forecastsuffixes are separate units. Paper and finalnoveltyverdict report limitations rather than a manufactured positive finding.
+
+## OECR extension — 2026-11-24 (before confirmation outcomes)
+
+- OECR-V1: Database equality alone fails to preserve the original browser decision problem. Supported locally by u0 and historical t9; four of seven fresh-browser observations differ in u0. Scope: this application and declared cuts.
+- OECR-V2: Initial DOM equality alone does not certify future writes. Supported by u0 dirty-buffer ablation; initial observation equals but autosave changes.
+- OECR-V3: Application-specific executable state can reconstruct supported cuts. Seven u0 cuts pass; unresolved transport rejected; later resolved cut is distinct. No arbitrary-heap or cross-framework theorem.
+- OECR-B1: Reconstruction differences can affect genuine Qwen continuation. u2 complete Priority group supports first-action/content difference; task-completion difference not observed in that group. Independent u4 pending.
+- OECR-E1: Faithful reconstruction yields a broadly superior safety controller. NOT CLAIMED; paused scheduler and intentionally invalid fresh siblings do not identify this effect.
+- Existing C1/C2/C3/H4/H5 and TCOPE statuses remain as archived. No favorable result is inferred from a repaired harness.
+
+## OECR final claims — u5 / u7 / u6
+
+| Hypothesis | Final status | Supporting / opposing evidence |
+|---|---|---|
+| O1 executable reconstruction preserves scoped initial state and tested pending behavior | Supported within app/cut scope | u0/u3 tests; u5 faithful6/6 exact, u7 initial requests6/6 equal |
+| O2 reconstruction preserves first LLM decision better than fresh cloning | Bounded confirmation | u5 faithful0/6 versus fresh6/6 disagreements; two templates only |
+| O3 reconstruction improves terminal completion fidelity | Unsupported / contrary primary estimate | u5 faithful2/6 versus fresh0/6 disagreements; cannot infer population equivalence |
+| O4 exact initialization guarantees full trajectory identity | Not established | u7 later identifiers/serving confounds; source/faithful outcome differences |
+| OECR safety efficacy / broad mechanism generalization | Not tested | Paused external scheduler; one application |
+| Novel general checkpoint/replay or metareasoning algorithm | Not claimed | Closest literature overlap; NOVELTY_MATRIX |
+
+No changes to the earlier C1/C2/C3, H4/H5 or TCOPE verdicts. Original and corrected secondary analyses remain separately sealed. Full claim–evidence matrix: paper/OECR_PAPER.md §12.

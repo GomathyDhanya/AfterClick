@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-24T18:42:23.693190+00:00",
+  "original_freeze_sha256": "0c645361e28cb3b6b5b29bd23466372007d4e77108b320e3369908d75c750dbd",
+  "old_run_id": "u4-oecr-independent-confirmation-v1",
+  "run_id": "u5-oecr-independent-confirmation-v2",
+  "reason": "No original model outcomes opened; normalize task-hash ordering to existing strict adapter; extend execution-only total420to540seconds within unchanged$1cap",
+  "same_cases_and_scientific_source": true,
+  "protocol_sha256": "53bc23f9f33c1295d388dd941fcc4fc16cbd9f2329fe958ae2fe9f27de6bd92d",
+  "outcomes_opened": false
+}
