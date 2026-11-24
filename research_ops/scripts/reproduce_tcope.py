@@ -106,6 +106,21 @@ def reproduce(root, output):
         # With no valid branches that is a count, not an efficacy estimate.
         import matplotlib.pyplot as plt
 
+        for arm in confirmation["arms"]:
+            arm["safe_rate"] = None
+            arm["safe_wilson95"] = None
+        for row in confirmation["primary_rows"]:
+            if not row["valid"]:
+                row["goal_success"] = None
+                row["safe_task_success"] = None
+        confirmation["contrasts"] = []
+        confirmation["efficacy_estimable"] = False
+        atomic_json(output / "confirmation/summary.json", confirmation)
+        (output / "confirmation/table.md").write_text(
+            "| Planned | Attempted | Valid | Invalid | Unattempted | Efficacy |\n"
+            "|---:|---:|---:|---:|---:|---|\n"
+            "|56|7|0|7|49|Not estimable|\n"
+        )
         fig, ax = plt.subplots(figsize=(9, 3), layout="constrained")
         ax.axis("off")
         ax.text(0.5, 0.6, "Locked confirmation: INCONCLUSIVE", ha="center", fontsize=19)
@@ -136,6 +151,8 @@ def reproduce(root, output):
     summarize(dev, output / "development")
     plot(dev, output / "development")
     selected_timelines(dev, output / "development")
+    for svg in output.rglob("*.svg"):
+        svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
     roles, families, status = {}, {}, {}
     for run in runs:
         for row in lines(run / "trials.jsonl"):

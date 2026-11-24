@@ -12,7 +12,7 @@
   "last_completed_run_id": "t11-final-verification-v1",
   "last_good_commit": "26f098ef301945d7e31fb5218def016375f5ca9b",
   "source_execution_head": "26f098ef301945d7e31fb5218def016375f5ca9b",
-  "report_checkpoint_commit": null,
+  "report_checkpoint_commit": "ba732e3",
   "most_recent_valid_run_ids": [
     "t1-9b-commit-feedback-v1",
     "t3-native-live-branches-v1",
@@ -119,5 +119,6 @@
   "archive": "artifacts/afterclick-tcope-20261124.tar.gz",
   "archive_sha256": null,
   "archive_extraction_verified": null,
-  "session_handoff": "research_ops/SESSION_HANDOFF.md"
+  "session_handoff": "research_ops/SESSION_HANDOFF.md",
+  "reporting_followup": "Invalid-only confirmation efficacy fields are null; no contrasts. SVG whitespace normalized; scientific runtime unchanged."
 }
