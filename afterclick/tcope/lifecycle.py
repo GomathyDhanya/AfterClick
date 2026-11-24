@@ -20,6 +20,23 @@ from research_ops.scripts.p1_existing import cli
 ENDPOINT = "ep-Lqp751voQWfhhoZTNXD4Yf"
 
 
+def validate_phase_budget(p):
+    total, startup, window, cleanup = [
+        p[k] for k in ["total_seconds", "startup_seconds", "inference_seconds", "cleanup_seconds"]
+    ]
+    if p.get("shared_wall_envelope", False):
+        if not (
+            0 < window <= total - cleanup
+            and startup + cleanup < total
+            and total <= startup + window + cleanup
+        ):
+            raise ValueError("Invalid shared finite phase envelope")
+    elif total != startup + window + cleanup:
+        raise ValueError("Phase budgets must sum to the hard total")
+    if total * 0.00135 * 1.25 > p["max_usd"]:
+        raise ValueError("Hard wall envelope exceeds priced cap")
+
+
 def execute(run):
     p = json.loads((run / "protocol.json").read_text())
     auth = json.loads(Path("research_ops/UNIFIED_AUTHORIZATION.json").read_text())
@@ -29,8 +46,7 @@ def execute(run):
         p[k] for k in ["max_usd", "total_seconds", "startup_seconds", "inference_seconds"]
     )
     assert 0 < cap <= 2 and 1 <= p["max_calls"] <= 80
-    assert total == startup + window + p["cleanup_seconds"]
-    assert total * 0.00135 * 1.25 <= cap
+    validate_phase_budget(p)
     assert sum(p["arm_call_caps"].values()) <= p["max_calls"]
     work = total - p["cleanup_seconds"]
     assert p["controller_sha256"] == hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
@@ -200,6 +216,7 @@ def execute(run):
                     sum(r["guard_charge_usd"] for r in supervisor.data["runs"]),
                     supervisor.data["account_additional_highwater_usd"],
                 ),
+                startup_elapsed_seconds=time.monotonic() - started,
             )
             from afterclick.tcope.experiments import run_experiment
 

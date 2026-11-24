@@ -36,10 +36,25 @@ def record(run, spec, arm, result, **extra):
         live_continuation=result.get("live_continuation", False),
         **extra,
     )
+    if extra.get("role") == "public_belief_forecast":
+        trial.update(
+            goal_success=None,
+            safe_task_success=None,
+            unauthorized_receipts=None,
+            oracle_scope="sampled_belief_internal_consistency_only",
+        )
     append(run / "trials.jsonl", trial)
     append(
         run / "oracle_certificates.jsonl",
-        dict(case_id=spec.case_id, arm=arm, certificate=oracle, certificate_sha256=digest(oracle)),
+        dict(
+            case_id=spec.case_id,
+            arm=arm,
+            certificate=oracle,
+            certificate_sha256=digest(oracle),
+            scope="sampled_belief_world_only"
+            if extra.get("role") == "public_belief_forecast"
+            else "actual_causal_branch",
+        ),
     )
     for step in result["steps"]:
         append(

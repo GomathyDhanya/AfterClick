@@ -3,8 +3,8 @@
   "authorization_sha256": "5903482ad80688bff21adc1ce7ad8c85a800c6e2646a0d3db41dc2f70285af74",
   "baseline_credit_usd": 28.11,
   "baseline_metered_usd": 2.0047619,
-  "account_metered_highwater_usd": 4.80480953,
-  "account_additional_highwater_usd": 2.80004763,
+  "account_metered_highwater_usd": 5.99483434,
+  "account_additional_highwater_usd": 3.9900724399999996,
   "allowance_usd": 20,
   "active": null,
   "runs": [
@@ -102,6 +102,42 @@
       "guard_charge_usd": 0.47000639,
       "idle_verified": true,
       "reported_account_delta_usd": 0.47000639,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "t6-dev01-controller-v2",
+      "category": "controller",
+      "reserved_usd": 0.8,
+      "metered_before_usd": 4.7248124,
+      "elapsed_seconds": 209.41802978000487,
+      "estimate_with_margin_usd": 0.3333527832373106,
+      "guard_charge_usd": 0.3333527832373106,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.24999786999999962,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "t6-dev03-controller-v2",
+      "category": "controller",
+      "reserved_usd": 1.0,
+      "metered_before_usd": 4.97481027,
+      "elapsed_seconds": 330.1764194240095,
+      "estimate_with_margin_usd": 0.5255766587525796,
+      "guard_charge_usd": 0.5255766587525796,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.5000122400000002,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "t6-dev05-controller-v2",
+      "category": "controller",
+      "reserved_usd": 1.0,
+      "metered_before_usd": 5.47482251,
+      "elapsed_seconds": 370.49083005898865,
+      "estimate_with_margin_usd": 0.5897493615702875,
+      "guard_charge_usd": 0.5897493615702875,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.5200118299999996,
       "actual_isolated_invoice_usd": null
     }
   ],

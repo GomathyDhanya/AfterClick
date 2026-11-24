@@ -137,3 +137,10 @@
 {"event": "canceled_before_launch", "run_id": "t6-dev03-controller-v1", "schema_version": 1, "seal_sha256": "9ad8ce796c779ea91e356af054a0b0030db34b4d1395699a69fddfd89ede582a", "utc": "2026-11-24T04:37:06.489097+00:00"}
 {"event": "canceled_before_launch", "run_id": "t6-dev05-controller-v1", "schema_version": 1, "seal_sha256": "e289506d90484d97c25933cd141685bc80f5237ea3191d2e221651abe7839bc5", "utc": "2026-11-24T04:37:06.508315+00:00"}
 {"event": "completed", "run_id": "t7-ack-lifecycle-offline-v1", "schema_version": 1, "seal_sha256": "0178abf70ca1f762880de7c9a8b72540557ba9480a48e120cdf6ce68dbb7c2f3", "utc": "2026-11-24T04:38:05.727418+00:00"}
+{"event": "planned", "protocol_sha256": "8bbef4762cd20322adb3fa2cba47ba28ab5f32e21239a05bff8ae283e4603428", "run_id": "t6-dev01-controller-v2", "schema_version": 1, "utc": "2026-11-24T04:39:12.538558+00:00"}
+{"event": "planned", "protocol_sha256": "537e3e149356a6f75cd6fb08858276b9657bbd9f259d05e3f3f3d09980c850d7", "run_id": "t6-dev03-controller-v2", "schema_version": 1, "utc": "2026-11-24T04:39:14.222854+00:00"}
+{"event": "planned", "protocol_sha256": "5aa372aefdfb36455d54653c87827ae034b37360600e3c0b48ee56ca536142d2", "run_id": "t6-dev05-controller-v2", "schema_version": 1, "utc": "2026-11-24T04:39:15.845683+00:00"}
+{"event": "completed", "run_id": "t6-dev01-controller-v2", "schema_version": 1, "seal_sha256": "d89911ff5b74b41bf77c1d825d27a5221f974a8c24384eca1baa1aca469bbe93", "utc": "2026-11-24T04:45:34.532531+00:00"}
+{"event": "completed", "run_id": "t6-dev03-controller-v2", "schema_version": 1, "seal_sha256": "dd19a905481078c4a94e0453d06da1129d2c5fddf48b137a4561f61ba8b06880", "utc": "2026-11-24T04:51:32.744470+00:00"}
+{"event": "completed", "run_id": "t6-dev05-controller-v2", "schema_version": 1, "seal_sha256": "2958bdc35d0e75c270e4b9f10bf0fb000c0d8f7bb78901a756d41f72f534c7b6", "utc": "2026-11-24T05:00:03.244828+00:00"}
+{"event": "planned", "protocol_sha256": "49a8a0314c936be98d88c00c695feecbc122c6e7c3b0f49396b0b1edfbc9dcab", "run_id": "t8-final-method-qualification-v1", "schema_version": 1, "utc": "2026-11-24T05:00:05.341435+00:00"}

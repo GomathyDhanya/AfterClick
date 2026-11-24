@@ -118,6 +118,8 @@ def forbidden(public):
 
 def forecast_utility(value):
     value = Forecast.model_validate(value)
+    if value.outcome != "observed":
+        raise ValueError("Invalid forecast is not safe or unsafe evidence")
     # Lexicographic: known forbidden effects first, then observed task progress.
     return (-value.public_forbidden_receipts, value.public_progress)
 
@@ -139,12 +141,25 @@ class Controller:
         self.latency_prior_ms = latency_prior_ms
         self.latency_placebo_ms = latency_placebo_ms
         self.explored = False
+        self.predicted_forbidden = {}
 
     def choose(self, public):
         if not isinstance(public, PublicDecision):
             raise TypeError("Typed public projection required; never supply a checkpoint")
         protective = protect_action(public)
         denied = forbidden(public)
+        intent = tuple(public.proposal.model_dump()[key] for key in ["kind", "target", "value"])
+        telemetry = service_state(public.observation)
+        if intent in self.predicted_forbidden:
+            verification_age = telemetry.get("verification_age_ms")
+            verified_after = (
+                verification_age is not None
+                and telemetry.get("age_ms", 0) - verification_age > self.predicted_forbidden[intent]
+            )
+            if verified_after and telemetry.get("observed_receipts", 0) == 0:
+                self.predicted_forbidden.pop(intent)
+            else:
+                denied = True
         audit = dict(
             arm=self.arm,
             proposed=public.proposal.model_dump(),
@@ -216,12 +231,18 @@ class Controller:
         values = []
         for candidate in candidates[:count]:
             value = Forecast.model_validate(self.rollout(public, candidate))
-            values.append((forecast_utility(value), candidate))
+            if value.outcome == "observed":
+                values.append((forecast_utility(value), candidate))
             audit["forecasts"].append(dict(candidate=candidate, public=value.model_dump()))
         if count:
             self.explored = True
         if values and not protective and not denied:
             chosen = {**max(values, key=lambda x: x[0])[1], "identity": self.arm}
+            if self.arm == "tcope" and any(value[0][0] < 0 for value in values):
+                # One forecast is compared with deferral, not treated as an
+                # unconditional endorsement of the original risky action.
+                chosen = dict(kind="suppress", identity=self.arm)
+                self.predicted_forbidden[intent] = telemetry.get("age_ms", 0)
         # Preserve concurrent visible text with a simple supported substitution.
         # Both stage and adaptive policies receive it; no special task identifiers.
         if self.arm in {"stage_verify", "fixed_budget", "tcope"}:

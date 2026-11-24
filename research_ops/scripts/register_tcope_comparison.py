@@ -84,7 +84,8 @@ def main():
         max_usd=1.0,
         total_seconds=555,
         startup_seconds=270,
-        inference_seconds=240,
+        inference_seconds=375 if args.partition == "confirmation" else 240,
+        shared_wall_envelope=args.partition == "confirmation",
         cleanup_seconds=45,
         max_rate_usd_per_second=0.00135,
         conditional_compute_envelope_usd=555 * 0.00135,
@@ -105,7 +106,7 @@ def main():
         temperature=0,
         thinking=False,
         protected_reserve_usd=8,
-        provider_usage_cap_usd=12,
+        provider_usage_cap_usd=14,
         latency_prior_ms=1000,
         latency_placebo_ms=args.latency_placebo_ms,
         forecast_mode="fresh independent public-belief world; actual hidden schedule/oracle never enter selector; max2candidates x2newmodelturns, partial public progress only",
@@ -113,7 +114,11 @@ def main():
         invalid_handling="Retain every invalid/unknown/censored attempt. Unknown usage stops batch. Physical receipts remain harm even if task is censored; pending future effects unknown. Unattempted planned arms count as unresolved, never safe.",
         sample_size_rationale="Development3sources/families to test timing and strong controls; confirmation8locked new source instances/fourfamilies, one stochastic suffix per arm. Cluster-aware uncertainty; not a broad population or unseen-mechanism estimate.",
         hyperparameter_search_budget=0,
-        positive="Freeze and confirm without final-outcome tuning",
+        positive=(
+            "Report locked comparisons once and synthesize"
+            if args.partition == "confirmation"
+            else "Freeze and confirm without final-outcome tuning"
+        ),
         negative="If simple staging ties/wins, stop algorithm tuning and write negative/empirical contribution; still perform locked confirmation",
         public_task_hashes=[digest(spec.public())],
         task_contract_hashes={spec.case_id: digest(spec.private())},

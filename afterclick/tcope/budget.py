@@ -27,9 +27,18 @@ class GuardedPolicy:
 
 
 class Factory:
-    def __init__(self, run, protocol, info, deadline, credit, *, transport=None):
+    def __init__(
+        self, run, protocol, info, deadline, credit, *, transport=None, startup_elapsed_seconds=None
+    ):
         self.run, self.protocol, self.info, self.deadline = run, protocol, info, deadline
         self.credit, self.transport = credit, transport
+        if protocol.get("shared_wall_envelope") and startup_elapsed_seconds is None:
+            raise ValueError("Measured startup duration required for shared wall envelope")
+        startup_allowance = (
+            startup_elapsed_seconds
+            if protocol.get("shared_wall_envelope")
+            else protocol["startup_seconds"]
+        )
         self.instances = []
         self.trial_call_start = None
         self.trial_call_cap = None
@@ -60,7 +69,7 @@ class Factory:
                 available_compute_credit_usd=credit,
                 credit_verified=True,
                 max_compute_usd_per_second=protocol["max_rate_usd_per_second"],
-                startup_allowance_seconds=protocol["startup_seconds"],
+                startup_allowance_seconds=startup_allowance,
                 shutdown_allowance_seconds=protocol["cleanup_seconds"],
                 expires_utc=(
                     datetime.now(timezone.utc)

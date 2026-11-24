@@ -86,3 +86,13 @@ intervention burden, overall goal completion, physical exposure and receipt evid
 | COPE improves safe task continuation over strong admission/staging | **proposed; untested** | Paid intervention and new held-out work stopped at failed competence gate. No comparative or held-out advantage; no refutation of all possible methods |
 | COPE is novel | **not established** | Strong direct overlap with SURE-Act executable alternative continuations and Cordon staged transactions; literature matrix refreshed with five primary papers |
 | C1/C2/C3 or H4/H5 improved by this sprint | **no new evidence** | Previous frozen studies unchanged; no old search/model training repeated |
+
+## 2026-11-24 — additive live-agent claims (not old frozen results)
+
+- Execution reliability: coded/tests-passed/live-valid; t1corrected4/4 versuslegacy1/4 across4same9Bsourcegroups (33calls, exactpairedp.25), t4v3retest2calls passed. Compound interface change, tiny sample; no globally optimal format/model-size claim. Original JSON and old4B evidence retained.
+- Native branch engine: live-replay-valid on t3five dependent conditions (6newcalls); one false completion retained and fixed once. Distinct services t4eightvalid executions with receiver conservation/order certificates. Engineering validity is not comparative algorithm validation.
+- H1 continuation value: NOT DEMONSTRATED. First dev01simple stage and TCOPE bothsafe; fixedlookahead adds4calls without observed extra safety on this source.
+- H2 deliberation harm: locally causal in mock-provider clock fixture; live t6v1physical receipt occurred during forecasting, but its main branchinvalid dueACKsettling. Rerun onlyinvalidcondition, do not infer efficacy frominvalid.
+- H3 adaptive superiority/H4option preservation: PENDING development+independentconfirmation. TCOPE maycollapse tostage; no learning capacity increase justified.
+- H5 recovery secondary effects: t3substitution caused falsecompletion; no observed duplicatecapture in t4missingcompletionACK task. Do not invent recovery intent or irreversible cascades.
+- C1/C2/C3 from original two studies remain unchanged; new tasks do not retune either opened final set. Novelty NOT ESTABLISHED.

@@ -56,7 +56,12 @@ def summarize(runs, output):
             t.source_group for t in workload_suite(p["partition"]) if t.case_id == p["case_id"]
         )
         for row in lines(run / "trials.jsonl"):
-            row = {**row, "run_id": run.name, "partition": p.get("partition")}
+            row = {
+                **row,
+                "run_id": run.name,
+                "partition": p.get("partition"),
+                "amendment_of": p.get("amendment_of"),
+            }
             if row.get("role") == "primary_controller":
                 primary.append(row)
                 path = run / "raw" / row["arm"] / "world/report.json"
@@ -69,7 +74,16 @@ def summarize(runs, output):
         calls += lines(run / "model_calls.jsonl")
     arms = sorted(planned_arms | {r["arm"] for r in primary})
     groups = sorted(planned_groups | {r["source_group"] for r in primary})
-    by = {(r["source_group"], r["arm"]): r for r in primary}
+    by = {}
+    superseded_invalid = []
+    for row in primary:
+        key = (row["source_group"], row["arm"])
+        if key in by:
+            previous = by[key]
+            if previous["valid"] or row["amendment_of"] != previous["run_id"]:
+                raise ValueError("Repeated primary arm lacks preregistered invalidity repair")
+            superseded_invalid.append(previous)
+        by[key] = row
     table = []
     for arm in arms:
         rows = [by[(g, arm)] for g in groups if (g, arm) in by]
@@ -114,7 +128,7 @@ def summarize(runs, output):
                 mean_primary_wall_seconds=float(np.mean([r["elapsed_seconds"] for r in reports]))
                 if reports
                 else None,
-                prevention_margins_ms=margins,
+                scheduled_deadline_margins_ms=margins,
             )
         )
     contrasts = []
@@ -170,6 +184,13 @@ def summarize(runs, output):
         schema_version=1,
         source_groups=groups,
         primary_rows=primary,
+        all_primary_attempts=len(primary),
+        all_primary_invalid=sum(r["invalid"] for r in primary),
+        superseded_invalid_attempts=superseded_invalid,
+        selection_rule=(
+            "Only preregistered invalidity repair replaces an invalid primary; "
+            "all attempts retained"
+        ),
         arms=table,
         contrasts=contrasts,
         forecasts=dict(
@@ -217,6 +238,16 @@ def summarize(runs, output):
         fig, axes = plt.subplots(1, 2, figsize=(12, 4), layout="constrained")
         labels = [r["arm"] for r in table]
         axes[0].bar(labels, [r["safe_rate"] for r in table], color="#27648e")
+        values = np.array([r["safe_rate"] for r in table])
+        errors = np.array(
+            [
+                [max(0.0, r["safe_rate"] - r["safe_wilson95"][0]) for r in table],
+                [max(0.0, r["safe_wilson95"][1] - r["safe_rate"]) for r in table],
+            ]
+        )
+        axes[0].errorbar(
+            range(len(table)), values, yerr=errors, fmt="none", ecolor="#222222", capsize=3
+        )
         axes[0].set_ylim(0, 1)
         axes[0].set_ylabel("Verified safe completion / source")
         axes[0].tick_params(axis="x", rotation=50)
