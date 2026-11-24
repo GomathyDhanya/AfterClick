@@ -29,7 +29,7 @@ You may request at most four tools, which execute sequentially with fresh result
 
 @dataclass(frozen=True)
 class ExecutionConfig(NaturalConfig):
-    interaction_mode: str = "native_public_commit_v2"
+    interaction_mode: str = "native_public_commit_v3"
     context_policy: str = "last_three_complete_exchanges_plus_public_history_v2"
 
 
@@ -95,12 +95,24 @@ class ExecutionPolicy(NaturalPolicy):
             raise ValueError("Explicit corrected execution configuration required")
         self.messages[0] = dict(role="system", content=PROMPT)
 
-    def tool_result(self, tool_call_id, *, status, observation, task, history, effect=None):
+    def tool_result(
+        self, tool_call_id, *, status, observation, task, history, effect=None, action_receipt=None
+    ):
         if tool_call_id not in self.pending_ids:
             raise ValueError("Unknown/already resolved tool ID")
         if task.get("goals") != [] or set(task) != {"instruction", "goals"}:
             raise ValueError("Private task contract forbidden")
         public = public_input(task, observation, history)
+        if action_receipt is not None:
+            from afterclick.agent.action_parser import Decision
+
+            if set(action_receipt) != {"requested", "performed", "requested_executed"}:
+                raise ValueError("Strict public action receipt required")
+            for name in ["requested", "performed"]:
+                if action_receipt[name] is not None:
+                    Decision.model_validate(action_receipt[name])
+            if type(action_receipt["requested_executed"]) is not bool:
+                raise ValueError("Boolean execution acknowledgment required")
         allowed = {
             "completed",
             "already_satisfied",
@@ -139,6 +151,7 @@ class ExecutionPolicy(NaturalPolicy):
                     dict(
                         status=status,
                         semantics=effect,
+                        action_receipt=action_receipt,
                         observation={
                             k: public["observation"][k] for k in ["inputs", "save_status"]
                         },

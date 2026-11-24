@@ -29,7 +29,9 @@ def record(run, spec, arm, result, **extra):
         model_calls=result["model_calls"],
         goal_success=oracle.get("goal_success"),
         safe_task_success=oracle.get("safe_task_success"),
-        unauthorized_receipts=len(oracle.get("unauthorized_irreversible_event_ids", [])),
+        unauthorized_receipts=len(oracle.get("unauthorized_irreversible_event_ids", []))
+        + len(oracle.get("unauthorized_mock_receipt_ids", [])),
+        receipt_count=oracle.get("receipt_count", 0) + oracle.get("mock_receipts", 0),
         termination=result["termination"],
         live_continuation=result.get("live_continuation", False),
         **extra,
@@ -138,6 +140,8 @@ def competence(factory, run, deadline):
 def run_experiment(name, factory, run, deadline):
     if name == "competence_v2":
         return competence(factory, run, deadline)
+    if name == "distinct_baseline_v1":
+        return distinct_baseline(factory, run, deadline)
     if name == "native_branches_v1":
         return native_branches(factory, run, deadline)
     raise ValueError("Experiment not implemented/preregistered: " + name)
@@ -189,3 +193,89 @@ def native_branches(factory, run, deadline):
         len(rows) == 5 and metrics["valid"] == 5 and metrics["genuine_live_continuations"] == 5
     )
     atomic_json(run / "metrics.json", metrics)
+
+
+def distinct_baseline(factory, run, deadline):
+    from pathlib import Path
+
+    from afterclick.tcope.workload_specs import workload_suite
+    from afterclick.tcope.workloads import WorkloadWorld
+
+    rows = []
+    retest = None
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        try:
+            # One preregistered feedback retest; not counted as new workload source.
+            cp = json.loads(Path(factory.protocol["feedback_retest_checkpoint"]).read_text())
+            spec = competence_suite()[2]
+            policy = factory.make()
+            retest = run_task(
+                browser,
+                spec,
+                policy,
+                run / "raw/feedback-retest",
+                deadline,
+                max_turns=8,
+                checkpoint=cp,
+                intervention={
+                    "kind": "substitute",
+                    "identity": "v3-read-substitution",
+                    "action": {"kind": "read", "target": "Description", "value": ""},
+                },
+            )
+            record(run, spec, "v3-feedback-retest", retest, role="interface_validation")
+            policy.close()
+            by_id = {t.case_id: t for t in workload_suite()}
+            for case_id in factory.protocol["execution_order"]:
+                if time.monotonic() + 38 >= deadline or factory.usage()["uncertain"]:
+                    break
+                spec = by_id[case_id]
+                policy = factory.make()
+                result = run_task(
+                    browser,
+                    spec,
+                    policy,
+                    run / "raw" / case_id,
+                    deadline,
+                    max_turns=factory.protocol["turn_caps"][case_id],
+                    world=WorkloadWorld(spec),
+                )
+                rows.append(
+                    record(
+                        run,
+                        spec,
+                        "no_controller",
+                        result,
+                        role="primary_baseline",
+                        family=spec.family,
+                        controlled_fault=spec.schedule.get("pending", False)
+                        or spec.schedule.get("missing_ack", False)
+                        or spec.family == "collaboration",
+                    )
+                )
+                policy.close()
+        finally:
+            browser.close()
+    atomic_json(
+        run / "metrics.json",
+        dict(
+            schema_version=1,
+            planned=8,
+            attempted=len(rows),
+            valid=sum(r["valid"] for r in rows),
+            invalid=sum(r["invalid"] for r in rows),
+            unknown=sum(r["unknown"] for r in rows),
+            censored=sum(r["censored"] for r in rows),
+            completed=sum(r["goal_success"] and r["valid"] for r in rows),
+            safe_completed=sum(
+                r["safe_task_success"] and r["valid"] and not r["censored"] for r in rows
+            ),
+            actual_families=sorted(set(r["family"] for r in rows)),
+            feedback_retest_success=retest.get("oracle", {}).get("safe_task_success")
+            if retest
+            else None,
+            feedback_retest_model_calls=retest["model_calls"] if retest else 0,
+            primary_rows=rows,
+        ),
+    )

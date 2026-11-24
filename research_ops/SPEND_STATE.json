@@ -3,8 +3,8 @@
   "authorization_sha256": "5903482ad80688bff21adc1ce7ad8c85a800c6e2646a0d3db41dc2f70285af74",
   "baseline_credit_usd": 28.11,
   "baseline_metered_usd": 2.0047619,
-  "account_metered_highwater_usd": 3.06477995,
-  "account_additional_highwater_usd": 1.06001805,
+  "account_metered_highwater_usd": 4.12479714,
+  "account_additional_highwater_usd": 2.12003524,
   "allowance_usd": 20,
   "active": null,
   "runs": [
@@ -54,6 +54,30 @@
       "guard_charge_usd": 0.3961924467537401,
       "idle_verified": true,
       "reported_account_delta_usd": 0.3500015699999999,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "t1-9b-commit-feedback-v1",
+      "category": "trajectories",
+      "reserved_usd": 1.1,
+      "metered_before_usd": 3.68479597,
+      "elapsed_seconds": 228.02650890000223,
+      "estimate_with_margin_usd": 0.36297386368096196,
+      "guard_charge_usd": 0.36297386368096196,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.23000057000000007,
+      "actual_isolated_invoice_usd": null
+    },
+    {
+      "run_id": "t3-native-live-branches-v1",
+      "category": "controller",
+      "reserved_usd": 0.9,
+      "metered_before_usd": 3.75479677,
+      "elapsed_seconds": 185.1048298759997,
+      "estimate_with_margin_usd": 0.2946508965567824,
+      "guard_charge_usd": 0.3700003700000001,
+      "idle_verified": true,
+      "reported_account_delta_usd": 0.3700003700000001,
       "actual_isolated_invoice_usd": null
     }
   ],

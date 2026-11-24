@@ -2,6 +2,7 @@
 
 import copy
 import json
+import re
 import socket
 import threading
 import time
@@ -117,7 +118,7 @@ def run_task(
             context = browser.new_context()
             context.set_default_timeout(5000)
             page = context.new_page()
-            gateway = AgentGateway(page, origin)
+            gateway = getattr(world, "gateway_type", AgentGateway)(page, origin)
             if checkpoint:
                 page.goto(origin)
                 expect(page.get_by_label("Description", exact=True)).to_be_visible()
@@ -138,6 +139,10 @@ def run_task(
             else:
                 gateway.act(Action("navigate", "/"))
                 queued = None
+            if hasattr(world, "browser_resume"):
+                world.browser_resume(page)
+            if hasattr(world, "browser_ready"):
+                world.browser_ready(page)
             world.start()
             report["branch_intervention"] = intervention
             action_intervened = False
@@ -154,10 +159,19 @@ def run_task(
                     calls = policy.decide(task, current, history[-12:])
                     report["model_calls"] += 1
                 if not calls:
-                    report["completed_claim"] = current["save_status"] == "✓ Committed"
+                    report["terminal_text"] = policy.messages[-1].get("content", "")
+                    report["completed_claim"] = bool(
+                        re.search(
+                            r"\b(completed|done|successfully|finished)\b",
+                            report["terminal_text"],
+                            re.IGNORECASE,
+                        )
+                    )
                     report["termination"] = "model_terminal_text"
                     break
                 for item_index, item in enumerate(calls):
+                    if hasattr(world, "browser_pause"):
+                        world.browser_pause(page)
                     current = observe(gateway)
                     decision = None
                     proposal_provenance = (
@@ -203,14 +217,18 @@ def run_task(
                                 captured_wall=time.time(),
                                 selector_access=False,
                             )
+                            if hasattr(world, "browser_checkpoint"):
+                                cp["browser_payload"] = world.browser_checkpoint(page, current)
                             cp_path = directory / f"checkpoint-{len(report['steps']):02}.json"
                             atomic_json(cp_path, cp)
+                            if hasattr(world, "browser_resume"):
+                                world.browser_resume(page)
                             chosen = None
-                            if checkpoint and not action_intervened:
+                            if checkpoint and not action_intervened and intervention is not None:
                                 chosen = intervention
                                 action_intervened = True
                             elif interceptor:
-                                chosen = interceptor(cp, decision, world, browser)
+                                chosen = interceptor(cp, decision, world, browser, gateway)
                             began_action = time.monotonic()
                             if chosen:
                                 gateway.source["intervention"] = chosen.get(
@@ -244,7 +262,7 @@ def run_task(
                                     and chosen.get("kind") == "substitute"
                                     and status == "completed"
                                 ):
-                                    status = "verified" if actual.kind == "read" else "deferred"
+                                    status = "deferred"
                             report.setdefault("interventions", []).append(
                                 dict(
                                     tool_call_id=item["id"],
@@ -261,10 +279,26 @@ def run_task(
                                 )
                             )
                             report["repeated_proposals"] += status == "already_satisfied"
+                    if hasattr(world, "browser_resume"):
+                        world.browser_resume(page)
                     after_observation = observe(gateway)
                     semantics = public_effect(decision, current, after_observation, status)
                     extra = (
-                        {"effect": semantics}
+                        {
+                            "effect": semantics,
+                            "action_receipt": dict(
+                                requested=decision.model_dump() if decision else None,
+                                performed=gateway.history[-1]["action"]
+                                if len(gateway.history) > before_actions
+                                else None,
+                                requested_executed=(
+                                    len(gateway.history) > before_actions
+                                    and gateway.history[-1]["action"] == decision.model_dump()
+                                )
+                                if decision
+                                else False,
+                            ),
+                        }
                         if getattr(policy, "supports_semantics", False)
                         else {}
                     )
@@ -319,6 +353,8 @@ def run_task(
             report.setdefault("termination", "turn_budget")
             report["requests_quiescent"] = not gateway.pending
             report["valid"] = not gateway.pending
+            report["agent_stop_wall"] = time.time()
+            report["final_observation"] = observe(gateway)
             report["agent_stop_state"] = world.snapshot()
             report["final_messages"] = policy.messages
     except BaseException:
@@ -367,6 +403,8 @@ class CoreWorld:
     def __init__(self, spec):
         self.spec = spec
         self.db = Database("ac_tcope_" + uuid4().hex)
+        if self.db.engine.url.host not in {"127.0.0.1", "localhost"}:
+            raise ValueError("Live study requires local PostgreSQL only")
         self.frozen_initial = None
         self.allowed_actors = set()
         self.ticker_stop = threading.Event()
