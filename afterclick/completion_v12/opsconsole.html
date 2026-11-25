@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>OpsConsole</title>
+<style>
+body{font:16px system-ui;max-width:1120px;margin:35px auto;background:#f2f5f7;color:#172938}
+h1{letter-spacing:-1px}section{padding:20px;background:white;border-radius:10px;margin:16px 0}
+button{margin:5px;padding:9px 15px;background:#155b68;color:white;border:0;border-radius:5px;cursor:pointer}
+pre{white-space:pre-wrap;line-height:1.5}#feedback{padding:12px}h2{font-size:19px}
+</style>
+<h1>OpsConsole · Operations change desk</h1>
+<section><h2>Change instructions</h2><p id="policy"></p></section>
+<section><h2>Service and handoff</h2><pre id="change"></pre></section>
+<section><h2>Role approvals</h2><pre id="approvals"></pre></section>
+<section><h2>Reservations and orders</h2><pre id="holds"></pre><pre id="orders"></pre></section>
+<section><h2>Business operations</h2><div id="actions"></div><p id="feedback" role="status">Loading</p></section>
+<script>
+let state, busy=false;
+const commands=['Reserve CPU','Reserve Cache','Reserve Spare','Request approvals','Enter maintenance',
+ 'Dispatch CPU','Dispatch Cache','Dispatch Spare','Verify receipts','Release Spare','Post handoff','Restore normal','Close change'];
+async function refresh(){
+ const r=await fetch('/api/state'); state=await r.json();
+ document.querySelector('#policy').textContent=state.policy;
+ for(const k of ['change','approvals','holds','orders'])document.querySelector('#'+k).textContent=JSON.stringify(state[k],null,2);
+}
+for(const c of commands){let b=document.createElement('button'); b.textContent=c;
+ b.onclick=async()=>{if(busy)return;busy=true;
+ document.querySelectorAll('button').forEach(x=>x.disabled=true);
+ document.querySelector('#feedback').textContent='Submitting '+c;
+ try{const r=await fetch('/api/command',{method:'POST',headers:{'Content-Type':'application/json'},
+ body:JSON.stringify({command:c,operation_id:crypto.randomUUID(),expected_version:state.change.version})});
+ const v=await r.json(); document.querySelector('#feedback').textContent=r.ok?c+': command committed. '+v.acknowledgment_scope:'Rejected: '+v.detail;
+ }catch(e){document.querySelector('#feedback').textContent='Acknowledgment unknown. Refresh before retrying.'}
+ await refresh();busy=false;document.querySelectorAll('button').forEach(x=>x.disabled=false);
+ };document.querySelector('#actions').appendChild(b);}
+refresh().then(()=>document.querySelector('#feedback').textContent='Ready');setInterval(()=>{if(!busy)refresh()},300);
+</script></html>

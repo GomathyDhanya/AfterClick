@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "research_complete": false,
+  "phase": "IMPLEMENTATION_AND_QUALIFICATION",
+  "test_frozen": false,
+  "dev_contracts_authored": 1,
+  "test_contracts_authored": 0,
+  "dev_target": 72,
+  "test_target": 216,
+  "registered_local_trials": 60,
+  "local_valid_trials": 60,
+  "new_model_trials": 0,
+  "new_model_calls": 0,
+  "new_paid_compute_usd": 0,
+  "endpoint_ceiling_usd": 18,
+  "historical_state": "research_ops/STATE.json",
+  "active_paid_job": null,
+  "next_milestone": "Complete task environments and author all required contracts",
+  "reproduction": "research_ops/completion_v12/REPRODUCTION.md"
+}
