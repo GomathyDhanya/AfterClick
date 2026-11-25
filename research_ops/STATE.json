@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "utc_updated": "2026-11-25T00:19:19.244289+00:00",
+  "utc_updated": "2026-11-25T00:22:00.510705+00:00",
   "phase": "FINAL_RECOVERABILITY_SYNTHESIS",
   "current_gate": "REPORT_COMPLETE__LIVE_EFFICACY_INCONCLUSIVE",
   "state": "CLOSED_NO_PAID_QUEUE",
@@ -10,7 +10,7 @@
   "publication_novelty": "LIMITED_INCONCLUSIVE",
   "last_good_commit": "96c343775954f92cac1f2b6434b7e31ba005943c",
   "source_execution_head": "96c343775954f92cac1f2b6434b7e31ba005943c",
-  "report_checkpoint_commit": null,
+  "report_checkpoint_commit": "c1cd765de3158d416e1cb0735c2853e70a14b356",
   "report_checkpoint_resolution": "Local commit created after this state snapshot; inspect git log -1",
   "historical_scientific_commit": "26f098ef301945d7e31fb5218def016375f5ca9b",
   "most_recent_valid_run_ids": [
@@ -139,9 +139,9 @@
   "manuscript": "paper/AFTERCLICK_RECOVERABILITY_PAPER.md",
   "verdict": "research_ops/FINAL_RESEARCH_VERDICT.md",
   "reproduction_guide": "docs/OECR_REPRODUCIBILITY.md",
-  "sealed_run_count": 69,
+  "sealed_run_count": 70,
   "sealed_verification_passed": true,
-  "integrity_report": "artifacts/oecr-final-integrity.json",
+  "integrity_report": "artifacts/recoverability-final-verification.json",
   "historical_archive": "artifacts/afterclick-tcope-20261124.tar.gz",
   "historical_archive_sha256": "3b154605cabd9b1073b8acd0c3395c3e994ac06cfaa2c07af61438f49c9328e2",
   "session_handoff": "research_ops/SESSION_HANDOFF.md",
@@ -155,5 +155,12 @@
     "original_reproduction_completed_phases": 1,
     "observability_reproduction_completed_phases": 2,
     "saved_csv_tables_equal": 13
-  }
+  },
+  "verified_checksum_paths": 6677,
+  "recovery_paper_archive": "artifacts/afterclick-recoverability-final-20261124.tar.gz",
+  "recovery_paper_archive_sha256": "4ee9d1bc794c3f16bef6bd0b85031eb14ba4a2c5f82fcd16acda4b1b90c8b4cf",
+  "recovery_paper_archive_bytes": 28714063,
+  "recovery_paper_archive_verified_files": 7028,
+  "recovery_paper_archive_content_commit": "c1cd765de3158d416e1cb0735c2853e70a14b356",
+  "archive_verification": "artifacts/afterclick-recoverability-final-20261124.package-verification.json"
 }
