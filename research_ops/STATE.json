@@ -1,13 +1,13 @@
 {
   "schema_version": 3,
-  "utc_updated": "2026-11-24T19:33:37.420247+00:00",
-  "phase": "OECR_BOUNDED_REPORT_COMPLETE",
-  "current_gate": "PASS_LOCAL_VALIDITY__UNSUPPORTED_TERMINAL_FIDELITY",
+  "utc_updated": "2026-11-25T00:19:19.244289+00:00",
+  "phase": "FINAL_RECOVERABILITY_SYNTHESIS",
+  "current_gate": "REPORT_COMPLETE__LIVE_EFFICACY_INCONCLUSIVE",
   "state": "CLOSED_NO_PAID_QUEUE",
   "bounded_report_complete": true,
   "research_complete": true,
   "research_complete_scope": "Completed bounded empirical report; broad novelty and algorithmic efficacy unestablished",
-  "publication_novelty": "LIMITED_UNESTABLISHED",
+  "publication_novelty": "LIMITED_INCONCLUSIVE",
   "last_good_commit": "96c343775954f92cac1f2b6434b7e31ba005943c",
   "source_execution_head": "96c343775954f92cac1f2b6434b7e31ba005943c",
   "report_checkpoint_commit": null,
@@ -17,10 +17,7 @@
     "u5-oecr-independent-confirmation-v2"
   ],
   "most_recent_local_validation_run_ids": [
-    "u0-observation-equivalence-local-v1",
-    "u3-oecr-preconfirmation-local-v1",
-    "u6-oecr-final-verification-v1",
-    "u7-oecr-identity-audit-local-v1"
+    "v0-recoverability-standardization-v1"
   ],
   "latest_full_suite_passed": 305,
   "latest_full_suite_seconds": 408.27,
@@ -126,7 +123,7 @@
   "current_active_reservation": null,
   "finite_queued_runs": [],
   "paid_work_queued": false,
-  "paid_mode": "DISABLED_REPORT_CLOSED",
+  "paid_mode": "DISABLED",
   "blocked_approvals": [],
   "human_approval_required": false,
   "blockers": [],
@@ -136,10 +133,10 @@
     "Later identifier and serving confounds unresolved",
     "Paused scheduler excludes irreversible safety efficacy"
   ],
-  "next_experiment": "No new data collection; independent local reproduction only",
-  "next_command": ".venv/bin/python -m research_ops.scripts.reproduce_oecr --output /tmp/afterclick-oecr-resume-01",
+  "next_experiment": "No paid experiment queued; external review or saved-evidence verification",
+  "next_command": ".venv/bin/python research_ops/scripts/verify_observability.py",
   "reproduce_command": ".venv/bin/python -m pytest -q",
-  "manuscript": "paper/OECR_PAPER.md",
+  "manuscript": "paper/AFTERCLICK_RECOVERABILITY_PAPER.md",
   "verdict": "research_ops/FINAL_RESEARCH_VERDICT.md",
   "reproduction_guide": "docs/OECR_REPRODUCIBILITY.md",
   "sealed_run_count": 69,
@@ -147,5 +144,16 @@
   "integrity_report": "artifacts/oecr-final-integrity.json",
   "historical_archive": "artifacts/afterclick-tcope-20261124.tar.gz",
   "historical_archive_sha256": "3b154605cabd9b1073b8acd0c3395c3e994ac06cfaa2c07af61438f49c9328e2",
-  "session_handoff": "research_ops/SESSION_HANDOFF.md"
+  "session_handoff": "research_ops/SESSION_HANDOFF.md",
+  "formatted_manuscript": "output/pdf/AFTERCLICK_RECOVERABILITY_PAPER.pdf",
+  "current_run_id": "v0-recoverability-standardization-v1",
+  "fresh_validation": {
+    "full_suite_completed": false,
+    "partial_passed": 207,
+    "partial_failed": 1,
+    "narrow_recheck_passed": 1,
+    "original_reproduction_completed_phases": 1,
+    "observability_reproduction_completed_phases": 2,
+    "saved_csv_tables_equal": 13
+  }
 }

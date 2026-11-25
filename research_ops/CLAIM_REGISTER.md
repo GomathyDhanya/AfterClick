@@ -132,3 +132,7 @@ Original C1/C2/C3 and observability findings remain unchanged. t-series221genuin
 | Novel general checkpoint/replay or metareasoning algorithm | Not claimed | Closest literature overlap; NOVELTY_MATRIX |
 
 No changes to the earlier C1/C2/C3, H4/H5 or TCOPE verdicts. Original and corrected secondary analyses remain separately sealed. Full claim–evidence matrix: paper/OECR_PAPER.md §12.
+
+## Unified recoverability manuscript
+
+RECOVERABILITY_CLAIM_MATRIX.md is the current cross-study claim inventory: RQ1/RQ2supportedwithinmodels,RQ3partially supported/exploratory,learned/TCOPEsuperiorityunsupported,finalTCOPEinconclusive. OriginalclaimIDs/outcomespreserved. No pooled LLM population. v0 validates savednumericswithoutnewinference;freshfullsuiteincomplete.

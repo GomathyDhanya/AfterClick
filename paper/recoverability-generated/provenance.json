@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "derivation": "research_ops/scripts/standardize_recoverability.py",
+  "tables": "tables.json",
+  "structural_figures": [
+    "architecture"
+  ],
+  "measured_figures": {
+    "search": "p4-matched-search-v1/metrics.json",
+    "verification-races": "o2-observability-locked-v1/metrics.json",
+    "controller": "p9-locked-confirmation-v1/metrics.json",
+    "live-trajectory": "t4-distinct-9b-baseline-v1/raw/dev-05/report.json"
+  },
+  "no_new_model_calls": true
+}

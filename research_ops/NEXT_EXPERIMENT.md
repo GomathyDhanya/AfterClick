@@ -1,7 +1,5 @@
-# Next action — independent local reproduction only
+# Preferred next action: manuscript review, no data collection
 
-The bounded research loop is closed. No further live experiment is justified or queued. Preferred check: run `.venv/bin/python -m research_ops.scripts.reproduce_oecr --output /tmp/afterclick-oecr-resume-01` from the repository, using a never-existing output path. Prediction: all frozen seals and both saved summaries/four figures match exactly; a mismatch falsifies reproducibility and must be investigated without rewriting the sealed evidence. Resources: local CPU/files only, $0 Modal, no model calls or holdout access. Gate: ordinary local work authorized.
+The unified bounded report is complete. Preferred scientific follow-up is independent review of recovery contracts, denominators and novelty against the linked primary work. Optional local falsification: run `.venv/bin/python research_ops/scripts/verify_observability.py`; prediction all sealed files/frozen sources match, $0Modal, no modelcalls. If mismatch, preserve output and diagnose without rewriting evidence.
 
-Fallback if artifacts/dependencies are unavailable: restore the local OECR evidence package and follow docs/OECR_REPRODUCIBILITY.md; do not regenerate paid data. Full regression command: `.venv/bin/python -m pytest -q` with local PostgreSQL/Chromium available.
-
-Future broader research would need an independent multi-application cohort, controlled identifier streams and repeated serving samples. This is a limitation and reversal criterion, not an automatic next experiment or authorization. The trajectories spending category is closed after the documented overrun.
+Fallback: regenerate saved tables/figures from archived data. Fresh full-suite and six-phase runtime validation were interrupted in v0; do not infer their completion from priorpasses. A future live A/Bproposal appears in RECOVERABILITY_LIVE_GO_NO_GO.md, is unqualified/unauthorized and not queued. Do not reopen the trajectoriescategory. No new holdout/tuning needed to finish the present manuscript.

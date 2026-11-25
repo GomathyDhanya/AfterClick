@@ -191,3 +191,5 @@
 {"event": "completed", "run_id": "u5-oecr-independent-confirmation-v2", "schema_version": 1, "seal_sha256": "7d37a4bc56f35fd65189b4bf123986dac4b881c92832196c5a6f415c9b6a0549", "utc": "2026-11-24T19:05:12.621219+00:00"}
 {"event": "completed", "run_id": "u7-oecr-identity-audit-local-v1", "schema_version": 1, "seal_sha256": "5773dbef6b30752fbbadbc674db08ce3951abefe370d4e31a0e2a6e7f0cc310c", "utc": "2026-11-24T19:05:12.632388+00:00"}
 {"event": "completed", "run_id": "u6-oecr-final-verification-v1", "schema_version": 1, "seal_sha256": "a0c2b6b13f630e81997da6e816419a95049578152a198ddcb7e330e4b3a733d5", "utc": "2026-11-24T19:09:21.005536+00:00"}
+{"event": "planned", "protocol_sha256": "0816971defac502725281ce700159e391e63fe7995c380483d1009c401475990", "run_id": "v0-recoverability-standardization-v1", "schema_version": 1, "utc": "2026-11-24T21:12:27.185856+00:00"}
+{"event": "completed_with_documented_interrupted_checks", "run_id": "v0-recoverability-standardization-v1", "schema_version": 1, "seal_sha256": "bd9a378a4b6616600e7d23805888d1f44695680384b9e20aff2ef5b7e7c785fe", "utc": "2026-11-25T00:20:52.073971+00:00"}

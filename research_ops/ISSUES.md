@@ -147,3 +147,7 @@ u7:13 paired later requests after equal preceding actions differ only under diag
 ## OECR-VERIFY-001 — resolved formatting failure
 
 u6 initial Ruff E501 in posthoc audit helper; string split without semantic change. Corrected lint/format and saved-data regeneration pass; raw first failure retained.
+
+## FINAL-REPRO-001 — interrupted local checks
+
+Owner: localexecutionenvironment. v0 fullsuite Page.goto timeout in hidden_external_receipt aftersuspension;207passesbeforeinterrupt. Narrowrerun passes1/1. Originalreproduction1/6phasescompleted,secondinterrupted,4unattempted. No frozenimplementationchange;alllogsretained. Completesavedtables/observabilitynumericsmatch. Fullfreshenvironmentvalidationremainsincomplete;prior305passnotrelabeled.

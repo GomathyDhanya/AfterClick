@@ -141,3 +141,9 @@ The [new report](paper/TCOPE_PAPER.md) preserves the earlier bounded and observa
 ```sh
 .venv/bin/python -m research_ops.scripts.reproduce_tcope --output /tmp/afterclick-tcope-reproduction
 ```
+
+## Unified recoverability paper (24 November 2026)
+
+The consolidated empirical manuscript is [AfterClick: The Limits of Recoverability in Tool-Using LLM Agents](paper/AFTERCLICK_RECOVERABILITY_PAPER.md). It centers asynchronous effects, observation delay and safe task completion; OECR is supporting methodology. Earlier study papers and frozen results remain available. The [evidence audit](research_ops/RECOVERABILITY_EVIDENCE_AUDIT.md), [claim matrix](research_ops/RECOVERABILITY_CLAIM_MATRIX.md), and [readiness verdict](research_ops/RECOVERABILITY_SUBMISSION_READINESS.md) distinguish supported findings from missing live confirmation. This is a bounded empirical report; a superior safety algorithm and publication-level novelty are not established.
+
+Regenerate the inventory/tables/new figures locally with `.venv/bin/python -m research_ops.scripts.standardize_recoverability`. The PDF formatting helper is `research_ops/scripts/format_recoverability_paper.py` and requires ReportLab (available in the Codex bundled PDF runtime). No model calls are part of these commands.

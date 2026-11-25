@@ -121,3 +121,7 @@ No new conceptual priority is established by t-series results. Current primary-s
 ## 2026-11-24 OECR final review
 
 Primary sources, inspected technical sections, exact overlap and remaining distinctions are recorded in NOVELTY_MATRIX.md (Safe to Resume?, AgentRewind, SURE-Act, Cordon, UndoBench, Chandy–Lamport, Russell–Wefald). Independent u5/u7 evidence supports a limited empirical systems study, not new snapshot/replay/staging concepts or demonstrated cross-framework superiority. Manuscript §12 supplies the claim–evidence matrix.
+
+## 2026-11-24 final recoverability synthesis
+
+Reopened primary full texts: Cordon2606.17573v1,UndoBench2610.05622v1,SURE-Act2610.24194v1,AgentRewind2608.14380v1,SafeToResume2608.29381v1; primarySagasCornellPDF andChandyLamportPDF. Linksandlimitedtechnicaloverlapinunifiedpaper§2/references; no priorityclaim for compensation, snapshots, staging or learnedcounterfactualcontrol. Full externalframeworks not reproduced; internalcomparatorsonly. Publicationnoveltylimited/inconclusive.
