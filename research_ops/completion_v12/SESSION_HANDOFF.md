@@ -51,3 +51,6 @@ The program reports the earliest incomplete milestone and actual inventory; it
 does not launch the unimplemented full model evaluation. Do not label this
 checkpoint, a successful local qualification, or a graph rendering as completion
 of the user's request.
+
+
+Final combined verification: **402 passed**, zero failures, one upstream warning, 661.74 s. All 42 new tests and the original 360 were included. Source checkpoint `4224a75`; no original test/runtime changed. The failed collection attempt remains archived. Full research remains incomplete; no paid v12 requests or TEST outcomes.

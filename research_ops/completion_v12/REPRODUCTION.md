@@ -127,3 +127,8 @@ refresh credit and net-spend safeguards, forecast the complete registered study,
 and finish qualification. Do not reuse a closed legacy lifecycle or its old
 $20/$5 category caps as new authority. Do not interpret the $18 ceiling as a
 promise that the full proposed matrix fits available credit.
+
+
+Final combined verification: **402 passed**, zero failures, one upstream warning, 661.74 s. All 42 new tests and the original 360 were included. Source checkpoint `4224a75`; no original test/runtime changed. The failed collection attempt remains archived. Full research remains incomplete; no paid v12 requests or TEST outcomes.
+
+Historical failure attribution: `artifacts/research_runs/v12-01-historical-failure-attribution/` reconciles all six unsuccessful archived branches with independent raw-receipt/terminal-state checks: five historical harms and one restoration omission. Timing component causality remains unresolved.

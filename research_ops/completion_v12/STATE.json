@@ -16,5 +16,17 @@
   "historical_state": "research_ops/STATE.json",
   "active_paid_job": null,
   "next_milestone": "Complete task environments and author all required contracts",
-  "reproduction": "research_ops/completion_v12/REPRODUCTION.md"
+  "reproduction": "research_ops/completion_v12/REPRODUCTION.md",
+  "regression": {
+    "tests": 402,
+    "failures": 0,
+    "warnings": 1,
+    "seconds": 661.74,
+    "new_v12_tests": 42,
+    "baseline_existing_tests": 360,
+    "junit": "artifacts/research_runs/v12-00-baseline-qualification/post-implementation-full-tests-v2.xml",
+    "source_checkpoint": "4224a75d80617c4af712cd140be3e23e19a2de61"
+  },
+  "source_checkpoint": "4224a75d80617c4af712cd140be3e23e19a2de61",
+  "artifact_status": "CHECKPOINT_NOT_FULL_RESEARCH"
 }
