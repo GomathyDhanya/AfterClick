@@ -1,0 +1,14 @@
+{
+  "requests": 6285,
+  "model_generations_received": 6285,
+  "known_http_failures": 0,
+  "RECEIVED": 6285,
+  "role:actor": 6219,
+  "role:reviewer": 66,
+  "unlisted_request_nodes": 72,
+  "additional_observed_nodes": 144,
+  "additional_observed_edges": 72,
+  "lost_responses_preserved_unknown": true,
+  "no_generation_retries": true,
+  "exact_token_usage_unknown_for_missing_responses": true
+}

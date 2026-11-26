@@ -151,3 +151,36 @@ u6 initial Ruff E501 in posthoc audit helper; string split without semantic chan
 ## FINAL-REPRO-001 — interrupted local checks
 
 Owner: localexecutionenvironment. v0 fullsuite Page.goto timeout in hidden_external_receipt aftersuspension;207passesbeforeinterrupt. Narrowrerun passes1/1. Originalreproduction1/6phasescompleted,secondinterrupted,4unattempted. No frozenimplementationchange;alllogsretained. Completesavedtables/observabilitynumericsmatch. Fullfreshenvironmentvalidationremainsincomplete;prior305passnotrelabeled.
+
+## REVIEW-MAPPING-001/002 — resolved adapter failures, preserved
+
+Direct/nested source reference envelope caused w0KeyError before complete output; duplicate schema_version caused w0bTypeError. w0ccompleted projection is separately superseded by w0d-v2.1 safe-completion predicate (actualcurrentcontractrequired). Sources/metrics/logs retained. No frozen oracle changed.
+
+## REVIEW-EXTERNAL-001 — unavailable published dependency
+
+Official EvoUndo wrapper cannot import evoundo_harness; run then raises control_rateKeyError. Remains failed/unscored. Five other published wrappers complete. No fake EvoUndo replacement or official source modification.
+
+## REVIEW-VALIDATION-001 — mock fixture instrumentation corrections
+
+Missing request_timeout_seconds in new budget fixture fixed; failed logs retained. Shared Factory close requires started timestamps; explicit journal timestamp added and close tested. Mockdecisioncalls now separate fromgenuinegenerations. Actual-rollbackqualification initially checked persistence across edit only; finalamendment also restoresoriginalvalue viaAPI and passes. These are development/instrumentationdefects,not favorable efficacy.
+
+## REVIEW-LIVE-001 — remaining financial/scientific gate
+
+No newexplicitapplicableallocation aftercollectioncategoryclosure. Paidmodeoff. Currentendpointmetadata/emptycontainersconfirmedread-only; actualgenuineQwenDEV/externalpilot/finalcomparisonnotrun. Proposed1.25earmarkinsideexistingcontingency/20total; needsexplicitapproval,freshcontrols andlaunchbinding. No automatic continuation.
+
+## REVIEW-V0-TIMEOUT — root cause bounded
+
+Fresh sequential320testpass and6phasereproduction show the old navigation failure is not reproduced in this run. Earlier hostsuspension/concurrentload/readiness are credible explanations, not individually causally isolated. Do not label an untested rootcause as proven.
+
+## 2026-11-25T02:38:00.545069+00:00 — Prospective timing study issue audit
+- TIMING-HISTORY-TYPE: exact mock/live-class contract rejected `done` in structured action history; fixed new continuation driver to record completion separately, first failure preserved x0/raw/full-contract-test-first.txt, current25testpass. Original frozen runtimes unchanged.
+- TIMING-BLOCK-CAP: v1confirmation offline factory rejected112callcap vs unchanged80maximum; no paidstart/request. All3v1protocols retained/sealed; v2lowered80 and exact live approvals passed. Tasks/schedules/frozenanalysis remain unchanged, not selected against outcomes.
+- TIMING-HORIZON: model completion before futureevent is not final outcome. Localx2qualification6pass final29.66s; final waits actualworkerclock>=15000ms, incompletehorizon markedcensored. No synthetic advancement.
+- TIMING-OBSERVATION: DEV0receipts insidegeneration despite genuineconcurrentworkerticks; no mechanisticreceipt-overlap claim fromDEV. Fixedconfirmation mixedwindows preregistered, no additionaladaptivetasksearch.
+- MONEY-AUTH: prior missingallocation superseded bylatestexplicit20USDtimingauthorization. Old ledger/overrun retained; no oldcategoryreset. Newallocationinitialop5USD andproviderusage14/defaultcash0.
+
+## Supervision closure
+- Legacy local timing sensitivity: combined360run358pass/2fails (Clock.pause_at past; T-COPE2000msrace). Fullrawtraces c0/raw/legacy-*. No assertions/runtime changed; fresh330legacytests pass. Owner: artifact maintainer; intermittent limitation retained, not permanently fixed.
+- Qwen reviewer schema reliability:3/6invalid (reason>500; nested evidence arrays); strict fallback worked. Owner: future interface study, not silently fixed/relaxed. NO-GO to expand current supervisor.
+- Pure model-latency attribution: not identified in Cpilot; C2commit occurs after reviewer returns. Actual model and Gateway times separated. Originalxsource11genuineactorinferencecommit remains distinct.
+- Independent supervisor confirmation: NOTRUN by preregistered stop decision; do not claim held-outsupervision efficacy. No blocking financial approval is pending.

@@ -1,0 +1,17 @@
+# Reviewer response — final executable acceptance checklist
+
+Statuses concern executed evidence. The latest explicit20USD timingallocation superseded the earlierfinancialblocker; oldledgers/protocolsremainpreserved.
+
+| Criticism | Technical remedy / criterion | Evidence | Resolution |
+|---|---|---|---|
+| Ambiguous recovery semantics | Sixseparatepredicates; pointwise/robustquantifiers; admissibleAPI/timebudget; actualSnotfuturefeasibility | w0d-v2.1,8regressions,102rawcaseprojection/78determinate/24unavailable; current/full3expiryreturns;102preventionnull | RESOLVED withinstatedfinite/operationalscope;rawlabelsunchanged |
+| Unclear incremental novelty | Inspectofficialmethods andunchangedstate/historyscorecomparison; compareprospectivetimingcapability | w2officialdoctor/smoke/5wrappers/100scriptedexecutions; nativeQwen36timedbranches; REVIEW_NOVELTY_MATRIX | HistoryrankingnoveltyREJECTED; stagingknown; boundedmeasurementextensiononly, publicationnoveltyLIMITED/UNESTABLISHED |
+| Constructed timing laws | Keepimposedeligibilityseparatefromactualadmission,receiver,publicACK,inference/tooltime | w1,x0,x2localchecks; x3realtimeticks36/36,physicalreceipt-overlaps3authorizedbranches,prohibitedticketoverlap1 | OperationalmechanismVALIDATED inmockservices; old18–33ppretainconditionalgeneratorinterpretation; no internetfrequencyclaim |
+| Missing independent live intervention efficacy | ActualnewQwenproposals/Gateway, exactinitialcuts, workersprogress, independentT/H/S oracle, fixed12sources | DEV27calls/6validarms;CONF145calls/36validarms;42post-runre-scoresmatch;0invalid/censored/unknown | ValidcomparisonCOMPLETED; primaryeffectINCONCLUSIVE (11/12vs10/12,p1.0); no superiorcontrollerclaim |
+| Narrow negative-result diagnosis | Existingfrozenartifactsplusinspectionofeverynewdiscordance; distinguishinference/toolcost/taskomission | NEGATIVE_RESULTS_DIAGNOSIS_V2; source05missingrestorebelowcap; source11commitduringgeneration; strongoriginalbaselines | Evidence-supportedscopedexplanations; stochasticcontinuation/workloadrivalsremain; no capacitysweep |
+| Unfocused manuscript / reproducibility | Centerprospectivequestion,precisesemantics,actualcohort/control/timing/uncertainty; preserveearlierpapers;freshfullsuite | Newmainpaper/appendix/figures/sourceprovenance;fresh330pass/1warning493.92s;w3sixknownphasesnumericallymatch | Manuscriptrevisedtooneboundedempiricalargument; finalPDF/artifactQAseparatelyrecorded |
+
+The scientific hypothesis is not markedconfirmed merelybecause executionpasses. Safecompletiongain2winsminus1legitimatelossremainsuncertain. No additionalpaidcohort isjustified to seeksignificance. This studydoesnot reproducecompleteCordonorprovidegenuineQwenUndoBenchTESTresults. Fastverificationautomata,ambiguousconsent,crossapplication/modelgeneralizationandindependentexternalreplicationremainlimits,notclaims.
+
+## Supervisory extension and latest reproduction
+The six-criticism checklist above remains scoped to original evidence. Add Cpilot: independent reviewer implemented and enforced,6validpairedDEVbranches,21actor/6reviewercalls;3/6schema-invalidfallbacks. No incremental benefit over fast rule; no confirmation. Pure latency attribution narrowed because access admission occurs213ms after review return. Allarmsrestore, contrary to a systematic-restoration-failure story. Fresh330pre-extensiontests pass567.64s; combined360has358pass/2legacytimingfails preserved and all30newtests pass. Mainpaper/appendixupdatedwithoneprospectivequestion; no novel oversight/staging invention claimed.

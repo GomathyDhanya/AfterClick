@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "predicate_input": "w0d-recovery-predicates-v2-1/metrics.json",
+  "external_input": "w2-undobench-official-local-v1/raw/scoring-ranking.json",
+  "model_calls": 0,
+  "independent_units": "Same fixture/source clusters retained; not independent rows or new model tasks",
+  "semantic_version": "v2.1"
+}

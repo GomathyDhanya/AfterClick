@@ -1,0 +1,17 @@
+{
+  "episodes": 334,
+  "categories": {
+    "ACTOR_FINISHED_WITH_UNMET_OBLIGATIONS": 94,
+    "CONTINUATION_STOPPED_WITH_UNMET_OBLIGATIONS": 116,
+    "PHYSICAL_VIOLATION_WITHOUT_PROTECTION_AUDIT": 48,
+    "PHYSICAL_VIOLATION_AFTER_PROTECTION_AUDIT_UNRESOLVED_ADMISSION": 19,
+    "PHYSICAL_VIOLATION_PRECEDES_PROTECTION_AUDIT": 17,
+    "JOINT_SAFE_COMPLETION": 35,
+    "INVALID_OR_CENSORED_UNRESOLVED": 5
+  },
+  "exploratory": true,
+  "not_an_inference_latency_causal_estimate": true,
+  "exact_effect_frontier_unidentified": true,
+  "current_local_repaired_but_forbidden_history": 22,
+  "script_sha256": "22653a4ffb4f08ea7fce928204dd34cb36375efa6ad7e882c1b93697f7a06992"
+}

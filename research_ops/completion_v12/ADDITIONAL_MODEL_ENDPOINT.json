@@ -1,0 +1,26 @@
+{
+  "name": "afterclick-v12-qwen36-35b",
+  "endpoint_id": "ep-CBK3stmONQUFJbpFdbPWwG",
+  "model_name": "afterclick-v12-qwen36-35b",
+  "repo_id": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "revision": "c653bba46dfa06e9658dcc0b0dc87fe4685f14a2",
+  "volume_id": null,
+  "model_path": null,
+  "service_url": "https://gomathydhanya142--ep-afterclick-v12-qwen36-35b-server.us-east.modal.direct",
+  "requires_proxy_auth": false,
+  "serving_mode": "dedicated",
+  "status": "provisioning",
+  "lifecycle": {
+    "created_at": "2026-11-25 16:30:54-05:00",
+    "created_by": "gomathydhanya142",
+    "stopped_at": null,
+    "stopped_by": null
+  },
+  "app_id": "ap-jSFDjpKqRE47qCwmjAoJAi",
+  "server_id": "fu-y5l7brIyZZxTaX8c70INPQ",
+  "environment_name": "main",
+  "ownership": "Created for this v12 study; original user endpoint is distinct and must never be stopped",
+  "license": "apache-2.0",
+  "selection_before_any_TEST_model_outcomes": true,
+  "zero_minimum_observed": true
+}

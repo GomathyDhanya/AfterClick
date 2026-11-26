@@ -1,0 +1,15 @@
+{
+  "requests": 16138,
+  "model_generations_received": 16135,
+  "known_http_failures": 0,
+  "RECEIVED": 16135,
+  "role:actor": 15940,
+  "role:reviewer": 198,
+  "UNKNOWN_NOT_RETRIED": 3,
+  "unlisted_request_nodes": 2149,
+  "additional_observed_nodes": 4298,
+  "additional_observed_edges": 2149,
+  "lost_responses_preserved_unknown": true,
+  "no_generation_retries": true,
+  "exact_token_usage_unknown_for_missing_responses": true
+}

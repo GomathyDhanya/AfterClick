@@ -1,0 +1,14 @@
+{
+  "edges": 16658,
+  "relations": {
+    "actual_native_tool_executed": 8793,
+    "native_gateway_issued_http": 6921,
+    "controller_recommendation_issued_http": 392,
+    "controller_http_acknowledged": 392,
+    "actual_reviewer_response_processed": 160
+  },
+  "exact_ids_only": true,
+  "db_control_commit_join_not_invented": true,
+  "clock_semantics": "Action interval start and actual POST timestamp; recording may occur after response",
+  "not_additional_experiments": true
+}

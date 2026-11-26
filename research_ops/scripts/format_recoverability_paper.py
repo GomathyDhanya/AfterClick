@@ -70,12 +70,12 @@ def render(source, output):
             spaceAfter=12,
         )
     )
-    styles.add(
-        ParagraphStyle(name="Cell", fontName="Times-Roman", fontSize=8, leading=10, wordWrap="CJK")
-    )
+    styles.add(ParagraphStyle(name="Cell", fontName="Times-Roman", fontSize=8, leading=10))
+    styles["Heading1"].keepWithNext = True
     styles["Heading1"].fontName = "Times-Bold"
     styles["Heading1"].fontSize = 13
     styles["Heading1"].leading = 16
+    styles["Heading2"].keepWithNext = True
     styles["Heading2"].fontName = "Times-Bold"
     styles["Heading2"].fontSize = 11
     styles["Heading2"].leading = 13
@@ -167,7 +167,7 @@ def render(source, output):
     def footer(canvas, doc):
         canvas.setFont("Times-Roman", 8)
         canvas.setFillColor(colors.HexColor("#555555"))
-        canvas.drawString(54, 32, "AfterClick | Bounded empirical manuscript | 24 November 2026")
+        canvas.drawString(54, 32, "AfterClick | Bounded empirical manuscript | 25 November 2026")
         canvas.drawRightString(558, 32, str(doc.page))
 
     SimpleDocTemplate(

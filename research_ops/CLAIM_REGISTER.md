@@ -136,3 +136,17 @@ No changes to the earlier C1/C2/C3, H4/H5 or TCOPE verdicts. Original and correc
 ## Unified recoverability manuscript
 
 RECOVERABILITY_CLAIM_MATRIX.md is the current cross-study claim inventory: RQ1/RQ2supportedwithinmodels,RQ3partially supported/exploratory,learned/TCOPEsuperiorityunsupported,finalTCOPEinconclusive. OriginalclaimIDs/outcomespreserved. No pooled LLM population. v0 validates savednumericswithoutnewinference;freshfullsuiteincomplete.
+
+## Reviewer-response v10
+
+- Current/full recovery ambiguity: RESOLVED within finite scope viaw0d-v2.1/regressions; capabilityexpiryR_current=true,R_full=false whenissuanceforbidden. Rawlabelsunchanged.
+- Additional history scoring novelty: NOT SUPPORTED byofficialw2comparison; UndoBench alreadydetectsrankingreversal. Prospective/current-feasibility distinction remains limitedmeasurement scope,not demonstratednewalgorithm.
+- Operationaltiming mechanism: SUPPORTED in8scriptedlocalconditions/realPGHTTP; actualQwenextension NOTCOLLECTED. Original o2proportionsretainconditionalgeneratorinterpretation.
+- Liveindependent A/B efficacy/externalQwen score: BLOCKED/UNTESTED,not safe/unsafeorzeroeffect.
+- Negativealgorithmicconclusions remain scopedtofixedlaws/publicauthorization/interventionAPI; some causalrivals unresolved. No newholdouttuning.
+
+## 2026-11-25T03:13:51.116764+00:00 — Prospective timing final checkpoint
+Frozen12-source/36-branch realQwen confirmation:145generations/379322tokens/140nativecalls, all36valid,0invalid/censored/unknown/unattempted. Immediate safe11/12,T11/12,harm0; verify-first and delayed safe10/12,T12/12,harm2each. Paired2wins/1loss/9ties,+.083333,conservative95%[-.412351,.524033],exactp1.0. No superiority/equivalence. Source05immediatepreventsreadbutQwenomitslegitimateaccessrestorationbelowcallcap. Sources07/11delayedallowforbiddeneffects; source11ticketcommitduringrealgenerationcannotberecalledbeforelaterread. All36workersprogressduringinference;3receipt-overlaps(twoauthorizedsources/3dependentbranches),4admission-overlaps(includingoneprohibitedticket). Primaryprevention_deadlinefieldisnominaleligibility; v2auditseparatesactualadmission/receipt/publicACK. GenuineDEV27calls/72577tokens/6validarmsalltied. No held-out tuning/replacement. Newstudy172calls/451899tokens;guard2.779124094USDincludingzerocallstartupfailure. Cash0,min0/idle2/zero containersverified. New20authorizationseparatefromoldguard8.032933131. Conservativecredit17.297942775,unusednewauthorization17.220875906;initialoperational5retained. Fresh330testspass/1warning493.92s,UTCwrapper499.14s; fullre-score42armsmatches. Originalfrozenruntimesandrawstudiesunchanged. No furtherpaidcollectionjustified.
+
+## Independent-supervisor extension
+C-SUP (added independent oversight improves safe completion): NOT SUPPORTED, DEV only. C1/C3safe2/2,C2safe1/2;C3adds no demonstrated benefit over C1. Valid schema3/6; reliable-supervisor interface NOT VALIDATED. c1-sixbranch replay VALID, six independent oracle rescores; no held-out supervisor cohort. Temporal mechanism applies to review-plus-Gateway path, not pure neural time in this pilot. Original C1/C2/C3 research hypotheses and frozen outcomes unchanged. Implementation status: coded / tests-passed / live-replay-valid / exploratory-comparative; NOT held-out-validated.

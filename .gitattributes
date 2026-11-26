@@ -1,0 +1,24 @@
+# Preserve exact bytes for frozen source/evidence hashes on every platform.
+* -text
+
+# PDF output can be ASCII-encoded; always treat documents and media as binary.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.gz binary
+
+# Python's CSV writer emits CRLF. Preserve original evidence without warnings.
+*.csv whitespace=cr-at-eol
+
+# Keep the bundled third-party license verbatim.
+research_ops/completion_v12/final_package/fonts/LICENSE_DEJAVU -whitespace
+
+# Preserve generated scientific plots and manuscript source verbatim.
+paper/v12/figures/*.svg -whitespace
+paper/v12/AFTERCLICK_V12_*.md whitespace=-blank-at-eof

@@ -1,21 +1,37 @@
-# Fresh zero-cost reproduction report
+# Final reproducibility report — actual evidence classes
 
-No new model generations, endpoint operations or Modal spending. Known opened protocols are reproduced, never called new confirmation. Commands and exit statuses are in v0/raw/*.json; no failed check is removed.
+- Historically sealed studies: original,observability,TCOPE,OECRoutcomesretained; laterrepairdoesnotvalidateoldinvalidtrials.
+- Saved numerical reproduction:w3 completesall6knownphases315.60s;6metricsmatch excludingoperationaltime. This isnotnewblindconfirmation.
+- Fresh local regression:330tests,1upstreamdeprecationwarning,493.92s;UTCwrapper499.14s,exit0,nointerruption. Raw x4/raw/fresh-regression.txt,fresh-regression.xml,regression-status.json,exactcommand/environment. Earlier320passandinterrupted207pass/navigationtimeoutrecordsretained.
+- New local timingqualification:x0review25pass96.14s;x2absolutehorizon6pass29.66s. Firstcompletion-historydefecttracepreservedandfixedbeforepaiduse. Output-directorytestfixpreventsrewritingsealedqualificationevidence.
+- Fresh real9Binference:DEV27calls/72577tokens/6validbranches;confirmation145calls/379322tokens/36validbranches. Fixed12sourcefreeze,6workflows/3mechanisms; no replacements. Explicitactualsource/clonecertificates,request/responseusage/nativeIDs,Gatewayactions,SQLhistoriesandimmutableloopbackreceipts.
+- Independent postrunre-score:42branchesfromfourcompletedruns reproducetheirgoal,safe,forbiddenreceipt,conservationandprovenancejudgments;159archivedsourcefilechecks (39+40+40+40). Samefrozenindependentoracle,notthird-partyhumanreplication. Newnativecalls167total(27DEV+140CONF),5CONFterminaltextresponses. No cached/mockedresponsecountedasfresh.
+- Executionfailures:offline112caprejection(0paid);onepaidproviderreadinesstimeout(0generations/0sourceattempts),automaticmin0/idleverified,guard.397204;oneboundedstartupreallocationwithinunchanged700s/1.25cap. Allfailed/supersededprotocolsretained.
+- Financial:separateexplicitnew20authority;oldledgerunchanged. Guard2.779124094USD,cash0,tokenAPI0,allpaidattemptsidle/min0verified. No model APIorGPUprocessneededforre-score/regeneration.
 
-| Check | Result | Scope |
-|---|---|---|
-| Initial verify_evidence/verify_observability | FAIL operationally | Only mismatch is current audit run unsealed; all69historicalseals/frozenfiles match. Rerun after v0seal without weakening verifier |
-| Original executable six-phase reproduction | INTERRUPTED during phase2 | Phase1 PostgreSQL48cases completes and numerical metrics match. Host suspension/stall; phase2 terminated, failed state preserved. Remaining4phases unattempted; not a complete fresh rerun |
-| Independent observability executable reproduction | PASS | Both known development/final phases complete; numericalmetrics match excluding elapsed/fit time. No new independent confirmation |
-| Saved original/observability figures and tables | PASS | Six/eight-table renderers executed; all5original and8observability CSV tables match byte-for-byte. Existing figures remain protected by seals; SVG timestamps may vary, no scientific data altered |
-| Saved TCOPE reproduction | PASS | Source freeze, child protocols/certificates; development/invalid-final regenerate. No efficacy invented for invalid final |
-| Saved OECR reproduction | PASS | Original v1/correctedv2 summary and4figures reproduce exactly; historicalsourcefreezes unchanged |
-| Fresh full test attempt | INTERRUPTED/FAIL | 207passed,1browserPage.goto30stimeout,1warning before interruption; no new305passclaim. Prior305pass408.27s belongs tou6 |
-| Isolated timeout condition recheck | PASS | hidden_external_receipt:1passed/1warning23.67s; no assertion weakened or scientificcodeedit |
-| New reporting helpers | PASS | Ruff/format checks; figures/tables regenerated from saved metrics; PDF rendered and visually inspected |
+Reproduce last meaningful check without inference:
+```sh
+.venv/bin/python -m research_ops.scripts.verify_timing_study --runs artifacts/research_runs/x1-progressing-qwen-development-v1 artifacts/research_runs/x3-progressing-qwen-confirmation-b1-v2 artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v3 artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v3
+```
 
-The host wall interval jumped by almost three hours while child-reported active test time was547.89s. We terminated the remaining local processes after detecting this, preserving partial traces. Idle-sleep inhibition does not guarantee operation across all host suspension. No cloud resource was active or warmed by this phase. The initial coordinator launch also raced registration directory creation and failed before any child command; the corrected launch waited for registration. This is preserved as an execution note, not a scientific trial.
+Resume saved numerical analysis in a new directory:
+```sh
+.venv/bin/python -m research_ops.scripts.analyze_timing_study --runs artifacts/research_runs/x3-progressing-qwen-confirmation-b1-v2 artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v3 artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v3 --output /tmp/afterclick-timing-resume-NEW
+```
 
-Interpretation: central saved numerical results reproduce, the two-phase independent observability execution reproduces, and historical integrity remains intact. The six-phase fresh execution and full suite are incomplete; this limits current environment validation, not the validity of preserved earlier passes. Do not silently substitute the isolated test pass for a full-suite pass.
+Environment:Python3.11.14/PostgreSQL17.7/Playwright1.65.2/Chromium159.0.8154.6,uv.lock,researchdependencygroup,frontendlock/builds;ModalCLI1.6.4forhistoricalpaidlaunchesonly. OfficialUndoBenchisolatedPython3.14.7environment/pinnedcommit anddoctor/smokebaselinecommands remainw2/raw. A futuregenuineexternalbenchrunisnotcompletedbythesecommands.
 
-Exact commands are in v0/protocol.json and raw per-command JSON. The supplied --output syntax for reproduce_research/observability is invalid; actual --replica/--execute/finite limits were verified before use. New manuscript/table derivation does not change frozen estimands. Final post-seal verifier results are saved outside the sealed run as artifacts/recoverability-final-verification.json.
+Plots:paper/timing-generated/provenance.jsonbindsrawderiveddataandrendererhashes. PDFvenue-neutral;render/visualQAandpostsealglobalhashcheckrecordedseparately. No unexecutedcheckisclaimedpassed. No paidrerunofclosedrunIDsallowed.
+
+Final no-inference reproduction CLI: `.venv/bin/python -m research_ops.scripts.reproduce_timing_study --output /tmp/afterclick-timing-NEW`. Tested:767sealedinputhashes,42re-scores,identicalnumerics,byte-identicalfigures. Finalglobalverifiers:89sealedruns/8030and8191checks/0mismatches. Main8pageandappendix5pagePDFsrendered/checked. DefaultGitwhitespacecheckseesrequiredPDFxrefpadding;source-onlywhitespaceandRuffchecks pass. No PDF byteswerealteredtoappeaseatextcheck.
+
+## Latest supervision reproduction status
+c0:all30newtests pass; combined360attempt358pass/2legacytimingfailures786.78s, no interruption; original rawfailures preserved. Fresh all330pre-extensiontests pass567.64s (UTCwrapper574.75s),1upstreamwarning. No assertions or frozen runtime changed. c1:all6newgenuineQwenbranchesre-scoreidentically,47archivedruntimefilesverify;27knownrequests,3/6validreviewrecommendations,not6/6. GenuineLLMevidenceisDEVonly,independentconfirmationNOTRUN. Numericalreproduction/figureverificationis saved-data evidence,notadditionalinference.
+
+No-paid commands:
+```sh
+.venv/bin/python -m research_ops.scripts.verify_supervision --runs artifacts/research_runs/c1-supervisor-development-v1
+.venv/bin/python -m research_ops.scripts.analyze_supervision --run artifacts/research_runs/c1-supervisor-development-v1 --output /tmp/afterclick-supervision-NEW.json
+.venv/bin/python -m research_ops.scripts.render_supervision --data /tmp/afterclick-supervision-NEW.json --output /tmp/afterclick-supervision-figures-NEW
+```
+No closed live lifecycle may be resumed. Use fresh output destinations.

@@ -1,0 +1,113 @@
+{
+  "registered": 240,
+  "terminal": 240,
+  "missing": [],
+  "methods": [
+    {
+      "method": "checkpoint",
+      "registered_control": 24,
+      "registered_fault": 24,
+      "control_success": 20,
+      "fault_success": 6,
+      "unknown_control": 0,
+      "unknown_fault": 0,
+      "control_capable_pairs": 20,
+      "complete_control_capable_pairs": 20,
+      "conditional_recovery_success": 0.3,
+      "conditional_task_bootstrap95": [
+        0.0,
+        0.6
+      ],
+      "bootstrap_zero_support_draws": 0,
+      "goal_only_fault": 10,
+      "unsafe_fault": 8,
+      "duplicate_effects": 14
+    },
+    {
+      "method": "idempotency",
+      "registered_control": 24,
+      "registered_fault": 24,
+      "control_success": 19,
+      "fault_success": 8,
+      "unknown_control": 0,
+      "unknown_fault": 0,
+      "control_capable_pairs": 19,
+      "complete_control_capable_pairs": 19,
+      "conditional_recovery_success": 0.42105263157894735,
+      "conditional_task_bootstrap95": [
+        0.1111111111111111,
+        0.75
+      ],
+      "bootstrap_zero_support_draws": 0,
+      "goal_only_fault": 6,
+      "unsafe_fault": 4,
+      "duplicate_effects": 10
+    },
+    {
+      "method": "naive",
+      "registered_control": 24,
+      "registered_fault": 24,
+      "control_success": 20,
+      "fault_success": 5,
+      "unknown_control": 0,
+      "unknown_fault": 0,
+      "control_capable_pairs": 20,
+      "complete_control_capable_pairs": 20,
+      "conditional_recovery_success": 0.25,
+      "conditional_task_bootstrap95": [
+        0.0,
+        0.5
+      ],
+      "bootstrap_zero_support_draws": 0,
+      "goal_only_fault": 10,
+      "unsafe_fault": 8,
+      "duplicate_effects": 14
+    },
+    {
+      "method": "saga",
+      "registered_control": 24,
+      "registered_fault": 24,
+      "control_success": 21,
+      "fault_success": 6,
+      "unknown_control": 0,
+      "unknown_fault": 0,
+      "control_capable_pairs": 21,
+      "complete_control_capable_pairs": 21,
+      "conditional_recovery_success": 0.2857142857142857,
+      "conditional_task_bootstrap95": [
+        0.0,
+        0.5714285714285714
+      ],
+      "bootstrap_zero_support_draws": 0,
+      "goal_only_fault": 8,
+      "unsafe_fault": 7,
+      "duplicate_effects": 13
+    },
+    {
+      "method": "vbr",
+      "registered_control": 24,
+      "registered_fault": 24,
+      "control_success": 19,
+      "fault_success": 12,
+      "unknown_control": 0,
+      "unknown_fault": 0,
+      "control_capable_pairs": 19,
+      "complete_control_capable_pairs": 19,
+      "conditional_recovery_success": 0.631578947368421,
+      "conditional_task_bootstrap95": [
+        0.35,
+        0.875183823529409
+      ],
+      "bootstrap_zero_support_draws": 0,
+      "goal_only_fault": 4,
+      "unsafe_fault": 4,
+      "duplicate_effects": 7
+    }
+  ],
+  "cluster_unit": "Official task; context seeds are not independent fault programs",
+  "intervals": "Exploratory 10000 task bootstrap draws; tiny 12-source external scope",
+  "unavailable_methods": [
+    "EvoUndo"
+  ],
+  "official_engine_tasks_tools_prompts_oracles_unchanged": true
+}

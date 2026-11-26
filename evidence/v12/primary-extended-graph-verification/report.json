@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "nodes": 75436,
+  "extension_edges": 18807,
+  "relations": {
+    "actual_native_tool_executed": 8793,
+    "native_gateway_issued_http": 6921,
+    "controller_recommendation_issued_http": 392,
+    "controller_http_acknowledged": 392,
+    "actual_reviewer_response_processed": 160,
+    "actual_request_response_or_transport_error": 2149
+  },
+  "acyclic_with_original_graph": true,
+  "no_invented_commit_link": true
+}

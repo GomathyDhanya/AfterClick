@@ -1,0 +1,28 @@
+{
+  "scientific_source_frozen_hashes_match": 168,
+  "original_primary": {
+    "run": "v12-44-frozen-primary-test-v1",
+    "parallel_cpu_batches": 2,
+    "worlds_per_batch": 16,
+    "peak_worlds": 32
+  },
+  "continuation": {
+    "run": "v12-68-final-credit-bound-continuation",
+    "parallel_cpu_batches": 2,
+    "worlds_per_batch": 8,
+    "peak_worlds": 16
+  },
+  "unchanged": [
+    "model revision",
+    "actor/reviewer prompts",
+    "native tools",
+    "token budgets",
+    "task contracts",
+    "oracle",
+    "world seeds",
+    "eligibility offsets",
+    "frozen enrollment",
+    "frozen estimators"
+  ],
+  "scope": "Operational allocation stays below registered maxima; serving/context differences and censoring preclude a pure inference-latency causal interpretation. Every already-started episode remains, regardless of outcome."
+}

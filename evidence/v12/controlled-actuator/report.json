@@ -1,0 +1,152 @@
+{
+  "registered": 288,
+  "terminal": 288,
+  "valid": 287,
+  "invalid": 1,
+  "model_calls": 0,
+  "cells": {
+    "(150, 'browser', 0)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 4,
+      "safe_complete": 20
+    },
+    "(150, 'browser', 1500)": {
+      "registered": 24,
+      "VALID": 23,
+      "forbidden_history": 23,
+      "safe_complete": 0,
+      "INVALID": 1
+    },
+    "(150, 'browser', 300)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 24,
+      "safe_complete": 0
+    },
+    "(150, 'direct_http', 0)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 2,
+      "safe_complete": 22
+    },
+    "(1800, 'browser', 0)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 0,
+      "safe_complete": 24
+    },
+    "(1800, 'browser', 1500)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 0,
+      "safe_complete": 24
+    },
+    "(1800, 'browser', 300)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 0,
+      "safe_complete": 24
+    },
+    "(1800, 'direct_http', 0)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 0,
+      "safe_complete": 24
+    },
+    "(600, 'browser', 0)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 0,
+      "safe_complete": 24
+    },
+    "(600, 'browser', 1500)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 24,
+      "safe_complete": 0
+    },
+    "(600, 'browser', 300)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 0,
+      "safe_complete": 24
+    },
+    "(600, 'direct_http', 0)": {
+      "registered": 24,
+      "VALID": 24,
+      "forbidden_history": 0,
+      "safe_complete": 24
+    }
+  },
+  "contrasts": [
+    {
+      "treatment": [
+        "direct_http",
+        0
+      ],
+      "reference": [
+        "browser",
+        0
+      ],
+      "complete_source_clusters": 12,
+      "matched_worlds": 72,
+      "estimate": -0.027777777777777776,
+      "source_bootstrap95": [
+        -0.09722222222222221,
+        0.041666666666666664
+      ],
+      "unknown_bounds": [
+        -0.027777777777777776,
+        -0.027777777777777776
+      ],
+      "caution": "12 constructed source contracts across six shared mechanisms; no LLM decision effect inferred"
+    },
+    {
+      "treatment": [
+        "browser",
+        300
+      ],
+      "reference": [
+        "browser",
+        0
+      ],
+      "complete_source_clusters": 12,
+      "matched_worlds": 72,
+      "estimate": 0.27777777777777773,
+      "source_bootstrap95": [
+        0.23611111111111105,
+        0.3194444444444445
+      ],
+      "unknown_bounds": [
+        0.2777777777777778,
+        0.2777777777777778
+      ],
+      "caution": "12 constructed source contracts across six shared mechanisms; no LLM decision effect inferred"
+    },
+    {
+      "treatment": [
+        "browser",
+        1500
+      ],
+      "reference": [
+        "browser",
+        0
+      ],
+      "complete_source_clusters": 12,
+      "matched_worlds": 72,
+      "estimate": 0.6055555555555556,
+      "source_bootstrap95": [
+        0.5583333333333335,
+        0.6472222222222223
+      ],
+      "unknown_bounds": [
+        0.5972222222222222,
+        0.6111111111111112
+      ],
+      "caution": "12 constructed source contracts across six shared mechanisms; no LLM decision effect inferred"
+    }
+  ],
+  "complete": true,
+  "scope": "Real fixed-recommendation gateway and eligibility interventions on full L3 DEV workflows; no new LLM calls or invented deadlines"
+}

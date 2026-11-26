@@ -125,3 +125,14 @@ Primary sources, inspected technical sections, exact overlap and remaining disti
 ## 2026-11-24 final recoverability synthesis
 
 Reopened primary full texts: Cordon2606.17573v1,UndoBench2610.05622v1,SURE-Act2610.24194v1,AgentRewind2608.14380v1,SafeToResume2608.29381v1; primarySagasCornellPDF andChandyLamportPDF. Linksandlimitedtechnicaloverlapinunifiedpaper§2/references; no priorityclaim for compensation, snapshots, staging or learnedcounterfactualcontrol. Full externalframeworks not reproduced; internalcomparatorsonly. Publicationnoveltylimited/inconclusive.
+
+## Reviewer-response external contract audit
+
+Primarymethod/metriccomparisonandnewofficialexecutionareinREVIEW_NOVELTY_MATRIX.md/UNDOBENCH_EXTERNAL_VALIDATION.md. UndoBench official dualoraclecaptures local/historyrankingdifferences; do not claim it ignoreshistory. Cordonstaging,SURE-Actcounterfactualutility,AgentRewindworkspaceboundary,SafeToResumestate/historyfailures,Sagasandshielding substantiallyoverlap. No invented/unverifiedidentifierretained.
+
+## 2026-11-25 primary-source recheck for prospective study
+- [UndoBench](https://arxiv.org/html/2610.05622v1),§2.4/§5/AppendixK and officialpinned4a25c4fsource: state/effect-historyoraclesandphase-dependentfaults alreadycoverrankingreversal. Ouradvancingelapsedmodel-timeconsumermeasurementisascopedextension,notclaimofpriorabsenceorbetterofficialscore. Actualevidencex3/x4;positivealgorithmicnoveltynotestablished.
+- [Cordon](https://arxiv.org/html/2606.17573v1),§4.5–4.6/§6: stagedexternalreleaseandtask/security/performanceevaluationknown. OurpreexistingpendingconsumertimingandrestorationcostdoesnotshowCordonfailsitscontract. No fullCordonreplicationorhead-to-head. Explicitnewtradeoff11/12vs10/12safecompletionremainsuncertain.
+
+## Independent oversight check — 2026-11-25 UTC
+Primary CRITIC https://arxiv.org/abs/2305.11738: tool-feedback critique/revision established; not a new actor-critic claim. Primary AgentSpec https://arxiv.org/abs/2503.18666: structured runtime enforcement and low overhead established. Primary Cordon https://arxiv.org/html/2606.17573v1: staging/outbox/authority/benign completion and overhead established. Primary UndoBench https://arxiv.org/html/2610.05622v1: histories and execution-boundary recovery already evaluated. Primary Principles of Metareasoning https://iiif.library.cmu.edu/file/Newell_box00014_fld01011_doc0001/Newell_box00014_fld01011_doc0001.pdf: deliberation cost established. Delta limited to measured actor/reviewer/consumer timing plus independent joint obligations; c1no superiorreviewer and3/6invalid, so broadnoveltyunestablished. Details SUPERVISION_NOVELTY_ASSESSMENT.md.

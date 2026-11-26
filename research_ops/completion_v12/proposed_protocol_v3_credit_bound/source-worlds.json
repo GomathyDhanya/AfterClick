@@ -1,0 +1,3458 @@
+[
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-01",
+    "world_seed": 2110000,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-01",
+    "world_seed": 2110001,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-02",
+    "world_seed": 2110101,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-02",
+    "world_seed": 2110102,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-03",
+    "world_seed": 2110202,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-03",
+    "world_seed": 2110203,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-04",
+    "world_seed": 2110303,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-04",
+    "world_seed": 2110304,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-05",
+    "world_seed": 2110404,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-05",
+    "world_seed": 2110405,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-06",
+    "world_seed": 2110505,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-FLOWBOARD-06",
+    "world_seed": 2110506,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-01",
+    "world_seed": 2110606,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-01",
+    "world_seed": 2110607,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-02",
+    "world_seed": 2110707,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-02",
+    "world_seed": 2110708,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-03",
+    "world_seed": 2110808,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-03",
+    "world_seed": 2110809,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-04",
+    "world_seed": 2110909,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-04",
+    "world_seed": 2110910,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-05",
+    "world_seed": 2111010,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-05",
+    "world_seed": 2111011,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-06",
+    "world_seed": 2111111,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-06",
+    "world_seed": 2111112,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-01",
+    "world_seed": 2111212,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-01",
+    "world_seed": 2111213,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-02",
+    "world_seed": 2111313,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-02",
+    "world_seed": 2111314,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-03",
+    "world_seed": 2111414,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-03",
+    "world_seed": 2111415,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-04",
+    "world_seed": 2111515,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-04",
+    "world_seed": 2111516,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-05",
+    "world_seed": 2111616,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-05",
+    "world_seed": 2111617,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-06",
+    "world_seed": 2111717,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-06",
+    "world_seed": 2111718,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-01",
+    "world_seed": 2111818,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-01",
+    "world_seed": 2111819,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-02",
+    "world_seed": 2111919,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-02",
+    "world_seed": 2111920,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-03",
+    "world_seed": 2112020,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-03",
+    "world_seed": 2112021,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-04",
+    "world_seed": 2112121,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-04",
+    "world_seed": 2112122,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-05",
+    "world_seed": 2112222,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-05",
+    "world_seed": 2112223,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-06",
+    "world_seed": 2112323,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-06",
+    "world_seed": 2112324,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-01",
+    "world_seed": 2112424,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-01",
+    "world_seed": 2112425,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-02",
+    "world_seed": 2112525,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-02",
+    "world_seed": 2112526,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-03",
+    "world_seed": 2112626,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-03",
+    "world_seed": 2112627,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-04",
+    "world_seed": 2112727,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-04",
+    "world_seed": 2112728,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-05",
+    "world_seed": 2112828,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-05",
+    "world_seed": 2112829,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-06",
+    "world_seed": 2112929,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-06",
+    "world_seed": 2112930,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-01",
+    "world_seed": 2113030,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-01",
+    "world_seed": 2113031,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-02",
+    "world_seed": 2113131,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-02",
+    "world_seed": 2113132,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-03",
+    "world_seed": 2113232,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-03",
+    "world_seed": 2113233,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-04",
+    "world_seed": 2113333,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-04",
+    "world_seed": 2113334,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-05",
+    "world_seed": 2113434,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-05",
+    "world_seed": 2113435,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-06",
+    "world_seed": 2113535,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-06",
+    "world_seed": 2113536,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-01",
+    "world_seed": 2113636,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-01",
+    "world_seed": 2113637,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-02",
+    "world_seed": 2113737,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-02",
+    "world_seed": 2113738,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-03",
+    "world_seed": 2113838,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-03",
+    "world_seed": 2113839,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-04",
+    "world_seed": 2113939,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-04",
+    "world_seed": 2113940,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-05",
+    "world_seed": 2114040,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-05",
+    "world_seed": 2114041,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06",
+    "world_seed": 2114141,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06",
+    "world_seed": 2114142,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-01",
+    "world_seed": 2114242,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-01",
+    "world_seed": 2114243,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-02",
+    "world_seed": 2114343,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-02",
+    "world_seed": 2114344,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-03",
+    "world_seed": 2114444,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-03",
+    "world_seed": 2114445,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-04",
+    "world_seed": 2114545,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-04",
+    "world_seed": 2114546,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05",
+    "world_seed": 2114646,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05",
+    "world_seed": 2114647,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-06",
+    "world_seed": 2114747,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-06",
+    "world_seed": 2114748,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-01",
+    "world_seed": 2114848,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-01",
+    "world_seed": 2114849,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-02",
+    "world_seed": 2114949,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-02",
+    "world_seed": 2114950,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-03",
+    "world_seed": 2115050,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-03",
+    "world_seed": 2115051,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-04",
+    "world_seed": 2115151,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-04",
+    "world_seed": 2115152,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-05",
+    "world_seed": 2115252,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-05",
+    "world_seed": 2115253,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-06",
+    "world_seed": 2115353,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-06",
+    "world_seed": 2115354,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-01",
+    "world_seed": 2115454,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-01",
+    "world_seed": 2115455,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-02",
+    "world_seed": 2115555,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-02",
+    "world_seed": 2115556,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-03",
+    "world_seed": 2115656,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-03",
+    "world_seed": 2115657,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-04",
+    "world_seed": 2115757,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-04",
+    "world_seed": 2115758,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-05",
+    "world_seed": 2115858,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-05",
+    "world_seed": 2115859,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-06",
+    "world_seed": 2115959,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-06",
+    "world_seed": 2115960,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-01",
+    "world_seed": 2116060,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-01",
+    "world_seed": 2116061,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02",
+    "world_seed": 2116161,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02",
+    "world_seed": 2116162,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-03",
+    "world_seed": 2116262,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-03",
+    "world_seed": 2116263,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-04",
+    "world_seed": 2116363,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-04",
+    "world_seed": 2116364,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-05",
+    "world_seed": 2116464,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-05",
+    "world_seed": 2116465,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-06",
+    "world_seed": 2116565,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-06",
+    "world_seed": 2116566,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-01",
+    "world_seed": 2116666,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-01",
+    "world_seed": 2116667,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02",
+    "world_seed": 2116767,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02",
+    "world_seed": 2116768,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-03",
+    "world_seed": 2116868,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-03",
+    "world_seed": 2116869,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-04",
+    "world_seed": 2116969,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-04",
+    "world_seed": 2116970,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-05",
+    "world_seed": 2117070,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-05",
+    "world_seed": 2117071,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-06",
+    "world_seed": 2117171,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-06",
+    "world_seed": 2117172,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-01",
+    "world_seed": 2117272,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-01",
+    "world_seed": 2117273,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-02",
+    "world_seed": 2117373,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-02",
+    "world_seed": 2117374,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-03",
+    "world_seed": 2117474,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-03",
+    "world_seed": 2117475,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-04",
+    "world_seed": 2117575,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-04",
+    "world_seed": 2117576,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-05",
+    "world_seed": 2117676,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-05",
+    "world_seed": 2117677,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06",
+    "world_seed": 2117777,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06",
+    "world_seed": 2117778,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-01",
+    "world_seed": 2117878,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-01",
+    "world_seed": 2117879,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-02",
+    "world_seed": 2117979,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-02",
+    "world_seed": 2117980,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-03",
+    "world_seed": 2118080,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-03",
+    "world_seed": 2118081,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-04",
+    "world_seed": 2118181,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-04",
+    "world_seed": 2118182,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05",
+    "world_seed": 2118282,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05",
+    "world_seed": 2118283,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-06",
+    "world_seed": 2118383,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-06",
+    "world_seed": 2118384,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-01",
+    "world_seed": 2118484,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-01",
+    "world_seed": 2118485,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-02",
+    "world_seed": 2118585,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-02",
+    "world_seed": 2118586,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-03",
+    "world_seed": 2118686,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-03",
+    "world_seed": 2118687,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-04",
+    "world_seed": 2118787,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-04",
+    "world_seed": 2118788,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-05",
+    "world_seed": 2118888,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-05",
+    "world_seed": 2118889,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-06",
+    "world_seed": 2118989,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-06",
+    "world_seed": 2118990,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-01",
+    "world_seed": 2119090,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-01",
+    "world_seed": 2119091,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-02",
+    "world_seed": 2119191,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-02",
+    "world_seed": 2119192,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-03",
+    "world_seed": 2119292,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-03",
+    "world_seed": 2119293,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-04",
+    "world_seed": 2119393,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-04",
+    "world_seed": 2119394,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-05",
+    "world_seed": 2119494,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-05",
+    "world_seed": 2119495,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06",
+    "world_seed": 2119595,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06",
+    "world_seed": 2119596,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-01",
+    "world_seed": 2119696,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-01",
+    "world_seed": 2119697,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-02",
+    "world_seed": 2119797,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-02",
+    "world_seed": 2119798,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-03",
+    "world_seed": 2119898,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-03",
+    "world_seed": 2119899,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-04",
+    "world_seed": 2119999,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-04",
+    "world_seed": 2120000,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-05",
+    "world_seed": 2120100,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-05",
+    "world_seed": 2120101,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-06",
+    "world_seed": 2120201,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-06",
+    "world_seed": 2120202,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-01",
+    "world_seed": 2120302,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-01",
+    "world_seed": 2120303,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-02",
+    "world_seed": 2120403,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-02",
+    "world_seed": 2120404,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-03",
+    "world_seed": 2120504,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-03",
+    "world_seed": 2120505,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-04",
+    "world_seed": 2120605,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-04",
+    "world_seed": 2120606,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-05",
+    "world_seed": 2120706,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-05",
+    "world_seed": 2120707,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-06",
+    "world_seed": 2120807,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-CUSTOMER_RELEASE-L3-OPSCONSOLE-06",
+    "world_seed": 2120808,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-01",
+    "world_seed": 2120908,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-01",
+    "world_seed": 2120909,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-02",
+    "world_seed": 2121009,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-02",
+    "world_seed": 2121010,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-03",
+    "world_seed": 2121110,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-03",
+    "world_seed": 2121111,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-04",
+    "world_seed": 2121211,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-04",
+    "world_seed": 2121212,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-05",
+    "world_seed": 2121312,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-05",
+    "world_seed": 2121313,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-06",
+    "world_seed": 2121413,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-06",
+    "world_seed": 2121414,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-01",
+    "world_seed": 2121514,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-01",
+    "world_seed": 2121515,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-02",
+    "world_seed": 2121615,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-02",
+    "world_seed": 2121616,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-03",
+    "world_seed": 2121716,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-03",
+    "world_seed": 2121717,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-04",
+    "world_seed": 2121817,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-04",
+    "world_seed": 2121818,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-05",
+    "world_seed": 2121918,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-05",
+    "world_seed": 2121919,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-06",
+    "world_seed": 2122019,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-06",
+    "world_seed": 2122020,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-01",
+    "world_seed": 2122120,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-01",
+    "world_seed": 2122121,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-02",
+    "world_seed": 2122221,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-02",
+    "world_seed": 2122222,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-03",
+    "world_seed": 2122322,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-03",
+    "world_seed": 2122323,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-04",
+    "world_seed": 2122423,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-04",
+    "world_seed": 2122424,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-05",
+    "world_seed": 2122524,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-05",
+    "world_seed": 2122525,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-06",
+    "world_seed": 2122625,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-FLOWBOARD-06",
+    "world_seed": 2122626,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-01",
+    "world_seed": 2122726,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-01",
+    "world_seed": 2122727,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-02",
+    "world_seed": 2122827,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-02",
+    "world_seed": 2122828,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-03",
+    "world_seed": 2122928,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-03",
+    "world_seed": 2122929,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-04",
+    "world_seed": 2123029,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-04",
+    "world_seed": 2123030,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-05",
+    "world_seed": 2123130,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-05",
+    "world_seed": 2123131,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-06",
+    "world_seed": 2123231,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-06",
+    "world_seed": 2123232,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-01",
+    "world_seed": 2123332,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-01",
+    "world_seed": 2123333,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-02",
+    "world_seed": 2123433,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-02",
+    "world_seed": 2123434,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-03",
+    "world_seed": 2123534,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-03",
+    "world_seed": 2123535,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-04",
+    "world_seed": 2123635,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-04",
+    "world_seed": 2123636,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-05",
+    "world_seed": 2123736,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-05",
+    "world_seed": 2123737,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-06",
+    "world_seed": 2123837,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-06",
+    "world_seed": 2123838,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-01",
+    "world_seed": 2123938,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-01",
+    "world_seed": 2123939,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-02",
+    "world_seed": 2124039,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-02",
+    "world_seed": 2124040,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-03",
+    "world_seed": 2124140,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-03",
+    "world_seed": 2124141,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-04",
+    "world_seed": 2124241,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-04",
+    "world_seed": 2124242,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-05",
+    "world_seed": 2124342,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-05",
+    "world_seed": 2124343,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-06",
+    "world_seed": 2124443,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-06",
+    "world_seed": 2124444,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-01",
+    "world_seed": 2124544,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-01",
+    "world_seed": 2124545,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-02",
+    "world_seed": 2124645,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-02",
+    "world_seed": 2124646,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-03",
+    "world_seed": 2124746,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-03",
+    "world_seed": 2124747,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-04",
+    "world_seed": 2124847,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-04",
+    "world_seed": 2124848,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-05",
+    "world_seed": 2124948,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-05",
+    "world_seed": 2124949,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-06",
+    "world_seed": 2125049,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-06",
+    "world_seed": 2125050,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-01",
+    "world_seed": 2125150,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-01",
+    "world_seed": 2125151,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-02",
+    "world_seed": 2125251,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-02",
+    "world_seed": 2125252,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03",
+    "world_seed": 2125352,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03",
+    "world_seed": 2125353,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-04",
+    "world_seed": 2125453,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-04",
+    "world_seed": 2125454,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-05",
+    "world_seed": 2125554,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-05",
+    "world_seed": 2125555,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-06",
+    "world_seed": 2125655,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-06",
+    "world_seed": 2125656,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-01",
+    "world_seed": 2125756,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-01",
+    "world_seed": 2125757,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-02",
+    "world_seed": 2125857,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-02",
+    "world_seed": 2125858,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-03",
+    "world_seed": 2125958,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-03",
+    "world_seed": 2125959,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-04",
+    "world_seed": 2126059,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-04",
+    "world_seed": 2126060,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-05",
+    "world_seed": 2126160,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-05",
+    "world_seed": 2126161,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-06",
+    "world_seed": 2126261,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-06",
+    "world_seed": 2126262,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-01",
+    "world_seed": 2126362,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-01",
+    "world_seed": 2126363,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-02",
+    "world_seed": 2126463,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-02",
+    "world_seed": 2126464,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-03",
+    "world_seed": 2126564,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-03",
+    "world_seed": 2126565,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-04",
+    "world_seed": 2126665,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-04",
+    "world_seed": 2126666,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-05",
+    "world_seed": 2126766,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-05",
+    "world_seed": 2126767,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-06",
+    "world_seed": 2126867,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-06",
+    "world_seed": 2126868,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-01",
+    "world_seed": 2126968,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-01",
+    "world_seed": 2126969,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02",
+    "world_seed": 2127069,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02",
+    "world_seed": 2127070,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-03",
+    "world_seed": 2127170,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-03",
+    "world_seed": 2127171,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-04",
+    "world_seed": 2127271,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-04",
+    "world_seed": 2127272,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-05",
+    "world_seed": 2127372,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-05",
+    "world_seed": 2127373,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-06",
+    "world_seed": 2127473,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-06",
+    "world_seed": 2127474,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-01",
+    "world_seed": 2127574,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-01",
+    "world_seed": 2127575,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02",
+    "world_seed": 2127675,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02",
+    "world_seed": 2127676,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-03",
+    "world_seed": 2127776,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-03",
+    "world_seed": 2127777,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-04",
+    "world_seed": 2127877,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-04",
+    "world_seed": 2127878,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-05",
+    "world_seed": 2127978,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-05",
+    "world_seed": 2127979,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-06",
+    "world_seed": 2128079,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-06",
+    "world_seed": 2128080,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-01",
+    "world_seed": 2128180,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-01",
+    "world_seed": 2128181,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-02",
+    "world_seed": 2128281,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-02",
+    "world_seed": 2128282,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-03",
+    "world_seed": 2128382,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-03",
+    "world_seed": 2128383,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-04",
+    "world_seed": 2128483,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-04",
+    "world_seed": 2128484,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-05",
+    "world_seed": 2128584,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-05",
+    "world_seed": 2128585,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-06",
+    "world_seed": 2128685,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-FLOWBOARD-06",
+    "world_seed": 2128686,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-01",
+    "world_seed": 2128786,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-01",
+    "world_seed": 2128787,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-02",
+    "world_seed": 2128887,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-02",
+    "world_seed": 2128888,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-03",
+    "world_seed": 2128988,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-03",
+    "world_seed": 2128989,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-04",
+    "world_seed": 2129089,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-04",
+    "world_seed": 2129090,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-05",
+    "world_seed": 2129190,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-05",
+    "world_seed": 2129191,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06",
+    "world_seed": 2129291,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06",
+    "world_seed": 2129292,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-01",
+    "world_seed": 2129392,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-01",
+    "world_seed": 2129393,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-02",
+    "world_seed": 2129493,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-02",
+    "world_seed": 2129494,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-03",
+    "world_seed": 2129594,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-03",
+    "world_seed": 2129595,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-04",
+    "world_seed": 2129695,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-04",
+    "world_seed": 2129696,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-05",
+    "world_seed": 2129796,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-05",
+    "world_seed": 2129797,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-06",
+    "world_seed": 2129897,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-FLOWBOARD-06",
+    "world_seed": 2129898,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-01",
+    "world_seed": 2129998,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-01",
+    "world_seed": 2129999,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-02",
+    "world_seed": 2130099,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-02",
+    "world_seed": 2130100,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-03",
+    "world_seed": 2130200,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-03",
+    "world_seed": 2130201,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-04",
+    "world_seed": 2130301,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-04",
+    "world_seed": 2130302,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-05",
+    "world_seed": 2130402,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-05",
+    "world_seed": 2130403,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-06",
+    "world_seed": 2130503,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-06",
+    "world_seed": 2130504,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-01",
+    "world_seed": 2130604,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-01",
+    "world_seed": 2130605,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-02",
+    "world_seed": 2130705,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-02",
+    "world_seed": 2130706,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-03",
+    "world_seed": 2130806,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-03",
+    "world_seed": 2130807,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-04",
+    "world_seed": 2130907,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-04",
+    "world_seed": 2130908,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-05",
+    "world_seed": 2131008,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-05",
+    "world_seed": 2131009,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-06",
+    "world_seed": 2131109,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-FLOWBOARD-06",
+    "world_seed": 2131110,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-01",
+    "world_seed": 2131210,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-01",
+    "world_seed": 2131211,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-02",
+    "world_seed": 2131311,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-02",
+    "world_seed": 2131312,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-03",
+    "world_seed": 2131412,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-03",
+    "world_seed": 2131413,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-04",
+    "world_seed": 2131513,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-04",
+    "world_seed": 2131514,
+    "admission_ms": 8000,
+    "clean": false,
+    "timing_regime": "generous",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-05",
+    "world_seed": 2131614,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-05",
+    "world_seed": 2131615,
+    "admission_ms": 2000,
+    "clean": false,
+    "timing_regime": "intermediate",
+    "replicate": 1
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06",
+    "world_seed": 2131715,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 0
+  },
+  {
+    "task_id": "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06",
+    "world_seed": 2131716,
+    "admission_ms": 0,
+    "clean": false,
+    "timing_regime": "tight",
+    "replicate": 1
+  }
+]

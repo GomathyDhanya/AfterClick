@@ -1,0 +1,46 @@
+{
+  "original_workspace_root": "/Users/gomathydhanya/projects/684_final",
+  "utc": "2026-11-26T00:43:38.210821+00:00",
+  "freeze": "research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/PROTOCOL_FROZEN.json",
+  "freeze_sha256": "f8ebae7ca2edd9528e59db165e1fea2db756f24d123a4de351a335431c467baf",
+  "primary": {
+    "registration": "artifacts/research_runs/v12-44-frozen-primary-test-v1/registration.json",
+    "runs": [
+      "artifacts/research_runs/v12-44-frozen-primary-test-v1",
+      "artifacts/research_runs/v12-68-final-credit-bound-continuation"
+    ],
+    "analysis_report": "artifacts/research_runs/v12-final-evidence-v1/primary-analysis/report.json",
+    "graphs": "artifacts/research_runs/v12-final-evidence-v1/primary-graphs",
+    "verification": "artifacts/research_runs/v12-final-evidence-v1/primary-oracle-verification/report.json",
+    "forensics": "artifacts/research_runs/v12-final-evidence-v1/primary-forensics",
+    "interval_diagnostic": "artifacts/research_runs/v12-final-evidence-v1/primary-interval-diagnostics/report.json"
+  },
+  "larger": {
+    "registration": "artifacts/research_runs/v12-43-frozen-larger-test-v1/registration.json",
+    "runs": [
+      "artifacts/research_runs/v12-43-frozen-larger-test-v1"
+    ],
+    "analysis_report": "artifacts/research_runs/v12-final-evidence-v1/larger-analysis/report.json",
+    "graphs": "artifacts/research_runs/v12-final-evidence-v1/larger-graphs",
+    "verification": "artifacts/research_runs/v12-final-evidence-v1/larger-oracle-verification/report.json",
+    "forensics": "artifacts/research_runs/v12-final-evidence-v1/larger-forensics",
+    "interval_diagnostic": "artifacts/research_runs/v12-final-evidence-v1/larger-interval-diagnostics/report.json"
+  },
+  "external": {
+    "registration": "artifacts/research_runs/v12-44-frozen-primary-test-v1/external-registration.json",
+    "runs": [
+      "artifacts/research_runs/v12-44-frozen-primary-test-v1",
+      "artifacts/research_runs/v12-56-official-external-test-finite",
+      "artifacts/research_runs/v12-67-official-external-never-started-resume",
+      "artifacts/research_runs/v12-68-final-credit-bound-continuation"
+    ],
+    "analysis_report": "artifacts/research_runs/v12-final-evidence-v1/official-external-analysis/report.json"
+  },
+  "evidence_root": "artifacts/research_runs/v12-final-evidence-v1",
+  "registered_test": 2904,
+  "terminal_test": 1479,
+  "unexecuted_test": 1425,
+  "full_matrix_complete": false,
+  "full_research_complete": false,
+  "all_scientific_unknowns_retained": true
+}

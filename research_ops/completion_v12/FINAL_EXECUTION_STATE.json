@@ -1,0 +1,45 @@
+{
+  "phase": "EVIDENCE_VALIDATED_MATRIX_INCOMPLETE",
+  "utc": "2026-11-26T00:57:42.951986+00:00",
+  "full_research_complete": false,
+  "full_matrix_complete": false,
+  "freeze_sha256": "f8ebae7ca2edd9528e59db165e1fea2db756f24d123a4de351a335431c467baf",
+  "primary_tasks": 216,
+  "dev_tasks": 72,
+  "primary": {
+    "registered": 2304,
+    "terminal": 905,
+    "valid": 744,
+    "unexecuted": 1399,
+    "task_contracts_with_terminal_records": 185
+  },
+  "larger": {
+    "registered": 360,
+    "terminal": 334,
+    "valid": 329,
+    "unexecuted": 26
+  },
+  "official_external": {
+    "registered": 240,
+    "executed": 240
+  },
+  "registered_test": 2904,
+  "terminal_test": 1479,
+  "unexecuted_test": 1425,
+  "finance": {
+    "guard_accounted_usd": 17.967252810028675,
+    "authorized_ceiling_usd": 18,
+    "within_guard_ceiling": true,
+    "model_call_attempts": 41732,
+    "known_reported_tokens": 309714800,
+    "response_uncertain_calls": 3,
+    "actual_isolated_invoice_usd": null
+  },
+  "active_paid_job": null,
+  "no_future_model_calls_scheduled": true,
+  "next_paid_run": null,
+  "scientific_tuning_closed": true,
+  "evidence_release": "research_ops/completion_v12/final_package/RELEASE_INDEX.json",
+  "unmet": "research_ops/completion_v12/final_package/UNMET_REQUIREMENTS.md",
+  "saved_data_reproduction_passed": true
+}

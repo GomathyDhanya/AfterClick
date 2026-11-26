@@ -1,0 +1,20 @@
+{
+  "status": "PREPARED_NOT_FROZEN_NOT_EXECUTED",
+  "test_tasks": 216,
+  "primary": 2304,
+  "larger": 360,
+  "larger_tasks": 36,
+  "larger_scope": "supplementary_preselected",
+  "external": 240,
+  "original_primary_prospective": 9720,
+  "original_core_prospective": 8424,
+  "primary_stress_worlds": 432,
+  "primary_clean_episodes": 432,
+  "primary_restoration_extra": 72,
+  "primary_stage_first_extra": 72,
+  "focused_tasks_per_study": 36,
+  "stress_worlds_per_task": 2,
+  "clean_replicates_per_task": 2,
+  "timing_design": "One randomized counterbalanced regime per task, two independently seeded repeated worlds; 72 primary tasks per regime",
+  "reason": "Pre-TEST financial/power revision: preserve all 216 primary tasks and repeated policies under the explicit $18 cap; full second-model core is financially infeasible. Full cross-deadline mechanism identification uses the separate 288 executed controlled branches. Small-effect and model-general claims are downgraded."
+}

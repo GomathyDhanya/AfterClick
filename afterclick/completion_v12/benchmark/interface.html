@@ -1,0 +1,84 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>{{heading}}</title>
+<style>
+body{font:15px system-ui;margin:24px;color:#173041;background:#f5f7f9}
+main{max-width:1250px;margin:auto}
+article{background:white;padding:16px;margin:12px 0;border:1px solid #cbd8de}
+button,select{padding:8px;margin:4px}button{background:#17647a;color:white;border:0}
+pre{white-space:pre-wrap;font-size:13px;max-height:320px;overflow:auto}
+{{style}}
+</style><main><h1>{{heading}}</h1><p>{{intro}}</p>
+<article><h2>Request and policies</h2><pre id="policy"></pre></article>
+<article><h2>Service and collaboration</h2><pre id="service"></pre>
+<button data-op="suspend">Suspend pending service</button>
+<button data-op="verify">Verify pending service</button>
+<button data-op="resume">Resume verified pending request</button>
+<button data-op="cancel">Cancel pending service</button>
+<button data-op="restore">Restore pending service</button>
+</article><article><h2>Business records</h2><div id="records"></div></article>
+<p id="feedback" role="status">Loading</p>
+<details open><summary>Current public state</summary><pre id="public"></pre></details>
+</main><script>
+let current=null,busy=false,lastResult=null,selected={},actionSerial=0,completedSerial=0;
+let refreshSerial=0,visibleSerial=0,activeRefreshes=0;
+const cards=new Map();
+async function refresh(){
+  let serial=++refreshSerial;activeRefreshes++;
+  try{
+  let response=await fetch('/api/v12/public');
+  let state=await response.json();
+  if(serial<visibleSerial)return;
+  visibleSerial=serial;current=state;
+  document.querySelector('#policy').textContent=state.instruction+'\n'+
+    state.policy.map(x=>x.content).join('\n');
+  document.querySelector('#service').textContent=JSON.stringify(state.service,null,2);
+  document.querySelector('#public').textContent=JSON.stringify(state);
+  for(let record of state.records){
+    let card=cards.get(record.id);
+    if(!card){
+      card=document.createElement('article');
+      let title=document.createElement('strong');card.append(title);
+      let note=document.createElement('p');card.append(note);
+      let choose=document.createElement('select');choose.dataset.choice=record.id;
+      choose.setAttribute('aria-label','Scope '+record.id);
+      for(let value of record.choices){
+        let option=document.createElement('option');option.value=value;
+        option.textContent=value;choose.append(option);
+      }
+      choose.onchange=()=>selected[record.id]=choose.value;card.append(choose);
+      let button=document.createElement('button');button.dataset.op=record.id;
+      button.onclick=()=>act(record.id);card.append(button);
+      document.querySelector('#records').append(card);cards.set(record.id,card);
+    }
+    card.querySelector('strong').textContent=record.id+' · '+record.label+' · '+record.stage;
+    card.querySelector('p').textContent='Prerequisites: '+
+      (record.dependencies.join(', ')||'none')+'; version '+record.version+
+      (record.role?'; approval role '+record.role:'')+'; scope rule '+record.scope_rule;
+    card.querySelector('button').textContent=(record.stage==='complete'?'Update ':'Perform ')+
+      record.label;
+  }
+  }finally{activeRefreshes--}
+}
+async function act(id){
+  if(busy)return;
+  busy=true;let serial=++actionSerial;
+  document.querySelector('#feedback').textContent='Submitting '+id;
+  try{
+    let item=current.records.find(x=>x.id===id);
+    let value=item?document.querySelector('[data-choice="'+id+'"]').value:'';
+    let body={id,value,version:item?item.version:0,operation_id:crypto.randomUUID()};
+    let response=await fetch('/api/v12/act',{
+      method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)
+    });
+    lastResult={id,status:response.status,result:await response.json()};
+    document.querySelector('#feedback').textContent=JSON.stringify(lastResult);
+  }catch(error){
+    lastResult={id,status:'unknown',error:String(error)};
+    document.querySelector('#feedback').textContent='Unknown acknowledgment';
+  }finally{
+    try{await refresh()}finally{busy=false;completedSerial=serial}
+  }
+}
+document.querySelectorAll('button[data-op]').forEach(b=>b.onclick=()=>act(b.dataset.op));
+refresh().then(()=>document.querySelector('#feedback').textContent='Ready');
+let pollingTimer=setInterval(()=>{if(!busy)refresh()},350);
+</script></html>

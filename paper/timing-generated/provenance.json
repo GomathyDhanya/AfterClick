@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "input": "artifacts/research_runs/x4-prospective-timing-analysis-v1/derived/timing-analysis.json",
+  "input_sha256": "fd91016ad5235204eda6fe358602264c63d5cff882d64a899babf7e3b29d0a8d",
+  "planned_sources": 12,
+  "renderer": "research_ops/scripts/render_timing_study.py",
+  "renderer_sha256": "1d632152dcf2d74efc6c63f89df1c75decd3fed17b3747a410e74df82f04fb44",
+  "figures": {
+    "live-confirmation.png": "c3eebac36baf8fb88253de3b3d69e81260fe694f39f1d7c715eb1f92a2d70be8",
+    "live-deadline-margins.png": "66eb09112042f3fc44c55b49230fc7e0a1e4e062916785e50c83902740d8fb62"
+  },
+  "uncertainty": "Binomial working-model intervals conditional on authored source cohort; not cross-application population coverage. Paired contrasts are in numerical analysis."
+}

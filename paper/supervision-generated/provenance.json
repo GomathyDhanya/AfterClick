@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_run": "c1-supervisor-development-v1",
+  "analysis_sha256": "517c308d7663e048fe7cc2da66fbed56700e2fe01c618aeca95c016d018353fd",
+  "renderer_sha256": "64e2b2198d076ec0a93e3f86440b74f372ff7a5d112b0c87cedfaae3be8daf9d",
+  "figure_sha256": "b4f47c6286a209d8f296d70db7dd8ff5bf228ecefb963faab202eae48b3c6e68",
+  "unit": "two development sources;paired branches,not confirmation",
+  "source_figure": "artifacts/research_runs/c1-supervisor-development-v1/figures/final/supervision-outcomes.png"
+}

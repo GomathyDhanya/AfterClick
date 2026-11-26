@@ -1,0 +1,108 @@
+{
+  "supplementary": true,
+  "scope": "Fixed 36-source common support, not a full second-model core replication",
+  "model_scale_only_causal_claim": false,
+  "hardware_precision_serving_and_model_revision_differ": true,
+  "contrasts": [
+    {
+      "arm": "P2-stress",
+      "registered_pairs": 72,
+      "complete_source_clusters": 14,
+      "larger_minus_primary_source_mean": -0.07142857142857142,
+      "studentized95": [
+        -0.2257406183187708,
+        0.08288347546162794
+      ],
+      "exploratory_source_bootstrap95": [
+        -0.21428571428571427,
+        0.0
+      ],
+      "full_assignment_bounds": [
+        -0.6944444444444444,
+        0.1388888888888889
+      ],
+      "primary_safe": 1,
+      "larger_safe": 4
+    },
+    {
+      "arm": "P0-stress",
+      "registered_pairs": 72,
+      "complete_source_clusters": 17,
+      "larger_minus_primary_source_mean": 0.0,
+      "studentized95": [
+        0.0,
+        0.0
+      ],
+      "exploratory_source_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "full_assignment_bounds": [
+        -0.6805555555555556,
+        0.1388888888888889
+      ],
+      "primary_safe": 2,
+      "larger_safe": 5
+    },
+    {
+      "arm": "P3-stress",
+      "registered_pairs": 72,
+      "complete_source_clusters": 16,
+      "larger_minus_primary_source_mean": 0.0,
+      "studentized95": [
+        0.0,
+        0.0
+      ],
+      "exploratory_source_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "full_assignment_bounds": [
+        -0.7361111111111112,
+        0.09722222222222222
+      ],
+      "primary_safe": 0,
+      "larger_safe": 0
+    },
+    {
+      "arm": "P1-stress",
+      "registered_pairs": 72,
+      "complete_source_clusters": 17,
+      "larger_minus_primary_source_mean": -0.11764705882352941,
+      "studentized95": [
+        -0.2883999929644441,
+        0.05310587531738528
+      ],
+      "exploratory_source_bootstrap95": [
+        -0.29411764705882354,
+        0.0
+      ],
+      "full_assignment_bounds": [
+        -0.7361111111111112,
+        0.08333333333333333
+      ],
+      "primary_safe": 2,
+      "larger_safe": 1
+    },
+    {
+      "arm": "P0-clean",
+      "registered_pairs": 72,
+      "complete_source_clusters": 20,
+      "larger_minus_primary_source_mean": -0.125,
+      "studentized95": [
+        -0.2744525318840739,
+        0.024452531884073925
+      ],
+      "exploratory_source_bootstrap95": [
+        -0.275,
+        0.0
+      ],
+      "full_assignment_bounds": [
+        -0.4305555555555556,
+        0.25
+      ],
+      "primary_safe": 10,
+      "larger_safe": 25
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PREPARED_NOT_FROZEN_NOT_EXECUTED",
+  "test_tasks": 216,
+  "primary": 3672,
+  "larger": 3240,
+  "larger_scope": "full",
+  "external": 240,
+  "original_primary_prospective": 9720,
+  "original_core_prospective": 8424,
+  "primary_stress_worlds": 648,
+  "primary_clean_episodes": 648,
+  "primary_restoration_extra": 216,
+  "primary_stage_first_extra": 216,
+  "stress_worlds_per_task": 3,
+  "seeds_per_timing_regime": 1,
+  "clean_replicates_per_task": 3,
+  "reason": "Written pre-TEST repetition revision required by the $18 credit ceiling and source-cluster power; all 216 primary task contracts retained"
+}

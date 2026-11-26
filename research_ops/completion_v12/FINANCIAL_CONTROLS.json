@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "source": "explicit_user_attestation",
+  "verbatim_response": "set",
+  "question": "Set net cash spend limit to $0 and usage limit to $29, then confirm both values",
+  "effective_net_spend_limit_usd": 0,
+  "provider_usage_cap_usd": 29,
+  "monthly_credit_usd": 30,
+  "monthly_credit_provenance": "Previously observed current-cycle plan credit; remaining amount checked against live billing adjustment before every reservation",
+  "utc_verified": "2026-11-25T19:05:44.220312+00:00",
+  "endpoint_project_ceiling_usd": 18
+}

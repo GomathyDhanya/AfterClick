@@ -1,0 +1,14 @@
+{
+  "nodes": 71138,
+  "labels": {
+    "WITNESSED_SAFE_INITIAL_CONTINUATION": 210,
+    "UNKNOWN": 59174,
+    "REALIZED_SAFE_COMPLETION": 132,
+    "FIXED_HISTORY_VIOLATION": 11472,
+    "FIXED_HISTORY_VIOLATION_AT_FINAL_EVIDENCE": 150
+  },
+  "episodes_with_conservative_history_barrier": 150,
+  "formal_certificates_in_complex_graph": 0,
+  "ex_post_not_model_visible": true,
+  "no_exact_frontier_claim": true
+}

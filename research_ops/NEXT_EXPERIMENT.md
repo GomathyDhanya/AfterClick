@@ -1,5 +1,5 @@
-# Preferred next action: manuscript review, no data collection
+# Next action: saved-evidence verification; no new paid experiment
 
-The unified bounded report is complete. Preferred scientific follow-up is independent review of recovery contracts, denominators and novelty against the linked primary work. Optional local falsification: run `.venv/bin/python research_ops/scripts/verify_observability.py`; prediction all sealed files/frozen sources match, $0Modal, no modelcalls. If mismatch, preserve output and diagnose without rewriting evidence.
+Preferred bounded check: independently rerun verify_supervision and saved numerical/figure regeneration. Prediction: all6branch scores,47runtime hashes and27generation identities match, with0model calls. Discriminator: any mismatch is an artifact/reproduction defect and must stop distribution of the report. Resources: local CPU, no environment effects/Modal calls,0USD. Gate: report complete; paid mode disabled, no confirmation cohort. Fallback: inspect the archived source and failing input; never recollect or overwrite frozen raw trials to hide a mismatch.
 
-Fallback: regenerate saved tables/figures from archived data. Fresh full-suite and six-phase runtime validation were interrupted in v0; do not infer their completion from priorpasses. A future live A/Bproposal appears in RECOVERABILITY_LIVE_GO_NO_GO.md, is unqualified/unauthorized and not queued. Do not reopen the trajectoriescategory. No new holdout/tuning needed to finish the present manuscript.
+No further scientific data collection is justified by current evidence. A future study would need a new informative protocol and current safeguards within remaining authority; it is not scheduled or launched here.

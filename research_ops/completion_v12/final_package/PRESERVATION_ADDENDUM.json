@@ -1,0 +1,8 @@
+{
+  "legacy_actuator_module_byte_preserved": true,
+  "original_commit": "a8778c954bed2d7e84d85eafd9a3792a5d8ea238",
+  "original_path": "afterclick/completion_v12/enforcement.py",
+  "preserved_path": "afterclick/completion_v12/enforcement_legacy.py",
+  "sha256": "0c3a025ca74dc1fbaf5c2f55fbaab28e1b65f3d92d05da2d7df598249580d7d1",
+  "note": "The complex v12 actuator module has a different CLI/registry. This byte-identical legacy copy preserves its validated 60-branch implementation; it is not imported by frozen TEST execution."
+}

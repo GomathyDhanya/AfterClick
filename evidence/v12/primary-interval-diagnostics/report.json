@@ -1,0 +1,109 @@
+{
+  "contrasts": [
+    {
+      "contrast": "P3-P2",
+      "source_clusters": 111,
+      "design_cells": 35,
+      "singleton_cells": 2,
+      "frozen_stratified_bootstrap_validity": "PARTIAL_SINGLETON_CELLS",
+      "derived_frozen_studentized95": [
+        -0.19973240160575814,
+        -0.07053786866451214
+      ],
+      "six_family_bootstrap95": [
+        -0.20430107526881722,
+        -0.08547008547008547
+      ],
+      "family_clusters": 6,
+      "exploratory_family_sensitivity": true
+    },
+    {
+      "contrast": "P2-P1",
+      "source_clusters": 112,
+      "design_cells": 36,
+      "singleton_cells": 3,
+      "frozen_stratified_bootstrap_validity": "PARTIAL_SINGLETON_CELLS",
+      "derived_frozen_studentized95": [
+        -0.035845778186659225,
+        0.0894172067580878
+      ],
+      "six_family_bootstrap95": [
+        -0.017543859649122806,
+        0.08139534883720931
+      ],
+      "family_clusters": 6,
+      "exploratory_family_sensitivity": true
+    },
+    {
+      "contrast": "P1-P0",
+      "source_clusters": 115,
+      "design_cells": 36,
+      "singleton_cells": 3,
+      "frozen_stratified_bootstrap_validity": "PARTIAL_SINGLETON_CELLS",
+      "derived_frozen_studentized95": [
+        -0.06356943118698426,
+        0.06356943118698426
+      ],
+      "six_family_bootstrap95": [
+        -0.05607595842075148,
+        0.04198473282442748
+      ],
+      "family_clusters": 6,
+      "exploratory_family_sensitivity": true
+    },
+    {
+      "contrast": "P4-P1",
+      "source_clusters": 16,
+      "design_cells": 16,
+      "singleton_cells": 16,
+      "frozen_stratified_bootstrap_validity": "UNINFORMATIVE_SINGLETON_CELLS",
+      "derived_frozen_studentized95": [
+        0.0574115532832678,
+        0.5675884467167323
+      ],
+      "six_family_bootstrap95": [
+        0.11764705882352941,
+        0.5384615384615384
+      ],
+      "family_clusters": 6,
+      "exploratory_family_sensitivity": true
+    },
+    {
+      "contrast": "P5-P1",
+      "source_clusters": 20,
+      "design_cells": 20,
+      "singleton_cells": 20,
+      "frozen_stratified_bootstrap_validity": "UNINFORMATIVE_SINGLETON_CELLS",
+      "derived_frozen_studentized95": [
+        -0.3093024054408309,
+        0.10930240544083084
+      ],
+      "six_family_bootstrap95": [
+        -0.2631578947368421,
+        0.09090909090909091
+      ],
+      "family_clusters": 6,
+      "exploratory_family_sensitivity": true
+    },
+    {
+      "contrast": "P5-P3",
+      "source_clusters": 20,
+      "design_cells": 20,
+      "singleton_cells": 20,
+      "frozen_stratified_bootstrap_validity": "UNINFORMATIVE_SINGLETON_CELLS",
+      "derived_frozen_studentized95": [
+        -0.05465120272041542,
+        0.15465120272041544
+      ],
+      "six_family_bootstrap95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "family_clusters": 6,
+      "exploratory_family_sensitivity": true
+    }
+  ],
+  "frozen_results_unchanged": true,
+  "post_freeze_diagnostic": true,
+  "no_retuning_of_enrollment_prompts_oracle_or_policies": true
+}

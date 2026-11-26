@@ -1,0 +1,12 @@
+{
+  "contracts": 288,
+  "positive_witnesses": 576,
+  "positive_accepted": 576,
+  "mutations": 10944,
+  "mutation_sets_rejected": 576,
+  "independent_implementation": true,
+  "independent_human_review": false,
+  "zero_model_calls": true,
+  "complete": true,
+  "verifier_sha256": "2843c9eb88cee9ad527e37a4ac1895a1b5dc07153efcd10b9970923a2b08e76f"
+}

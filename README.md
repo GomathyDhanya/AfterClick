@@ -1,22 +1,28 @@
 # AfterClick
 
-**Temporal recovery contracts and the limits of boundary-focused learning**
+**Prospective intervention under progressing asynchronous effects**
 
-A working PostgreSQL/Chromium system with two preserved, bounded studies. Current suite:
-**260 tests passed**. Native tool calling completed the previously failed two-field browser task
-in one small comparison; JSON remains a baseline and the original frozen replay is unchanged.
+## Latest v12 research status
 
-The new queued-dispatch study separates loss of cancellation, external access and receipt arrival.
-It validates118SQL boundary endpoints, but finds no general learned-controller advantage over strong
-rules. Boundary-focused data worsen held-out risk calibration for the preselected trained model.
-Verification-delay races are measured directly; larger models and extra inference are not a remedy
-for an already-lost control capability.
+The v12 research program is **incomplete**: 1,479 of 2,904 registered TEST assignments have terminal
+records; 1,425 remain unexecuted. The benchmark implements 72 DEV and 216 TEST contracts in two
+applications. Missing experiments and causal-control requirements are documented explicitly.
 
-Read the [new paper](paper/OBSERVABILITY_PAPER.md), [new reproduction guide](paper/OBSERVABILITY_REPRODUCE.md),
-[original paper](paper/PAPER.md), [claim register](research_ops/CLAIM_REGISTER.md), and
-[current handoff](research_ops/SESSION_HANDOFF.md). All conclusions are bounded by synthetic workload,
-static public telemetry, limited mechanisms and independent SQL audits. Publication novelty remains
-inconclusive. No results or code were pushed or published.
+Read the [v12 manuscript](paper/v12/AFTERCLICK_V12_MANUSCRIPT.md),
+[paper PDF](output/pdf/AFTERCLICK_V12_MANUSCRIPT.pdf),
+[appendix PDF](output/pdf/AFTERCLICK_V12_APPENDIX.pdf),
+[acceptance audit](research_ops/completion_v12/final_package/FINAL_ACCEPTANCE_AUDIT.json), and
+[compact evidence](evidence/v12/README.md). The complete raw-data archive is separate from Git and
+has not been uploaded; [publishing instructions](docs/GITHUB_PUBLISHING.md) explain how to distribute
+and restore it. A source-only clone does not contain the raw trials.
+
+## Earlier bounded study
+
+The new bounded study is complete: 12 frozen Qwen3.5-9B source instances and 36 valid paired branches. Immediate protection records zero unauthorized effects versus two for each delayed policy, but misses one legitimate restoration objective. Safe completion is 11/12 versus 10/12; the paired comparison is inconclusive, with no superiority or equivalence claim.
+
+Read the [manuscript](paper/AFTERCLICK_RECOVERABILITY_PAPER.md), [experimental appendix](paper/AFTERCLICK_EXPERIMENTAL_APPENDIX.md), [results](research_ops/PROSPECTIVE_TIMING_RESULTS.md), and [handoff](research_ops/SESSION_HANDOFF.md). UndoBench already captures the demonstrated history-aware ranking reversal and Cordon already stages external effects; broad publication novelty remains limited/unestablished. Earlier studies and negative/invalid results are preserved.
+
+Fresh full regression: **330 tests passed**, one upstream warning. New study: 172 genuine generations including development, $2.779 conservative compute accounting, $0 cash billed, endpoint idle. No further paid collection is queued.
 
 ## Try FlowBoard
 
@@ -71,10 +77,7 @@ checkpoint added causal capability tests, matched acquisition studies, local pre
 online suppression controller. The [claim register](research_ops/CLAIM_REGISTER.md) distinguishes
 engineering validation, synthetic comparisons and the locked final mechanism.
 
-The latest format comparison adds about $0.3245 conservative guard accounting; cumulative standing
-mandate guard use is about $1.0445. Conservative observed credit is $27.39 with $0 billed. The user endpoint is preserved at min0 with zero containers verified;
-no paid process is active. The latest mandate supplies standing bounded authorization, with an
-$8 reserve, but unused budget is not a reason to make more calls. See [cost report](research_ops/P1_COST_REPORT.md).
+The original interface-stage financial records remain in [P1 cost report](research_ops/P1_COST_REPORT.md). The earlier additional $20 timing-study allocation used $2.779 conservatively; its historical ledger is [preserved](research_ops/TIMING_SPEND_STATE.json). The subsequent v12 program has a separate $18 authorization and $17.9673 conservative accounting, recorded in the [final financial summary](research_ops/completion_v12/final_package/FINAL_FINANCIAL_SUMMARY.json). These are separate study records, not interchangeable remaining balances. Paid jobs are closed.
 
 ## Local development and checks
 
@@ -147,3 +150,22 @@ The [new report](paper/TCOPE_PAPER.md) preserves the earlier bounded and observa
 The consolidated empirical manuscript is [AfterClick: The Limits of Recoverability in Tool-Using LLM Agents](paper/AFTERCLICK_RECOVERABILITY_PAPER.md). It centers asynchronous effects, observation delay and safe task completion; OECR is supporting methodology. Earlier study papers and frozen results remain available. The [evidence audit](research_ops/RECOVERABILITY_EVIDENCE_AUDIT.md), [claim matrix](research_ops/RECOVERABILITY_CLAIM_MATRIX.md), and [readiness verdict](research_ops/RECOVERABILITY_SUBMISSION_READINESS.md) distinguish supported findings from missing live confirmation. This is a bounded empirical report; a superior safety algorithm and publication-level novelty are not established.
 
 Regenerate the inventory/tables/new figures locally with `.venv/bin/python -m research_ops.scripts.standardize_recoverability`. The PDF formatting helper is `research_ops/scripts/format_recoverability_paper.py` and requires ReportLab (available in the Codex bundled PDF runtime). No model calls are part of these commands.
+
+## Reviewer-response v10
+
+The [revised manuscript](paper/AFTERCLICK_RECOVERABILITY_PAPER.md) and [experimental appendix](paper/AFTERCLICK_EXPERIMENTAL_APPENDIX.md) distinguish current recovery from full historical recovery. A new same-execution scoring audit and unchanged official UndoBench DEV baseline study challenge the novelty claim: the external benchmark already captures the demonstrated state/history ranking reversal. [Reviewer response](research_ops/REVIEW_RESPONSE.md) and [current readiness](research_ops/REVIEW_SUBMISSION_READINESS.md) retain the remaining gap in genuine live intervention/external model validation. Fresh320-test and6-phase known-protocol reproduction results are separately scoped from later targeted amendments. New phase uses0genuineQwen calls/$0Modal; no paid study is silently substituted with local tests.
+
+### Independent-supervisor extension (Ablation C)
+
+The bounded development pilot records27genuine Qwen generations (21actor,6separate reviewer calls) over2new sources and6validpairedbranches. Fast deterministic protection and stage-first review each safely complete2/2; sequential review1/2. Only3/6reviewoutputs satisfy the strict schema, and the declared fallback is enforced. No added supervision benefit over the fast rule or independent supervisor confirmation is established; paid collection is closed. [Results](research_ops/SUPERVISOR_DEVELOPMENT_RESULTS.md), [stop decision](research_ops/SUPERVISOR_CONFIRMATION_RESULTS.md), [updated paper](paper/AFTERCLICK_RECOVERABILITY_PAPER.md), [handoff](research_ops/SESSION_HANDOFF.md). Original frozen studies are preserved.
+
+No-model reproduction: `.venv/bin/python -m research_ops.scripts.verify_supervision --runs artifacts/research_runs/c1-supervisor-development-v1`.
+
+
+## V12 completion program — implementation in progress
+
+The supplied v12 completion kit is preserved under `research_ops/completion_v12/`. The new program is **incomplete**: one DEV contract is authored, no TEST contract or protocol is frozen, and no new model evaluation has run. The separate OpsConsole backend/UI, historical graph atlas, finite proof checker and a complete 60-trial local enforcement-delay experiment have executed. See [measured checkpoint and reproduction commands](research_ops/completion_v12/REPRODUCTION.md) and [current v12 handoff](research_ops/completion_v12/SESSION_HANDOFF.md). V11 artifacts, paper, negative results and finance ledgers are retained. Latest endpoint-specific authorization is $18 for new v12 credit use; $0 has been used.
+
+## V12 continuation — 25 November 2026, 21:14 UTC
+
+The newer v12 cohort now has all 72 DEV and 216 TEST contracts reference-qualified (576 complete PostgreSQL/browser/HTTP witnesses; 10,944 independently checked oracle mutations). Genuine model DEV collection is running in finite parallel cloud batches: the completed 552-episode balanced run made 2,521 calls and achieved zero full safe completions. Those negative results are preserved; a clarified-interface DEV run is active. No TEST inference has run and the study remains incomplete. See [current progress](docs/PROGRESS.md) and [v12 state](research_ops/completion_v12/STATE.json). The endpoint cap is $18 in credits, with no cash authorization.

@@ -1,0 +1,52 @@
+{
+  "tasks": 288,
+  "splits": {
+    "dev": 72,
+    "test": 216
+  },
+  "applications": {
+    "flowboard": 144,
+    "opsconsole": 144
+  },
+  "metrics_by_level": {
+    "L1": [
+      {
+        "task_id": "DEV-ACCESS_MIGRATION-L1-FLOWBOARD-01",
+        "split": "dev",
+        "application": "flowboard",
+        "family": "access_migration",
+        "complexity": "L1",
+        "dependency_depth": 5,
+        "branching_choices": 0,
+        "external_effect_processes": 1,
+        "distinct_required_observations": 3
+      }
+    ],
+    "L2": [
+      {
+        "task_id": "DEV-ACCESS_MIGRATION-L2-FLOWBOARD-01",
+        "split": "dev",
+        "application": "flowboard",
+        "family": "access_migration",
+        "complexity": "L2",
+        "dependency_depth": 5,
+        "branching_choices": 2,
+        "external_effect_processes": 1,
+        "distinct_required_observations": 5
+      }
+    ],
+    "L3": [
+      {
+        "task_id": "DEV-ACCESS_MIGRATION-L3-FLOWBOARD-01",
+        "split": "dev",
+        "application": "flowboard",
+        "family": "access_migration",
+        "complexity": "L3",
+        "dependency_depth": 6,
+        "branching_choices": 2,
+        "external_effect_processes": 2,
+        "distinct_required_observations": 5
+      }
+    ]
+  }
+}

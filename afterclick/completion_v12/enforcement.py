@@ -1,250 +1,212 @@
-"""Finite preregistered local actuator-delay study, with actual PG/Chromium/HTTP.
+"""Registered fixed-recommendation actuator experiment on complete DEV workflows.
 
-No model transport exists here. A correct already-available recommendation is
-held for randomized delays, then enforced through the public browser or HTTP API.
-The receiver and worker progress independently. This is a mechanism experiment
-on legacy controlled DEV fixtures, not the complex v12 TEST population.
+No LLM, hidden-state controller, or historical time subtraction. Independent
+workers progress during each actual randomized delay and reference continuation.
 """
 
 import argparse
 import json
+import multiprocessing
 import random
+import shutil
 import time
 import traceback
-from dataclasses import replace
+import uuid
 from pathlib import Path
 
 import httpx
 from playwright.sync_api import sync_playwright
 
-from afterclick.agent.gateway import Action
+from afterclick.completion_v12.benchmark.browser import Browser
+from afterclick.completion_v12.benchmark.flow import FlowWorld
+from afterclick.completion_v12.benchmark.ops import OpsWorld
+from afterclick.completion_v12.benchmark.oracle import evaluate
+from afterclick.completion_v12.benchmark.qualification import reference
+from afterclick.completion_v12.benchmark.runner import certify_source
+from afterclick.completion_v12.benchmark.transport import save
 from afterclick.completion_v12.evidence import digest, sha
-from afterclick.oecr.client import attach
-from afterclick.review.progressing import ProgressingWorld, admit, checkpoint, resume
-from afterclick.tcope.workload_specs import workload_suite
 
 
-def write(path, value):
-    path.write_text(json.dumps(value, indent=2) + "\n")
-
-
-def protocol():
-    rows = [
-        dict(template=t, seed=s, delay_ms=d, path=p)
-        for t in (0, 2, 4)
-        for s in (12001, 12002)
-        for d in (0, 500, 1000, 1500, 2000)
-        for p in ("http", "browser")
-    ]
-    random.Random(20261125012).shuffle(rows)
-    for i, row in enumerate(rows):
-        row["trial_id"] = f"enforcement-{i:03d}"
-    return dict(
-        schema_version=1,
-        status="FROZEN_LOCAL_MECHANISM_NOT_TEST",
-        rows=rows,
-        count=len(rows),
-        source_cells=6,
-        deadline_ms=1500,
-        read_ms=2400,
-        horizon_ms=3200,
-        seed=20261125012,
-        max_wall_seconds=1800,
-        per_trial_seconds=25,
-        primary="Forbidden independent receiver history, not model performance",
-        no_model_calls=True,
-        model_calls=0,
-        retry="No automatic technical retries; failures retained and remaining rows NOT_RUN",
-        sources={
-            str(p): sha(p)
-            for p in [
-                Path(__file__),
-                Path("afterclick/review/progressing.py"),
-                Path("afterclick/tcope/workloads.py"),
-                Path("afterclick/tcope/workload_oracle.py"),
-                Path("afterclick/oecr/client.py"),
-            ]
-        },
-    )
-
-
-def exercise(browser, source, row, envelope, root, horizon):
-    trial = root / row["trial_id"]
-    trial.mkdir(exist_ok=False)
-    world = ProgressingWorld(source.spec)
-    page = None
+def one(argument):
+    registration, cell, output = argument
+    output = Path(output)
+    directory = output / "episodes" / cell["episode_id"]
+    directory.mkdir(parents=True, exist_ok=False)
+    save(directory / "specification.json", cell)
+    contract = json.loads(Path(registration["contracts"][cell["task_id"]]["path"]).read_text())
+    world = gateway = None
+    result = dict(**cell, status="INVALID", model_calls=0)
     try:
-        world.initialize(envelope["payload"])
-        with world.serve() as origin:
-            page = browser.new_page()
-            page.set_default_timeout(5000)
-            gateway = attach(page, origin, world, envelope["payload"])
-            cert = admit(world, gateway, envelope, envelope["payload"]["conversation"])
-            write(trial / "certificate.json", cert)
-            resume(world, gateway)
-            decision_wall = time.time()
-            page.wait_for_timeout(row["delay_ms"])
-            command = {0: "Cancel notice", 2: "Revoke access", 4: "Cancel resource"}[
-                row["template"]
-            ]
-            start_wall = time.time()
-            if row["path"] == "browser":
-                gateway.source = dict(
-                    actor="scripted-controller",
-                    kind="controlled_recommendation",
-                    model=None,
-                    revision=None,
-                    tool_call_id=None,
+        cls = FlowWorld if contract["application"] == "flowboard" else OpsWorld
+        world = cls(contract, seed=cell["world_seed"], admission_ms=cell["admission_ms"])
+        world.initialize()
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            with world.serve() as origin:
+                page = browser.new_page()
+                gateway = Browser(page, origin, contract["application"])
+                cut = dict(
+                    database=world.snapshot(),
+                    public=gateway.observe(),
+                    client=gateway.client_cut(),
+                    contract_sha256=digest(contract),
+                    schedule=dict(
+                        seed=world.seed,
+                        admission_ms=world.admission_ms,
+                        effect_lag_ms=world.effect_lag_ms,
+                        evidence_ms=world.evidence_ms,
+                        collaborator_ms=world.collaborator_ms,
+                        clean=False,
+                    ),
                 )
-                gateway.act(Action("click", command))
-            else:
-                with httpx.Client(trust_env=False, timeout=5) as client:
-                    response = client.post(
-                        origin + "/api/tcope/action",
-                        json=dict(name=command, nonce="enforcement-study"),
-                        headers={"X-Action-ID": "enforcement", "X-Actor": "scripted-controller"},
+                save(directory / "source-cut.json", cut)
+                cert = certify_source(output / "episodes", cell, cut)
+                save(directory / "source-certificate.json", cert)
+                if not cert["valid"]:
+                    raise ValueError("Actuator sibling reconstruction mismatch")
+                # Same public recommendation is already available before random
+                # gateway delay. It is not generated from a hidden label.
+                assert gateway.observe()["service"]["authority"] != "approved"
+                recommendation = dict(
+                    decision="suspend",
+                    reason="Public authority unresolved or prohibited",
+                    wall=time.time(),
+                    mono=time.monotonic(),
+                )
+                save(directory / "recommendation.json", recommendation)
+                world.start()
+                gateway.start_polling()
+                start = dict(wall=time.time(), mono=time.monotonic(), anchor_mono=world.anchor)
+                page.wait_for_timeout(cell["gateway_delay_ms"])
+                issued = dict(wall=time.time(), mono=time.monotonic())
+                if cell["gateway"] == "direct_http":
+                    body = dict(id="suspend", value="", version=0, operation_id=str(uuid.uuid4()))
+                    response = httpx.post(
+                        origin + "/api/v12/act", json=body, timeout=15, trust_env=False
                     )
                     response.raise_for_status()
-            command_end = time.time()
-            limit = time.monotonic() + 15
-            while world.elapsed() < horizon and time.monotonic() < limit:
-                page.wait_for_timeout(25)
-            if world.elapsed() < horizon:
-                raise TimeoutError("Observation horizon not reached")
-            if row["template"] == 2:
-                # Identical legitimate restoration after the ticket is resolved in every arm.
-                page.get_by_role("button", name="Verify access", exact=True).click()
-                page.get_by_role("button", name="Grant access", exact=True).click()
-            page.wait_for_timeout(100)
-            world.finish()
-            final = world.snapshot()
-            result = world.evaluate(
-                envelope["payload"]["initial_state"], final, "scripted-controller"
-            )
-            write(trial / "final.json", final)
-            write(trial / "worker-intervals.json", world.worker_intervals)
-            write(
-                trial / "gateway-journal.json",
-                dict(actions=gateway.history, requests=gateway.requests),
-            )
-            events = [
-                e
-                for e in final["tc_events"]
-                if e["kind"] == "command." + command.lower().replace(" ", "_")
-            ]
-            if len(events) != 1:
-                raise ValueError("Exactly one effective enforcement commit required")
-            return dict(
-                **row,
-                status="VALID"
-                if result["receiver_consistent"]
-                and not world.worker_errors
-                and not result["right_censored"]
-                else "INVALID",
-                cut_sha256=envelope["sha256"],
-                decision_wall=decision_wall,
-                gateway_start_wall=start_wall,
-                gateway_end_wall=command_end,
-                effective_enforcement_event=events[0],
-                oracle=result,
-                model_calls=0,
-            )
-    finally:
-        world.finish()
-        if page is not None:
-            page.close()
-        world.db.drop_experiment()
-
-
-def execute(output):
-    output.mkdir(parents=True, exist_ok=False)
-    p = protocol()
-    write(output / "protocol.json", p)  # Before opening any experimental outcome.
-    write(output / "protocol-freeze.json", dict(sha256=digest(p), frozen_wall=time.time()))
-    results, sources = [], {}
-    deadline = time.monotonic() + p["max_wall_seconds"]
-    failed = False
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch()
-        try:
-            for row in p["rows"]:
-                if failed or time.monotonic() + p["per_trial_seconds"] > deadline:
-                    results.append(dict(**row, status="NOT_RUN", reason="technical_or_wall_stop"))
-                    continue
-                key = (row["template"], row["seed"])
-                source = None
-                try:
-                    if key not in sources:
-                        spec = replace(
-                            workload_suite()[row["template"]],
-                            case_id=f"v12-enforcement-{key[0]}-{key[1]}",
-                            seed=row["seed"],
-                            comment=None,
-                            expected={"description": "Document the API v1 integration."},
-                            schedule=dict(
-                                pending=True,
-                                deadline_ms=p["deadline_ms"],
-                                read_ms=p["read_ms"],
-                                ack_lag_ms=200,
-                            ),
-                        )
-                        source = ProgressingWorld(spec)
-                        source.initialize()
-                        source.frozen_initial = source.snapshot()
-                        with source.serve() as origin:
-                            page = browser.new_page()
-                            gateway = attach(page, origin, source)
-                            envelope = checkpoint(
-                                source,
-                                gateway,
-                                dict(
-                                    messages=[], pending_ids=[], seen_ids=[], history=[], queued=[]
-                                ),
-                            )
-                            cert = admit(
-                                source, gateway, envelope, envelope["payload"]["conversation"]
-                            )
-                            write(output / f"source-{key[0]}-{key[1]}.json", envelope)
-                            write(output / f"source-{key[0]}-{key[1]}-certificate.json", cert)
-                            page.close()
-                        sources[key] = (spec, envelope)
-                    spec, envelope = sources[key]
-                    # Only immutable spec is used; each branch initializes from the same cut.
-                    source_proxy = type("SourceSpec", (), {"spec": spec})()
-                    result = exercise(browser, source_proxy, row, envelope, output, p["horizon_ms"])
-                    results.append(result)
-                    write(output / row["trial_id"] / "report.json", result)
-                    if result["status"] != "VALID":
-                        failed = True
-                except BaseException:
-                    failed = True
-                    result = dict(**row, status="INVALID", error=traceback.format_exc())
-                    results.append(result)
-                finally:
-                    if source is not None:
-                        source.finish()
-                        source.db.drop_experiment()
-                write(output / "execution-manifest.json", results)
-        finally:
+                    control = dict(
+                        status=response.status_code, result=response.json(), request=body
+                    )
+                    page.evaluate("refresh()")
+                    page.wait_for_function("!busy && activeRefreshes===0")
+                else:
+                    control = gateway.act("suspend")
+                returned = dict(wall=time.time(), mono=time.monotonic())
+                save(
+                    directory / "enforcement.json",
+                    dict(
+                        start=start,
+                        issued=issued,
+                        returned=returned,
+                        control=control,
+                        semantics="Response is an upper bound after enforcement transaction commit",
+                    ),
+                )
+                reference(gateway, deadline=time.monotonic() + 120)
+                page.wait_for_timeout(400)
+                world.finish()
+                final = world.snapshot()
+                score = evaluate(contract, final, world.errors)
+                save(directory / "final.json", final)
+                result.update(
+                    status=score["status"],
+                    score=score,
+                    issue_from_anchor_ms=(issued["mono"] - world.anchor) * 1000,
+                    response_upper_from_anchor_ms=(returned["mono"] - world.anchor) * 1000,
+                )
+                page.close()
             browser.close()
-    write(output / "execution-manifest.json", results)
-    summary = dict(
-        expected=p["count"],
-        attempted=sum(r["status"] != "NOT_RUN" for r in results),
-        valid=sum(r["status"] == "VALID" for r in results),
-        invalid=sum(r["status"] == "INVALID" for r in results),
-        not_run=sum(r["status"] == "NOT_RUN" for r in results),
+    except Exception:
+        result["error"] = traceback.format_exc()
+    finally:
+        if gateway:
+            save(directory / "browser-actions.json", gateway.history)
+            save(directory / "browser-network.json", gateway.network)
+        if world:
+            try:
+                world.finish()
+                save(directory / "worker-errors.json", world.errors)
+                if not (directory / "final.json").exists():
+                    save(directory / "failed-snapshot.json", world.snapshot())
+                world.db.drop_experiment()
+            except Exception:
+                result["cleanup_error"] = traceback.format_exc()
+    save(directory / "result.json", result)
+    return {k: result.get(k) for k in ["episode_id", "status", "error"]}
+
+
+def execute(contracts, output, workers):
+    output.mkdir(parents=True, exist_ok=False)
+    selected = [p for p in sorted(contracts.glob("DEV-*-L3-*-02.json"))]
+    assert len(selected) == 12
+    tasks = {p.stem: dict(path=str(p.resolve()), sha256=sha(p)) for p in selected}
+    cells = []
+    for index, path in enumerate(selected):
+        for replicate in range(2):
+            for regime, admission in enumerate([150, 600, 1800]):
+                seed = 620000 + index * 97 + replicate * 7 + regime
+                for gateway, delay in [
+                    ("direct_http", 0),
+                    ("browser", 0),
+                    ("browser", 300),
+                    ("browser", 1500),
+                ]:
+                    cells.append(
+                        dict(
+                            episode_id=f"{path.stem}-{replicate}-{admission}-{gateway}-{delay}",
+                            task_id=path.stem,
+                            world_seed=seed,
+                            admission_ms=admission,
+                            clean=False,
+                            gateway=gateway,
+                            gateway_delay_ms=delay,
+                            replicate=replicate,
+                        )
+                    )
+    random.Random(6112521).shuffle(cells)
+    registration = dict(
+        mode="DEV_FIXED_RECOMMENDATION_CAUSAL_ACTUATOR_STUDY",
+        contracts=tasks,
+        episodes=cells,
         model_calls=0,
-        new_paid_compute_usd=0,
-        complete=all(r["status"] == "VALID" for r in results),
+        registered=len(cells),
+        workers=workers,
+        recommendation="Suspend for unresolved/prohibited public authorization before randomized delay",
+        source_sha256=sha(Path(__file__)),
+        inference_scope="Actuator and eligibility effects; no claim of LLM decision latency causation",
     )
-    write(output / "summary.json", summary)
-    print(json.dumps(summary, indent=2))
-    if not summary["complete"]:
-        raise SystemExit(1)
+    save(output / "registration.json", registration)
+    archive = output / "source-archive"
+    archive.mkdir()
+    for path in [
+        Path(__file__),
+        *Path("afterclick/completion_v12/benchmark").glob("*.py"),
+        *Path("afterclick/completion_v12/benchmark").glob("*.html"),
+    ]:
+        shutil.copyfile(path, archive / path.name)
+    with multiprocessing.get_context("spawn").Pool(workers) as pool:
+        for row in pool.imap_unordered(one, [(registration, cell, str(output)) for cell in cells]):
+            with (output / "execution.jsonl").open("a") as stream:
+                stream.write(json.dumps(row) + "\n")
+            print(json.dumps(row), flush=True)
+    actual = [json.loads(p.read_text()) for p in (output / "episodes").glob("*/result.json")]
+    save(
+        output / "reconciliation.json",
+        dict(
+            registered=len(cells),
+            terminal=len(actual),
+            valid=sum(r["status"] == "VALID" for r in actual),
+            model_calls=0,
+            complete=len(actual) == len(cells),
+        ),
+    )
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, required=True)
-    execute(parser.parse_args().output)
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--contracts", type=Path, required=True)
+    p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--workers", type=int, default=4)
+    a = p.parse_args()
+    execute(a.contracts, a.output, a.workers)
