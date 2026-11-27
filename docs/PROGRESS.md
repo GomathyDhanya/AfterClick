@@ -26,3 +26,9 @@ bash scripts/demo.sh /tmp/ac-demo-NEW
 See `docs/REPRODUCIBILITY.md` and `archive/README.md` for source/raw restoration, isolated PostgreSQL prerequisites and separate historical regression. Original research-program status remains incomplete: 1,425 unexecuted assignments and documented causal/human-review gaps. Cleanup adds no study outcomes.
 
 Final active inventory: **632 files**, down from 2,754 (77.1% reduction). Exactly 2,174 original paths are archived in the pinned snapshot; 52 current artifact/audit/license paths are added. The archive audit contains both inventories, exact removed-path list, import/dynamic-reference reports, test results and numerical agreement. No original scientific evidence or history is destroyed.
+
+## Verification of the pushed artifact
+
+Rechecked pushed commit `a9ead3d7` from a fresh local clone. Executed the documented `scripts/test.sh`, `scripts/reproduce.sh` and `scripts/demo.sh` commands: 39 tests pass, lint/format and compact verification pass, the frontend builds, all 12 real PostgreSQL/HTTP two-application probes pass, and the paper rebuild has 17 pixel-identical rendered pages with ten byte-identical tables. Re-executed `program reproduce-existing` against the documented restoration: all 180 frozen hashes, original numerical/assignment results and both trajectory graph checks pass. Python compilation, shell syntax and Compose configuration pass. No model/provider calls or paid activity occurred.
+
+Fixed the only observed defect: `evidence/README.md` still linked to the pre-consolidation claim-matrix location and described archived directories as active. All current relative Markdown links now resolve. GitHub Actions returned no run for the checked commit; hosted CI is not represented as passing. Details are appended in `archive/audit/VALIDATION.json`; complete local logs are under `artifacts/verification-20261126-222713/`.
