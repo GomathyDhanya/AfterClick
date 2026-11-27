@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "all_steps_passed": true,
+  "steps": [
+    {
+      "name": "normalize",
+      "returncode": 0,
+      "elapsed": 22.741064071655273
+    },
+    {
+      "name": "verify_normalized",
+      "returncode": 0,
+      "elapsed": 12.527132034301758
+    },
+    {
+      "name": "analyze_existing",
+      "returncode": 0,
+      "elapsed": 0.710097074508667
+    },
+    {
+      "name": "obligation_audit",
+      "returncode": 0,
+      "elapsed": 1.706162691116333
+    },
+    {
+      "name": "verify_actuator",
+      "returncode": 0,
+      "elapsed": 0.7270917892456055
+    }
+  ],
+  "model_calls": 0,
+  "provider_calls": 0
+}

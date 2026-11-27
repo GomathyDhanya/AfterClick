@@ -40,3 +40,6 @@ coverage.xml
 # Browser test diagnostics and generated frontend reports.
 playwright-report/
 blob-report/
+
+# Regenerable PDF QA sheets; original PDFs and QA records remain versioned.
+paper/**/layout-qa/*.png

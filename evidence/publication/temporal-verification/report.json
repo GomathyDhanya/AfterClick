@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cases_checked": 34,
+  "effect_classes": {
+    "pending": 34
+  },
+  "all_admission_audits_precede_protection": true,
+  "all_receipts_after_protection_return_upper_bound": true,
+  "exact_historical_read_and_commit_instants_unknown": true,
+  "independent_application_or_oracle_imports": false,
+  "model_calls": 0,
+  "provider_calls": 0
+}

@@ -1,0 +1,32 @@
+{
+  "episodes": 1239,
+  "valid": 1073,
+  "invalid": 166,
+  "mismatch_cases": 65,
+  "cases_by_cohort": {
+    "primary": 43,
+    "larger": 22
+  },
+  "actual_corrective_commit_cases": 0,
+  "post_audit_cases": 34,
+  "post_audit_by_cohort": {
+    "primary": 15,
+    "larger": 19
+  },
+  "debt_items": 547,
+  "debt_status": {
+    "OUTSTANDING_FINAL_SUSPENSION": 515,
+    "OBSERVED_DISCHARGE_TRANSITION": 32
+  },
+  "actual_model_request_intents": 22423,
+  "actor_request_intents": 22159,
+  "reviewer_request_intents": 264,
+  "received_generations": 22420,
+  "response_unknown": 3,
+  "reviewer_records": 225,
+  "schema_valid_reviews": 225,
+  "independent_L_F_disagreements": [],
+  "model_calls": 0,
+  "provider_calls": 0,
+  "old_data_unchanged": true
+}

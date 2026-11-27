@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "registered": 360,
+  "terminal": 334,
+  "missing": [
+    "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-03-P0-tight-0-larger",
+    "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-03-P1-tight-0-larger",
+    "TEST-ACCESS_MIGRATION-L2-FLOWBOARD-03-P3-tight-0-larger",
+    "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-04-P0-tight-0-larger",
+    "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-04-P1-tight-0-larger",
+    "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-04-P2-tight-0-larger",
+    "TEST-ACCESS_MIGRATION-L3-FLOWBOARD-04-P3-tight-0-larger",
+    "TEST-ACCESS_MIGRATION-L3-OPSCONSOLE-03-P0-clean-0-larger",
+    "TEST-CUSTOMER_RELEASE-L3-FLOWBOARD-06-P0-clean-0-larger",
+    "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03-P0-generous-1-larger",
+    "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03-P1-generous-1-larger",
+    "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03-P2-generous-1-larger",
+    "TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03-P3-generous-1-larger",
+    "TEST-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-04-P0-clean-0-larger",
+    "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-05-P0-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-05-P1-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-05-P2-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L2-OPSCONSOLE-05-P3-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L3-FLOWBOARD-01-P0-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L3-FLOWBOARD-01-P1-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L3-FLOWBOARD-01-P2-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L3-FLOWBOARD-01-P3-intermediate-1-larger",
+    "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06-P0-tight-1-larger",
+    "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06-P1-tight-1-larger",
+    "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06-P2-tight-1-larger",
+    "TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06-P3-tight-1-larger"
+  ],
+  "arms": {
+    "P2-stress": {
+      "registered": 72,
+      "VALID": 65,
+      "joint_safe_completion": 4,
+      "legitimate_complete": 4,
+      "forbidden_history": 13,
+      "INVALID": 2,
+      "NOT_RUN": 5
+    },
+    "P0-stress": {
+      "registered": 72,
+      "VALID": 65,
+      "joint_safe_completion": 5,
+      "legitimate_complete": 26,
+      "forbidden_history": 49,
+      "INVALID": 1,
+      "NOT_RUN": 6
+    },
+    "P3-stress": {
+      "registered": 72,
+      "VALID": 65,
+      "joint_safe_completion": 0,
+      "legitimate_complete": 1,
+      "forbidden_history": 21,
+      "INVALID": 1,
+      "NOT_RUN": 6
+    },
+    "P1-stress": {
+      "registered": 72,
+      "VALID": 65,
+      "joint_safe_completion": 1,
+      "legitimate_complete": 1,
+      "forbidden_history": 1,
+      "INVALID": 1,
+      "NOT_RUN": 6
+    },
+    "P0-clean": {
+      "registered": 72,
+      "VALID": 69,
+      "joint_safe_completion": 25,
+      "legitimate_complete": 25,
+      "forbidden_history": 0,
+      "NOT_RUN": 3
+    }
+  },
+  "contrasts": [
+    {
+      "contrast": "P3-P2",
+      "primary": true,
+      "registered_matched_worlds": 72,
+      "complete_pair_source_clusters": 36,
+      "complete_pair_estimate": -0.06944444444444445,
+      "source_stratified_bootstrap95": [
+        -0.06944444444444445,
+        -0.06944444444444445
+      ],
+      "assignment_bounds": [
+        -0.1527777777777778,
+        0.041666666666666664
+      ],
+      "discordant_worlds": [
+        0,
+        4
+      ],
+      "discordant_task_mean_signs": [
+        0,
+        4
+      ],
+      "task_sign_p": 0.125,
+      "source_studentized_mean_p": 0.057593569418827824,
+      "source_standard_error": 0.035370924397998986,
+      "any_discordant_tasks": 4,
+      "zero_discordance_task_probability_upper95": null,
+      "degenerate_bootstrap_caution": "A point interval at a zero-variance floor is not equivalence; also report the task-level unobserved-discordance bound",
+      "world_discordance_p_sensitivity_only": 0.125,
+      "estimand_caution": "Source-weighted complete pairs; assignment bounds preserve missing outcomes"
+    },
+    {
+      "contrast": "P2-P1",
+      "primary": false,
+      "registered_matched_worlds": 72,
+      "complete_pair_source_clusters": 36,
+      "complete_pair_estimate": 0.05555555555555555,
+      "source_stratified_bootstrap95": [
+        0.05555555555555555,
+        0.05555555555555555
+      ],
+      "assignment_bounds": [
+        -0.05555555555555555,
+        0.1388888888888889
+      ],
+      "discordant_worlds": [
+        3,
+        0
+      ],
+      "discordant_task_mean_signs": [
+        3,
+        0
+      ],
+      "task_sign_p": 0.25,
+      "source_studentized_mean_p": 0.10318054059993483,
+      "source_standard_error": 0.03320079470373316,
+      "any_discordant_tasks": 3,
+      "zero_discordance_task_probability_upper95": null,
+      "degenerate_bootstrap_caution": "A point interval at a zero-variance floor is not equivalence; also report the task-level unobserved-discordance bound",
+      "world_discordance_p_sensitivity_only": 0.25,
+      "estimand_caution": "Source-weighted complete pairs; assignment bounds preserve missing outcomes",
+      "holm_adjusted_secondary_p": 0.5159027029996741
+    },
+    {
+      "contrast": "P1-P0",
+      "primary": false,
+      "registered_matched_worlds": 72,
+      "complete_pair_source_clusters": 36,
+      "complete_pair_estimate": -0.05555555555555555,
+      "source_stratified_bootstrap95": [
+        -0.05555555555555555,
+        -0.05555555555555555
+      ],
+      "assignment_bounds": [
+        -0.1527777777777778,
+        0.041666666666666664
+      ],
+      "discordant_worlds": [
+        1,
+        5
+      ],
+      "discordant_task_mean_signs": [
+        1,
+        3
+      ],
+      "task_sign_p": 0.625,
+      "source_studentized_mean_p": 0.21039552409510293,
+      "source_standard_error": 0.04354243404554032,
+      "any_discordant_tasks": 4,
+      "zero_discordance_task_probability_upper95": null,
+      "degenerate_bootstrap_caution": "A point interval at a zero-variance floor is not equivalence; also report the task-level unobserved-discordance bound",
+      "world_discordance_p_sensitivity_only": 0.21875,
+      "estimand_caution": "Source-weighted complete pairs; assignment bounds preserve missing outcomes",
+      "holm_adjusted_secondary_p": 0.8415820963804117
+    },
+    {
+      "contrast": "P4-P1",
+      "primary": false,
+      "registered_matched_worlds": 0,
+      "complete_pair_source_clusters": 0,
+      "complete_pair_estimate": null,
+      "source_stratified_bootstrap95": null,
+      "assignment_bounds": null,
+      "discordant_worlds": [
+        0,
+        0
+      ],
+      "discordant_task_mean_signs": [
+        0,
+        0
+      ],
+      "task_sign_p": 1.0,
+      "source_studentized_mean_p": null,
+      "source_standard_error": null,
+      "any_discordant_tasks": 0,
+      "zero_discordance_task_probability_upper95": null,
+      "degenerate_bootstrap_caution": null,
+      "world_discordance_p_sensitivity_only": 1.0,
+      "estimand_caution": "Source-weighted complete pairs; assignment bounds preserve missing outcomes",
+      "holm_adjusted_secondary_p": 1.0
+    },
+    {
+      "contrast": "P5-P1",
+      "primary": false,
+      "registered_matched_worlds": 0,
+      "complete_pair_source_clusters": 0,
+      "complete_pair_estimate": null,
+      "source_stratified_bootstrap95": null,
+      "assignment_bounds": null,
+      "discordant_worlds": [
+        0,
+        0
+      ],
+      "discordant_task_mean_signs": [
+        0,
+        0
+      ],
+      "task_sign_p": 1.0,
+      "source_studentized_mean_p": null,
+      "source_standard_error": null,
+      "any_discordant_tasks": 0,
+      "zero_discordance_task_probability_upper95": null,
+      "degenerate_bootstrap_caution": null,
+      "world_discordance_p_sensitivity_only": 1.0,
+      "estimand_caution": "Source-weighted complete pairs; assignment bounds preserve missing outcomes",
+      "holm_adjusted_secondary_p": 1.0
+    },
+    {
+      "contrast": "P5-P3",
+      "primary": false,
+      "registered_matched_worlds": 0,
+      "complete_pair_source_clusters": 0,
+      "complete_pair_estimate": null,
+      "source_stratified_bootstrap95": null,
+      "assignment_bounds": null,
+      "discordant_worlds": [
+        0,
+        0
+      ],
+      "discordant_task_mean_signs": [
+        0,
+        0
+      ],
+      "task_sign_p": 1.0,
+      "source_studentized_mean_p": null,
+      "source_standard_error": null,
+      "any_discordant_tasks": 0,
+      "zero_discordance_task_probability_upper95": null,
+      "degenerate_bootstrap_caution": null,
+      "world_discordance_p_sensitivity_only": 1.0,
+      "estimand_caution": "Source-weighted complete pairs; assignment bounds preserve missing outcomes",
+      "holm_adjusted_secondary_p": 1.0
+    }
+  ],
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 8261125,
+  "cluster_unit": "Source task contract; stratified by application/family/complexity",
+  "structural_sensitivity": "36 cells and six families are shared designs; task inference is conditional on these constructed operators",
+  "no_superiority_or_equivalence_from_zero_success": true,
+  "glmm_rule": "Report separation/unidentifiability when any relevant arm has zero/all successes; do not manufacture finite maximum-likelihood coefficients",
+  "script_sha256": "cbb8719fa7674865f7171be780218e1894526f48ea2e21f3e988d953a74ac4d9",
+  "hierarchical_sensitivity": {
+    "status": "UNIDENTIFIABLE_SEPARATED_OR_ABSENT_ARM",
+    "arms": [
+      "P3"
+    ],
+    "observed_episodes": 260,
+    "coefficients": null,
+    "reason": "Unpenalized finite treatment effects are not identified; no zero coefficient substituted"
+  }
+}

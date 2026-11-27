@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-26T22:14:16.228332+00:00",
+  "head": "2080c4263bce4bebb31fbe7674ac05e1d1924087",
+  "tree": "2700805b0146e6084cb87fd74c2fda5f752dfdd3",
+  "branch": "codex/afterclick-publication-modal-20261126",
+  "tracked_files": 2494,
+  "original_frozen_files_verified": 180,
+  "old_freeze_sha256": "f8ebae7ca2edd9528e59db165e1fea2db756f24d123a4de351a335431c467baf",
+  "old_protocol_status": "INCOMPLETE_1479_OF_2904",
+  "original_v12_finance_sha256": "7dddbdd6568d4782248819def4ebb22fb142da93a9364d4ec977e2fd8de7eefe",
+  "inputs": {
+    "AfterClick_Research_Execution_Specification.md": "8c2ca2ebed0b960a54780858588150932f547afa35f7487c6fd2549ac19fc67d",
+    "AfterClick_Paper_Working_Draft.md": "f0dce4a26ca90cf2f23ea7aaf344be30a436bde5806b7d28582cd41cd2c05db1",
+    "publication-context.txt": "e2ceb648cfb2c379193bcb66fdc242b44b81aedc20d4f247d80041ac1b7ee4dd"
+  },
+  "inputs_are_proposed_context_not_completed_evidence": true
+}

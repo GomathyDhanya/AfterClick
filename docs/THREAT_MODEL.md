@@ -1,3 +1,11 @@
+# Current publication threat boundary
+
+The current two-application study uses public browser observations and declared pending-service authorization rules. Evaluator-private contract choices, scheduler details, oracle outputs, debt labels and retrospective graph labels are not model inputs. Effects are real HTTP/SQL-persisted synthetic effects, not real customer messages or production disclosure. The legacy admission/controller transactions share a schema lock; admitted tickets are not recalled by later containment. Historical exact authorization-read/commit instants remain unknown.
+
+The current [manuscript](../paper/current/MANUSCRIPT.md), [schema](DATA_SCHEMA.md), [methodological correction](../research_ops/publication/protocols/METHODOLOGICAL_CORRECTION.md) and [reproduction guide](PUBLICATION_REPRODUCIBILITY.md) define the measured scope and limits. Independent human policy validation and broad production security claims are absent. The earlier bounded threat-model text below is preserved as historical context; its future-tense agent statements do not describe the current publication phase.
+
+## Historical bounded threat model
+
 # Threat model
 
 This controlled application models accidental consequential actions, stale clients, ambiguous

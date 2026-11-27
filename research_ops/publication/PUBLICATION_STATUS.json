@@ -1,0 +1,67 @@
+{
+  "author_mode": "anonymous",
+  "current_phase": "complete anonymous bounded empirical manuscript and appendix",
+  "paper_complete": true,
+  "original_full_research_complete": false,
+  "original_registered": 2904,
+  "original_terminal": 1479,
+  "original_not_run": 1425,
+  "observed_mismatch_cases_audited": 65,
+  "historical_late_receipt_cases_audited": 34,
+  "induced_duties_independently_checked": 617,
+  "new_boundary_probes_registered_terminal_valid": [
+    72,
+    72,
+    72
+  ],
+  "new_reviewer_replays_registered_received": [
+    264,
+    264
+  ],
+  "new_replays_are_live_agent_trajectories": false,
+  "independent_automated_linux_analysis_correction_passed": true,
+  "independent_human_review": false,
+  "public_raw_upload_performed": false,
+  "remaining_full_program_requirements": [
+    "1,425 original frozen assignments unexecuted",
+    "No independently reviewed fresh workload replication",
+    "No full restoration/no-restoration-needed factorial",
+    "No controlled relevant/irrelevant information and latency factorial",
+    "No exact reconstructed mid-trajectory counterfactual LLM continuations",
+    "No formal recoverability certificates for complex LLM graph prefixes",
+    "P5 remains a queue-hold proxy, not semantic staging",
+    "Independent human authority/oracle validation absent"
+  ],
+  "independent_linux_numeric_reproduction_passed": true,
+  "linux_initial_archive_only_regression": {
+    "tests": 414,
+    "passed": 336,
+    "failed": 78
+  },
+  "linux_full_source_regression": {
+    "tests": 417,
+    "passed": 395,
+    "failed": 22
+  },
+  "linux_unchanged_fixture_followup": {
+    "tests": 22,
+    "passed": 22,
+    "failed": 0
+  },
+  "distinct_cases_passed_across_full_run_and_followup": 417,
+  "single_all_passing_full_suite_run_claim": false,
+  "model_calls_new": 266,
+  "setup_calls_new": 2,
+  "retrospective_reviewer_replay_calls": 264,
+  "new_known_tokens": 503758,
+  "new_guard_accounted_usd": 1.889486707944851,
+  "new_ceiling_usd": 28,
+  "cash_billed_usd": 0,
+  "pdf_visual_review_complete": true,
+  "manuscript_pages": 12,
+  "appendix_pages": 8,
+  "submission_ready_claim": false,
+  "full_original_research_complete": false,
+  "repository_layout_updated": true,
+  "repository_layout_notes": "Canonical analysis, registration and protocols directories; claim CSV; evidence/data-schema indexes; explicit license status; pinned legacy paths retained with compatibility wrappers."
+}

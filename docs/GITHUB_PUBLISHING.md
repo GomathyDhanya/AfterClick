@@ -1,6 +1,6 @@
 # Commit and publish AfterClick
 
-The repository is `https://github.com/GomathyDhanya/AfterClick.git`. The local `origin` points there. This preparation does not create a commit, push a branch, publish a release, or upload data.
+The repository is `https://github.com/GomathyDhanya/AfterClick.git`. The local `origin` points there. The user authorized committing the prepared publication files and pushing them to a separate branch on 26 November 2026. The publication branch is `codex/afterclick-paper-repo-20261126`; `main` remains unchanged. Raw-data release assets are separate from this source publication.
 
 ## Author identity
 
@@ -16,7 +16,7 @@ Both `git var GIT_AUTHOR_IDENT` and `git var GIT_COMMITTER_IDENT` resolve to tha
 
 ## What to commit
 
-`docs/GIT_COMMIT_FILES.txt` lists every staged added/modified path, one per line. `docs/GIT_REPOSITORY_FILES.txt` lists the complete resulting tracked tree. The index is prepared for review.
+The 25 November staging manifests are historical snapshots at `research_ops/history/publication-preparation-20261125/`. They do not describe the current index. Use `git status --short` and `git diff --name-only` to inspect current changes. Publication source preparation does not imply a new commit or push.
 
 | Include in ordinary Git | Reason |
 |---|---|
@@ -41,11 +41,11 @@ git diff --cached --stat
 git diff --cached --name-only
 git var GIT_AUTHOR_IDENT
 git var GIT_COMMITTER_IDENT
-git commit --author="GomathyDhanya <gomathydhanya142@gmail.com>" -m "Add AfterClick v12 benchmark, analysis, and research deliverables"
-git push -u origin HEAD:main
+git commit --author="GomathyDhanya <gomathydhanya142@gmail.com>" -m "Add anonymous AfterClick paper, verified evidence, and repository organization"
+git push -u origin HEAD:refs/heads/codex/afterclick-paper-repo-20261126
 ```
 
-The push command publishes the current commit and its existing history as `main`; it does not use a force push. The target repository was empty when inspected. GitHub write authentication must be supplied by your Git credential setup. The connected GitHub application reported read-only access, so connector access alone cannot perform this push.
+The push command publishes the current commit and its existing history to the separate publication branch without a force push. Before publication, remote `main` was `2080c4263bce4bebb31fbe7674ac05e1d1924087`, the unchanged parent of the publication work. Local Git credentials supply push authentication. Verify publication using `git ls-remote --heads origin refs/heads/codex/afterclick-paper-repo-20261126` and compare it with `git rev-parse HEAD`.
 
 ## Raw data is a separate release asset
 
@@ -88,3 +88,9 @@ Use a fresh output directory. This command makes no model/provider calls. The ar
 ## Research status
 
 Publishing these files does not complete the study. Preserve the prominent incomplete status in the README, manuscript, acceptance audit and full assignment matrix. Do not rename unexecuted assignments as completed trials or discard invalid and negative outcomes.
+
+## Current anonymous publication preparation
+
+The current paper is anonymous; Git author/committer remain `GomathyDhanya` using the repository-local identity. The new exact change list is `research_ops/publication/COMMIT_FILES.txt`. It lists source, compact evidence, manuscript, figures, PDFs and the byte-preserving history moves. Large raw archives, model traces, environment caches, credentials and QA page images remain under ignored `artifacts/` and are distributed separately as local evidence assets. The authorized source branch publication does not create a tag, release, or public raw-data upload. The paper explicitly retains the original 1,425 unexecuted assignments and other research gaps.
+
+Review with `git status --short`, `git diff --check`, and `git var GIT_AUTHOR_IDENT`. The root `.gitignore` preserves the distinction between source/compact results and large raw data; never force-add credentials or the raw artifact trees. Public upload of the concrete data candidates and choice of license are separate from committing source.

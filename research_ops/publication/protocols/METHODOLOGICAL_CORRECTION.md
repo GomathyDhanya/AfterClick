@@ -1,0 +1,13 @@
+# Source-audit correction: serialized admission versus revocable effects
+
+The historical v12 manuscript says the backends permit non-atomic authorization read/controller-write races. That blanket statement is not supported by the audited implementation. Preserve the original paper and its measurements; this is an explicit methodological correction for the new manuscript.
+
+`afterclick/infrastructure/db.py:Database.transaction` obtains `pg_advisory_xact_lock(hashtext(schema))` inside the PostgreSQL transaction. `AuditRuntime.control` and `AuditRuntime.tick_audit` both use that transaction context on the same world schema. `SerializedMigrationDatabase` forwards the transaction context unchanged. `TransactionBoundDatabase` reuses an already locked FlowBoard mutation transaction. The cloud worker does not replace the database transaction implementation. Thus these worker-admission/controller writes serialize; they are not an unlocked read/modify/write implementation.
+
+A different temporal gap remains: the worker admits a pending ticket inside one transaction, then later delivers it through an HTTP receiver. Suspension/cancellation does not recall an already-admitted ticket; the original receiver does not recheck the current service containment state before persisting that ticket. A post-protection receipt can therefore be consistent with an already-admitted request and correct transactional serialization. It is not by itself evidence of a stale-authority race.
+
+The old recorded audit times are inside transactions; they are not exact commit instants. The action result also records a commit-return upper bound, which must be used as an interval rather than omitted. Logical admission-versus-control ordering may be refined using same-effect identities, the common serialization mechanism and committed audit records; that is conditional source-supported reasoning, not a newly measured original worker-read timestamp or a live recoverability certificate.
+
+Next verification: real PostgreSQL contention/barrier tests; new instrumentation of transaction lock acquisition/read/commit return and receiver persistence; case-by-case admission/control/receipt joins for all 34 post-audit violations. A receiver-side recheck is a separately declared revocability semantics, not a repair of an allegedly absent database lock. Do not introduce an artificial unlocked baseline and label it the legacy backend.
+
+The new empirical question is whether serialized admission plus irrevocable tickets is sufficient for timely containment, and how moving enforcement to receipt acceptance changes the window. This is a scoped mechanism study, not a novel concurrency-control claim.

@@ -1,0 +1,132 @@
+[
+  {
+    "name": "existing-reproduction",
+    "returncode": 0,
+    "elapsed": 33.62108039855957,
+    "args": [
+      "python",
+      "research_ops/scripts/reproduce_afterclick_v12.py",
+      "--root",
+      ".",
+      "--output",
+      "/result/existing"
+    ]
+  },
+  {
+    "name": "controlled-timing",
+    "returncode": 0,
+    "elapsed": 0.4805121421813965,
+    "args": [
+      "python",
+      "research_ops/scripts/v12_actuator_analysis.py",
+      "--run",
+      "artifacts/research_runs/v12-31-complex-controlled-enforcement-v1",
+      "--output",
+      "/result/actuator"
+    ]
+  },
+  {
+    "name": "normalize",
+    "returncode": 1,
+    "elapsed": 0.2967360019683838,
+    "args": [
+      "python",
+      "-m",
+      "research_ops.publication.normalize",
+      "--output",
+      "/result/normalized"
+    ]
+  },
+  {
+    "name": "verify-normalized",
+    "returncode": 1,
+    "elapsed": 0.041924476623535156,
+    "args": [
+      "python",
+      "-m",
+      "research_ops.publication.verify_normalized",
+      "--data",
+      "/result/normalized",
+      "--output",
+      "/result/verified"
+    ]
+  },
+  {
+    "name": "analyze",
+    "returncode": 1,
+    "elapsed": 0.11595559120178223,
+    "args": [
+      "python",
+      "-m",
+      "research_ops.publication.analyze_existing",
+      "--data",
+      "/result/normalized",
+      "--output",
+      "/result/analysis"
+    ]
+  },
+  {
+    "name": "obligations",
+    "returncode": 1,
+    "elapsed": 0.040730953216552734,
+    "args": [
+      "python",
+      "-m",
+      "research_ops.publication.obligation_audit",
+      "--data",
+      "/result/normalized",
+      "--output",
+      "/result/obligations"
+    ]
+  },
+  {
+    "name": "postgres-start",
+    "returncode": 0,
+    "elapsed": 0.8766982555389404,
+    "args": [
+      "bash",
+      "-c",
+      "install -d -o postgres -g postgres /tmp/ac_pg && runuser -u postgres -- initdb -D /tmp/ac_pg -A trust && runuser -u postgres -- pg_ctl -D /tmp/ac_pg -l /tmp/ac_pg/server.log -o '-p 55432 -h 127.0.0.1' start && runuser -u postgres -- psql -p 55432 -h 127.0.0.1 -c \"CREATE ROLE afterclick LOGIN SUPERUSER PASSWORD 'afterclick_local'\" && runuser -u postgres -- createdb -p 55432 -h 127.0.0.1 -O afterclick afterclick"
+    ]
+  },
+  {
+    "name": "regression",
+    "returncode": 1,
+    "elapsed": 528.5432884693146,
+    "args": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=/result/tests.xml"
+    ]
+  },
+  {
+    "name": "boundary-dev",
+    "returncode": 0,
+    "elapsed": 4.228447675704956,
+    "args": [
+      "python",
+      "-m",
+      "research_ops.publication.boundary_probe",
+      "--dev",
+      "--output",
+      "/result/boundary-dev"
+    ]
+  },
+  {
+    "name": "postgres-stop",
+    "returncode": 0,
+    "elapsed": 0.13848185539245605,
+    "args": [
+      "runuser",
+      "-u",
+      "postgres",
+      "--",
+      "pg_ctl",
+      "-D",
+      "/tmp/ac_pg",
+      "stop"
+    ]
+  }
+]

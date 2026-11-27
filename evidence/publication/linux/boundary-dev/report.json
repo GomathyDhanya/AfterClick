@@ -1,0 +1,11 @@
+{
+  "registered": 12,
+  "terminal": 12,
+  "valid": 12,
+  "pending_received": 8,
+  "complete": true,
+  "model_calls": 0,
+  "provider_calls": 0,
+  "source_clusters": 2,
+  "not_independent_new_tasks": true
+}

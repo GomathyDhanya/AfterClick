@@ -1,0 +1,19 @@
+{
+  "scope": "Mechanism source validation on reused open DEV contracts, not new independently authored workload or deadline replication",
+  "DEV_gate_passed": 12,
+  "DEV_report_sha256": "2dc0668d3599f9108bb235bdb1ab451624ed3158297784a72c5cfc2119d0ad23",
+  "registered": 72,
+  "source_clusters": 12,
+  "orders": [
+    "protection_before_admission",
+    "admission_before_protection",
+    "receipt_before_protection"
+  ],
+  "commands": [
+    "Suspend pending service",
+    "Cancel pending service"
+  ],
+  "inference": "No population CI or power claim for engineered schedule proofs. Every cell reconciled, no favorable selection. Expected physical effects: 48; pre-admission prevented:24. Barriers do not emulate random latency.",
+  "model_calls": 0,
+  "probe_source_sha256": "2de47bb07102e6d0612a4abb7a567ddd13d6b5ab7a126fda8f0b52abf54ce22a"
+}

@@ -1,0 +1,84 @@
+{
+  "baseline_tracked": 2494,
+  "categories": {
+    "DEPENDENCY_CONFIG_OR_ENTRYPOINT": 18,
+    "FROZEN_SOURCE_OR_GATE": 172,
+    "RUNTIME_OR_HISTORICAL_COMPATIBILITY_RUNTIME": 3,
+    "APPLICATION_DEPENDENCY": 12,
+    "DOCUMENTATION_OR_HISTORY": 25,
+    "COMPACT_EVIDENCE": 43,
+    "HISTORICAL_MANUSCRIPT_OR_GENERATED_OUTPUT": 134,
+    "HISTORICAL_SPECIFICATION_PROTOCOL_OR_ANALYSIS": 293,
+    "HISTORICAL_OR_FROZEN_CONTRACT": 1734,
+    "ACTIVE_OR_HISTORICAL_REGRESSION_TEST": 60
+  },
+  "static_edges": 8439,
+  "catalog_comparisons": [
+    {
+      "versions": [
+        2,
+        3
+      ],
+      "left": 289,
+      "right": 289,
+      "same_relative_keys": true,
+      "all_bytes_identical": false,
+      "identical_common": 0,
+      "action": "KEEP: historical path/provenance roles; Git already deduplicates identical blobs"
+    },
+    {
+      "versions": [
+        3,
+        4
+      ],
+      "left": 289,
+      "right": 289,
+      "same_relative_keys": true,
+      "all_bytes_identical": false,
+      "identical_common": 0,
+      "action": "KEEP: historical path/provenance roles; Git already deduplicates identical blobs"
+    },
+    {
+      "versions": [
+        4,
+        5
+      ],
+      "left": 289,
+      "right": 289,
+      "same_relative_keys": true,
+      "all_bytes_identical": false,
+      "identical_common": 252,
+      "action": "KEEP: historical path/provenance roles; Git already deduplicates identical blobs"
+    },
+    {
+      "versions": [
+        5,
+        6
+      ],
+      "left": 289,
+      "right": 289,
+      "same_relative_keys": true,
+      "all_bytes_identical": true,
+      "identical_common": 289,
+      "action": "KEEP: historical path/provenance roles; Git already deduplicates identical blobs"
+    },
+    {
+      "versions": [
+        6,
+        7
+      ],
+      "left": 289,
+      "right": 289,
+      "same_relative_keys": true,
+      "all_bytes_identical": false,
+      "identical_common": 252,
+      "action": "KEEP: historical path/provenance roles; Git already deduplicates identical blobs"
+    }
+  ],
+  "limitations": "Static literal/import graph misses constructed paths, relative imports, dynamic imports and external references. Frozen paths and historical manifests retained regardless of static reference count.",
+  "proposed_actions": {
+    "KEEP": 2489,
+    "MOVE": 3,
+    "REMOVE_GENERATED_COPY": 2
+  }
+}

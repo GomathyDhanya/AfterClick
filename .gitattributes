@@ -22,3 +22,10 @@ research_ops/completion_v12/final_package/fonts/LICENSE_DEJAVU -whitespace
 # Preserve generated scientific plots and manuscript source verbatim.
 paper/v12/figures/*.svg -whitespace
 paper/v12/AFTERCLICK_V12_*.md whitespace=-blank-at-eof
+
+# Preserve generated current scientific SVG path data byte-for-byte.
+paper/current/figures/*.svg -whitespace
+paper/current/figures/forensic-atlas/*.svg -whitespace
+
+# Keep user-supplied publication specifications exactly as received.
+research_ops/publication/inputs/* -whitespace

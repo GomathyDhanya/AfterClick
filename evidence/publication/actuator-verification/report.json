@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "registered": 288,
+  "cuts_independently_hashed": 288,
+  "valid": 287,
+  "invalid": 1,
+  "all_valid_G": true,
+  "observed_containment_reopen_all_valid": true,
+  "restored_with_forbidden_history": 77,
+  "safe_complete": 210,
+  "model_calls": 0,
+  "provider_calls": 0,
+  "scope": "Scripted browser reference continuations; not autonomous LLM restorations or new deadline estimates"
+}

@@ -1,0 +1,23 @@
+{
+  "valid_episodes": 1073,
+  "duties": 617,
+  "types": {
+    "SERVICE_REOPEN": 547,
+    "APPROVED_REQUEST_RESUBMIT": 70
+  },
+  "statuses": {
+    "OUTSTANDING_CENSORED": 583,
+    "DISCHARGED_OBSERVED": 34
+  },
+  "max_concurrent": 2,
+  "failure_labels": {
+    "SERVICE_RESTORATION": 515,
+    "PREEXISTING_BUSINESS_OBLIGATION": 7354,
+    "APPROVED_PENDING_OMISSION": 68
+  },
+  "service_debt_matches_prior_extractor": true,
+  "exposure": "observed lower-bound audit span; unequal horizon; debt area descriptive only",
+  "live_oracle_exposure": false,
+  "model_calls": 0,
+  "provider_calls": 0
+}

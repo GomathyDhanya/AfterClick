@@ -1,3 +1,7 @@
+# Current architecture navigation
+
+The current publication uses the separate FlowBoard/OpsConsole business engines and shared audit/worker/HTTP receiver infrastructure in `afterclick/completion_v12/benchmark/`. Current normalized schemas are documented in [DATA_SCHEMA.md](DATA_SCHEMA.md), and current analysis entrypoints in [PUBLICATION_REPRODUCIBILITY.md](PUBLICATION_REPRODUCIBILITY.md). The runtime package paths and frozen source remain intact. The foundation architecture below is preserved; its dated remaining-boundary statements describe that earlier implementation stage.
+
 # Architecture
 
 ## Implemented path

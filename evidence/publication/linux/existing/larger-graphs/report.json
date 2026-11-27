@@ -1,0 +1,17 @@
+{
+  "trajectories": 329,
+  "nodes": 36444,
+  "observed_edges": 17826,
+  "UNKNOWN": 210,
+  "FIXED_HISTORY_VIOLATION": 84,
+  "REALIZED_SAFE_COMPLETION": 35,
+  "certified_initial_groups": 65,
+  "witnessed_safe_initial_groups": 8,
+  "counterfactual_edges": 194,
+  "graph_schema": 1,
+  "formal_edges_in_this_graph": 0,
+  "unknown_intermediate_reachability": true,
+  "no_inferred_causal_edges_counted": true,
+  "formal_proofs": "Separate bounded-model certificates; never transferred to open browser states",
+  "script_sha256": "b751e4437103c548325970282a309c73514a123f104b1612fa077b9858f7a6b9"
+}

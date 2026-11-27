@@ -1,0 +1,26 @@
+{
+  "name": "afterclick-publication-9b-20261126",
+  "endpoint_id": "ep-LaClOO3n7XgBHbRkmKVNtq",
+  "model_name": "afterclick-publication-9b-20261126",
+  "repo_id": "Qwen/Qwen3.5-9B",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "volume_id": null,
+  "model_path": null,
+  "service_url": "https://gsankarasubr--ep-afterclick-publication-9b-20261126-server.us-west.modal.direct",
+  "requires_proxy_auth": true,
+  "serving_mode": "dedicated",
+  "status": "provisioning",
+  "lifecycle": {
+    "created_at": "2026-11-26 17:17:12-05:00",
+    "created_by": "gsankarasubr",
+    "stopped_at": null,
+    "stopped_by": null
+  },
+  "app_id": "ap-HBKP4QiyIW2omPdwH8ZeTG",
+  "server_id": "fu-zu5z8Y1O6Jv2NWux47MGFa",
+  "environment_name": "main",
+  "workspace": "gsankarasubr",
+  "readiness_verified": true,
+  "comparison_scope": "Same pinned primary weights; managed serving stack recorded separately",
+  "new_research_trials_executed": 0
+}

@@ -1,0 +1,25 @@
+{
+  "registered": 264,
+  "terminal": 264,
+  "attempted": 264,
+  "received": 264,
+  "unknown": 0,
+  "strict_json": 264,
+  "decisions": {
+    "allow": 0,
+    "suspend": 264,
+    "cancel": 0,
+    "null": 0
+  },
+  "original_decision_agreements": 264,
+  "public_rule_agreements": 179,
+  "known_tokens": 502944,
+  "error": null,
+  "idle_verified": true,
+  "elapsed_seconds": 191.2842021540273,
+  "guard_accounted_usd": 0.31000235000000004,
+  "cash_billed_usd": 0.0,
+  "complete": true,
+  "not_fresh_test": true,
+  "not_live_trajectory": true
+}

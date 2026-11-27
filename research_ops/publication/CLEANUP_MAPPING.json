@@ -1,0 +1,51 @@
+{
+  "baseline_tracked": 2494,
+  "moves": 3,
+  "generated_copies_removed": 2,
+  "raw_data_deleted": false,
+  "frozen_paths_moved": false,
+  "paths": [
+    {
+      "old": "docs/GIT_COMMIT_FILES.txt",
+      "new": "research_ops/history/publication-preparation-20261125/GIT_COMMIT_FILES.txt",
+      "sha256": "88eb20a2c4571a507a6813b8ad1d63c3e34b51e7410785b71aef865a31e4f364",
+      "action": "MOVE_BYTE_IDENTICAL",
+      "reason": "Superseded one-time staging manifests retained as history; not current staged state."
+    },
+    {
+      "old": "docs/GIT_REPOSITORY_FILES.txt",
+      "new": "research_ops/history/publication-preparation-20261125/GIT_REPOSITORY_FILES.txt",
+      "sha256": "8f7cb16b76e0bbd72d69dc9f2ba2e9203926fab6d1fba281fda2daf6d4cd652e",
+      "action": "MOVE_BYTE_IDENTICAL",
+      "reason": "Superseded one-time staging manifests retained as history; not current staged state."
+    },
+    {
+      "old": "docs/GIT_PUBLICATION_AUDIT.json",
+      "new": "research_ops/history/publication-preparation-20261125/GIT_PUBLICATION_AUDIT.json",
+      "sha256": "310df6cc7af458c81b17ff50adf52b3a14c80a79a82257a86be95ad914963ea0",
+      "action": "MOVE_BYTE_IDENTICAL",
+      "reason": "Superseded one-time staging manifests retained as history; not current staged state."
+    },
+    {
+      "old": "paper/v12/layout-qa/appendix-pages.png",
+      "new": "artifacts/research_runs/publication-20261126-cleanup/originals/appendix-pages.png",
+      "sha256": "9b89f0f568125207b9a35905834a965480ab69b9a271dbd9f19c844270c62a75",
+      "action": "REMOVE_GENERATED_GIT_COPY_KEEP_LOCAL_AND_BASE_GIT",
+      "reason": "Old QA contact sheet derivative; original PDFs, QA record, base Git blob and full evidence archive remain. Regenerable using PDF renderer; never raw experiment evidence."
+    },
+    {
+      "old": "paper/v12/layout-qa/manuscript-pages.png",
+      "new": "artifacts/research_runs/publication-20261126-cleanup/originals/manuscript-pages.png",
+      "sha256": "eaa3ec3de74f8741ab72252a10d4505ab99279b40691c96a54d6f5d6cc297b71",
+      "action": "REMOVE_GENERATED_GIT_COPY_KEEP_LOCAL_AND_BASE_GIT",
+      "reason": "Old QA contact sheet derivative; original PDFs, QA record, base Git blob and full evidence archive remain. Regenerable using PDF renderer; never raw experiment evidence."
+    },
+    {
+      "old": "README.md",
+      "new": "research_ops/history/README_20261125.md",
+      "action": "ARCHIVE_BYTE_IDENTICAL_THEN_UPDATE_CURRENT_ENTRYPOINT",
+      "reason": "Preserve the prior public landing page while making the anonymous current paper and incomplete original matrix explicit.",
+      "sha256": "2728fdbda9ef6806e1bf2f76494d7f8ed6b9c0cd655528590e97f943935ce144"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+cohort,excluded_dimension,excluded_value,valid,mismatch,local_complete,conditional_rate
+primary,application,flowboard,349,20,82,0.24390243902439024
+primary,application,opsconsole,395,23,93,0.24731182795698925
+primary,family,access_migration,656,41,154,0.2662337662337662
+primary,family,cross_team_approval,606,35,147,0.23809523809523808
+primary,family,customer_release,603,30,119,0.25210084033613445
+primary,family,incident_response,645,39,159,0.24528301886792453
+primary,family,resource_orchestration,615,36,146,0.2465753424657534
+primary,family,retention_export,595,34,150,0.22666666666666666
+larger,application,flowboard,167,17,37,0.4594594594594595
+larger,application,opsconsole,162,5,20,0.25
+larger,family,access_migration,278,22,55,0.4
+larger,family,cross_team_approval,269,16,43,0.37209302325581395
+larger,family,customer_release,271,16,44,0.36363636363636365
+larger,family,incident_response,272,18,50,0.36
+larger,family,resource_orchestration,274,19,45,0.4222222222222222
+larger,family,retention_export,281,19,48,0.3958333333333333

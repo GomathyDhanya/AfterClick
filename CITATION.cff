@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Use the current anonymous manuscript and its evidence package; the original full experimental matrix is incomplete."
+type: article
+title: "AfterClick: Admission, Irreversible Effects, and Restoration in Asynchronous Agent Workflows"
+authors:
+  - family-names: Anonymous
+version: publication-20261126
+date-released: 2026-11-26
+abstract: "A bounded empirical and reproducibility study of local completion, immutable effect history, admission timing, protection-induced restoration duties and sequential reviewer behavior."

@@ -1,3 +1,7 @@
+# Current reproduction entrypoint
+
+For the anonymous current paper, follow [PUBLICATION_REPRODUCIBILITY.md](PUBLICATION_REPRODUCIBILITY.md). It distinguishes compact verification, complete raw restoration, source/fixture/frontend prerequisites, saved-data analyses, database demonstrations and explicitly opt-in paid work. The time-stamped historical procedures and results below remain preserved for their original studies.
+
 # Reproducibility
 
 ## Environment and exact commands

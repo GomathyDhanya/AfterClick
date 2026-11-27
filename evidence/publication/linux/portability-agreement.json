@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "normalized": {
+      "all_metrics_identical": true,
+      "linux_report_sha256": "10000a13423c51793a1d731a9d53be632cc8e12de6b34a2a207c5fe0ea87a014",
+      "reference_report_sha256": "10000a13423c51793a1d731a9d53be632cc8e12de6b34a2a207c5fe0ea87a014"
+    },
+    "analysis": {
+      "all_metrics_identical": true,
+      "linux_report_sha256": "f0e50bcd67e1c773f5920ca58999e2827e9874aeb73eee8ef56e033e85052f9e",
+      "reference_report_sha256": "f0e50bcd67e1c773f5920ca58999e2827e9874aeb73eee8ef56e033e85052f9e"
+    },
+    "verified": {
+      "all_metrics_identical": true,
+      "linux_report_sha256": "3bfa649020e126fa792c66eb36c0eb0604b63b473a12e9e6cf73f99e01296c6b",
+      "reference_report_sha256": "3bfa649020e126fa792c66eb36c0eb0604b63b473a12e9e6cf73f99e01296c6b"
+    },
+    "obligations": {
+      "all_metrics_identical": true,
+      "linux_report_sha256": "0f0b2359ad12102e4c944723065b981ff493133212c89cfaffef50b71b94461b",
+      "reference_report_sha256": "0f0b2359ad12102e4c944723065b981ff493133212c89cfaffef50b71b94461b"
+    },
+    "actuator-verification": {
+      "all_metrics_identical": true,
+      "linux_report_sha256": "42d3c083809b5651606271561a495a1000928ce9d42c0fff2a2a8854920ac1e1",
+      "reference_report_sha256": "42d3c083809b5651606271561a495a1000928ce9d42c0fff2a2a8854920ac1e1"
+    }
+  },
+  "old_frozen_source_files_verified_by_existing_reproduction": 180,
+  "source_paths_mapped_in_reader_only": true
+}

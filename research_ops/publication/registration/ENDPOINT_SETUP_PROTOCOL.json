@@ -1,0 +1,17 @@
+{
+  "workspace": "gsankarasubr",
+  "profile": "gsankarasubr",
+  "environment": "main",
+  "endpoint_name": "afterclick-publication-9b-20261126",
+  "model": "Qwen/Qwen3.5-9B",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "setup_reservation_usd": 2,
+  "maximum_startup_seconds": 900,
+  "max_model_calls": 2,
+  "setup_calls_not_research_trials": true,
+  "requires_proxy_auth": true,
+  "min_containers": 0,
+  "max_containers": 1,
+  "buffer_containers": 0,
+  "old_protocol_not_resumed": true
+}

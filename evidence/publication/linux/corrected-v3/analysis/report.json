@@ -1,0 +1,186 @@
+{
+  "post_hoc": true,
+  "model_calls": 0,
+  "provider_calls": 0,
+  "cohorts": {
+    "primary": {
+      "registered": 2304,
+      "terminal": 905,
+      "valid": 744,
+      "invalid": 161,
+      "not_run": 1399,
+      "L_F": {
+        "0,0": 462,
+        "0,1": 107,
+        "1,0": 132,
+        "1,1": 43
+      },
+      "G_F": {
+        "0,0": 462,
+        "0,1": 107,
+        "1,0": 132,
+        "1,1": 43
+      },
+      "L_G_disagreements": 0,
+      "conditional_mismatch": {
+        "numerator": 43,
+        "denominator": 175,
+        "estimate": 0.24571428571428572,
+        "source_clusters": 177,
+        "bootstrap95": [
+          0.17989417989417988,
+          0.32075723943093526
+        ],
+        "zero_denominator_bootstrap_draws": 0,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 11262026,
+        "estimand": "Episode-pooled ratio, resampled source contracts; conditional on observed valid cohort"
+      },
+      "joint_mismatch": {
+        "numerator": 43,
+        "denominator": 744,
+        "estimate": 0.05779569892473118,
+        "source_clusters": 177,
+        "bootstrap95": [
+          0.04149377593360996,
+          0.075
+        ],
+        "zero_denominator_bootstrap_draws": 0,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 11262026,
+        "estimand": "Episode-pooled ratio, resampled source contracts; conditional on observed valid cohort"
+      },
+      "full_assignment_joint_mismatch_bounds": [
+        0.018663194444444444,
+        0.6957465277777778
+      ],
+      "full_assignment_conditional_mismatch_bounds": [
+        0.02478386167146974,
+        0.9239193083573487
+      ],
+      "mismatches_with_observed_service_discharge": 2,
+      "mismatches_with_wrong_to_correct_business_commit": 0,
+      "observed_debt": {
+        "items": 372,
+        "statuses": {
+          "OUTSTANDING_FINAL_SUSPENSION": 346,
+          "OBSERVED_DISCHARGE_TRANSITION": 26
+        },
+        "eligible_valid_episodes": 372,
+        "not_a_causal_effect_of_reminders": true
+      }
+    },
+    "larger": {
+      "registered": 360,
+      "terminal": 334,
+      "valid": 329,
+      "invalid": 5,
+      "not_run": 26,
+      "L_F": {
+        "0,0": 210,
+        "0,1": 62,
+        "1,0": 35,
+        "1,1": 22
+      },
+      "G_F": {
+        "0,0": 210,
+        "0,1": 62,
+        "1,0": 35,
+        "1,1": 22
+      },
+      "L_G_disagreements": 0,
+      "conditional_mismatch": {
+        "numerator": 22,
+        "denominator": 57,
+        "estimate": 0.38596491228070173,
+        "source_clusters": 36,
+        "bootstrap95": [
+          0.2692307692307692,
+          0.48717948717948717
+        ],
+        "zero_denominator_bootstrap_draws": 0,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 11262026,
+        "estimand": "Episode-pooled ratio, resampled source contracts; conditional on observed valid cohort"
+      },
+      "joint_mismatch": {
+        "numerator": 22,
+        "denominator": 329,
+        "estimate": 0.0668693009118541,
+        "source_clusters": 36,
+        "bootstrap95": [
+          0.038348082595870206,
+          0.09792284866468842
+        ],
+        "zero_denominator_bootstrap_draws": 0,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 11262026,
+        "estimand": "Episode-pooled ratio, resampled source contracts; conditional on observed valid cohort"
+      },
+      "full_assignment_joint_mismatch_bounds": [
+        0.06111111111111111,
+        0.14722222222222223
+      ],
+      "full_assignment_conditional_mismatch_bounds": [
+        0.25,
+        0.6022727272727273
+      ],
+      "mismatches_with_observed_service_discharge": 1,
+      "mismatches_with_wrong_to_correct_business_commit": 0,
+      "observed_debt": {
+        "items": 175,
+        "statuses": {
+          "OUTSTANDING_FINAL_SUSPENSION": 169,
+          "OBSERVED_DISCHARGE_TRANSITION": 6
+        },
+        "eligible_valid_episodes": 174,
+        "not_a_causal_effect_of_reminders": true
+      }
+    }
+  },
+  "source_mechanisms_shared": true,
+  "independent_human_review": false,
+  "reviewers": {
+    "requests": 264,
+    "received": 264,
+    "processed": 225,
+    "schema_valid_all_received": 264,
+    "exact_rule_agreements": 179,
+    "allow_protect_agreements": 179,
+    "decisions": {
+      "suspend": 264
+    },
+    "http_interval_quantiles": [
+      0.37769055366516113,
+      0.9682714939117432,
+      1.685808777809143,
+      6.945331037044525,
+      12.50384840965271,
+      16.9812753200531
+    ],
+    "accuracy_conditional_on_available_public_evidence": true,
+    "approved_inputs_suspended": 85,
+    "approved_inputs_suspended_and_processed": 74,
+    "by_cohort": {
+      "primary": {
+        "requests": 198,
+        "processed": 160,
+        "approved_suspended": 69
+      },
+      "larger": {
+        "requests": 66,
+        "processed": 65,
+        "approved_suspended": 16
+      }
+    }
+  },
+  "post_audit_cases": {
+    "total": 34,
+    "admission_order": {
+      "ADMISSION_AUDIT_PRECEDES_PROTECTION_AUDIT": 34
+    },
+    "receipt_interval": {
+      "RECEIPT_AFTER_PROTECTION_COMMIT_RETURN_UPPER_BOUND": 34
+    }
+  }
+}

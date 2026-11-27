@@ -1,0 +1,222 @@
+{
+  "complete": true,
+  "all_steps_passed": false,
+  "final_required_checks_passed": true,
+  "steps": [
+    {
+      "name": "initial/existing-reproduction",
+      "returncode": 0,
+      "elapsed": 33.62108039855957,
+      "args": [
+        "python",
+        "research_ops/scripts/reproduce_afterclick_v12.py",
+        "--root",
+        ".",
+        "--output",
+        "/result/existing"
+      ]
+    },
+    {
+      "name": "initial/controlled-timing",
+      "returncode": 0,
+      "elapsed": 0.4805121421813965,
+      "args": [
+        "python",
+        "research_ops/scripts/v12_actuator_analysis.py",
+        "--run",
+        "artifacts/research_runs/v12-31-complex-controlled-enforcement-v1",
+        "--output",
+        "/result/actuator"
+      ]
+    },
+    {
+      "name": "initial/normalize",
+      "returncode": 1,
+      "elapsed": 0.2967360019683838,
+      "args": [
+        "python",
+        "-m",
+        "research_ops.publication.normalize",
+        "--output",
+        "/result/normalized"
+      ]
+    },
+    {
+      "name": "initial/verify-normalized",
+      "returncode": 1,
+      "elapsed": 0.041924476623535156,
+      "args": [
+        "python",
+        "-m",
+        "research_ops.publication.verify_normalized",
+        "--data",
+        "/result/normalized",
+        "--output",
+        "/result/verified"
+      ]
+    },
+    {
+      "name": "initial/analyze",
+      "returncode": 1,
+      "elapsed": 0.11595559120178223,
+      "args": [
+        "python",
+        "-m",
+        "research_ops.publication.analyze_existing",
+        "--data",
+        "/result/normalized",
+        "--output",
+        "/result/analysis"
+      ]
+    },
+    {
+      "name": "initial/obligations",
+      "returncode": 1,
+      "elapsed": 0.040730953216552734,
+      "args": [
+        "python",
+        "-m",
+        "research_ops.publication.obligation_audit",
+        "--data",
+        "/result/normalized",
+        "--output",
+        "/result/obligations"
+      ]
+    },
+    {
+      "name": "initial/postgres-start",
+      "returncode": 0,
+      "elapsed": 0.8766982555389404,
+      "args": [
+        "bash",
+        "-c",
+        "install -d -o postgres -g postgres /tmp/ac_pg && runuser -u postgres -- initdb -D /tmp/ac_pg -A trust && runuser -u postgres -- pg_ctl -D /tmp/ac_pg -l /tmp/ac_pg/server.log -o '-p 55432 -h 127.0.0.1' start && runuser -u postgres -- psql -p 55432 -h 127.0.0.1 -c \"CREATE ROLE afterclick LOGIN SUPERUSER PASSWORD 'afterclick_local'\" && runuser -u postgres -- createdb -p 55432 -h 127.0.0.1 -O afterclick afterclick"
+      ]
+    },
+    {
+      "name": "initial/regression",
+      "returncode": 1,
+      "elapsed": 528.5432884693146,
+      "args": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=/result/tests.xml"
+      ]
+    },
+    {
+      "name": "initial/boundary-dev",
+      "returncode": 0,
+      "elapsed": 4.228447675704956,
+      "args": [
+        "python",
+        "-m",
+        "research_ops.publication.boundary_probe",
+        "--dev",
+        "--output",
+        "/result/boundary-dev"
+      ]
+    },
+    {
+      "name": "initial/postgres-stop",
+      "returncode": 0,
+      "elapsed": 0.13848185539245605,
+      "args": [
+        "runuser",
+        "-u",
+        "postgres",
+        "--",
+        "pg_ctl",
+        "-D",
+        "/tmp/ac_pg",
+        "stop"
+      ]
+    },
+    {
+      "name": "corrected-analysis/normalize",
+      "returncode": 0,
+      "elapsed": 22.741064071655273
+    },
+    {
+      "name": "corrected-analysis/verify_normalized",
+      "returncode": 0,
+      "elapsed": 12.527132034301758
+    },
+    {
+      "name": "corrected-analysis/analyze_existing",
+      "returncode": 0,
+      "elapsed": 0.710097074508667
+    },
+    {
+      "name": "corrected-analysis/obligation_audit",
+      "returncode": 0,
+      "elapsed": 1.706162691116333
+    },
+    {
+      "name": "corrected-analysis/verify_actuator",
+      "returncode": 0,
+      "elapsed": 0.7270917892456055
+    },
+    {
+      "name": "full-source/postgres-start",
+      "returncode": 0,
+      "elapsed": 1.0801985263824463
+    },
+    {
+      "name": "full-source/regression",
+      "returncode": 1,
+      "elapsed": 472.8324110507965
+    },
+    {
+      "name": "full-source/postgres-stop",
+      "returncode": 0,
+      "elapsed": 0.3572077751159668
+    },
+    {
+      "name": "fixture-followup/lifecycle",
+      "returncode": 0,
+      "elapsed": 11.879000343993539
+    }
+  ],
+  "original_archive_only_regression": {
+    "tests": 414,
+    "passed": 336,
+    "failed": 78
+  },
+  "corrected_full_regression": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "22",
+    "skipped": "0",
+    "tests": "417",
+    "time": "466.855",
+    "timestamp": "2026-11-26T23:26:21.097803+00:00",
+    "hostname": "modal"
+  },
+  "missing_fixture_followup": {
+    "complete": true,
+    "returncode": 0,
+    "pytest": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "22",
+      "time": "2.309",
+      "timestamp": "2026-11-26T23:36:49.910894+00:00",
+      "hostname": "modal"
+    },
+    "all_registered_rechecked": true,
+    "all_passed": true,
+    "model_calls": 0,
+    "provider_calls": 0
+  },
+  "cumulative_distinct_tests_passed": 417,
+  "single_complete_suite_pass_claim": false,
+  "zero_model_calls": true,
+  "zero_provider_calls": true,
+  "independent_cloud_machines": true,
+  "independent_human_operator": false,
+  "original_failures_preserved": true
+}

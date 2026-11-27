@@ -1,0 +1,8 @@
+{
+  "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.41",
+  "python": "3.11.17",
+  "cwd": "/work/afterclick-v12",
+  "source_git_sha": "2080c426 plus hashed publication overlay",
+  "network_policy": "Modal Sandbox block_network=True",
+  "credentials_injected": false
+}

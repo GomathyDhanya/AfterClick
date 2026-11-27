@@ -1,0 +1,11 @@
+{
+  "workspace": "gsankarasubr",
+  "utc_verified": "2026-11-26T22:14:16.282277+00:00",
+  "source": "observed_provider_ui",
+  "observed_credit_balance_usd": 30,
+  "workspace_usage_limit_usd": 28,
+  "effective_net_spend_limit_usd": 0,
+  "spend_limit_basis": "UI spend-limit editor showed Default $0; usage cap $28 is below current $30 credits",
+  "billing_before": "artifacts/research_runs/publication-20261126-modal-setup/billing-before.json",
+  "screenshot": "artifacts/research_runs/publication-20261126-modal-setup/billing-cap-proof.png"
+}

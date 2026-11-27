@@ -32,7 +32,7 @@ def inline(text):
     return text
 
 
-def render(source, output):
+def render(source, output, *, anonymous=False):
     font_dir = Path(__file__).resolve().parents[1] / "completion_v12/final_package/fonts"
     for name, filename in [
         ("ACSerif", "DejaVuSerif.ttf"),
@@ -69,6 +69,8 @@ def render(source, output):
         styles[name].textColor = colors.HexColor("#18394d")
         styles[name].spaceBefore = 12
         styles[name].spaceAfter = 7
+        if anonymous:
+            styles[name].keepWithNext = True
     styles.add(
         ParagraphStyle(
             name="CaptionAC",
@@ -169,8 +171,12 @@ def render(source, output):
         leftMargin=72,
         topMargin=53,
         bottomMargin=54,
-        title=source.stem.replace("_", " "),
-        author="AfterClick research artifact",
+        title=(
+            source.read_text().splitlines()[0].lstrip("# ")
+            if anonymous
+            else source.stem.replace("_", " ")
+        ),
+        author="Anonymous" if anonymous else "AfterClick research artifact",
         pageCompression=1,
     )
 
@@ -178,7 +184,13 @@ def render(source, output):
         canvas.saveState()
         canvas.setFont("ACSans", 8)
         canvas.setFillColor(colors.HexColor("#5b6c78"))
-        canvas.drawString(72, 31, "AfterClick v12 | Evidence-grounded research artifact")
+        canvas.drawString(
+            72,
+            31,
+            "AfterClick | Anonymous empirical study"
+            if anonymous
+            else "AfterClick v12 | Evidence-grounded research artifact",
+        )
         canvas.drawRightString(540, 31, str(doc.page))
         canvas.restoreState()
 
@@ -190,5 +202,6 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("source", type=Path)
     p.add_argument("output", type=Path)
+    p.add_argument("--anonymous", action="store_true")
     a = p.parse_args()
-    render(a.source, a.output)
+    render(a.source, a.output, anonymous=a.anonymous)

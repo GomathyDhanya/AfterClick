@@ -1,0 +1,20 @@
+{
+  "paper_complete": true,
+  "anonymous": true,
+  "manuscript_pages": 12,
+  "appendix_pages": 8,
+  "pdf_qa": "artifacts/research_runs/publication-20261126-paper-qa/AUTOMATED_QA.json",
+  "linux_final_required_checks_passed": true,
+  "linux_full_run_passed": 395,
+  "linux_full_run_failed": 22,
+  "linux_unchanged_followup_passed": 22,
+  "cumulative_distinct_linux_cases_passed": 417,
+  "single_all_passing_full_run_claim": false,
+  "local_targeted_tests_passed": 9,
+  "frozen_source_gate_hashes_unchanged": 180,
+  "model_replay_registered_received": 264,
+  "mechanism_probe_registered_terminal_valid": 72,
+  "raw_data_public_upload": false,
+  "original_research_matrix_complete": false,
+  "original_unexecuted_assignments": 1425
+}

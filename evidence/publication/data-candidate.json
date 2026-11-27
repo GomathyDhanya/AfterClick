@@ -1,0 +1,11 @@
+{
+  "candidate": "artifacts/publication-release/AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+  "sha256": "d82178a963b3fe1a4f39d72727c39a5648de8383e8e8bda09b8740779734d509",
+  "bytes": 645459203,
+  "original_top_level_members": 151624,
+  "expanded_members_audited": 263779,
+  "changed_top_level_files": 0,
+  "credential_findings": 0,
+  "elapsed_seconds": 1597.7751273789909,
+  "public_upload_performed": false
+}

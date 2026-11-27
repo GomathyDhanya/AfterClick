@@ -1,0 +1,11 @@
+cohort,policy,valid_stress_episodes,containment_activated_duties,episodes_with_activated_duties,observed_discharge,outstanding_suspended,no_witnessed_discharge_but_active,harm_free_but_G_false,mediator_conditioning_is_descriptive
+primary,P0,142,0,0,0,0,0,35,True
+primary,P1,142,111,111,8,103,0,122,True
+primary,P2,141,85,85,4,81,0,105,True
+primary,P3,136,136,136,4,132,0,85,True
+primary,P4,18,16,16,9,7,0,10,True
+primary,P5,24,24,24,1,23,0,23,True
+larger,P0,65,1,1,0,1,0,11,True
+larger,P1,65,58,58,1,57,0,63,True
+larger,P2,65,51,50,2,49,0,48,True
+larger,P3,65,65,65,3,62,0,44,True

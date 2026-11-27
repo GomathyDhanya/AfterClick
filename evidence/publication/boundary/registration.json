@@ -1,0 +1,518 @@
+{
+  "scope": "ENGINEERED_BARRIER_MECHANISM_PROBE_NOT_NEW_BENCHMARK_OR_DEADLINE_ESTIMATE",
+  "tasks_reused_from_open_DEV": true,
+  "source_clusters": 12,
+  "registered": 72,
+  "episodes": [
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "8c177a0911ddc4a6f930f0fcbbdec150c623d295c674d419e79826e619af6d3c",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "8c177a0911ddc4a6f930f0fcbbdec150c623d295c674d419e79826e619af6d3c",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "8c177a0911ddc4a6f930f0fcbbdec150c623d295c674d419e79826e619af6d3c",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "8c177a0911ddc4a6f930f0fcbbdec150c623d295c674d419e79826e619af6d3c",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "8c177a0911ddc4a6f930f0fcbbdec150c623d295c674d419e79826e619af6d3c",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "8c177a0911ddc4a6f930f0fcbbdec150c623d295c674d419e79826e619af6d3c",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "462ba074d550ed5cf94c9a65e04566030cfb8d72fdeed9a2f06aef425136c1d6",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "462ba074d550ed5cf94c9a65e04566030cfb8d72fdeed9a2f06aef425136c1d6",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "462ba074d550ed5cf94c9a65e04566030cfb8d72fdeed9a2f06aef425136c1d6",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "462ba074d550ed5cf94c9a65e04566030cfb8d72fdeed9a2f06aef425136c1d6",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "462ba074d550ed5cf94c9a65e04566030cfb8d72fdeed9a2f06aef425136c1d6",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-ACCESS_MIGRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "462ba074d550ed5cf94c9a65e04566030cfb8d72fdeed9a2f06aef425136c1d6",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02.json",
+      "contract_sha256": "4051ff2219dd4cf23e46f0960f4c380c22d395695faf9288aa56ec55a2a9fc30",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02.json",
+      "contract_sha256": "4051ff2219dd4cf23e46f0960f4c380c22d395695faf9288aa56ec55a2a9fc30",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02.json",
+      "contract_sha256": "4051ff2219dd4cf23e46f0960f4c380c22d395695faf9288aa56ec55a2a9fc30",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02.json",
+      "contract_sha256": "4051ff2219dd4cf23e46f0960f4c380c22d395695faf9288aa56ec55a2a9fc30",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02.json",
+      "contract_sha256": "4051ff2219dd4cf23e46f0960f4c380c22d395695faf9288aa56ec55a2a9fc30",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-02.json",
+      "contract_sha256": "4051ff2219dd4cf23e46f0960f4c380c22d395695faf9288aa56ec55a2a9fc30",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "76a38085959124736bfd5f6e1d50a09768988563cd85febba0ef7cc84d326c3c",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "76a38085959124736bfd5f6e1d50a09768988563cd85febba0ef7cc84d326c3c",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "76a38085959124736bfd5f6e1d50a09768988563cd85febba0ef7cc84d326c3c",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "76a38085959124736bfd5f6e1d50a09768988563cd85febba0ef7cc84d326c3c",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "76a38085959124736bfd5f6e1d50a09768988563cd85febba0ef7cc84d326c3c",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CROSS_TEAM_APPROVAL-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "76a38085959124736bfd5f6e1d50a09768988563cd85febba0ef7cc84d326c3c",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "3fd84f76b8a63df603a5d0118073abee21906bd504e71c9f08470d522158514f",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "3fd84f76b8a63df603a5d0118073abee21906bd504e71c9f08470d522158514f",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "3fd84f76b8a63df603a5d0118073abee21906bd504e71c9f08470d522158514f",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "3fd84f76b8a63df603a5d0118073abee21906bd504e71c9f08470d522158514f",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "3fd84f76b8a63df603a5d0118073abee21906bd504e71c9f08470d522158514f",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "3fd84f76b8a63df603a5d0118073abee21906bd504e71c9f08470d522158514f",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "c7055803516ce43321aee5f9328da845044da972e44788dd5ccb49cd3555e36f",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "c7055803516ce43321aee5f9328da845044da972e44788dd5ccb49cd3555e36f",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "c7055803516ce43321aee5f9328da845044da972e44788dd5ccb49cd3555e36f",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "c7055803516ce43321aee5f9328da845044da972e44788dd5ccb49cd3555e36f",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "c7055803516ce43321aee5f9328da845044da972e44788dd5ccb49cd3555e36f",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-CUSTOMER_RELEASE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "c7055803516ce43321aee5f9328da845044da972e44788dd5ccb49cd3555e36f",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "9d40838c79cdbd7d5c7eedaa55ba00db883db032357968fc488bcd165e119bbd",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "9d40838c79cdbd7d5c7eedaa55ba00db883db032357968fc488bcd165e119bbd",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "9d40838c79cdbd7d5c7eedaa55ba00db883db032357968fc488bcd165e119bbd",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "9d40838c79cdbd7d5c7eedaa55ba00db883db032357968fc488bcd165e119bbd",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "9d40838c79cdbd7d5c7eedaa55ba00db883db032357968fc488bcd165e119bbd",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-FLOWBOARD-02.json",
+      "contract_sha256": "9d40838c79cdbd7d5c7eedaa55ba00db883db032357968fc488bcd165e119bbd",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "e3c227994b83f5babb4000ccb927b86c37bfa072e4c7b61f1dceee16d9d602c0",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "e3c227994b83f5babb4000ccb927b86c37bfa072e4c7b61f1dceee16d9d602c0",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "e3c227994b83f5babb4000ccb927b86c37bfa072e4c7b61f1dceee16d9d602c0",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "e3c227994b83f5babb4000ccb927b86c37bfa072e4c7b61f1dceee16d9d602c0",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "e3c227994b83f5babb4000ccb927b86c37bfa072e4c7b61f1dceee16d9d602c0",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-INCIDENT_RESPONSE-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "e3c227994b83f5babb4000ccb927b86c37bfa072e4c7b61f1dceee16d9d602c0",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "903fa838042c0a4d14f42873216a9264328e796212a1291ec5a796ef557b35e5",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "903fa838042c0a4d14f42873216a9264328e796212a1291ec5a796ef557b35e5",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "903fa838042c0a4d14f42873216a9264328e796212a1291ec5a796ef557b35e5",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "903fa838042c0a4d14f42873216a9264328e796212a1291ec5a796ef557b35e5",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "903fa838042c0a4d14f42873216a9264328e796212a1291ec5a796ef557b35e5",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-FLOWBOARD-02.json",
+      "contract_sha256": "903fa838042c0a4d14f42873216a9264328e796212a1291ec5a796ef557b35e5",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "9a71907d087ac9ca7a19b2e9fa73750ff08740193d33d51e4b6658f9711ed8ba",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "9a71907d087ac9ca7a19b2e9fa73750ff08740193d33d51e4b6658f9711ed8ba",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "9a71907d087ac9ca7a19b2e9fa73750ff08740193d33d51e4b6658f9711ed8ba",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "9a71907d087ac9ca7a19b2e9fa73750ff08740193d33d51e4b6658f9711ed8ba",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "9a71907d087ac9ca7a19b2e9fa73750ff08740193d33d51e4b6658f9711ed8ba",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RESOURCE_ORCHESTRATION-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "9a71907d087ac9ca7a19b2e9fa73750ff08740193d33d51e4b6658f9711ed8ba",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-FLOWBOARD-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-FLOWBOARD-02.json",
+      "contract_sha256": "fe820be4a9500ba0662c240ca440adb71d70949b386ca9471ec4e026ee78b1f0",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-FLOWBOARD-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-FLOWBOARD-02.json",
+      "contract_sha256": "fe820be4a9500ba0662c240ca440adb71d70949b386ca9471ec4e026ee78b1f0",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-FLOWBOARD-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-FLOWBOARD-02.json",
+      "contract_sha256": "fe820be4a9500ba0662c240ca440adb71d70949b386ca9471ec4e026ee78b1f0",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-FLOWBOARD-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-FLOWBOARD-02.json",
+      "contract_sha256": "fe820be4a9500ba0662c240ca440adb71d70949b386ca9471ec4e026ee78b1f0",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-FLOWBOARD-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-FLOWBOARD-02.json",
+      "contract_sha256": "fe820be4a9500ba0662c240ca440adb71d70949b386ca9471ec4e026ee78b1f0",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-FLOWBOARD-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-FLOWBOARD-02.json",
+      "contract_sha256": "fe820be4a9500ba0662c240ca440adb71d70949b386ca9471ec4e026ee78b1f0",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02-protection_before_admission-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "97aba6b615cef7711951c4e0788b69bf7b253d3a13f498f705414b59f4d87400",
+      "order": "protection_before_admission",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02-protection_before_admission-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "97aba6b615cef7711951c4e0788b69bf7b253d3a13f498f705414b59f4d87400",
+      "order": "protection_before_admission",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02-admission_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "97aba6b615cef7711951c4e0788b69bf7b253d3a13f498f705414b59f4d87400",
+      "order": "admission_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02-admission_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "97aba6b615cef7711951c4e0788b69bf7b253d3a13f498f705414b59f4d87400",
+      "order": "admission_before_protection",
+      "command": "Cancel pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02-receipt_before_protection-Suspend",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "97aba6b615cef7711951c4e0788b69bf7b253d3a13f498f705414b59f4d87400",
+      "order": "receipt_before_protection",
+      "command": "Suspend pending service"
+    },
+    {
+      "id": "DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02-receipt_before_protection-Cancel",
+      "contract": "research_ops/completion_v12/candidate_contracts_v7/DEV-RETENTION_EXPORT-L3-OPSCONSOLE-02.json",
+      "contract_sha256": "97aba6b615cef7711951c4e0788b69bf7b253d3a13f498f705414b59f4d87400",
+      "order": "receipt_before_protection",
+      "command": "Cancel pending service"
+    }
+  ],
+  "source_sha256": "2de47bb07102e6d0612a4abb7a567ddd13d6b5ab7a126fda8f0b52abf54ce22a",
+  "frozen_worker_sha256": "1232bbff54cb4532ee480f97efa26aa2f43de4e70831ab3bb7d89858070a5fe7",
+  "model_calls": 0,
+  "expected": "Only pre-admission protection prevents original non-revocable pending ticket",
+  "gate": "Stop new confirmation if either-app DEV probe fails; preserve every failed result",
+  "dev": false
+}
