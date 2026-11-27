@@ -120,7 +120,9 @@ def main(graph, output):
         relations=dict(counts),
         exact_ids_only=True,
         db_control_commit_join_not_invented=True,
-        clock_semantics="Action interval start and actual POST timestamp; recording may occur after response",
+        clock_semantics=(
+            "Action interval start and actual POST timestamp; recording may occur after response"
+        ),
         not_additional_experiments=True,
     )
     (output / "report.json").write_text(json.dumps(report, indent=2) + "\n")

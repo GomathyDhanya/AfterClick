@@ -6,4 +6,4 @@ Older `v0/`, `sprint1/`, `research-20261123/`, and `observability-20261123/` dir
 
 Large raw data, request/response traces, invalid and failed trials, and full derived tables remain in the separately supplied local archives under ignored `artifacts/`. The publication companion supplements the original-data candidate; it does not silently replace the old missing assignments. No public upload or DOI has been performed.
 
-See [data availability](../research_ops/publication/DATA_AVAILABILITY.md), [schema](../docs/DATA_SCHEMA.md), and [reproduction](../docs/PUBLICATION_REPRODUCIBILITY.md). A source-only clone can build the paper from compact reports; full raw verification requires the separately restored archive. Default supported commands make no model/provider calls.
+See [data availability](../research_ops/publication/DATA_AVAILABILITY.md), [schema](../docs/DATA_SCHEMA.md), and [reproduction](../docs/REPRODUCIBILITY.md). A source-only clone can build the paper from compact reports; full raw verification requires the separately restored archive. Default supported commands make no model/provider calls.

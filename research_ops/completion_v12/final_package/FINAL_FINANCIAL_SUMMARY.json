@@ -1,9 +1,0 @@
-{
-  "guard_accounted_usd": 17.967252810028675,
-  "authorized_ceiling_usd": 18,
-  "within_guard_ceiling": true,
-  "model_call_attempts": 41732,
-  "known_reported_tokens": 309714800,
-  "response_uncertain_calls": 3,
-  "actual_isolated_invoice_usd": null
-}

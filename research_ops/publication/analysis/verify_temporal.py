@@ -5,9 +5,10 @@ import collections
 import csv
 import hashlib
 import json
+import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(os.environ.get("AFTERCLICK_DATA_ROOT", Path(__file__).resolve().parents[3]))
 
 
 def read(p):

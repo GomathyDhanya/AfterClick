@@ -1,0 +1,23 @@
+{
+  "source_snapshot": "31eab61870befc520841d11f422bb1a372ba92b8",
+  "review": {
+    "runtime_sibling_assets": [
+      "afterclick/completion_v12/benchmark/interface.html",
+      "afterclick/completion_v12/opsconsole.html"
+    ],
+    "constructed_task_paths": "V7 retained; active resource-safety test migrated from V6 to V7 without changing its assertions",
+    "schema_and_design_inputs": [
+      "research_ops/completion_v12/templates/task_contract.schema.json",
+      "research_ops/completion_v12/manifests/"
+    ],
+    "raw_paths": "Resolved only inside explicitly supplied/restored evidence roots; independently hash/pointer checked; original payload bytes unchanged",
+    "subprocesses": "Current program dispatches local scientific Python, pytest and Tectonic. Existing CI uses current demonstration/verification entrypoints. Historical cloud/setup controllers archived.",
+    "optional_execution": "review_replay.py and v12_external.py remain explicit opted-in model execution implementations; not launched during cleanup; all saved-data and test commands exclude them",
+    "optional_external_dependencies": "undobench and recoverbench engine are not installed by the active project lock; use the pinned upstream environment in the historical snapshot for official external execution. Offline external compact analysis does not need them.",
+    "dynamic_imports": "Obsolete runpy/importlib compatibility dispatcher removed after surviving imports migrated",
+    "historical_paths": "Frozen reproduction delegates to exact restored source; it does not skip or relax any missing frozen path",
+    "limitations": "All active static local imports are resolved. Dynamic external consumers and optional paid runners are not exhaustively certified; optional prerequisites are explicit rather than silently tested."
+  },
+  "required_runtime_assets_verified": true,
+  "optional_unexecuted_paths_explicit": true
+}

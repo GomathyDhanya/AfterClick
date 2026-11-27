@@ -1,0 +1,25 @@
+{
+  "source_commit": "31eab61870befc520841d11f422bb1a372ba92b8",
+  "original_files": 2754,
+  "active_files": 631,
+  "archived_original_paths": 2174,
+  "added_paths": 51,
+  "file_reduction": 2123,
+  "removed_catalog_paths": 1445,
+  "dispositions": {
+    "ACTIVE_DOCUMENTATION": 41,
+    "ACTIVE_RUNTIME": 54,
+    "ARCHIVE_FROZEN": 122,
+    "ARCHIVE_HISTORICAL": 2052,
+    "ACTIVE_EVIDENCE": 146,
+    "ACTIVE_EXPERIMENT": 308,
+    "ACTIVE_ANALYSIS": 31
+  },
+  "active_python_modules": 86,
+  "historical_python_modules": 346,
+  "unresolved_local_imports": 0,
+  "audit_outputs_self_hashes_omitted": true,
+  "all_original_paths_recoverable_from_source_commit": true,
+  "git_storage_history_not_rewritten": true,
+  "limitations": "Static edges do not prove dynamic absence. Runtime validation, build inspection and external/raw prerequisites are documented separately."
+}

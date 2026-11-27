@@ -13,7 +13,7 @@ def test_integrated_random_intercept_gradient_matches_numerical_derivative():
         y = rng.integers(0, 2, size=9)
         groups.append((x, y))
     nodes, weights = hermgauss(21)
-    theta = np.array([-.6, .7, -.2, .1, -.4])
+    theta = np.array([-0.6, 0.7, -0.2, 0.1, -0.4])
     error = check_grad(
         lambda p: objective(p, groups, nodes, weights)[0],
         lambda p: objective(p, groups, nodes, weights)[1],
@@ -23,8 +23,10 @@ def test_integrated_random_intercept_gradient_matches_numerical_derivative():
 
 
 def test_zero_success_floor_does_not_produce_finite_treatment_coefficients():
-    rows = [dict(policy=policy, clean=False, joint_safe_completion=False)
-            for policy in ["P0", "P1", "P2", "P3"]]
+    rows = [
+        dict(policy=policy, clean=False, joint_safe_completion=False)
+        for policy in ["P0", "P1", "P2", "P3"]
+    ]
     result = fit(rows, {})
     assert result["status"] == "UNIDENTIFIABLE_SEPARATED_OR_ABSENT_ARM"
     assert result["coefficients"] is None

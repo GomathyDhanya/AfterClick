@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+uv run --frozen --group research python -m research_ops.publication.program verify-data
+bash scripts/build_paper.sh

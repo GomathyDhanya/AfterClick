@@ -1,208 +1,54 @@
-# Current reproduction entrypoint
-
-For the anonymous current paper, follow [PUBLICATION_REPRODUCIBILITY.md](PUBLICATION_REPRODUCIBILITY.md). It distinguishes compact verification, complete raw restoration, source/fixture/frontend prerequisites, saved-data analyses, database demonstrations and explicitly opt-in paid work. The time-stamped historical procedures and results below remain preserved for their original studies.
-
 # Reproducibility
 
-## Environment and exact commands
-
-Validated on macOS x86_64 using Python 3.11.14, Node 24.12.0, npm 11.6.2, uv 0.13.9,
-Docker Engine 29.8.1, and Compose 5.5.1. PostgreSQL uses `postgres:17.7`. Python dependencies
-are locked in `uv.lock`, frontend dependencies in `apps/flowboard-web/package-lock.json`.
-Playwright's downloaded Chromium version is recorded in every experiment manifest.
+## Locked active environment
 
 ```sh
-docker compose up -d --wait db
-uv sync --frozen
+uv sync --frozen --group research
 npm ci --prefix apps/flowboard-web
 npm run build --prefix apps/flowboard-web
-uv run playwright install chromium
-uv run ruff check afterclick tests migrations
-uv run ruff format --check afterclick tests migrations
-uv run pytest -q --junitxml=artifacts/tests.xml
-uv run python -m afterclick.replay.demo --output artifacts/demo
-uv run python -m afterclick.evaluation.pilot --output artifacts/oracle-pilot
+uv run --frozen --group research playwright install chromium
+docker compose up -d --wait db
 ```
 
-On Linux, use `uv run playwright install --with-deps chromium` for required OS libraries.
-If `uv` is not already installed, install it following its official instructions. During the initial
-session it was bootstrapped into `.bootstrap/bin/uv` with a local Python venv; this ignored directory
-is not a project dependency. `PATH="$PWD/.bootstrap/bin:$PATH"` makes the same scripts work locally.
+The existing `uv.lock` and npm lock remain authoritative. PostgreSQL is `postgres:17.7`, bound to loopback port 55432 with synthetic local credentials from Compose. Integration work uses isolated `ac_*` schemas; do not reset the user's database volume. On Linux use Playwright's `--with-deps` option. The current frontend and two runtime HTML assets must be available.
 
-The full app can also be built and launched with `docker compose up --build -d`. The Compose API
-uses automatic logical ticks; reproducibility experiments create separate in-process server instances
-with ticking disabled. Normal app data is retained in the Docker volume. Do not delete the volume
-to reset research trials; each trial has its own schema.
-
-## Configuration
-
-| Variable | Purpose | Default |
-|---|---|---|
-| `DATABASE_URL` | PostgreSQL SQLAlchemy/psycopg connection | Local Compose DB on port 55432 |
-| `AUTO_TICK` | Normal app dispatcher wall-clock loop | false; Compose sets true |
-| `STATIC_DIR` | Optional built web directory served directly by API | unset |
-| `EXPERIMENT_SCHEMA` | Separate control service's existing/created `ac_*` schema | required only for control service |
-| `RESEARCH_TOKEN` | Isolated control plane bearer token | required only for control service |
-
-No API/model credentials are required for tests, the scripted demo or the backend oracle pilot.
-The dirty checkout also contains an opt-in Gemini runner and a planning-kit Modal smoke script;
-neither is authorized by these reproduction commands. Historical Gemini pilots are invalid.
-Tinker API/model inspection, cost estimation, smoke configuration and explicit authorization remain
-future work.
-
-## Trial manifest and artifacts
-
-`report.json` contains `run_id`, `data_mode`, task contract, environment/source manifest, all branches,
-replay certificate, milestone acceptance booleans, and fixture findings if replay is valid. Each
-branch includes checkpoint components, full checkpoint DB state, executed/suppressed action records,
-public pre-observations and hashes, recorded write requests, final state, outcome hash, and failure
-trace when applicable. Recovery branches also retain pre-recovery state, attempted operations, and
-the independent verification certificate.
-
-Conflict branches retain a separate `attempt_certificate` with its verification time and an
-incomplete observation horizon, alongside the final-horizon `recovery_certificate`. This prevents
-conflating immediate conflict detection with eventual downstream delivery.
-
-Each invocation writes an immutable-by-convention `<run_id>` directory and updates the convenience
-`report.json`/`explorer.html` at the output root. Failed branch outputs are saved too. These files are
-local artifacts ignored by Git; CI uploads them even when checks fail. Preserve the run directories
-when collecting research data. The files are not cryptographically signed or tamper-proof.
-
-The manifest records package versions, Python, browser version, source-file hashes, frontend-build
-hashes, Git revision if available, dirty status, and database image digests when Docker can inspect
-them. The original v0 report predates the first commit and retains a null Git revision. New
-committed runs record exact revisions; clean-clone validation requires and preserves a clean tree. Local experiments do not run an application container: `application_image_digest`
-is explicitly null, never a fabricated digest. CI/containers should record their real image IDs when
-experiments are later moved into containerized runners.
-
-Seed 7 is fixed in the initial demo. Job tie-breaking is deterministic and the fixture is separately
-identified. The source hash includes fixture and migration code. Browser clock starts at
-2026-01-01T00:00:00Z, independent of the user's actual date. All backend timestamps are logical ms.
-Horizon is 300 backend ms; recovery starts at 99, 200, or 150 for the conflict branch.
-
-## Validity requirements
-
-1. Create a fresh experimental schema and fresh browser context per branch.
-2. Run the same prefix; settle debounce and committed response before checkpointing.
-3. Compare every checkpoint component, including pending work and observation history.
-4. Execute duplicate placebo continuations for both intervention arms.
-5. Retain versions, field ownership, operation IDs, queued work, and semantic history in outcome hashes.
-6. Exclude only random SSE consumer receipt identities/counts from replay equality; retain them raw.
-7. Require a separate independent recovery certificate. Never infer recovery from planner status.
-8. Abort causal interpretation on invalid replay. Demo exits nonzero on failed acceptance checks.
-
-`goal_success` is the fixture's independent server-state oracle. The report deliberately marks
-population action necessity `NOT_ESTIMATED`. There are no confidence intervals, statistical
-significance tests, learned-risk scores, or comparative baseline results yet.
-
-## Known reproducibility limits
-
-No arbitrary in-flight JS snapshot, validated live adaptive LLM continuation, general network-loss schedule,
-long-running collaborator policy, multi-worker crash recovery test, or multi-seed benchmark is
-implemented. Browser HTTP and SSE arrival order are not fully controlled; checkpoints await the
-specified UI/commit barriers and exclude only declared transport telemetry. Full image pinning,
-dependency upgrades, research-table migrations, and independently audited oracle coverage remain
-future work. See `DECISIONS.md` for the npm development-tool advisory and `PROGRESS.md` for checks.
-
-## Clean-clone Linux reproduction
-
-From a clean committed tree, run `bash scripts/validate-isolated.sh`. It clones the exact revision
-into a temporary directory, builds a Linux validation image, starts a separate ephemeral PostgreSQL
-instance without host ports, and runs the frontend build, all tests, browser demo and oracle pilot.
-It captures raw logs and artifacts under `artifacts/isolated-*`, then stops only that validation
-Compose project. The source clone is retained for inspection. This is isolation on the same Docker
-host, not an independently operated remote machine. Remote GitHub CI has not run here.
-
-The container need not contain the Docker CLI; manifests explicitly record unavailable image metadata
-as empty, while source hashes and Git revision remain available. The host build log records resolved
-base-image digests. No digest is fabricated. Model credentials are not mounted.
-
-## Fresh P0 audit (2026-11-22)
-
-Run `p0-20261122-audit` retains the protocol, amendments, command logs, JUnit, source/lock
-hashes and failed environment/clock diagnostics under `artifacts/research_runs/`. The local
-database initially was stopped; only Compose `db` was started. PostgreSQL 17.7 and Chromium
-159.0.8154.6 were used with Python 3.11.14, Node 24.12.0 and uv 0.13.9. The suite passed
-122/122 tests. The extra 34 cases are enumerated in `raw/analysis-v2/tests_delta.json`.
-
-`scripts/check.sh` accepts `AFTERCLICK_TEST_REPORT` to retain fresh JUnit without replacing an
-earlier report. With `.bootstrap/bin` on PATH, the audit used the normal check script. To
-regenerate the saved analysis into a fresh directory, without database writes/model calls:
+## Compact verification, figures, tables and paper
 
 ```sh
-.venv/bin/python research_ops/scripts/analyze_p0.py \
-  artifacts/research_runs/p0-20261122-audit --output /tmp/afterclick-p0-review-1
+uv run --frozen --group research python -m research_ops.publication.program verify-data
+bash scripts/build_paper.sh
+bash scripts/test.sh
 ```
 
-The destination must not already exist. Counts and certificates are regenerated; raw run data
-remain unchanged. No scientific figure/CI was estimated from fixed development fixtures;
-the actual demo explorer is retained. See `research_ops/STATE.json` for the mandatory human gate.
+`evidence/index.json` hashes the current compact evidence and maps RQ1–RQ4 and supplements to their analyses, registrations and results. The claim registry validates source hashes and JSON pointers; the claim/evidence CSV uses the same sources. Both original compact manifests remain unchanged. Verification of compact files does not verify unavailable raw files.
 
-## P1 provider integration
+`paper/figures.py` reads verified JSON/CSV reports for all eight principal plots; `paper/tables.py` generates ten numerical LaTeX tables and claim mappings from the same evidence. No transcribed experimental arrays are used. Architecture coordinates, labels and display ordering are presentation constants. `paper/main.tex` is the single current manuscript, including its appendix; `paper/AfterClick.pdf` is its compiled output. The supplied 17-page paper/source and older papers remain preserved in archival assets.
 
-The project environment/locks remain unchanged. Modal CLI 1.6.4 is isolated via
-`.bootstrap/bin/uv tool install modal==1.6.4 --python .venv/bin/python`; on this host its
-executable is `/Users/gomathydhanya/.local/bin/modal`. Authentication lives outside Git.
-No terminal setup or global Python package installation is required for the application.
+Install Tectonic for `scripts/build_paper.sh`, or set `TECTONIC` to its executable path. The TeX engine may download ordinary typesetting packages; it creates no model endpoint or paid workload. Python plotting dependencies use the existing research lock. Build logs are under ignored `artifacts/paper-build/`. The current paper is based on compact reports; rebuilding plots is distinct from raw-data reanalysis.
 
-Free checks: `.venv/bin/pytest tests/agent -q`; `.venv/bin/pytest -q`. HTTP-mock replay through
-the adapter on actual PostgreSQL/Chromium uses a fresh output directory:
+## Raw-data analysis and exact frozen reproduction
+
+The raw archives are local separately supplied research assets, not publicly downloadable files. Restore them with the exact source procedure in [archive/README.md](../archive/README.md). With that historical source and data available:
 
 ```sh
-.venv/bin/python research_ops/scripts/p1_mock_replay.py --output artifacts/p1-mock-review
+uv run --frozen --group research python -m research_ops.publication.program reproduce-existing \
+  --historical-root ../AfterClick-history --output /tmp/ac-frozen-NEW
+uv run --frozen --group research python -m research_ops.publication.program analyze \
+  --raw-root ../AfterClick-history --output /tmp/ac-current-analysis-NEW
 ```
 
-The new `afterclick.evaluation.modal_smoke` defaults to preparation only; `--live` additionally
-requires exact paid approval/configuration and proxy environment credentials. Cache/recorded/mock
-origins are recorded separately. Unknown completions freeze the persisted journal on restart.
-The completed experiment's lifecycle helper refuses reuse once finalization.json is present.
+The first command runs the unchanged historical 180-file integrity checks and frozen statistics/oracle/graph programs in the restored source. The second uses current read-only publication adapters against the restored evidence and regenerates normalization, independent pointer verification, all-case analysis, restoration duties and actuator verification. Use fresh output directories; failure and invalid records must remain. The `rq1`, `rq2`, `rq3` and `rq4` entrypoints share that normalized population to preserve denominators. Supplementary estimator/external/graph locations are indexed in `evidence/index.json`.
 
-P1 raw data are in `artifacts/research_runs/p1a-20261122-local`, `p1b-20261122-readiness`, and
-`p1c-qwen35-9b-smoke-v1`. The last is infrastructure-inconclusive, with no model decisions.
-Never rerun its deployment as an ordinary reproduction command. Read `research_ops/STATE.json`
-and `SESSION_HANDOFF.md`; a new paid attempt requires a new approval. Active endpoint list is
-empty; current usage cap remains $2 and the effective default net spend limit is $0.
+## Local mechanism demonstration
 
-V2 final evidence: `artifacts/research_runs/p1c-qwen35-9b-smoke-v2`; free regeneration:
-`.venv/bin/python research_ops/scripts/analyze_p1_diagnostic.py artifacts/research_runs/p1c-qwen35-9b-smoke-v2`.
-Current full suite200passed, raw local validation in `p1d-20261123-4b-readiness`.
-4B proposal `p1c-qwen35-4b-diagnostic-v1` is unexecuted/unapproved; dryrun defaults0network.
-Read NEXT_EXPERIMENT.md; exact protocol-hashed approval is required before --execute.
-
-## Current checkpoint — 2026-11-23 UTC
-Full suite212passed; project/lock environment unchanged. RealPG isolatedac_* and Chromium required
-for `.venv/bin/pytest -q`. Paid existing4Bv2/v3 failed gates and are closed; do not rerun their
-controllers as reproduction. User-owned endpoint exists idlemin0/max1/buffer0/idle2; never stop/delete.
-Raw request/response, task judgments and cleanup are archived under their distinct run IDs.
-
-Offline48-case local mechanism evidence regeneration (fresh destination):
 ```sh
-.venv/bin/python research_ops/scripts/analyze_mechanisms.py artifacts/research_runs/p2-20261123-distinct-mechanisms-v1 --output /tmp/afterclick-p2-review
+bash scripts/demo.sh /tmp/ac-two-app-demo-NEW
 ```
-This reads saved data only, recomputes48primary certificates plus3predeclared receipt follow-ups,
-and emits counts/per-seed CSV,summaryJSON,receipt timelineSVG. It creates no model/GPU/DB resources.
-Primary48-case and recorded-input audit runners refuse reuse; new executions need new registrations.
-Current artifacts are sealed with checksums.json; verify checksums before analysis. Failed/invalid
-traces and earlier narroweranalysis remain. No task/model/shield training or held-out evaluation.
 
+This runs 12 engineered DEV probes across FlowBoard and OpsConsole, three orders and two commands using real PostgreSQL and synthetic HTTP receivers. It checks protection/admission/receipt behavior, not agent competence, new TEST results, or population deadlines. Model and provider calls are zero. These probes wrap supported transaction methods and never use snapshot replacement as live recovery.
 
-## 2026-11-23T17:45:40.517270+00:00 — bounded study checkpoint
+## Active and historical tests
 
-Current bounded study: `paper/REPRODUCE.md` is the complete procedure. Install optional scientific
-dependencies using `uv sync --frozen --group research`; the check script now includes that group.
-Final full suite: 239 passed in 172.43s, one warning. Scientific source hashes (60 paths) still match
-P6/FROZEN.json after confirmation. Six figures/five tables regenerate from saved data. The local
-bounded reproduction CLI is dry-run by default and cannot launch paid workloads. Its orchestration
-was dry-run/guard tested; it was not redundantly rerun through all six phases.
-Numerical study uses finite models plus separately denominated fresh SQL witnesses, not thousands
-of live browser trajectories. No publish/push or public artifact release is authorized.
+Active tests cover the surviving applications, scheduler, browser acknowledgment/SSE protocol, V7 benchmark controls, outcome oracles, scientific estimators, archive integrity and evidence/presentation loading. Tests tied exclusively to archived implementations are preserved with those implementations in the historical snapshot; they were not weakened to obtain an active pass. Run the historical suite with all original fixtures and OECR build prerequisites as documented in `archive/README.md`.
 
-
-## 2026-11-23T20:06:10.697972+00:00 — native interaction and observability extension
-
-New extension: paper/OBSERVABILITY_REPRODUCE.md. 260tests pass; original207 frozen paths unchanged, new132 frozen paths match. Native default selection glue mock-tested; old JSON replay retained. New bounded2phase local reproduction actually completed: obs-check-20261123. All numerical metrics identical excluding elapsed_seconds. Run verify_observability.py and render_observability.py --output FRESH_PATH to check saved outputs. These commands have no network/model inference. The reproduction --execute uses real isolated localPG, fixed known protocols/seeds, and is not independent confirmation. No further paid reuse of i1 is permitted.
-
-## 2026-11-24T06:14:12.740600+00:00 — Additive study checkpoint
-
-## Additive live native-policy timing report
-See [TCOPE_REPRODUCIBILITY.md](TCOPE_REPRODUCIBILITY.md) for evidence-only regeneration, exact endpoint/revision provenance, full292-test local validation, and the failed locked reconstruction cohort. The earlier commands/results above are preserved. No confirmation efficacy is inferred from invalid or unattempted branches.
+The historical independent Linux record remains 395/22 followed by 22 passing fixture rechecks, across 417 distinct tests; it is not rewritten as a single clean full run. Cleanup validation records its own fresh-source tests separately in `archive/audit/VALIDATION.json`. No model-provider calls or new paid cloud activity are part of these procedures. Optional paid replay/external runners are explicit execution tools and are never invoked by saved-data or test commands.

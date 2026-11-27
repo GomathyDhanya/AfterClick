@@ -1,0 +1,130 @@
+{
+  "cleanup_complete": false,
+  "fresh_clone_validation_pending": true,
+  "historical_regression": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "417",
+    "time": "791.152",
+    "timestamp": "2026-11-26T21:58:10.633907-05:00",
+    "hostname": "Ananths-MacBook-Pro.local"
+  },
+  "active_scientific_tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "39",
+    "time": "19.500",
+    "timestamp": "2026-11-26T22:14:17.626432-05:00",
+    "hostname": "Ananths-MacBook-Pro.local"
+  },
+  "numerical_reproduction": {
+    "all_five_reports_identical": true,
+    "checks": {
+      "normalized": {
+        "identical": true,
+        "actual_sha256": "10000a13423c51793a1d731a9d53be632cc8e12de6b34a2a207c5fe0ea87a014",
+        "reference_sha256": "10000a13423c51793a1d731a9d53be632cc8e12de6b34a2a207c5fe0ea87a014"
+      },
+      "verified": {
+        "identical": true,
+        "actual_sha256": "3bfa649020e126fa792c66eb36c0eb0604b63b473a12e9e6cf73f99e01296c6b",
+        "reference_sha256": "3bfa649020e126fa792c66eb36c0eb0604b63b473a12e9e6cf73f99e01296c6b"
+      },
+      "analysis": {
+        "identical": true,
+        "actual_sha256": "f0e50bcd67e1c773f5920ca58999e2827e9874aeb73eee8ef56e033e85052f9e",
+        "reference_sha256": "f0e50bcd67e1c773f5920ca58999e2827e9874aeb73eee8ef56e033e85052f9e"
+      },
+      "obligations": {
+        "identical": true,
+        "actual_sha256": "0f0b2359ad12102e4c944723065b981ff493133212c89cfaffef50b71b94461b",
+        "reference_sha256": "0f0b2359ad12102e4c944723065b981ff493133212c89cfaffef50b71b94461b"
+      },
+      "actuator-verification": {
+        "identical": true,
+        "actual_sha256": "42d3c083809b5651606271561a495a1000928ce9d42c0fff2a2a8854920ac1e1",
+        "reference_sha256": "42d3c083809b5651606271561a495a1000928ce9d42c0fff2a2a8854920ac1e1"
+      }
+    },
+    "provider_calls": 0,
+    "model_calls": 0
+  },
+  "historical_frozen_reproduction": {
+    "passed": true,
+    "zero_model_calls": true,
+    "zero_provider_calls": true,
+    "relocation_reader_only": true,
+    "frozen_files_checked": 180,
+    "comparisons": {
+      "primary": {
+        "numeric_and_assignment_results_match": true,
+        "graph_verification": {
+          "passed": true,
+          "nodes": 71138,
+          "edges": 36514,
+          "relations": {
+            "queued_effect_admitted": 499,
+            "admitted_ticket_delivered": 872,
+            "receiver_commit_acknowledged": 872,
+            "browser_command_persisted": 5101,
+            "source_precedes_first_request": 744,
+            "actual_http_request_response": 13989,
+            "serial_program_order": 13245,
+            "executed_trajectory": 744,
+            "fresh_policy_continuation_from_equivalent_initial_cut": 448
+          },
+          "raw_files_verified": 31595,
+          "scope": "Observed identity/order joins and certified initial branches; no intermediate reachability proof"
+        }
+      },
+      "larger": {
+        "numeric_and_assignment_results_match": true,
+        "graph_verification": {
+          "passed": true,
+          "nodes": 36444,
+          "edges": 18020,
+          "relations": {
+            "queued_effect_admitted": 336,
+            "admitted_ticket_delivered": 483,
+            "receiver_commit_acknowledged": 483,
+            "browser_command_persisted": 3769,
+            "source_precedes_first_request": 329,
+            "actual_http_request_response": 6213,
+            "serial_program_order": 5884,
+            "executed_trajectory": 329,
+            "fresh_policy_continuation_from_equivalent_initial_cut": 194
+          },
+          "raw_files_verified": 14066,
+          "scope": "Observed identity/order joins and certified initial branches; no intermediate reachability proof"
+        }
+      }
+    },
+    "full_matrix_complete": false
+  },
+  "two_application_demo": {
+    "registered": 12,
+    "terminal": 12,
+    "valid": 12,
+    "pending_received": 8,
+    "complete": true,
+    "model_calls": 0,
+    "provider_calls": 0,
+    "source_clusters": 2,
+    "not_independent_new_tasks": true
+  },
+  "paper_visual_review_complete": true,
+  "paper_pages": 17,
+  "unresolved_static_local_imports": 0,
+  "new_model_calls": 0,
+  "new_provider_calls": 0,
+  "new_paid_cloud_activity": false,
+  "historical_invalid_failed_and_missing_records_preserved": true,
+  "original_research_complete": false,
+  "remaining_original_assignments": 1425,
+  "test_network_restriction": "Python socket connections restricted to loopback during validation; optional paid runners never invoked",
+  "raw_release_publicly_uploaded": false
+}

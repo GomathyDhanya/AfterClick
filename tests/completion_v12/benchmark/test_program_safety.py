@@ -13,7 +13,7 @@ from afterclick.completion_v12.benchmark.oracle import evaluate
 from afterclick.completion_v12.benchmark.runner import allowed, tool_actions
 from afterclick.completion_v12.benchmark.transport import Transport
 
-CONTRACTS = Path("research_ops/completion_v12/candidate_contracts_v6")
+CONTRACTS = Path("research_ops/completion_v12/candidate_contracts_v7")
 
 
 @pytest.mark.parametrize("world_cls,app", [(FlowWorld, "FLOWBOARD"), (OpsWorld, "OPSCONSOLE")])

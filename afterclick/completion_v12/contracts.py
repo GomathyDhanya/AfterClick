@@ -5,13 +5,10 @@ The bundled schema uses a deliberately small JSON Schema vocabulary checked
 here without adding dependencies to historical locked environments.
 """
 
-import csv
 import json
-import re
-from collections import Counter
 from pathlib import Path
 
-from afterclick.completion_v12.evidence import digest, sha
+from afterclick.completion_v12.evidence import digest
 
 KIT = Path("research_ops/completion_v12")
 
@@ -121,65 +118,3 @@ def validate(contract):
 def public_projection(contract):
     validate(contract)
     return contract["public"]
-
-
-def enrollment(root=Path.cwd()):
-    root = Path(root)
-    tasks_dir = root / KIT / "tasks"
-    tasks = {}
-    for path in sorted(tasks_dir.glob("*.json")):
-        c = json.loads(path.read_text())
-        metrics = validate(c)
-        if c["task_id"] in tasks:
-            raise ValueError("Duplicate task ID")
-        tasks[c["task_id"]] = (path, c, metrics)
-    rows, qualified = [], []
-    for name in ("task_design_slots_216.csv", "task_design_slots_72_dev.csv"):
-        with (root / KIT / "manifests" / name).open() as stream:
-            for slot in csv.DictReader(stream):
-                key = slot["slot_id"]
-                row = dict(task_id=key, split=slot["split"], status="NOT_AUTHORED")
-                if key in tasks:
-                    path, c, metrics = tasks[key]
-                    row.update(
-                        status="AUTHORED_UNQUALIFIED",
-                        path=str(path.relative_to(root)),
-                        sha256=sha(path),
-                        metrics=metrics,
-                    )
-                    if c["reference_plan"]["verified"] and c["authoring_status"] in {
-                        "validated",
-                        "frozen",
-                    }:
-                        cert = c["reference_plan"].get("certificate_path")
-                        if cert is None or not (root / cert).is_file():
-                            raise ValueError(
-                                "Verified witness has no executable evidence certificate"
-                            )
-                        row.update(
-                            status="WITNESS_RECORDED_REVIEW_PENDING",
-                            certificate_sha256=sha(root / cert),
-                        )
-                    qualified.append(row)
-                rows.append(row)
-    unknown = set(tasks) - {r["task_id"] for r in rows}
-    if unknown:
-        raise ValueError("Authored tasks lack a design slot: " + str(unknown))
-    return dict(
-        schema_version=1,
-        counts=dict(Counter(r["status"] for r in rows)),
-        rows=rows,
-        test_freeze_eligible=False,
-        meaning="Witnesses alone do not qualify complete cohort, split diversity, DEV or power",
-    )
-
-
-def verify_kit():
-    errors = []
-    for line in (KIT / "KIT_SHA256SUMS.txt").read_text().splitlines():
-        expected, name = re.split(r"\s+", line, maxsplit=1)
-        if sha(KIT / name) != expected:
-            errors.append(name)
-    if errors:
-        raise ValueError("Supplied specification changed: " + str(errors))
-    return dict(checked=22, passed=True)

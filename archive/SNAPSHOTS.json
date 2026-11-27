@@ -1,0 +1,50 @@
+{
+  "source_commit": "31eab61870befc520841d11f422bb1a372ba92b8",
+  "source_remote": "https://github.com/GomathyDhanya/AfterClick.git",
+  "source_branch": "codex/afterclick-paper-repo-20261126",
+  "tracked_files": 2754,
+  "freeze_path": "research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/PROTOCOL_FROZEN.json",
+  "freeze_sha256": "f8ebae7ca2edd9528e59db165e1fea2db756f24d123a4de351a335431c467baf",
+  "frozen_source_and_gate_hashes_verified": 180,
+  "assets": [
+    {
+      "local_path": "artifacts/AfterClick_v12_Evidence_Release.tar.gz",
+      "bytes": 637853954,
+      "sha256": "c031afd3c46eab822770cc41e684d87f2a2aa786b64cff70eb79f90572667020",
+      "uploaded": false
+    },
+    {
+      "local_path": "artifacts/publication-release/AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+      "bytes": 645459203,
+      "sha256": "d82178a963b3fe1a4f39d72727c39a5648de8383e8e8bda09b8740779734d509",
+      "uploaded": false
+    },
+    {
+      "local_path": "artifacts/AfterClick_Publication_Companion_20261126.tar.gz",
+      "bytes": 98844344,
+      "sha256": "97ea5961820ab7799738c78f567cb52b3c301f8a22566a1ee978673396fc782f",
+      "uploaded": false
+    },
+    {
+      "local_path": "artifacts/cleanup-20261126/AfterClick_Historical_31eab618.bundle",
+      "bytes": 10370053,
+      "sha256": "26f6bf9f1f19792b46559ca0fc4060b4f9037193dec3a2d6b4c8f61a7344011d",
+      "uploaded": false
+    }
+  ],
+  "source_snapshot_immutable_by_commit": true,
+  "raw_evidence_preserved_locally": true,
+  "new_public_raw_release": false,
+  "supplied_paper_assets": [
+    {
+      "local_path": "artifacts/cleanup-20261126/AfterClick_Overleaf_Source.zip",
+      "sha256": "1a3520e816beb07fc7bdd5ccf7f452c91d4e81c1beb64a91312f7ddf8b211fd8",
+      "bytes": 151328
+    },
+    {
+      "local_path": "artifacts/cleanup-20261126/AfterClick_Overleaf_Source.pdf",
+      "sha256": "ee2704d61d95da976bb0a4423041a50ee9ea4dbd7c46e1c53330e13632f7c176",
+      "bytes": 351033
+    }
+  ]
+}

@@ -1,1 +1,0 @@
-INCONCLUSIVE: zero valid efficacy branches. Zeros in the frozen analyzer's verified-completion counts are not zero safety rates. Original stop rule applied; do not use invalid/unattempted rows in a safety comparison.

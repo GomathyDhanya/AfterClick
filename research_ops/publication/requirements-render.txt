@@ -1,2 +1,0 @@
-# Additional paper-rendering dependency; scientific uv.lock remains unchanged.
-reportlab==4.4.9

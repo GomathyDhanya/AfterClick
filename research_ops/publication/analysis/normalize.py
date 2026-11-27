@@ -5,9 +5,10 @@ import collections
 import csv
 import hashlib
 import json
+import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(os.environ.get("AFTERCLICK_DATA_ROOT", Path(__file__).resolve().parents[3]))
 INDEX = ROOT / "research_ops/completion_v12/final_package/RELEASE_INDEX.json"
 
 

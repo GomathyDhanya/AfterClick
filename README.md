@@ -1,30 +1,38 @@
 # AfterClick
 
-AfterClick measures local task completion, irreversible external-effect history, enforcement timing, and legitimate restoration in asynchronous agent workflows.
+**Beyond Action-Level Safety in Asynchronous AI Agents**
 
-The current deliverable is an **anonymous bounded empirical paper**, supported by all-case evidence audits, a controlled actuator study, 72 new PostgreSQL/HTTP mechanism probes, and 264 new retrospective 9B reviewer-prompt replays. These new probes and replays do not complete the original frozen evaluation: **1,479 of 2,904 assignments have terminal records; 1,425 remain unexecuted**.
+AfterClick is the implementation and reproducibility artifact for the [current paper](paper/main.tex), with [compiled PDF](paper/AfterClick.pdf). It studies how local task completion, irreversible external-effect history, enforcement timing, and restoration obligations differ in asynchronous agent workflows.
 
-- [Current manuscript](paper/current/MANUSCRIPT.md) · [PDF](output/pdf/AFTERCLICK_CURRENT_MANUSCRIPT.pdf)
-- [Experimental appendix](paper/current/APPENDIX.md) · [PDF](output/pdf/AFTERCLICK_CURRENT_APPENDIX.pdf)
-- [Evidence and limitations](evidence/publication/README.md) · [Claim registry](paper/current/CLAIM_REGISTRY.json)
-- [Reproduction guide](docs/PUBLICATION_REPRODUCIBILITY.md) · [Exact publication status](research_ops/publication/PUBLICATION_STATUS.json)
+The bounded study reports 65 local-completion/history mismatches among 1,073 valid internal episodes; a 288-branch fixed-recommendation timing experiment (287 valid); 72 engineered PostgreSQL/HTTP admission-boundary probes; 617 reconstructed restoration duties; and 264 historical reviewer responses plus 264 retrospective replays. These findings do **not** complete the original research program: **1,479 of 2,904 registered assignments are terminal; 1,425 remain unexecuted**. Unknown and invalid outcomes are retained. The paper makes no universal controller-superiority or pure neural-latency causal claim.
 
-Install the existing locked environment and verify the compact evidence:
+## Verify and reproduce
 
 ```sh
 uv sync --frozen --group research
 uv run --frozen --group research python -m research_ops.publication.program verify-data
-uv run --frozen --group research --with reportlab==4.4.9 python -m research_ops.publication.program generate-paper
+bash scripts/build_paper.sh
+bash scripts/test.sh
 ```
 
-The saved-data commands do not invoke a model or create cloud resources. Full analyses require the separately supplied raw archive; a source-only clone can build the paper from compact reports. See the [data availability and license status](research_ops/publication/DATA_AVAILABILITY.md). No public raw-data upload or DOI is claimed.
+Building the paper requires Tectonic or an equivalent LaTeX environment; the Python plotting dependencies use the existing lock. Plots and numerical tables read checked JSON/CSV evidence directly. Saved-data commands do not initialize an endpoint or call a model. A source-only checkout verifies compact evidence and rebuilds the paper; raw analyses additionally require the separately supplied archives. See [reproduction instructions](docs/REPRODUCIBILITY.md).
 
-The new source audit corrects a prior interpretation: legacy admission and protection already share a schema-level database lock. The observed late effects involve tickets admitted before containment, rather than evidence of an unlocked database race. Missing information/restoration causal controls, exact mid-trajectory counterfactuals, independent human review, and low clean competence remain explicit limitations.
+## Navigate by research question
 
-Runtime code remains under `afterclick/`; the two applications use real PostgreSQL schemas and synthetic HTTP receivers. [Architecture](docs/ARCHITECTURE.md), [original research specification](docs/RESEARCH_SPEC.md), [current progress](docs/PROGRESS.md), and [Git publishing guide](docs/GITHUB_PUBLISHING.md) retain their history. The [previous landing page](research_ops/history/README_20261125.md), [v12 paper](paper/v12/AFTERCLICK_V12_MANUSCRIPT.md), prior frozen studies, failed trials, original data, and financial records are preserved.
+| Question | Implementation and evidence |
+|---|---|
+| RQ1: local completion vs forbidden history | [Normalizer](research_ops/publication/analysis/normalize.py), [analysis](research_ops/publication/analysis/analyze_existing.py), [all 65 case cards](evidence/publication/analysis/cases/) |
+| RQ2: enforcement delay and admission boundary | [Controlled analysis](research_ops/scripts/v12_actuator_analysis.py), [independent verifier](research_ops/publication/analysis/verify_actuator.py), [real PostgreSQL/HTTP probe](research_ops/publication/boundary_probe.py) |
+| RQ3: restoration debt | [Duty reconstruction](research_ops/publication/analysis/obligation_audit.py), [617 duty records](evidence/publication/obligations/duties.csv) |
+| RQ4: reviewer behavior | [Decision analysis](research_ops/publication/analysis/analyze_existing.py), [replay implementation](research_ops/publication/review_replay.py), [completed replay report](evidence/publication/replay/report.json) |
+| Supplementary results | [Policy estimator](research_ops/scripts/v12_confirmatory_analysis.py), [external benchmark](research_ops/scripts/v12_external.py), [graph analysis](research_ops/scripts/v12_graphs.py) |
 
-## Repository organization
+The [evidence index](evidence/index.json) maps each question to scripts, reports and figures. The [claim registry](paper/claim_registry.json) and [claim/evidence matrix](evidence/claim_evidence_matrix.csv) bind claims to source hashes. [Architecture](docs/ARCHITECTURE.md), [threat model](docs/THREAT_MODEL.md), and [data schema](docs/DATA_SCHEMA.md) describe the implementation and its limits.
 
-`afterclick/`, `apps/`, `migrations/`, `fixtures/`, `tests/` and `scripts/` retain the runtime and test interfaces. Current scientific code is in `research_ops/publication/analysis/`, immutable run registrations in `registration/`, and scientific scope documents in `protocols/`. The generated `claim_evidence_matrix.csv` connects claims, evidence hashes and explicit gaps. `evidence/README.md` indexes datasets; `paper/current/` is authoritative, while `paper/history/` indexes preserved versions and pinned legacy paths. See `research_ops/publication/LAYOUT_MIGRATION.json` for the actual moves and compatibility wrappers.
+## Active artifact and immutable history
 
-`LICENSE` records the existing no-new-license-grant status; an open-source/data license has not been chosen on the owner's behalf.
+The active tree contains the V7 contracts (216 TEST, 72 DEV), current benchmark and shared infrastructure, paper analyses, compact evidence, and current scientific tests. Module paths remain stable where moving them would add needless risk. The active package is not the original frozen checkout.
+
+Superseded catalogs, TCOPE/OECR/model-sprint implementations, older papers, full historical tests, negative results, financial ledgers and original source paths remain recoverable at pinned commit `31eab61870befc520841d11f422bb1a372ba92b8`. [Archive restoration](archive/README.md) records that snapshot, checksummed local assets, and the unchanged 180-file integrity procedure. Large raw evidence is preserved separately and has not been publicly uploaded. The archive index contains pointers and audit reports, not another loose copy of the historical tree.
+
+[Data availability](research_ops/publication/DATA_AVAILABILITY.md) and [LICENSE](LICENSE) state the current release and licensing status. The paper is anonymous; the public repository identifies its owner.

@@ -64,7 +64,10 @@ def main(graph, output):
                 ack_pointer=f"/v12_events/{i}",
                 result=str(result_path),
                 result_sha256=hashlib.sha256(result_path.read_bytes()).hexdigest(),
-                clock_caution="Receiver committed before successful transport ACK; audit event is an upper observation bound, not exact SQL COMMIT",
+                clock_caution=(
+                    "Receiver committed before successful transport ACK; "
+                    "audit event is an upper observation bound, not exact SQL COMMIT"
+                ),
             )
     node_data = {}
     for line in (graph / "nodes.jsonl").open():

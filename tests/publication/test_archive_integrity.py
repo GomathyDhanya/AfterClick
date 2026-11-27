@@ -7,7 +7,7 @@ import tarfile
 
 import pytest
 
-from research_ops.publication.archive import verify
+from research_ops.publication.analysis.archive import verify
 
 
 def fixture_archive(path, payload=b"original", actual=b"original", name="afterclick-v12/raw.json"):

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "zero_model_calls": true,
+  "zero_provider_calls": true,
+  "relocation_reader_only": true,
+  "frozen_files_checked": 180,
+  "comparisons": {
+    "primary": {
+      "numeric_and_assignment_results_match": true,
+      "graph_verification": {
+        "passed": true,
+        "nodes": 71138,
+        "edges": 36514,
+        "relations": {
+          "queued_effect_admitted": 499,
+          "admitted_ticket_delivered": 872,
+          "receiver_commit_acknowledged": 872,
+          "browser_command_persisted": 5101,
+          "source_precedes_first_request": 744,
+          "actual_http_request_response": 13989,
+          "serial_program_order": 13245,
+          "executed_trajectory": 744,
+          "fresh_policy_continuation_from_equivalent_initial_cut": 448
+        },
+        "raw_files_verified": 31595,
+        "scope": "Observed identity/order joins and certified initial branches; no intermediate reachability proof"
+      }
+    },
+    "larger": {
+      "numeric_and_assignment_results_match": true,
+      "graph_verification": {
+        "passed": true,
+        "nodes": 36444,
+        "edges": 18020,
+        "relations": {
+          "queued_effect_admitted": 336,
+          "admitted_ticket_delivered": 483,
+          "receiver_commit_acknowledged": 483,
+          "browser_command_persisted": 3769,
+          "source_precedes_first_request": 329,
+          "actual_http_request_response": 6213,
+          "serial_program_order": 5884,
+          "executed_trajectory": 329,
+          "fresh_policy_continuation_from_equivalent_initial_cut": 194
+        },
+        "raw_files_verified": 14066,
+        "scope": "Observed identity/order joins and certified initial branches; no intermediate reachability proof"
+      }
+    }
+  },
+  "full_matrix_complete": false
+}

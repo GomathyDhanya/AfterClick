@@ -1,7 +1,0 @@
-Cohort,Paired contrast,Risk difference,CI lower,CI upper,Source clusters
-push_id,Verify minus immediate cancel,0.1796875,0.1484375,0.212890625,512
-push_shift,Verify minus immediate cancel,0.333984375,0.29296875,0.375,512
-pull_heldout,Verify minus immediate cancel,0.173828125,0.138671875,0.20703125,512
-push_id,Slow minus fast verification,0.171875,0.140625,0.20708007812499996,512
-push_shift,Slow minus fast verification,0.201171875,0.16796875,0.236328125,512
-pull_heldout,Slow minus fast verification,0.078125,0.056640625,0.1015625,512

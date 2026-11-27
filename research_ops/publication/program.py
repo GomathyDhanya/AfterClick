@@ -1,9 +1,8 @@
-"""Supported saved-data entrypoints. No command launches paid inference/cloud jobs."""
+"""Current paper entrypoints. Saved-data commands cannot launch inference or cloud jobs."""
 
 import argparse
-import csv
-import hashlib
-import json
+import os
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -11,82 +10,82 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def command(args):
-    print("Executing " + args[2] if len(args) > 2 else str(args), flush=True)
-    subprocess.run(args, cwd=ROOT, check=True)
+def command(args, *, cwd=ROOT, env=None):
+    subprocess.run(args, cwd=cwd, env=env, check=True)
 
 
 def main():
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument(
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
         "command",
-        choices=["verify-data", "reproduce-existing", "analyze", "generate-paper", "test", "demo"],
+        choices=[
+            "verify-data",
+            "reproduce-existing",
+            "analyze",
+            "rq1",
+            "rq2",
+            "rq3",
+            "rq4",
+            "generate-paper",
+            "test",
+            "demo",
+        ],
     )
-    p.add_argument("--output", type=Path)
-    p.add_argument("--archive", type=Path)
-    p.add_argument("--restore-to", type=Path)
-    p.add_argument("--pdf-python", default=sys.executable)
-    a = p.parse_args()
-    data = ROOT / "evidence/publication"
-    if a.command == "verify-data" and a.archive:
-        from research_ops.publication.analysis.archive import verify
+    parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--raw-root",
+        type=Path,
+        default=ROOT,
+        help="Restored raw evidence root; does not alter original files",
+    )
+    parser.add_argument(
+        "--historical-root",
+        type=Path,
+        help="Exact source restored by archive/restore.py, with raw evidence",
+    )
+    parser.add_argument("--tex-engine", default="tectonic")
+    args = parser.parse_args()
+    if args.command == "verify-data":
+        from research_ops.publication.evidence import verify
 
-        verify(a.archive, a.restore_to)
-    elif a.command == "verify-data":
-        manifest = json.loads((data / "MANIFEST.json").read_text())
-        for name, row in manifest["files"].items():
-            assert hashlib.sha256((data / name).read_bytes()).hexdigest() == row["sha256"], name
-        registry = ROOT / "paper/current/CLAIM_REGISTRY.json"
-        if registry.exists():
-            for row in json.loads(registry.read_text()).values():
-                assert (
-                    hashlib.sha256((data / row["source"]).read_bytes()).hexdigest()
-                    == row["source_sha256"]
-                )
-        matrix = ROOT / "research_ops/publication/claim_evidence_matrix.csv"
-        matrix_rows = list(csv.DictReader(matrix.open()))
-        for row in matrix_rows:
-            assert (
-                hashlib.sha256((ROOT / row["evidence"]).read_bytes()).hexdigest() == row["sha256"]
+        verify()
+    elif args.command == "reproduce-existing":
+        if args.historical_root is None or args.output is None:
+            parser.error(
+                "--historical-root and fresh --output are required; "
+                "integrity checks run in that exact restored source"
             )
-        print(
-            json.dumps(
-                dict(
-                    claim_matrix_rows_verified=len(matrix_rows),
-                    compact_files_verified=len(manifest["files"]),
-                    claim_registry_verified=registry.exists(),
-                    raw_archive_verification=(
-                        "See separate restored-data/Linux reports; "
-                        "compact verification does not verify absent raw files"
-                    ),
-                    provider_calls=0,
-                    model_calls=0,
-                )
-            )
-        )
-    elif a.command == "reproduce-existing":
-        if a.output is None:
-            p.error("--output must be a fresh directory")
+        history = args.historical_root.resolve()
         command(
             [
                 sys.executable,
-                "research_ops/scripts/reproduce_afterclick_v12.py",
+                str(history / "research_ops/scripts/reproduce_afterclick_v12.py"),
                 "--root",
-                str(ROOT),
+                str(history),
                 "--output",
-                str(a.output.resolve()),
-            ]
+                str(args.output.resolve()),
+            ],
+            cwd=history,
         )
-    elif a.command == "analyze":
-        if a.output is None:
-            p.error("--output must be a fresh directory")
-        out = a.output.resolve()
+    elif args.command in {"analyze", "rq1", "rq2", "rq3", "rq4"}:
+        if args.output is None:
+            parser.error("--output must be a fresh directory")
+        out = args.output.resolve()
         out.mkdir(parents=True, exist_ok=False)
-        for module, flags in [
+        raw = args.raw_root.resolve()
+        env = dict(os.environ, AFTERCLICK_DATA_ROOT=str(raw))
+        steps = [
             ("normalize", ["--output", str(out / "normalized")]),
             (
                 "verify_normalized",
-                ["--data", str(out / "normalized"), "--output", str(out / "verified")],
+                [
+                    "--root",
+                    str(raw),
+                    "--data",
+                    str(out / "normalized"),
+                    "--output",
+                    str(out / "verified"),
+                ],
             ),
             (
                 "analyze_existing",
@@ -100,46 +99,50 @@ def main():
                 "verify_actuator",
                 [
                     "--run",
-                    str(ROOT / "artifacts/research_runs/v12-31-complex-controlled-enforcement-v1"),
+                    str(raw / "artifacts/research_runs/v12-31-complex-controlled-enforcement-v1"),
                     "--output",
                     str(out / "actuator-verification"),
                 ],
             ),
-        ]:
-            command([sys.executable, "-m", "research_ops.publication.analysis." + module, *flags])
-    elif a.command == "generate-paper":
-        from research_ops.publication.analysis.figures import generate
-        from research_ops.publication.analysis.manuscript import build
-
-        target = ROOT / "paper/current"
-        generate(data, target / "figures")
-        build(data, target)
-        for name in ["MANUSCRIPT", "APPENDIX"]:
+        ]
+        # One shared normalized population keeps RQ denominators synchronized.
+        for module, flags in steps:
             command(
-                [
-                    a.pdf_python,
-                    "research_ops/scripts/render_afterclick_pdf.py",
-                    str(target / (name + ".md")),
-                    str(ROOT / "output/pdf" / ("AFTERCLICK_CURRENT_" + name + ".pdf")),
-                    "--anonymous",
-                ]
+                [sys.executable, "-m", "research_ops.publication.analysis." + module, *flags],
+                env=env,
             )
-    elif a.command == "test":
+    elif args.command == "generate-paper":
+        from research_ops.publication.evidence import verify
+
+        verify()
+        command([sys.executable, "paper/figures.py"])
+        command([sys.executable, "paper/tables.py"])
+        build = ROOT / "artifacts/paper-build"
+        build.mkdir(parents=True, exist_ok=True)
+        command(
+            [
+                args.tex_engine,
+                "--untrusted",
+                "--keep-logs",
+                "--outdir",
+                str(build),
+                str(ROOT / "paper/main.tex"),
+            ]
+        )
+        shutil.copy2(build / "main.pdf", ROOT / "paper/AfterClick.pdf")
+    elif args.command == "test":
         command(
             [
                 sys.executable,
                 "-m",
                 "pytest",
-                "tests/completion_v12/benchmark/test_scientific_estimators.py",
-                "tests/completion_v12/benchmark/test_financial_closure.py",
-                "tests/completion_v12/benchmark/test_oracle_alternatives.py",
-                "tests/publication",
                 "-q",
+                *(["--junitxml=" + str(args.output.resolve())] if args.output else []),
             ]
         )
     else:
-        if a.output is None:
-            p.error("--output must be a fresh directory")
+        if args.output is None:
+            parser.error("--output must be a fresh directory")
         command(
             [
                 sys.executable,
@@ -147,7 +150,7 @@ def main():
                 "research_ops.publication.boundary_probe",
                 "--dev",
                 "--output",
-                str(a.output.resolve()),
+                str(args.output.resolve()),
             ]
         )
 

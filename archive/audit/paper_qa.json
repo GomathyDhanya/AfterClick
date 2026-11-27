@@ -1,0 +1,92 @@
+{
+  "page_count": 17,
+  "pages": [
+    {
+      "page": 1,
+      "outside_margin_words": []
+    },
+    {
+      "page": 2,
+      "outside_margin_words": []
+    },
+    {
+      "page": 3,
+      "outside_margin_words": []
+    },
+    {
+      "page": 4,
+      "outside_margin_words": []
+    },
+    {
+      "page": 5,
+      "outside_margin_words": []
+    },
+    {
+      "page": 6,
+      "outside_margin_words": []
+    },
+    {
+      "page": 7,
+      "outside_margin_words": []
+    },
+    {
+      "page": 8,
+      "outside_margin_words": []
+    },
+    {
+      "page": 9,
+      "outside_margin_words": []
+    },
+    {
+      "page": 10,
+      "outside_margin_words": []
+    },
+    {
+      "page": 11,
+      "outside_margin_words": []
+    },
+    {
+      "page": 12,
+      "outside_margin_words": []
+    },
+    {
+      "page": 13,
+      "outside_margin_words": []
+    },
+    {
+      "page": 14,
+      "outside_margin_words": []
+    },
+    {
+      "page": 15,
+      "outside_margin_words": []
+    },
+    {
+      "page": 16,
+      "outside_margin_words": []
+    },
+    {
+      "page": 17,
+      "outside_margin_words": []
+    }
+  ],
+  "changed_pages": [
+    "page-08",
+    "page-09",
+    "page-10",
+    "page-11",
+    "page-12",
+    "page-13",
+    "page-16",
+    "page-17"
+  ],
+  "prior_all_pages_reviewed": true,
+  "visual_review_complete": true,
+  "pdf_sha256": "4139f3c1fc6890b89ce7475f828febf913eae61a74b204ee444afafc7c27e60b",
+  "author": "Anonymous",
+  "type_setting": "Tectonic/XeTeX; original supplied PDF used pdfTeX; numerical values sourced from checked evidence",
+  "paper_numerical_display_corrections": [
+    "Official external Saga CI upper bound now rounds to 57.1% directly from 0.5714285714285714; supplied draft transcribed 57.0%. Underlying result unchanged."
+  ],
+  "visual_review_method": "All 17 initial rendered pages inspected; all 8 changed final pages re-inspected. Debt legend spacing corrected; references kept together; no clipping, overlap or missing glyphs observed."
+}

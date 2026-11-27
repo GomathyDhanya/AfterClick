@@ -1,36 +1,13 @@
-# Current publication threat boundary
+# Threat model and interpretation limits
 
-The current two-application study uses public browser observations and declared pending-service authorization rules. Evaluator-private contract choices, scheduler details, oracle outputs, debt labels and retrospective graph labels are not model inputs. Effects are real HTTP/SQL-persisted synthetic effects, not real customer messages or production disclosure. The legacy admission/controller transactions share a schema lock; admitted tickets are not recalled by later containment. Historical exact authorization-read/commit instants remain unknown.
+An imperfect actor performs a legitimate task in an application with asynchronous workers and concurrent state changes. A reviewer may be overrestrictive or misinterpret operation-specific authority. A task contract defines the goal, authorized effect scope, preservation constraints and legitimate service obligations. Ordinary application permission is not equivalent to user authorization for a particular effect.
 
-The current [manuscript](../paper/current/MANUSCRIPT.md), [schema](DATA_SCHEMA.md), [methodological correction](../research_ops/publication/protocols/METHODOLOGICAL_CORRECTION.md) and [reproduction guide](PUBLICATION_REPRODUCIBILITY.md) define the measured scope and limits. Independent human policy validation and broad production security claims are absent. The earlier bounded threat-model text below is preserved as historical context; its future-tense agent statements do not describe the current publication phase.
+The testbed uses trusted synthetic public authority and private evaluator contracts. Signed-authority fields are fixture assertions, not a deployed cryptographic authentication protocol. Browser provenance headers are not production authentication. The public model interface excludes private evaluator labels and hidden schedules. Receiver effects are synthetic, independently persisted HTTP effects; the study involves no real customers, personal data, production secrets, charges or uncontrolled third-party commitments.
 
-## Historical bounded threat model
+The evaluated outcomes distinguish local completion `L`, legitimate completion `G`, forbidden effect history `F`, and joint safe completion `Y = G * (1-F)`. `L` and `G` have distinct definitions even though they agree on the observed valid internal episodes. Invalid and unexecuted assignments are unknown. A later local repair cannot erase a persisted forbidden effect under the modeled immutable-history contract. A different compensation contract could change that conclusion.
 
-# Threat model
+Containment can prevent admission and create service-reopening or approved-resubmission obligations. Reopening or requeueing does not prove approved delivery. Available observations do not establish safe recoverability for most intermediate prefixes; unknown means insufficient evidence, not proven impossibility. There are no formal certificates for complex LLM graph prefixes.
 
-This controlled application models accidental consequential actions, stale clients, ambiguous
-acknowledgements, and scripted collaborator edits. Application permission is distinct from task
-authorization. Contracts are independent of the evaluated policy. A malicious database administrator
-or research controller is outside the trust boundary.
+The study does not cover malicious database administrators, compromised receivers, arbitrary prompt injection, arbitrary network adversaries, production access control, or all distributed-worker failures. Policy contrasts are intervention bundles. Historical response intervals include transport, serving and queueing; they are not pure inference latency. Mechanism probes reuse opened constructed DEV sources. Original enrollment remains incomplete and independent human authority/oracle review is absent.
 
-Public field revision counters are freshness tokens, not identity or access-control credentials.
-Each accepted write advances touched counters even for identical values. Conditional patches compare
-original tokens and current record version atomically. Legacy requests retain strict record-version
-checking. Clients must not discard original preconditions; the shipped editor never does so.
-
-The oracle trusts persisted semantic history and the scripted-observer inbox. Irreversibility needs
-both receipt and matching event evidence under the contract's forbidden-history scope. A planner
-claim, unsupported action, timeout, or risk flag is not proof. Reset is a research-only fixture
-operation; snapshot restoration is never a live recovery primitive.
-
-The deterministic writer remains serialized per world. Three bounded workflows and one selected
-root mutation are supported by the new verifier. Arbitrary concurrent histories, external delivery,
-human awareness, distributed workers, arbitrary JS snapshots, and public-website staging are not
-claimed. UNKNOWN, PARTIAL, CONFLICT, and CENSORED remain distinct.
-
-Full contract files include research-only fixture/seed data. A future LLM must receive an allowlisted
-task/authorization summary, never the full contract, hidden schedule, oracle certificate or future
-trace. No adaptive model consumes the new evaluator's output today.
-
-Fixture credentials are intentionally public. Normal Docker ports are loopback-only; isolated
-validation exposes no database port. This is not a production security certification.
+Raw-data credential scanning is heuristic, not a universal privacy guarantee. Public release and a new data/software license remain separate owner decisions; see the root license-status notice and data availability statement.

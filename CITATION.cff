@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Use the current anonymous manuscript and its evidence package; the original full experimental matrix is incomplete."
 type: article
-title: "AfterClick: Admission, Irreversible Effects, and Restoration in Asynchronous Agent Workflows"
+title: "AfterClick: Beyond Action-Level Safety in Asynchronous AI Agents"
 authors:
   - family-names: Anonymous
 version: publication-20261126
