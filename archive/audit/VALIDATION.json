@@ -1,6 +1,6 @@
 {
-  "cleanup_complete": false,
-  "fresh_clone_validation_pending": true,
+  "cleanup_complete": true,
+  "fresh_clone_validation_pending": false,
   "historical_regression": {
     "name": "pytest",
     "errors": "0",
@@ -126,5 +126,62 @@
   "original_research_complete": false,
   "remaining_original_assignments": 1425,
   "test_network_restriction": "Python socket connections restricted to loopback during validation; optional paid runners never invoked",
-  "raw_release_publicly_uploaded": false
+  "raw_release_publicly_uploaded": false,
+  "fresh_clone": {
+    "source_commit": "317b2180c1f6cfee3f940e449535b10d82f37423",
+    "locked_dependency_install": true,
+    "npm_locked_install_and_build": true,
+    "compact_verification": {
+      "compact_files_verified": 144,
+      "claim_registry_entries_verified": 14,
+      "claim_matrix_rows_verified": 14,
+      "model_calls": 0,
+      "provider_calls": 0,
+      "raw_evidence_verified": false
+    },
+    "scientific_tests": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "39",
+      "time": "50.070",
+      "timestamp": "2026-11-26T22:18:55.995032-05:00",
+      "hostname": "Ananths-MacBook-Pro.local"
+    },
+    "both_application_demo": {
+      "registered": 12,
+      "terminal": 12,
+      "valid": 12,
+      "pending_received": 8,
+      "complete": true,
+      "model_calls": 0,
+      "provider_calls": 0,
+      "source_clusters": 2,
+      "not_independent_new_tasks": true
+    },
+    "all_eight_figures_regenerated": true,
+    "all_ten_numerical_tables_identical": true,
+    "claim_registry_and_matrix_identical": true,
+    "latex_compiled": true,
+    "optional_official_engine_import": {
+      "undobench_version": "1.0.0",
+      "engine_imported": true,
+      "adapter_imported": true,
+      "model_calls": 0,
+      "provider_calls": 0
+    },
+    "network_scope": "Loopback-only Python sockets for tests/demonstration/import smoke; ordinary dependency and TeX package downloads during install/build only"
+  },
+  "documented_restoration_procedure": {
+    "source_commit": "31eab61870befc520841d11f422bb1a372ba92b8",
+    "tracked_source_exported": true,
+    "frozen_files_verified": 180,
+    "missing_raw_gate_paths": [],
+    "all_180_frozen_hashes_verified": true,
+    "provider_calls": 0,
+    "model_calls": 0
+  },
+  "raw_results_unchanged": true,
+  "complete_original_study_claim": false
 }

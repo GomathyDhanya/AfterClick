@@ -2,7 +2,9 @@
 
 At the start of a session, read `README.md`, `docs/RESEARCH_SPEC.md`,
 `docs/ARCHITECTURE.md`, and `docs/PROGRESS.md`; inspect Git status and continue the earliest
-incomplete milestone. The user-supplied implementation brief is in `docs/IMPLEMENTATION_BRIEF.md`.
+incomplete milestone. The historical implementation brief and original research specification
+are preserved in the pinned snapshot documented in `archive/README.md`; `docs/RESEARCH_SPEC.md`
+describes the current paper scope.
 
 Preserve validated foundations. Do not report proposals or unexecuted checks as completed work.
 Use real PostgreSQL for integration/replay/recovery evidence. Keep experiments in isolated `ac_*`

@@ -1,1 +1,7 @@
-[]
+{
+  "local_imports": [],
+  "optional_external_execution": [
+    "Archived undobench 1.0.0 supplies optional engine imports"
+  ],
+  "dynamic_external_consumers_certified": false
+}

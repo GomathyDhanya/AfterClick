@@ -1,10 +1,10 @@
 {
   "source_commit": "31eab61870befc520841d11f422bb1a372ba92b8",
   "original_files": 2754,
-  "active_files": 631,
+  "active_files": 632,
   "archived_original_paths": 2174,
-  "added_paths": 51,
-  "file_reduction": 2123,
+  "added_paths": 52,
+  "file_reduction": 2122,
   "removed_catalog_paths": 1445,
   "dispositions": {
     "ACTIVE_DOCUMENTATION": 41,

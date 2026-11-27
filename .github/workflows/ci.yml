@@ -29,8 +29,8 @@ jobs:
       - run: npm ci --prefix apps/flowboard-web
       - run: npm run build --prefix apps/flowboard-web
       - run: uv run --group research playwright install --with-deps chromium
-      - run: uv run --group research ruff check afterclick tests migrations
-      - run: uv run --group research ruff format --check afterclick tests migrations
+      - run: uv run --group research ruff check afterclick tests migrations research_ops archive paper/*.py
+      - run: uv run --group research ruff format --check afterclick tests migrations research_ops archive paper/*.py
       - run: uv run --group research pytest -q --junitxml=artifacts/tests.xml
       - run: uv run --group research python -m research_ops.publication.program demo --output artifacts/demo
       - run: uv run --group research python -m research_ops.publication.program verify-data

@@ -233,7 +233,19 @@ def analyze(source_commit, output):
             writer.writerows(rows)
     (output / "archived_paths.txt").write_text("\n".join(sorted(archived)) + "\n")
     (output / "dynamic_references.json").write_text(json.dumps(dynamic, indent=2) + "\n")
-    (output / "unresolved_dependencies.json").write_text(json.dumps(unresolved, indent=2) + "\n")
+    (output / "unresolved_dependencies.json").write_text(
+        json.dumps(
+            {
+                "local_imports": unresolved,
+                "optional_external_execution": [
+                    "Archived undobench 1.0.0 supplies optional engine imports"
+                ],
+                "dynamic_external_consumers_certified": False,
+            },
+            indent=2,
+        )
+        + "\n"
+    )
     summary = {
         "source_commit": source_commit,
         "original_files": len(old),

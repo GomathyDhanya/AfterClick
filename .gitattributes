@@ -29,3 +29,6 @@ paper/current/figures/forensic-atlas/*.svg -whitespace
 
 # Keep user-supplied publication specifications exactly as received.
 research_ops/publication/inputs/* -whitespace
+
+# Font notice retained verbatim for embedded scientific figure fonts.
+LICENSES/DejaVu.txt -whitespace
