@@ -1,0 +1,86 @@
+{
+  "scope": "exploratory pre-admission proposed action categories; protection outcome is constant (no timely proposals)",
+  "distance": "Levenshtein edit distance divided by max sequence length",
+  "algorithm": "average-linkage agglomeration",
+  "empty_sequences": 56,
+  "nonempty": 81,
+  "distinct_sequences": 49,
+  "candidates": [
+    {
+      "k": 2,
+      "silhouette": 0.40160862617419
+    },
+    {
+      "k": 3,
+      "silhouette": 0.4110729666137812
+    },
+    {
+      "k": 4,
+      "silhouette": 0.4376607283749594
+    },
+    {
+      "k": 5,
+      "silhouette": 0.38382614325886233
+    }
+  ],
+  "selected_k": 4,
+  "source_subsample_stability": {
+    "repetitions": 100,
+    "median_ARI": 1.0,
+    "lower_ARI": 0.6601348718618243,
+    "upper_ARI": 1.0
+  },
+  "clusters": [
+    {
+      "cluster": 0,
+      "n": 56,
+      "medoid_episode": "primary:TEST-CROSS_TEAM_APPROVAL-L2-FLOWBOARD-03-P0-generous-0-primary",
+      "medoid_sequence": [
+        "observe_or_finish",
+        "record",
+        "record",
+        "record",
+        "observe_or_finish",
+        "record",
+        "record",
+        "approval",
+        "record"
+      ],
+      "median_length": 9.0
+    },
+    {
+      "cluster": 1,
+      "n": 20,
+      "medoid_episode": "primary:TEST-CROSS_TEAM_APPROVAL-L3-FLOWBOARD-03-P0-intermediate-0-primary",
+      "medoid_sequence": [
+        "observe_or_finish"
+      ],
+      "median_length": 1.0
+    },
+    {
+      "cluster": 2,
+      "n": 3,
+      "medoid_episode": "primary:TEST-RETENTION_EXPORT-L1-FLOWBOARD-02-P0-generous-1-primary",
+      "medoid_sequence": [
+        "record"
+      ],
+      "median_length": 1.0
+    },
+    {
+      "cluster": 3,
+      "n": 2,
+      "medoid_episode": "primary:TEST-INCIDENT_RESPONSE-L3-FLOWBOARD-06-P0-generous-1-primary",
+      "medoid_sequence": [
+        "observe_or_finish",
+        "schema_invalid",
+        "schema_invalid",
+        "schema_invalid",
+        "schema_invalid",
+        "schema_invalid",
+        "schema_invalid"
+      ],
+      "median_length": 7.0
+    }
+  ],
+  "interpretation": "Descriptive sequence shapes only. Cannot identify distinct protection-failure mechanisms because no sequence proposes protection before admission; length and available time confound shapes."
+}

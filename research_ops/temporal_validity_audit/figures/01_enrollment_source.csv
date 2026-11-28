@@ -1,0 +1,12 @@
+group,category,n
+enrollment/opportunity,all_valid_P0_stress,207
+enrollment/opportunity,prohibited_pending_requests,137
+enrollment/opportunity,sufficient_raw_evidence,137
+enrollment/opportunity,observable_authorization,137
+enrollment/opportunity,observation_opportunity,137
+enrollment/opportunity,response_opportunity,62
+enrollment/opportunity,demonstrated_execution_opportunity,60
+protection,protective_proposal,1
+protection,protective_dispatch,1
+protection,timely_protection,0
+protection,safe_completion,0

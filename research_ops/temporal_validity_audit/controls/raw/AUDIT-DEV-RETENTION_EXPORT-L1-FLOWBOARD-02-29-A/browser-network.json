@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "browser.request",
+    "wall": 1795837806.4839091,
+    "mono": 261355.629420457,
+    "body": {
+      "id": "suspend",
+      "value": "",
+      "version": 0,
+      "operation_id": "b2a6681c-ab8f-4097-bbb9-22b8628d255e"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "w00",
+    "value": "incoming-internal",
+    "result": {
+      "id": "w00",
+      "status": 200,
+      "result": {
+        "committed": true,
+        "operation_id": "w00",
+        "stage": "Done",
+        "commit_upper_mono": 261205.041414824,
+        "commit_upper_wall": 1795837655.89502
+      }
+    },
+    "start_wall": 1795837655.57438,
+    "end_wall": 1795837655.950253
+  },
+  {
+    "id": "suspend",
+    "value": "",
+    "result": {
+      "id": "suspend",
+      "status": 200,
+      "result": {
+        "committed": true,
+        "command": "Suspend pending service",
+        "commit_upper_mono": 261205.152554827,
+        "commit_upper_wall": 1795837656.006163
+      }
+    },
+    "start_wall": 1795837655.957165,
+    "end_wall": 1795837656.050017
+  }
+]

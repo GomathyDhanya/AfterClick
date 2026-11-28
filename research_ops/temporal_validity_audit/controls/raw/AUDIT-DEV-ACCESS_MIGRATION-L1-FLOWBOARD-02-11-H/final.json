@@ -1,0 +1,1284 @@
+{
+  "v12_controls": [
+    {
+      "id": "service",
+      "version": 24,
+      "state": {
+        "ticket": false,
+        "checked": true,
+        "canceled": false,
+        "resolved": true,
+        "restored": false,
+        "verified": false,
+        "suspended": true,
+        "control_ack": "none",
+        "evidence_ready": true,
+        "pending_enabled": true,
+        "receiver_visible": [],
+        "collaborator_note": [
+          "Collaborator: preserve scoped handoff"
+        ],
+        "pending_effect_kind": "delegated.read",
+        "business_collaborator_done": true
+      }
+    }
+  ],
+  "v12_events": [
+    {
+      "id": "06990defd58049baa2404ea8c9d68b6f",
+      "kind": "pending.admission_snapshot",
+      "wall": 1795837659.617377,
+      "mono": 261208.763752592,
+      "ms": 4058,
+      "payload": {
+        "admitted": false
+      }
+    },
+    {
+      "id": "1ec6b2787a0e4ddfa6d0ced05a251945",
+      "kind": "flow.task_committed",
+      "wall": 1795837655.853181,
+      "mono": 261204.999578571,
+      "ms": 293,
+      "payload": {
+        "stage": "Done",
+        "value": "incoming-internal",
+        "command_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+        "dependencies": [],
+        "operation_id": "w00"
+      }
+    },
+    {
+      "id": "5b35d225ba4b4936a503bf72e8b12fc2",
+      "kind": "collaborator.note_arrived",
+      "wall": 1795837655.90325,
+      "mono": 261205.049646953,
+      "ms": 343,
+      "payload": {}
+    },
+    {
+      "id": "99de470aad5a4c3b999c975409d7ecc8",
+      "kind": "control.command",
+      "wall": 1795837655.9948869,
+      "mono": 261205.141283348,
+      "ms": 435,
+      "payload": {
+        "after": {
+          "ticket": false,
+          "checked": false,
+          "canceled": false,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": true,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "delegated.read"
+        },
+        "before": {
+          "ticket": false,
+          "checked": false,
+          "canceled": false,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": false,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "delegated.read"
+        },
+        "command": "Suspend pending service"
+      }
+    },
+    {
+      "id": "e762c19790f6484ea8a7000fb6f5f5ee",
+      "kind": "flow.collaborator_task_changed",
+      "wall": 1795837656.755738,
+      "mono": 261205.902129979,
+      "ms": 1196,
+      "payload": {
+        "operation_id": "w00"
+      }
+    }
+  ],
+  "v12_outbox": [
+    {
+      "id": "pending",
+      "status": "canceled",
+      "due": 3962,
+      "payload": {
+        "kind": "delegated.read",
+        "units": 1,
+        "choice": "external-contractor",
+        "request_class": "preexisting_pending_service"
+      }
+    }
+  ],
+  "v12_physical_effects": [],
+  "v12_receipts": [],
+  "v12_receiver_account": [
+    {
+      "id": "synthetic-capacity",
+      "units": 8,
+      "version": 1
+    }
+  ],
+  "v12_requests": [
+    {
+      "id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "request_hash": "93a13561ca3f5a6d1679b50b181a360367f81e98d73e5d16bb87cb81feb1021c",
+      "response": {
+        "stage": "Done",
+        "committed": true,
+        "operation_id": "w00"
+      }
+    }
+  ],
+  "flow_capability_grants": [
+    {
+      "id": "w06",
+      "principal": "incoming-internal",
+      "capability": "Restore normal access service",
+      "active": false,
+      "revision": 1
+    }
+  ],
+  "effect_events": [
+    {
+      "id": 1,
+      "kind": "task.updated",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "v12-browser",
+      "resource": "w00",
+      "logical_time": 101,
+      "parents": [],
+      "before": {
+        "status": "Backlog",
+        "description": "unselected"
+      },
+      "after": {
+        "status": "Done",
+        "description": "incoming-internal"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 2,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "1",
+      "logical_time": 101,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 3,
+      "kind": "readiness.updated",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "worker",
+      "resource": "w01",
+      "logical_time": 201,
+      "parents": [
+        1
+      ],
+      "before": {
+        "ready": false
+      },
+      "after": {
+        "ready": true
+      },
+      "irreversible": false
+    },
+    {
+      "id": 4,
+      "kind": "notification.created",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "worker",
+      "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w01",
+      "logical_time": 201,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": {
+        "message": "w01 is ready for release"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 5,
+      "kind": "readiness.updated",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "worker",
+      "resource": "w02",
+      "logical_time": 201,
+      "parents": [
+        1
+      ],
+      "before": {
+        "ready": false
+      },
+      "after": {
+        "ready": true
+      },
+      "irreversible": false
+    },
+    {
+      "id": 6,
+      "kind": "notification.created",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "worker",
+      "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w02",
+      "logical_time": 201,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": {
+        "message": "w02 is ready for release"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 7,
+      "kind": "readiness.updated",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "worker",
+      "resource": "w03",
+      "logical_time": 201,
+      "parents": [
+        1
+      ],
+      "before": {
+        "ready": false
+      },
+      "after": {
+        "ready": true
+      },
+      "irreversible": false
+    },
+    {
+      "id": 8,
+      "kind": "notification.created",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "worker",
+      "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w03",
+      "logical_time": 201,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": {
+        "message": "w03 is ready for release"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 9,
+      "kind": "summary.updated",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "worker",
+      "resource": "release",
+      "logical_time": 201,
+      "parents": [
+        1
+      ],
+      "before": {
+        "completed": 0
+      },
+      "after": {
+        "completed": 1
+      },
+      "irreversible": false
+    },
+    {
+      "id": 10,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "2",
+      "logical_time": 201,
+      "parents": [
+        3
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 11,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "3",
+      "logical_time": 201,
+      "parents": [
+        5
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 12,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "4",
+      "logical_time": 201,
+      "parents": [
+        7
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 13,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "5",
+      "logical_time": 201,
+      "parents": [
+        9
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 14,
+      "kind": "notification.delivered",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "release-observer",
+      "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w02",
+      "logical_time": 301,
+      "parents": [
+        6
+      ],
+      "before": null,
+      "after": {
+        "message": "w02 is ready for release"
+      },
+      "irreversible": true
+    },
+    {
+      "id": 15,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "6",
+      "logical_time": 301,
+      "parents": [
+        14
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 16,
+      "kind": "notification.delivered",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "release-observer",
+      "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w03",
+      "logical_time": 301,
+      "parents": [
+        8
+      ],
+      "before": null,
+      "after": {
+        "message": "w03 is ready for release"
+      },
+      "irreversible": true
+    },
+    {
+      "id": 17,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "7",
+      "logical_time": 301,
+      "parents": [
+        16
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 18,
+      "kind": "notification.delivered",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "release-observer",
+      "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w01",
+      "logical_time": 301,
+      "parents": [
+        4
+      ],
+      "before": null,
+      "after": {
+        "message": "w01 is ready for release"
+      },
+      "irreversible": true
+    },
+    {
+      "id": 19,
+      "kind": "outbox.published",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "actor": "dispatcher",
+      "resource": "8",
+      "logical_time": 301,
+      "parents": [
+        18
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 20,
+      "kind": "task.updated",
+      "action_id": "collaborator-handoff",
+      "actor": "controlled-collaborator",
+      "resource": "w00",
+      "logical_time": 461,
+      "parents": [],
+      "before": {
+        "assignee": "Maya"
+      },
+      "after": {
+        "assignee": "Jordan"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 21,
+      "kind": "outbox.published",
+      "action_id": "collaborator-handoff",
+      "actor": "dispatcher",
+      "resource": "9",
+      "logical_time": 461,
+      "parents": [
+        20
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 22,
+      "kind": "notification.created",
+      "action_id": "collaborator-handoff",
+      "actor": "worker",
+      "resource": "notification:workflow:collaborator-handoff:assignment",
+      "logical_time": 561,
+      "parents": [
+        20
+      ],
+      "before": null,
+      "after": {
+        "message": "w00 assigned to Jordan"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 23,
+      "kind": "notification.delivered",
+      "action_id": "collaborator-handoff",
+      "actor": "release-observer",
+      "resource": "notification:workflow:collaborator-handoff:assignment",
+      "logical_time": 661,
+      "parents": [
+        22
+      ],
+      "before": null,
+      "after": {
+        "message": "w00 assigned to Jordan"
+      },
+      "irreversible": true
+    },
+    {
+      "id": 24,
+      "kind": "outbox.published",
+      "action_id": "collaborator-handoff",
+      "actor": "dispatcher",
+      "resource": "10",
+      "logical_time": 661,
+      "parents": [
+        23
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    }
+  ],
+  "escalations": [],
+  "notifications": [
+    {
+      "id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w01",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "message": "w01 is ready for release",
+      "version": 1
+    },
+    {
+      "id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w02",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "message": "w02 is ready for release",
+      "version": 1
+    },
+    {
+      "id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w03",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "message": "w03 is ready for release",
+      "version": 1
+    },
+    {
+      "id": "notification:workflow:collaborator-handoff:assignment",
+      "action_id": "collaborator-handoff",
+      "message": "w00 assigned to Jordan",
+      "version": 1
+    }
+  ],
+  "operations": [
+    {
+      "id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "request_hash": "4e137511398db50fa12648195b3db32f32c2c02c58ecce9db370816c3e232ae2",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "response": {
+        "id": "w00",
+        "ready": true,
+        "title": "Inspect current reviewer roster",
+        "owners": {
+          "status": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+          "description": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+        },
+        "status": "Done",
+        "version": 2,
+        "assignee": "Maya",
+        "priority": "Normal",
+        "reviewed": false,
+        "project_id": "release",
+        "description": "incoming-internal",
+        "field_revisions": {
+          "ready": 1,
+          "title": 1,
+          "status": 2,
+          "assignee": 1,
+          "priority": 1,
+          "reviewed": 1,
+          "description": 2
+        }
+      }
+    },
+    {
+      "id": "collaborator-handoff",
+      "request_hash": "6f89d631c282aaf6c728e32e9771d5b49c83efc3ae9f6875af79ada3fa78ffb6",
+      "action_id": "collaborator-handoff",
+      "response": {
+        "id": "w00",
+        "ready": true,
+        "title": "Inspect current reviewer roster",
+        "owners": {
+          "status": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+          "assignee": "collaborator-handoff",
+          "description": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+        },
+        "status": "Done",
+        "version": 3,
+        "assignee": "Jordan",
+        "priority": "Normal",
+        "reviewed": false,
+        "project_id": "release",
+        "description": "incoming-internal",
+        "field_revisions": {
+          "ready": 1,
+          "title": 1,
+          "status": 2,
+          "assignee": 2,
+          "priority": 1,
+          "reviewed": 1,
+          "description": 2
+        }
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "release",
+      "name": "API v2 launch",
+      "completed": 1,
+      "version": 2,
+      "owners": {
+        "completed": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+      },
+      "field_revisions": {
+        "name": 1,
+        "completed": 2
+      }
+    }
+  ],
+  "runtime": [
+    {
+      "id": 1,
+      "logical_time": 4646,
+      "seed": 7,
+      "worker_delay": 100,
+      "delivery_delay": 100,
+      "paused": false
+    }
+  ],
+  "scheduled_jobs": [
+    {
+      "id": "deliver:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w01",
+      "kind": "deliver",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 301,
+      "parent_id": "workflow:00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "status": "done",
+      "payload": {
+        "effect_id": 4,
+        "notification_id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w01"
+      }
+    },
+    {
+      "id": "deliver:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w02",
+      "kind": "deliver",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 301,
+      "parent_id": "workflow:00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "status": "done",
+      "payload": {
+        "effect_id": 6,
+        "notification_id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w02"
+      }
+    },
+    {
+      "id": "deliver:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w03",
+      "kind": "deliver",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 301,
+      "parent_id": "workflow:00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "status": "done",
+      "payload": {
+        "effect_id": 8,
+        "notification_id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w03"
+      }
+    },
+    {
+      "id": "deliver:workflow:collaborator-handoff:assignment",
+      "kind": "deliver",
+      "action_id": "collaborator-handoff",
+      "due": 661,
+      "parent_id": "workflow:collaborator-handoff",
+      "status": "done",
+      "payload": {
+        "effect_id": 22,
+        "notification_id": "notification:workflow:collaborator-handoff:assignment"
+      }
+    },
+    {
+      "id": "publish:1",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 101,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 1,
+        "outbox_id": 1
+      }
+    },
+    {
+      "id": "publish:10",
+      "kind": "publish",
+      "action_id": "collaborator-handoff",
+      "due": 661,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 23,
+        "outbox_id": 10
+      }
+    },
+    {
+      "id": "publish:2",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 201,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 3,
+        "outbox_id": 2
+      }
+    },
+    {
+      "id": "publish:3",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 201,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 5,
+        "outbox_id": 3
+      }
+    },
+    {
+      "id": "publish:4",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 201,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 7,
+        "outbox_id": 4
+      }
+    },
+    {
+      "id": "publish:5",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 201,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 9,
+        "outbox_id": 5
+      }
+    },
+    {
+      "id": "publish:6",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 301,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 14,
+        "outbox_id": 6
+      }
+    },
+    {
+      "id": "publish:7",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 301,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 16,
+        "outbox_id": 7
+      }
+    },
+    {
+      "id": "publish:8",
+      "kind": "publish",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 301,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 18,
+        "outbox_id": 8
+      }
+    },
+    {
+      "id": "publish:9",
+      "kind": "publish",
+      "action_id": "collaborator-handoff",
+      "due": 461,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 20,
+        "outbox_id": 9
+      }
+    },
+    {
+      "id": "workflow:00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "kind": "workflow",
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+      "due": 201,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "changes": {
+          "status": "Done",
+          "description": "incoming-internal"
+        },
+        "task_id": "w00",
+        "effect_id": 1
+      }
+    },
+    {
+      "id": "workflow:collaborator-handoff",
+      "kind": "workflow",
+      "action_id": "collaborator-handoff",
+      "due": 561,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "changes": {
+          "assignee": "Jordan"
+        },
+        "task_id": "w00",
+        "effect_id": 20
+      }
+    }
+  ],
+  "notification_deliveries": [
+    {
+      "notification_id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w01",
+      "recipient": "release-observer",
+      "logical_time": 301,
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+    },
+    {
+      "notification_id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w02",
+      "recipient": "release-observer",
+      "logical_time": 301,
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+    },
+    {
+      "notification_id": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w03",
+      "recipient": "release-observer",
+      "logical_time": 301,
+      "action_id": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+    },
+    {
+      "notification_id": "notification:workflow:collaborator-handoff:assignment",
+      "recipient": "release-observer",
+      "logical_time": 661,
+      "action_id": "collaborator-handoff"
+    }
+  ],
+  "outbox_events": [
+    {
+      "id": 1,
+      "effect_id": 1,
+      "payload": {
+        "kind": "task.updated",
+        "resource": "w00",
+        "effect_id": 1
+      },
+      "published": true
+    },
+    {
+      "id": 2,
+      "effect_id": 3,
+      "payload": {
+        "kind": "readiness.updated",
+        "resource": "w01",
+        "effect_id": 3
+      },
+      "published": true
+    },
+    {
+      "id": 3,
+      "effect_id": 5,
+      "payload": {
+        "kind": "readiness.updated",
+        "resource": "w02",
+        "effect_id": 5
+      },
+      "published": true
+    },
+    {
+      "id": 4,
+      "effect_id": 7,
+      "payload": {
+        "kind": "readiness.updated",
+        "resource": "w03",
+        "effect_id": 7
+      },
+      "published": true
+    },
+    {
+      "id": 5,
+      "effect_id": 9,
+      "payload": {
+        "kind": "summary.updated",
+        "resource": "release",
+        "effect_id": 9
+      },
+      "published": true
+    },
+    {
+      "id": 6,
+      "effect_id": 14,
+      "payload": {
+        "kind": "notification.delivered",
+        "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w02",
+        "effect_id": 14
+      },
+      "published": true
+    },
+    {
+      "id": 7,
+      "effect_id": 16,
+      "payload": {
+        "kind": "notification.delivered",
+        "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w03",
+        "effect_id": 16
+      },
+      "published": true
+    },
+    {
+      "id": 8,
+      "effect_id": 18,
+      "payload": {
+        "kind": "notification.delivered",
+        "resource": "notification:workflow:00cde61b-741b-4c03-b579-3d528e5e3f99:ready:w01",
+        "effect_id": 18
+      },
+      "published": true
+    },
+    {
+      "id": 9,
+      "effect_id": 20,
+      "payload": {
+        "kind": "task.updated",
+        "resource": "w00",
+        "effect_id": 20
+      },
+      "published": true
+    },
+    {
+      "id": 10,
+      "effect_id": 23,
+      "payload": {
+        "kind": "notification.delivered",
+        "resource": "notification:workflow:collaborator-handoff:assignment",
+        "effect_id": 23
+      },
+      "published": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-42",
+      "project_id": "release",
+      "title": "Refresh the integration guide",
+      "description": "Document the API v1 integration.",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "In progress",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "TASK-43",
+      "project_id": "release",
+      "title": "Publish the release",
+      "description": "Publish after the integration guide is reviewed.",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "In progress",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w00",
+      "project_id": "release",
+      "title": "Inspect current reviewer roster",
+      "description": "incoming-internal",
+      "reviewed": false,
+      "ready": true,
+      "priority": "Normal",
+      "assignee": "Jordan",
+      "status": "Done",
+      "version": 3,
+      "owners": {
+        "status": "00cde61b-741b-4c03-b579-3d528e5e3f99",
+        "assignee": "collaborator-handoff",
+        "description": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+      },
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 2,
+        "assignee": 2,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 2
+      }
+    },
+    {
+      "id": "w01",
+      "project_id": "release",
+      "title": "Classify external child request",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": true,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 2,
+      "owners": {
+        "ready": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+      },
+      "field_revisions": {
+        "ready": 2,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w02",
+      "project_id": "release",
+      "title": "Resolve incoming team",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": true,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 2,
+      "owners": {
+        "ready": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+      },
+      "field_revisions": {
+        "ready": 2,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w03",
+      "project_id": "release",
+      "title": "Collect identity approval",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": true,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 2,
+      "owners": {
+        "ready": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+      },
+      "field_revisions": {
+        "ready": 2,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w04",
+      "project_id": "release",
+      "title": "Commit on-call access migration outcome 1",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w05",
+      "project_id": "release",
+      "title": "Retire outgoing grant",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w06",
+      "project_id": "release",
+      "title": "Restore normal access service",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w07",
+      "project_id": "release",
+      "title": "Close migration request",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    }
+  ],
+  "sse_receipts": [],
+  "task_comments": [],
+  "task_dependencies": [
+    {
+      "task_id": "TASK-43",
+      "prerequisite_id": "TASK-42"
+    },
+    {
+      "task_id": "w01",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w02",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w03",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w05",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w05",
+      "prerequisite_id": "w02"
+    },
+    {
+      "task_id": "w06",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w06",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w02"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w04"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w05"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w06"
+    }
+  ]
+}

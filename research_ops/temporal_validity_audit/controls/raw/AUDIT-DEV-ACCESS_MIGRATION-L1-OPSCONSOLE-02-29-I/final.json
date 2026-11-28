@@ -1,0 +1,428 @@
+{
+  "v12_controls": [
+    {
+      "id": "service",
+      "version": 63,
+      "state": {
+        "ticket": true,
+        "checked": true,
+        "canceled": false,
+        "resolved": true,
+        "restored": false,
+        "verified": false,
+        "suspended": true,
+        "control_ack": "none",
+        "evidence_ready": true,
+        "pending_enabled": true,
+        "receiver_visible": [],
+        "collaborator_note": [
+          "Collaborator: preserve scoped handoff"
+        ],
+        "pending_effect_kind": "delegated.read",
+        "business_collaborator_done": true
+      }
+    }
+  ],
+  "v12_events": [
+    {
+      "id": "293a66ffbd7d47fe9df0c9392d66a326",
+      "kind": "receiver.committed",
+      "wall": 1795837964.866713,
+      "mono": 261514.011291918,
+      "ms": 4365,
+      "payload": {
+        "payload": {
+          "kind": "delegated.read",
+          "units": 1,
+          "choice": "external-contractor",
+          "request_class": "preexisting_pending_service"
+        },
+        "receipt_id": "pending"
+      }
+    },
+    {
+      "id": "49d9053b1af147fa808e26842355d3a0",
+      "kind": "external.admitted",
+      "wall": 1795837964.5788538,
+      "mono": 261513.723434974,
+      "ms": 4077,
+      "payload": {
+        "payload": {
+          "kind": "delegated.read",
+          "units": 1,
+          "choice": "external-contractor",
+          "request_class": "preexisting_pending_service"
+        },
+        "effect_id": "pending"
+      }
+    },
+    {
+      "id": "644a08bc443d467f8a39d43f7c79e2bd",
+      "kind": "collaborator.note_arrived",
+      "wall": 1795837960.92686,
+      "mono": 261510.071461492,
+      "ms": 426,
+      "payload": {}
+    },
+    {
+      "id": "add371426f464e6fa2291629d22f1a71",
+      "kind": "pending.admission_snapshot",
+      "wall": 1795837964.561787,
+      "mono": 261513.706367877,
+      "ms": 4060,
+      "payload": {
+        "admitted": true
+      }
+    },
+    {
+      "id": "afd2f19b254046ca9a3e4538c555456f",
+      "kind": "ops.collaborator_work_order_changed",
+      "wall": 1795837960.885082,
+      "mono": 261510.029684235,
+      "ms": 384,
+      "payload": {
+        "operation_id": "w00"
+      }
+    },
+    {
+      "id": "bd100fe6b901410c9388c8bcabf42bbb",
+      "kind": "receiver.transport_ack",
+      "wall": 1795837965.052212,
+      "mono": 261514.196790509,
+      "ms": 4551,
+      "payload": {
+        "effect_id": "pending"
+      }
+    },
+    {
+      "id": "c6412f4eea824880b8dd809e644e00cd",
+      "kind": "control.command",
+      "wall": 1795837966.099914,
+      "mono": 261515.244485468,
+      "ms": 5599,
+      "payload": {
+        "after": {
+          "ticket": true,
+          "checked": true,
+          "canceled": false,
+          "resolved": true,
+          "restored": false,
+          "verified": false,
+          "suspended": true,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "delegated.read",
+          "business_collaborator_done": true
+        },
+        "before": {
+          "ticket": true,
+          "checked": true,
+          "canceled": false,
+          "resolved": true,
+          "restored": false,
+          "verified": false,
+          "suspended": false,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "delegated.read",
+          "business_collaborator_done": true
+        },
+        "command": "Suspend pending service"
+      }
+    }
+  ],
+  "v12_outbox": [
+    {
+      "id": "pending",
+      "status": "delivered",
+      "due": 4222,
+      "payload": {
+        "kind": "delegated.read",
+        "units": 1,
+        "choice": "external-contractor",
+        "request_class": "preexisting_pending_service"
+      }
+    }
+  ],
+  "v12_physical_effects": [
+    {
+      "id": "pending",
+      "kind": "delegated.read",
+      "resource": "external-contractor",
+      "content": {
+        "child_capability": "pending",
+        "observed_document": "external-contractor",
+        "parent_revocation_can_recall": false
+      }
+    }
+  ],
+  "v12_receipts": [
+    {
+      "id": "pending",
+      "payload": {
+        "kind": "delegated.read",
+        "units": 1,
+        "choice": "external-contractor",
+        "request_class": "preexisting_pending_service"
+      },
+      "wall": 1795837964.861344,
+      "mono": 261514.005922803
+    }
+  ],
+  "v12_receiver_account": [
+    {
+      "id": "synthetic-capacity",
+      "units": 8,
+      "version": 1
+    }
+  ],
+  "v12_requests": [],
+  "ops_assets": [
+    {
+      "id": "access",
+      "kind": "internal_permission",
+      "value": {
+        "mode": "normal",
+        "holder": "outgoing",
+        "audit_note": "Preserve scoped handoff"
+      },
+      "version": 2
+    },
+    {
+      "id": "data",
+      "kind": "classification",
+      "value": {
+        "deleted": [],
+        "retained": [
+          "legal-hold"
+        ]
+      },
+      "version": 1
+    },
+    {
+      "id": "quota",
+      "kind": "capacity",
+      "value": {
+        "total": 8,
+        "consumed": 0,
+        "reserved": 0
+      },
+      "version": 1
+    },
+    {
+      "id": "restore:w06",
+      "kind": "scoped_service",
+      "value": {
+        "scope": "internal",
+        "enabled": false
+      },
+      "version": 1
+    }
+  ],
+  "ops_role_signoffs": [],
+  "ops_work_orders": [
+    {
+      "id": "w00",
+      "stage": "open",
+      "version": 2,
+      "scope": "unselected",
+      "details": {
+        "id": "w00",
+        "kind": "record",
+        "role": null,
+        "label": "Inspect current reviewer roster",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [],
+        "collaborator_note": "Preserve scoped handoff"
+      }
+    },
+    {
+      "id": "w01",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w01",
+        "kind": "record",
+        "role": null,
+        "label": "Classify external child request",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w02",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w02",
+        "kind": "record",
+        "role": null,
+        "label": "Resolve incoming team",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w03",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w03",
+        "kind": "approval",
+        "role": "Identity",
+        "label": "Collect identity approval",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w04",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w04",
+        "kind": "external",
+        "role": null,
+        "label": "Commit on-call access migration outcome 1",
+        "effect": "delegated.read",
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w05",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w05",
+        "kind": "record",
+        "role": null,
+        "label": "Retire outgoing grant",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w02"
+        ]
+      }
+    },
+    {
+      "id": "w06",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w06",
+        "kind": "restore",
+        "role": null,
+        "label": "Restore normal access service",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w07",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w07",
+        "kind": "close",
+        "role": null,
+        "label": "Close migration request",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w02",
+          "w03",
+          "w04",
+          "w05",
+          "w06"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "w00",
+    "value": "consented-sanitized",
+    "result": {
+      "id": "w00",
+      "status": 200,
+      "result": {
+        "committed": true,
+        "operation_id": "w00",
+        "stage": "Done",
+        "commit_upper_mono": 261388.978693922,
+        "commit_upper_wall": 1795837839.833382
+      }
+    },
+    "start_wall": 1795837839.5665338,
+    "end_wall": 1795837839.8782961
+  },
+  {
+    "id": "suspend",
+    "value": "",
+    "result": {
+      "id": "suspend",
+      "status": 200,
+      "result": {
+        "committed": true,
+        "command": "Suspend pending service",
+        "commit_upper_mono": 261389.691593885,
+        "commit_upper_wall": 1795837840.546286
+      }
+    },
+    "start_wall": 1795837839.8888562,
+    "end_wall": 1795837840.612084
+  }
+]

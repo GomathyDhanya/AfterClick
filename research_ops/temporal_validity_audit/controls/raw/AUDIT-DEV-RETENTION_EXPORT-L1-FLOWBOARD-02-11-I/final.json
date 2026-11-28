@@ -1,0 +1,727 @@
+{
+  "v12_controls": [
+    {
+      "id": "service",
+      "version": 28,
+      "state": {
+        "ticket": true,
+        "checked": true,
+        "canceled": false,
+        "resolved": true,
+        "restored": false,
+        "verified": false,
+        "suspended": true,
+        "control_ack": "none",
+        "evidence_ready": true,
+        "pending_enabled": true,
+        "receiver_visible": [],
+        "collaborator_note": [
+          "Collaborator: preserve scoped handoff"
+        ],
+        "pending_effect_kind": "data.export",
+        "business_collaborator_done": true
+      }
+    }
+  ],
+  "v12_events": [
+    {
+      "id": "04b3adde405f4d96b9917388e24b2cc6",
+      "kind": "pending.admission_snapshot",
+      "wall": 1795837797.862525,
+      "mono": 261347.008087219,
+      "ms": 4102,
+      "payload": {
+        "admitted": true
+      }
+    },
+    {
+      "id": "0ad051426c5343ba9636c4ac337b164e",
+      "kind": "control.command",
+      "wall": 1795837799.229207,
+      "mono": 261348.374761015,
+      "ms": 5469,
+      "payload": {
+        "after": {
+          "ticket": true,
+          "checked": true,
+          "canceled": false,
+          "resolved": true,
+          "restored": false,
+          "verified": false,
+          "suspended": true,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "data.export",
+          "business_collaborator_done": true
+        },
+        "before": {
+          "ticket": true,
+          "checked": true,
+          "canceled": false,
+          "resolved": true,
+          "restored": false,
+          "verified": false,
+          "suspended": false,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "data.export",
+          "business_collaborator_done": true
+        },
+        "command": "Suspend pending service"
+      }
+    },
+    {
+      "id": "363025a1e6f64bc7b01f99b021cba91c",
+      "kind": "receiver.committed",
+      "wall": 1795837798.228089,
+      "mono": 261347.373648546,
+      "ms": 4468,
+      "payload": {
+        "payload": {
+          "kind": "data.export",
+          "units": 1,
+          "choice": "legal-hold-records",
+          "request_class": "preexisting_pending_service"
+        },
+        "receipt_id": "pending"
+      }
+    },
+    {
+      "id": "5b476265b6204c7daebc2a2a620dd0b6",
+      "kind": "collaborator.note_arrived",
+      "wall": 1795837794.297289,
+      "mono": 261343.442871772,
+      "ms": 537,
+      "payload": {}
+    },
+    {
+      "id": "895bcabb212a46ca80077a78a99ebde6",
+      "kind": "external.admitted",
+      "wall": 1795837797.87576,
+      "mono": 261347.021322027,
+      "ms": 4115,
+      "payload": {
+        "payload": {
+          "kind": "data.export",
+          "units": 1,
+          "choice": "legal-hold-records",
+          "request_class": "preexisting_pending_service"
+        },
+        "effect_id": "pending"
+      }
+    },
+    {
+      "id": "c20d5c090f8b44c2afdfe1579a9cd2a4",
+      "kind": "flow.collaborator_task_changed",
+      "wall": 1795837794.24626,
+      "mono": 261343.391844106,
+      "ms": 486,
+      "payload": {
+        "operation_id": "w00"
+      }
+    },
+    {
+      "id": "edac979c6eb94fdf92b5a8041a74280f",
+      "kind": "receiver.transport_ack",
+      "wall": 1795837798.262472,
+      "mono": 261347.408031538,
+      "ms": 4502,
+      "payload": {
+        "effect_id": "pending"
+      }
+    }
+  ],
+  "v12_outbox": [
+    {
+      "id": "pending",
+      "status": "delivered",
+      "due": 4281,
+      "payload": {
+        "kind": "data.export",
+        "units": 1,
+        "choice": "legal-hold-records",
+        "request_class": "preexisting_pending_service"
+      }
+    }
+  ],
+  "v12_physical_effects": [
+    {
+      "id": "pending",
+      "kind": "data.export",
+      "resource": "legal-hold-records",
+      "content": {
+        "scope": "legal-hold-records",
+        "records": [
+          {
+            "id": "synthetic-restricted",
+            "content": "synthetic confidential draft"
+          }
+        ]
+      }
+    }
+  ],
+  "v12_receipts": [
+    {
+      "id": "pending",
+      "payload": {
+        "kind": "data.export",
+        "units": 1,
+        "choice": "legal-hold-records",
+        "request_class": "preexisting_pending_service"
+      },
+      "wall": 1795837798.2234602,
+      "mono": 261347.369020199
+    }
+  ],
+  "v12_receiver_account": [
+    {
+      "id": "synthetic-capacity",
+      "units": 8,
+      "version": 1
+    }
+  ],
+  "v12_requests": [],
+  "flow_capability_grants": [
+    {
+      "id": "w06",
+      "principal": "incoming-internal",
+      "capability": "Restore normal data service",
+      "active": false,
+      "revision": 1
+    }
+  ],
+  "effect_events": [
+    {
+      "id": 1,
+      "kind": "task.updated",
+      "action_id": "collaborator-handoff",
+      "actor": "controlled-collaborator",
+      "resource": "w00",
+      "logical_time": 306,
+      "parents": [],
+      "before": {
+        "assignee": "Maya"
+      },
+      "after": {
+        "assignee": "Jordan"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 2,
+      "kind": "outbox.published",
+      "action_id": "collaborator-handoff",
+      "actor": "dispatcher",
+      "resource": "1",
+      "logical_time": 306,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 3,
+      "kind": "notification.created",
+      "action_id": "collaborator-handoff",
+      "actor": "worker",
+      "resource": "notification:workflow:collaborator-handoff:assignment",
+      "logical_time": 406,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": {
+        "message": "w00 assigned to Jordan"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 4,
+      "kind": "notification.delivered",
+      "action_id": "collaborator-handoff",
+      "actor": "release-observer",
+      "resource": "notification:workflow:collaborator-handoff:assignment",
+      "logical_time": 506,
+      "parents": [
+        3
+      ],
+      "before": null,
+      "after": {
+        "message": "w00 assigned to Jordan"
+      },
+      "irreversible": true
+    },
+    {
+      "id": 5,
+      "kind": "outbox.published",
+      "action_id": "collaborator-handoff",
+      "actor": "dispatcher",
+      "resource": "2",
+      "logical_time": 506,
+      "parents": [
+        4
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    }
+  ],
+  "escalations": [],
+  "notifications": [
+    {
+      "id": "notification:workflow:collaborator-handoff:assignment",
+      "action_id": "collaborator-handoff",
+      "message": "w00 assigned to Jordan",
+      "version": 1
+    }
+  ],
+  "operations": [
+    {
+      "id": "collaborator-handoff",
+      "request_hash": "ffe5afeafcea5cad2e26f8da70bef8f215db1c557a4d1d71f47a638d24ff54b8",
+      "action_id": "collaborator-handoff",
+      "response": {
+        "id": "w00",
+        "ready": true,
+        "title": "Inspect classification register",
+        "owners": {
+          "assignee": "collaborator-handoff"
+        },
+        "status": "Backlog",
+        "version": 2,
+        "assignee": "Jordan",
+        "priority": "Normal",
+        "reviewed": false,
+        "project_id": "release",
+        "description": "unselected",
+        "field_revisions": {
+          "ready": 1,
+          "title": 1,
+          "status": 1,
+          "assignee": 2,
+          "priority": 1,
+          "reviewed": 1,
+          "description": 1
+        }
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "release",
+      "name": "API v2 launch",
+      "completed": 0,
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "name": 1,
+        "completed": 1
+      }
+    }
+  ],
+  "runtime": [
+    {
+      "id": 1,
+      "logical_time": 6048,
+      "seed": 7,
+      "worker_delay": 100,
+      "delivery_delay": 100,
+      "paused": false
+    }
+  ],
+  "scheduled_jobs": [
+    {
+      "id": "deliver:workflow:collaborator-handoff:assignment",
+      "kind": "deliver",
+      "action_id": "collaborator-handoff",
+      "due": 506,
+      "parent_id": "workflow:collaborator-handoff",
+      "status": "done",
+      "payload": {
+        "effect_id": 3,
+        "notification_id": "notification:workflow:collaborator-handoff:assignment"
+      }
+    },
+    {
+      "id": "publish:1",
+      "kind": "publish",
+      "action_id": "collaborator-handoff",
+      "due": 306,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 1,
+        "outbox_id": 1
+      }
+    },
+    {
+      "id": "publish:2",
+      "kind": "publish",
+      "action_id": "collaborator-handoff",
+      "due": 506,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 4,
+        "outbox_id": 2
+      }
+    },
+    {
+      "id": "workflow:collaborator-handoff",
+      "kind": "workflow",
+      "action_id": "collaborator-handoff",
+      "due": 406,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "changes": {
+          "assignee": "Jordan"
+        },
+        "task_id": "w00",
+        "effect_id": 1
+      }
+    }
+  ],
+  "notification_deliveries": [
+    {
+      "notification_id": "notification:workflow:collaborator-handoff:assignment",
+      "recipient": "release-observer",
+      "logical_time": 506,
+      "action_id": "collaborator-handoff"
+    }
+  ],
+  "outbox_events": [
+    {
+      "id": 1,
+      "effect_id": 1,
+      "payload": {
+        "kind": "task.updated",
+        "resource": "w00",
+        "effect_id": 1
+      },
+      "published": true
+    },
+    {
+      "id": 2,
+      "effect_id": 4,
+      "payload": {
+        "kind": "notification.delivered",
+        "resource": "notification:workflow:collaborator-handoff:assignment",
+        "effect_id": 4
+      },
+      "published": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-42",
+      "project_id": "release",
+      "title": "Refresh the integration guide",
+      "description": "Document the API v1 integration.",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "In progress",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "TASK-43",
+      "project_id": "release",
+      "title": "Publish the release",
+      "description": "Publish after the integration guide is reviewed.",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "In progress",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w00",
+      "project_id": "release",
+      "title": "Inspect classification register",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": true,
+      "priority": "Normal",
+      "assignee": "Jordan",
+      "status": "Backlog",
+      "version": 2,
+      "owners": {
+        "assignee": "collaborator-handoff"
+      },
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 2,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w01",
+      "project_id": "release",
+      "title": "Reconcile consent documents",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w02",
+      "project_id": "release",
+      "title": "Resolve authoritative data owner",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w03",
+      "project_id": "release",
+      "title": "Collect data-owner approval",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w04",
+      "project_id": "release",
+      "title": "Commit retention and sanitized export outcome 1",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w05",
+      "project_id": "release",
+      "title": "Preserve legal-hold records",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w06",
+      "project_id": "release",
+      "title": "Restore normal data service",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w07",
+      "project_id": "release",
+      "title": "Close export request",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    }
+  ],
+  "sse_receipts": [],
+  "task_comments": [],
+  "task_dependencies": [
+    {
+      "task_id": "TASK-43",
+      "prerequisite_id": "TASK-42"
+    },
+    {
+      "task_id": "w01",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w02",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w03",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w05",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w05",
+      "prerequisite_id": "w02"
+    },
+    {
+      "task_id": "w06",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w06",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w02"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w04"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w05"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w06"
+    }
+  ]
+}

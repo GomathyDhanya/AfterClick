@@ -1,0 +1,20 @@
+{
+  "source_commit": "31eab61870befc520841d11f422bb1a372ba92b8",
+  "protocol_sha256": "f8ebae7ca2edd9528e59db165e1fea2db756f24d123a4de351a335431c467baf",
+  "git_source_files": 2754,
+  "git_source_matches": 2754,
+  "frozen_files": 180,
+  "frozen_matches": 180,
+  "execution_payloads": 23,
+  "payloads_source_matches": 23,
+  "accessible": "all three named archives and git bundle; all relevant TEST raw restored separately from source",
+  "restoration_scope": "all git-tracked files plus relevant internal TEST runs, final evidence and frozen raw gate records; redundant unrelated extracted copies omitted after full extraction exhausted disk",
+  "failed_attempt_log": "provenance/restoration.log",
+  "missing": [
+    "exact historical authorization-read timestamps",
+    "exact historical transaction commit instants",
+    "provider internal scheduling traces",
+    "independent deployed-container byte attestation"
+  ],
+  "model_calls": 0
+}

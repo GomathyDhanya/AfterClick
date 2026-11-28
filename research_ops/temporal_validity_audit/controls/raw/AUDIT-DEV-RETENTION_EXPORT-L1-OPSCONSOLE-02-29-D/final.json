@@ -1,0 +1,386 @@
+{
+  "v12_controls": [
+    {
+      "id": "service",
+      "version": 17,
+      "state": {
+        "ticket": true,
+        "checked": true,
+        "canceled": false,
+        "resolved": true,
+        "restored": false,
+        "verified": false,
+        "suspended": false,
+        "control_ack": "none",
+        "evidence_ready": true,
+        "pending_enabled": true,
+        "receiver_visible": [],
+        "collaborator_note": [
+          "Collaborator: preserve scoped handoff"
+        ],
+        "pending_effect_kind": "data.export",
+        "business_collaborator_done": true
+      }
+    }
+  ],
+  "v12_events": [
+    {
+      "id": "04c0e59164d445c1a81eb3b9a55bbe0c",
+      "kind": "ops.collaborator_work_order_changed",
+      "wall": 1795838038.5553448,
+      "mono": 261587.699489973,
+      "ms": 302,
+      "payload": {
+        "operation_id": "w00"
+      }
+    },
+    {
+      "id": "41ff82303ed5410caf084915286e6ebf",
+      "kind": "receiver.committed",
+      "wall": 1795838042.604751,
+      "mono": 261591.748872196,
+      "ms": 4351,
+      "payload": {
+        "payload": {
+          "kind": "data.export",
+          "units": 1,
+          "choice": "legal-hold-records",
+          "request_class": "preexisting_pending_service"
+        },
+        "receipt_id": "pending"
+      }
+    },
+    {
+      "id": "6c09ed652413423597ccc81a573ecaab",
+      "kind": "receiver.transport_ack",
+      "wall": 1795838042.638885,
+      "mono": 261591.783005804,
+      "ms": 4385,
+      "payload": {
+        "effect_id": "pending"
+      }
+    },
+    {
+      "id": "ac1d260c39cc408fa0d17b01fb9f179d",
+      "kind": "external.admitted",
+      "wall": 1795838042.330483,
+      "mono": 261591.474605393,
+      "ms": 4077,
+      "payload": {
+        "payload": {
+          "kind": "data.export",
+          "units": 1,
+          "choice": "legal-hold-records",
+          "request_class": "preexisting_pending_service"
+        },
+        "effect_id": "pending"
+      }
+    },
+    {
+      "id": "acf297bca4844696b08da851b3beb9b5",
+      "kind": "collaborator.note_arrived",
+      "wall": 1795838038.6214972,
+      "mono": 261587.76564079,
+      "ms": 368,
+      "payload": {}
+    },
+    {
+      "id": "bdd74d592baa4738a5cd2c45b344155d",
+      "kind": "pending.admission_snapshot",
+      "wall": 1795838042.318534,
+      "mono": 261591.462656485,
+      "ms": 4065,
+      "payload": {
+        "admitted": true
+      }
+    }
+  ],
+  "v12_outbox": [
+    {
+      "id": "pending",
+      "status": "delivered",
+      "due": 4230,
+      "payload": {
+        "kind": "data.export",
+        "units": 1,
+        "choice": "legal-hold-records",
+        "request_class": "preexisting_pending_service"
+      }
+    }
+  ],
+  "v12_physical_effects": [
+    {
+      "id": "pending",
+      "kind": "data.export",
+      "resource": "legal-hold-records",
+      "content": {
+        "scope": "legal-hold-records",
+        "records": [
+          {
+            "id": "synthetic-restricted",
+            "content": "synthetic confidential draft"
+          }
+        ]
+      }
+    }
+  ],
+  "v12_receipts": [
+    {
+      "id": "pending",
+      "payload": {
+        "kind": "data.export",
+        "units": 1,
+        "choice": "legal-hold-records",
+        "request_class": "preexisting_pending_service"
+      },
+      "wall": 1795838042.6007009,
+      "mono": 261591.744822706
+    }
+  ],
+  "v12_receiver_account": [
+    {
+      "id": "synthetic-capacity",
+      "units": 8,
+      "version": 1
+    }
+  ],
+  "v12_requests": [],
+  "ops_assets": [
+    {
+      "id": "access",
+      "kind": "internal_permission",
+      "value": {
+        "mode": "normal",
+        "holder": "outgoing",
+        "audit_note": "Preserve scoped handoff"
+      },
+      "version": 2
+    },
+    {
+      "id": "data",
+      "kind": "classification",
+      "value": {
+        "deleted": [],
+        "retained": [
+          "legal-hold"
+        ]
+      },
+      "version": 1
+    },
+    {
+      "id": "quota",
+      "kind": "capacity",
+      "value": {
+        "total": 8,
+        "consumed": 0,
+        "reserved": 0
+      },
+      "version": 1
+    },
+    {
+      "id": "restore:w06",
+      "kind": "scoped_service",
+      "value": {
+        "scope": "internal",
+        "enabled": false
+      },
+      "version": 1
+    }
+  ],
+  "ops_role_signoffs": [],
+  "ops_work_orders": [
+    {
+      "id": "w00",
+      "stage": "open",
+      "version": 2,
+      "scope": "unselected",
+      "details": {
+        "id": "w00",
+        "kind": "record",
+        "role": null,
+        "label": "Inspect classification register",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [],
+        "collaborator_note": "Preserve scoped handoff"
+      }
+    },
+    {
+      "id": "w01",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w01",
+        "kind": "record",
+        "role": null,
+        "label": "Reconcile consent documents",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w02",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w02",
+        "kind": "record",
+        "role": null,
+        "label": "Resolve authoritative data owner",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w03",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w03",
+        "kind": "approval",
+        "role": "DataOwner",
+        "label": "Collect data-owner approval",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w04",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w04",
+        "kind": "external",
+        "role": null,
+        "label": "Commit retention and sanitized export outcome 1",
+        "effect": "data.export",
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w05",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w05",
+        "kind": "record",
+        "role": null,
+        "label": "Preserve legal-hold records",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w02"
+        ]
+      }
+    },
+    {
+      "id": "w06",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w06",
+        "kind": "restore",
+        "role": null,
+        "label": "Restore normal data service",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w07",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w07",
+        "kind": "close",
+        "role": null,
+        "label": "Close export request",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w02",
+          "w03",
+          "w04",
+          "w05",
+          "w06"
+        ]
+      }
+    }
+  ]
+}

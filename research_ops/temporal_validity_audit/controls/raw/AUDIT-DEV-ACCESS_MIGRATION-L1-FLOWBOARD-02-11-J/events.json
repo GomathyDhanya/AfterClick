@@ -1,0 +1,31 @@
+[
+  {
+    "kind": "source.accepted",
+    "wall": 1795837668.047839,
+    "mono": 261217.194164638,
+    "cut_sha256": "132f6004295a4b8003bab0d959b2ab9234c7d0186911333e5cb2eba6f888f81d"
+  },
+  {
+    "kind": "world.clock_started",
+    "anchor_mono": 261217.197784256,
+    "after_browser_release_mono": 261217.202118178,
+    "wall": 1795837668.055794
+  },
+  {
+    "kind": "actor.schema_invalid",
+    "request_id": "request-0000001",
+    "error": "Invalid browser_act schema",
+    "wall": 1795837668.069833
+  },
+  {
+    "kind": "actor.stopped",
+    "reason": "ACTOR_CALL_LIMIT",
+    "wall": 1795837668.069959,
+    "mono": 261217.216284099
+  },
+  {
+    "kind": "evidence.final_snapshot_acquired",
+    "wall": 1795837672.9261801,
+    "mono": 261222.072477093
+  }
+]

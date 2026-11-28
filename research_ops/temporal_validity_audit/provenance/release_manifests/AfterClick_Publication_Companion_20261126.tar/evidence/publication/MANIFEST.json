@@ -1,0 +1,586 @@
+{
+  "files": {
+    "analysis/rq1-case-audit.jsonl": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/rq1-case-audit.jsonl",
+      "sha256": "a9854ea6cf13f4d81f5613df1074ed25559156db2f5adb7a69f80b07df342e12",
+      "bytes": 105777
+    },
+    "analysis/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/report.json",
+      "sha256": "f0e50bcd67e1c773f5920ca58999e2827e9874aeb73eee8ef56e033e85052f9e",
+      "bytes": 5124
+    },
+    "analysis/provenance.json": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/provenance.json",
+      "sha256": "e51ef7057c0ce087ac0283c813af99c539504262035c9c02266f5397d2d1f882",
+      "bytes": 324
+    },
+    "analysis/rq1-strata.csv": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/rq1-strata.csv",
+      "sha256": "14af0a273b95352b4898b3819f81714165119d7b579f377167f4ccb86487da1f",
+      "bytes": 1435
+    },
+    "analysis/rq3-debt-policy.csv": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/rq3-debt-policy.csv",
+      "sha256": "23584094f60449e650dd80c72a8ae3a8509d7a295f4f89f8d53776abeadf7043",
+      "bytes": 592
+    },
+    "analysis/reviewer-decisions.csv": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/reviewer-decisions.csv",
+      "sha256": "3892ab2fab39296c37e8cd6675797656afc27c43d6ed40c7cbd00d185bbc3d29",
+      "bytes": 174423
+    },
+    "analysis/structural-sensitivity.csv": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/structural-sensitivity.csv",
+      "sha256": "b250743eab481b80e34f72bccab8fdae22bb8762247a1eca89d7d8a86a0dccd6",
+      "bytes": 1057
+    },
+    "analysis/rq4-refined-ordering.csv": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/rq4-refined-ordering.csv",
+      "sha256": "ae7eff929a13f9bc3230407de1605bea528c4ad3aa758fa89c03cf920851adf9",
+      "bytes": 40454
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06-P0-intermediate-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06-P0-intermediate-0-primary.md",
+      "sha256": "d9843450aa5110224d42f482c83f042fc1c2e8dc08420077c7e662f138d30804",
+      "bytes": 919
+    },
+    "analysis/cases/larger--TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-02-P0-generous-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-02-P0-generous-0-larger.md",
+      "sha256": "1feaad1587ac66ae0f6ca03c862f64458c1c93a523fcc5c409c7baf335f40667",
+      "bytes": 912
+    },
+    "analysis/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-05-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-05-P0-generous-0-primary.md",
+      "sha256": "f7f59516fdaac7761144606676f90b5affcc8e838466693470d274c43478fc92",
+      "bytes": 957
+    },
+    "analysis/cases/larger--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-06-P0-tight-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-06-P0-tight-0-larger.md",
+      "sha256": "a0187b1c06d5f5c686aafcfa8f0fe38fc8cbb128488bd364833f7861e5ad7ed7",
+      "bytes": 908
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-03-P0-intermediate-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-03-P0-intermediate-1-primary.md",
+      "sha256": "d161c06947fd80786759b69ea61c4a5d0aa8edce01f293a00e1e8a0fa813db6d",
+      "bytes": 919
+    },
+    "analysis/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-02-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-02-P0-tight-1-primary.md",
+      "sha256": "1915759af6e4bdd9384742a91d58bbbbcfb88b41ca1a4da72cb5de7e0de80bcb",
+      "bytes": 924
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05-P0-intermediate-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05-P0-intermediate-0-primary.md",
+      "sha256": "dc8bda566595e50f79b849c39a342fcea7766a04cfec810ec2410ff4cb29bb28",
+      "bytes": 955
+    },
+    "analysis/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05-P0-intermediate-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05-P0-intermediate-0-larger.md",
+      "sha256": "8d21a88ce21a41b8016ff838a4c9f7f92436446f124277bc3d45048d4073efa7",
+      "bytes": 922
+    },
+    "analysis/cases/larger--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P0-tight-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P0-tight-0-larger.md",
+      "sha256": "e83a43c197812cf01e830c90a0abb4822f2261cf47b4d5f1bff4f34080e11722",
+      "bytes": 901
+    },
+    "analysis/cases/larger--TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06-P0-tight-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06-P0-tight-0-larger.md",
+      "sha256": "de130b7b29ab5a675cff9fc696d79a4481a0a6165b1ed35c6252842e4ae358aa",
+      "bytes": 899
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P0-tight-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P0-tight-0-primary.md",
+      "sha256": "713f2db67471a8c204ec3f2f9ca8413b014708ab17e002224e80d5e9b621c6bd",
+      "bytes": 907
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-03-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-03-P0-generous-0-primary.md",
+      "sha256": "8cc503e1e6238e5687482aef243f9bef67839513d11dd3cd0629bc2fe03be9f8",
+      "bytes": 911
+    },
+    "analysis/cases/primary--TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-06-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-06-P0-tight-1-primary.md",
+      "sha256": "811b7653e777f50e46a86e835f208704e02189c89fad97721e49ad5ca0506d58",
+      "bytes": 953
+    },
+    "analysis/cases/larger--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-1-larger.md",
+      "sha256": "ad448265934bc5768881da360d36c9bd5017a05937b8f70471af9ff3d9f5d559",
+      "bytes": 907
+    },
+    "analysis/cases/larger--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P3-tight-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P3-tight-1-larger.md",
+      "sha256": "96cb19ceb0d1ebd15808dffd245611b10fd43a907bc247ae90ba750cbf3ed32b",
+      "bytes": 981
+    },
+    "analysis/cases/primary--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-05-P0-intermediate-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-05-P0-intermediate-1-primary.md",
+      "sha256": "004d0916a3e0a3da7a760c0f12612d09e569c82a36e37e57082517a6de76a6ec",
+      "bytes": 924
+    },
+    "analysis/cases/primary--TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-02-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-02-P0-generous-0-primary.md",
+      "sha256": "4035f376f8c100f83069dca99d426607b6d89f8ecb096d255fb3472a55df4c91",
+      "bytes": 959
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-FLOWBOARD-02-P0-generous-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-FLOWBOARD-02-P0-generous-1-primary.md",
+      "sha256": "5686b19a618b203762dbf9fdd0d637c87616534ff911408c082e4f2eff876bea",
+      "bytes": 909
+    },
+    "analysis/cases/primary--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-03-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-03-P0-generous-0-primary.md",
+      "sha256": "93227dba3213a75f3ea3eb560859f7fa702839a36fc103ea47af9e18a7bd9bb2",
+      "bytes": 916
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-02-P0-intermediate-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-02-P0-intermediate-1-primary.md",
+      "sha256": "1508a5190be1e24c5a1bbae56fc650318a30027d02090167919dd85036ada54a",
+      "bytes": 921
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-0-primary.md",
+      "sha256": "ee4caf658e75a306e07c7e31f1cc02b041c2e248368349b104cf7a9ba4266b42",
+      "bytes": 940
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-02-P0-tight-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-02-P0-tight-0-primary.md",
+      "sha256": "b6723764eb080630eeaf3d88e645ba152fd32daf7504b8e86fa321eb35756657",
+      "bytes": 932
+    },
+    "analysis/cases/larger--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-06-P0-tight-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-06-P0-tight-1-larger.md",
+      "sha256": "e76fd769cae7402d49f4451f9ae9b9dcf16868b8552c513744ddbea80c12b677",
+      "bytes": 908
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-02-P0-generous-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-02-P0-generous-1-primary.md",
+      "sha256": "a0cdbdb786ece0c41b7b6d227644e80f9248d4e9992a63bb25e89d1022dcbf93",
+      "bytes": 911
+    },
+    "analysis/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05-P0-intermediate-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-05-P0-intermediate-1-larger.md",
+      "sha256": "e275a920aa6b5c6b6d6385459b76fab3e5753f2fc70daa91f329c041789dcb39",
+      "bytes": 922
+    },
+    "analysis/cases/larger--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P0-tight-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CUSTOMER_RELEASE-L1-OPSCONSOLE-05-P0-tight-1-larger.md",
+      "sha256": "a835dda4bab62a7453cd942fbc0df438d0d842b29efb1cb4f03333a20edc5d98",
+      "bytes": 901
+    },
+    "analysis/cases/larger--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-03-P0-generous-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-03-P0-generous-0-larger.md",
+      "sha256": "dcb2ab0e9167aba5fd85563c8c5e1613016fc7c9d000ffafe2a695598b476567",
+      "bytes": 910
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-02-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-02-P0-generous-0-primary.md",
+      "sha256": "8dcf87f655107397a0de58734a765d50c13feffb2e1107ea903af004ef588daf",
+      "bytes": 920
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L2-FLOWBOARD-02-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L2-FLOWBOARD-02-P0-tight-1-primary.md",
+      "sha256": "22ad5fa3f881c576e227cf280abb62ca6b0818966366731a845c594facab5e46",
+      "bytes": 903
+    },
+    "analysis/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-06-P0-intermediate-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-FLOWBOARD-06-P0-intermediate-0-primary.md",
+      "sha256": "dbd565cd82ba2a584a090409f18f86006bdb2df556a8a55dea4032cd7fdce606",
+      "bytes": 965
+    },
+    "analysis/cases/larger--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-0-larger.md",
+      "sha256": "d1de98df9816bec941f5e5dd1391063fe78f387c124ab844bb1e3269572c5431",
+      "bytes": 907
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-FLOWBOARD-05-P0-intermediate-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-FLOWBOARD-05-P0-intermediate-0-primary.md",
+      "sha256": "6cf146a45505525d26f9ced0fe4a1912927303e0a89c091e2465ddfa1fb91d18",
+      "bytes": 917
+    },
+    "analysis/cases/larger--TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-02-P0-generous-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-RESOURCE_ORCHESTRATION-L2-OPSCONSOLE-02-P0-generous-0-larger.md",
+      "sha256": "a14f963fed230a314bbfd128d92c811bcd3fd30c8f487ab2243a3cf1a9b1498d",
+      "bytes": 926
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-02-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-02-P0-generous-0-primary.md",
+      "sha256": "52d698733ac50132f1d0ae331ac30ddbdc7dd0c38d95536c741d6c0d6676be5e",
+      "bytes": 920
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06-P3-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06-P3-tight-1-primary.md",
+      "sha256": "b177fda4983548dbee9520c90824611678029f8f596bdf4c312b88e4f1097c12",
+      "bytes": 1012
+    },
+    "analysis/cases/primary--TEST-ACCESS_MIGRATION-L1-FLOWBOARD-06-P0-generous-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-ACCESS_MIGRATION-L1-FLOWBOARD-06-P0-generous-1-primary.md",
+      "sha256": "9b93e0e900a922400b002faf534e9880b7da2e4865275d5fdb162d0a9e6bc9a4",
+      "bytes": 940
+    },
+    "analysis/cases/larger--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06-P0-intermediate-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06-P0-intermediate-0-larger.md",
+      "sha256": "51fb5da71073e8cc688f6314f88142bad8c6d842584f83ec28dc1dc73d4162f0",
+      "bytes": 913
+    },
+    "analysis/cases/primary--TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-06-P0-tight-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-INCIDENT_RESPONSE-L1-OPSCONSOLE-06-P0-tight-0-primary.md",
+      "sha256": "287ad392fbf0f0b3947360bb6dbd58d15e69732fa1ff3da62468b57522b40e90",
+      "bytes": 912
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-03-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-03-P0-generous-0-primary.md",
+      "sha256": "e3811cd91799ccb50ce4f6c2d2b4f2063789b21c79781e355d0846d9c981fd23",
+      "bytes": 918
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-02-P0-intermediate-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-02-P0-intermediate-0-primary.md",
+      "sha256": "1c53fae89deb684ac0e1c0d6af03818481213f936d9c8aad08c3669b07a29dfe",
+      "bytes": 948
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-05-P3-tight-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-05-P3-tight-0-primary.md",
+      "sha256": "edc649ea5b96fdf84c1edd5f9fd8d4b5f2bb8601643dab1f2895341aa60e64d2",
+      "bytes": 985
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-FLOWBOARD-03-P0-tight-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-FLOWBOARD-03-P0-tight-0-primary.md",
+      "sha256": "9a3200392243c49e93dffc79f1b6062bd93d2d5e4ca0518b0f87a0c69e110330",
+      "bytes": 903
+    },
+    "analysis/cases/primary--TEST-ACCESS_MIGRATION-L1-FLOWBOARD-03-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-ACCESS_MIGRATION-L1-FLOWBOARD-03-P0-tight-1-primary.md",
+      "sha256": "68e694745a98dfbb6b703214a3b2308fedfaa1732212f8a4e71173bfecb6f5f3",
+      "bytes": 934
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-05-P0-tight-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-05-P0-tight-0-primary.md",
+      "sha256": "79c06d366a5d4174a9f428bf8d63accb7fcdc8cdc9208d918013bf29959d76e0",
+      "bytes": 905
+    },
+    "analysis/cases/larger--TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-03-P0-generous-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-03-P0-generous-1-larger.md",
+      "sha256": "1145f74b35e9ba255f16fe941c28283f4d5051bc00b1272defbf754f6bf1d7e9",
+      "bytes": 924
+    },
+    "analysis/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06-P0-intermediate-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06-P0-intermediate-0-larger.md",
+      "sha256": "92ca266d13651c8d5154105abbd98d8a6ef218006bb58666d09a7e6f7e26f421",
+      "bytes": 920
+    },
+    "analysis/cases/larger--TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-05-P0-intermediate-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-05-P0-intermediate-0-larger.md",
+      "sha256": "8bcdfd596a9152f333c7a5171dde18ffd29a3a14313a788f2160a2117c15a5ad",
+      "bytes": 920
+    },
+    "analysis/cases/primary--TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-02-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RESOURCE_ORCHESTRATION-L2-FLOWBOARD-02-P0-generous-0-primary.md",
+      "sha256": "673bd83899a02a62f30e474c131d2b4d2a8d6f907a64d20c31efef539d5e50b1",
+      "bytes": 957
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06-P0-tight-1-primary.md",
+      "sha256": "c737857497fb3fb743e4517a0692cb97b8240316a0775a0b5e5d7f040220d0b4",
+      "bytes": 932
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-02-P0-generous-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-OPSCONSOLE-02-P0-generous-1-primary.md",
+      "sha256": "af082f69f069845b319cfb82739599757eed86ebe8240e8205c60ebc598e5235",
+      "bytes": 920
+    },
+    "analysis/cases/larger--TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03-P0-generous-0-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-03-P0-generous-0-larger.md",
+      "sha256": "9add08d36aacb1b33e27502eb0b2527cb8b87a2469a4234cd185435dd5e36380",
+      "bytes": 926
+    },
+    "analysis/cases/larger--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06-P0-intermediate-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-06-P0-intermediate-1-larger.md",
+      "sha256": "fa346f7bfc5f460096bb01a34a8887197ee464adc8ac96cf71c9926735562f85",
+      "bytes": 913
+    },
+    "analysis/cases/primary--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-06-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-06-P0-tight-1-primary.md",
+      "sha256": "96e025eecfe8c409194553703a9b926ffcf6031f0272888f0159441c6e3fb65d",
+      "bytes": 910
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-02-P0-generous-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L2-OPSCONSOLE-02-P0-generous-1-primary.md",
+      "sha256": "ec6210aa57834338112c1d4a7091bfd37b6c0e484d2417ba5a028e8e39b6bc86",
+      "bytes": 947
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-03-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-03-P0-tight-1-primary.md",
+      "sha256": "515d054791075bca63ba350a54140321ad28ff1b208e9246756a3e5c89f95f6d",
+      "bytes": 907
+    },
+    "analysis/cases/larger--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06-P0-tight-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-06-P0-tight-1-larger.md",
+      "sha256": "2d2c361997feab7802d78cbca56c493e755f2842743dd7a6b833905d9ea273b9",
+      "bytes": 899
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06-P0-intermediate-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06-P0-intermediate-0-primary.md",
+      "sha256": "767abace8cec2ad0dcbe1fe902f6a5d8e89900ba6088b2b3ce28f4e114e18e8d",
+      "bytes": 953
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L2-OPSCONSOLE-06-P0-generous-1-primary.md",
+      "sha256": "4bd3945775b5db96cc7a5ed1bf3329c7a24553d861aa364547b8697af84d642a",
+      "bytes": 940
+    },
+    "analysis/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06-P0-intermediate-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-06-P0-intermediate-1-larger.md",
+      "sha256": "ed793207271682a4d5af12c2ce1c58e4463a327cb59f5b1941e40fed808b2c05",
+      "bytes": 920
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-05-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-05-P0-generous-0-primary.md",
+      "sha256": "fc60dad59898e1da5c17357e84dd27ec9fe1f7a6f03b4b4802eeb6daaab6051c",
+      "bytes": 911
+    },
+    "analysis/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-02-P0-intermediate-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RESOURCE_ORCHESTRATION-L1-OPSCONSOLE-02-P0-intermediate-0-primary.md",
+      "sha256": "abb86f3c1bb39e91c526f446c1ec3e0d1145083beeb91daac1d61983a480300d",
+      "bytes": 967
+    },
+    "analysis/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-02-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CROSS_TEAM_APPROVAL-L1-FLOWBOARD-02-P0-tight-1-primary.md",
+      "sha256": "0e76d6be8e8ce34d3f85af7a0c4106b12e5e6a9f2ef60137d8c4d4e19d095b57",
+      "bytes": 912
+    },
+    "analysis/cases/primary--TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-06-P0-generous-0-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-CUSTOMER_RELEASE-L2-FLOWBOARD-06-P0-generous-0-primary.md",
+      "sha256": "da1f345bc3d4961a51d9a595aa53e3f4d14dc8a765f9653ec3fe9630c52c7870",
+      "bytes": 911
+    },
+    "analysis/cases/larger--TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-05-P0-intermediate-1-larger.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/larger--TEST-INCIDENT_RESPONSE-L3-OPSCONSOLE-05-P0-intermediate-1-larger.md",
+      "sha256": "323fdd751c4eb90377cbeee53a7f9d09a33b3c87f5538d323c45873f123b4a7e",
+      "bytes": 920
+    },
+    "analysis/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-02-P0-tight-1-primary.md": {
+      "source": "artifacts/research_runs/publication-20261126-existing-analysis-final/cases/primary--TEST-RETENTION_EXPORT-L1-OPSCONSOLE-02-P0-tight-1-primary.md",
+      "sha256": "2d50a2a90614953149dad18a8715874507f34c6be9b2e623627a00aac0bb7a1d",
+      "bytes": 905
+    },
+    "normalized/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-normalized-v3/report.json",
+      "sha256": "10000a13423c51793a1d731a9d53be632cc8e12de6b34a2a207c5fe0ea87a014",
+      "bytes": 744
+    },
+    "normalized/episodes.csv": {
+      "source": "artifacts/research_runs/publication-20261126-normalized-v3/episodes.csv",
+      "sha256": "4fef8a9890264a078ff155e990dfc998b20385207cad1571bfc77ed80c33ba16",
+      "bytes": 835923
+    },
+    "normalized/assignments.csv": {
+      "source": "artifacts/research_runs/publication-20261126-normalized-v3/assignments.csv",
+      "sha256": "b72290e7580edb13cde7c4cdaed0df82acc88251e97d4bc4181021da23a40886",
+      "bytes": 842852
+    },
+    "normalization-verification/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-normalized-independent-v1/report.json",
+      "sha256": "3bfa649020e126fa792c66eb36c0eb0604b63b473a12e9e6cf73f99e01296c6b",
+      "bytes": 455
+    },
+    "obligations/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-obligation-audit-v1/report.json",
+      "sha256": "0f0b2359ad12102e4c944723065b981ff493133212c89cfaffef50b71b94461b",
+      "bytes": 592
+    },
+    "obligations/episode-debt.csv": {
+      "source": "artifacts/research_runs/publication-20261126-obligation-audit-v1/episode-debt.csv",
+      "sha256": "a68f5f7757668b6ce257e73b5aa8acf6a987684134f5ecd5cce151bb836bb405",
+      "bytes": 206512
+    },
+    "obligations/duties.csv": {
+      "source": "artifacts/research_runs/publication-20261126-obligation-audit-v1/duties.csv",
+      "sha256": "224b7ef7f339da8e9f663f63901ae377add6401b8b53f45d8551d153be17d515",
+      "bytes": 434630
+    },
+    "checks/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-final-checks-v1/report.json",
+      "sha256": "b552eb6676dcfc43d70051405f0b030acca47e5e29cdaf394582f4371d623e8c",
+      "bytes": 545
+    },
+    "checks/matched-policy-observations.csv": {
+      "source": "artifacts/research_runs/publication-20261126-final-checks-v1/matched-policy-observations.csv",
+      "sha256": "194abdcfd6ca6dcafe0c09ffac311c1f6dc07d33676eaa514431b45ca51fe9a5",
+      "bytes": 17822
+    },
+    "actuator-verification/restored-with-forbidden-history.csv": {
+      "source": "artifacts/research_runs/publication-20261126-actuator-independent-v3/restored-with-forbidden-history.csv",
+      "sha256": "1ddb6b0c25f9f1675703c7e4d8349a5c6a1bd9e842886d9d9a6be02a425f22fd",
+      "bytes": 27546
+    },
+    "actuator-verification/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-actuator-independent-v3/report.json",
+      "sha256": "42d3c083809b5651606271561a495a1000928ce9d42c0fff2a2a8854920ac1e1",
+      "bytes": 404
+    },
+    "boundary/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-boundary-confirmation-v1/report.json",
+      "sha256": "7cab3710af1f400aaeddf21bfef67291c857a56a505091489005c6e150fd3808",
+      "bytes": 207
+    },
+    "boundary/registration.json": {
+      "source": "artifacts/research_runs/publication-20261126-boundary-confirmation-v1/registration.json",
+      "sha256": "c2fd0f65a88980991f111f4b6cd2353648e757be07b68081756d5a72c38b698e",
+      "bytes": 29328
+    },
+    "replay/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-review-replay-v1/report.json",
+      "sha256": "d2c43224583ead684df3397c6055e45fdf26c0ea2e8b9ca8f5b26fe264e9f2df",
+      "bytes": 538
+    },
+    "replay/registration.json": {
+      "source": "artifacts/research_runs/publication-20261126-review-replay-v1/registration.json",
+      "sha256": "5fc2fa60fb6e07206ae56a72459d575f45c3f9cd95bc7d9303be8f27acaf7993",
+      "bytes": 293171
+    },
+    "temporal-verification/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-temporal-independent-v1/report.json",
+      "sha256": "2e19741a46c214326d47bec83d41fb5091b8e01646f78c7480e6850fd2c0dcb5",
+      "bytes": 358
+    },
+    "data-candidate.json": {
+      "source": "artifacts/publication-release/AfterClick_v12_Public_Evidence_Candidate.tar.gz.summary.json",
+      "sha256": "a75d4ad663c6b787e385c2b206b7412d52c1a062d06ce6d40ac70be6aec01949",
+      "bytes": 416
+    },
+    "finance.json": {
+      "source": "research_ops/publication/FINANCE_STATE.json",
+      "sha256": "c73ce34816f15c153854174c34c3cbf248d31b0ad8a3f83a1b32fabeef30d4ca",
+      "bytes": 4171
+    },
+    "linux/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-regression-v3/publication-linux-summary.json",
+      "sha256": "21de4501797765ddaceb971adc37f6639a821805bb78277fad4e93d8b0c9b0a6",
+      "bytes": 5464
+    },
+    "linux/steps.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/steps.json",
+      "sha256": "14462e121b4f0fdd7c6db16520ba2e1c5d2a03b62db561a7d952f47188ff0661",
+      "bytes": 2915
+    },
+    "linux/data-verification.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/data-verification.json",
+      "sha256": "704f00c0603ff646bc1db0274198050186a8675509ee318cc77ec61e7749ff98",
+      "bytes": 158
+    },
+    "linux/environment.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/environment.json",
+      "sha256": "8e7383b3555013895210d1537ca7bc80dd09b43791fc8d06b25ed0f9ef50f2c0",
+      "bytes": 271
+    },
+    "linux/boundary-dev/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/boundary-dev/report.json",
+      "sha256": "2dc0668d3599f9108bb235bdb1ab451624ed3158297784a72c5cfc2119d0ad23",
+      "bytes": 205
+    },
+    "linux/corrected-v3/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/corrected-v3/report.json",
+      "sha256": "826d2bc0c47c12a477dd53487048a415e61bd870eaa405b9c7de3f27f62a5674",
+      "bytes": 632
+    },
+    "linux/corrected-v3/analysis/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/corrected-v3/analysis/report.json",
+      "sha256": "f0e50bcd67e1c773f5920ca58999e2827e9874aeb73eee8ef56e033e85052f9e",
+      "bytes": 5124
+    },
+    "linux/corrected-v3/verified/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/corrected-v3/verified/report.json",
+      "sha256": "3bfa649020e126fa792c66eb36c0eb0604b63b473a12e9e6cf73f99e01296c6b",
+      "bytes": 455
+    },
+    "linux/corrected-v3/normalized/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/corrected-v3/normalized/report.json",
+      "sha256": "10000a13423c51793a1d731a9d53be632cc8e12de6b34a2a207c5fe0ea87a014",
+      "bytes": 744
+    },
+    "linux/corrected-v3/actuator-verification/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/corrected-v3/actuator-verification/report.json",
+      "sha256": "42d3c083809b5651606271561a495a1000928ce9d42c0fff2a2a8854920ac1e1",
+      "bytes": 404
+    },
+    "linux/corrected-v3/obligations/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/corrected-v3/obligations/report.json",
+      "sha256": "0f0b2359ad12102e4c944723065b981ff493133212c89cfaffef50b71b94461b",
+      "bytes": 592
+    },
+    "linux/actuator/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/actuator/report.json",
+      "sha256": "116c987cf3c15399501ea9d0103bfe985d6e807e17b605fad7543150b21e5cb7",
+      "bytes": 3587
+    },
+    "linux/existing/reproduction-report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/existing/reproduction-report.json",
+      "sha256": "0572a6f6d82d6eda548b4e3cd68a932f84f032363998e868c49df2c98d5bc50e",
+      "bytes": 1792
+    },
+    "linux/existing/larger-graphs/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/existing/larger-graphs/report.json",
+      "sha256": "5f965069b5b37cf503271ec63f91a282d322796c8554bddb7c9b98b55dba547f",
+      "bytes": 591
+    },
+    "linux/existing/larger-analysis/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/existing/larger-analysis/report.json",
+      "sha256": "d04e3d307abe3253a31b49c89c4ed901ba8e4fa6ae71693eca95e3319192e7cf",
+      "bytes": 9542
+    },
+    "linux/existing/primary-graphs/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/existing/primary-graphs/report.json",
+      "sha256": "3477aaf54b9e9b170b1d0ebc47dc61c3412cbf31c8cef4961b9737bb3a5046ae",
+      "bytes": 595
+    },
+    "linux/existing/larger-oracle-verification/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/existing/larger-oracle-verification/report.json",
+      "sha256": "4a368f9dd207a72f00b4bf19bb40caf53929e6bec565ec97eb0b6235979e35f1",
+      "bytes": 269
+    },
+    "linux/existing/primary-oracle-verification/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/existing/primary-oracle-verification/report.json",
+      "sha256": "3fbd1759472f6a1d968000e8308079e7a335a974eb2335133f462bfe7b574052",
+      "bytes": 269
+    },
+    "linux/existing/primary-analysis/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/existing/primary-analysis/report.json",
+      "sha256": "fbdaf28075ae1e5dd9618a3f7ac56b3c021291780ec0fa7580ffa83a0058d8ab",
+      "bytes": 107451
+    },
+    "linux/lifecycle.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-followup-v4/lifecycle.json",
+      "sha256": "fa2ab58785530001c40d79cae07f9f351ec6c58ba87cee4b3b262f6d9a4ff4c3",
+      "bytes": 194
+    },
+    "linux/full-source/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-regression-v3/restored/report.json",
+      "sha256": "90a9d93e6d4acd273141ca62e7e653ed438121f61b1b4c7a1051b513b829099c",
+      "bytes": 7385
+    },
+    "linux/full-source/lifecycle.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-regression-v3/lifecycle.json",
+      "sha256": "d95c306641d0c4a3a05f549373ef0c7364921d0714b6c1e95bd3d314ca57f75e",
+      "bytes": 193
+    },
+    "linux/fixture-followup/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-followup-v4/restored/report.json",
+      "sha256": "8d59b5ad9ec667d57c6bf5631ba543552e69dd9a411e18d6188998f553da183b",
+      "bytes": 360
+    },
+    "linux/initial/report.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/restored/report.json",
+      "sha256": "4b306ca3d93076f11492d5bccb2e94097a89f07ec710cd847c519ac44a20e70d",
+      "bytes": 3376
+    },
+    "linux/portability-agreement.json": {
+      "source": "artifacts/research_runs/publication-20261126-linux-reproduction-v2/portability-agreement.json",
+      "sha256": "94b9d9073af415e50991cd3fffbdcedc23d6894b5f1855e2382d256b6b6de13c",
+      "bytes": 1466
+    }
+  },
+  "raw_originals_modified": false,
+  "public_raw_upload_performed": false
+}

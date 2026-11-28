@@ -1,0 +1,357 @@
+{
+  "v12_controls": [
+    {
+      "id": "service",
+      "version": 32,
+      "state": {
+        "ticket": false,
+        "checked": true,
+        "canceled": true,
+        "resolved": true,
+        "restored": false,
+        "verified": false,
+        "suspended": true,
+        "control_ack": "none",
+        "evidence_ready": true,
+        "pending_enabled": true,
+        "receiver_visible": [],
+        "collaborator_note": [
+          "Collaborator: preserve scoped handoff"
+        ],
+        "pending_effect_kind": "delegated.read",
+        "business_collaborator_done": true
+      }
+    }
+  ],
+  "v12_events": [
+    {
+      "id": "2852c7e181fb4bb0ad758cf6bef8a43b",
+      "kind": "pending.admission_snapshot",
+      "wall": 1795837861.433608,
+      "mono": 261410.57879553,
+      "ms": 3974,
+      "payload": {
+        "admitted": false
+      }
+    },
+    {
+      "id": "3b9af5e668174f05b61d5f0490e65069",
+      "kind": "ops.collaborator_work_order_changed",
+      "wall": 1795837857.751925,
+      "mono": 261406.897134217,
+      "ms": 293,
+      "payload": {
+        "operation_id": "w00"
+      }
+    },
+    {
+      "id": "df49158a34e64052830725500099443d",
+      "kind": "collaborator.note_arrived",
+      "wall": 1795837857.771335,
+      "mono": 261406.916544154,
+      "ms": 312,
+      "payload": {}
+    },
+    {
+      "id": "edb58503ac84495e8ebf9a00e11dfffe",
+      "kind": "control.command",
+      "wall": 1795837857.640414,
+      "mono": 261406.785623174,
+      "ms": 181,
+      "payload": {
+        "after": {
+          "ticket": false,
+          "checked": false,
+          "canceled": true,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": true,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [],
+          "pending_effect_kind": "delegated.read"
+        },
+        "before": {
+          "ticket": false,
+          "checked": false,
+          "canceled": false,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": false,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [],
+          "pending_effect_kind": "delegated.read"
+        },
+        "command": "Cancel pending service"
+      }
+    }
+  ],
+  "v12_outbox": [
+    {
+      "id": "pending",
+      "status": "canceled",
+      "due": 3962,
+      "payload": {
+        "kind": "delegated.read",
+        "units": 1,
+        "choice": "external-contractor",
+        "request_class": "preexisting_pending_service"
+      }
+    }
+  ],
+  "v12_physical_effects": [],
+  "v12_receipts": [],
+  "v12_receiver_account": [
+    {
+      "id": "synthetic-capacity",
+      "units": 8,
+      "version": 1
+    }
+  ],
+  "v12_requests": [],
+  "ops_assets": [
+    {
+      "id": "access",
+      "kind": "internal_permission",
+      "value": {
+        "mode": "normal",
+        "holder": "outgoing",
+        "audit_note": "Preserve scoped handoff"
+      },
+      "version": 2
+    },
+    {
+      "id": "data",
+      "kind": "classification",
+      "value": {
+        "deleted": [],
+        "retained": [
+          "legal-hold"
+        ]
+      },
+      "version": 1
+    },
+    {
+      "id": "quota",
+      "kind": "capacity",
+      "value": {
+        "total": 8,
+        "consumed": 0,
+        "reserved": 0
+      },
+      "version": 1
+    },
+    {
+      "id": "restore:w06",
+      "kind": "scoped_service",
+      "value": {
+        "scope": "internal",
+        "enabled": false
+      },
+      "version": 1
+    }
+  ],
+  "ops_role_signoffs": [],
+  "ops_work_orders": [
+    {
+      "id": "w00",
+      "stage": "open",
+      "version": 2,
+      "scope": "unselected",
+      "details": {
+        "id": "w00",
+        "kind": "record",
+        "role": null,
+        "label": "Inspect current reviewer roster",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [],
+        "collaborator_note": "Preserve scoped handoff"
+      }
+    },
+    {
+      "id": "w01",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w01",
+        "kind": "record",
+        "role": null,
+        "label": "Classify external child request",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w02",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w02",
+        "kind": "record",
+        "role": null,
+        "label": "Resolve incoming team",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w03",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w03",
+        "kind": "approval",
+        "role": "Identity",
+        "label": "Collect identity approval",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w04",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w04",
+        "kind": "external",
+        "role": null,
+        "label": "Commit on-call access migration outcome 1",
+        "effect": "delegated.read",
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w05",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w05",
+        "kind": "record",
+        "role": null,
+        "label": "Retire outgoing grant",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w02"
+        ]
+      }
+    },
+    {
+      "id": "w06",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w06",
+        "kind": "restore",
+        "role": null,
+        "label": "Restore normal access service",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w07",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w07",
+        "kind": "close",
+        "role": null,
+        "label": "Close migration request",
+        "effect": null,
+        "choices": [
+          "incoming-internal",
+          "incident-reader",
+          "external-contractor"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w02",
+          "w03",
+          "w04",
+          "w05",
+          "w06"
+        ]
+      }
+    }
+  ]
+}

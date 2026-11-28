@@ -1,0 +1,723 @@
+{
+  "v12_controls": [
+    {
+      "id": "service",
+      "version": 60,
+      "state": {
+        "ticket": true,
+        "checked": true,
+        "canceled": false,
+        "resolved": true,
+        "restored": false,
+        "verified": false,
+        "suspended": true,
+        "control_ack": "none",
+        "evidence_ready": true,
+        "pending_enabled": true,
+        "receiver_visible": [],
+        "collaborator_note": [
+          "Collaborator: preserve scoped handoff"
+        ],
+        "pending_effect_kind": "delegated.read",
+        "business_collaborator_done": true
+      }
+    }
+  ],
+  "v12_events": [
+    {
+      "id": "1e1c75e21ccc4bcca8d68f03e9820cfd",
+      "kind": "receiver.committed",
+      "wall": 1795840508.186783,
+      "mono": 264053.099904714,
+      "ms": 8971,
+      "payload": {
+        "payload": {
+          "kind": "delegated.read",
+          "units": 1,
+          "choice": "external-contractor",
+          "request_class": "preexisting_pending_service"
+        },
+        "receipt_id": "pending"
+      }
+    },
+    {
+      "id": "2d4e897e93c94059b7f43d41300e8a6c",
+      "kind": "collaborator.note_arrived",
+      "wall": 1795840499.576154,
+      "mono": 264044.489144381,
+      "ms": 360,
+      "payload": {}
+    },
+    {
+      "id": "56b7a8a066c649499924fa7062efe3f2",
+      "kind": "receiver.transport_ack",
+      "wall": 1795840508.206283,
+      "mono": 264053.119404595,
+      "ms": 8991,
+      "payload": {
+        "effect_id": "pending"
+      }
+    },
+    {
+      "id": "6f5a75b75c974279bdea80992fc6bd34",
+      "kind": "pending.admission_snapshot",
+      "wall": 1795840503.369687,
+      "mono": 264048.282735288,
+      "ms": 4154,
+      "payload": {
+        "admitted": true
+      }
+    },
+    {
+      "id": "85e6ff4fa1804f54a4fb8c0d3c751a81",
+      "kind": "control.command",
+      "wall": 1795840504.7396538,
+      "mono": 264049.652722877,
+      "ms": 5524,
+      "payload": {
+        "after": {
+          "ticket": true,
+          "checked": true,
+          "canceled": false,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": true,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "delegated.read",
+          "business_collaborator_done": true
+        },
+        "before": {
+          "ticket": true,
+          "checked": true,
+          "canceled": false,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": false,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "delegated.read",
+          "business_collaborator_done": true
+        },
+        "command": "Suspend pending service"
+      }
+    },
+    {
+      "id": "d315dda9869d410989bb401941f94f05",
+      "kind": "external.admitted",
+      "wall": 1795840503.373711,
+      "mono": 264048.286759975,
+      "ms": 4158,
+      "payload": {
+        "payload": {
+          "kind": "delegated.read",
+          "units": 1,
+          "choice": "external-contractor",
+          "request_class": "preexisting_pending_service"
+        },
+        "effect_id": "pending"
+      }
+    },
+    {
+      "id": "fa3be6f133a04b9795638263738fb418",
+      "kind": "flow.collaborator_task_changed",
+      "wall": 1795840499.546005,
+      "mono": 264044.458994655,
+      "ms": 330,
+      "payload": {
+        "operation_id": "w00"
+      }
+    }
+  ],
+  "v12_outbox": [
+    {
+      "id": "pending",
+      "status": "delivered",
+      "due": 8844,
+      "payload": {
+        "kind": "delegated.read",
+        "units": 1,
+        "choice": "external-contractor",
+        "request_class": "preexisting_pending_service"
+      }
+    }
+  ],
+  "v12_physical_effects": [
+    {
+      "id": "pending",
+      "kind": "delegated.read",
+      "resource": "external-contractor",
+      "content": {
+        "child_capability": "pending",
+        "observed_document": "external-contractor",
+        "parent_revocation_can_recall": false
+      }
+    }
+  ],
+  "v12_receipts": [
+    {
+      "id": "pending",
+      "payload": {
+        "kind": "delegated.read",
+        "units": 1,
+        "choice": "external-contractor",
+        "request_class": "preexisting_pending_service"
+      },
+      "wall": 1795840508.1839979,
+      "mono": 264053.097120984
+    }
+  ],
+  "v12_receiver_account": [
+    {
+      "id": "synthetic-capacity",
+      "units": 8,
+      "version": 1
+    }
+  ],
+  "v12_requests": [],
+  "flow_capability_grants": [
+    {
+      "id": "w06",
+      "principal": "incoming-internal",
+      "capability": "Restore normal access service",
+      "active": false,
+      "revision": 1
+    }
+  ],
+  "effect_events": [
+    {
+      "id": 1,
+      "kind": "task.updated",
+      "action_id": "collaborator-handoff",
+      "actor": "controlled-collaborator",
+      "resource": "w00",
+      "logical_time": 261,
+      "parents": [],
+      "before": {
+        "assignee": "Maya"
+      },
+      "after": {
+        "assignee": "Jordan"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 2,
+      "kind": "outbox.published",
+      "action_id": "collaborator-handoff",
+      "actor": "dispatcher",
+      "resource": "1",
+      "logical_time": 261,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    },
+    {
+      "id": 3,
+      "kind": "notification.created",
+      "action_id": "collaborator-handoff",
+      "actor": "worker",
+      "resource": "notification:workflow:collaborator-handoff:assignment",
+      "logical_time": 361,
+      "parents": [
+        1
+      ],
+      "before": null,
+      "after": {
+        "message": "w00 assigned to Jordan"
+      },
+      "irreversible": false
+    },
+    {
+      "id": 4,
+      "kind": "notification.delivered",
+      "action_id": "collaborator-handoff",
+      "actor": "release-observer",
+      "resource": "notification:workflow:collaborator-handoff:assignment",
+      "logical_time": 461,
+      "parents": [
+        3
+      ],
+      "before": null,
+      "after": {
+        "message": "w00 assigned to Jordan"
+      },
+      "irreversible": true
+    },
+    {
+      "id": 5,
+      "kind": "outbox.published",
+      "action_id": "collaborator-handoff",
+      "actor": "dispatcher",
+      "resource": "2",
+      "logical_time": 461,
+      "parents": [
+        4
+      ],
+      "before": null,
+      "after": null,
+      "irreversible": false
+    }
+  ],
+  "escalations": [],
+  "notifications": [
+    {
+      "id": "notification:workflow:collaborator-handoff:assignment",
+      "action_id": "collaborator-handoff",
+      "message": "w00 assigned to Jordan",
+      "version": 1
+    }
+  ],
+  "operations": [
+    {
+      "id": "collaborator-handoff",
+      "request_hash": "ffe5afeafcea5cad2e26f8da70bef8f215db1c557a4d1d71f47a638d24ff54b8",
+      "action_id": "collaborator-handoff",
+      "response": {
+        "id": "w00",
+        "ready": true,
+        "title": "Inspect current reviewer roster",
+        "owners": {
+          "assignee": "collaborator-handoff"
+        },
+        "status": "Backlog",
+        "version": 2,
+        "assignee": "Jordan",
+        "priority": "Normal",
+        "reviewed": false,
+        "project_id": "release",
+        "description": "unselected",
+        "field_revisions": {
+          "ready": 1,
+          "title": 1,
+          "status": 1,
+          "assignee": 2,
+          "priority": 1,
+          "reviewed": 1,
+          "description": 1
+        }
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "release",
+      "name": "API v2 launch",
+      "completed": 0,
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "name": 1,
+        "completed": 1
+      }
+    }
+  ],
+  "runtime": [
+    {
+      "id": 1,
+      "logical_time": 9275,
+      "seed": 7,
+      "worker_delay": 100,
+      "delivery_delay": 100,
+      "paused": false
+    }
+  ],
+  "scheduled_jobs": [
+    {
+      "id": "deliver:workflow:collaborator-handoff:assignment",
+      "kind": "deliver",
+      "action_id": "collaborator-handoff",
+      "due": 461,
+      "parent_id": "workflow:collaborator-handoff",
+      "status": "done",
+      "payload": {
+        "effect_id": 3,
+        "notification_id": "notification:workflow:collaborator-handoff:assignment"
+      }
+    },
+    {
+      "id": "publish:1",
+      "kind": "publish",
+      "action_id": "collaborator-handoff",
+      "due": 261,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 1,
+        "outbox_id": 1
+      }
+    },
+    {
+      "id": "publish:2",
+      "kind": "publish",
+      "action_id": "collaborator-handoff",
+      "due": 461,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "effect_id": 4,
+        "outbox_id": 2
+      }
+    },
+    {
+      "id": "workflow:collaborator-handoff",
+      "kind": "workflow",
+      "action_id": "collaborator-handoff",
+      "due": 361,
+      "parent_id": null,
+      "status": "done",
+      "payload": {
+        "changes": {
+          "assignee": "Jordan"
+        },
+        "task_id": "w00",
+        "effect_id": 1
+      }
+    }
+  ],
+  "notification_deliveries": [
+    {
+      "notification_id": "notification:workflow:collaborator-handoff:assignment",
+      "recipient": "release-observer",
+      "logical_time": 461,
+      "action_id": "collaborator-handoff"
+    }
+  ],
+  "outbox_events": [
+    {
+      "id": 1,
+      "effect_id": 1,
+      "payload": {
+        "kind": "task.updated",
+        "resource": "w00",
+        "effect_id": 1
+      },
+      "published": true
+    },
+    {
+      "id": 2,
+      "effect_id": 4,
+      "payload": {
+        "kind": "notification.delivered",
+        "resource": "notification:workflow:collaborator-handoff:assignment",
+        "effect_id": 4
+      },
+      "published": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-42",
+      "project_id": "release",
+      "title": "Refresh the integration guide",
+      "description": "Document the API v1 integration.",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "In progress",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "TASK-43",
+      "project_id": "release",
+      "title": "Publish the release",
+      "description": "Publish after the integration guide is reviewed.",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "In progress",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w00",
+      "project_id": "release",
+      "title": "Inspect current reviewer roster",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": true,
+      "priority": "Normal",
+      "assignee": "Jordan",
+      "status": "Backlog",
+      "version": 2,
+      "owners": {
+        "assignee": "collaborator-handoff"
+      },
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 2,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w01",
+      "project_id": "release",
+      "title": "Classify external child request",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w02",
+      "project_id": "release",
+      "title": "Resolve incoming team",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w03",
+      "project_id": "release",
+      "title": "Collect identity approval",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w04",
+      "project_id": "release",
+      "title": "Commit on-call access migration outcome 1",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w05",
+      "project_id": "release",
+      "title": "Retire outgoing grant",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w06",
+      "project_id": "release",
+      "title": "Restore normal access service",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    },
+    {
+      "id": "w07",
+      "project_id": "release",
+      "title": "Close migration request",
+      "description": "unselected",
+      "reviewed": false,
+      "ready": false,
+      "priority": "Normal",
+      "assignee": "Maya",
+      "status": "Backlog",
+      "version": 1,
+      "owners": {},
+      "field_revisions": {
+        "ready": 1,
+        "title": 1,
+        "status": 1,
+        "assignee": 1,
+        "priority": 1,
+        "reviewed": 1,
+        "description": 1
+      }
+    }
+  ],
+  "sse_receipts": [],
+  "task_comments": [],
+  "task_dependencies": [
+    {
+      "task_id": "TASK-43",
+      "prerequisite_id": "TASK-42"
+    },
+    {
+      "task_id": "w01",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w02",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w03",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w04",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w05",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w05",
+      "prerequisite_id": "w02"
+    },
+    {
+      "task_id": "w06",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w06",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w00"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w01"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w02"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w03"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w04"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w05"
+    },
+    {
+      "task_id": "w07",
+      "prerequisite_id": "w06"
+    }
+  ]
+}

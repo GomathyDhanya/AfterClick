@@ -1,0 +1,18 @@
+[
+  {
+    "id": "cancel",
+    "value": "",
+    "result": {
+      "id": "cancel",
+      "status": 200,
+      "result": {
+        "committed": true,
+        "command": "Cancel pending service",
+        "commit_upper_mono": 261229.581752745,
+        "commit_upper_wall": 1795837680.435502
+      }
+    },
+    "start_wall": 1795837680.215928,
+    "end_wall": 1795837680.483733
+  }
+]

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/gomathydhanya/projects/684_final/research_ops/temporal_validity_audit/positive_controls.py", line 154, in <module>
+    main(a.historical_root, a.workers)
+  File "/Users/gomathydhanya/projects/684_final/research_ops/temporal_validity_audit/positive_controls.py", line 94, in main
+    contract = next(c for c in candidates if c["application"] == app and
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

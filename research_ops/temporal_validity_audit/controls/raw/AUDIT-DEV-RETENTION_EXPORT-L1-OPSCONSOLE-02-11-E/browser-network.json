@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "browser.request",
+    "wall": 1795837997.1230989,
+    "mono": 261546.267488504,
+    "body": {
+      "id": "w00",
+      "value": "consented-sanitized",
+      "version": 1,
+      "operation_id": "92fd36a7-b3ee-41f7-966e-3ef21d2bc917"
+    }
+  }
+]

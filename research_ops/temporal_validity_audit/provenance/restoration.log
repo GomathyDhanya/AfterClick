@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/gomathydhanya/projects/684_final/archive/restore.py", line 85, in <module>
+    restore(args.output, args.raw_archive)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gomathydhanya/projects/684_final/archive/restore.py", line 44, in restore
+    shutil.copyfileobj(src, dst)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py", line 257, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+OSError: [Errno 28] No space left on device

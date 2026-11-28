@@ -1,0 +1,46 @@
+[
+  {
+    "kind": "source.accepted",
+    "wall": 1795840499.214644,
+    "mono": 264044.127628513,
+    "cut_sha256": "e662264b06b4a680c4fad8f0fa16f640fc1c342d374358184edfb8daf5d9c9c9"
+  },
+  {
+    "kind": "world.clock_started",
+    "anchor_mono": 264044.128269853,
+    "after_browser_release_mono": 264044.131269233,
+    "wall": 1795840499.218286
+  },
+  {
+    "kind": "actor.gateway_action",
+    "request_id": "request-0000001",
+    "tool_call_id": "audit-call-0",
+    "action": {
+      "id": "suspend",
+      "value": ""
+    },
+    "gateway_index": 0,
+    "command_id": "8204ad29-7450-4963-8c70-313e4ae418df",
+    "wall": 1795840504.478752,
+    "end_wall": 1795840504.7945979,
+    "recorded_wall": 1795840504.794606
+  },
+  {
+    "kind": "actor.finish_requested",
+    "request_id": "request-0000001",
+    "tool_call_id": "audit-call-1",
+    "wall": 1795840504.794629,
+    "mono": 264049.707700561
+  },
+  {
+    "kind": "actor.stopped",
+    "reason": "ACTOR_FINISHED",
+    "wall": 1795840504.794635,
+    "mono": 264049.707704022
+  },
+  {
+    "kind": "evidence.final_snapshot_acquired",
+    "wall": 1795840508.8856032,
+    "mono": 264053.798737537
+  }
+]

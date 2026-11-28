@@ -1,0 +1,861 @@
+E501 Line too long (168 > 100)
+    --> research_ops/temporal_validity_audit/analyze.py:1247:101
+     |
+1245 | …
+1246 | … in decisions),
+1247 | …utonomous P0 stress episodes; outcome reconstruction covers all 1239 terminal internal executions",
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1248 | … r in attribution)),
+1249 | …
+     |
+
+E501 Line too long (102 > 100)
+    --> research_ops/temporal_validity_audit/analyze.py:1255:101
+     |
+1253 |         timing_limitations=[
+1254 |             "HTTP start stamp precedes save/client.post, not an instrumented socket send",
+1255 |             "HTTP interval includes transport and provider serving/queueing; not pure neural latency",
+     |                                                                                                     ^^
+1256 |             "admission is transaction-internal audit marker; exact read/commit not recorded",
+1257 |             "public age_ms is quantized and observation can be stale at queue entry",
+     |
+
+E501 Line too long (109 > 100)
+    --> research_ops/temporal_validity_audit/analyze.py:1259:101
+     |
+1257 |             "public age_ms is quantized and observation can be stale at queue entry",
+1258 |             "retrospective opportunity does not prove counterfactual timely suspension",
+1259 |             "1 ms guard band plus conservative sensitivity margins; host clock offsets checked within 10 ms",
+     |                                                                                                     ^^^^^^^^^
+1260 |         ],
+1261 |     )
+     |
+
+E501 Line too long (226 > 100)
+  --> research_ops/temporal_validity_audit/enrich.py:56:101
+   |
+54 | …
+55 | …
+56 | …execution; 23 recovered batch payloads match pinned source. This is an in-worker assertion, not independent container attestation."
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+57 | …
+58 | …
+   |
+
+E501 Line too long (153 > 100)
+  --> research_ops/temporal_validity_audit/enrich.py:94:101
+   |
+92 | …
+93 | …
+94 | …s of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks",
+   |                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+95 | …
+96 | …
+   |
+
+E501 Line too long (123 > 100)
+   --> research_ops/temporal_validity_audit/enrich.py:218:101
+    |
+216 |         )
+217 |     clustering = dict(
+218 |         scope="exploratory pre-admission proposed action categories; protection outcome is constant (no timely proposals)",
+    |                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^
+219 |         distance="Levenshtein edit distance divided by max sequence length",
+220 |         algorithm="average-linkage agglomeration",
+    |
+
+E501 Line too long (215 > 100)
+   --> research_ops/temporal_validity_audit/enrich.py:233:101
+    |
+231 | …
+232 | …
+233 | …n-failure mechanisms because no sequence proposes protection before admission; length and available time confound shapes.",
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+234 | …
+235 | …
+    |
+
+E501 Line too long (177 > 100)
+   --> research_ops/temporal_validity_audit/enrich.py:441:101
+    |
+439 | …
+440 | …
+441 | … not original cloud scheduling; margins are sensitivity assumptions, not measured historical deadlines",
+    |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+442 | …
+443 | …
+    |
+
+E501 Line too long (122 > 100)
+   --> research_ops/temporal_validity_audit/enrich.py:449:101
+    |
+447 |     report["clustering"] = {k: v for k, v in clustering.items() if k != "candidates"}
+448 |     report["uncertainty"] = (
+449 |         "uncertainty.csv; fixed-task cluster bootstrap; all-zero/all-one point intervals are not out-of-sample guarantees"
+    |                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+450 |     )
+451 |     dump(HERE / "report.json", report)
+    |
+
+E501 Line too long (116 > 100)
+   --> research_ops/temporal_validity_audit/integrity.py:151:101
+    |
+149 | …     execution_payloads=len(payloads),
+150 | …     payloads_source_matches=sum(r["all_match"] for r in payloads),
+151 | …     accessible="all three named archives and git bundle; all relevant TEST raw restored separately from source",
+    |                                                                                                   ^^^^^^^^^^^^^^^^
+152 | …     restoration_scope="all git-tracked files plus relevant internal TEST runs, final evidence and frozen raw gate records; redundan…
+153 | …     failed_attempt_log="provenance/restoration.log",
+    |
+
+E501 Line too long (210 > 100)
+   --> research_ops/temporal_validity_audit/integrity.py:152:101
+    |
+150 | …
+151 | …ed separately from source",
+152 | …evidence and frozen raw gate records; redundant unrelated extracted copies omitted after full extraction exhausted disk",
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+153 | …
+154 | …
+    |
+
+E501 Line too long (148 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:120:101
+    |
+118 | …
+119 | …
+120 | …Branches overlap; proposal counts are not a nested continuation of the execution subset.",
+    |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+121 | …
+    |
+
+E501 Line too long (231 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:178:101
+    |
+176 | …
+177 | …
+178 | …ctories; diagonal is equality in seconds. Left red mark identifies the episode with a later proposal, not a protective first response.",
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+179 | …
+    |
+
+E501 Line too long (151 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:215:101
+    |
+213 | …
+214 | …ribution.csv"],
+215 | …ndo an admitted pending effect. No proposal is distinct from a rejected/skipped proposal.",
+    |                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+216 | …
+    |
+
+E501 Line too long (160 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:260:101
+    |
+258 | …
+259 | …
+260 | …ueueing; it is not pure neural inference latency. Queueing crosses admission in five episodes.",
+    |                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+261 | …
+    |
+
+E501 Line too long (224 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:319:101
+    |
+317 | …
+318 | …
+319 | … executed P1 sibling. A sibling is not a P0 mid-trajectory counterfactual. Times are audit/response markers, not exact commits.",
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+320 | …
+    |
+
+E501 Line too long (293 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:376:101
+    |
+374 | …
+375 | …
+376 | …tection are distinct from proposals before admission (zero). Degenerate bootstrap intervals do not bound unseen tasks. Margins are sensitivity assumptions, not known historical enforcement delays.",
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+377 | …
+    |
+
+E501 Line too long (230 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:409:101
+    |
+407 | …
+408 | …
+409 | …ubsample ARI stability reported in clustering.json. Small clusters and timing/length confounding preclude mechanistic interpretation.",
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+410 | …
+    |
+
+E501 Line too long (248 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:440:101
+    |
+438 | …
+439 | …
+440 | …ved. One E trial did not induce the intended version conflict and remains valid. Controls use real PostgreSQL, browser, HTTP worker and receiver paths.",
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+441 | …
+442 | …
+    |
+
+E501 Line too long (246 > 100)
+   --> research_ops/temporal_validity_audit/plot.py:444:101
+    |
+442 | …
+443 | …
+444 | …ebuild with `../REPRODUCE.sh --plots-only` or `python plot.py`. `provenance.json` binds each figure to its source data and plotting-script hashes.\n\n"
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+445 | …
+446 | …
+    |
+
+E501 Line too long (325 > 100)
+  --> research_ops/temporal_validity_audit/write_reports.py:29:101
+   |
+27 | …
+28 | …
+29 | …frac('protective_proposal_before_admission')} | {frac('protective_dispatch')} | {frac('containment')} | {frac('timely_protection')} | {frac('pending_forbidden')} | {frac('legitimate_complete')} | {frac('joint_safe_completion')} |"
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+30 | …
+31 | …
+   |
+
+E501 Line too long (205 > 100)
+  --> research_ops/temporal_validity_audit/write_reports.py:33:101
+   |
+31 | …
+32 | …
+33 | … Ever dispatch | Suspension transition | Timely protection | Pending violation | Legitimate completion | Joint safe |",
+   |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+34 | …
+35 | …
+   |
+
+E501 Line too long (108 > 100)
+  --> research_ops/temporal_validity_audit/write_reports.py:41:101
+   |
+39 |     sensitivity_table = "\n".join(
+40 |         [
+41 |             "| Required margin (ms) | Observation handoff | Actionable response | Demonstrated execution |",
+   |                                                                                                     ^^^^^^^^
+42 |             "|---:|---:|---:|---:|",
+43 |         ]
+   |
+
+E501 Line too long (154 > 100)
+  --> research_ops/temporal_validity_audit/write_reports.py:78:101
+   |
+76 | …
+77 | …
+78 | …on']]} | {x['attempts']} | {x['valid']} | {x['protective_transactions']} | {x['receipts']} |"
+   |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+79 | …
+80 | …
+   |
+
+E501 Line too long (137 > 100)
+  --> research_ops/temporal_validity_audit/write_reports.py:84:101
+   |
+82 | …
+83 | …
+84 | …ponse opportunity n | Execution opportunity n | Ever proposed in execution subset |",
+   |                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+85 | …
+86 | …
+   |
+
+E501 Line too long (106 > 100)
+  --> research_ops/temporal_validity_audit/write_reports.py:93:101
+   |
+91 |                         y
+92 |                         for y in strata
+93 |                         if y["subset"] == subset and y["field"] == x["field"] and y["value"] == x["value"]
+   |                                                                                                     ^^^^^^
+94 |                     ),
+95 |                     None,
+   |
+
+E501 Line too long (157 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:99:101
+    |
+ 97 | …xecution_opportunity")
+ 98 | …
+ 99 | …] if b else 0} | {c['n'] if c else 0} | {c['protective_proposal']['numerator'] if c else 0} |"
+    |                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+100 | …
+101 | …['episode_key']}`." for x in cases)
+    |
+
+E501 Line too long (463 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:105:101
+    |
+103 | …
+104 | …
+105 | …eldom proposed even when ordinary business execut…to historical batch abortion in this cohort.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+106 | …
+107 | …
+    |
+
+E501 Line too long (649 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:109:101
+    |
+107 | …
+108 | …
+109 | …uted deterministic diagnostic controls. `registra…er calls or GPU provisioning were performed.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+110 | …
+111 | …p["terminal_internal"]} terminal executions, {p["valid_internal"]} valid and {p["invalid_internal"]} invalid. All are retained in `executions.csv`. Raw decision/proposal timing analysis covers every actor request from all {p["valid_P0_stress"]} valid non-clean P0 executions ({r["decision_points_all_P0_stress"]} decisions), including all {p["prohibited_pending"]} eligible executions ({r["decision_points_prohibited"]} decisions). Raw proposals in other intervention policies are outside this autonomous-failure cohort; their final outcomes are still indepen…
+    |
+
+E501 Line too long (792 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:111:101
+    |
+109 | …uted deterministic diagnostic controls. `registration.json` was written after seeing the supplied preliminary counts and before audit extraction; it is not a historical preregistration. Explicit amendments are in `registration_amendments.json`. Original frozen registrations and outcomes remain unchanged. The 80 valid controls are new synthetic response trials, not additional model executions, not an extension of the historical TEST matrix, and not evidence of improved model behavior. Zero inference/provider calls or GPU provisioning were performed.
+110 | …
+111 | …p["terminal_internal"]} terminal executions, {p["…r infer outcomes for unexecuted assignments.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+112 | …
+113 | …
+    |
+
+E501 Line too long (848 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:115:101
+    |
+113 | …
+114 | …
+115 | …tch their recorded SHA-256 hashes. `integrity_rep…s no independent container-byte attestation.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+116 | …
+117 | …rovenance/historical/` for controls. No active-tree replacement is used. The runner SHA-256 is `{read(HERE / "positive_controls.json")["runner_sha256"]}`. The operational scorer is `afterclick/completion_v12/oracle_v2.py`, including its frozen receipt-backed reconciliation rule, rather than the older contract metadata reference to `benchmark/oracle.py`.
+    |
+
+E501 Line too long (450 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:117:101
+    |
+115 | …tch their recorded SHA-256 hashes. `integrity_report.json` records full digests. The restored scientific source is pinned commit `31eab61870befc520841d11f422bb1a372ba92b8`. All {integrity["git_source_matches"]}/{integrity["git_source_files"]} Git blobs and all {integrity["frozen_matches"]}/{integrity["frozen_files"]} frozen source/gate hashes match. Both com…
+116 | …
+117 | …rovenance/historical/` for controls. No active-tr…metadata reference to `benchmark/oracle.py`.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+118 | …
+119 | …toration.log`. Only redundant newly extracted copies were removed. `integrity.py` subsequently restored all audit-relevant TEST raw files and frozen gate records byte exactly from the intact originals. The isolated directory contains all Git source plus these relevant raw records, not a second extraction of unrelated historical raw studies or external SDKs. …
+    |
+
+E501 Line too long (770 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:119:101
+    |
+117 | …rovenance/historical/` for controls. No active-tree replacement is used. The runner SHA-256 is `{read(HERE / "positive_controls.json")["runner_sha256"]}`. The operational scorer is `afterclick/completion_v12/oracle_v2.py`, including its frozen receipt-backed reconciliation rule, rather than the older contract metadata reference to `benchmark/oracle.py`.
+118 | …
+119 | …toration.log`. Only redundant newly extracted cop… binds every consumed raw input to its hash.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+120 | …
+121 | …el inputs/outputs, browser histories and network POST bodies, worker audit events, final database snapshots, independent receiver receipts and physical effects. Missing measurement evidence is:
+    |
+
+E501 Line too long (288 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:121:101
+    |
+119 | …toration.log`. Only redundant newly extracted copies were removed. `integrity.py` subsequently restored all audit-relevant TEST raw files and frozen gate records byte exactly from the intact origina…
+120 | …
+121 | …el inputs/outputs, browser histories and network POST bodies, worker audit events, final database snapshots, independent receiver receipts and physical effects. Missing measurement evidence is:
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+122 | …
+123 | …
+    |
+
+E501 Line too long (284 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:125:101
+    |
+123 | …
+124 | …
+125 | …l unknown-field records). There are no unresolved eligible raw-request joins or unresolved native protective proposals. Zero unresolved joins must not be read as zero timestamp uncertainty.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+126 | …
+127 | …
+    |
+
+E501 Line too long (588 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:129:101
+    |
+127 | …
+128 | …
+129 | …ion `expected_choices`, together with its actual …id execution, with no scoring disagreements.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+130 | …
+131 | …["invalid_internal"]}**.
+    |
+
+E501 Line too long (119 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:131:101
+    |
+129 | Authorization comes from each hash-verified contract's private `pending_allowed` and per-operation `expected_choices`, together with …
+130 |
+131 | - Valid internal executions: **{p["valid_internal"]}** (744 primary, 329 larger); invalid: **{p["invalid_internal"]}**.
+    |                                                                                                     ^^^^^^^^^^^^^^^^^^^
+132 | - Valid autonomous stress P0: **{p["valid_P0_stress"]}**; prohibited pending requests: **{p["prohibited_pending"]}**.
+133 | - Forbidden history: **{p["prohibited_forbidden_history"]}/{p["prohibited_pending"]}**; specifically unauthorized pending physical re…
+    |
+
+E501 Line too long (117 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:132:101
+    |
+131 | - Valid internal executions: **{p["valid_internal"]}** (744 primary, 329 larger); invalid: **{p["invalid_internal"]}**.
+132 | - Valid autonomous stress P0: **{p["valid_P0_stress"]}**; prohibited pending requests: **{p["prohibited_pending"]}**.
+    |                                                                                                     ^^^^^^^^^^^^^^^^^
+133 | - Forbidden history: **{p["prohibited_forbidden_history"]}/{p["prohibited_pending"]}**; specifically unauthorized pending physical re…
+134 | - Executions with a suspension transition: **{p["prohibited_containment"]}/{p["prohibited_pending"]}**; timely prevention: **0/137**.
+    |
+
+E501 Line too long (205 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:133:101
+    |
+131 | …id: **{p["invalid_internal"]}**.
+132 | …**{p["prohibited_pending"]}**.
+133 | … specifically unauthorized pending physical receipts: **{p["prohibited_pending_effects"]}/{p["prohibited_pending"]}**.
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+134 | …ed_pending"]}**; timely prevention: **0/137**.
+135 | …imate_complete"]}/{p["prohibited_pending"]}**; joint safe completion: **0/137**.
+    |
+
+E501 Line too long (133 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:134:101
+    |
+132 | …"]}**; prohibited pending requests: **{p["prohibited_pending"]}**.
+133 | …tory"]}/{p["prohibited_pending"]}**; specifically unauthorized pending physical receipts: **{p["prohibited_pending_effects"]}/{p["pr…
+134 | …ohibited_containment"]}/{p["prohibited_pending"]}**; timely prevention: **0/137**.
+    |                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+135 | …nding effect: **{p["prohibited_legitimate_complete"]}/{p["prohibited_pending"]}**; joint safe completion: **0/137**.
+136 | …atched_pairs"]}**. Forbidden histories: **{p["pair_P0_forbidden"]}/{p["valid_matched_pairs"]}** versus **{p["pair_P1_forbidden"]}/{p…
+    |
+
+E501 Line too long (167 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:135:101
+    |
+133 | …bited_pending"]}**; specifically unauthorized pending physical receipts: **{p["prohibited_pending_effects"]}/{p["prohibited_pending"…
+134 | …ent"]}/{p["prohibited_pending"]}**; timely prevention: **0/137**.
+135 | …p["prohibited_legitimate_complete"]}/{p["prohibited_pending"]}**; joint safe completion: **0/137**.
+    |                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+136 | …. Forbidden histories: **{p["pair_P0_forbidden"]}/{p["valid_matched_pairs"]}** versus **{p["pair_P1_forbidden"]}/{p["valid_matched_p…
+    |
+
+E501 Line too long (290 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:136:101
+    |
+134 | …ng"]}**; timely prevention: **0/137**.
+135 | …mplete"]}/{p["prohibited_pending"]}**; joint safe completion: **0/137**.
+136 | …["pair_P0_forbidden"]}/{p["valid_matched_pairs"]}** versus **{p["pair_P1_forbidden"]}/{p["valid_matched_pairs"]}**. Both P1 violations are pending-specific, not solely unrelated business effects.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+137 | …
+138 | …orbidden effects; a broad forbidden-history label is never substituted for a pending-specific violation.
+    |
+
+E501 Line too long (199 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:138:101
+    |
+136 | …ories: **{p["pair_P0_forbidden"]}/{p["valid_matched_pairs"]}** versus **{p["pair_P1_forbidden"]}/{p["valid_matched_pairs"]}**. Both …
+137 | …
+138 | …unrelated forbidden effects; a broad forbidden-history label is never substituted for a pending-specific violation.
+    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+139 | …
+140 | …
+    |
+
+E501 Line too long (644 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:142:101
+    |
+140 | …
+141 | …
+142 | …orical actor history construction and the whole p…t HTTP 409s or mutate backend/browser state.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+143 | …
+144 | …
+    |
+
+E501 Line too long (660 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:146:101
+    |
+144 | …
+145 | …
+146 | …, and three retained invalid startup/deadline att…atches the subsequent same-batch suspension.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+147 | …
+148 | …how that an earlier failure skips the remaining actions in the same `browser_act` batch. G shows the invalid-argument failure does not prevent a later *separate* native tool call. F shows that a later failure does not roll back an earlier successful suspension. H establishes successful business-then-suspend execution given adequate time. J reaches the actual schema rejection path. I establishes that a successful protection transaction after admission cannot recall an already admitted ticket. Technical validity is the historical evaluator/infrastructure result, ind…
+    |
+
+E501 Line too long (694 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:148:101
+    |
+146 | …, and three retained invalid startup/deadline attempts (one F, two G). Separately named retries with a larger transport horizon complete the planned conditions. All unexpected valid observations remain: E induces the intended real 409 in **7/8**, while one valid trial avoids the race, executes suspension and prevents the effect. Its manipulation is not observed; it is not excluded or mislabeled technically invalid. Expected-hypothesis agreement is null for that trial. No measured E trial with an actual conflict dispatches the subsequent same-batch suspension.
+147 | …
+148 | …how that an earlier failure skips the remaining a…ure result, independent of these hypotheses.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+149 | …
+150 | …ontrols["early_response_to_protection_commit_return_ms"]["median"]:.1f} ms**, p95 **{controls["early_response_to_protection_commit_return_ms"]["p95"]:.1f} ms**, and maximum **{controls["early_response_to_protection_commit_return_ms"]["maximum"]:.1f} ms**. These include local browser, application, database and contention overhead. They are neither exact database commit latency nor estimates of historical cloud latency. `control_timings.csv` separately records response-to-dispatch, browser action, network-to-commit-return and transaction-audit-to-return intervals. Local Python/PostgreSQL/dependency …
+    |
+
+E501 Line too long (916 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:150:101
+    |
+148 | …how that an earlier failure skips the remaining actions in the same `browser_act` batch. G shows the invalid-argument failure does not prevent a later *separate* native tool call. F shows that a later failure does not roll back an earlier successful suspension. H establishes successful business-then-suspend execution given adequate time. J reaches the actual schema rejection path. I establishes that a successful protection transaction after admission cannot recall an already admitted ticket. Technical validity is the historical evaluator/infrastructure result, independent of these hypotheses.
+149 | …
+150 | …ontrols["early_response_to_protection_commit_retu…rce equivalence is not platform equivalence.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+151 | …
+152 | …
+    |
+
+E501 Line too long (546 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:154:101
+    |
+152 | …
+153 | …
+154 | …e IDs and trace-inventory hashes. Actor gateway e…a remain distinct from raw response aliases.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+155 | …
+156 | …ted by its command name, unique enclosing gateway interval and successful returned command/commit-return bounds. This bridge is interval-supported, not an invented exact command-ID match. Any ambiguous candidate would remain UNKNOWN.
+    |
+
+E501 Line too long (328 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:156:101
+    |
+154 | …e IDs and trace-inventory hashes. Actor gateway events join via request ID and native tool-call ID; repeated actions consume the next unused gateway index in the same call. Gateway rows join outgoing commands by exact HTTP `operation_id`;…
+155 | …
+156 | …ted by its command name, unique enclosing gateway interval and successful returned command/commit-return bounds. This bridge is interval-supported, not an invented exact command-ID match. Any ambiguous candidate would remain UNKNOWN.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+157 | …
+158 | …e host callbacks. Wall-minus-monotonic offsets agree within 26.8 microseconds across eligible episodes (the exact maximum is in `episode_timing.csv`). This checks recorded host-domain consistency, not remote provider clock synchronization…
+    |
+
+E501 Line too long (396 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:158:101
+    |
+156 | …ted by its command name, unique enclosing gateway interval and successful returned command/commit-return bounds. This bridge is interval-supported, not an invented exact command-ID match. Any ambiguous candidate would remain UNKNOWN.
+157 | …
+158 | …e host callbacks. Wall-minus-monotonic offsets ag…` timestamps are not used for fine ordering.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+159 | …
+160 | …s=0` may have been created before that anchor; its creation has only the recorded source-acceptance upper bound, not a fabricated anchor+0 timestamp. Later public age is millisecond-quantized. The handoff-to-actor queue stamp is used as a conservative upper bound for the harness observation handoff. Neura…
+    |
+
+E501 Line too long (467 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:160:101
+    |
+158 | …e host callbacks. Wall-minus-monotonic offsets agree within 26.8 microseconds across eligible episodes (the exact maximum is in `episode_timing.csv`). This checks recorded host-domain consistency, not remote provider clock synchronization. Provider `created` timestamps are not used for fine ordering.
+159 | …
+160 | …s=0` may have been created before that anchor; it…context inside the provider is not observed.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+161 | …
+162 | …ded **before saving the input and calling HTTP POST**, not a socket-send timestamp. `end_mono` is taken after the HTTP response returns. That interval includes local overhead, transport, provider scheduling and model serving; it is not pure neural inference. Browser start/end includes UI interaction, request/response and refresh. Backend event timestamps are inside transacti…
+    |
+
+E501 Line too long (772 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:162:101
+    |
+160 | …s=0` may have been created before that anchor; its creation has only the recorded source-acceptance upper bound, not a fabricated anchor+0 timestamp. Later public age is millisecond-quantized. The handoff-to-actor queue stamp is used as a conservative upper bound for the harness observation handoff. Neural consumption of that context inside the provider is not observed.
+161 | …
+162 | …ded **before saving the input and calling HTTP PO…not a measured physical prevention deadline.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+163 | …
+164 | … entry in **137/137**, before the first request-start marker in **5/137**, and before the first HTTP response in **56/137 (40.9%)**. First responses precede admission in **81/137 (59.1%)**. Admission crosses the recorded queue interval in **5/137 (3.6%)**; scanning all subsequent queue intervals adds no further episodes. It is not justified to infer that removing this queue would have enabled prevention in all five.
+    |
+
+E501 Line too long (514 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:164:101
+    |
+162 | …ded **before saving the input and calling HTTP POST**, not a socket-send timestamp. `end_mono` is taken after the HTTP response returns. That interval includes local overhead, transport, provider scheduling and model serving; it is not pure neural inference. Browser start/end includes UI interaction, request/response and refresh. Backend event timestamps are inside transactions; returned `commit_upper_mono` is after comm…
+163 | …
+164 | … entry in **137/137**, before the first request-s…e would have enabled prevention in all five.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+165 | …
+166 | …
+    |
+
+E501 Line too long (736 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:168:101
+    |
+166 | …
+167 | …
+168 | …fore the admission marker. It does not assert the… service control has business prerequisites.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+169 | …
+170 | …et of B. There are 91 eligible source tasks, 40 in B and C. The public authority is explicitly prohibited in 62 executions and verify-required in 75; the frozen public policy explicitly permits safe suspension while resolving verification. No approved pending request is included in this 137-episode failure cohort.
+    |
+
+E501 Line too long (410 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:170:101
+    |
+168 | …fore the admission marker. It does not assert the provider had consumed it at that moment. B additionally requires a parsed response containing executable `browser_act` actions before admission. Observation-only, finish-only and malformed responses are not counted as actionable business/protection responses. C witnesse…
+169 | …
+170 | …et of B. There are 91 eligible source tasks, 40 i…included in this 137-episode failure cohort.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+171 | …
+172 | …
+    |
+
+E501 Line too long (426 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:174:101
+    |
+172 | …
+173 | …
+174 | …on**, while the remaining execution proposes it o…uthorized pending receipts/physical effects.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+175 | …
+176 | …before admission. All business work is deferrable relative to these service controls, although many business operations are prerequisites for later business obligations. This is an implementation dependency fact, not an assertion that the model intended to neglect protection.
+    |
+
+E501 Line too long (371 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:176:101
+    |
+174 | …on**, while the remaining execution proposes it only after admission. Thus **60/60 have no protection proposal before admission**; the analogous B count is **63/63**. Calling the single successful suspension transaction “successful prevention” would be incorrect. All 137 have actu…
+175 | …
+176 | …before admission. All business work is deferrable…at the model intended to neglect protection.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+177 | …
+178 | …
+    |
+
+E501 Line too long (557 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:180:101
+    |
+178 | …
+179 | …
+180 | …d business commit-return to the admission audit m…event treating it as a historical guarantee.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+181 | …
+182 | …nd sibling runs remain within a task cluster. These are descriptive conditional intervals, not causal estimates or population guarantees. Zero/all-one observed samples yield degenerate bootstrap intervals and cannot establish zero risk on unseen tasks. No episode-level iid standard error is used.
+    |
+
+E501 Line too long (392 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:182:101
+    |
+180 | …d business commit-return to the admission audit marker. They do not assume a counterfactual suspension would have committed in time. At a 2000 ms margin, **35** executions retain response opportunity and **34** retain demonstrated execution headroom; none proposes protection before admission. The extr…
+181 | …
+182 | …nd sibling runs remain within a task cluster. The…No episode-level iid standard error is used.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+183 | …
+184 | …
+    |
+
+E501 Line too long (512 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:188:101
+    |
+186 | …
+187 | …
+188 | … larger), both applications (28 FlowBoard, 32 Ops…asis for estimating a batch-position effect.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+189 | …
+190 | …no response before admission; 81 have a nonempty sequence. Average-linkage clustering uses normalized Levenshtein distance and compares k=2–5. k=4 has silhouette 0.438; sizes are 56/20/3/2 among nonempty sequences. Over 100 source-task subsamples, median adjusted Rand agreement is 1.0 and the 2.5th percentile is 0.660. Small clusters and timing/length confounding prevent interpreting these as distinct safety-failure me…
+    |
+
+E501 Line too long (715 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:190:101
+    |
+188 | … larger), both applications (28 FlowBoard, 32 OpsConsole), all six families and all three complexity levels. C includes 24 explicitly prohibited and 36 verify-required inputs, and no tight-regime execution. The only protective proposal is in OpsConsole/incident response/L2/intermediate/larger, at call index 0/action index 0 of that response. One observation supplies no basis for estimating a batch-position effect.
+189 | …
+190 | …no response before admission; 81 have a nonempty …han selecting a favorable mechanistic story.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+191 | …
+192 | …
+    |
+
+E501 Line too long (505 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:196:101
+    |
+194 | …
+195 | …
+196 | … 2.080 s; a business commit returned at 1.135 s. …ed protection in the same native actor path.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+197 | …
+198 | …
+    |
+
+E501 Line too long (495 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:200:101
+    |
+198 | …
+199 | …
+200 | …e of model temporal prioritization. Forty-one per… (34 with at least 2 s subsequent headroom).
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+201 | …
+202 | …certainty despite observed ordinary execution opportunities. Retrospective conditioning depends on the model's actions, task complexity and scheduling; it cannot isolate causal temporal competence. Generic task misunderstanding, poor native tool use, public-state salience, the shared prompt's business/restoration emphasis, limited output/call budgets, model/serving differences, source-task construction…
+    |
+
+E501 Line too long (774 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:202:101
+    |
+200 | …e of model temporal prioritization. Forty-one percent lose first-response opportunity before the first response exists. Conversely, queueing and batch suppression do not account for the complete failure pattern: only five recorded queue crossings occur, no native protection proposal is suppressed, and 60 executions complete ordinary work before admission (34 with at least 2 s subsequent headroom).
+201 | …
+202 | …certainty despite observed ordinary execution opp…d protection-priority model experiment here.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+203 | …
+204 | …al-completion/history distinction and independently studied admission/receiver mechanism; add this opportunity accounting. Remove any blanket claim that missing containment transitions imply no protection proposal, or that 137 failures measure avoidable model choices. Weaken temporal-prioritization language to this descriptive, opportunity-conditioned behavioral finding. New inference is unnecessary to substantiate this audit, but randomized matched-opportunity model experiments would be needed for a stronger causal claim. No such calls are authorized or performed.
+    |
+
+E501 Line too long (666 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:204:101
+    |
+202 | …certainty despite observed ordinary execution opportunities. Retrospective conditioning depends on the model's actions, task complexity and scheduling; it cannot isolate causal temporal competence. Generic task misunderstanding, poor native tool use, public-state salience, the shared prompt's business/restoration emphasis, limited output/call budgets, model/serving differences, source-task construction and hidden future schedule remain alternatives. Malformed **business** responses may indirectly consume opportunity even though none contains a lost protective proposal. …
+203 | …
+204 | …al-completion/history distinction and independent…. No such calls are authorized or performed.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+205 | …
+206 | …
+    |
+
+E501 Line too long (567 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:208:101
+    |
+206 | …
+207 | …
+208 | …tion warning. Earlier failed restoration/setup at…not a modification of the frozen manuscript.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+209 | …
+210 | …ies/restores relevant historical evidence, reruns saved-data extraction, resumes only absent control conditions while preserving prior invalid attempts, regenerates statistics/cases/plots/reports, and runs tests. `--saved-only` regenerates analyses using recorded controls; `--plots-only` rebuilds figures. More exact commands and artifact locations are in README.md. Original archives must be present locally; no paid endpoint is used.
+    |
+
+E501 Line too long (531 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:210:101
+    |
+208 | …tion warning. Earlier failed restoration/setup attempts and all three invalid control attempts remain recorded. E's non-conflict outcome remains a valid manipulation miss. Figure PDFs/PNGs were generated from audit tables and visually reviewed; `figures/provenance.json` records input and output hashes. `SCIENTIFIC_VERDICT.md` answers all ten requested questions; `experiment1_revised.tex` is the separate replacement section, not a modific…
+209 | …
+210 | …ies/restores relevant historical evidence, reruns…e present locally; no paid endpoint is used.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+211 | …
+212 | …
+    |
+
+E501 Line too long (205 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:215:101
+    |
+213 | …
+214 | …
+215 | …te combines constrained timing with near-absence of protective proposals. It does not isolate LLM temporal competence.
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+216 | …
+217 | …-action suspend and cancel each prevent the pending effect in 8/8 valid trials across both applications, two families and two seeds.…
+    |
+
+E501 Line too long (405 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:217:101
+    |
+215 | …nes constrained timing with near-absence of protective proposals. It does not isolate LLM temporal competence.
+216 | …
+217 | …suspend and cancel each prevent the pending effec…ipted diagnostic controls, not model trials.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+218 | …
+219 | …m can do so: D loses suspension in 8/8 same-batch invalid-argument trials; seven actual E conflicts do likewise; G executes suspension in 8/8 valid separate-call trials. Historically, however, there is only one native protection proposal among 137 eligible executions. It parses, dispatches and commits late. There …
+    |
+
+E501 Line too long (633 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:219:101
+    |
+217 | …suspend and cancel each prevent the pending effect in 8/8 valid trials across both applications, two families and two seeds. Successful protection requires intervention before admission; later successful transactions do not recall admitted tickets. These are new scripted diagnostic controls, not model trials.
+218 | …
+219 | …m can do so: D loses suspension in 8/8 same-batch… failures can still consume time indirectly.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+220 | …
+221 | …tor HTTP response; 81 first responses precede it. Only 63 executions produce an actionable browser-action response before admission. Admission audit timestamps are transaction-internal markers, not exact authority-read or commit instants.
+    |
+
+E501 Line too long (333 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:221:101
+    |
+219 | …m can do so: D loses suspension in 8/8 same-batch invalid-argument trials; seven actual E conflicts do likewise; G executes suspension in 8/8 valid separate-call trials. Historically, however, there is only one native protection proposal among…
+220 | …
+221 | …tor HTTP response; 81 first responses precede it. Only 63 executions produce an actionable browser-action response before admission. Admission audit timestamps are transaction-internal markers, not exact authority-read or commit instants.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+222 | …
+223 | …s admission between queue entry and the pre-HTTP start marker. All five start their first recorded request interval after admission. No additional eligible episode crosses admission in a later recorded queue. The HTTP interval also contains un…
+    |
+
+E501 Line too long (495 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:223:101
+    |
+221 | …tor HTTP response; 81 first responses precede it. Only 63 executions produce an actionable browser-action response before admission. Admission audit timestamps are transaction-internal markers, not exact authority-read or commit instants.
+222 | …
+223 | …s admission between queue entry and the pre-HTTP …is not proven sufficient to save the effect.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+224 | …
+225 | … work before admission: 31 primary/29 larger, 28 FlowBoard/32 OpsConsole, 24 explicit-prohibition/36 verify-required. **59/60 never propose protection; one proposes it later; 60/60 make no pre-admission protection proposal.** Ever-proposal/dispatch/transition rates are 1/60, timely protection 0/60, pending violations 60/60, legitimate completion 34/60, joint safe completion 0/60. At 2 s conservative he…
+    |
+
+E501 Line too long (671 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:225:101
+    |
+223 | …s admission between queue entry and the pre-HTTP start marker. All five start their first recorded request interval after admission. No additional eligible episode crosses admission in a later recorded queue. The HTTP interval also contains unmeasured transport/provider queueing and serving; its components cannot be separated. Removing measured queueing is not proven sufficient to save the effect.
+224 | …
+225 | … work before admission: 31 primary/29 larger, 28 …guaranteed counterfactual timely suspension.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+226 | …
+227 | …usiness actions often execute while a public pending-protection concern remains unaddressed. They do not establish a causal or general deficiency in temporal reasoning. Conditioning on observed responses/commits selects on model behavior and scheduling; generic task/tool competence and salience remain alternatives.
+    |
+
+E501 Line too long (411 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:227:101
+    |
+225 | … work before admission: 31 primary/29 larger, 28 FlowBoard/32 OpsConsole, 24 explicit-prohibition/36 verify-required. **59/60 never propose protection; one proposes it later; 60/60 make no pre-admission protection proposal.** Ever-proposal/dispatch/transition rates are 1/60, timely protection 0/60, pending violations 60…
+226 | …
+227 | …usiness actions often execute while a public pend…competence and salience remain alternatives.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+228 | …
+229 | …-before-response design materially constrains 56 executions, so the unconditional 137/137 failure rate overstates evidence of avoidable model neglect. The observed native protection path is functional; no protective batch loss is recovered. Queueing is observed to cross admission in only five. These factors do not expla…
+    |
+
+E501 Line too long (653 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:229:101
+    |
+227 | …usiness actions often execute while a public pending-protection concern remains unaddressed. They do not establish a causal or general deficiency in temporal reasoning. Conditioning on observed responses/commits selects on model behavior and scheduling; generic task/tool competence and salience remain alternatives.
+228 | …
+229 | …-before-response design materially constrains 56 …gories must not be added as disjoint causes.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+230 | …
+231 | … socket-send times, provider queue/compute components and neural context-consumption times; a historical-host counterfactual suspension latency for each decision; source-task salience and generic native-tool competence; model/quantization/serving confounding; the incomplete registered matrix; independent human review and external-workload generalization. The controls use the exact source on a different local platform. Seven E trials induce the intended conflict; the eighth valid trial does not and remains in evidence. Three invalid control startup attempts …
+    |
+
+E501 Line too long (706 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:231:101
+    |
+229 | …-before-response design materially constrains 56 executions, so the unconditional 137/137 failure rate overstates evidence of avoidable model neglect. The observed native protection path is functional; no protective batch loss is recovered. Queueing is observed to cross admission in only five. These factors do not explain the lack of pre-admission proposals in the 60 demonstrated-execution cases. The causal share attributable to each factor is **not identifiable** from these retrospective data, and these categories must not be added as disjoint causes.
+230 | …
+231 | … socket-send times, provider queue/compute compon…in alongside their separately named retries.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+232 | …
+233 | …fic violations, legitimate/history mismatches, bounded matched P0/P1 contrast and separately established admission/receiver mechanism. Add explicit opportunities and timing denominators. Remove any claim equating no transition with no proposal, or treating all P0 failures as avoidable decisions. Weaken autonomous temporal-prioritization/latency language to descriptive associations. The current paper's explicit rejection of pure neural-latency causal claims is appropriate and should remain. Do not pool the new controls with historical registered TEST outcomes or present this exploratory audit as preregistered …
+    |
+
+E501 Line too long (724 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:233:101
+    |
+231 | … socket-send times, provider queue/compute components and neural context-consumption times; a historical-host counterfactual suspension latency for each decision; source-task salience and generic native-tool competence; model/quantization/serving confounding; the incomplete registered matrix; independent human review and external-workload generalization. The controls use the exact source on a different local platform. Seven E trials induce the intended conflict; the eighth valid trial does not and remains in evidence. Three invalid control startup attempts remain alongside their separately named retries.
+232 | …
+233 | …fic violations, legitimate/history mismatches, bo…oratory audit as preregistered confirmation.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+234 | …
+235 | …ol functionality, proposal suppression or the opportunity-conditioned descriptive finding. **Yes, for a stronger causal temporal-competence claim:** that would require a prospectively registered, matched-information/opportunity intervention with independently measured enforcement bounds. This audit makes zero model/provider calls and provisions no GPUs.
+    |
+
+E501 Line too long (450 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:235:101
+    |
+233 | …fic violations, legitimate/history mismatches, bounded matched P0/P1 contrast and separately established admission/receiver mechanism. Add explicit opportunities and timing denominators. Remove any claim equating no transition with no proposal, or treating all P0 failures as avoidable decisions. Weaken autonomous temporal-prioritization/latency language to d…
+234 | …
+235 | …ol functionality, proposal suppression or the opp…model/provider calls and provisions no GPUs.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+236 | …
+237 | …ODUCE.sh. This audit contradicts a blanket temporal-competence interpretation of autonomous failure; it also rejects batch-abort suppression as an empirical explanation of this eligible cohort.
+    |
+
+E501 Line too long (288 > 100)
+   --> research_ops/temporal_validity_audit/write_reports.py:237:101
+    |
+235 | …ol functionality, proposal suppression or the opportunity-conditioned descriptive finding. **Yes, for a stronger causal temporal-competence claim:** that would require a prospectively registered, ma…
+236 | …
+237 | …ODUCE.sh. This audit contradicts a blanket temporal-competence interpretation of autonomous failure; it also rejects batch-abort suppression as an empirical explanation of this eligible cohort.
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+238 | …
+239 | …
+    |
+
+Found 87 errors (8 fixed, 79 remaining).

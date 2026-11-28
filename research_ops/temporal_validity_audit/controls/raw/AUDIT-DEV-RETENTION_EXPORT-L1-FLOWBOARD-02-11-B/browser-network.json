@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "browser.request",
+    "wall": 1795837753.509069,
+    "mono": 261302.654891599,
+    "body": {
+      "id": "cancel",
+      "value": "",
+      "version": 0,
+      "operation_id": "7903c83b-10a4-4638-aff1-03bb65ddaeb3"
+    }
+  }
+]

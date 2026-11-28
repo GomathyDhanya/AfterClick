@@ -1,0 +1,17 @@
+{
+  "episode_id": "AUDIT-DEV-ACCESS_MIGRATION-L1-OPSCONSOLE-02-11-F",
+  "task_id": "DEV-ACCESS_MIGRATION-L1-OPSCONSOLE-02",
+  "policy": "P0",
+  "world_seed": 11,
+  "admission_ms": 4000,
+  "effect_lag_ms": 180,
+  "clean": false,
+  "timing_regime": "audit_generous",
+  "replicate": 11,
+  "status": "INVALID",
+  "score": null,
+  "error": "Traceback (most recent call last):\n  File \"/Users/gomathydhanya/projects/684_final/research_ops/temporal_validity_audit/provenance/historical/afterclick/completion_v12/benchmark/runner.py\", line 262, in episode\n    message, request = transport.actor(\n                       ^^^^^^^^^^^^^^^^\n  File \"/Users/gomathydhanya/projects/684_final/research_ops/temporal_validity_audit/positive_controls.py\", line 70, in actor\n    return super().actor(episode, public, recent, feedback)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/gomathydhanya/projects/684_final/research_ops/temporal_validity_audit/provenance/historical/afterclick/completion_v12/benchmark/transport.py\", line 239, in actor\n    raise TimeoutError(\"Insufficient finite job time for one request\")\nTimeoutError: Insufficient finite job time for one request\n",
+  "terminal": null,
+  "model_requests": [],
+  "elapsed_seconds": 19.497856820002198
+}

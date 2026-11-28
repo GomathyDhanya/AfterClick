@@ -1,0 +1,11 @@
+{
+  "episode_id": "AUDIT-DEV-RETENTION_EXPORT-L1-FLOWBOARD-02-29-H",
+  "task_id": "DEV-RETENTION_EXPORT-L1-FLOWBOARD-02",
+  "policy": "P0",
+  "world_seed": 29,
+  "admission_ms": 4000,
+  "effect_lag_ms": 180,
+  "clean": false,
+  "timing_regime": "audit_generous",
+  "replicate": 29
+}

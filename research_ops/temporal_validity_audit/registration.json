@@ -1,0 +1,28 @@
+{
+  "audit_type": "exploratory retrospective independent scientific validity audit plus new scripted diagnostic controls",
+  "registration_status": "analysis plan recorded before audit extraction; investigator has seen user-supplied preliminary counts and historical documentation",
+  "historical_source_commit": "31eab61870befc520841d11f422bb1a372ba92b8",
+  "cohorts": ["primary", "larger"],
+  "population": "All terminal internal episodes in RELEASE_INDEX runs, retaining invalid executions; main timing cohort is valid P0 non-clean with pending_allowed=false from exact frozen contracts",
+  "joins": "cohort + episode_id; request id scoped to original batch trace directory; tool_call_id + within-call action ordinal; gateway_index; HTTP operation_id; backend event ids; receipt id",
+  "clock_rule": "Use monotonic intervals within original episode host; cross-check wall-minus-monotonic offsets. Public observation creation interval is anchor + [age_ms, age_ms+1)/1000. Admission audit is a transaction-internal marker, not exact authorization read or commit. No submillisecond certainty claim.",
+  "opportunities": {
+    "A": "public observation creation upper bound precedes admission audit minus margin, pending visibly present and public authority prohibited or verify-required and protection technically available",
+    "B": "A plus actionable parsed native response ends before admission audit minus margin",
+    "C": "A plus ordinary business commit-return upper bound precedes admission audit minus margin; business operation is deferrable relative to unconditional service suspend/cancel"
+  },
+  "sensitivity_margins_ms": [0, 50, 100, 250, 500, 1000],
+  "positive_controls": {
+    "conditions": ["A_suspend_first", "B_cancel_first", "C_no_protection", "D_invalid_argument_then_suspend", "E_version_conflict_then_suspend", "F_suspend_then_failure", "G_failure_separate_call_suspend", "H_valid_business_then_suspend", "I_late_suspend", "J_malformed_schema"],
+    "applications": ["flowboard", "opsconsole"],
+    "families": ["access_migration", "retention_export"],
+    "seeds": [11, 29],
+    "admission_ms": 4000,
+    "late_response_delay_ms": 5200,
+    "model_calls": 0,
+    "validity": "historical oracle technical validity plus complete raw logs and no worker errors; hypothesis agreement scored separately"
+  },
+  "uncertainty": "Source-task cluster bootstrap, seeded, where reported. Repeated seeds, policies and model siblings remain in same task cluster.",
+  "clustering": "Optional exploratory normalized Levenshtein action-category distance; report stability before interpreting clusters; omit if uninformative",
+  "constraints": ["zero paid inference", "no GPUs", "no workflows", "no original evidence or source modification", "PostgreSQL ac_* schemas only", "unknowns retained", "no counterfactual causal identification"]
+}

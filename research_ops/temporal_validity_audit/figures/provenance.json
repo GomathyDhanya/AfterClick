@@ -1,0 +1,93 @@
+[
+  {
+    "figure": "01_enrollment",
+    "caption": "Observed opportunities are retrospective bounds. Branches overlap; proposal counts are not a nested continuation of the execution subset.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "figures/01_enrollment_source.csv": "110446fa9ed2f53a99c3e7b72498e0446dfcf3263b846686f29cda9214eef26a"
+    },
+    "pdf_sha256": "4cd6865c222b9f0952b4b51d84386e9627b7285a9345246babdb86ef07d29705",
+    "png_sha256": "f083f4dc6203eed14b04adeac34cee4d5a474deebcd2ae8dce10916df8c1a1d6"
+  },
+  {
+    "figure": "02_admission_response",
+    "caption": "All observations retained. Right panel uses a symmetric log x scale to show long trajectories; diagonal is equality in seconds. Left red mark identifies the episode with a later proposal, not a protective first response.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "figures/02_admission_response_source.csv": "808cbcf238872392a6f2760746869c59022049550698880096edf4679fa6e25f"
+    },
+    "pdf_sha256": "909e74767dda973c4740c6b47a6f25bf498975e93f851df55b3fc626b58447d0",
+    "png_sha256": "e6d8d3575d95eeca3699d864ed6f38be54ba668157631e0f08c8b24f8eb4ea6b"
+  },
+  {
+    "figure": "03_protection_outcomes",
+    "caption": "A successful late suspension transaction does not undo an admitted pending effect. No proposal is distinct from a rejected/skipped proposal.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "figures/03_outcomes_source.csv": "67d11ece75fef1cbd01edf9460f46b37453722eb41b47f7e76a2bec2f00304c1",
+      "failure_attribution.csv": "8a3e81a984cf24b636610c835c3f0a361eb250d11b985bea978cdb2c429c1641"
+    },
+    "pdf_sha256": "94d425a81b689b530f3efcb3818d4c10ec7c2674258f972b9c72994800ea03c6",
+    "png_sha256": "8c5c250221a2cbe3ea15c094596e62f3e8a53c9d6f990a23c051ed173996506b"
+  },
+  {
+    "figure": "04_queue_http_intervals",
+    "caption": "HTTP interval includes transport and provider serving/queueing; it is not pure neural inference latency. Queueing crosses admission in five episodes.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "figures/04_latency_source.csv": "30cbe2cec85f1715b8a3fd9e613f0e4b61d4e516b7a62371f85c940780d630a4"
+    },
+    "pdf_sha256": "d639bd2e57b6500cf9328468b28c8e5c592b0bcc2f9dcc0783be221252992aa6",
+    "png_sha256": "d8fdbc11c277781d633280eb38a3f2abcacf0cce78269de856cc6396893fbefe"
+  },
+  {
+    "figure": "05_recorded_trajectories",
+    "caption": "Cases selected by explicit rules in enrich.py and supplementary.py, including a safe actually executed P1 sibling. A sibling is not a P0 mid-trajectory counterfactual. Times are audit/response markers, not exact commits.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "figures/trajectory_source.json": "a60f6ffe8037c27d7026da1e12f81809d8daa15ca0968d9942e4f22fd0a5fe97"
+    },
+    "pdf_sha256": "a6c46a74c9d93971f30d7acdc06f2232f37efd24d3637c2621035619168e9bdf",
+    "png_sha256": "eec458ee0b0a3cd27287bc280a0ac0c69a98023d6689a250f9ec87f58a680240"
+  },
+  {
+    "figure": "06_opportunity_conditioned_rates",
+    "caption": "95% task-cluster percentile bootstrap intervals. Ever-proposed and ever-dispatched protection are distinct from proposals before admission (zero). Degenerate bootstrap intervals do not bound unseen tasks. Margins are sensitivity assumptions, not known historical enforcement delays.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "figures/06_rates_source.csv": "399fb292997d0f3891883553904719d793e76fd8a922573fe3919ed61dc03c30",
+      "sensitivity.json": "486ea2fe5dc89d905e10dc0517ec53f0cfe2737618e75c6745310c2bac981243"
+    },
+    "pdf_sha256": "126fce24cb7e9b16fca641dcd91e99f86fb443385f76069b2ea2ed42b3fb225b",
+    "png_sha256": "98c4b345a639e2370afd7abb0688ce43374f7699c68f470b87624944c6c32af1"
+  },
+  {
+    "figure": "07_exploratory_sequence_shapes",
+    "caption": "Average-linkage normalized Levenshtein clustering, k=2\u20135 silhouette comparison; task-subsample ARI stability reported in clustering.json. Small clusters and timing/length confounding preclude mechanistic interpretation.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "action_sequences.csv": "a6c8b592ae90ea288784c789928cd88fb2007880c5a16431d8a78d347864b29c",
+      "clustering.json": "acef12e4772485af09bcc7b3da4e8146bc46adbf0967d3c8dd0a71b9856329df"
+    },
+    "pdf_sha256": "26fccb403fd8c733ead46e379a4b494cd96b975d32e7d19707279b32dbd38008",
+    "png_sha256": "5dcf5a33b3082153f8a0c5cb89ff0a9bad5bf48a0e615cc6bda945871a3ba23a"
+  },
+  {
+    "figure": "08_scripted_controls",
+    "caption": "Primary A\u2013J: 83 attempts, 80 technically valid trials; three invalid setup-deadline attempts preserved. One E trial did not induce the intended version conflict and remains valid. Controls use real PostgreSQL, browser, HTTP worker and receiver paths.",
+    "plotting_script": "plot.py",
+    "plotting_script_sha256": "347c14fc1eb54888d86d76c4894a20552fa4c56821cb70f2d730ecb118d366ee",
+    "inputs": {
+      "control_conditions.csv": "d2ca31eff5268ff5c0dbcaf5eaece1a814526d258a1869bcbe45f3a190e3b7c2"
+    },
+    "pdf_sha256": "381e3c8f22229c073b132a3b925f1c403428f3ef12c22679805b59b311aba10c",
+    "png_sha256": "26aaf2211ce562a1b617526f99c2bf0da4204327aba01d2f3eed00d5bd582abb"
+  }
+]

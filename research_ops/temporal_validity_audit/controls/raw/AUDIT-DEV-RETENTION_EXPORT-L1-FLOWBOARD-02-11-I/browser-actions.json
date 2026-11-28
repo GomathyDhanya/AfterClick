@@ -1,0 +1,18 @@
+[
+  {
+    "id": "suspend",
+    "value": "",
+    "result": {
+      "id": "suspend",
+      "status": 200,
+      "result": {
+        "committed": true,
+        "command": "Suspend pending service",
+        "commit_upper_mono": 261348.392149718,
+        "commit_upper_wall": 1795837799.246599
+      }
+    },
+    "start_wall": 1795837799.063766,
+    "end_wall": 1795837799.360238
+  }
+]

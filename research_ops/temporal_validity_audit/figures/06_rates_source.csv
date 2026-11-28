@@ -1,0 +1,10 @@
+subset,metric,n,source_clusters,point,lower,upper,method
+full_eligible,protective_proposal,137,91,0.0072992700729927005,0.0,0.023076923076923078,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+full_eligible,protective_proposal_before_admission,137,91,0.0,0.0,0.0,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+full_eligible,protective_dispatch,137,91,0.0072992700729927005,0.0,0.023442113681102297,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+response_opportunity,protective_proposal,62,40,0.016129032258064516,0.0,0.05172413793103448,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+response_opportunity,protective_proposal_before_admission,62,40,0.0,0.0,0.0,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+response_opportunity,protective_dispatch,62,40,0.016129032258064516,0.0,0.05263157894736842,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+demonstrated_execution_opportunity,protective_proposal,60,40,0.016666666666666666,0.0,0.05357142857142857,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+demonstrated_execution_opportunity,protective_proposal_before_admission,60,40,0.0,0.0,0.0,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks
+demonstrated_execution_opportunity,protective_dispatch,60,40,0.016666666666666666,0.0,0.05454545454545454,5000 percentile bootstrap samples of task_id clusters; fixed observed tasks; degenerate intervals do not bound unseen tasks

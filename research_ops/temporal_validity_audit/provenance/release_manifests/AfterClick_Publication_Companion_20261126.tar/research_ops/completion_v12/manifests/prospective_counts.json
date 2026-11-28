@@ -1,0 +1,23 @@
+{
+  "status": "PROSPECTIVE_NOT_EXECUTED",
+  "test_task_specifications": 216,
+  "dev_task_specifications": 72,
+  "timing_regimes": 3,
+  "seeds_per_regime": 3,
+  "stress_source_worlds_per_model": 1944,
+  "primary_arms": [
+    "P0",
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "primary_stress_executions_per_model": 7776,
+  "clean_episodes_per_model": 648,
+  "core_executions_per_model": 8424,
+  "restoration_extra_executions_primary_model": 648,
+  "stage_first_extra_executions_primary_model": 648,
+  "total_primary_model_proposed_executions": 9720,
+  "second_model_full_core_proposed_executions": 8424,
+  "planned_total_executions_two_models_plus_ablation_primary": 18144,
+  "note": "No test tasks authored; no v12 runs performed; counts are design targets subject to preregistered pre-TEST power reassessment."
+}

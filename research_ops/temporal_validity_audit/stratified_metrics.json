@@ -1,0 +1,4326 @@
+[
+  {
+    "subset": "full_eligible",
+    "field": "model",
+    "value": "Qwen/Qwen3.5-9B",
+    "n": 88,
+    "source_clusters": 77,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 88,
+      "denominator": 88,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 41,
+      "denominator": 88,
+      "rate": 0.4659090909090909
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "model",
+    "value": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "n": 49,
+    "source_clusters": 27,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 49,
+      "rate": 0.02040816326530612
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 49,
+      "rate": 0.02040816326530612
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 49,
+      "rate": 0.02040816326530612
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 49,
+      "denominator": 49,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 21,
+      "denominator": 49,
+      "rate": 0.42857142857142855
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "application",
+    "value": "flowboard",
+    "n": 64,
+    "source_clusters": 47,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 64,
+      "denominator": 64,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 26,
+      "denominator": 64,
+      "rate": 0.40625
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "application",
+    "value": "opsconsole",
+    "n": 73,
+    "source_clusters": 44,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 73,
+      "rate": 0.0136986301369863
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 73,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 73,
+      "rate": 0.0136986301369863
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 73,
+      "rate": 0.0136986301369863
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 73,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 73,
+      "denominator": 73,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 36,
+      "denominator": 73,
+      "rate": 0.4931506849315068
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 73,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "family",
+    "value": "access_migration",
+    "n": 14,
+    "source_clusters": 10,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 14,
+      "denominator": 14,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 2,
+      "denominator": 14,
+      "rate": 0.14285714285714285
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "family",
+    "value": "cross_team_approval",
+    "n": 29,
+    "source_clusters": 18,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 29,
+      "denominator": 29,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 14,
+      "denominator": 29,
+      "rate": 0.4827586206896552
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "family",
+    "value": "customer_release",
+    "n": 28,
+    "source_clusters": 18,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 28,
+      "denominator": 28,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 16,
+      "denominator": 28,
+      "rate": 0.5714285714285714
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "family",
+    "value": "incident_response",
+    "n": 20,
+    "source_clusters": 13,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 20,
+      "rate": 0.05
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 20,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 20,
+      "rate": 0.05
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 20,
+      "rate": 0.05
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 20,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 20,
+      "denominator": 20,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 20,
+      "rate": 0.4
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 20,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "family",
+    "value": "resource_orchestration",
+    "n": 21,
+    "source_clusters": 15,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 21,
+      "denominator": 21,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 10,
+      "denominator": 21,
+      "rate": 0.47619047619047616
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "family",
+    "value": "retention_export",
+    "n": 25,
+    "source_clusters": 17,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 25,
+      "denominator": 25,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 12,
+      "denominator": 25,
+      "rate": 0.48
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "complexity",
+    "value": "L1",
+    "n": 49,
+    "source_clusters": 32,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 49,
+      "denominator": 49,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 42,
+      "denominator": 49,
+      "rate": 0.8571428571428571
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "complexity",
+    "value": "L2",
+    "n": 41,
+    "source_clusters": 28,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 41,
+      "rate": 0.024390243902439025
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 41,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 41,
+      "rate": 0.024390243902439025
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 41,
+      "rate": 0.024390243902439025
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 41,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 41,
+      "denominator": 41,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 17,
+      "denominator": 41,
+      "rate": 0.4146341463414634
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 41,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "complexity",
+    "value": "L3",
+    "n": 47,
+    "source_clusters": 31,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 47,
+      "denominator": 47,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 3,
+      "denominator": 47,
+      "rate": 0.06382978723404255
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "initial_public_authorization",
+    "value": "prohibited",
+    "n": 62,
+    "source_clusters": 43,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 62,
+      "rate": 0.016129032258064516
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 62,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 62,
+      "rate": 0.016129032258064516
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 62,
+      "rate": 0.016129032258064516
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 62,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 62,
+      "denominator": 62,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 27,
+      "denominator": 62,
+      "rate": 0.43548387096774194
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 62,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "initial_public_authorization",
+    "value": "verify-required",
+    "n": 75,
+    "source_clusters": 48,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 75,
+      "denominator": 75,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 35,
+      "denominator": 75,
+      "rate": 0.4666666666666667
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "timing_regime",
+    "value": "generous",
+    "n": 46,
+    "source_clusters": 31,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 46,
+      "denominator": 46,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 24,
+      "denominator": 46,
+      "rate": 0.5217391304347826
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "timing_regime",
+    "value": "intermediate",
+    "n": 44,
+    "source_clusters": 29,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 44,
+      "rate": 0.022727272727272728
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 44,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 44,
+      "rate": 0.022727272727272728
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 44,
+      "rate": 0.022727272727272728
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 44,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 44,
+      "denominator": 44,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 18,
+      "denominator": 44,
+      "rate": 0.4090909090909091
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 44,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "timing_regime",
+    "value": "tight",
+    "n": 47,
+    "source_clusters": 31,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 47,
+      "denominator": 47,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 20,
+      "denominator": 47,
+      "rate": 0.425531914893617
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "observed_http_duration",
+    "value": "0.1-1s",
+    "n": 89,
+    "source_clusters": 59,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 89,
+      "rate": 0.011235955056179775
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 89,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 89,
+      "rate": 0.011235955056179775
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 89,
+      "rate": 0.011235955056179775
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 89,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 89,
+      "denominator": 89,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 40,
+      "denominator": 89,
+      "rate": 0.449438202247191
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 89,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "observed_http_duration",
+    "value": "1-5s",
+    "n": 26,
+    "source_clusters": 25,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 26,
+      "denominator": 26,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 11,
+      "denominator": 26,
+      "rate": 0.4230769230769231
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "observed_http_duration",
+    "value": ">=5s",
+    "n": 22,
+    "source_clusters": 21,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 22,
+      "denominator": 22,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 11,
+      "denominator": 22,
+      "rate": 0.5
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "observed_queue_duration",
+    "value": "0.1-1s",
+    "n": 15,
+    "source_clusters": 13,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 15,
+      "denominator": 15,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 4,
+      "denominator": 15,
+      "rate": 0.26666666666666666
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "observed_queue_duration",
+    "value": "1-5s",
+    "n": 1,
+    "source_clusters": 1,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 1,
+      "denominator": 1,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "full_eligible",
+    "field": "observed_queue_duration",
+    "value": "<0.1s",
+    "n": 121,
+    "source_clusters": 83,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 121,
+      "rate": 0.008264462809917356
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 121,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 121,
+      "rate": 0.008264462809917356
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 121,
+      "rate": 0.008264462809917356
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 121,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 121,
+      "denominator": 121,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 58,
+      "denominator": 121,
+      "rate": 0.4793388429752066
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 121,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "model",
+    "value": "Qwen/Qwen3.5-9B",
+    "n": 88,
+    "source_clusters": 77,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 88,
+      "denominator": 88,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 41,
+      "denominator": 88,
+      "rate": 0.4659090909090909
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 88,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "model",
+    "value": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "n": 49,
+    "source_clusters": 27,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 49,
+      "rate": 0.02040816326530612
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 49,
+      "rate": 0.02040816326530612
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 49,
+      "rate": 0.02040816326530612
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 49,
+      "denominator": 49,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 21,
+      "denominator": 49,
+      "rate": 0.42857142857142855
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "application",
+    "value": "flowboard",
+    "n": 64,
+    "source_clusters": 47,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 64,
+      "denominator": 64,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 26,
+      "denominator": 64,
+      "rate": 0.40625
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 64,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "application",
+    "value": "opsconsole",
+    "n": 73,
+    "source_clusters": 44,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 73,
+      "rate": 0.0136986301369863
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 73,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 73,
+      "rate": 0.0136986301369863
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 73,
+      "rate": 0.0136986301369863
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 73,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 73,
+      "denominator": 73,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 36,
+      "denominator": 73,
+      "rate": 0.4931506849315068
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 73,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "family",
+    "value": "access_migration",
+    "n": 14,
+    "source_clusters": 10,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 14,
+      "denominator": 14,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 2,
+      "denominator": 14,
+      "rate": 0.14285714285714285
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "family",
+    "value": "cross_team_approval",
+    "n": 29,
+    "source_clusters": 18,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 29,
+      "denominator": 29,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 14,
+      "denominator": 29,
+      "rate": 0.4827586206896552
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "family",
+    "value": "customer_release",
+    "n": 28,
+    "source_clusters": 18,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 28,
+      "denominator": 28,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 16,
+      "denominator": 28,
+      "rate": 0.5714285714285714
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "family",
+    "value": "incident_response",
+    "n": 20,
+    "source_clusters": 13,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 20,
+      "rate": 0.05
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 20,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 20,
+      "rate": 0.05
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 20,
+      "rate": 0.05
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 20,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 20,
+      "denominator": 20,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 20,
+      "rate": 0.4
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 20,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "family",
+    "value": "resource_orchestration",
+    "n": 21,
+    "source_clusters": 15,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 21,
+      "denominator": 21,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 10,
+      "denominator": 21,
+      "rate": 0.47619047619047616
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 21,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "family",
+    "value": "retention_export",
+    "n": 25,
+    "source_clusters": 17,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 25,
+      "denominator": 25,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 12,
+      "denominator": 25,
+      "rate": 0.48
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "complexity",
+    "value": "L1",
+    "n": 49,
+    "source_clusters": 32,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 49,
+      "denominator": 49,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 42,
+      "denominator": 49,
+      "rate": 0.8571428571428571
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 49,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "complexity",
+    "value": "L2",
+    "n": 41,
+    "source_clusters": 28,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 41,
+      "rate": 0.024390243902439025
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 41,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 41,
+      "rate": 0.024390243902439025
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 41,
+      "rate": 0.024390243902439025
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 41,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 41,
+      "denominator": 41,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 17,
+      "denominator": 41,
+      "rate": 0.4146341463414634
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 41,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "complexity",
+    "value": "L3",
+    "n": 47,
+    "source_clusters": 31,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 47,
+      "denominator": 47,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 3,
+      "denominator": 47,
+      "rate": 0.06382978723404255
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "initial_public_authorization",
+    "value": "prohibited",
+    "n": 62,
+    "source_clusters": 43,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 62,
+      "rate": 0.016129032258064516
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 62,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 62,
+      "rate": 0.016129032258064516
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 62,
+      "rate": 0.016129032258064516
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 62,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 62,
+      "denominator": 62,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 27,
+      "denominator": 62,
+      "rate": 0.43548387096774194
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 62,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "initial_public_authorization",
+    "value": "verify-required",
+    "n": 75,
+    "source_clusters": 48,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 75,
+      "denominator": 75,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 35,
+      "denominator": 75,
+      "rate": 0.4666666666666667
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 75,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "timing_regime",
+    "value": "generous",
+    "n": 46,
+    "source_clusters": 31,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 46,
+      "denominator": 46,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 24,
+      "denominator": 46,
+      "rate": 0.5217391304347826
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "timing_regime",
+    "value": "intermediate",
+    "n": 44,
+    "source_clusters": 29,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 44,
+      "rate": 0.022727272727272728
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 44,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 44,
+      "rate": 0.022727272727272728
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 44,
+      "rate": 0.022727272727272728
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 44,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 44,
+      "denominator": 44,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 18,
+      "denominator": 44,
+      "rate": 0.4090909090909091
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 44,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "timing_regime",
+    "value": "tight",
+    "n": 47,
+    "source_clusters": 31,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 47,
+      "denominator": 47,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 20,
+      "denominator": 47,
+      "rate": 0.425531914893617
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 47,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "observed_http_duration",
+    "value": "0.1-1s",
+    "n": 89,
+    "source_clusters": 59,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 89,
+      "rate": 0.011235955056179775
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 89,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 89,
+      "rate": 0.011235955056179775
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 89,
+      "rate": 0.011235955056179775
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 89,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 89,
+      "denominator": 89,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 40,
+      "denominator": 89,
+      "rate": 0.449438202247191
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 89,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "observed_http_duration",
+    "value": "1-5s",
+    "n": 26,
+    "source_clusters": 25,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 26,
+      "denominator": 26,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 11,
+      "denominator": 26,
+      "rate": 0.4230769230769231
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "observed_http_duration",
+    "value": ">=5s",
+    "n": 22,
+    "source_clusters": 21,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 22,
+      "denominator": 22,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 11,
+      "denominator": 22,
+      "rate": 0.5
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 22,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "observed_queue_duration",
+    "value": "0.1-1s",
+    "n": 15,
+    "source_clusters": 13,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 15,
+      "denominator": 15,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 4,
+      "denominator": 15,
+      "rate": 0.26666666666666666
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 15,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "observed_queue_duration",
+    "value": "1-5s",
+    "n": 1,
+    "source_clusters": 1,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 1,
+      "denominator": 1,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "observation_opportunity",
+    "field": "observed_queue_duration",
+    "value": "<0.1s",
+    "n": 121,
+    "source_clusters": 83,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 121,
+      "rate": 0.008264462809917356
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 121,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 121,
+      "rate": 0.008264462809917356
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 121,
+      "rate": 0.008264462809917356
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 121,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 121,
+      "denominator": 121,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 58,
+      "denominator": 121,
+      "rate": 0.4793388429752066
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 121,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "model",
+    "value": "Qwen/Qwen3.5-9B",
+    "n": 32,
+    "source_clusters": 29,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 32,
+      "denominator": 32,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 21,
+      "denominator": 32,
+      "rate": 0.65625
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "model",
+    "value": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "n": 30,
+    "source_clusters": 16,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 30,
+      "rate": 0.03333333333333333
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 30,
+      "rate": 0.03333333333333333
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 30,
+      "rate": 0.03333333333333333
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 30,
+      "denominator": 30,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 13,
+      "denominator": 30,
+      "rate": 0.43333333333333335
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "application",
+    "value": "flowboard",
+    "n": 30,
+    "source_clusters": 21,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 30,
+      "denominator": 30,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 15,
+      "denominator": 30,
+      "rate": 0.5
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 30,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "application",
+    "value": "opsconsole",
+    "n": 32,
+    "source_clusters": 19,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 32,
+      "rate": 0.03125
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 32,
+      "rate": 0.03125
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 32,
+      "rate": 0.03125
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 32,
+      "denominator": 32,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 19,
+      "denominator": 32,
+      "rate": 0.59375
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "family",
+    "value": "access_migration",
+    "n": 5,
+    "source_clusters": 4,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 5,
+      "denominator": 5,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 1,
+      "denominator": 5,
+      "rate": 0.2
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "family",
+    "value": "cross_team_approval",
+    "n": 9,
+    "source_clusters": 5,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 9,
+      "denominator": 9,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 9,
+      "rate": 0.8888888888888888
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "family",
+    "value": "customer_release",
+    "n": 14,
+    "source_clusters": 9,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 14,
+      "denominator": 14,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 14,
+      "rate": 0.5714285714285714
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "family",
+    "value": "incident_response",
+    "n": 12,
+    "source_clusters": 7,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.08333333333333333
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.08333333333333333
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.08333333333333333
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 12,
+      "denominator": 12,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 6,
+      "denominator": 12,
+      "rate": 0.5
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "family",
+    "value": "resource_orchestration",
+    "n": 14,
+    "source_clusters": 9,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 14,
+      "denominator": 14,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 14,
+      "rate": 0.5714285714285714
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "family",
+    "value": "retention_export",
+    "n": 8,
+    "source_clusters": 6,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 8,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 8,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 8,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 8,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 8,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 8,
+      "denominator": 8,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 3,
+      "denominator": 8,
+      "rate": 0.375
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 8,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "complexity",
+    "value": "L1",
+    "n": 26,
+    "source_clusters": 18,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 26,
+      "denominator": 26,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 22,
+      "denominator": 26,
+      "rate": 0.8461538461538461
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "complexity",
+    "value": "L2",
+    "n": 19,
+    "source_clusters": 11,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 19,
+      "rate": 0.05263157894736842
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 19,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 19,
+      "rate": 0.05263157894736842
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 19,
+      "rate": 0.05263157894736842
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 19,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 19,
+      "denominator": 19,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 10,
+      "denominator": 19,
+      "rate": 0.5263157894736842
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 19,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "complexity",
+    "value": "L3",
+    "n": 17,
+    "source_clusters": 11,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 17,
+      "denominator": 17,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 2,
+      "denominator": 17,
+      "rate": 0.11764705882352941
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "initial_public_authorization",
+    "value": "prohibited",
+    "n": 26,
+    "source_clusters": 15,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 26,
+      "rate": 0.038461538461538464
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 26,
+      "rate": 0.038461538461538464
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 26,
+      "rate": 0.038461538461538464
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 26,
+      "denominator": 26,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 15,
+      "denominator": 26,
+      "rate": 0.5769230769230769
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "initial_public_authorization",
+    "value": "verify-required",
+    "n": 36,
+    "source_clusters": 25,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 36,
+      "denominator": 36,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 19,
+      "denominator": 36,
+      "rate": 0.5277777777777778
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "timing_regime",
+    "value": "generous",
+    "n": 36,
+    "source_clusters": 23,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 36,
+      "denominator": 36,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 19,
+      "denominator": 36,
+      "rate": 0.5277777777777778
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "timing_regime",
+    "value": "intermediate",
+    "n": 26,
+    "source_clusters": 17,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 26,
+      "rate": 0.038461538461538464
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 26,
+      "rate": 0.038461538461538464
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 26,
+      "rate": 0.038461538461538464
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 26,
+      "denominator": 26,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 15,
+      "denominator": 26,
+      "rate": 0.5769230769230769
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 26,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "observed_http_duration",
+    "value": "0.1-1s",
+    "n": 52,
+    "source_clusters": 33,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 52,
+      "rate": 0.019230769230769232
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 52,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 52,
+      "rate": 0.019230769230769232
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 52,
+      "rate": 0.019230769230769232
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 52,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 52,
+      "denominator": 52,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 27,
+      "denominator": 52,
+      "rate": 0.5192307692307693
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 52,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "observed_http_duration",
+    "value": "1-5s",
+    "n": 7,
+    "source_clusters": 7,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 7,
+      "denominator": 7,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 4,
+      "denominator": 7,
+      "rate": 0.5714285714285714
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "observed_http_duration",
+    "value": ">=5s",
+    "n": 3,
+    "source_clusters": 3,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 3,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 3,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "observed_queue_duration",
+    "value": "0.1-1s",
+    "n": 5,
+    "source_clusters": 5,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 5,
+      "denominator": 5,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 1,
+      "denominator": 5,
+      "rate": 0.2
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "response_opportunity",
+    "field": "observed_queue_duration",
+    "value": "<0.1s",
+    "n": 57,
+    "source_clusters": 39,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 57,
+      "rate": 0.017543859649122806
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 57,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 57,
+      "rate": 0.017543859649122806
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 57,
+      "rate": 0.017543859649122806
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 57,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 57,
+      "denominator": 57,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 33,
+      "denominator": 57,
+      "rate": 0.5789473684210527
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 57,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "model",
+    "value": "Qwen/Qwen3.5-9B",
+    "n": 31,
+    "source_clusters": 29,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 31,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 31,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 31,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 31,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 31,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 31,
+      "denominator": 31,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 21,
+      "denominator": 31,
+      "rate": 0.6774193548387096
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 31,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "model",
+    "value": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "n": 29,
+    "source_clusters": 16,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 29,
+      "rate": 0.034482758620689655
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 29,
+      "rate": 0.034482758620689655
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 29,
+      "rate": 0.034482758620689655
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 29,
+      "denominator": 29,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 13,
+      "denominator": 29,
+      "rate": 0.4482758620689655
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 29,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "application",
+    "value": "flowboard",
+    "n": 28,
+    "source_clusters": 21,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 28,
+      "denominator": 28,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 15,
+      "denominator": 28,
+      "rate": 0.5357142857142857
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 28,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "application",
+    "value": "opsconsole",
+    "n": 32,
+    "source_clusters": 19,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 32,
+      "rate": 0.03125
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 32,
+      "rate": 0.03125
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 32,
+      "rate": 0.03125
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 32,
+      "denominator": 32,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 19,
+      "denominator": 32,
+      "rate": 0.59375
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "family",
+    "value": "access_migration",
+    "n": 5,
+    "source_clusters": 4,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 5,
+      "denominator": 5,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 1,
+      "denominator": 5,
+      "rate": 0.2
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "family",
+    "value": "cross_team_approval",
+    "n": 9,
+    "source_clusters": 5,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 9,
+      "denominator": 9,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 9,
+      "rate": 0.8888888888888888
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "family",
+    "value": "customer_release",
+    "n": 14,
+    "source_clusters": 9,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 14,
+      "denominator": 14,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 14,
+      "rate": 0.5714285714285714
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 14,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "family",
+    "value": "incident_response",
+    "n": 12,
+    "source_clusters": 7,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.08333333333333333
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.08333333333333333
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.08333333333333333
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 12,
+      "denominator": 12,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 6,
+      "denominator": 12,
+      "rate": 0.5
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "family",
+    "value": "resource_orchestration",
+    "n": 13,
+    "source_clusters": 9,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 13,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 13,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 13,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 13,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 13,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 13,
+      "denominator": 13,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 8,
+      "denominator": 13,
+      "rate": 0.6153846153846154
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 13,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "family",
+    "value": "retention_export",
+    "n": 7,
+    "source_clusters": 6,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 7,
+      "denominator": 7,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 3,
+      "denominator": 7,
+      "rate": 0.42857142857142855
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "complexity",
+    "value": "L1",
+    "n": 25,
+    "source_clusters": 18,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 25,
+      "denominator": 25,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 22,
+      "denominator": 25,
+      "rate": 0.88
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 25,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "complexity",
+    "value": "L2",
+    "n": 18,
+    "source_clusters": 11,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 18,
+      "rate": 0.05555555555555555
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 18,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 18,
+      "rate": 0.05555555555555555
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 18,
+      "rate": 0.05555555555555555
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 18,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 18,
+      "denominator": 18,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 10,
+      "denominator": 18,
+      "rate": 0.5555555555555556
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 18,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "complexity",
+    "value": "L3",
+    "n": 17,
+    "source_clusters": 11,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 17,
+      "denominator": 17,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 2,
+      "denominator": 17,
+      "rate": 0.11764705882352941
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 17,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "initial_public_authorization",
+    "value": "prohibited",
+    "n": 24,
+    "source_clusters": 15,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 24,
+      "rate": 0.041666666666666664
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 24,
+      "rate": 0.041666666666666664
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 24,
+      "rate": 0.041666666666666664
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 24,
+      "denominator": 24,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 15,
+      "denominator": 24,
+      "rate": 0.625
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "initial_public_authorization",
+    "value": "verify-required",
+    "n": 36,
+    "source_clusters": 25,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 36,
+      "denominator": 36,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 19,
+      "denominator": 36,
+      "rate": 0.5277777777777778
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "timing_regime",
+    "value": "generous",
+    "n": 36,
+    "source_clusters": 23,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 36,
+      "denominator": 36,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 19,
+      "denominator": 36,
+      "rate": 0.5277777777777778
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 36,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "timing_regime",
+    "value": "intermediate",
+    "n": 24,
+    "source_clusters": 17,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 24,
+      "rate": 0.041666666666666664
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 24,
+      "rate": 0.041666666666666664
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 24,
+      "rate": 0.041666666666666664
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 24,
+      "denominator": 24,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 15,
+      "denominator": 24,
+      "rate": 0.625
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 24,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "observed_http_duration",
+    "value": "0.1-1s",
+    "n": 50,
+    "source_clusters": 33,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 50,
+      "rate": 0.02
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 50,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 50,
+      "rate": 0.02
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 50,
+      "rate": 0.02
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 50,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 50,
+      "denominator": 50,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 27,
+      "denominator": 50,
+      "rate": 0.54
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 50,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "observed_http_duration",
+    "value": "1-5s",
+    "n": 7,
+    "source_clusters": 7,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 7,
+      "denominator": 7,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 4,
+      "denominator": 7,
+      "rate": 0.5714285714285714
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 7,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "observed_http_duration",
+    "value": ">=5s",
+    "n": 3,
+    "source_clusters": 3,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 3,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 3,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 3,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "observed_queue_duration",
+    "value": "0.1-1s",
+    "n": 5,
+    "source_clusters": 5,
+    "protective_proposal": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "containment": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 5,
+      "denominator": 5,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 1,
+      "denominator": 5,
+      "rate": 0.2
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 5,
+      "rate": 0.0
+    }
+  },
+  {
+    "subset": "demonstrated_execution_opportunity",
+    "field": "observed_queue_duration",
+    "value": "<0.1s",
+    "n": 55,
+    "source_clusters": 39,
+    "protective_proposal": {
+      "numerator": 1,
+      "denominator": 55,
+      "rate": 0.01818181818181818
+    },
+    "protective_proposal_before_admission": {
+      "numerator": 0,
+      "denominator": 55,
+      "rate": 0.0
+    },
+    "protective_dispatch": {
+      "numerator": 1,
+      "denominator": 55,
+      "rate": 0.01818181818181818
+    },
+    "containment": {
+      "numerator": 1,
+      "denominator": 55,
+      "rate": 0.01818181818181818
+    },
+    "timely_protection": {
+      "numerator": 0,
+      "denominator": 55,
+      "rate": 0.0
+    },
+    "pending_forbidden": {
+      "numerator": 55,
+      "denominator": 55,
+      "rate": 1.0
+    },
+    "legitimate_complete": {
+      "numerator": 33,
+      "denominator": 55,
+      "rate": 0.6
+    },
+    "joint_safe_completion": {
+      "numerator": 0,
+      "denominator": 55,
+      "rate": 0.0
+    }
+  }
+]

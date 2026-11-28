@@ -1,0 +1,34 @@
+{
+  "status": "explicit exploratory amendments; original registration.json retained",
+  "amendments": [
+    {
+      "item": "observation-time opportunity",
+      "reason": "Source inspection showed initial public age_ms=0 can refer to a quiescent page created before the environment clock. The model observation handoff is bounded above by request queue entry, rather than observation creation.",
+      "implemented_definition": "Visible pending request, prohibited or verify-required public authority, available browser_act service controls, verified host clock domain, and queue-entry timestamp at least margin + 1ms before admission audit. Creation bounds and all initial admission classifications are also reported."
+    },
+    {
+      "item": "additional 2000ms sensitivity margin",
+      "reason": "Executed local controls had a response-to-protection commit-return maximum of approximately 1.7s under concurrent diagnostic/disk load. Add 2000ms as a control-informed conservative exploratory margin; do not equate local measurements to historical cloud latency."
+    },
+    {
+      "item": "control deadline correction",
+      "reason": "Three controls exhausted the original 45s transport deadline's 35s startup guard before generation due to local setup delay. Preserve all three invalid attempts and execute separately named retries with a 90s transport horizon. Episode and protection timing rules remain fixed."
+    },
+    {
+      "item": "version conflict manipulation check",
+      "reason": "The 310ms response delay uses the real collaborator/browser polling race. Seven of eight E trials produced the intended 409 conflict; one did not. The latter remains technically valid and manipulation-not-observed, not a failed-infrastructure exclusion."
+    },
+    {
+      "item": "all-policy string-encoded proposal correction",
+      "reason": "A lexical cross-check across all 19977 valid-internal actor responses found one malformed P3 suspension proposal encoded inside an actions string. Initial supplementary extraction counted only literal action lists. Preserve the provisional log; count this raw proposal and actual schema rejection, add a regression test, and retain its after-admission timing. No eligible P0 proposal count or historical outcome changes."
+    },
+    {
+      "item": "eight extra admitted-but-undelivered native I controls",
+      "reason": "Original I controls return after admission and after receipt. Preserve them. Add a separate diagnostic across the same two applications/two families/two seeds, admission 4000ms, response delay 5200ms, effect lag 5000ms, to observe whether native suspension can commit after admission but before independent receipt while the effect still occurs. Validity remains independent of the ordering/hypothesis. No original source or model inference changes."
+    },
+    {
+      "item": "conservative response actionability refinement",
+      "reason": "Final audit distinguishes 63 syntactically valid browser-action response episodes from client-dispatchable responses. One early response starts with w00 value primary, which is not a displayed scope and aborts the batch. B therefore requires the first reachable valid public action, honoring batch abort and finish; it retains 62 episodes. The raw episode and syntactic count remain, C=60 and all primary outcomes are unchanged."
+    }
+  ]
+}

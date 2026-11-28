@@ -1,0 +1,1262 @@
+[
+  {
+    "category": "source_hashes",
+    "path": "afterclick/domain.py",
+    "expected": "26b943cb0f71e6622db1bcc2c565e4642e5a69d24872d4d54ad7b4ad68a42668",
+    "actual": "26b943cb0f71e6622db1bcc2c565e4642e5a69d24872d4d54ad7b4ad68a42668",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/control.py",
+    "expected": "5562dbdcc7bbdde060be522ca17ab772957b637f4664a42dcf6091a6a7834d91",
+    "actual": "5562dbdcc7bbdde060be522ca17ab772957b637f4664a42dcf6091a6a7834d91",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/__init__.py",
+    "expected": "0fc29987bff7b1b2fbcf23589ef1ea359ee2286bce5baf605d45cdace0877da0",
+    "actual": "0fc29987bff7b1b2fbcf23589ef1ea359ee2286bce5baf605d45cdace0877da0",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/api.py",
+    "expected": "214f9707a67e3b18f59c95e346e98f374d9857ac41b902c362b00d3a46869a62",
+    "actual": "214f9707a67e3b18f59c95e346e98f374d9857ac41b902c362b00d3a46869a62",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/witnesses.py",
+    "expected": "f4022437a1e18e418d51bdf19126f0bd7b9edba77418c3b2a17f9dfacb088d53",
+    "actual": "f4022437a1e18e418d51bdf19126f0bd7b9edba77418c3b2a17f9dfacb088d53",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/finance.py",
+    "expected": "4900765719dae1718a89733451dc68103ce54b56024f2f9efc4624290502af2d",
+    "actual": "4900765719dae1718a89733451dc68103ce54b56024f2f9efc4624290502af2d",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/controller.py",
+    "expected": "7a3a9bd20a39736d9088a6e139ff2bcc1872f360b3a52921a0dfb9815fe8f9c5",
+    "actual": "7a3a9bd20a39736d9088a6e139ff2bcc1872f360b3a52921a0dfb9815fe8f9c5",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/kernel.py",
+    "expected": "07a51a98c905528e96c80dab345309010ad8d28054d0c392fdc528beccc2ba0e",
+    "actual": "07a51a98c905528e96c80dab345309010ad8d28054d0c392fdc528beccc2ba0e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/models.py",
+    "expected": "ab1be7b5f59f2601bea46011b84da9dcc7b0ff0cb971497ff9b935f068307678",
+    "actual": "ab1be7b5f59f2601bea46011b84da9dcc7b0ff0cb971497ff9b935f068307678",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/__init__.py",
+    "expected": "f803a5f76d8d0f0d110b475b6d9260f1df042fb5dc373812d9d15af654cc25e8",
+    "actual": "f803a5f76d8d0f0d110b475b6d9260f1df042fb5dc373812d9d15af654cc25e8",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/features.py",
+    "expected": "4f58da9d15b6bc69fad99cab47b55aecb78b2dcd5d66598fe47f0e540a6be1cf",
+    "actual": "4f58da9d15b6bc69fad99cab47b55aecb78b2dcd5d66598fe47f0e540a6be1cf",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/recoverability.py",
+    "expected": "d4c3ae2894192c05b2b26890004f7d95d23c35a25252e3cd6a442c37af47468c",
+    "actual": "d4c3ae2894192c05b2b26890004f7d95d23c35a25252e3cd6a442c37af47468c",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/dataset.py",
+    "expected": "1f626a19c8302d55ee79cafb732ca785e884de5f260c71aedb1afe219cb5e56d",
+    "actual": "1f626a19c8302d55ee79cafb732ca785e884de5f260c71aedb1afe219cb5e56d",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/search.py",
+    "expected": "bfe2485ee8afaf33e19b9cfedb1d583488db0076068e0ff6dff79e17820c8553",
+    "actual": "bfe2485ee8afaf33e19b9cfedb1d583488db0076068e0ff6dff79e17820c8553",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/research/study.py",
+    "expected": "5d01159effa30cff65f6194ce4780122c22da3cad5e10cd8e734b08eaa65c645",
+    "actual": "5d01159effa30cff65f6194ce4780122c22da3cad5e10cd8e734b08eaa65c645",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/oecr/build.py",
+    "expected": "442347082b6e853a8860a513d1107050cd066a5067b0a7ce984abf0467e04501",
+    "actual": "442347082b6e853a8860a513d1107050cd066a5067b0a7ce984abf0467e04501",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/oecr/client.py",
+    "expected": "62f5f8cfeb478dae6ef36d53d71e55598f214e6d4b46ed6ee2ab3ae3b11f6f70",
+    "actual": "62f5f8cfeb478dae6ef36d53d71e55598f214e6d4b46ed6ee2ab3ae3b11f6f70",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/oecr/__init__.py",
+    "expected": "8dfcb0abc752fba770dd7065fecb3962afd687a74f53e72c4782e17b9d7858d2",
+    "actual": "8dfcb0abc752fba770dd7065fecb3962afd687a74f53e72c4782e17b9d7858d2",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/oecr/experiment.py",
+    "expected": "93fd7c1c06e43ba498f89e98cc65746c8c0d16416e152a2fc8810b2103d8e209",
+    "actual": "93fd7c1c06e43ba498f89e98cc65746c8c0d16416e152a2fc8810b2103d8e209",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/oecr/lifecycle.py",
+    "expected": "e590606a1eed6c34e128d382bf021b9f5c5b2dbc4aa03d0185719a1d9281e316",
+    "actual": "e590606a1eed6c34e128d382bf021b9f5c5b2dbc4aa03d0185719a1d9281e316",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/oecr/analyze.py",
+    "expected": "ec2b05254643a2f97c3df4f810355b4848906ff26d1f895ef82c3cb8ef724da5",
+    "actual": "ec2b05254643a2f97c3df4f810355b4848906ff26d1f895ef82c3cb8ef724da5",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/recovery/planner.py",
+    "expected": "4319a513e296ca29ccc843441f9de0a0f7a05fb210195f860aff108ba75d39c7",
+    "actual": "4319a513e296ca29ccc843441f9de0a0f7a05fb210195f860aff108ba75d39c7",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/recovery/__init__.py",
+    "expected": "05aec388a85f57478e61be0b24057a12667d30a5aaa117f8eb362dcb1d2a0419",
+    "actual": "05aec388a85f57478e61be0b24057a12667d30a5aaa117f8eb362dcb1d2a0419",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/recovery/oracle.py",
+    "expected": "cf5de54cd502749ef8718318077f0ba63503ba6a8bade54570f05020ad6d7e3b",
+    "actual": "cf5de54cd502749ef8718318077f0ba63503ba6a8bade54570f05020ad6d7e3b",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/recovery/conditional.py",
+    "expected": "3e7dd6e13b9e426d9bcfa9db083d848ee9cf4e5e60394571d5efd3484ce18479",
+    "actual": "3e7dd6e13b9e426d9bcfa9db083d848ee9cf4e5e60394571d5efd3484ce18479",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/contracts/predicates.py",
+    "expected": "75e14e7d7ecf5da18dc0bc38ecad99c2a881b58929751a2acf0df840af88e2a5",
+    "actual": "75e14e7d7ecf5da18dc0bc38ecad99c2a881b58929751a2acf0df840af88e2a5",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/contracts/__init__.py",
+    "expected": "fb77e9fafb1b63ef2003ba23541367c4e6aa84ffeacc053a039271013fff3e28",
+    "actual": "fb77e9fafb1b63ef2003ba23541367c4e6aa84ffeacc053a039271013fff3e28",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/contracts/authorization.py",
+    "expected": "768756553b7c8445a6c7fdc28cd8b73ceaf641c56c535b1393f8117d3a70e37e",
+    "actual": "768756553b7c8445a6c7fdc28cd8b73ceaf641c56c535b1393f8117d3a70e37e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/contracts/schema.py",
+    "expected": "7814e4c4f6af164dcd5344bde813c5e95a3b2798eeb1fa6f806ba6f56a5f9448",
+    "actual": "7814e4c4f6af164dcd5344bde813c5e95a3b2798eeb1fa6f806ba6f56a5f9448",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/gateway.py",
+    "expected": "74692464ae6b38d8f6e31d73d3c5eb13c14231204069dc9c05d3c50fd64769b2",
+    "actual": "74692464ae6b38d8f6e31d73d3c5eb13c14231204069dc9c05d3c50fd64769b2",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/tasks.py",
+    "expected": "0c7eb959f168a3995aecc8ee9b298db23bde0ca79a981bac38605c0287b747a6",
+    "actual": "0c7eb959f168a3995aecc8ee9b298db23bde0ca79a981bac38605c0287b747a6",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/controllers.py",
+    "expected": "4705da52d89e024b5acecb38b99fdbb2218346af399f3cf32e232c2fe706b189",
+    "actual": "4705da52d89e024b5acecb38b99fdbb2218346af399f3cf32e232c2fe706b189",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/workload_specs.py",
+    "expected": "4d4b0cc97e113961ce64082c2f657a6ca967a52ad15642054cd9c57e655e0d98",
+    "actual": "4d4b0cc97e113961ce64082c2f657a6ca967a52ad15642054cd9c57e655e0d98",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/budget.py",
+    "expected": "5a52114168749daafd494d7d0edf7af26b69766dc4b18d888c5dc81f0e290fe6",
+    "actual": "5a52114168749daafd494d7d0edf7af26b69766dc4b18d888c5dc81f0e290fe6",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/workloads.py",
+    "expected": "ffecd2630b9f3b04a3bb8e2ad30b3049916786bf019689dfeb041ab7ef25c60d",
+    "actual": "ffecd2630b9f3b04a3bb8e2ad30b3049916786bf019689dfeb041ab7ef25c60d",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/policy.py",
+    "expected": "b2cfda88ef6f16b92b81d38537b6c9b72c5bd89851572c1c66bbeb6c0a43698e",
+    "actual": "b2cfda88ef6f16b92b81d38537b6c9b72c5bd89851572c1c66bbeb6c0a43698e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/__init__.py",
+    "expected": "fe4dced1b1d6aad5b1aa443bd19a49cccde6a4d5ed7d9a0b31ccf33c2b165715",
+    "actual": "fe4dced1b1d6aad5b1aa443bd19a49cccde6a4d5ed7d9a0b31ccf33c2b165715",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/belief.py",
+    "expected": "f5de0810e60d2fdd08a351cee80bb99d8652407667dbdc02f140eb9fc0552de8",
+    "actual": "f5de0810e60d2fdd08a351cee80bb99d8652407667dbdc02f140eb9fc0552de8",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/comparison.py",
+    "expected": "f09ab232b9467d5b60ce845e4783465f425395b948be5edd11527b482638593d",
+    "actual": "f09ab232b9467d5b60ce845e4783465f425395b948be5edd11527b482638593d",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/forecasts.py",
+    "expected": "ca63b0f2111b1c3df5ef85822b4d28e006a7d0db70951dc539e04cbf155c29c1",
+    "actual": "ca63b0f2111b1c3df5ef85822b4d28e006a7d0db70951dc539e04cbf155c29c1",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/experiments.py",
+    "expected": "3afad16de9b5f009d915478f3cbf64ee36c0ae3a361024734fa66fe00a2ac334",
+    "actual": "3afad16de9b5f009d915478f3cbf64ee36c0ae3a361024734fa66fe00a2ac334",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/lifecycle.py",
+    "expected": "3941621b593ffad2e84838902402cdfe106c96c631dbdf387544a883136a587b",
+    "actual": "3941621b593ffad2e84838902402cdfe106c96c631dbdf387544a883136a587b",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/workload_oracle.py",
+    "expected": "00d6e9367f55aab0808147e4f01061df86328f71f4623dc9906c36775323e448",
+    "actual": "00d6e9367f55aab0808147e4f01061df86328f71f4623dc9906c36775323e448",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/provenance.py",
+    "expected": "6d556581dccd9a5ed08678a0f7d1f7c5d45b49b1d850ed60fa5031582229e309",
+    "actual": "6d556581dccd9a5ed08678a0f7d1f7c5d45b49b1d850ed60fa5031582229e309",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/driver.py",
+    "expected": "c313d9e716ef36e341d9a84dda5efc96761d96a0586aa5225175aeb61ebace4f",
+    "actual": "c313d9e716ef36e341d9a84dda5efc96761d96a0586aa5225175aeb61ebace4f",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/tcope/analyze.py",
+    "expected": "47210b7c5ad11bfa1f32591281f405392f5eef4498ab7d621d68f74d8925ade4",
+    "actual": "47210b7c5ad11bfa1f32591281f405392f5eef4498ab7d621d68f74d8925ade4",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/decision_schema.py",
+    "expected": "fcd37b8e71f37998e465e290c302426a362e7768a9c21d58e929cb3b44009431",
+    "actual": "fcd37b8e71f37998e465e290c302426a362e7768a9c21d58e929cb3b44009431",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/gateway.py",
+    "expected": "c8ccd7f9a134aa2151e029dbbaa0f2b2c8b23434df462b5104eb22363949c384",
+    "actual": "c8ccd7f9a134aa2151e029dbbaa0f2b2c8b23434df462b5104eb22363949c384",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/action_parser.py",
+    "expected": "3b060b29cad487f7d79e46d466cb75ee7675e0abba8f133dcfa1b6ccf90492fe",
+    "actual": "3b060b29cad487f7d79e46d466cb75ee7675e0abba8f133dcfa1b6ccf90492fe",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/browser_observation.py",
+    "expected": "6650f1cf9c9958d92ce7d033a043d3031f2f4454e6046507e26b7dd25498e40a",
+    "actual": "6650f1cf9c9958d92ce7d033a043d3031f2f4454e6046507e26b7dd25498e40a",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/__init__.py",
+    "expected": "950fe75987fb8f556249977dc8b160188615c725cb3e3c4e64ba966589d9202f",
+    "actual": "950fe75987fb8f556249977dc8b160188615c725cb3e3c4e64ba966589d9202f",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/llm_policy.py",
+    "expected": "c1a7f6d1c63fdcd5f4272b838cc6f4922b2325a856a5844c352aba107f8a702e",
+    "actual": "c1a7f6d1c63fdcd5f4272b838cc6f4922b2325a856a5844c352aba107f8a702e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/inference.py",
+    "expected": "a2891b52a89ef9001ae326f968be91e766ac5fd966096e1a40d81b75cd71ef68",
+    "actual": "a2891b52a89ef9001ae326f968be91e766ac5fd966096e1a40d81b75cd71ef68",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/agent/modal_policy.py",
+    "expected": "9c007606b342dee1d254db8e772421ed28d5c3754bfa6d93ea22f66cafa68cd0",
+    "actual": "9c007606b342dee1d254db8e772421ed28d5c3754bfa6d93ea22f66cafa68cd0",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/qualify_finite.py",
+    "expected": "6d3b347e5d80e6ee3ad12bda5e2fbb4f3dc60c6f7ab11f587f2a133abed57327",
+    "actual": "6d3b347e5d80e6ee3ad12bda5e2fbb4f3dc60c6f7ab11f587f2a133abed57327",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/opsconsole.py",
+    "expected": "fda4e6f4ed39fe0b81161f8a59a52486731df7128362e579c9c07015b511b6cd",
+    "actual": "fda4e6f4ed39fe0b81161f8a59a52486731df7128362e579c9c07015b511b6cd",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/qualify_ops_negative.py",
+    "expected": "4f6debe8c807f15a8158df31dfa08e1851ad910e17b71a6c40c7c04a75c13054",
+    "actual": "4f6debe8c807f15a8158df31dfa08e1851ad910e17b71a6c40c7c04a75c13054",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/oracle_v2.py",
+    "expected": "5a04d2e3e6542570d64d3f22bfbe3a13a3c48f454c2903fc03786b78a33ebd47",
+    "actual": "5a04d2e3e6542570d64d3f22bfbe3a13a3c48f454c2903fc03786b78a33ebd47",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/attribute_history.py",
+    "expected": "4bdb93fe6e6318f26e65c4e0e9a08cb88a6b881020ff3f6d80a43dd37bf6ddaf",
+    "actual": "4bdb93fe6e6318f26e65c4e0e9a08cb88a6b881020ff3f6d80a43dd37bf6ddaf",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/ops_oracle.py",
+    "expected": "8f855deb43539989d71e74ae258b8d68a67f8c8c5bf307232487929179e51d45",
+    "actual": "8f855deb43539989d71e74ae258b8d68a67f8c8c5bf307232487929179e51d45",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/verify_graphs.py",
+    "expected": "a87baff08aeb556487506dc009be05dbfd39843dd9f94912ec1ecdf7cb389e59",
+    "actual": "a87baff08aeb556487506dc009be05dbfd39843dd9f94912ec1ecdf7cb389e59",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/enforcement.py",
+    "expected": "d4310c4e805f28538c88b299db6d62bd4327f0739929b6e300504f62e592887f",
+    "actual": "d4310c4e805f28538c88b299db6d62bd4327f0739929b6e300504f62e592887f",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/__init__.py",
+    "expected": "404f084033aecc1b005b3d53a8962f1b6ffe8856386cee6da16e53981df70ac0",
+    "actual": "404f084033aecc1b005b3d53a8962f1b6ffe8856386cee6da16e53981df70ac0",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/finite.py",
+    "expected": "ab4505feddb7bf5dc9567e6f3dcf83a55fb7c8fa8f3029ba686c886312591abd",
+    "actual": "ab4505feddb7bf5dc9567e6f3dcf83a55fb7c8fa8f3029ba686c886312591abd",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/historical.py",
+    "expected": "331822c7815116787e146193e79c1ecdcfd26e60b27cdc68084e24aba3b388cc",
+    "actual": "331822c7815116787e146193e79c1ecdcfd26e60b27cdc68084e24aba3b388cc",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/temporal_model.py",
+    "expected": "756eb21a3d0db178dd7505e4619e23825c445802e5d34afe5504d95da4f6f1b5",
+    "actual": "756eb21a3d0db178dd7505e4619e23825c445802e5d34afe5504d95da4f6f1b5",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/analyze_enforcement.py",
+    "expected": "a75962097f2e350de4539e79bd5bc4e9aa1851f302585d15abd3f660babd4456",
+    "actual": "a75962097f2e350de4539e79bd5bc4e9aa1851f302585d15abd3f660babd4456",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/contracts.py",
+    "expected": "44a89560483d1e205f75b122fceb16d916d8de700a76ba3aebe61a38215b21a9",
+    "actual": "44a89560483d1e205f75b122fceb16d916d8de700a76ba3aebe61a38215b21a9",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/program.py",
+    "expected": "de37e2270bf04570db4dad83f29e10676432669c64982ddabb61cf9f5cca45a9",
+    "actual": "de37e2270bf04570db4dad83f29e10676432669c64982ddabb61cf9f5cca45a9",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/freeze.py",
+    "expected": "c2f0251d1fbd1a503a91b649539d74f8e2cdec349c64187594d7c313082e0496",
+    "actual": "c2f0251d1fbd1a503a91b649539d74f8e2cdec349c64187594d7c313082e0496",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/qualify_ops.py",
+    "expected": "6c3e89502e8388161c9138e8efb83675cba361bb2ad344302f15526c635d5170",
+    "actual": "6c3e89502e8388161c9138e8efb83675cba361bb2ad344302f15526c635d5170",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/atlas.py",
+    "expected": "d3ef339f6351667e0fd84fd473c18ad9f5430a709055050d2e1908311b2fb30b",
+    "actual": "d3ef339f6351667e0fd84fd473c18ad9f5430a709055050d2e1908311b2fb30b",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/graphs.py",
+    "expected": "8eb16d7872be6a756c77daa3dd7390448c62fe9d81481616942c1f7fb368b2cf",
+    "actual": "8eb16d7872be6a756c77daa3dd7390448c62fe9d81481616942c1f7fb368b2cf",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/evidence.py",
+    "expected": "4d45dc98ada129289f6e691080fd53f0a3b0f0e9e00f528629e4e6bcb12c9964",
+    "actual": "4d45dc98ada129289f6e691080fd53f0a3b0f0e9e00f528629e4e6bcb12c9964",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/runner.py",
+    "expected": "005832b0ad6b99444c833baf9efafb085f5bd19bde1912b2dc49a374d80f6f92",
+    "actual": "005832b0ad6b99444c833baf9efafb085f5bd19bde1912b2dc49a374d80f6f92",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/finance.py",
+    "expected": "32f2b515edb27c80ab052a160736528b163795142719ce17dd42d93b94363f94",
+    "actual": "32f2b515edb27c80ab052a160736528b163795142719ce17dd42d93b94363f94",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/audit.py",
+    "expected": "79cba23fa142d98953a3b2467edadd8bee88e887d91d9e04101682466e616936",
+    "actual": "79cba23fa142d98953a3b2467edadd8bee88e887d91d9e04101682466e616936",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/register.py",
+    "expected": "9e43789754a583c1ecc639d4d1dfada2098ec9fd03e45846b5108c1ffc60f1f1",
+    "actual": "9e43789754a583c1ecc639d4d1dfada2098ec9fd03e45846b5108c1ffc60f1f1",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/adversarial.py",
+    "expected": "3d9eb81c5ea217be36eaa2661fab7cfdf8238952b38ce095b80164a30fc7021f",
+    "actual": "3d9eb81c5ea217be36eaa2661fab7cfdf8238952b38ce095b80164a30fc7021f",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/transport.py",
+    "expected": "0d1e615c12a734e4d79a0987388ad40d9af6f3c04e23f6778c3427fa5864b7a3",
+    "actual": "0d1e615c12a734e4d79a0987388ad40d9af6f3c04e23f6778c3427fa5864b7a3",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/qualify_transport.py",
+    "expected": "18aeba84b9dbd7ad612ebd8f1111bf2d96450e84e99a8ee47d3f8bacb16d47d2",
+    "actual": "18aeba84b9dbd7ad612ebd8f1111bf2d96450e84e99a8ee47d3f8bacb16d47d2",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/ui.py",
+    "expected": "933566b125ac41d24ce1e56da3dc4d78bb16ba67042e52a63261e4d223956664",
+    "actual": "933566b125ac41d24ce1e56da3dc4d78bb16ba67042e52a63261e4d223956664",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/infrastructure.py",
+    "expected": "1232bbff54cb4532ee480f97efa26aa2f43de4e70831ab3bb7d89858070a5fe7",
+    "actual": "1232bbff54cb4532ee480f97efa26aa2f43de4e70831ab3bb7d89858070a5fe7",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/design.py",
+    "expected": "08ffa578111ae0ae755ddd626a8fb39f10ed83e5faaa9200fcd7a690aa9231d7",
+    "actual": "08ffa578111ae0ae755ddd626a8fb39f10ed83e5faaa9200fcd7a690aa9231d7",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/__init__.py",
+    "expected": "05a5f90ffe340854e96c3d1e3136ceb6b42cb42f492436ebef0aac8921df8705",
+    "actual": "05a5f90ffe340854e96c3d1e3136ceb6b42cb42f492436ebef0aac8921df8705",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/flow.py",
+    "expected": "f4c9aca24ee2b0073e07bb6a9596dc8ca5760277df2cfe3d145145f4b06743d5",
+    "actual": "f4c9aca24ee2b0073e07bb6a9596dc8ca5760277df2cfe3d145145f4b06743d5",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/domain_v12.py",
+    "expected": "9e9767e8623ed3aeb66f3bbcaef760314984794616a7a7396c0ddb131040fd6c",
+    "actual": "9e9767e8623ed3aeb66f3bbcaef760314984794616a7a7396c0ddb131040fd6c",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/browser.py",
+    "expected": "60c4c2852192f56c460a0c521790ef86938ff16853b43b44319c02c3724a0e91",
+    "actual": "60c4c2852192f56c460a0c521790ef86938ff16853b43b44319c02c3724a0e91",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/ops.py",
+    "expected": "587a343cf7ff704d9eb431f2d8530740ab35fb1accb957ce50eebafb5a342eae",
+    "actual": "587a343cf7ff704d9eb431f2d8530740ab35fb1accb957ce50eebafb5a342eae",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/qualification.py",
+    "expected": "c5e4f3e67e91c1bc6dfb58a64213e7284f75e474a67b489f7e674ec5ea1ad046",
+    "actual": "c5e4f3e67e91c1bc6dfb58a64213e7284f75e474a67b489f7e674ec5ea1ad046",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/oracle.py",
+    "expected": "b00be0c59fb96e7d2d816f9b7b91f48fe16b368bb6fbb3911cfda7895d8c72b5",
+    "actual": "b00be0c59fb96e7d2d816f9b7b91f48fe16b368bb6fbb3911cfda7895d8c72b5",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/dispatch_learning.py",
+    "expected": "20904b79ff68e3921a979e225166c8ea867305c6cbb361319eb547d3fdd1c68e",
+    "actual": "20904b79ff68e3921a979e225166c8ea867305c6cbb361319eb547d3fdd1c68e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/dispatch_world.py",
+    "expected": "9d826536fd7061e6223f0a428ede72960191bdfcbd8efca4332df6731b993322",
+    "actual": "9d826536fd7061e6223f0a428ede72960191bdfcbd8efca4332df6731b993322",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/__init__.py",
+    "expected": "38bfef298ca66d2920228178e99499fb35222f4fc1aaea34b2419b1f86cb7d5e",
+    "actual": "38bfef298ca66d2920228178e99499fb35222f4fc1aaea34b2419b1f86cb7d5e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/native_tools.py",
+    "expected": "7bf67b3e01e51062c56cd1f33439d49c2855db2dd71a08bc0132e7cee8b1474f",
+    "actual": "7bf67b3e01e51062c56cd1f33439d49c2855db2dd71a08bc0132e7cee8b1474f",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/interaction_trial.py",
+    "expected": "cc15e2b62c7571338efa69a321e5d69d59e8063ad9b8f0dd3e986ac5014f90eb",
+    "actual": "cc15e2b62c7571338efa69a321e5d69d59e8063ad9b8f0dd3e986ac5014f90eb",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/observability_study.py",
+    "expected": "854ff87cc95a0b7b686da1e7b405cd3bcc87bd9e56def003347ba064dc6848d7",
+    "actual": "854ff87cc95a0b7b686da1e7b405cd3bcc87bd9e56def003347ba064dc6848d7",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/dispatch_oracle.py",
+    "expected": "87e085052f2ed97156d40c7a48cbae5ea58b43a569a4f53af88a7199f29d5ed2",
+    "actual": "87e085052f2ed97156d40c7a48cbae5ea58b43a569a4f53af88a7199f29d5ed2",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/extensions/dispatch_sql.py",
+    "expected": "5010abc799d63b60f777d2ec0a7707dccf461374550aad282790ea08100df833",
+    "actual": "5010abc799d63b60f777d2ec0a7707dccf461374550aad282790ea08100df833",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/study_lifecycle.py",
+    "expected": "a37e6a1855c06a289908a2e5b81f7b34581984614b4916fca99802ccb23a299b",
+    "actual": "a37e6a1855c06a289908a2e5b81f7b34581984614b4916fca99802ccb23a299b",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/study_runner.py",
+    "expected": "563a6f60856be123a69c47ee5bc94b24fc767fb4d75be0a8cfec747548108151",
+    "actual": "563a6f60856be123a69c47ee5bc94b24fc767fb4d75be0a8cfec747548108151",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/finance.py",
+    "expected": "926caeab7b31097082c4f604cd79fbca64db7a2512bad82437629901eb69c9c0",
+    "actual": "926caeab7b31097082c4f604cd79fbca64db7a2512bad82437629901eb69c9c0",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/semantics.py",
+    "expected": "d18aa75cad526d99bd4f43a01ae6eba45230f25eabadefe48d7a77e4884bc685",
+    "actual": "d18aa75cad526d99bd4f43a01ae6eba45230f25eabadefe48d7a77e4884bc685",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/budgeted_transport.py",
+    "expected": "4f9a333e5c2da10732334b60ad0629578e074c4d81bd3915ecd42a84dad9ae42",
+    "actual": "4f9a333e5c2da10732334b60ad0629578e074c4d81bd3915ecd42a84dad9ae42",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/__init__.py",
+    "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/continuation.py",
+    "expected": "65be241472a6dd3f25a535623a2fc152762fc8b935453cc5f5a6087227561727",
+    "actual": "65be241472a6dd3f25a535623a2fc152762fc8b935453cc5f5a6087227561727",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/study_finance.py",
+    "expected": "e40111cc95a18c6e474d799076442d03beb224f9a86794275abd71627b10b269",
+    "actual": "e40111cc95a18c6e474d799076442d03beb224f9a86794275abd71627b10b269",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/undobench_adapter.py",
+    "expected": "d19a7f8d082f35738c43336c2d83952af6ca39cd30dce1463c0ad8049dbebe57",
+    "actual": "d19a7f8d082f35738c43336c2d83952af6ca39cd30dce1463c0ad8049dbebe57",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/progressing.py",
+    "expected": "cf06c4fbc375cd0aae9c79ef2af82097af83ae57208cdb532a27f44d37ef05df",
+    "actual": "cf06c4fbc375cd0aae9c79ef2af82097af83ae57208cdb532a27f44d37ef05df",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/paired.py",
+    "expected": "54ca55761e44bd6023477ab425a6aac658a32fd1597aa995cff5832a188e75c5",
+    "actual": "54ca55761e44bd6023477ab425a6aac658a32fd1597aa995cff5832a188e75c5",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/supervision/world.py",
+    "expected": "d1fd9f019e38bd599a759158f7871547e153886005e6b8e96c87452995ad9e3c",
+    "actual": "d1fd9f019e38bd599a759158f7871547e153886005e6b8e96c87452995ad9e3c",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/supervision/runner.py",
+    "expected": "cae6c3eea3a3a73f186d5610c37d2b430df1957c36b08d2a476d53f3dab1d4e2",
+    "actual": "cae6c3eea3a3a73f186d5610c37d2b430df1957c36b08d2a476d53f3dab1d4e2",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/supervision/gateway.py",
+    "expected": "fe9b7349e38d3a54595f608bfdfb939981d6065fd5a2aecd9f014798d842a0f4",
+    "actual": "fe9b7349e38d3a54595f608bfdfb939981d6065fd5a2aecd9f014798d842a0f4",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/supervision/policy.py",
+    "expected": "4652d4c87994d16f88be93bb210bf1a4d931b0447b12950dfdac6da35516f2a3",
+    "actual": "4652d4c87994d16f88be93bb210bf1a4d931b0447b12950dfdac6da35516f2a3",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/supervision/__init__.py",
+    "expected": "fd131e00e8e632598feb026fe3b529d1212fb141441f31e09057badf4394599a",
+    "actual": "fd131e00e8e632598feb026fe3b529d1212fb141441f31e09057badf4394599a",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/review/supervision/lifecycle.py",
+    "expected": "6a2677e36368310feb21092c09cdb07ae6a1dbd06a4dd5c5c5544da0d3956965",
+    "actual": "6a2677e36368310feb21092c09cdb07ae6a1dbd06a4dd5c5c5544da0d3956965",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/benchmarks/mock_finance.py",
+    "expected": "13944a845cace8e1c686c1c774b8f4c647e9f4b84dc32d4a92f9492de7480b8b",
+    "actual": "13944a845cace8e1c686c1c774b8f4c647e9f4b84dc32d4a92f9492de7480b8b",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/benchmarks/__init__.py",
+    "expected": "0b1a75522f2c4358345bf2085c22c92d1ef8ab93b517f2b4b92314f0493ff9ab",
+    "actual": "0b1a75522f2c4358345bf2085c22c92d1ef8ab93b517f2b4b92314f0493ff9ab",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/benchmarks/capabilities.py",
+    "expected": "43f77725240c7451feed62220f5bb29de1a34f0cea50a40062b085625a65d376",
+    "actual": "43f77725240c7451feed62220f5bb29de1a34f0cea50a40062b085625a65d376",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/finance_oracle.py",
+    "expected": "59f02b85d7122e4e359035d14bc1220d6304b5600a56ac7032591693c0580abf",
+    "actual": "59f02b85d7122e4e359035d14bc1220d6304b5600a56ac7032591693c0580abf",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/pilot.py",
+    "expected": "f5b9c018aed1a27a3f51a57102ba76baea816157eb1cf6fd1af890cac7380725",
+    "actual": "f5b9c018aed1a27a3f51a57102ba76baea816157eb1cf6fd1af890cac7380725",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/capability_pilot.py",
+    "expected": "24112d00b9136acaf50a883fb2f8aa508433cbc22cfb9a7a696a011367bebffd",
+    "actual": "24112d00b9136acaf50a883fb2f8aa508433cbc22cfb9a7a696a011367bebffd",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/recovery_reference.py",
+    "expected": "01168f52d3de9af0ce528f0713aba9af48264470c51844c7b3ef8c1052dcdffa",
+    "actual": "01168f52d3de9af0ce528f0713aba9af48264470c51844c7b3ef8c1052dcdffa",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/mechanism_pilot.py",
+    "expected": "d602617a0a01a27c102032f8bba1788cd3c72ce60dbce5a3f4419e6bc8587887",
+    "actual": "d602617a0a01a27c102032f8bba1788cd3c72ce60dbce5a3f4419e6bc8587887",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/__init__.py",
+    "expected": "820d8c4535a0d805702a02cb92d89a9d5546c58b9db441988741f2a993ba415a",
+    "actual": "820d8c4535a0d805702a02cb92d89a9d5546c58b9db441988741f2a993ba415a",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/capability_oracle.py",
+    "expected": "c55d35b2c2c682ef4768e1ab10404352e251128ff76442187449d7fff8b12230",
+    "actual": "c55d35b2c2c682ef4768e1ab10404352e251128ff76442187449d7fff8b12230",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/effect_oracle.py",
+    "expected": "a6011e298227d933e5f3cfa6e31cee7bee4052595fd4bc808082c43c3699b39c",
+    "actual": "a6011e298227d933e5f3cfa6e31cee7bee4052595fd4bc808082c43c3699b39c",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/task_oracle.py",
+    "expected": "3287cb38358ccf0d2314d68709e3775c9f7146e90bf493f514ed38b569a23042",
+    "actual": "3287cb38358ccf0d2314d68709e3775c9f7146e90bf493f514ed38b569a23042",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/evaluation/modal_smoke.py",
+    "expected": "58e2a001acbf95bbc6499d2dd6ca74723bca9cf8d1ef857af8394e61be587660",
+    "actual": "58e2a001acbf95bbc6499d2dd6ca74723bca9cf8d1ef857af8394e61be587660",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/replay/server.py",
+    "expected": "c32fd0ddd63a47e96e7cda1e78d884027ba6e6daac865258a846a6086f688807",
+    "actual": "c32fd0ddd63a47e96e7cda1e78d884027ba6e6daac865258a846a6086f688807",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/replay/viewer.py",
+    "expected": "35e73d49cacf81ee9fe1b50536e7d47c6f0c5bdf87303fb26f6281d4e3b7b796",
+    "actual": "35e73d49cacf81ee9fe1b50536e7d47c6f0c5bdf87303fb26f6281d4e3b7b796",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/replay/adaptive_runner.py",
+    "expected": "3e473a18c494a621736d7727dba62cf57c6db23a20e607168f1aa8c94544df44",
+    "actual": "3e473a18c494a621736d7727dba62cf57c6db23a20e607168f1aa8c94544df44",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/replay/__init__.py",
+    "expected": "5a4cf6dc8c094619b321724fc99fed7ef711d466ac0c36c15ac92a349c85584e",
+    "actual": "5a4cf6dc8c094619b321724fc99fed7ef711d466ac0c36c15ac92a349c85584e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/replay/semantic_alignment.py",
+    "expected": "42798bcf0c986fc7861116c6f0b25e82cfed217e3d2d8f903543a1661853d0ba",
+    "actual": "42798bcf0c986fc7861116c6f0b25e82cfed217e3d2d8f903543a1661853d0ba",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/replay/branch_compare.py",
+    "expected": "460708639e8523da51c2ef24bafaaadb3fd5869709822e1ebb1930ee8e0f9aa6",
+    "actual": "460708639e8523da51c2ef24bafaaadb3fd5869709822e1ebb1930ee8e0f9aa6",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/replay/demo.py",
+    "expected": "fd5575af27f065019db86ed7f83ea18dc229d032ea316e0370172fa7ce6846d6",
+    "actual": "fd5575af27f065019db86ed7f83ea18dc229d032ea316e0370172fa7ce6846d6",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/infrastructure/db.py",
+    "expected": "992f25028798bcd7230b0a72a00464d14282d2618a19292ec4c564b3aef801cf",
+    "actual": "992f25028798bcd7230b0a72a00464d14282d2618a19292ec4c564b3aef801cf",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/infrastructure/__init__.py",
+    "expected": "b9195f91492388bef7f218613192f64dbf700c39b2360afcd501f7cb4c7a73ad",
+    "actual": "b9195f91492388bef7f218613192f64dbf700c39b2360afcd501f7cb4c7a73ad",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/infrastructure/schema.py",
+    "expected": "386588e7f7f671c20c40f69ce977d116041dde7f8f7fe5554c9daae7096a72c7",
+    "actual": "386588e7f7f671c20c40f69ce977d116041dde7f8f7fe5554c9daae7096a72c7",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/gateway.py",
+    "expected": "1080573eb41fd67089f160fdd5ca33f08b29365d13a77632ef2f4a436bac48e6",
+    "actual": "1080573eb41fd67089f160fdd5ca33f08b29365d13a77632ef2f4a436bac48e6",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/finance.py",
+    "expected": "5f1efc094f9f3de59176d444459470fd6790a68891fab90c833501104e27de27",
+    "actual": "5f1efc094f9f3de59176d444459470fd6790a68891fab90c833501104e27de27",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/tasks.py",
+    "expected": "00cf15962fdf1ac0ee56f52020c14aab21382d02f10febc0b3509304b29b82a0",
+    "actual": "00cf15962fdf1ac0ee56f52020c14aab21382d02f10febc0b3509304b29b82a0",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/records.py",
+    "expected": "0da6625c2bbcd002e33b22a21f4ccb470c0f35a3d873aa02a7c9ca87becea0b3",
+    "actual": "0da6625c2bbcd002e33b22a21f4ccb470c0f35a3d873aa02a7c9ca87becea0b3",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/policy.py",
+    "expected": "07056cca0d0b1418c1fdf562ad38bb44231c8e822db5896ac0785aaa7912c2d8",
+    "actual": "07056cca0d0b1418c1fdf562ad38bb44231c8e822db5896ac0785aaa7912c2d8",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/__init__.py",
+    "expected": "41407156571d27f5ce2ecd8260197b0b565a1e1311b67e5eac91bd43b10cf9dc",
+    "actual": "41407156571d27f5ce2ecd8260197b0b565a1e1311b67e5eac91bd43b10cf9dc",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/diagnostic.py",
+    "expected": "b09af03acf036bb0f004de734443fcd6ff80874a1aa7ebe2cd5acc7386438524",
+    "actual": "b09af03acf036bb0f004de734443fcd6ff80874a1aa7ebe2cd5acc7386438524",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/oracle.py",
+    "expected": "610d87cab7207d4cc0f3b70a43bd50021834dcb5446af7195384e900c0c08b8e",
+    "actual": "610d87cab7207d4cc0f3b70a43bd50021834dcb5446af7195384e900c0c08b8e",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/model_sprint/driver.py",
+    "expected": "399db04e8aa4c48328e8fb0dcdd155197b29cf8c32a57d749ac7ed83707c98b4",
+    "actual": "399db04e8aa4c48328e8fb0dcdd155197b29cf8c32a57d749ac7ed83707c98b4",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/opsconsole.html",
+    "expected": "182edf3e9dd77a631a040a259297904bb90a16ee33ff0c7b1c9dcc61a14b2eba",
+    "actual": "182edf3e9dd77a631a040a259297904bb90a16ee33ff0c7b1c9dcc61a14b2eba",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "afterclick/completion_v12/benchmark/interface.html",
+    "expected": "eca05fe0a62fb7db4bb372f327d003c4e91415c2488d26d416c1397f1741b787",
+    "actual": "eca05fe0a62fb7db4bb372f327d003c4e91415c2488d26d416c1397f1741b787",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_graphs.py",
+    "expected": "b751e4437103c548325970282a309c73514a123f104b1612fa077b9858f7a6b9",
+    "actual": "b751e4437103c548325970282a309c73514a123f104b1612fa077b9858f7a6b9",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_statistics.py",
+    "expected": "7ef20f2cafcbd9a6e87448b994a6db1e193d140b4f0c0a93bc33cb34ea5a54bf",
+    "actual": "7ef20f2cafcbd9a6e87448b994a6db1e193d140b4f0c0a93bc33cb34ea5a54bf",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_independent_audit.py",
+    "expected": "2843c9eb88cee9ad527e37a4ac1895a1b5dc07153efcd10b9970923a2b08e76f",
+    "actual": "2843c9eb88cee9ad527e37a4ac1895a1b5dc07153efcd10b9970923a2b08e76f",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_external.py",
+    "expected": "babd4737cac0b92c889e3b3e40108831b7d8c13af3b51ff755044b0072af8d9b",
+    "actual": "babd4737cac0b92c889e3b3e40108831b7d8c13af3b51ff755044b0072af8d9b",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_verify_graphs.py",
+    "expected": "83fdf20a924765258e6eb8d6b46803ebb0ec72b3736aaa75396bf6571edeef63",
+    "actual": "83fdf20a924765258e6eb8d6b46803ebb0ec72b3736aaa75396bf6571edeef63",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_hierarchical.py",
+    "expected": "af95b34228c2d3a28202ad6daf0a40fc4b8f42fbd43f0044788b3ee6cb8ea8de",
+    "actual": "af95b34228c2d3a28202ad6daf0a40fc4b8f42fbd43f0044788b3ee6cb8ea8de",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_confirmatory_analysis.py",
+    "expected": "cbb8719fa7674865f7171be780218e1894526f48ea2e21f3e988d953a74ac4d9",
+    "actual": "cbb8719fa7674865f7171be780218e1894526f48ea2e21f3e988d953a74ac4d9",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_actuator_analysis.py",
+    "expected": "55af8a2f7f7b7078206fc38b824dda57d20351174db10f03d4750cca1227cf82",
+    "actual": "55af8a2f7f7b7078206fc38b824dda57d20351174db10f03d4750cca1227cf82",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_protocol.py",
+    "expected": "f8e7e19b4b0378193abc27c06dbc847037467bdd28aedcab88d6076c8a691792",
+    "actual": "f8e7e19b4b0378193abc27c06dbc847037467bdd28aedcab88d6076c8a691792",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/scripts/v12_rescore.py",
+    "expected": "32880ed79b979180b15e9775902bbafbe826f7f9a21060b9812b617968ec9d1c",
+    "actual": "32880ed79b979180b15e9775902bbafbe826f7f9a21060b9812b617968ec9d1c",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "research_ops/completion_v12/cloud_worker.py",
+    "expected": "63ebad40d221e17960b7155cea627e9a53b435bc89266ba48c1079129c1a6905",
+    "actual": "63ebad40d221e17960b7155cea627e9a53b435bc89266ba48c1079129c1a6905",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "migrations/env.py",
+    "expected": "1f96b4b4e7c999515156179c4d4b4a3ff0da05b6d818215b4d74432199b7e2e0",
+    "actual": "1f96b4b4e7c999515156179c4d4b4a3ff0da05b6d818215b4d74432199b7e2e0",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "migrations/versions/0002_append_only.py",
+    "expected": "439b7cf47fc1f9bd5a0db5e4c46b17142b93905e8b4699ccd7338260c032be0c",
+    "actual": "439b7cf47fc1f9bd5a0db5e4c46b17142b93905e8b4699ccd7338260c032be0c",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "migrations/versions/0003_field_revisions.py",
+    "expected": "24d54c6c14822301b797eb298b05cb8f796bf7036b1e8817fe4d2a3e524ed2e4",
+    "actual": "24d54c6c14822301b797eb298b05cb8f796bf7036b1e8817fe4d2a3e524ed2e4",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "migrations/versions/0001_initial.py",
+    "expected": "c4003863dafaea513fc9bf1006fbdc77f842bea5f5ac0821401cfeb93cbddceb",
+    "actual": "c4003863dafaea513fc9bf1006fbdc77f842bea5f5ac0821401cfeb93cbddceb",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "pyproject.toml",
+    "expected": "527378f3ac1c2144967bf8b6df3cf03126be817c25fc6922866267f9307afaec",
+    "actual": "527378f3ac1c2144967bf8b6df3cf03126be817c25fc6922866267f9307afaec",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "uv.lock",
+    "expected": "d5defc2cd9ad8c94d5cf38c23ac33bb5c6dac5ab2fb6aecfb55809b8d77f90a6",
+    "actual": "d5defc2cd9ad8c94d5cf38c23ac33bb5c6dac5ab2fb6aecfb55809b8d77f90a6",
+    "matches": true
+  },
+  {
+    "category": "source_hashes",
+    "path": "alembic.ini",
+    "expected": "55f6227b037e8558031bdca3ace12a01bd14b7fea0df8d7285d35a508c04a671",
+    "actual": "55f6227b037e8558031bdca3ace12a01bd14b7fea0df8d7285d35a508c04a671",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-39-oracle-v2-reference-and-dev-rescoring/report.json",
+    "expected": "a22169985e38913ca85cf8ec0142deb10608cebc64b6fd8fdc987da1ba9eb20b",
+    "actual": "a22169985e38913ca85cf8ec0142deb10608cebc64b6fd8fdc987da1ba9eb20b",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/PRE_TEST_DESIGN_REVISION.md",
+    "expected": "dd23d70f81491d85850fd811b975e9b0343c9dad9f38dbd7d7fe64cc6064d687",
+    "actual": "dd23d70f81491d85850fd811b975e9b0343c9dad9f38dbd7d7fe64cc6064d687",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-25-full-cohort-saved-evidence-audit-v1/report.json",
+    "expected": "2f35e0d9900a4c5af72bc223ba6bdf8cfd26fd27e20d484f83c2aae782973e33",
+    "actual": "2f35e0d9900a4c5af72bc223ba6bdf8cfd26fd27e20d484f83c2aae782973e33",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-40-independent-verifier-v2/results/report.json",
+    "expected": "c9d3ba0d59f8ec745dd44d1a22ab8d850519164c895ed98ce5b10f897a907e23",
+    "actual": "c9d3ba0d59f8ec745dd44d1a22ab8d850519164c895ed98ce5b10f897a907e23",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-41-final-dev-cluster-power/power.json",
+    "expected": "c53a51fe8ca28ef78fa8d44eb1aa7efb4fdcfee0e8f2692f172ba5f76d9e444d",
+    "actual": "c53a51fe8ca28ef78fa8d44eb1aa7efb4fdcfee0e8f2692f172ba5f76d9e444d",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-22-pre-freeze-regression-v1/regression-disposition.json",
+    "expected": "1119997a87abc9a83200f2caaa62e8ec076aa6c356dd3e294842fd76ccd96e12",
+    "actual": "1119997a87abc9a83200f2caaa62e8ec076aa6c356dd3e294842fd76ccd96e12",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-36-continuous-native-development-v1/registration.json",
+    "expected": "a7c6d42ea225beefc7c1a26c6023dcbd1da33ff9d4b6fd534415c9e69fcb5c33",
+    "actual": "a7c6d42ea225beefc7c1a26c6023dcbd1da33ff9d4b6fd534415c9e69fcb5c33",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-36-continuous-native-development-v1/queue-reconciliation.json",
+    "expected": "0c635c3d158fdbebd253db8f06348eab9b1995252031677b1e719119e8d360c8",
+    "actual": "0c635c3d158fdbebd253db8f06348eab9b1995252031677b1e719119e8d360c8",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "artifacts/research_runs/v12-36-continuous-native-development-v1/lifecycle.json",
+    "expected": "f291e5e565dcc572037603e9cdea6a4a02ab3c74887fda00502bfefcdbe0641f",
+    "actual": "f291e5e565dcc572037603e9cdea6a4a02ab3c74887fda00502bfefcdbe0641f",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/prospective-counts.json",
+    "expected": "a910b21a9bccf1a3cae658df1edad50d5d3592fa6a52f8b907a760e06b533e1a",
+    "actual": "a910b21a9bccf1a3cae658df1edad50d5d3592fa6a52f8b907a760e06b533e1a",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/subsets.json",
+    "expected": "d2dcef0aaaeb5de593382bc861cbf88adbb8d76a9b2369b5d84e5c0f17452b33",
+    "actual": "d2dcef0aaaeb5de593382bc861cbf88adbb8d76a9b2369b5d84e5c0f17452b33",
+    "matches": true
+  },
+  {
+    "category": "gate_hashes",
+    "path": "research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/source-worlds.json",
+    "expected": "98dab3de6d1aeec411bcdb6b6940f44c8af38207b44f0cec99d822d4d710e538",
+    "actual": "98dab3de6d1aeec411bcdb6b6940f44c8af38207b44f0cec99d822d4d710e538",
+    "matches": true
+  }
+]

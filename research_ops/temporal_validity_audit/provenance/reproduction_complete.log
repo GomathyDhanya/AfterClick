@@ -1,0 +1,809 @@
+{
+  "population": {
+    "terminal_internal": 1239,
+    "valid_internal": 1073,
+    "invalid_internal": 166,
+    "valid_P0_stress": 207,
+    "prohibited_pending": 137,
+    "prohibited_forbidden_history": 137,
+    "prohibited_pending_effects": 137,
+    "prohibited_containment": 1,
+    "prohibited_legitimate_complete": 62,
+    "valid_matched_pairs": 132,
+    "pair_P0_forbidden": 132,
+    "pair_P1_forbidden": 2,
+    "pair_P1_pending_forbidden": 2
+  },
+  "scoring_disagreements": [],
+  "funnel": {
+    "all_valid_P0_stress": 207,
+    "prohibited_pending_requests": 137,
+    "sufficient_raw_evidence": 137,
+    "observable_authorization": 137,
+    "observation_opportunity": 137,
+    "response_opportunity": 63,
+    "demonstrated_execution_opportunity": 60,
+    "protective_proposal": 1,
+    "protective_dispatch": 1,
+    "timely_protection": 0,
+    "safe_completion": 0
+  },
+  "metrics": {
+    "full_eligible": {
+      "n": 137,
+      "source_clusters": 91,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 137,
+        "denominator": 137,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 62,
+        "denominator": 137,
+        "rate": 0.45255474452554745
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      }
+    },
+    "observation_opportunity": {
+      "n": 137,
+      "source_clusters": 91,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 137,
+        "denominator": 137,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 62,
+        "denominator": 137,
+        "rate": 0.45255474452554745
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      }
+    },
+    "response_opportunity": {
+      "n": 63,
+      "source_clusters": 40,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 63,
+        "rate": 0.015873015873015872
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 63,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 63,
+        "rate": 0.015873015873015872
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 63,
+        "rate": 0.015873015873015872
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 63,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 63,
+        "denominator": 63,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 35,
+        "denominator": 63,
+        "rate": 0.5555555555555556
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 63,
+        "rate": 0.0
+      }
+    },
+    "demonstrated_execution_opportunity": {
+      "n": 60,
+      "source_clusters": 40,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 60,
+        "rate": 0.016666666666666666
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 60,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 60,
+        "rate": 0.016666666666666666
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 60,
+        "rate": 0.016666666666666666
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 60,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 60,
+        "denominator": 60,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 34,
+        "denominator": 60,
+        "rate": 0.5666666666666667
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 60,
+        "rate": 0.0
+      }
+    }
+  },
+  "admission_orderings": {
+    "admission_vs_initial_observation": {
+      "AFTER": 137
+    },
+    "admission_vs_first_queue": {
+      "AFTER": 137
+    },
+    "admission_vs_first_request_start_marker": {
+      "AFTER": 132,
+      "BEFORE": 5
+    },
+    "admission_vs_first_response": {
+      "AFTER": 81,
+      "BEFORE": 56
+    },
+    "admission_vs_first_proposal": {
+      "NOT_PROPOSED": 136,
+      "BEFORE": 1
+    },
+    "admission_vs_first_protect_dispatch": {
+      "NOT_DISPATCHED": 136,
+      "BEFORE": 1
+    },
+    "admission_vs_first_successful_protection": {
+      "NO_SUCCESSFUL_PROTECTION": 136,
+      "BEFORE": 1
+    }
+  },
+  "admission_during_first_queue": 5,
+  "admission_during_any_queue": 5,
+  "protective_proposal_outcomes": {
+    "COMMITTED_AFTER_ADMISSION": 1
+  },
+  "proposal_episodes": 1,
+  "decision_points_all_P0_stress": 3812,
+  "decision_points_prohibited": 2463,
+  "proposal_scope": "Every raw actor response from all 207 valid autonomous P0 stress episodes; outcome reconstruction covers all 1239 terminal internal executions",
+  "failure_attribution": {
+    "NO_PROPOSAL": 136,
+    "LATE_DISPATCH": 1
+  },
+  "unknown_cases": 828,
+  "source_files_hashed": 10957,
+  "paid_calls": 0,
+  "model_calls": 0,
+  "timing_limitations": [
+    "HTTP start stamp precedes save/client.post, not an instrumented socket send",
+    "HTTP interval includes transport and provider serving/queueing; not pure neural latency",
+    "admission is transaction-internal audit marker; exact read/commit not recorded",
+    "public age_ms is quantized and observation can be stale at queue entry",
+    "retrospective opportunity does not prove counterfactual timely suspension",
+    "1 ms guard band plus conservative sensitivity margins; host clock offsets checked within 10 ms"
+  ]
+}
+{
+  "population": {
+    "terminal_internal": 1239,
+    "valid_internal": 1073,
+    "invalid_internal": 166,
+    "valid_P0_stress": 207,
+    "prohibited_pending": 137,
+    "prohibited_forbidden_history": 137,
+    "prohibited_pending_effects": 137,
+    "prohibited_containment": 1,
+    "prohibited_legitimate_complete": 62,
+    "valid_matched_pairs": 132,
+    "pair_P0_forbidden": 132,
+    "pair_P1_forbidden": 2,
+    "pair_P1_pending_forbidden": 2
+  },
+  "scoring_disagreements": [],
+  "funnel": {
+    "all_valid_P0_stress": 207,
+    "prohibited_pending_requests": 137,
+    "sufficient_raw_evidence": 137,
+    "observable_authorization": 137,
+    "observation_opportunity": 137,
+    "response_opportunity": 63,
+    "demonstrated_execution_opportunity": 60,
+    "protective_proposal": 1,
+    "protective_dispatch": 1,
+    "timely_protection": 0,
+    "safe_completion": 0
+  },
+  "metrics": {
+    "full_eligible": {
+      "n": 137,
+      "source_clusters": 91,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 137,
+        "denominator": 137,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 62,
+        "denominator": 137,
+        "rate": 0.45255474452554745
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      }
+    },
+    "observation_opportunity": {
+      "n": 137,
+      "source_clusters": 91,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 137,
+        "rate": 0.0072992700729927005
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 137,
+        "denominator": 137,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 62,
+        "denominator": 137,
+        "rate": 0.45255474452554745
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 137,
+        "rate": 0.0
+      }
+    },
+    "response_opportunity": {
+      "n": 63,
+      "source_clusters": 40,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 63,
+        "rate": 0.015873015873015872
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 63,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 63,
+        "rate": 0.015873015873015872
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 63,
+        "rate": 0.015873015873015872
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 63,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 63,
+        "denominator": 63,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 35,
+        "denominator": 63,
+        "rate": 0.5555555555555556
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 63,
+        "rate": 0.0
+      }
+    },
+    "demonstrated_execution_opportunity": {
+      "n": 60,
+      "source_clusters": 40,
+      "protective_proposal": {
+        "numerator": 1,
+        "denominator": 60,
+        "rate": 0.016666666666666666
+      },
+      "protective_proposal_before_admission": {
+        "numerator": 0,
+        "denominator": 60,
+        "rate": 0.0
+      },
+      "protective_dispatch": {
+        "numerator": 1,
+        "denominator": 60,
+        "rate": 0.016666666666666666
+      },
+      "containment": {
+        "numerator": 1,
+        "denominator": 60,
+        "rate": 0.016666666666666666
+      },
+      "timely_protection": {
+        "numerator": 0,
+        "denominator": 60,
+        "rate": 0.0
+      },
+      "pending_forbidden": {
+        "numerator": 60,
+        "denominator": 60,
+        "rate": 1.0
+      },
+      "legitimate_complete": {
+        "numerator": 34,
+        "denominator": 60,
+        "rate": 0.5666666666666667
+      },
+      "joint_safe_completion": {
+        "numerator": 0,
+        "denominator": 60,
+        "rate": 0.0
+      }
+    }
+  },
+  "admission_orderings": {
+    "admission_vs_initial_observation": {
+      "AFTER": 137
+    },
+    "admission_vs_first_queue": {
+      "AFTER": 137
+    },
+    "admission_vs_first_request_start_marker": {
+      "AFTER": 132,
+      "BEFORE": 5
+    },
+    "admission_vs_first_response": {
+      "AFTER": 81,
+      "BEFORE": 56
+    },
+    "admission_vs_first_proposal": {
+      "NOT_PROPOSED": 136,
+      "BEFORE": 1
+    },
+    "admission_vs_first_protect_dispatch": {
+      "NOT_DISPATCHED": 136,
+      "BEFORE": 1
+    },
+    "admission_vs_first_successful_protection": {
+      "NO_SUCCESSFUL_PROTECTION": 136,
+      "BEFORE": 1
+    }
+  },
+  "admission_during_first_queue": 5,
+  "admission_during_any_queue": 5,
+  "protective_proposal_outcomes": {
+    "COMMITTED_AFTER_ADMISSION": 1
+  },
+  "proposal_episodes": 1,
+  "decision_points_all_P0_stress": 3812,
+  "decision_points_prohibited": 2463,
+  "proposal_scope": "Every raw actor response in all 1073 valid internal executions, including clean and non-P0 policies; main metrics still restrict to eligible non-clean P0. Reviewer JSON recommendations are a separate role, not native actor proposals.",
+  "failure_attribution": {
+    "NO_PROPOSAL": 136,
+    "LATE_DISPATCH": 1
+  },
+  "unknown_cases": 4292,
+  "source_files_hashed": 46751,
+  "paid_calls": 0,
+  "model_calls": 0,
+  "timing_limitations": [
+    "HTTP start stamp precedes save/client.post, not an instrumented socket send",
+    "HTTP interval includes transport and provider serving/queueing; not pure neural latency",
+    "admission is transaction-internal audit marker; exact read/commit not recorded",
+    "public age_ms is quantized and observation can be stale at queue entry",
+    "retrospective opportunity does not prove counterfactual timely suspension",
+    "1 ms guard band plus conservative sensitivity margins; host clock offsets checked within 10 ms"
+  ],
+  "supplementary_all_valid_internal": {
+    "episodes": 1073,
+    "actor_decisions": 19977,
+    "protective_proposals": 6,
+    "proposal_episodes": 5,
+    "outcomes": {
+      "COMMITTED_AFTER_BLOCKED_ADMISSION_DECISION": 2,
+      "COMMITTED_AFTER_ADMISSION": 4
+    },
+    "by_policy": {
+      "P0": {
+        "episodes": 417,
+        "actor_decisions": 7679,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 1
+        }
+      },
+      "P1": {
+        "episodes": 207,
+        "actor_decisions": 3904,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_BLOCKED_ADMISSION_DECISION": 1
+        }
+      },
+      "P2": {
+        "episodes": 206,
+        "actor_decisions": 3898,
+        "protective_proposals": 3,
+        "proposal_episodes": 2,
+        "outcomes": {
+          "COMMITTED_AFTER_BLOCKED_ADMISSION_DECISION": 1,
+          "COMMITTED_AFTER_ADMISSION": 2
+        }
+      },
+      "P3": {
+        "episodes": 201,
+        "actor_decisions": 3694,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 1
+        }
+      },
+      "P4": {
+        "episodes": 18,
+        "actor_decisions": 343,
+        "protective_proposals": 0,
+        "proposal_episodes": 0,
+        "outcomes": {}
+      },
+      "P5": {
+        "episodes": 24,
+        "actor_decisions": 459,
+        "protective_proposals": 0,
+        "proposal_episodes": 0,
+        "outcomes": {}
+      }
+    }
+  }
+}
+{
+  "planned_conditions": 80,
+  "attempts": 83,
+  "valid": 80,
+  "unexpected_valid": [],
+  "conditions": [
+    {
+      "condition": "A",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "B",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "C",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 0,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "D",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 0,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "E",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 7,
+      "protective_transactions": 1,
+      "version_conflicts": 7,
+      "manipulation_not_observed": 1
+    },
+    {
+      "condition": "F",
+      "attempts": 9,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "G",
+      "attempts": 10,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "H",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "I",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "J",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 0,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    }
+  ],
+  "early_response_to_protection_commit_return_ms": {
+    "n": 40,
+    "minimum": 82.17767198220827,
+    "median": 228.91597548732534,
+    "p95": 1624.2064459613173,
+    "maximum": 1693.3500730083324
+  },
+  "generalization": "local diagnostic host with two concurrent worlds, not original cloud scheduling; margins are sensitivity assumptions, not measured historical deadlines"
+}
+{
+  "actor": {
+    "episodes": 1073,
+    "actor_decisions": 19977,
+    "protective_proposals": 6,
+    "proposal_episodes": 5,
+    "outcomes": {
+      "COMMITTED_AFTER_BLOCKED_ADMISSION_DECISION": 2,
+      "COMMITTED_AFTER_ADMISSION": 4
+    },
+    "by_policy": {
+      "P0": {
+        "episodes": 417,
+        "actor_decisions": 7679,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 1
+        }
+      },
+      "P1": {
+        "episodes": 207,
+        "actor_decisions": 3904,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_BLOCKED_ADMISSION_DECISION": 1
+        }
+      },
+      "P2": {
+        "episodes": 206,
+        "actor_decisions": 3898,
+        "protective_proposals": 3,
+        "proposal_episodes": 2,
+        "outcomes": {
+          "COMMITTED_AFTER_BLOCKED_ADMISSION_DECISION": 1,
+          "COMMITTED_AFTER_ADMISSION": 2
+        }
+      },
+      "P3": {
+        "episodes": 201,
+        "actor_decisions": 3694,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 1
+        }
+      },
+      "P4": {
+        "episodes": 18,
+        "actor_decisions": 343,
+        "protective_proposals": 0,
+        "proposal_episodes": 0,
+        "outcomes": {}
+      },
+      "P5": {
+        "episodes": 24,
+        "actor_decisions": 459,
+        "protective_proposals": 0,
+        "proposal_episodes": 0,
+        "outcomes": {}
+      }
+    },
+    "proposal_after_admitted_decision": 4,
+    "proposal_after_blocked_decision": 2
+  },
+  "reviewer": {
+    "requests": 264,
+    "outcomes": {
+      "suspend": 264
+    },
+    "episode_validity": {
+      "VALID": 225,
+      "INVALID": 39
+    },
+    "applied": 264,
+    "application_statuses": {
+      "200": 264
+    },
+    "scope": "All recorded internal reviewer requests, including recommendations in technically invalid downstream episodes. JSON recommendations are separate from actor native proposals."
+  }
+}
+............                                                             [100%]
+12 passed in 1.89s
+.......................................                                  [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+  /Users/gomathydhanya/projects/684_final/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+39 passed, 1 warning in 16.32s
+..........                                                               [100%]
+=============================== warnings summary ===============================
+../../../../.venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+  /Users/gomathydhanya/projects/684_final/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 2.89s
+All checks passed!
+13 files already formatted
+{
+  "passed": true,
+  "raw_input_hashes": 47279,
+  "frozen_hashes": 180,
+  "assets_verified": 4,
+  "control_attempts": 83,
+  "control_statuses": {
+    "VALID": 80,
+    "INVALID": 3
+  },
+  "figures_verified": 8,
+  "model_calls": 0,
+  "provider_calls": 0
+}

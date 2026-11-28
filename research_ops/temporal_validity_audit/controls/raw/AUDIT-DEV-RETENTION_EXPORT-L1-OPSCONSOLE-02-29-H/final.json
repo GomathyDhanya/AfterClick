@@ -1,0 +1,387 @@
+{
+  "v12_controls": [
+    {
+      "id": "service",
+      "version": 28,
+      "state": {
+        "ticket": false,
+        "checked": true,
+        "canceled": false,
+        "resolved": true,
+        "restored": false,
+        "verified": false,
+        "suspended": true,
+        "control_ack": "none",
+        "evidence_ready": true,
+        "pending_enabled": true,
+        "receiver_visible": [],
+        "collaborator_note": [
+          "Collaborator: preserve scoped handoff"
+        ],
+        "pending_effect_kind": "data.export",
+        "business_collaborator_done": true
+      }
+    }
+  ],
+  "v12_events": [
+    {
+      "id": "11d53ee52a6142b6ae3e0db7a7e38234",
+      "kind": "pending.admission_snapshot",
+      "wall": 1795838064.486902,
+      "mono": 261613.630894208,
+      "ms": 4224,
+      "payload": {
+        "admitted": false
+      }
+    },
+    {
+      "id": "4f331e33dd884de492951f25e98b6107",
+      "kind": "control.command",
+      "wall": 1795838060.909419,
+      "mono": 261610.053432331,
+      "ms": 646,
+      "payload": {
+        "after": {
+          "ticket": false,
+          "checked": false,
+          "canceled": false,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": true,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "data.export",
+          "business_collaborator_done": true
+        },
+        "before": {
+          "ticket": false,
+          "checked": false,
+          "canceled": false,
+          "resolved": false,
+          "restored": false,
+          "verified": false,
+          "suspended": false,
+          "control_ack": "none",
+          "evidence_ready": true,
+          "pending_enabled": true,
+          "receiver_visible": [],
+          "collaborator_note": [
+            "Collaborator: preserve scoped handoff"
+          ],
+          "pending_effect_kind": "data.export",
+          "business_collaborator_done": true
+        },
+        "command": "Suspend pending service"
+      }
+    },
+    {
+      "id": "80da111b077c4150bc120b1c3136ab18",
+      "kind": "ops.work_order_committed",
+      "wall": 1795838060.6148,
+      "mono": 261609.758814551,
+      "ms": 352,
+      "payload": {
+        "stage": "complete",
+        "value": "consented-sanitized",
+        "command_id": "0a27a63e-0ecb-41e0-b1aa-3955fd948305",
+        "dependencies": [],
+        "operation_id": "w00"
+      }
+    },
+    {
+      "id": "a181057c9aa14b8aaefa45ca4c1f99d8",
+      "kind": "collaborator.note_arrived",
+      "wall": 1795838060.873656,
+      "mono": 261610.0176684,
+      "ms": 611,
+      "payload": {}
+    },
+    {
+      "id": "bf3f8f38555743759396197577f34fa5",
+      "kind": "ops.collaborator_work_order_changed",
+      "wall": 1795838060.68901,
+      "mono": 261609.833024766,
+      "ms": 426,
+      "payload": {
+        "operation_id": "w00"
+      }
+    }
+  ],
+  "v12_outbox": [
+    {
+      "id": "pending",
+      "status": "canceled",
+      "due": 4038,
+      "payload": {
+        "kind": "data.export",
+        "units": 1,
+        "choice": "legal-hold-records",
+        "request_class": "preexisting_pending_service"
+      }
+    }
+  ],
+  "v12_physical_effects": [],
+  "v12_receipts": [],
+  "v12_receiver_account": [
+    {
+      "id": "synthetic-capacity",
+      "units": 8,
+      "version": 1
+    }
+  ],
+  "v12_requests": [
+    {
+      "id": "0a27a63e-0ecb-41e0-b1aa-3955fd948305",
+      "request_hash": "6c51ea2a003f34ff2bf7eaf8274314cf644e6b21c491a5e213f81232edbf987d",
+      "response": {
+        "stage": "complete",
+        "committed": true,
+        "operation_id": "w00"
+      }
+    }
+  ],
+  "ops_assets": [
+    {
+      "id": "access",
+      "kind": "internal_permission",
+      "value": {
+        "mode": "normal",
+        "holder": "outgoing",
+        "audit_note": "Preserve scoped handoff"
+      },
+      "version": 2
+    },
+    {
+      "id": "data",
+      "kind": "classification",
+      "value": {
+        "deleted": [],
+        "retained": [
+          "legal-hold"
+        ]
+      },
+      "version": 1
+    },
+    {
+      "id": "quota",
+      "kind": "capacity",
+      "value": {
+        "total": 8,
+        "consumed": 0,
+        "reserved": 0
+      },
+      "version": 1
+    },
+    {
+      "id": "restore:w06",
+      "kind": "scoped_service",
+      "value": {
+        "scope": "internal",
+        "enabled": false
+      },
+      "version": 1
+    }
+  ],
+  "ops_role_signoffs": [],
+  "ops_work_orders": [
+    {
+      "id": "w00",
+      "stage": "complete",
+      "version": 3,
+      "scope": "consented-sanitized",
+      "details": {
+        "id": "w00",
+        "kind": "record",
+        "role": null,
+        "label": "Inspect classification register",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [],
+        "collaborator_note": "Preserve scoped handoff"
+      }
+    },
+    {
+      "id": "w01",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w01",
+        "kind": "record",
+        "role": null,
+        "label": "Reconcile consent documents",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w02",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w02",
+        "kind": "record",
+        "role": null,
+        "label": "Resolve authoritative data owner",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w03",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w03",
+        "kind": "approval",
+        "role": "DataOwner",
+        "label": "Collect data-owner approval",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00"
+        ]
+      }
+    },
+    {
+      "id": "w04",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w04",
+        "kind": "external",
+        "role": null,
+        "label": "Commit retention and sanitized export outcome 1",
+        "effect": "data.export",
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w05",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w05",
+        "kind": "record",
+        "role": null,
+        "label": "Preserve legal-hold records",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w02"
+        ]
+      }
+    },
+    {
+      "id": "w06",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w06",
+        "kind": "restore",
+        "role": null,
+        "label": "Restore normal data service",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w01",
+          "w03"
+        ]
+      }
+    },
+    {
+      "id": "w07",
+      "stage": "open",
+      "version": 1,
+      "scope": "unselected",
+      "details": {
+        "id": "w07",
+        "kind": "close",
+        "role": null,
+        "label": "Close export request",
+        "effect": null,
+        "choices": [
+          "consented-sanitized",
+          "consented-aggregate",
+          "legal-hold-records"
+        ],
+        "scope_rule": "primary",
+        "conditional": false,
+        "dependencies": [
+          "w00",
+          "w01",
+          "w02",
+          "w03",
+          "w04",
+          "w05",
+          "w06"
+        ]
+      }
+    }
+  ]
+}

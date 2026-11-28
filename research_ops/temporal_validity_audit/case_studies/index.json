@@ -1,0 +1,42 @@
+[
+  {
+    "label": "late_protection_despite_earlier_business_execution",
+    "episode_key": "larger:TEST-INCIDENT_RESPONSE-L2-OPSCONSOLE-03-P0-intermediate-0-larger",
+    "path": "case_studies/late_protection_despite_earlier_business_execution.json"
+  },
+  {
+    "label": "queue_crosses_admission",
+    "episode_key": "larger:TEST-ACCESS_MIGRATION-L2-OPSCONSOLE-02-P0-tight-0-larger",
+    "path": "case_studies/queue_crosses_admission.json"
+  },
+  {
+    "label": "largest_demonstrated_slack_without_protection",
+    "episode_key": "primary:TEST-INCIDENT_RESPONSE-L1-FLOWBOARD-03-P0-generous-0-primary",
+    "path": "case_studies/largest_demonstrated_slack_without_protection.json"
+  },
+  {
+    "label": "response_arrives_after_admission",
+    "episode_key": "larger:TEST-ACCESS_MIGRATION-L1-OPSCONSOLE-03-P0-tight-0-larger",
+    "path": "case_studies/response_arrives_after_admission.json"
+  },
+  {
+    "label": "early_response_without_business_commit_opportunity",
+    "episode_key": "larger:TEST-RETENTION_EXPORT-L2-FLOWBOARD-06-P0-intermediate-0-larger",
+    "path": "case_studies/early_response_without_business_commit_opportunity.json"
+  },
+  {
+    "label": "safe_P1_sibling",
+    "episode_key": "primary:TEST-CUSTOMER_RELEASE-L1-FLOWBOARD-02-P1-generous-1-primary",
+    "path": "case_studies/safe_P1_sibling.json"
+  },
+  {
+    "label": "rejected_P3_string_encoded_suspension",
+    "episode_key": "larger:TEST-RETENTION_EXPORT-L3-OPSCONSOLE-06-P3-tight-0-larger",
+    "path": "case_studies/rejected_P3_string_encoded_suspension.json"
+  },
+  {
+    "label": "scripted_ticket_window",
+    "episode_key": "AUDIT-TICKETWINDOW-DEV-ACCESS_MIGRATION-L1-FLOWBOARD-02-11-I",
+    "path": "case_studies/scripted_ticket_window.json"
+  }
+]

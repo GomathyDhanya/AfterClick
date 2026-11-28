@@ -1,0 +1,60 @@
+{
+  "assets": [
+    {
+      "local_path": "artifacts/AfterClick_v12_Evidence_Release.tar.gz",
+      "bytes": 637853954,
+      "sha256": "c031afd3c46eab822770cc41e684d87f2a2aa786b64cff70eb79f90572667020",
+      "uploaded": false,
+      "actual_sha256": "c031afd3c46eab822770cc41e684d87f2a2aa786b64cff70eb79f90572667020",
+      "accessible": true,
+      "matches": true
+    },
+    {
+      "local_path": "artifacts/publication-release/AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+      "bytes": 645459203,
+      "sha256": "d82178a963b3fe1a4f39d72727c39a5648de8383e8e8bda09b8740779734d509",
+      "uploaded": false,
+      "actual_sha256": "d82178a963b3fe1a4f39d72727c39a5648de8383e8e8bda09b8740779734d509",
+      "accessible": true,
+      "matches": true
+    },
+    {
+      "local_path": "artifacts/AfterClick_Publication_Companion_20261126.tar.gz",
+      "bytes": 98844344,
+      "sha256": "97ea5961820ab7799738c78f567cb52b3c301f8a22566a1ee978673396fc782f",
+      "uploaded": false,
+      "actual_sha256": "97ea5961820ab7799738c78f567cb52b3c301f8a22566a1ee978673396fc782f",
+      "accessible": true,
+      "matches": true
+    },
+    {
+      "local_path": "artifacts/cleanup-20261126/AfterClick_Historical_31eab618.bundle",
+      "bytes": 10370053,
+      "sha256": "26f6bf9f1f19792b46559ca0fc4060b4f9037193dec3a2d6b4c8f61a7344011d",
+      "uploaded": false,
+      "actual_sha256": "26f6bf9f1f19792b46559ca0fc4060b4f9037193dec3a2d6b4c8f61a7344011d",
+      "accessible": true,
+      "matches": true
+    }
+  ],
+  "source_commit": "31eab61870befc520841d11f422bb1a372ba92b8",
+  "protocol_sha256": "f8ebae7ca2edd9528e59db165e1fea2db756f24d123a4de351a335431c467baf",
+  "git_source_files": 2754,
+  "git_source_matches": 2754,
+  "frozen_files": 180,
+  "frozen_matches": 180,
+  "execution_payloads": 23,
+  "payloads_source_matches": 23,
+  "accessible": "all three named archives and git bundle; all relevant TEST raw restored separately from source",
+  "restoration_scope": "all git-tracked files plus relevant internal TEST runs, final evidence and frozen raw gate records; redundant unrelated extracted copies omitted after full extraction exhausted disk",
+  "failed_attempt_log": "provenance/restoration.log",
+  "missing": [
+    "exact historical authorization-read timestamps",
+    "exact historical transaction commit instants",
+    "provider internal scheduling traces",
+    "independent deployed-container byte attestation"
+  ],
+  "model_calls": 0,
+  "compact_manifest_files_verified": 141,
+  "historical_worker_source_validation": "cloud_worker.py lines 182-186 asserts actual afterclick/* source hashes before runner execution; 23 recovered batch payloads match pinned source. This is an in-worker assertion, not independent container attestation."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "kind": "browser.request",
+    "wall": 1795837789.761052,
+    "mono": 261338.906661336,
+    "body": {
+      "id": "w00",
+      "value": "consented-sanitized",
+      "version": 1,
+      "operation_id": "066bdc19-6950-4815-bc2d-74aa1700cef2"
+    }
+  },
+  {
+    "kind": "browser.request",
+    "wall": 1795837790.103025,
+    "mono": 261339.248632409,
+    "body": {
+      "id": "suspend",
+      "value": "",
+      "version": 0,
+      "operation_id": "f2894601-d041-4314-b14c-2b7b1396275a"
+    }
+  }
+]

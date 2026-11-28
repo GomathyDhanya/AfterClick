@@ -1,0 +1,132 @@
+{
+  "copied_unchanged": true,
+  "files": {
+    "larger-analysis/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-analysis/report.json",
+      "sha256": "d04e3d307abe3253a31b49c89c4ed901ba8e4fa6ae71693eca95e3319192e7cf",
+      "bytes": 9542
+    },
+    "larger-extended-graph-verification/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-extended-graph-verification/report.json",
+      "sha256": "0bfaf1e301681015dd52fccdfdfcd2ce19853fe0f4402a0037179635e7b162cb",
+      "bytes": 434
+    },
+    "larger-forensics/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-forensics/report.json",
+      "sha256": "d452f649c52fa2cfece46041a58cb400fb9b01716ce790e2216ef06623c9e3a5",
+      "bytes": 670
+    },
+    "larger-graphs/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-graphs/report.json",
+      "sha256": "5f965069b5b37cf503271ec63f91a282d322796c8554bddb7c9b98b55dba547f",
+      "bytes": 591
+    },
+    "larger-interval-diagnostics/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-interval-diagnostics/report.json",
+      "sha256": "bb906c71e23dd24c7b8b0a1d00b0f41b56b6b2eb98282a6242f7a9be1a58bbff",
+      "bytes": 2656
+    },
+    "larger-native-joins/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-native-joins/report.json",
+      "sha256": "118a6d0ead7b12015c07c42abdd672573fe3aabd4ae3757c13bdfb701df09115",
+      "bytes": 479
+    },
+    "larger-oracle-verification/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-oracle-verification/report.json",
+      "sha256": "4a368f9dd207a72f00b4bf19bb40caf53929e6bec565ec97eb0b6235979e35f1",
+      "bytes": 269
+    },
+    "larger-recoverability-prefixes/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-recoverability-prefixes/report.json",
+      "sha256": "8dfb0b7f8d87ea2182709c0ce426da4fe914cff22d7d84e370451c3ea3f5c3fa",
+      "bytes": 403
+    },
+    "larger-trace-inventory/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/larger-trace-inventory/report.json",
+      "sha256": "dd677fba913f8fed15d164031c0fdf0859b02b9e4def8245f85ddb1dce2f3cf5",
+      "bytes": 393
+    },
+    "model-comparison/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/model-comparison/report.json",
+      "sha256": "9c9c642e8ac10c28143dba322aed610635809f007ec13b1e7b410d114268314e",
+      "bytes": 2582
+    },
+    "official-external-analysis/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/official-external-analysis/report.json",
+      "sha256": "393fbec84630cfd1d36f64cd291b9e326f09f6d04e43737e06cf30e494d00655",
+      "bytes": 3110
+    },
+    "primary-analysis/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-analysis/report.json",
+      "sha256": "029f3908b36b1de2a22d93e8210630a2bdef64f596e45fea722080cbf32e954d",
+      "bytes": 107450
+    },
+    "primary-extended-graph-verification/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-extended-graph-verification/report.json",
+      "sha256": "3c2195e370dec8057b8e164edca5a7fb746c0d27433ab42023fbafdd090e2e0c",
+      "bytes": 437
+    },
+    "primary-forensics/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-forensics/report.json",
+      "sha256": "dc61cdf25d8240e6dd13221ddfe59fd0b9cefb5e6bd7c5a6193a9f11e6d2293b",
+      "bytes": 674
+    },
+    "primary-graphs/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-graphs/report.json",
+      "sha256": "3477aaf54b9e9b170b1d0ebc47dc61c3412cbf31c8cef4961b9737bb3a5046ae",
+      "bytes": 595
+    },
+    "primary-interval-diagnostics/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-interval-diagnostics/report.json",
+      "sha256": "e3771eb273824763aa1d6f0a7e417f576c88b1d6b20e465f5a5c33f75ed82873",
+      "bytes": 3023
+    },
+    "primary-native-joins/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-native-joins/report.json",
+      "sha256": "c794c58036af33e3dffcfdf3c48cb0b20ba932b600ead097399f7ed9e1921276",
+      "bytes": 480
+    },
+    "primary-oracle-verification/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-oracle-verification/report.json",
+      "sha256": "3fbd1759472f6a1d968000e8308079e7a335a974eb2335133f462bfe7b574052",
+      "bytes": 269
+    },
+    "primary-recoverability-prefixes/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-recoverability-prefixes/report.json",
+      "sha256": "bfb104d2ea2d165192e1c939c8dcf86372480a86aeaa98647fa0f48c8f2fdb90",
+      "bytes": 408
+    },
+    "primary-trace-inventory/report.json": {
+      "source": "artifacts/research_runs/v12-final-evidence-v1/primary-trace-inventory/report.json",
+      "sha256": "46449fb44aeb28f5a8a29228d64c561ab5fae33e665cb319c5216c79d288c175",
+      "bytes": 431
+    },
+    "controlled-actuator/report.json": {
+      "source": "artifacts/research_runs/v12-37-complex-actuator-analysis-v1/report.json",
+      "sha256": "116c987cf3c15399501ea9d0103bfe985d6e807e17b605fad7543150b21e5cb7",
+      "bytes": 3587
+    },
+    "independent-oracle-mutations/report.json": {
+      "source": "artifacts/research_runs/v12-40-independent-verifier-v2/results/report.json",
+      "sha256": "c9d3ba0d59f8ec745dd44d1a22ab8d850519164c895ed98ce5b10f897a907e23",
+      "bytes": 347
+    },
+    "relocated-reproduction/report.json": {
+      "source": "artifacts/reproductions/afterclick-v12-relocated-final-v2/reproduction-report.json",
+      "sha256": "0572a6f6d82d6eda548b4e3cd68a932f84f032363998e868c49df2c98d5bc50e",
+      "bytes": 1792
+    },
+    "data-archive/verification.json": {
+      "source": "artifacts/AfterClick_v12_Evidence_Release.tar.gz.verification.json",
+      "sha256": "6619f5ebd68d950cf1053ec879909d71a2dfb9466c463b8164ffe0cecaec905f",
+      "bytes": 298
+    },
+    "data-archive/archive.sha256": {
+      "source": "artifacts/AfterClick_v12_Evidence_Release.tar.gz.sha256",
+      "sha256": "66dcb76372b5e77f1e2749349684d13550a79dd8f755b770ed5e7795d07d7091",
+      "bytes": 105
+    }
+  },
+  "full_raw_data_in_git": false,
+  "raw_data_archive_published": false
+}

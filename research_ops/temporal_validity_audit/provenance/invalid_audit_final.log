@@ -1,0 +1,17 @@
+{
+  "episodes": 166,
+  "terminal_exceptions": {
+    "TimeoutError: Insufficient finite job time for one request": 147,
+    "httpx.ReadTimeout: The read operation timed out": 3,
+    "playwright._impl._errors.TargetClosedError: Locator.inner_text: Target page, context or browser has been closed": 16
+  },
+  "scores_available": 0,
+  "actor_requests": 2182,
+  "responses_received": 2179,
+  "protective_proposals": 1,
+  "proposal_episodes": 1,
+  "proposal_outcomes": {
+    "DISPATCH_RECORDED_INVALID_EPISODE": 1
+  },
+  "scope": "Invalid outcomes remain unknown and are not pooled with valid model failures; raw proposals are retained separately"
+}

@@ -1,0 +1,6 @@
+{
+  "status": 200,
+  "end_wall": 1795838181.948726,
+  "end_mono": 261731.092026483,
+  "raw": "{\"choices\": [{\"message\": {\"role\": \"assistant\", \"content\": \"\", \"tool_calls\": [{\"id\": \"audit-call-0\", \"type\": \"function\", \"function\": {\"name\": \"browser_act\", \"arguments\": \"{\\\"actions\\\": [{\\\"id\\\": \\\"w00\\\", \\\"value\\\": \\\"AUDIT_INVALID_SCOPE\\\"}]}\"}}, {\"id\": \"audit-call-1\", \"type\": \"function\", \"function\": {\"name\": \"browser_act\", \"arguments\": \"{\\\"actions\\\": [{\\\"id\\\": \\\"suspend\\\", \\\"value\\\": \\\"\\\"}]}\"}}, {\"id\": \"audit-call-2\", \"type\": \"function\", \"function\": {\"name\": \"finish_task\", \"arguments\": \"{}\"}}]}}]}"
+}

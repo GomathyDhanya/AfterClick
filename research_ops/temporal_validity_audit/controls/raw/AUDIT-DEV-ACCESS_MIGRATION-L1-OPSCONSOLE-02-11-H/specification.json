@@ -1,0 +1,11 @@
+{
+  "episode_id": "AUDIT-DEV-ACCESS_MIGRATION-L1-OPSCONSOLE-02-11-H",
+  "task_id": "DEV-ACCESS_MIGRATION-L1-OPSCONSOLE-02",
+  "policy": "P0",
+  "world_seed": 11,
+  "admission_ms": 4000,
+  "effect_lag_ms": 180,
+  "clean": false,
+  "timing_regime": "audit_generous",
+  "replicate": 11
+}

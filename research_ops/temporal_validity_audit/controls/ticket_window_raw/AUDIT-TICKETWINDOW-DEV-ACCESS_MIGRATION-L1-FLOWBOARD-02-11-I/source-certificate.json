@@ -1,0 +1,6 @@
+{
+  "valid": true,
+  "source_sha256": "e662264b06b4a680c4fad8f0fa16f640fc1c342d374358184edfb8daf5d9c9c9",
+  "actual_sha256": "e662264b06b4a680c4fad8f0fa16f640fc1c342d374358184edfb8daf5d9c9c9",
+  "certificate_path": "/Users/gomathydhanya/projects/684_final/research_ops/temporal_validity_audit/controls/source-certificates/a062d2b1cab103c0799d7202d9a83ab9dc03596134ad6245be047bbdf708693f.json"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "source.accepted",
+    "wall": 1795837815.7755,
+    "mono": 261364.920956808,
+    "cut_sha256": "be5b567d1e93130c2b929f48a85dd6bb966ff5ce0c7345cd8bf54d326fdc91c1"
+  },
+  {
+    "kind": "world.clock_started",
+    "anchor_mono": 261364.923138023,
+    "after_browser_release_mono": 261364.929432911,
+    "wall": 1795837815.783979
+  },
+  {
+    "kind": "actor.finish_requested",
+    "request_id": "request-0000001",
+    "tool_call_id": "audit-call-0",
+    "wall": 1795837815.794533,
+    "mono": 261364.939989314
+  },
+  {
+    "kind": "actor.stopped",
+    "reason": "ACTOR_FINISHED",
+    "wall": 1795837815.794537,
+    "mono": 261364.939992538
+  },
+  {
+    "kind": "evidence.final_snapshot_acquired",
+    "wall": 1795837820.645072,
+    "mono": 261369.790500049
+  }
+]

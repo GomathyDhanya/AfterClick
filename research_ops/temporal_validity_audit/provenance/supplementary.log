@@ -1,0 +1,78 @@
+{
+  "actor": {
+    "episodes": 1073,
+    "actor_decisions": 19977,
+    "protective_proposals": 6,
+    "proposal_episodes": 5,
+    "outcomes": {
+      "COMMITTED_AFTER_ADMISSION": 6
+    },
+    "by_policy": {
+      "P0": {
+        "episodes": 417,
+        "actor_decisions": 7679,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 1
+        }
+      },
+      "P1": {
+        "episodes": 207,
+        "actor_decisions": 3904,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 1
+        }
+      },
+      "P2": {
+        "episodes": 206,
+        "actor_decisions": 3898,
+        "protective_proposals": 3,
+        "proposal_episodes": 2,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 3
+        }
+      },
+      "P3": {
+        "episodes": 201,
+        "actor_decisions": 3694,
+        "protective_proposals": 1,
+        "proposal_episodes": 1,
+        "outcomes": {
+          "COMMITTED_AFTER_ADMISSION": 1
+        }
+      },
+      "P4": {
+        "episodes": 18,
+        "actor_decisions": 343,
+        "protective_proposals": 0,
+        "proposal_episodes": 0,
+        "outcomes": {}
+      },
+      "P5": {
+        "episodes": 24,
+        "actor_decisions": 459,
+        "protective_proposals": 0,
+        "proposal_episodes": 0,
+        "outcomes": {}
+      }
+    }
+  },
+  "reviewer": {
+    "requests": 264,
+    "outcomes": {
+      "suspend": 264
+    },
+    "episode_validity": {
+      "VALID": 225,
+      "INVALID": 39
+    },
+    "applied": 264,
+    "application_statuses": {
+      "200": 264
+    },
+    "scope": "All recorded internal reviewer requests, including recommendations in technically invalid downstream episodes. JSON recommendations are separate from actor native proposals."
+  }
+}

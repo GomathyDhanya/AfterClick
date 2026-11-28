@@ -1,0 +1,20 @@
+{
+  "python": "3.11.14",
+  "platform": "macOS-15.7.7-x86_64-i386-64bit",
+  "postgres": "PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+  "packages": {
+    "fastapi": "0.163.2",
+    "uvicorn": "0.54.0",
+    "sqlalchemy": "2.0.58",
+    "psycopg": "3.3.9",
+    "alembic": "1.20.1",
+    "httpx": "0.28.1",
+    "playwright": "1.65.2",
+    "matplotlib": "3.10.9",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.8.0"
+  },
+  "model_calls": 0,
+  "provider_calls": 0,
+  "gpu_provisioned": false
+}

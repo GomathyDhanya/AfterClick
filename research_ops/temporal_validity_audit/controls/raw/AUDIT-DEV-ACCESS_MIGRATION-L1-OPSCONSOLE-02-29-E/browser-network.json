@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "browser.request",
+    "wall": 1795837935.232151,
+    "mono": 261484.376904093,
+    "body": {
+      "id": "w00",
+      "value": "incoming-internal",
+      "version": 1,
+      "operation_id": "ba8ef6a4-33dc-4c53-ba5d-76d7e79e355b"
+    }
+  }
+]

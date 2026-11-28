@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "raw_input_hashes": 51640,
+  "frozen_hashes": 180,
+  "assets_verified": 4,
+  "control_attempts": 83,
+  "control_statuses": {
+    "VALID": 80,
+    "INVALID": 3
+  },
+  "figures_verified": 8,
+  "valid_empty_worker_logs": 1073,
+  "unchanged_historical_git_blobs": 2754,
+  "model_calls": 0,
+  "provider_calls": 0
+}

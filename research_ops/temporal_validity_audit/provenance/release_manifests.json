@@ -1,0 +1,1526 @@
+[
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/METHOD_MANIFEST_V1.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_MANIFEST_V1.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_MANIFEST_V1_0_1.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_SET_SHA256.txt"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_SET_SHA256_V1_0_1.txt"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/recoverbench/data/task_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/recoverbench/tasks/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/results/contemporary_models/manifests/test_factorial_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/results/rb7n10_during_mutation/manifests/during_mutation_factorial_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/results/rb7n10_keys_everywhere/manifests/keys_everywhere_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-observability-v1/o1-observability-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-observability-v1/o2-observability-locked-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/obs-check-20261123/o1-observability-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/obs-check-20261123/o2-observability-locked-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c0-supervision-local-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/raw/analysis-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/raw/final-report-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/raw/source-archive-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/i0-native-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/i1-format-pair-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o0-critical-diagnosis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o1-observability-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o2-observability-locked-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o3-frontier-certificate-audit-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o4-context-ablation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o5-observability-synthesis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p0-20261122-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p0-20261122-audit/raw/registered_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p10-synthesis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1a-20261122-local/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1a-20261122-local/raw/prepared-smoke/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1b-20261122-readiness/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v3/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-new-endpoint-live-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-new-endpoint-live-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-4b-diagnostic-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-4b-diagnostic-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v1/raw/registered_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1d-20261123-4b-readiness/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1d-20261123-4b-readiness/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1e-20261123-existing-endpoint-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1e-20261123-existing-endpoint-audit/raw/final-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1f-20261123-recorded-task-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1h-20261123-new-endpoint-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p7-visible-collision-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p8-gateway-enforcement-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s0-natural-driver-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s1-natural-qwen-pilot-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s1-natural-qwen-pilot-v1/raw/execution-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s2-comment-commit-diagnostic-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s2-comment-commit-diagnostic-v1/raw/execution-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s2-replica-check-20261123/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t0-execution-repair-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t0-execution-repair-offline-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t1-9b-commit-feedback-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t10-reconstruction-audit-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t11-final-verification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t2-distinct-services-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t3-native-live-branches-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t4-distinct-9b-baseline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t5-public-controller-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev01-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev01-controller-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev03-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev03-controller-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev05-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev05-controller-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t7-ack-lifecycle-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t8-final-method-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm01-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm02-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm03-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm04-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm05-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm06-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm07-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm08-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-locked-native-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u0-observation-equivalence-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u1-oecr-qwen-pilot-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u1-oecr-qwen-pilot-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u2-oecr-qwen-pilot-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u2-oecr-qwen-pilot-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u3-oecr-preconfirmation-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u4-oecr-independent-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u4-oecr-independent-confirmation-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u5-oecr-independent-confirmation-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u5-oecr-independent-confirmation-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u6-oecr-final-verification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u7-oecr-identity-audit-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v0-recoverability-standardization-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-00-baseline-qualification/final-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-01-historical-graphs-attempt-1/atlas/atlas-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-04-enforcement-delay-v1/execution-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-04-enforcement-delay-v1/source-archive-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-05-acceptance-audit-final/execution-manifest.jsonl"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-05-acceptance-audit-v1/execution-manifest.jsonl"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-44-frozen-primary-test-v1/cloud-batches/v12-44-frozen-primary-test-v1-b0011/recovery-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-45-final-dev-evidence-graphs/atlas/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-final-evidence-v1/larger-atlas/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-final-evidence-v1/primary-atlas/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0-recovery-predicates-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0b-recovery-predicates-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0c-recovery-predicates-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0d-recovery-predicates-v2-1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w1-progressing-replay-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-checkpoint/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-evoundo/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-idempotency/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-naive/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-saga/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-vbr/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/official-smoke-output/smoke_1795569343/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w3-fresh-sequential-validation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x0-timing-study-local-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x1-progressing-qwen-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x2-timing-confirmation-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b1-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b1-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x4-prospective-timing-analysis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v4/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v5/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v6/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v7/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/final_package/RELEASE_INDEX.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/manifests/prospective_counts.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/manifests/task_design_slots_216.csv"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/manifests/task_design_slots_72_dev.csv"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v2/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v3_credit_bound/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v3_credit_bound/larger-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v3_credit_bound/primary-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/external-dev-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/larger-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/primary-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Evidence_Release.tar.gz",
+    "name": "afterclick-v12/tests/unit/test_manifest.py"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/METHOD_MANIFEST_V1.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_MANIFEST_V1.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_MANIFEST_V1_0_1.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_SET_SHA256.txt"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/benchmark/manifests/TEST_SET_SHA256_V1_0_1.txt"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/recoverbench/data/task_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/recoverbench/tasks/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/results/contemporary_models/manifests/test_factorial_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/results/rb7n10_during_mutation/manifests/during_mutation_factorial_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/external/undobench-v1/results/rb7n10_keys_everywhere/manifests/keys_everywhere_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-observability-v1/o1-observability-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-observability-v1/o2-observability-locked-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/final-standardization-v1/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/obs-check-20261123/o1-observability-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/obs-check-20261123/o2-observability-locked-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/review-response-v1/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/reproductions/v12-baseline-20261125/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c0-supervision-local-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/raw/analysis-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/raw/final-report-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/c1-supervisor-development-v1/raw/source-archive-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/i0-native-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/i1-format-pair-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o0-critical-diagnosis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o1-observability-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o2-observability-locked-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o3-frontier-certificate-audit-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o4-context-ablation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/o5-observability-synthesis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p0-20261122-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p0-20261122-audit/raw/registered_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p10-synthesis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1a-20261122-local/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1a-20261122-local/raw/prepared-smoke/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1b-20261122-readiness/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-existing-4b-validation-v3/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-new-endpoint-live-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-new-endpoint-live-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-4b-diagnostic-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-4b-diagnostic-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v1/raw/registered_manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1c-qwen35-9b-smoke-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1d-20261123-4b-readiness/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1d-20261123-4b-readiness/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1e-20261123-existing-endpoint-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1e-20261123-existing-endpoint-audit/raw/final-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1f-20261123-recorded-task-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p1h-20261123-new-endpoint-audit/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p2-20261123-distinct-mechanisms-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p2-capability-diversity-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p3-formal-recovery-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p4-matched-search-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p6-risk-study-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p7-visible-collision-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p8-gateway-enforcement-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/p9-locked-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s0-natural-driver-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s1-natural-qwen-pilot-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s1-natural-qwen-pilot-v1/raw/execution-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s2-comment-commit-diagnostic-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s2-comment-commit-diagnostic-v1/raw/execution-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/s2-replica-check-20261123/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t0-execution-repair-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t0-execution-repair-offline-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t1-9b-commit-feedback-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t10-reconstruction-audit-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t11-final-verification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t2-distinct-services-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t3-native-live-branches-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t4-distinct-9b-baseline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t5-public-controller-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev01-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev01-controller-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev03-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev03-controller-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev05-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t6-dev05-controller-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t7-ack-lifecycle-offline-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t8-final-method-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm01-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm02-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm03-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm04-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm05-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm06-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm07-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-confirm08-controller-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/t9-locked-native-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u0-observation-equivalence-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u1-oecr-qwen-pilot-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u1-oecr-qwen-pilot-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u2-oecr-qwen-pilot-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u2-oecr-qwen-pilot-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u3-oecr-preconfirmation-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u4-oecr-independent-confirmation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u4-oecr-independent-confirmation-v1/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u5-oecr-independent-confirmation-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u5-oecr-independent-confirmation-v2/raw/source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u6-oecr-final-verification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/u7-oecr-identity-audit-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v0-recoverability-standardization-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-00-baseline-qualification/final-source-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-01-historical-graphs-attempt-1/atlas/atlas-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-04-enforcement-delay-v1/execution-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-04-enforcement-delay-v1/source-archive-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-05-acceptance-audit-final/execution-manifest.jsonl"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-05-acceptance-audit-v1/execution-manifest.jsonl"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-44-frozen-primary-test-v1/cloud-batches/v12-44-frozen-primary-test-v1-b0011/recovery-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-45-final-dev-evidence-graphs/atlas/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-final-evidence-v1/larger-atlas/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/v12-final-evidence-v1/primary-atlas/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0-recovery-predicates-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0b-recovery-predicates-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0c-recovery-predicates-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w0d-recovery-predicates-v2-1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w1-progressing-replay-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-checkpoint/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-evoundo/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-idempotency/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-naive/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-saga/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/baselines/official-dev-vbr/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w2-undobench-official-local-v1/raw/official-smoke-output/smoke_1795569343/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/w3-fresh-sequential-validation-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x0-timing-study-local-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x1-progressing-qwen-development-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x2-timing-confirmation-qualification-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b1-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b1-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b2-v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x3-progressing-qwen-confirmation-b3-v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/artifacts/research_runs/x4-prospective-timing-analysis-v1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v4/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v5/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v6/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/candidate_contracts_v7/manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/final_package/RELEASE_INDEX.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/manifests/prospective_counts.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/manifests/task_design_slots_216.csv"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/manifests/task_design_slots_72_dev.csv"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v2/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v3_credit_bound/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v3_credit_bound/larger-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v3_credit_bound/primary-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/external-dev-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/larger-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/primary-manifest.json"
+  },
+  {
+    "archive": "AfterClick_v12_Public_Evidence_Candidate.tar.gz",
+    "name": "afterclick-v12/tests/unit/test_manifest.py"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/artifacts/research_runs/publication-20261126-executed-source-checkpoint/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/evidence/publication/MANIFEST.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/evidence/sprint1/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/evidence/v12/MANIFEST.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/candidate_contracts_v2/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/candidate_contracts_v3/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/candidate_contracts_v4/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/candidate_contracts_v5/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/candidate_contracts_v6/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/candidate_contracts_v7/manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/final_package/RELEASE_INDEX.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/manifests/prospective_counts.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/manifests/task_design_slots_216.csv"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/manifests/task_design_slots_72_dev.csv"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v2/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v3_credit_bound/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v3_credit_bound/larger-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v3_credit_bound/primary-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/external-dev-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/external-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/larger-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/research_ops/completion_v12/proposed_protocol_v4_final_credit_bound/primary-manifest.json"
+  },
+  {
+    "archive": "AfterClick_Publication_Companion_20261126.tar.gz",
+    "name": "afterclick-publication-20261126/tests/unit/test_manifest.py"
+  }
+]

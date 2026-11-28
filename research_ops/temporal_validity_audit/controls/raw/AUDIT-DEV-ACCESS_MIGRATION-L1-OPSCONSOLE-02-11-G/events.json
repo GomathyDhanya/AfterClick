@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "source.accepted",
+    "wall": 1795837890.6646469,
+    "mono": 261439.809662853,
+    "cut_sha256": "85e173448ac89fe5ac9dd23c50a4ab161e3f24df1cfb0c92e8bbb163089fdaae"
+  },
+  {
+    "kind": "world.clock_started",
+    "anchor_mono": 261439.810663322,
+    "after_browser_release_mono": 261439.815151124,
+    "wall": 1795837890.6701381
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "planned_conditions": 80,
+  "attempts": 83,
+  "valid": 80,
+  "unexpected_valid": [],
+  "conditions": [
+    {
+      "condition": "A",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "B",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "C",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 0,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "D",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 0,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "E",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 7,
+      "protective_transactions": 1,
+      "version_conflicts": 7,
+      "manipulation_not_observed": 1
+    },
+    {
+      "condition": "F",
+      "attempts": 9,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "G",
+      "attempts": 10,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "H",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 0,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "I",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 8,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    },
+    {
+      "condition": "J",
+      "attempts": 8,
+      "valid": 8,
+      "receipts": 8,
+      "protective_transactions": 0,
+      "version_conflicts": 0,
+      "manipulation_not_observed": 0
+    }
+  ],
+  "early_response_to_protection_commit_return_ms": {
+    "n": 40,
+    "minimum": 82.17767198220827,
+    "median": 228.91597548732534,
+    "p95": 1624.2064459613173,
+    "maximum": 1693.3500730083324
+  },
+  "generalization": "local diagnostic host with two concurrent worlds, not original cloud scheduling; margins are sensitivity assumptions, not measured historical deadlines"
+}

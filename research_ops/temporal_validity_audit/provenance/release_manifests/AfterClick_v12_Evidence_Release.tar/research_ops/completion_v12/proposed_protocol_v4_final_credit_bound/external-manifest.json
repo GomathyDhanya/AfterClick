@@ -1,0 +1,2170 @@
+{
+  "mode": "FROZEN_OFFICIAL_EXTERNAL",
+  "episodes": [
+    {
+      "episode_id": "RB-CLOUD-004-naive-FAULT-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-naive-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-naive-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-saga-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-saga-FAULT-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-saga-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-CLOUD-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-naive-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-naive-FAULT-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-naive-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-saga-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-saga-FAULT-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-saga-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-CLOUD-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-CLOUD-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CLOUD-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-naive-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-naive-FAULT-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-naive-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-saga-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-saga-FAULT-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-saga-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-CRM-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-CRM-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-CRM-004-naive-FAULT-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-naive-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-naive-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-saga-FAULT-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-saga-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-saga-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-CRM-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-CRM-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-CRM-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-DB-004-naive-FAULT-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-naive-42"
+    },
+    {
+      "episode_id": "RB-DB-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-naive-42"
+    },
+    {
+      "episode_id": "RB-DB-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-DB-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-DB-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-saga-42"
+    },
+    {
+      "episode_id": "RB-DB-004-saga-FAULT-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-saga-42"
+    },
+    {
+      "episode_id": "RB-DB-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-DB-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-DB-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-DB-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-DB-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-DB-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-naive-43"
+    },
+    {
+      "episode_id": "RB-DB-004-naive-FAULT-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-naive-43"
+    },
+    {
+      "episode_id": "RB-DB-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-DB-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-DB-004-saga-FAULT-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-saga-43"
+    },
+    {
+      "episode_id": "RB-DB-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-saga-43"
+    },
+    {
+      "episode_id": "RB-DB-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-DB-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-DB-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-DB-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-DB-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-DB-005-naive-FAULT-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-naive-42"
+    },
+    {
+      "episode_id": "RB-DB-005-naive-CONTROL-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-naive-42"
+    },
+    {
+      "episode_id": "RB-DB-005-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-DB-005-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-DB-005-saga-FAULT-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-saga-42"
+    },
+    {
+      "episode_id": "RB-DB-005-saga-CONTROL-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-saga-42"
+    },
+    {
+      "episode_id": "RB-DB-005-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-DB-005-idempotency-FAULT-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-DB-005-vbr-FAULT-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-DB-005-vbr-CONTROL-TEST-42",
+      "task_id": "RB-DB-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-DB-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-DB-005-naive-CONTROL-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-naive-43"
+    },
+    {
+      "episode_id": "RB-DB-005-naive-FAULT-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-naive-43"
+    },
+    {
+      "episode_id": "RB-DB-005-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-DB-005-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-DB-005-saga-FAULT-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-saga-43"
+    },
+    {
+      "episode_id": "RB-DB-005-saga-CONTROL-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-saga-43"
+    },
+    {
+      "episode_id": "RB-DB-005-idempotency-FAULT-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-DB-005-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-DB-005-vbr-FAULT-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-DB-005-vbr-CONTROL-TEST-43",
+      "task_id": "RB-DB-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-DB-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-naive-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-naive-FAULT-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-naive-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-saga-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-saga-FAULT-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-saga-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-GIT-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-GIT-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-GIT-004-naive-FAULT-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-naive-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-naive-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-saga-FAULT-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-saga-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-saga-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-GIT-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-GIT-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-GIT-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-naive-FAULT-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-naive-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-naive-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-saga-FAULT-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-saga-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-saga-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-MSG-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-MSG-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-naive-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-naive-FAULT-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-naive-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-saga-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-saga-FAULT-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-saga-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-MSG-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-MSG-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-naive-CONTROL-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-naive-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-naive-FAULT-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-naive-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-saga-FAULT-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-saga-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-saga-CONTROL-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-saga-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-idempotency-FAULT-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-vbr-CONTROL-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-vbr-FAULT-TEST-42",
+      "task_id": "RB-MSG-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-MSG-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-MSG-005-naive-CONTROL-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-naive-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-naive-FAULT-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-naive-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-saga-FAULT-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-saga-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-saga-CONTROL-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-saga-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-idempotency-FAULT-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-vbr-CONTROL-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-MSG-005-vbr-FAULT-TEST-43",
+      "task_id": "RB-MSG-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-MSG-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-naive-FAULT-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-naive-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-naive-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-saga-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-saga-FAULT-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-saga-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-PAY-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-PAY-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-naive-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-naive-FAULT-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-naive-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-saga-FAULT-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-saga-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-saga-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-PAY-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-PAY-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-naive-CONTROL-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-naive-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-naive-FAULT-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-naive-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-saga-FAULT-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-saga-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-saga-CONTROL-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-saga-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-idempotency-FAULT-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-vbr-CONTROL-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-vbr-FAULT-TEST-42",
+      "task_id": "RB-PAY-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-PAY-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-PAY-005-naive-FAULT-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-naive-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-naive-CONTROL-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-naive-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-saga-FAULT-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-saga-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-saga-CONTROL-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-saga-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-idempotency-FAULT-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-vbr-CONTROL-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-PAY-005-vbr-FAULT-TEST-43",
+      "task_id": "RB-PAY-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-PAY-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-naive-FAULT-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-naive-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-naive-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-saga-FAULT-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-saga-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-saga-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-STOR-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-STOR-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-naive-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-naive-FAULT-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-naive-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-saga-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-saga-FAULT-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-saga-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-STOR-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-STOR-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-naive-CONTROL-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-naive-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-naive-FAULT-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-naive-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-saga-CONTROL-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-saga-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-saga-FAULT-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-saga-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-idempotency-FAULT-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-idempotency-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-vbr-CONTROL-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-vbr-FAULT-TEST-42",
+      "task_id": "RB-STOR-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-STOR-005-vbr-42"
+    },
+    {
+      "episode_id": "RB-STOR-005-naive-FAULT-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-naive-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-naive-CONTROL-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-naive-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-saga-FAULT-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-saga-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-saga-CONTROL-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-saga-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-idempotency-FAULT-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-idempotency-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-vbr-CONTROL-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-STOR-005-vbr-FAULT-TEST-43",
+      "task_id": "RB-STOR-005",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-STOR-005-vbr-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-naive-FAULT-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-naive-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-naive-CONTROL-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-naive-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-checkpoint-FAULT-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-checkpoint-CONTROL-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-checkpoint-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-saga-FAULT-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-saga-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-saga-CONTROL-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-saga-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-idempotency-CONTROL-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-idempotency-FAULT-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-idempotency-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-vbr-FAULT-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-vbr-CONTROL-TEST-42",
+      "task_id": "RB-TICK-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 42,
+      "split": "test",
+      "pair_id": "RB-TICK-004-vbr-42"
+    },
+    {
+      "episode_id": "RB-TICK-004-naive-CONTROL-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "naive",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-naive-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-naive-FAULT-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "naive",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-naive-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-checkpoint-FAULT-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "checkpoint",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-checkpoint-CONTROL-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "checkpoint",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-checkpoint-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-saga-FAULT-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "saga",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-saga-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-saga-CONTROL-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "saga",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-saga-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-idempotency-FAULT-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "idempotency",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-idempotency-CONTROL-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "idempotency",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-idempotency-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-vbr-FAULT-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "vbr",
+      "condition": "FAULT",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-vbr-43"
+    },
+    {
+      "episode_id": "RB-TICK-004-vbr-CONTROL-TEST-43",
+      "task_id": "RB-TICK-004",
+      "method": "vbr",
+      "condition": "CONTROL",
+      "seed": 43,
+      "split": "test",
+      "pair_id": "RB-TICK-004-vbr-43"
+    }
+  ],
+  "concurrency": 8,
+  "native_calls_per_episode": 10,
+  "upstream_commit": "4a25c4fa0f12bb6c79dc6e0e3a8f31deeb6af21e",
+  "official_tasks_tools_prompts_oracles_unchanged": true,
+  "seed_scope": "Official context seeds; T0 and fixed fault programs, not independent randomized faults"
+}

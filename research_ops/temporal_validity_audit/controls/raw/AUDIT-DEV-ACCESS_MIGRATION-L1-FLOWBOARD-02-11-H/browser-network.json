@@ -1,0 +1,24 @@
+[
+  {
+    "kind": "browser.request",
+    "wall": 1795837655.66532,
+    "mono": 261204.811718732,
+    "body": {
+      "id": "w00",
+      "value": "incoming-internal",
+      "version": 1,
+      "operation_id": "00cde61b-741b-4c03-b579-3d528e5e3f99"
+    }
+  },
+  {
+    "kind": "browser.request",
+    "wall": 1795837655.9808562,
+    "mono": 261205.12725288,
+    "body": {
+      "id": "suspend",
+      "value": "",
+      "version": 0,
+      "operation_id": "0de7826d-5247-46a5-a954-54681a64b6c1"
+    }
+  }
+]
